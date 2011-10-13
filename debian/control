@@ -1,0 +1,14 @@
+Source: pyfll
+Section: misc
+Priority: optional
+Maintainer: Kel Modderman <kel@otaku42.de>
+Uploaders: Stefan Lippers-Hollmann <s.l-h@gmx.de>,
+ Joaquim Boura <x-un-i@berlios.de>,
+ Chris Hildebrandt <slam@aptosid.com>
+ Ferdinand Thommes <devil@siduction.org>
+Build-Depends: debhelper (>= 8)
+Standards-Version: 3.9.2
+Vcs-Svn: git.siduction.org/?p=packages/pyfll.git;a=summary
+Vcs-Browser: http://git.siduction.org/?p=packages/pyfll.git;a=summary
+
+# No binary packages are currently built from this source

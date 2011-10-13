@@ -1,0 +1,39 @@
+desc = """
+	Normal KDE desktop Applications
+"""
+
+packages = """
+	akregator
+	bluedevil
+	digikam
+	hplip-gui
+	kate
+	kbattleship
+	kcharselect
+	kdeadmin
+	kdelirc
+	kdemultimedia-kio-plugins
+	kdepim-kresources
+	kdepim-wizards
+	kdf
+	kgamma
+	kget
+	kgpg
+	kipi-plugins
+	kmahjongg
+	kmail
+	konq-plugins
+	kontact
+	kopete
+	kpat
+	krdc
+	kreversi
+	krusader
+	ktorrent
+	kwalletmanager
+	packagesearch
+	system-config-printer-kde
+	ttf-kochi-gothic
+	wpagui
+	yakuake
+"""

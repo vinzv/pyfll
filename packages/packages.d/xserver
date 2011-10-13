@@ -1,0 +1,37 @@
+desc = """
+	X Server packages.
+"""
+
+packages = """
+	dmz-cursor-theme
+	fontconfig
+	fontconfig-config
+	libgl1-mesa-dri
+	libgl1-mesa-dri-experimental
+	menu
+	mesa-utils
+	sux
+	ttf-dejavu
+	ttf-liberation
+	xauth
+	xfonts-base
+	xfonts-75dpi
+	xfonts-75dpi-transcoded
+	xfonts-100dpi
+	xfonts-100dpi-transcoded
+	xserver-xorg
+	xserver-xorg-input-all
+	xserver-xorg-video-all
+	xinit
+	xutils
+"""
+
+i386 = """
+	virtualbox-ose-guest-x11
+	xserver-xorg-input-vmmouse
+"""
+
+amd64 = """
+	virtualbox-ose-guest-x11
+	xserver-xorg-input-vmmouse
+"""

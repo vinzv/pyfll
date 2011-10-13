@@ -1,0 +1,20 @@
+desc = """
+	Minimal KDE desktop environment.
+"""
+
+deps = """
+	cli
+	devel-debian
+	distro
+	distro-kde
+	distro-tools
+	distro-tools-x
+	hwsupport-essential
+	kde-essential
+	utils-essential
+	xserver
+"""
+
+packages = """
+	cdebootstrap
+"""
