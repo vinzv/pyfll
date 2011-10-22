@@ -23,6 +23,9 @@ deps = """
 """
 
 packages = """
-	iceweasel
+<<<<<<< HEAD
+	midori
+=======
+>>>>>>> 19c36ab54d34ecdb3fe34a0080162f685dc854cf
 """
 

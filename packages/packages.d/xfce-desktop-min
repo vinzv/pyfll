@@ -6,13 +6,14 @@ desc = """
 packages = """
 	desktop-file-utils
 	gconf2
-	gdm3
+	lightdm
 	gksu
 	gtk2-engines-xfce
 	gnome-icon-theme
 	gxine
 	gxineplugin
 	libnotify-bin
+	lightdm-gtk-greeter
 	mousepad
 	mpg321
 	myspell-en-us

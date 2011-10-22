@@ -13,7 +13,10 @@ packages = """
 	gstreamer0.10-fluendo-mp3
 	gstreamer0.10-plugins-base
 	orage
+	shutter
 	transmission
 	ttf-kochi-gothic
+	vlc
+	chromium-browser
 """
 

@@ -4,7 +4,7 @@ desc = """
 
 packages = """
 	ceni
-	infobash
+	inxi
 	pppconfig
 	pppoeconf
 	sshstart
