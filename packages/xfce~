@@ -23,6 +23,6 @@ deps = """
 """
 
 packages = """
-	midori
+	iceweasel
 """
 
