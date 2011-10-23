@@ -15,7 +15,7 @@ SYNOPSIS
 
 DESCRIPTION
 -----------
-fll(8) is a python script that provides a framework to build an ISO Image from the current repositories of sid/aptosid.
+fll(8) is a python script that provides a framework to build an ISO Image from the current repositories of sid/siduction.
 
 
 OPTIONS
@@ -63,7 +63,7 @@ Kel Modderman <kel@otaku42.de>
 RESOURCES
 ---------
 FULLSTORY Homepage: http://developer.berlios.de/projects/fullstory/
-pyfll: git.siduction.org/?p=packages/pyfll.git;a=summary
+pyfll: git.siduction.org/?p=packages/pyfll.git
 
 
 COPYING

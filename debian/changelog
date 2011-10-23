@@ -1,13 +1,17 @@
-pyfll (2011.02+nmu1) UNRELEASED; urgency=low
+pyfll (2011.02+nmu2) UNRELEASED; urgency=low
 
   * adopted pyfll for siduction
   * cleaned up packages and packages.d (will need testing)
 
  -- Ferdinand Thommes <devil@siduction.org>  Sat, 22 Oct 2011 21:31:11 +0200
 
-pyfll (2011.03) UNRELEASED; urgency=low
-  [ Ferdinand Thommes ]
+pyfll (2011.03+nmu1) UNRELEASED; urgency=low
+
   * adapted pyfll for siduction
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 22 Oct 2011 21:31:11 +0200
+
+pyfll (2011.03) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
   * add usbutils to hwsupport-essential.
