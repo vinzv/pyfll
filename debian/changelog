@@ -2,8 +2,10 @@ pyfll (2011.02+nmu2) UNRELEASED; urgency=low
 
   * adopted pyfll for siduction
   * cleaned up packages and packages.d (will need testing)
+  * added sidu-installer and pywwetha (webserver) to
+    packages/packages.d/distro-tools-x
 
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 22 Oct 2011 21:31:11 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 07 Nov 2011 15:18:21 +0100
 
 pyfll (2011.03+nmu1) UNRELEASED; urgency=low
 

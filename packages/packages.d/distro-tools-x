@@ -7,9 +7,10 @@ packages = """
 	siduction-manual-en
 	configure-cups
 	fll-live-xorgconfig
-	install-gui
 	install-usb-gui
 	kernel-remover
+	pywwetha
 	setpassword
+	sidu-installer
 	xdg-browser-launcher
 """
