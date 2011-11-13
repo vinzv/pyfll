@@ -11,6 +11,8 @@ debconf = """
 packages = """
 	adduser
 	console-setup
+	efibootmgr
+	grub-efi
 	fll-live-initramfs
 	fll-live-initscripts
 	locales
