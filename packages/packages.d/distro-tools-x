@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+	fonts-droid
 	siduction-irc
 	siduction-manual-en
 	configure-cups
