@@ -17,7 +17,7 @@ packages = """
 	pciutils
 	udev
 	usbutils
-	udisk
+	udisks
 """
 
 i386 = """
