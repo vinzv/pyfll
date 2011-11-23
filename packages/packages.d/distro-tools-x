@@ -4,8 +4,10 @@ desc = """
 
 packages = """
 	fonts-droid
+	gnome-settings-daemon
 	siduction-irc
 	siduction-manual-en
+	siguibui
 	configure-cups
 	fll-live-xorgconfig
 	install-usb-gui

@@ -5,8 +5,10 @@ pyfll (2011.02+nmu2) UNRELEASED; urgency=low
   * added sidu-installer and pywwetha (webserver) to
     packages/packages.d/distro-tools-x
   * added packages needed for handling of efi-enabled boards
+  * added gnome-settings-daemon and siguibui to
+    packages/packages.d/distro-tools-x
 
- -- Ferdinand Thommes <devil@siduction.org>  Sun, 13 Nov 2011 22:52:11 +0100
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 23 Nov 2011 11:46:59 +0100
 
 pyfll (2011.03+nmu1) UNRELEASED; urgency=low
 
