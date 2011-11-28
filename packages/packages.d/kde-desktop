@@ -8,7 +8,6 @@ packages = """
 	digikam
 	hplip-gui
 	kate
-	kbattleship
 	kcharselect
 	kdeadmin
 	kdelirc
@@ -27,11 +26,9 @@ packages = """
 	kopete
 	kpat
 	krdc
-	kreversi
 	krusader
 	ktorrent
 	kwalletmanager
-	packagesearch
 	system-config-printer-kde
 	ttf-kochi-gothic
 	wpagui

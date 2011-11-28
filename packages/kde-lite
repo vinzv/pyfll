@@ -23,5 +23,5 @@ deps = """
 """
 
 packages = """
-	chromium-browser
+#	chromium-browser
 """
