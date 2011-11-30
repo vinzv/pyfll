@@ -8,5 +8,4 @@ packages = """
 	gdm3
 	gnome-core
 	xchat
-	xchat-systray
 """
