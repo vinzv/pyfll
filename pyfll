@@ -2097,8 +2097,6 @@ class FLLBuilder(object):
         isolinuxcfg.write('menu color timeout_msg 0 #ffffffff #00000000\n')
         isolinuxcfg.write('menu color timeout 0 #ffffffff #00000000\n')
         isolinuxcfg.write('menu color cmdline 0 #ffffffff #00000000\n')
-        isolinuxcfg.write('menu hidden\n')
-        isolinuxcfg.write('menu hiddenrow 6\n')
         #isolinuxcfg.write('ui isolinux.msg\n')
         isolinuxmsg = open(os.path.join(syslinux_dir, 'isolinux.msg'), 'w')
         isolinuxmsg.write('\nWelcome!\n')
