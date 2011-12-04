@@ -2086,7 +2086,7 @@ class FLLBuilder(object):
         isolinuxcfg.write('timeout 100\n')
         isolinuxcfg.write('menu resolution 800 600\n')
         isolinuxcfg.write('menu background dices.png\n')
-        isolinuxcfg.write('menu title Welcome to siduction < One Step Beyond > %s\n' % (flavour))
+        isolinuxcfg.write('menu title Welcome to siduction %s\n' % (flavour))
         isolinuxcfg.write('menu color border 0 #00eeeeee #00000000\n')
         isolinuxcfg.write('menu color sel 7 #ffeeeeee #ff000000\n')
         isolinuxcfg.write('menu color title 0 #ffeeeeee #55000000\n')
