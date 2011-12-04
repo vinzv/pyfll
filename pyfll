@@ -958,7 +958,7 @@ class FLLBuilder(object):
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
                 else:
-                    cmd = 'gpg --keyserver wwwkeys.eu.pgp.net '
+                    cmd = 'gpg --keyserver subkeys.pgp.net '
                     cmd += '--recv-keys ' + r['gpgkey']
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
@@ -1798,23 +1798,24 @@ class FLLBuilder(object):
                if not os.path.isdir(syslinux_dir):
                    os.mkdir(syslinux_dir, 0755)
                shutil.copy(isolinux, syslinux_dir)
-               gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
-               shutil.copy(gfxboot, syslinux_dir)
-               bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
-               bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
-               for file in bootlogo:
-                   try:
-                       shutil.copy(file, syslinux_dir)
-                   except IOError:
-                       self.log.exception('failed to copy bootlogo files to staging dir')
-                       raise Error
+               #gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
+               splash = os.path.join(chroot, 'usr/share/siduction/bootsplash/dices.png')
+               shutil.copy(splash, syslinux_dir)
+               #bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
+               #bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
+               #for file in bootlogo:
+                #   try:
+                #       shutil.copy(file, syslinux_dir)
+                #   except IOError:
+                #       self.log.exception('failed to copy bootlogo files to staging dir')
+                #       raise Error
                #isl_pxe = os.path.join(chroot, 'usr/lib/syslinux/pxelinux.0');
                #shutil.copy(isl_pxe, stage_dir);
                # both vesamenu.c32 and linux.c32 seem to be required
-               #isl_menu = os.path.join(chroot, 'usr/lib/syslinux/vesamenu.c32');
-               #shutil.copy(isl_menu, stage_dir);
+               isl_menu = os.path.join(chroot, 'usr/lib/syslinux/vesamenu.c32');
+               shutil.copy(isl_menu, syslinux_dir);
                #isl_linux = os.path.join(chroot, 'usr/lib/syslinux/linux.c32');
-               #shutil.copy(isl_linux, stage_dir);
+               #shutil.copy(isl_linux, syslinux_dir);
                # other modules probably useful to have available in syslinux
                # not used in current config though
                #isl_module = os.path.join(chroot, 'usr/lib/syslinux/chain.c32');
@@ -1995,8 +1996,12 @@ class FLLBuilder(object):
             vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
             initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
             
-            grubcfg.write('\nmenuentry \"%s %s (%s)\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
+            grubcfg.write('\nmenuentry \"%s %s (%s) en\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
             grubcfg.write('     linux /boot/%s boot=fll quiet $kopts %s\n' % (vmlinuz_r, cmdline))
+            grubcfg.write('     initrd /boot/%s\n' % initrd_r)
+            grubcfg.write('}\n')
+            grubcfg.write('\nmenuentry \"%s %s (%s) de\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
+            grubcfg.write('     linux /boot/%s boot=fll quiet lang=de_DE $kopts %s\n' % (vmlinuz_r, cmdline))
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
@@ -2074,9 +2079,30 @@ class FLLBuilder(object):
         cmdline =  self._configBootCmdline()
 
         distro = self.conf['distro']['FLL_DISTRO_NAME']
+        flavour = self.conf['packages']['profile']
 
         isolinuxcfg = open(os.path.join(syslinux_dir, 'isolinux.cfg'), 'w')
-        isolinuxcfg.write('ui gfxboot bootlogo\n')
+        isolinuxcfg.write('default vesamenu.c32\n')
+        isolinuxcfg.write('timeout 100\n')
+        isolinuxcfg.write('menu resolution 800 600\n')
+        isolinuxcfg.write('menu background dices.png\n')
+        isolinuxcfg.write('menu title Welcome to siduction < One Step Beyond > %s\n' % (flavour))
+        isolinuxcfg.write('menu color border 0 #00eeeeee #00000000\n')
+        isolinuxcfg.write('menu color sel 7 #ffeeeeee #ff000000\n')
+        isolinuxcfg.write('menu color title 0 #ffeeeeee #55000000\n')
+        isolinuxcfg.write('menu color tabmsg 0 #ffeeeeee #55000000\n')
+        isolinuxcfg.write('menu color unsel 0 #ffeeeeee #55000000\n')
+        isolinuxcfg.write('menu color hotsel 0 #ff000000 #ffffffff\n')
+        isolinuxcfg.write('menu color hotkey 7 #ffffffff #ff000000\n')
+        isolinuxcfg.write('menu color timeout_msg 0 #ffffffff #00000000\n')
+        isolinuxcfg.write('menu color timeout 0 #ffffffff #00000000\n')
+        isolinuxcfg.write('menu color cmdline 0 #ffffffff #00000000\n')
+        isolinuxcfg.write('menu hidden\n')
+        isolinuxcfg.write('menu hiddenrow 6\n')
+        #isolinuxcfg.write('ui isolinux.msg\n')
+        isolinuxmsg = open(os.path.join(syslinux_dir, 'isolinux.msg'), 'w')
+        isolinuxmsg.write('\nWelcome!\n')
+        isolinuxmsg.write('\nTo start the system, type one of the label names below and press [enter]:\n\n')
 
         kcount = { '686': 0, 'amd': 0, 'ppc': 0 }
         for k in kvers:
@@ -2092,23 +2118,40 @@ class FLLBuilder(object):
                     raise Error
 
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
+            isolinuxcfg.write('label %s_%s\n' % (distro, cpu))
+            isolinuxcfg.write('\tmenu label Start siduction english %s\n' % (cpu))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
+            isolinuxmsg.write('%s_%s\n' % (distro, cpu))
+            isolinuxcfg.write('\n')
+            isolinuxcfg.write('label %s_%s_de\n' % (distro, cpu))
+            isolinuxcfg.write('\tmenu label Start siduction german %s\n' % (cpu))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll lang=de_DE %s\n' % (initrd, cmdline))
+            isolinuxcfg.write('\n')
+            isolinuxmsg.write('%s_%s_de\n' % (distro, cpu))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
         isolinuxcfg.write('label Boot_from_Hard_Disk\n')
+        isolinuxcfg.write('\tmenu label Boot from Harddisk\n')
         isolinuxcfg.write('\tlocalboot 0x80\n')
         isolinuxcfg.write('\n')
+        isolinuxmsg.write('Boot_from_Hard_Disk\n')
 
         if os.path.isfile(os.path.join(boot_dir, 'memtest')):
             isolinuxcfg.write('label Memory_test_(memtest86+)\n')
+            isolinuxcfg.write('\tmenu label Memory Test\n')
             isolinuxcfg.write('\tkernel /boot/memtest\n')
             isolinuxcfg.write('\n')
+            isolinuxmsg.write('Memory_test_(memtest86+)\n')
 
         isolinuxcfg.close()
         shutil.copy(os.path.join(syslinux_dir, 'isolinux.cfg'),os.path.join(syslinux_dir, 'syslinux.cfg'))
+
+        isolinuxmsg.write('\nHave a lot of fun...\n\n')
+        isolinuxmsg.close()
+        shutil.copy(os.path.join(syslinux_dir, 'isolinux.msg'),os.path.join(syslinux_dir, 'syslinux.msg'))
 
     def _configBootKvers(self,stage_dir):
         kvers = self._detectLinuxVersion(stage_dir)

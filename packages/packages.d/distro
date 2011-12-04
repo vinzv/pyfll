@@ -11,6 +11,8 @@ packages = """
 	siduction-archive-keyring
 	siduction-scripts
 	udev-config-siduction
+	dialog
+	siduction-bootsplash
 """
 
 i386 = """

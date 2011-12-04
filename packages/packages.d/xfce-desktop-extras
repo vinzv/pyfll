@@ -10,13 +10,11 @@ packages = """
 	gcalctool
 	gnumeric
 	gpicview
-	gstreamer0.10-fluendo-mp3
-	gstreamer0.10-plugins-base
 	orage
-	shutter
+	gstreamer0.10-fluendo-mp3
 	transmission
-	ttf-kochi-gothic
-	vlc
-	chromium-browser
+	fonts-vlgothic
+	audacious
+	iceweasel
 """
 
