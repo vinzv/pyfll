@@ -6,7 +6,7 @@ desc = """
 packages = """
 	desktop-file-utils
 	gconf2
-	lightdm
+	gdm3
 	gksu
 	gtk2-engines-xfce
 	gnome-icon-theme
@@ -14,7 +14,6 @@ packages = """
 	gxine
 	gxineplugin
 	libnotify-bin
-	lightdm-gtk-greeter
 	mousepad
 	mpg321
 	myspell-en-us
