@@ -1,3 +1,9 @@
+pyfll (2011.02+nmu5) UNRELEASED; urgency=low
+
+  * added deadbeef to distro-tools-x
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 05 Dec 2011 14:51:06 +0100
+
 pyfll (2011.02+nmu4) UNRELEASED; urgency=low
 
   * cleaned packages.d

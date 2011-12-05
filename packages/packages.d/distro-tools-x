@@ -4,6 +4,7 @@ desc = """
 
 packages = """
 	configure-cups
+	deadbeef
 	fll-live-xorgconfig
 	fonts-droid
 	gnome-settings-daemon
