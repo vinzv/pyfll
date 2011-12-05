@@ -8,8 +8,10 @@ packages = """
 	htop
 	info
 	mc
+	moc
 	most
 	screen
 	unp
 	vim
+	weechat
 """

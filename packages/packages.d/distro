@@ -8,11 +8,11 @@ debconf = """
 
 packages = """
 	apt-conf-siduction
+	dialog
 	siduction-archive-keyring
+	siduction-bootsplash
 	siduction-scripts
 	udev-config-siduction
-	dialog
-	siduction-bootsplash
 """
 
 i386 = """

@@ -1,3 +1,21 @@
+pyfll (2011.04) UNRELEASED; urgency=low
+
+  * introducing myself as uploader
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 05 Dec 2011 16:33:51 +0100
+
+pyfll (2011.02+nmu5) UNRELEASED; urgency=low
+
+  * added deadbeef to distro-tools-x
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 05 Dec 2011 14:51:06 +0100
+
+pyfll (2011.02+nmu4) UNRELEASED; urgency=low
+
+  * cleaned packages.d
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 05 Dec 2011 14:44:04 +0100
+
 pyfll (2011.02+nmu3) UNRELEASED; urgency=low
 
   * dropped libgl1-mesa-dri-experimental from xserver, added gnome-
