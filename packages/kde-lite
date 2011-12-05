@@ -16,6 +16,7 @@ deps = """
 	hwsupport-printscan
 	kde-essential
 	kde-basic
+	kde-desktop
 	utils-essential
 	utils-extra
 	utils-x
@@ -23,5 +24,4 @@ deps = """
 """
 
 packages = """
-#	chromium-browser
 """

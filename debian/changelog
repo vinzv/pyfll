@@ -1,3 +1,10 @@
+pyfll (2011.06) UNRELEASED; urgency=low
+
+  * added fll-installer back and included kde-desktop-package to kde-
+    lite profile
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 05 Dec 2011 22:58:17 +0100
+
 pyfll (2011.05) UNRELEASED; urgency=low
 
   * # for siduction-manual-en

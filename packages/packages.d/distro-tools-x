@@ -6,6 +6,7 @@ packages = """
 	configure-cups
 	deadbeef
 	fll-live-xorgconfig
+	fll-installer
 	fonts-droid
 	gnome-settings-daemon
 	install-usb-gui
