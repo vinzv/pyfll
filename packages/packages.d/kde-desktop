@@ -7,12 +7,14 @@ packages = """
 	bluedevil
 	digikam
 	hplip-gui
+	iceweasel
 	kate
 	kcharselect
 	kdeadmin
 	kdelirc
 	kdemultimedia-kio-plugins
 	kdepim-kresources
+	kdepim-strigi-plugins
 	kdepim-wizards
 	kdf
 	kgamma
@@ -30,7 +32,9 @@ packages = """
 	ktorrent
 	kwalletmanager
 	system-config-printer-kde
+	strigi-client
 	ttf-kochi-gothic
+	virtuoso-minimal
 	wpagui
 	yakuake
 """

@@ -3,16 +3,16 @@ desc = """
 """
 
 packages = """
-	fonts-droid
-	gnome-settings-daemon
-	siduction-irc
-	siduction-manual-en
-	siguibui
 	configure-cups
 	fll-live-xorgconfig
+	fonts-droid
+	gnome-settings-daemon
 	install-usb-gui
 	kernel-remover
 	pywwetha
+	siduction-irc
+	siduction-manual-en
+	siguibui
 	setpassword
 	sidu-installer
 	xdg-browser-launcher

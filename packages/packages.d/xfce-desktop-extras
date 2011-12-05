@@ -5,16 +5,16 @@ desc = """
 
 packages = """
 	abiword
+	audacious
 	brasero
 	evince-gtk
+	fonts-vlgothic
 	gcalctool
 	gnumeric
 	gpicview
-	orage
 	gstreamer0.10-fluendo-mp3
-	transmission
-	fonts-vlgothic
-	audacious
 	iceweasel
+	orage
+	transmission
 """
 
