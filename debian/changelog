@@ -2,8 +2,10 @@ pyfll (2011.06) UNRELEASED; urgency=low
 
   * added fll-installer back and included kde-desktop-package to kde-
     lite profile
+  * cleaned up sections, generalized a few packages for both flavours,
+    added linuxlex-icon-theme
 
- -- Ferdinand Thommes <devil@siduction.org>  Mon, 05 Dec 2011 22:58:17 +0100
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 06 Dec 2011 12:20:33 +0100
 
 pyfll (2011.05) UNRELEASED; urgency=low
 

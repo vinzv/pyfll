@@ -6,27 +6,20 @@ packages = """
 	akregator
 	bluedevil
 	digikam
-	hplip-gui
 	iceweasel
 	kate
 	kcharselect
-	kdeadmin
-	kdelirc
 	kdemultimedia-kio-plugins
 	kdepim-kresources
 	kdepim-strigi-plugins
 	kdepim-wizards
 	kdf
-	kgamma
-	kget
 	kgpg
 	kipi-plugins
-	kmahjongg
 	kmail
 	konq-plugins
 	kontact
 	kopete
-	kpat
 	krdc
 	krusader
 	ktorrent

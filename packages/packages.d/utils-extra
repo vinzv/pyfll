@@ -9,6 +9,7 @@ packages = """
 	cdrdao
 	cryptsetup
 	debconf-utils
+	deadbeef
 	debhelper
 	dvd+rw-tools
 	dvb-apps
@@ -21,6 +22,7 @@ packages = """
 	manpages
 	memtest86+
 	mlocate
+	minitube
 	module-assistant
 	ntpdate
 	ntfs-3g

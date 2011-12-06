@@ -4,6 +4,7 @@ desc = """
 
 
 packages = """
+	linuxlex-icon-theme
 	mousepad
 	ristretto
 	# squeeze
