@@ -11,8 +11,6 @@ packages = """
 	gtk2-engines-xfce
 	gnome-icon-theme
 	gnome-settings-daemon
-	gxine
-	gxineplugin
 	libnotify-bin
 	mousepad
 	mpg321

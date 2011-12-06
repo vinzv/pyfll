@@ -1,3 +1,9 @@
+pyfll (2011.07) UNRELEASED; urgency=low
+
+  * Added linuxlex-icon-theme to distro-xfce
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Tue, 06 Dec 2011 10:50:38 +0100
+
 pyfll (2011.06) UNRELEASED; urgency=low
 
   * added fll-installer back and included kde-desktop-package to kde-

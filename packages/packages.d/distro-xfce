@@ -5,6 +5,7 @@ desc = """
 packages = """
 	desktop-defaults-xfce
 	gksu
+	linuxlex-icon-theme
 	siduction-art-xfce
 	gparted
 """
