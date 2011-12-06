@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/repos/fullstory/!svn/ver/29642/pyfll/trunk/packages
+END
+gnome-lite
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/fullstory/!svn/ver/28389/pyfll/trunk/packages/gnome-lite
+END
+xfce-lite
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/fullstory/!svn/ver/29388/pyfll/trunk/packages/xfce-lite
+END
+kde-full
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/fullstory/!svn/ver/29387/pyfll/trunk/packages/kde-full
+END
+dvd-stripped
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/fullstory/!svn/ver/28866/pyfll/trunk/packages/dvd-stripped
+END
+gnome-full
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/repos/fullstory/!svn/ver/29388/pyfll/trunk/packages/gnome-full
+END
+xfce
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/repos/fullstory/!svn/ver/29527/pyfll/trunk/packages/xfce
+END
+minimal
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/repos/fullstory/!svn/ver/17213/pyfll/trunk/packages/minimal
+END
+lxde-lite
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/fullstory/!svn/ver/29544/pyfll/trunk/packages/lxde-lite
+END
+kde-stripped
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/repos/fullstory/!svn/ver/25721/pyfll/trunk/packages/kde-stripped
+END
+minimal-x
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/repos/fullstory/!svn/ver/20354/pyfll/trunk/packages/minimal-x
+END
+dvd
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/repos/fullstory/!svn/ver/29388/pyfll/trunk/packages/dvd
+END
+gnome-stripped
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/repos/fullstory/!svn/ver/28389/pyfll/trunk/packages/gnome-stripped
+END
+kde-lite
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/repos/fullstory/!svn/ver/28352/pyfll/trunk/packages/kde-lite
+END

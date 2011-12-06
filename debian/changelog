@@ -1,8 +1,12 @@
 pyfll (2011.07) UNRELEASED; urgency=low
 
+  [ Torsten Wohlfarth ]
   * Added linuxlex-icon-theme to distro-xfce
 
- -- Torsten Wohlfarth <towo@siduction.org>  Tue, 06 Dec 2011 10:50:38 +0100
+  [ Ferdinand Thommes ]
+  * added lskat to kde-desktop
+
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 06 Dec 2011 12:43:14 +0100
 
 pyfll (2011.06) UNRELEASED; urgency=low
 
