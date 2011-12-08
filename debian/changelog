@@ -7,8 +7,9 @@ pyfll (2011.07) UNRELEASED; urgency=low
   * added lskat to kde-desktop
   * generalized iceweasel, added iceweasel-l10n-de
   * added shutter for xfce and scrot in general
+  * removed bluedevil,its quite unmaintained
 
- -- Ferdinand Thommes <devil@siduction.org>  Tue, 06 Dec 2011 22:28:15 +0100
+ -- Ferdinand Thommes <devil@siduction.org>  Thu, 08 Dec 2011 16:02:46 +0100
 
 pyfll (2011.06) UNRELEASED; urgency=low
 

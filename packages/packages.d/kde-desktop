@@ -4,7 +4,6 @@ desc = """
 
 packages = """
 	akregator
-	bluedevil
 	digikam
 	iceweasel
 	kate
