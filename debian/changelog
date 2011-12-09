@@ -1,3 +1,13 @@
+pyfll (2011.08) UNRELEASED; urgency=low
+
+  [ Niall Walsh ]
+  * grub "isohybrid" (with fromhd automagic):
+    - create grub core image setting $from to fromhd
+    - create grub_embed using core.img and boot.img
+    - build iso with --embedded-boot /path/to/grub_embed
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Fri, 09 Dec 2011 14:01:19 +0100
+
 pyfll (2011.07) UNRELEASED; urgency=low
 
   [ Torsten Wohlfarth ]
