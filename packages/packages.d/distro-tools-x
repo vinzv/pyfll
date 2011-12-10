@@ -5,12 +5,15 @@ desc = """
 packages = """
 	configure-cups
 	deadbeef
+	dnsutils
+	icedtea-plugin
 	fll-live-xorgconfig
 	fll-installer
 	fonts-droid
 	install-usb-gui
 	kernel-remover
 	pywwetha
+	qemu-kvm
 	siduction-irc
 #	siduction-manual-en
 	siguibui
@@ -18,3 +21,5 @@ packages = """
 	sidu-installer
 	xdg-browser-launcher
 """
+
+	
