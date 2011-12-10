@@ -9,8 +9,9 @@ pyfll (2011.08) UNRELEASED; urgency=low
   [ Ferdinand Thommes ]
   * added lm-sensors to utils-extra, rearranged some apps
   * added iceweasel and -l10n-de to utils-x
+  * re-added package utils-x, which got deleted by mistake
 
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 10 Dec 2011 21:21:22 +0100
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 10 Dec 2011 21:25:17 +0100
 
 pyfll (2011.07) UNRELEASED; urgency=low
 
