@@ -12,7 +12,6 @@ packages = """
 	gnumeric
 	gpicview
 	gstreamer0.10-fluendo-mp3
-	iceweasel
 	orage
 """
 
