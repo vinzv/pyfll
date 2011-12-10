@@ -1,0 +1,12 @@
+desc = """
+	Utilities useful for all package profiles, that depends on X.
+"""
+
+packages = """
+	iceweasel
+	iceweasel-l10n-de
+	libxine1-xvdr
+	xsane
+	zenity
+	zim
+"""
