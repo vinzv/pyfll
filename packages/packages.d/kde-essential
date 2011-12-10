@@ -9,7 +9,6 @@ packages = """
 	kde-plasma-desktop
 	kdm
 	konversation
-	gparted
 	phonon-backend-gstreamer
 	phonon-backend-vlc
 """

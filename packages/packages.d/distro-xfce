@@ -4,6 +4,7 @@ desc = """
 
 packages = """
 	desktop-defaults-xfce
+	gbome-settings-daemon
 	gksu
 	linuxlex-icon-theme
 	siduction-art-xfce

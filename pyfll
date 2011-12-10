@@ -324,7 +324,7 @@ class FLLBuilder(object):
                 raise Error
             else:
                 self.opts.C = self.conf['sourcedistro']['codename']
-                
+
         if self.opts.N not in self.conf['repos']:
             self.log.critical('%s repo not configured in build config' % self.opts.N)
             raise Error
@@ -353,12 +353,12 @@ class FLLBuilder(object):
         i18n = self.__lines2list(self.conf['packages']['i18n'])
         self.log.debug('i18n: %s' % ' '.join(i18n))
 
-	if 'hashkey' not in self.conf['options']:
-	    self.log.info('No key for signing ISO hashes!')
-	    self.opts.k = None
-	else:
-	    self.opts.k = self.conf['options'].get('hashkey')
-	    self.log.debug('Using key %s for signing.' % self.opts.k)
+        if 'hashkey' not in self.conf['options']:
+            self.log.info('No key for signing ISO hashes!')
+            self.opts.k = None
+        else:
+            self.opts.k = self.conf['options'].get('hashkey')
+            self.log.debug('Using key %s for signing.' % self.opts.k)
 
         if not 'options' in self.conf:
             self.conf['options'] = dict()
@@ -1566,7 +1566,7 @@ class FLLBuilder(object):
         image_size = 16 * 1024
         if ( 'FLL_IMAGE_MB' in self.conf['distro'] and len(self.conf['distro']['FLL_IMAGE_MB'])):
             image_size = int(self.conf['distro']['FLL_IMAGE_MB'])
-        
+
         # create the fs image
         # makes a sparse file which has to be bigger then target fs
         cmd = ['dd', 'if=/dev/zero', 'of=%s' % os.path.join(chroot, 'squash', image_file), 'bs=1K', 'seek=%s' % (image_size*1024-1), 'count=1']
@@ -1620,7 +1620,7 @@ class FLLBuilder(object):
                 break
             self.log.critical('failed to drop loop device: %s' % fsloop)
             raise Error
-       
+
         # create a dir, loop mount squash/image_file on it and rsync in chroot
         fs_image_mnt='%s.mnt' % image_file
         cmd = ['mkdir', fs_image_mnt]
@@ -1663,7 +1663,7 @@ class FLLBuilder(object):
                     cmd.extend(['-Xbcj', 'x86'])
                 elif arch == 'powerpc' or arch == 'ppc64':
                     cmd.extend(['-Xbcj', 'powerpc'])
-        
+
         if not os.path.isfile(os.path.join(chroot, 'squash', '%s' % image_file)):
             cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
 
@@ -1702,7 +1702,7 @@ class FLLBuilder(object):
                 self.log.critical('could not find initramfs image to ' +
                                   'copy to staging dir.')
                 raise Error
-            
+
             images = glob.glob(os.path.join(chroot, 'boot', 'vmlinu*-' + k))
             if len(images) == 1:
                 self.log.debug('copying %s to staging dir' % images[0])
@@ -1956,7 +1956,7 @@ class FLLBuilder(object):
             grubcfg.write('}\n')
 
         grubcfg.close()
-        
+
 
     def _writeGrubEfiCfg(self, stage_dir, boot_dir, grub_dir, kvers,
                       timeout, cmdline):
@@ -1979,7 +1979,7 @@ class FLLBuilder(object):
         grubcfg.write('set kopts=\"$from $bootlang $kbd $tz\"\n\n')
 
         distro = self.conf['distro']['FLL_DISTRO_NAME']
-        
+
         kcount = { '686': 0, 'amd': 0, 'ppc': 0 }
         for k in kvers:
             cpu = k[k.rfind('-') + 1:]
@@ -1997,7 +1997,7 @@ class FLLBuilder(object):
             # assumes isolinux config will rename them :-/
             vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
             initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-            
+
             grubcfg.write('\nmenuentry \"%s %s (%s) en\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
             grubcfg.write('     linux /boot/%s boot=fll quiet $kopts %s\n' % (vmlinuz_r, cmdline))
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
@@ -2525,7 +2525,7 @@ class FLLBuilder(object):
     def buildChroots(self):
         '''Main loop to call all chroot building functions.'''
         archs = self.conf['archs'].keys()
-	codename = self.opts.C
+        codename = self.opts.C
         for arch in archs:
             self._bootStrap(arch)
             self._dpkgAddDivert(arch)

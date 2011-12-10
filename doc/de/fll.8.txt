@@ -28,7 +28,7 @@ zu bauende Architektur (32 / 64 bit) , übergeht die Konfigurationsdatei.
 -b <Verzeichnis>, --build=<Verzeichnis>::
 Bestimmt das Build Verzeichnis. Hier wird viel freier Platz benötigt.
 -B, --binary::
-Baut nur ein binäres Build. Schaltet Erstellung von URI Listen aus.	
+Baut nur ein binäres Build. Schaltet Erstellung von URI Listen aus.
 Grundeinstellung: Aus
 -c <Konfigurationsdatei>, --config=<Konfigurationsdatei>::
 Bestimmt die Konfigurationsdatei(en). Diese Option kann mehrfach verwendet

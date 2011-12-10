@@ -18,6 +18,7 @@ packages = """
 	genisoimage
 	iproute
 	jfsutils
+	lm-sensors
 	man-db
 	manpages
 	memtest86+

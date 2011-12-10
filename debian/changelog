@@ -6,7 +6,10 @@ pyfll (2011.08) UNRELEASED; urgency=low
     - create grub_embed using core.img and boot.img
     - build iso with --embedded-boot /path/to/grub_embed
 
- -- Torsten Wohlfarth <towo@siduction.org>  Fri, 09 Dec 2011 14:01:19 +0100
+  [ Ferdinand Thommes ]
+  * added lm-sensors to utils-extra, rearranged some apps
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 10 Dec 2011 11:53:45 +0100
 
 pyfll (2011.07) UNRELEASED; urgency=low
 
@@ -144,9 +147,9 @@ pyfll (2011.02) imera; urgency=low
   * add extras repo, intially with just grub-efi and deps when appropriate
   * add grub-efi debs to extras repo, means amd64 requires reprepro as long
     as grub-efi-amd64-bin is included
-  * create /boot/grub/x86_64-efi/${iso_uuid} file for grub.cfg in 
+  * create /boot/grub/x86_64-efi/${iso_uuid} file for grub.cfg in
     /efi/boot/bootx64.efi memdisk to find drive with iso contents for fromhd
-  * /boot/efi/bootx64.efi is different then the one used for cd booting, 
+  * /boot/efi/bootx64.efi is different then the one used for cd booting,
     sets fromhd and supports mbr/gpt disks using lvm, fat, ext2 grub modules
   * copy isolinux.cfg to syslinux.cfg so you can use syslinux on a copy of the
     iso contents on a fat drive (also add mtools to 32bit for this)
@@ -164,7 +167,7 @@ pyfll (2011.01) geras; urgency=low
   [ Stefan Lippers-Hollmann ]
   * add ntpdate to automatic recommends handling.
   * add initial squashfs-xz support.
-  * reorder mksquashfs parameters, to allow setting compression algorithms, 
+  * reorder mksquashfs parameters, to allow setting compression algorithms,
     also set according filters for powerpc and ppc64.
   * the default users doesn't need to be group member of sudo.
   * really disable grub recovery mode for grub-pc.
