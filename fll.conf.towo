@@ -67,23 +67,32 @@ lang = """
         uri		= http://ftp2.de.debian.org/debian/
         cached		=
         suite		= unstable
-        components	= main contrib non-free
+        components	= main
 
         [[ 'siduction' ]]
         label		= siduction
         uri		= http://packages.siduction.org/siduction
         cached		=
         suite		= unstable
-        components	= main contrib non-free
+        components	= main
         #gpgkey		= 151E2489
         #gpgkey		= /usr/share/aptosid-archive-keyring/0xE3BD538B.asc
         keyring		= siduction-archive-keyring
 
+        [[ 'fix' ]]
+        label		= siduction-fixes
+	uri		= http://packages.siduction.org/fixes
+	cached		=
+	suite		= unstable
+	components	= main
+	#gpgkey		= 45C45076
+	gpgkey		= /usr/share/siduction-archive-keyring/45C45076.asc
+	#keyring	= siduction-archive-keyring 
 
 [ 'options' ]
 #build_dir = /media/data2/iso-build
-build_dir = /media/data1/pbuilder/build
-output_dir = /media/data1/iso
+#build_dir = /media/data1/pbuilder/build
+#output_dir = /media/data1/iso
 
 #build_log =
 

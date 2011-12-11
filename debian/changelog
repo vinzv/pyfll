@@ -13,7 +13,11 @@ pyfll (2011.08) UNRELEASED; urgency=low
   * re-added package utils-x, which got deleted by mistake, part 2
   * added some stuff from kde-full
 
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 10 Dec 2011 23:07:16 +0100
+  [ Torsten Wohlfarth ]
+  * removed non-fre and contrib from fll.conf.towo
+  * added siduction-fixes to fll.conf.towo
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 11 Dec 2011 12:38:35 +0100
 
 pyfll (2011.07) UNRELEASED; urgency=low
 
