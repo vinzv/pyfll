@@ -17,8 +17,9 @@ pyfll (2011.08) UNRELEASED; urgency=low
   * removed non-fre and contrib from fll.conf.towo
   * added siduction-fixes to fll.conf.towo
   * changed the bad denglish in the bootmenu to german and english
+  * added shutter, pragha and xfce4-soundmenu-plugin to xfce4-desktop-extras
 
- -- Torsten Wohlfarth <towo@siduction.org>  Sun, 11 Dec 2011 20:52:44 +0100
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 11 Dec 2011 21:14:25 +0100
 
 pyfll (2011.07) UNRELEASED; urgency=low
 

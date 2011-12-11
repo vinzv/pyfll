@@ -13,5 +13,8 @@ packages = """
 	gpicview
 	gstreamer0.10-fluendo-mp3
 	orage
+	pragha
+	shutter
+	xfce4-soundmenu-plugin
 """
 
