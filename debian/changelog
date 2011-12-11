@@ -16,8 +16,9 @@ pyfll (2011.08) UNRELEASED; urgency=low
   [ Torsten Wohlfarth ]
   * removed non-fre and contrib from fll.conf.towo
   * added siduction-fixes to fll.conf.towo
+  * changed the bad denglish in the bootmenu to german and english
 
- -- Torsten Wohlfarth <towo@siduction.org>  Sun, 11 Dec 2011 12:38:35 +0100
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 11 Dec 2011 20:52:44 +0100
 
 pyfll (2011.07) UNRELEASED; urgency=low
 
