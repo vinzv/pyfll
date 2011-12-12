@@ -9,6 +9,7 @@ debconf = """
 packages = """
 	apt-conf-siduction
 	dialog
+	gfxboot-themes-siduction-11.0-onestepbeyond
 	siduction-archive-keyring
 	siduction-bootsplash
 	siduction-scripts

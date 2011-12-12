@@ -1799,17 +1799,18 @@ class FLLBuilder(object):
                if not os.path.isdir(syslinux_dir):
                    os.mkdir(syslinux_dir, 0755)
                shutil.copy(isolinux, syslinux_dir)
-               #gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
                splash = os.path.join(chroot, 'usr/share/siduction/bootsplash/dices.png')
                shutil.copy(splash, syslinux_dir)
-               #bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
-               #bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
-               #for file in bootlogo:
-                #   try:
-                #       shutil.copy(file, syslinux_dir)
-                #   except IOError:
-                #       self.log.exception('failed to copy bootlogo files to staging dir')
-                #       raise Error
+               gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
+               shutil.copy(gfxboot, syslinux_dir)
+               bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf[ 'distro' ]['FLL_GFXBOOT_THEME'], 'cdrom')
+               bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
+               for file in bootlogo:
+                   try:
+                       shutil.copy(file, syslinux_dir)
+                   except IOError:
+                       self.log.exception('failed to copy bootlogo files to staging dir')
+                       raise Error
                #isl_pxe = os.path.join(chroot, 'usr/lib/syslinux/pxelinux.0');
                #shutil.copy(isl_pxe, stage_dir);
                # both vesamenu.c32 and linux.c32 seem to be required
@@ -1949,6 +1950,10 @@ class FLLBuilder(object):
             grubcfg.write('	linux /boot/%s boot=fll $liveopts %s\n' % (vmlinuz, cmdline))
             grubcfg.write('	initrd /boot/%s\n' % initrd)
             grubcfg.write('}\n')
+            grubcfg.write('\nmenuentry \"%s %s (%s) Radeon KMS off\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
+            grubcfg.write('	linux /boot/%s boot=fll radeon.modeset=0 $liveopts %s\n' % (vmlinuz, cmdline))
+            grubcfg.write('	initrd /boot/%s\n' % initrd)
+            grubcfg.write('}\n')
 
         if os.path.isfile(os.path.join(boot_dir, 'memtest')):
             grubcfg.write('\nmenuentry \"Memory test (memtest86+)\" {\n')
@@ -2002,8 +2007,8 @@ class FLLBuilder(object):
             grubcfg.write('     linux /boot/%s boot=fll quiet $kopts %s\n' % (vmlinuz_r, cmdline))
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
-            grubcfg.write('\nmenuentry \"%s %s (%s) de\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
-            grubcfg.write('     linux /boot/%s boot=fll quiet lang=de_DE $kopts %s\n' % (vmlinuz_r, cmdline))
+            grubcfg.write('\nmenuentry \"%s %s (%s) Radeon KMS off\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
+            grubcfg.write('     linux /boot/%s boot=fll quiet radeon.modeset=0 $kopts %s\n' % (vmlinuz_r, cmdline))
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
@@ -2084,23 +2089,8 @@ class FLLBuilder(object):
         flavour = self.conf['packages']['profile']
 
         isolinuxcfg = open(os.path.join(syslinux_dir, 'isolinux.cfg'), 'w')
-        isolinuxcfg.write('default vesamenu.c32\n')
-        isolinuxcfg.write('timeout 100\n')
-        isolinuxcfg.write('menu resolution 800 600\n')
-        isolinuxcfg.write('menu background dices.png\n')
-        isolinuxcfg.write('menu title Welcome to siduction %s\n' % (flavour))
-        isolinuxcfg.write('menu color border 0 #ffffffff #ee000000 std\n')
-        isolinuxcfg.write('menu color title 0 #ffffffff #ee000000 std\n')
-        isolinuxcfg.write('menu color sel 0 #ffffffff #85000000 std\n')
-        isolinuxcfg.write('menu color unsel 0 #ffffffff #ee000000 std\n')
-        isolinuxcfg.write('menu color hotkey 0 #ff00ff00 #ee000000 std\n')
-        isolinuxcfg.write('menu color hotsel 0 #ffffffff #85000000 std\n')
-        isolinuxcfg.write('menu color help 1;37;40 #ffffffff #00000000 std\n')
-        isolinuxcfg.write('menu helpmsgrow 21\n')
-        isolinuxcfg.write('menu cmdlinerow 21\n')
-        isolinuxcfg.write('menu timeoutrow 30\n')
-        isolinuxcfg.write('menu vshift 1\n')
-        #isolinuxcfg.write('ui isolinux.msg\n')
+        #isolinuxcfg.write('display isolinux.msg\n')
+        isolinuxcfg.write('ui gfxboot bootlogo isolinux.msg\n')
         isolinuxmsg = open(os.path.join(syslinux_dir, 'isolinux.msg'), 'w')
         isolinuxmsg.write('\nWelcome!\n')
         isolinuxmsg.write('\nTo start the system, type one of the label names below and press [enter]:\n\n')
@@ -2119,61 +2109,25 @@ class FLLBuilder(object):
                     raise Error
 
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s\n' % (distro, cpu))
-            isolinuxcfg.write('\tmenu label Start siduction english %s\n' % (cpu))
-            isolinuxcfg.write('TEXT HELP\n')
-            isolinuxcfg.write('Normal booting siduction linux, english language\n')
-            isolinuxcfg.write('ENDTEXT\n')
+            isolinuxcfg.write('label start_%s_%s_%s\n' % (distro, cpu, flavour))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
+            isolinuxcfg.write('label start_%s_%s_%s  (Safe Graphics Settings)\n' % (distro, cpu, flavour))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll radeon.modeset=0 nouveau.modeset=0 i915.modeset=0 xmodule=vesa%s\n' % (initrd, cmdline))
+            isolinuxcfg.write('\n')
             isolinuxmsg.write('%s_%s\n' % (distro, cpu))
-            isolinuxcfg.write('label %s_%s\n' % (distro, cpu))
-            isolinuxcfg.write('\tmenu label Start siduction english %s ati graphics\n' % (cpu))
-            isolinuxcfg.write('TEXT HELP\n')
-            isolinuxcfg.write('Booting siduction linux with radeon kms disabled for ati, english language\n')
-            isolinuxcfg.write('Try this, if a normal start does not give you a graphical environment\n')
-            isolinuxcfg.write('ENDTEXT\n')
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll radeon.modeset=0 %s\n' % (initrd, cmdline))
-            isolinuxmsg.write('%s_%s_ati\n' % (distro, cpu))
-            isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s_de\n' % (distro, cpu))
-            isolinuxcfg.write('\tmenu label Start siduction deutsch %s\n' % (cpu))
-            isolinuxcfg.write('TEXT HELP\n')
-            isolinuxcfg.write('siduction linux mit deutscher Umgebung starten\n')
-            isolinuxcfg.write('ENDTEXT\n')
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll lang=de_DE %s\n' % (initrd, cmdline))
-            isolinuxmsg.write('%s_%s_de\n' % (distro, cpu))
-            isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s_de\n' % (distro, cpu))
-            isolinuxcfg.write('\tmenu label Start siduction deutsch %s ATI Grafik\n' % (cpu))
-            isolinuxcfg.write('TEXT HELP\n')
-            isolinuxcfg.write('siduction linux mit deutscher Umgebung starten. Radeon KMS ist deaktiviert\n')
-            isolinuxcfg.write('Versuchen Sie dieses, wenn ein normaler Start kein funktionierendes X bringt.\n')
-            isolinuxcfg.write('ENDTEXT\n')
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll lang=de_DE radeon.modeset=0 %s\n' % (initrd, cmdline))
-            isolinuxmsg.write('%s_%s_de_ati\n' % (distro, cpu))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
         isolinuxcfg.write('\n')
         isolinuxcfg.write('label Boot_from_Hard_Disk\n')
-        isolinuxcfg.write('\tmenu label Boot from Harddisk\n')
-        isolinuxcfg.write('TEXT HELP\n')
-        isolinuxcfg.write('Boot local drive / Lokale Festplatte booten\n')
-        isolinuxcfg.write('ENDTEXT\n')
         isolinuxcfg.write('\tlocalboot 0x80\n')
         isolinuxcfg.write('\n')
         isolinuxmsg.write('Boot_from_Hard_Disk\n')
 
         if os.path.isfile(os.path.join(boot_dir, 'memtest')):
             isolinuxcfg.write('label Memory_test_(memtest86+)\n')
-            isolinuxcfg.write('\tmenu label Memory Test\n')
-            isolinuxcfg.write('TEXT HELP\n')
-            isolinuxcfg.write('Memorytest / Arbeitsspeicher testen\n')
-            isolinuxcfg.write('ENDTEXT\n')
             isolinuxcfg.write('\tkernel /boot/memtest\n')
             isolinuxcfg.write('\n')
             isolinuxmsg.write('Memory_test_(memtest86+)\n')
