@@ -1,8 +1,12 @@
 pyfll (2011.09) UNRELEASED; urgency=low
 
+  [ Ferdinand Thommes ]
   * added nano to utils-extra, users keep asking for it
 
- -- Ferdinand Thommes <devil@siduction.org>  Mon, 12 Dec 2011 14:16:03 +0100
+  [ Torsten Wohlfarth ]
+  * reenabled gfxboot
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 12 Dec 2011 22:03:30 +0100
 
 pyfll (2011.08) UNRELEASED; urgency=low
 
