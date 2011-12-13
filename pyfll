@@ -2007,8 +2007,8 @@ class FLLBuilder(object):
             grubcfg.write('     linux /boot/%s boot=fll quiet $kopts %s\n' % (vmlinuz_r, cmdline))
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
-            grubcfg.write('\nmenuentry \"%s %s (%s) Radeon KMS off\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
-            grubcfg.write('     linux /boot/%s boot=fll quiet radeon.modeset=0 $kopts %s\n' % (vmlinuz_r, cmdline))
+            grubcfg.write('\nmenuentry \"%s %s (%s) Safe Graphics Settings\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
+            grubcfg.write('     linux /boot/%s boot=fll quiet nouveau.modeset=0 i915.modeset=0 radeon.modeset=0 $kopts xmodule=vesa %s\n' % (vmlinuz_r, cmdline))
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
