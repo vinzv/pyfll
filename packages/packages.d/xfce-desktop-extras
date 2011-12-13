@@ -12,9 +12,11 @@ packages = """
 	gnumeric
 	gpicview
 	gstreamer0.10-fluendo-mp3
+	libtumbler-1-0
 	orage
 	pragha
 	shutter
+	tumbler
 	xfce4-soundmenu-plugin
 """
 

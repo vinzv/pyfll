@@ -6,8 +6,9 @@ pyfll (2011.09) UNRELEASED; urgency=low
   [ Torsten Wohlfarth ]
   * reenabled gfxboot
   * added "Safe Graphics Settings" item to grub and isolinux
+  * added libtumbler, tumbler to xfce4-desktop-extras
 
- -- Torsten Wohlfarth <towo@siduction.org>  Tue, 13 Dec 2011 08:04:25 +0100
+ -- Torsten Wohlfarth <towo@siduction.org>  Tue, 13 Dec 2011 23:51:46 +0100
 
 pyfll (2011.08) UNRELEASED; urgency=low
 
