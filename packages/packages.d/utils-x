@@ -6,6 +6,7 @@ packages = """
 	iceweasel
 	iceweasel-l10n-de
 	libxine1-xvdr
+	reportbug-ng
 	xsane
 	zenity
 	zim
