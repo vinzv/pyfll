@@ -15,7 +15,8 @@ packages = """
 	pywwetha
 	qemu-kvm
 	siduction-irc
-#	siduction-manual-en
+	bluewater-manual
+	bluewater-manual-common
 	siguibui
 	setpassword
 	sidu-installer
