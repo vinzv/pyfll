@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+	bluewater-manual-en
 	configure-cups
 	deadbeef
 	dnsutils
