@@ -4,13 +4,30 @@ desc = """
 
 packages = """
 	blueman
-	epdfview
-	gksu
+	#epdfview
+	evince-gtk
 	gvfs-backends
 	gvfs-fuse
+	policykit-1
 	lxde
-	lxmusic
+	gtk-chtheme
+	#lxmusic
+	deadbeef
 	lxlauncher
 	lxtask
 	xchat
+	galternatives
+	xine-ui
+	transmission
+	sylpheed
+	midori
+	tuxcmd-modules
+	osmo
+	brasero
+	#alarm-clock-applet
+	conky
+	galculator
+	update-notifier
+	synaptic
+	hardinfo
 """
