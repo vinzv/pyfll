@@ -22,5 +22,7 @@ deps = """
 """
 
 packages = """
+	iceweasel
+	qemu-kvm
 """
 

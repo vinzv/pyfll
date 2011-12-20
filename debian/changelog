@@ -1,3 +1,11 @@
+pyfll (2011.11) UNRELEASED; urgency=low
+
+  * added iceweasel to packages/$flavour.
+  *.removed libxine1-xvdr, since we do not ship vdr.
+  * added qemu-kvm to xfce.
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Tue, 20 Dec 2011 12:42:57 +0100
+
 pyfll (2011.10) UNRELEASED; urgency=low
 
   [ Torsten Wohlfarth ]

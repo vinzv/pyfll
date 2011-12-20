@@ -24,4 +24,5 @@ deps = """
 """
 
 packages = """
+	iceweasel
 """
