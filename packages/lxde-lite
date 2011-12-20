@@ -9,13 +9,15 @@ deps = """
 	distro-tools
 	distro-tools-x
 	hwsupport-essential
+	hwsupport-extra
 	hwsupport-powermanagement
 	lxde-basic
 	utils-essential
+#	utils-extra
 	utils-x
 	xserver
 """
 
 packages = """
-	chromium-browser
+#	chromium-browser
 """
