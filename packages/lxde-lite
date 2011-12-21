@@ -13,7 +13,7 @@ deps = """
 	hwsupport-powermanagement
 	lxde-basic
 	utils-essential
-#	utils-extra
+	utils-extra
 	utils-x
 	xserver
 """
