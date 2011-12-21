@@ -20,7 +20,7 @@ i18n = """
         #ja_JP
         #nl_NL
         #pl_PL
-        #pt_BR
+        pt_BR
         #pt_PT
         #ro_RO
         #ru_RU
@@ -39,7 +39,7 @@ lang = """
         #ja_JP
         #nl_NL
         #pl_PL
-        #pt_BR
+        pt_BR
         #pt_PT
         #ro_RO
         #ru_RU
