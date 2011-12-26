@@ -3,6 +3,9 @@ desc = """
 """
 
 packages = """
+	bluewater-manual-en
+	bluewater-manual-de
+	bluewater-manual-pt-br
 	configure-cups
 	deadbeef
 	dnsutils
@@ -15,8 +18,6 @@ packages = """
 	pywwetha
 	qemu-kvm
 	siduction-irc
-	bluewater-manual
-	bluewater-manual-common
 	siguibui
 	setpassword
 	sidu-installer
