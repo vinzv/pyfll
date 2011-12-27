@@ -3,6 +3,9 @@ desc = """
 """
 
 packages = """
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
 	reportbug-ng
 	xsane
 	zenity

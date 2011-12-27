@@ -1,3 +1,15 @@
+pyfll (2011.14) UNRELEASED; urgency=low
+
+  * added ffmpeg, myspell-xy, weechat-plugins -scripts, kmenuedit
+
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 27 Dec 2011 14:39:28 +0100
+
+pyfll (2011.13) UNRELEASED; urgency=low
+
+  * fix merge conflict
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 26 Dec 2011 15:14:03 +0100
+
 pyfll (2011.12) UNRELEASED; urgency=low
 
   * put bluewater-manual back in the mix

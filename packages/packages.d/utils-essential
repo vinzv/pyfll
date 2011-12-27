@@ -9,6 +9,8 @@ packages = """
 	console-common
 	cron
 	debsums
+	firmware-linux-free
+	ffmpeg
 	gdisk
 	iptables
 	iputils-ping
