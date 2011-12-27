@@ -1,3 +1,9 @@
+pyfll (2011.12) UNRELEASED; urgency=low
+
+  * put bluewater-manual back in the mix
+
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 20 Dec 2011 17:44:15 +0100
+
 pyfll (2011.11) UNRELEASED; urgency=low
 
   * added iceweasel to packages/$flavour.
