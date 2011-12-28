@@ -1,3 +1,23 @@
+pyfll (2011.15) UNRELEASED; urgency=low
+
+  * added lp to FLL_LIVE_USER, fixes: #508
+
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 28 Dec 2011 09:45:42 +0100
+
+pyfll (2011.14) UNRELEASED; urgency=low
+
+  * added ffmpeg, myspell-xy, weechat-plugins -scripts, kmenuedit
+  * rename kde-lite flavour to kde
+  * set FLL_DISTRO_VERSION to 11.1
+
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 27 Dec 2011 14:51:52 +0100
+
+pyfll (2011.13) UNRELEASED; urgency=low
+
+  * fix merge conflict
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 26 Dec 2011 15:14:03 +0100
+
 pyfll (2011.12) UNRELEASED; urgency=low
 
   * put bluewater-manual back in the mix

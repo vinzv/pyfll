@@ -15,6 +15,7 @@ packages = """
 	kgpg
 	kipi-plugins
 	kmail
+	kmenuedit
 	konq-plugins
 	kontact
 	kopete
