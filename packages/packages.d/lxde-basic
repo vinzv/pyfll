@@ -3,31 +3,34 @@ desc = """
 """
 
 packages = """
+	#alarm-clock-applet
 	blueman
+	brasero
+	conky
+	deadbeef
 	evince-gtk
+	fpm2
+	galculator
+	galternatives
+	geany
+	gtk-chtheme
 	gvfs-backends
 	gvfs-fuse
-	policykit-1
+	hardinfo
 	lxde
-	gtk-chtheme
-	deadbeef
 	lxlauncher
 	lxtask
-	xchat
-	galternatives
-	xine-ui
-	transmission
-	sylpheed
 	midori
-	tuxcmd-modules
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
 	osmo
-	brasero
-	#alarm-clock-applet
-	conky
-	galculator
-	hardinfo
-	geany
-	zenity
+	policykit-1
 	reportbug
-	fpm2
+	sylpheed
+	transmission
+	tuxcmd-modules
+	xchat
+	xine-ui
+	zenity
 """
