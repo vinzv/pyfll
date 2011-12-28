@@ -4,14 +4,12 @@ desc = """
 
 packages = """
 	blueman
-	#epdfview
 	evince-gtk
 	gvfs-backends
 	gvfs-fuse
 	policykit-1
 	lxde
 	gtk-chtheme
-	#lxmusic
 	deadbeef
 	lxlauncher
 	lxtask
@@ -27,7 +25,9 @@ packages = """
 	#alarm-clock-applet
 	conky
 	galculator
-	update-notifier
-	synaptic
 	hardinfo
+	geany
+	zenity
+	reportbug
+	fpm2
 """
