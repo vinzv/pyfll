@@ -14,7 +14,7 @@ deps = """
 	lxde-basic
 	utils-essential
 	utils-extra
-	utils-x
+	#utils-x
 	xserver
 """
 
