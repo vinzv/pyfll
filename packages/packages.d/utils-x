@@ -3,6 +3,8 @@ desc = """
 """
 
 packages = """
+	deadbeef
+	minitube
 	myspell-de-de
 	myspell-en-us
 	myspell-pt-br

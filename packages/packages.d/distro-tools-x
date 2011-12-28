@@ -7,7 +7,6 @@ packages = """
 	bluewater-manual-de
 	bluewater-manual-pt-br
 	configure-cups
-	deadbeef
 	dnsutils
 	icedtea-plugin
 	fll-live-xorgconfig
