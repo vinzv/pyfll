@@ -4,6 +4,7 @@ desc = """
 
 packages = """
 	aspell
+	apt-file
 	build-essential
 	cdebootstrap
 	cdrdao
