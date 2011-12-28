@@ -6,12 +6,11 @@ desc = """
 packages = """
         desktop-file-utils
         gconf2
-        gdm3
         gksu
         gtk2-engines-xfce
         gnome-icon-theme
-        gnome-settings-daemon
         libnotify-bin
+	lightdm
         mousepad
         mpg321
         pm-utils
