@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+	abiword
 	#alarm-clock-applet
 	blueman
 	brasero
@@ -13,6 +14,7 @@ packages = """
 	galculator
 	galternatives
 	geany
+	gnumeric
 	gtk-chtheme
 	gvfs-backends
 	gvfs-fuse
