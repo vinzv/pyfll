@@ -32,5 +32,7 @@ packages = """
 	tuxcmd-modules
 	xchat
 	xine-ui
+	xsane
 	zenity
+	zim
 """
