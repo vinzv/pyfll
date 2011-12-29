@@ -16,6 +16,7 @@ packages = """
 	geany
 	gnumeric
 	gtk-chtheme
+	gtk2-engines
 	gvfs-backends
 	gvfs-fuse
 	hardinfo
