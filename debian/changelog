@@ -1,3 +1,9 @@
+pyfll (2011.18) UNRELEASED; urgency=low
+
+  * reverted locale changes in essential
+
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 30 Dec 2011 00:34:31 +0100
+
 pyfll (2011.17) UNRELEASED; urgency=low
 
   * added imagemagick, nfs-common, removed some locales
