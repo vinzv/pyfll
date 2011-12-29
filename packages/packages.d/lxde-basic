@@ -7,7 +7,7 @@ packages = """
 	#alarm-clock-applet
 	blueman
 	brasero
-	conky
+	#conky
 	deadbeef
 	evince-gtk
 	fpm2
@@ -28,6 +28,7 @@ packages = """
 	myspell-pt-br
 	osmo
 	policykit-1
+	python-vte
 	reportbug
 	sylpheed
 	transmission
