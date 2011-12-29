@@ -1,3 +1,15 @@
+pyfll (2011.17) UNRELEASED; urgency=low
+
+  * added imagemagick, nfs-common, removed some locales
+
+ -- Ferdinand Thommes <devil@siduction.org>  Thu, 29 Dec 2011 23:52:05 +0100
+
+pyfll (2011.16) UNRELEASED; urgency=low
+
+  * revised and validated hd-install-opts.de/en
+
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 28 Dec 2011 14:54:59 +0100
+
 pyfll (2011.15) UNRELEASED; urgency=low
 
   * added lp to FLL_LIVE_USER, fixes: #508

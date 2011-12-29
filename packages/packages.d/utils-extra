@@ -16,6 +16,7 @@ packages = """
 	dosfstools
 	ftp-ssl
 	genisoimage
+	imagemagick
 	iproute
 	jfsutils
 	lm-sensors
@@ -24,6 +25,7 @@ packages = """
 	memtest86+
 	mlocate
 	module-assistant
+	nfs-common
 	ntpdate
 	ntfs-3g
 	nmap
