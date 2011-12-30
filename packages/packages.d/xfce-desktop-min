@@ -11,7 +11,8 @@ packages = """
         gnome-icon-theme
         libnotify-bin
 	lightdm
-        mousepad
+        lightdm-gtk-greeter
+        leafpad
         mpg321
         pm-utils
         shared-mime-info
