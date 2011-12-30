@@ -31,7 +31,7 @@ packages = """
 	policykit-1
 	python-vte
 	reportbug
-	sylpheed
+	sylpheed-i18n
 	transmission
 	tuxcmd-modules
 	xchat
