@@ -1,3 +1,9 @@
+pyfll (2011.20) UNRELEASED; urgency=low
+
+  * updated fll.conf, packages.d/essentials
+
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 30 Dec 2011 15:55:08 +0100
+
 pyfll (2011.19) UNRELEASED; urgency=low
 
   * fixed FLL_LIVE_USER_GROUPS in fll.conf
