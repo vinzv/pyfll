@@ -15,6 +15,7 @@ packages = """
         leafpad
         mpg321
         pm-utils
+        policykit-1
         shared-mime-info
         thunar
         thunar-data

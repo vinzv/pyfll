@@ -1,3 +1,10 @@
+pyfll (2011.20+nmu1) UNRELEASED; urgency=low
+
+  * Non-maintainer upload.
+  * add policykit-1 to xfce-desktop-min
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 31 Dec 2011 16:31:54 +0100
+
 pyfll (2011.20) UNRELEASED; urgency=low
 
   * updated fll.conf, packages.d/essentials
