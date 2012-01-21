@@ -1,1 +1,25 @@
- 
+ desc = """
+	Distro specific packages for a Razor-qt desktop.
+"""
+
+packages = """
+	doublecmd
+	juffed
+	librazorqt0
+	nomacs
+	qlipper
+	qterminal
+	qupzilla
+	qxkb
+	razor-config
+	razor-data
+	razor-desktop
+	razor-panel
+	razorqt
+	razorqt-dev
+	razor-runner
+	razor-session
+	siduction-art-wallpaper
+	screengrab-qt
+"""
+
