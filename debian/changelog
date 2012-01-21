@@ -1,3 +1,9 @@
+pyfll (2011.20+nmu3) UNRELEASED; urgency=low
+
+  * add razor-qt-basic package.list
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 21 Jan 2012 13:11:27 +0100
+
 pyfll (2011.20+nmu2) UNRELEASED; urgency=low
 
   * introduce razor by touching razor-qt and distro-razor-qt

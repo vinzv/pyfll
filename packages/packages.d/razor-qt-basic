@@ -1,0 +1,23 @@
+ esc = """
+	Minimal Razor-qt desktop environment.
+"""
+
+packages = """
+	abiword
+	blueman
+	deadbeef
+	icedove
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
+	policykit-1
+	reportbug-ng
+	transmission
+	xchat
+	xournal
+	xine-ui
+	xsane
+	zenity
+	zim
+"""
+
