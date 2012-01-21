@@ -10,6 +10,7 @@ packages = """
 	qlipper
 	qterminal
 	qupzilla
+	qutim
 	qxkb
 	razor-config
 	razor-data
