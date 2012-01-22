@@ -1,3 +1,10 @@
+pyfll (2011.20+nmu7) UNRELEASED; urgency=low
+
+  * changed distro-razor-qt to razorqt-metapackage and added andromeda
+    as alternative
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 22 Jan 2012 23:41:19 +0100
+
 pyfll (2011.20+nmu6) UNRELEASED; urgency=low
 
   * adjusted package.lists for razor-qt

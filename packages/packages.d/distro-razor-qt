@@ -3,24 +3,19 @@
 """
 
 packages = """
+	#andromeda
 	doublecmd
 	juffed
-	librazorqt0
 	nomacs
+	openbox-themes 
+	obconf
 	qlipper
-	qterminal
 	qupzilla
-	qutim
 	qxkb
 	razor-config
-	razor-data
-	razor-desktop
-	razor-panel
 	razorqt
 	razorqt-dev
-	razor-runner
-	razor-session
 	siduction-art-wallpaper
-	screengrab-qt
+	screengrab
 """
 
