@@ -1,3 +1,9 @@
+pyfll (2011.20+nmu6) UNRELEASED; urgency=low
+
+  * adjusted package.lists for razor-qt
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 22 Jan 2012 02:08:33 +0100
+
 pyfll (2011.20+nmu5) UNRELEASED; urgency=low
 
   * added qutim

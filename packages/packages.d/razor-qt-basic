@@ -4,12 +4,12 @@
 
 packages = """
 	abiword
-	blueman
-	deadbeef
+	clementine
 	icedove
 	myspell-de-de
 	myspell-en-us
 	myspell-pt-br
+	openbox
 	policykit-1
 	reportbug-ng
 	transmission
