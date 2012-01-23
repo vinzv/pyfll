@@ -20,5 +20,4 @@ deps = """
 
 packages = """
 #	chromium-browser
-	policykit-1
 """
