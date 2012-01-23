@@ -4,7 +4,6 @@
 
 packages = """
 	#andromeda
-	clementine
 	doublecmd
 	juffed
 	nomacs
