@@ -1,3 +1,9 @@
+pyfll (2011.20+nmu9) UNRELEASED; urgency=low
+
+  * last changes before first initial build
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 23 Jan 2012 09:25:30 +0100
+
 pyfll (2011.20+nmu8) UNRELEASED; urgency=low
 
   * added clementine to distro-razor-qt
