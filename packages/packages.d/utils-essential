@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+	apt-file
 	anacron
 	bzip2
 	console-data
@@ -12,6 +13,8 @@ packages = """
 	firmware-linux-free
 	ffmpeg
 	gdisk
+	gvfs-bin
+	gvfs-backends
 	iptables
 	iputils-ping
 	isc-dhcp-client
@@ -19,13 +22,17 @@ packages = """
 	kbd
 	kexec-tools
 	less
+	libmtp-runtime
 	logrotate
 	mbr
 	nano
 	netbase
+	ntp
+	python-notify
 	resolvconf
 	rsync
 	rsyslog
+	scrot
 	sudo
 	wget
 	wireless-tools
