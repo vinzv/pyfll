@@ -1,3 +1,11 @@
+pyfll (2011.20+nmu15) UNRELEASED; urgency=low
+
+  * patch pyfll with upstream commit
+    0532f8c2bda946d23084fb128bf78548693d6a0f and
+    5d7a1cf859b1fc36346be786012314e0ae39a9fa
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 28 Jan 2012 10:28:14 +0100
+
 pyfll (2011.20+nmu14) UNRELEASED; urgency=low
 
   * remove falslyadded policykit-1 from lxde

@@ -4,7 +4,7 @@
 
 packages = """
 	#andromeda
-	doublecmd
+	doublecmd-qt
 	juffed
 	nomacs
 	openbox-themes 
