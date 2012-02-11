@@ -1,3 +1,9 @@
+pyfll (2011.20+nmu16) UNRELEASED; urgency=low
+
+  * swap kipi-plugins for kipi-plugins-common
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 11 Feb 2012 08:35:22 +0100
+
 pyfll (2011.20+nmu15) UNRELEASED; urgency=low
 
   * patch pyfll with upstream commit
