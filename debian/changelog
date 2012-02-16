@@ -1,3 +1,9 @@
+pyfll (2011.20+nmu17) UNRELEASED; urgency=low
+
+  * added okular-extra-backends to kde-basic
+
+ -- Ferdinand Thommes <devil@siduction.org>  Thu, 16 Feb 2012 23:29:23 +0100
+
 pyfll (2011.20+nmu16) UNRELEASED; urgency=low
 
   * swap kipi-plugins for kipi-plugins-common
