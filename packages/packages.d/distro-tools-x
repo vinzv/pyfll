@@ -6,6 +6,7 @@ packages = """
 	bluewater-manual-en
 	bluewater-manual-de
 	bluewater-manual-pt-br
+	bluewater-manual -pl
 	configure-cups
 	dnsutils
 	icedtea-plugin

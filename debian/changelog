@@ -1,3 +1,9 @@
+pyfll (2011.20+nmu18) UNRELEASED; urgency=low
+
+  * prepared for LU-release
+
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 17 Feb 2012 13:56:46 +0100
+
 pyfll (2011.20+nmu17) UNRELEASED; urgency=low
 
   * added okular-extra-backends to kde-basic
