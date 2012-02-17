@@ -1,3 +1,9 @@
+pyfll (2011.20+nmu19) UNRELEASED; urgency=low
+
+  * added bluewater-manual-pl
+
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 17 Feb 2012 14:22:23 +0100
+
 pyfll (2011.20+nmu18) UNRELEASED; urgency=low
 
   * prepared for LU-release
