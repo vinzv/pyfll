@@ -1,23 +1,23 @@
 desc = """
-	Basic GNOME desktop environment.
+	A basic LXDE desktop.
 """
 
 deps = """
 	cli
 	distro
-	distro-gnome
+	distro-lxde
 	distro-tools
 	distro-tools-x
-	gnome-essential
-	gnome-basic
 	hwsupport-essential
 	hwsupport-extra
-	hwsupport-printscan
+	hwsupport-powermanagement
+	lxde-basic
 	utils-essential
 	utils-extra
-	utils-x
+	#utils-x
 	xserver
 """
 
 packages = """
+#	chromium-browser
 """

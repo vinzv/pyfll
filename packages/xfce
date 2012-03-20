@@ -22,6 +22,8 @@ deps = """
 """
 
 packages = """
-	midori
+	iceweasel
+	qemu-kvm
+	policykit-1
 """
 

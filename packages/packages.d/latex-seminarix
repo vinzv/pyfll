@@ -1,15 +1,15 @@
- 
+
 desc = """
-	latex packages for the Seminarix DVD
+        latex packages for the Seminarix DVD
 """
 
 packages = """
-	  kile
-	  lmodern
-	  texlive-fonts-recommended
-	  texlive-humanities
-	  texlive-latex-extra
-	  texlive-lang-german
-	  texlive-latex-recommended
-	  texlive-latex-base
+          kile
+          lmodern
+          texlive-fonts-recommended
+          texlive-humanities
+          texlive-latex-extra
+          texlive-lang-german
+          texlive-latex-recommended
+          texlive-latex-base
 """

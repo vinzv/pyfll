@@ -6,10 +6,13 @@ packages = """
 	ark
 	akonadi-backend-sqlite
 	kaffeine
+	kde-config-cddb
 	kde-plasma-desktop
 	kdm
+	kgamma
+	kmenuedit
 	konversation
-	gparted
 	phonon-backend-gstreamer
 	phonon-backend-vlc
+	plasma-widgets-addons
 """

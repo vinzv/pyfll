@@ -12,4 +12,5 @@ packages = """
 	kppp
 	ksnapshot
 	okular
+	okular-extra-backends
 """

@@ -3,7 +3,12 @@ desc = """
 """
 
 packages = """
-	libxine1-xvdr
+	deadbeef
+	minitube
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
+	reportbug-ng
 	xsane
 	zenity
 	zim

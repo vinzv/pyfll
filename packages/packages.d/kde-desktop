@@ -4,9 +4,7 @@ desc = """
 
 packages = """
 	akregator
-	bluedevil
 	digikam
-	iceweasel
 	kate
 	kcharselect
 	kdemultimedia-kio-plugins
@@ -15,8 +13,9 @@ packages = """
 	kdepim-wizards
 	kdf
 	kgpg
-	kipi-plugins
+	kipi-plugins-common
 	kmail
+	kmenuedit
 	konq-plugins
 	kontact
 	kopete
@@ -24,6 +23,7 @@ packages = """
 	krusader
 	ktorrent
 	kwalletmanager
+	polkit-kde-1
 	system-config-printer-kde
 	strigi-client
 	ttf-kochi-gothic

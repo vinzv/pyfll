@@ -4,26 +4,28 @@ desc = """
 
 packages = """
 	aspell
+	apt-file
 	build-essential
 	cdebootstrap
 	cdrdao
 	cryptsetup
 	debconf-utils
-	deadbeef
 	debhelper
 	dvd+rw-tools
 	dvb-apps
 	dosfstools
 	ftp-ssl
 	genisoimage
+	imagemagick
 	iproute
 	jfsutils
+	lm-sensors
 	man-db
 	manpages
 	memtest86+
 	mlocate
-	minitube
 	module-assistant
+	nfs-common
 	ntpdate
 	ntfs-3g
 	nmap

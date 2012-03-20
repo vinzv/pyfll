@@ -1,11 +1,11 @@
-desc = """
-	Basic KDE desktop environment.
+ desc = """
+	Basic Razor-QT desktop environment.
 """
 
 deps = """
 	cli
 	distro
-	distro-kde
+	distro-razor-qt
 	distro-tools
 	distro-tools-x
 	fluxbox
@@ -13,8 +13,7 @@ deps = """
 	hwsupport-powermanagement
 	hwsupport-extra
 	hwsupport-printscan
-	kde-essential
-	kde-basic
+	razor-qt-basic
 	utils-essential
 	utils-extra
 	utils-x
@@ -23,3 +22,4 @@ deps = """
 
 packages = """
 """
+

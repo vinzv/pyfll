@@ -1,0 +1,22 @@
+ desc = """
+	Minimal Razor-qt desktop environment.
+"""
+
+packages = """
+	abiword
+	clementine
+	icedove
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
+	policykit-1
+	reportbug-ng
+	transmission
+	xchat
+	xournal
+	xine-ui
+	xsane
+	zenity
+	zim
+"""
+

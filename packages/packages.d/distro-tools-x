@@ -3,19 +3,25 @@ desc = """
 """
 
 packages = """
+	bluewater-manual-en
+	bluewater-manual-de
+	bluewater-manual-pt-br
+	bluewater-manual-pl
 	configure-cups
-	deadbeef
+	dnsutils
+	icedtea-plugin
 	fll-live-xorgconfig
 	fll-installer
 	fonts-droid
-	gnome-settings-daemon
 	install-usb-gui
 	kernel-remover
 	pywwetha
+	qemu-kvm
 	siduction-irc
-#	siduction-manual-en
 	siguibui
 	setpassword
 	sidu-installer
 	xdg-browser-launcher
 """
+
+	

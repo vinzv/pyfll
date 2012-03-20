@@ -1,0 +1,21 @@
+ desc = """
+	Distro specific packages for a Razor-qt desktop.
+"""
+
+packages = """
+	#andromeda
+	doublecmd-qt
+	juffed
+	nomacs
+	openbox-themes 
+	obconf
+	qlipper
+	qupzilla
+	qxkb
+	razor-config
+	razorqt
+	razorqt-dev
+	siduction-art-wallpaper
+	screengrab
+"""
+
