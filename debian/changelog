@@ -1,3 +1,10 @@
+pyfll (2012.1) UNRELEASED; urgency=low
+
+  * Bump debhelper to (>=9)
+  * Bump Standards to 3.9.3
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 20 Mar 2012 18:19:55 +0100
+
 pyfll (2011.20+nmu19) UNRELEASED; urgency=low
 
   * added bluewater-manual-pl
