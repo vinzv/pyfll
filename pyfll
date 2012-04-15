@@ -787,8 +787,8 @@ class FLLBuilder(object):
         self._execInChroot(arch, aptget)
 
 
-    def __cdebBootStrap(self, arch, dir, mirror, codename):
-        '''Bootstrap a debian system with cdebootstrap.'''
+    '''def __cdebBootStrap(self, arch, dir, mirror, codename):
+        Bootstrap a debian system with cdebootstrap.
         cmd = ['cdebootstrap', '--arch=%s' % arch, '--include=apt-utils,gnupg,bzip2',
                '--flavour=minimal', codename, dir, mirror]
 
@@ -800,7 +800,7 @@ class FLLBuilder(object):
         self._execCmd(cmd)
 
         cmd = 'dpkg --purge cdebootstrap-helper-rc.d'
-        self._execInChroot(arch, cmd.split())
+        self._execInChroot(arch, cmd.split())'''
 
 
     def __debBootStrap(self, arch, dir, mirror, codename):
@@ -828,7 +828,8 @@ class FLLBuilder(object):
 
         self.log.info('bootstrapping %s %s %s...' % (distro,codename,arch))
 
-        bootstrapper = self.conf['options'].get('bootstrapper')
+        '''bootstrapper = self.conf['options'].get('bootstrapper')'''
+        bootstrapper = 'debootstrap'
         if bootstrapper == 'debootstrap':
             self.__debBootStrap(arch, dir, mirror, codename)
         else:
