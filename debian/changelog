@@ -1,9 +1,13 @@
 pyfll (2012.1+nmu1) UNRELEASED; urgency=low
 
+  [ Torsten Wohlfarth ]
   * Non-maintainer upload.
   * Hardcoded debootstrap in pyfll.
 
- -- Torsten Wohlfarth <towo@siduction.org>  Sun, 15 Apr 2012 21:55:20 +0200
+  [ Ferdinand Thommes ]
+  * pushing changes for razorqt, incl. fll.conf and distro-razor-qt
+
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 24 Apr 2012 20:46:19 +0200
 
 pyfll (2012.1) UNRELEASED; urgency=low
 

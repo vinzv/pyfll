@@ -3,8 +3,9 @@
 """
 
 packages = """
-	#andromeda
-	doublecmd-qt
+	andromeda
+	#doublecmd-qt
+	desktop-defaults-razorqt
 	juffed
 	nomacs
 	openbox-themes 
@@ -12,9 +13,18 @@ packages = """
 	qlipper
 	qupzilla
 	qxkb
-	razor-config
+	librazorqt0
 	razorqt
+	razorqt-appswitcher
+	razorqt-config
+	razorqt-data 
+	razorqt-desktop
 	razorqt-dev
+	razorqt-panel
+	razorqt-policykit-agent
+	razorqt-power
+	razorqt-runner
+	razorqt-session
 	siduction-art-wallpaper
 	screengrab
 """
