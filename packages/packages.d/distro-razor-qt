@@ -4,22 +4,22 @@
 
 packages = """
 	andromeda
-	#doublecmd-qt
 	desktop-defaults-razorqt
 	juffed
 	nomacs
-	openbox-themes 
+	openbox-themes
 	obconf
 	qlipper
 	qupzilla
 	qxkb
 	librazorqt0
+	lightdm
+	lightdm-qt-greeter
 	razorqt
 	razorqt-appswitcher
 	razorqt-config
-	razorqt-data 
+	razorqt-data
 	razorqt-desktop
-	razorqt-dev
 	razorqt-panel
 	razorqt-policykit-agent
 	razorqt-power

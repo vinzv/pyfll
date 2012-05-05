@@ -1,3 +1,11 @@
+pyfll (2012.1+nmu2) UNRELEASED; urgency=low
+
+  * kelmos latest changes
+  * remove hardcoded debootstrap, modified fll.conf should solve this
+  * dead languages removed 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 05 May 2012 16:59:45 +0200
+
 pyfll (2012.1+nmu1) UNRELEASED; urgency=low
 
   [ Torsten Wohlfarth ]

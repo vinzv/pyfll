@@ -1,0 +1,25 @@
+#!/bin/sh -e
+
+say() {
+	echo "I: $@..."
+}
+
+do_postinst() {
+    cd /usr/share/xsessions
+    rm -f razor-*.desktop
+    rm -f openbox-*.desktop
+    rm -f lightdm-xsession.desktop
+    ln -s razor.desktop lightdm-xsession.desktop
+    cd -
+}
+
+case "${1}" in
+	postinst)
+		do_postinst
+		;;
+	*)
+		echo "Usage: ${0} postinst"
+		;;
+esac
+
+:

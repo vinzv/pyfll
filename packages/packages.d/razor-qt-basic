@@ -3,18 +3,17 @@
 """
 
 packages = """
-	abiword
-	clementine
 	icedove
+	moc
+	moc-ffmpeg-plugin
 	myspell-de-de
 	myspell-en-us
 	myspell-pt-br
 	policykit-1
-	reportbug-ng
-	transmission
+	rtorrent
+	vlc
 	xchat
 	xournal
-	xine-ui
 	xsane
 	zenity
 	zim
