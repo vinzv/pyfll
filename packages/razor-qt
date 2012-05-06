@@ -15,7 +15,6 @@ deps = """
 	razor-qt-basic
 	utils-essential
 	utils-extra
-	utils-x
 	xserver
 """
 

@@ -1,3 +1,10 @@
+pyfll (2012.1+nmu6) UNRELEASED; urgency=low
+
+  * deadbeef out, qmmp in; utils-x out, included in distro-razor-qt;
+    rtorrent out, transmission-qt in;
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 06 May 2012 22:29:12 +0200
+
 pyfll (2012.1+nmu5) UNRELEASED; urgency=low
 
   * switched to lightdm-gtk-greeter, the qt counterpart seems

@@ -10,7 +10,8 @@ packages = """
 	myspell-en-us
 	myspell-pt-br
 	policykit-1
-	rtorrent
+	reportbug-ng
+	transmission-qt
 	vlc
 	xchat
 	xournal

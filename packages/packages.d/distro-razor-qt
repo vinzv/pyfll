@@ -10,6 +10,7 @@ packages = """
 	openbox-themes
 	obconf
 	qlipper
+	qmmp
 	qupzilla
 	qxkb
 	librazorqt0
