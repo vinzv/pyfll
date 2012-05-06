@@ -11,7 +11,6 @@ do_postinst() {
     rm -f lightdm-xsession.desktop
     ln -s razor.desktop lightdm-xsession.desktop
     cd -
-    echo "siducer:siducer" | chpasswd
 }
 
 case "${1}" in
