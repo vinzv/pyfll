@@ -14,7 +14,7 @@ packages = """
 	qxkb
 	librazorqt0
 	lightdm
-	lightdm-qt-greeter
+	lightdm-gtk-greeter
 	razorqt
 	razorqt-appswitcher
 	razorqt-config
