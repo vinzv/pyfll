@@ -1,3 +1,9 @@
+pyfll (2012.1+nmu4) UNRELEASED; urgency=low
+
+  * commented smb* for razor
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 06 May 2012 11:59:59 +0200
+
 pyfll (2012.1+nmu3) UNRELEASED; urgency=low
 
   * commented icedtea-plugin, it has too many friends (openjdk-6-jre
