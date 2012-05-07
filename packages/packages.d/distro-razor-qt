@@ -44,17 +44,3 @@ packages = """
 	screengrab
 	system-config-printer-udev
 """
-
-	
-	ghostscript-cups
-	ghostscript-x
-	hpijs-ppds
-	hplip
-	openprinting-ppds
-	printer-driver-min12xxw
-	printer-driver-pnm2ppa
-	sane
-	sane-utils
-	libsane-extras
-	printer-driver-splix
-	system-config-printer-udev
