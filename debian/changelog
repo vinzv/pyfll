@@ -1,3 +1,10 @@
+pyfll (2012.1+nmu8) UNRELEASED; urgency=low
+
+  * removed hwsupport-printscan from packages for razor-qt and added
+    essential print-stuff to distro-razor-qt
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 07 May 2012 12:52:15 +0200
+
 pyfll (2012.1+nmu7) UNRELEASED; urgency=low
 
   * removed xsane, swapped xchat for quassel

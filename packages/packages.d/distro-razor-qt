@@ -4,7 +4,17 @@
 
 packages = """
 	andromeda
+	cups
+	cups-client
+	cups-bsd
+	printer-driver-gutenprint
+	foomatic-db
+	foomatic-db-engine
+	foomatic-db-gutenprint
+	foomatic-filters
 	desktop-defaults-razorqt
+	ghostscript-cups
+	ghostscript-x
 	juffed
 	nomacs
 	openbox-themes
@@ -16,6 +26,7 @@ packages = """
 	librazorqt0
 	lightdm
 	lightdm-gtk-greeter
+	openprinting-ppds
 	razorqt
 	razorqt-appswitcher
 	razorqt-config
@@ -26,7 +37,24 @@ packages = """
 	razorqt-power
 	razorqt-runner
 	razorqt-session
+	sane
+	sane-utils
+	libsane-extras
 	siduction-art-wallpaper
 	screengrab
+	system-config-printer-udev
 """
 
+	
+	ghostscript-cups
+	ghostscript-x
+	hpijs-ppds
+	hplip
+	openprinting-ppds
+	printer-driver-min12xxw
+	printer-driver-pnm2ppa
+	sane
+	sane-utils
+	libsane-extras
+	printer-driver-splix
+	system-config-printer-udev
