@@ -3,7 +3,6 @@
 """
 
 packages = """
-	icedove
 	moc
 	moc-ffmpeg-plugin
 	myspell-de-de
@@ -13,6 +12,7 @@ packages = """
 	quassel
 	reportbug-ng
 	transmission-qt
+	trojita
 	vlc
 	xournal
 	zenity

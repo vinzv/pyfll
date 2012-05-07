@@ -1,3 +1,9 @@
+pyfll (2012.1+nmu9) UNRELEASED; urgency=low
+
+  * icedove out, added trojita instead
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 07 May 2012 14:47:50 +0200
+
 pyfll (2012.1+nmu8) UNRELEASED; urgency=low
 
   * removed hwsupport-printscan from packages for razor-qt and added
