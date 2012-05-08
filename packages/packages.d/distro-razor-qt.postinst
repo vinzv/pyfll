@@ -8,8 +8,8 @@ do_postinst() {
     cd /usr/share/xsessions
     rm -f razor-*.desktop
     rm -f openbox-*.desktop
-    rm -f lightdm-xsession.desktop
-    ln -s razor.desktop lightdm-xsession.desktop
+    rm -f slim-xsession.desktop
+    ln -s razor.desktop slim-xsession.desktop
     cd -
 }
 

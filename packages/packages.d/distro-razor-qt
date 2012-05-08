@@ -45,6 +45,6 @@ packages = """
 	libsane-extras
 	siduction-art-wallpaper
 	screengrab
-	slim								#for testing purposes
+	slim
 	system-config-printer-udev
 """
