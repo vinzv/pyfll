@@ -1,3 +1,9 @@
+pyfll (2012.1+nmu15) UNRELEASED; urgency=low
+
+  * revert slim back to lightdm
+
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 08 May 2012 23:45:46 +0200
+
 pyfll (2012.1+nmu14) UNRELEASED; urgency=low
 
   * altered distro-razor-qt.postinst for slim

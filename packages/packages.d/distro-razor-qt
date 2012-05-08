@@ -27,8 +27,8 @@ packages = """
 	qupzilla
 	qxkb
 	librazorqt0
-	#lightdm		#					disabled while testing slim
-	#lightdm-gtk-greeter	#			disabled while testing slim
+	lightdm
+	lightdm-gtk-greeter
 	openprinting-ppds
 	razorqt
 	razorqt-appswitcher
@@ -45,6 +45,5 @@ packages = """
 	libsane-extras
 	siduction-art-wallpaper
 	screengrab
-	slim
 	system-config-printer-udev
 """
