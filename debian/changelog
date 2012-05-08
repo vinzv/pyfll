@@ -1,3 +1,9 @@
+pyfll (2012.1+nmu10) UNRELEASED; urgency=low
+
+  * purged zenity and zim
+
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 08 May 2012 13:10:42 +0200
+
 pyfll (2012.1+nmu9) UNRELEASED; urgency=low
 
   * icedove out, added trojita instead
