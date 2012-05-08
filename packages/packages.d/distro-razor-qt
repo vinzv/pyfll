@@ -20,6 +20,7 @@ packages = """
 	openbox-themes
 	obconf
 	oxygen-icon-theme
+	qasmixer
 	qlipper
 	qmmp
 	qt4-qtconfig
