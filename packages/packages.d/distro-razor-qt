@@ -19,8 +19,10 @@ packages = """
 	nomacs
 	openbox-themes
 	obconf
+	oxygen-icon-theme
 	qlipper
 	qmmp
+	qt4-qtconfig
 	qupzilla
 	qxkb
 	librazorqt0
