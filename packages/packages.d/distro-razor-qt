@@ -46,4 +46,5 @@ packages = """
 	siduction-art-wallpaper
 	screengrab
 	system-config-printer-udev
+	xscreensaver
 """
