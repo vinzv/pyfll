@@ -1,3 +1,9 @@
+pyfll (2012.1+nmu17) UNRELEASED; urgency=low
+
+  * added xfe as possible editor instead of andromeda
+
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 11 May 2012 02:20:36 +0200
+
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
   * added xscreensaver
