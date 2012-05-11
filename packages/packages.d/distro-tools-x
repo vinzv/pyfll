@@ -3,10 +3,7 @@ desc = """
 """
 
 packages = """
-	bluewater-manual-en
-	bluewater-manual-de
-	bluewater-manual-pt-br
-	bluewater-manual-pl
+	bluewater-manual
 	configure-cups
 	dnsutils
 	#icedtea-plugin
