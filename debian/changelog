@@ -1,9 +1,10 @@
-pyfll (2012.1+nmu18) UNRELEASED; urgency=low
+pyfll (2012.1+nmu19) UNRELEASED; urgency=low
 
   * added xfe as possible editor instead of andromeda
   * introduced bluewater metapackage in distro-tools-x
+  * introduced sidu-disk-center to distro-tools-x
 
- -- Ferdinand Thommes <devil@siduction.org>  Fri, 11 May 2012 23:09:33 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 12 May 2012 08:52:25 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 

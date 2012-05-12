@@ -15,6 +15,7 @@ packages = """
 	pywwetha
 	qemu-kvm
 	siduction-irc
+	sidu-disk-center
 	siguibui
 	setpassword
 	sidu-installer
