@@ -4,7 +4,6 @@ desc = """
 
 packages = """
 	deadbeef
-	#minitube (broken)
 	myspell-de-de
 	myspell-en-us
 	myspell-pt-br

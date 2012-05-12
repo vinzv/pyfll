@@ -2224,6 +2224,7 @@ class FLLBuilder(object):
         cmdline =  self._configBootCmdline()
 
         distro = self.conf['distro']['FLL_DISTRO_NAME']
+        flavour = self.conf['packages']['profile']
 
         isolinuxcfg = open(os.path.join(syslinux_dir, 'isolinux.cfg'), 'w')
         isolinuxcfg.write('display isolinux.msg\n')
@@ -2246,11 +2247,11 @@ class FLLBuilder(object):
                     raise FllError
 
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
+            isolinuxcfg.write('label start %s_%s_(%s)\n' % (distro, cpu, flavour))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label start_%s_%s_%s  (Safe Graphics Settings)\n' % (distro, cpu, k))
+            isolinuxcfg.write('label start_%s_%s_%s  (Safe Graphics Settings)\n' % (distro, cpu, flavour))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll nomodeset xmodule=vesa %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
