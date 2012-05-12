@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu19) UNRELEASED; urgency=low
+pyfll (2012.1+nmu20) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -9,7 +9,10 @@ pyfll (2012.1+nmu19) UNRELEASED; urgency=low
   * Modification to the *.conf files. Introducing release repo, desperadobeta,
     some whitespaces  
 
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 12 May 2012 08:52:25 +0200
+  [ Torsten Wohlfarth ]
+  * changed the safe settings boot part
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 12 May 2012 18:46:36 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
