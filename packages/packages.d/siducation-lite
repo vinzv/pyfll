@@ -1,0 +1,14 @@
+desc = """
+	Common packages for both versions of siducation.
+"""
+
+packages = """
+	abiword
+	bluefish
+	galculator
+	gelemental
+	geogebra-gnome
+	gnumeric
+	lybniz
+	meld
+"""
