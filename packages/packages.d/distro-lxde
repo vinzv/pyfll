@@ -5,11 +5,8 @@ desc = """
 packages = """
 	desktop-defaults-lxde
 	gksu
-	lightdm
-#	lxdm
-#	siduction-art-lxde
-	siduction-art-wallpaper
-#	slim
-#	gdm3
 	gparted
+#	lightdm
+	siduction-art-wallpaper
+	slim
 """
