@@ -3,19 +3,8 @@ desc = """
 """
 
 packages = """
-	abiword
-	#alarm-clock-applet
 	blueman
-	brasero
-	#conky
-	deadbeef
-	evince-gtk
-	fpm2
-	galculator
 	galternatives
-	geany
-	gnumeric
-	gtk-chtheme
 	gtk2-engines
 	gvfs-backends
 	gvfs-fuse
@@ -27,17 +16,9 @@ packages = """
 	myspell-de-de
 	myspell-en-us
 	myspell-pt-br
-	osmo
 	policykit-1
 	python-vte
 	reportbug
-	sylpheed-i18n
-	transmission
-	tuxcmd-modules
 	xchat
-	xine-ui
-	xsane
 	zenity
-	zim
-	gfxboot
 """
