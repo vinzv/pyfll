@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-	apt-file
 	anacron
 	bzip2
 	console-data

@@ -4,7 +4,6 @@ desc = """
 
 packages = """
 	audacity
-	apt-show-versions
 	bluefish
 	#chromium
 	default-jre
