@@ -1,0 +1,20 @@
+desc = """
+	Extra packages for the LXDE desktop environment.
+"""
+
+packages = """
+	audacious
+	brasero
+	claws-mail-i18n
+	evince-gtk
+	fpm2
+	galculator
+	geany
+	gnome-mplayer
+	osmo
+	putty
+	transmission
+	tuxcmd-modules
+	xsane
+	zim
+"""
