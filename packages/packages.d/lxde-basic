@@ -39,4 +39,5 @@ packages = """
 	xsane
 	zenity
 	zim
+	gfxboot
 """
