@@ -19,6 +19,6 @@ packages = """
 	lazarus
 	pauker
 	viking
-	#wxmaxima
+	wxmaxima
 	xplanet
 """

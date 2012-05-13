@@ -35,5 +35,5 @@ packages = """
 	tuxguitar
 	vlc
 	vym
-	wxmaxima
+	#wxmaxima
 """
