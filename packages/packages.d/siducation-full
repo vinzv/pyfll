@@ -1,0 +1,40 @@
+desc = """
+	Common packages for both versions of siducation.
+"""
+
+packages = """
+	avogadro
+	blender
+	canorus
+	celestia
+	chemtool
+	childsplay
+	geda
+	geogebra-kde
+	gimp
+	hydrogen
+	inkscape
+	italc-master
+	kalzium
+	kate
+	katomic
+	kcalc
+	kdenlive
+	kig
+	kmplot
+	kstars
+	kturtle
+	libreoffice
+	libreoffice-kde
+	lilypond
+	miro
+	mnemosyne
+	rosegarden
+	scidavis
+	scribus-ng
+	stellarium
+	tuxguitar
+	vlc
+	vym
+	wxmaxima
+"""
