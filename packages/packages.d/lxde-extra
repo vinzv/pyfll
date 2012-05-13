@@ -11,6 +11,7 @@ packages = """
 	galculator
 	geany
 	gnome-mplayer
+	gpodder
 	osmo
 	putty
 	transmission
