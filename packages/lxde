@@ -12,6 +12,7 @@ deps = """
 	hwsupport-extra
 	hwsupport-powermanagement
 	lxde-basic
+	lxde-extra
 	utils-essential
 	utils-extra
 	#utils-x
@@ -19,5 +20,4 @@ deps = """
 """
 
 packages = """
-#	chromium-browser
 """
