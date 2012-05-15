@@ -3,17 +3,17 @@
 """
 
 packages = """
+	icedove
 	moc
 	moc-ffmpeg-plugin
 	myspell-de-de
 	myspell-en-us
 	myspell-pt-br
+	pdfviewer
 	policykit-1
 	quassel
 	reportbug-ng
 	transmission-qt
-	trojita
 	vlc
-	xournal
 """
 
