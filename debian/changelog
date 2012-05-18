@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu22) UNRELEASED; urgency=low
+pyfll (2012.1+nmu23) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -15,8 +15,10 @@ pyfll (2012.1+nmu22) UNRELEASED; urgency=low
   [ Ferdinand Thommes ]
   * added pdfviewer for xournal, readded icedove
   * edited distroname in all relevant foo.conf files
+  * added net-tools to utils-extra as netbase does not pull it in
+    anymore
 
- -- Ferdinand Thommes <devil@siduction.org>  Tue, 15 May 2012 22:44:32 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 18 May 2012 10:43:35 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 

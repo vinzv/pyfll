@@ -26,6 +26,7 @@ packages = """
 	mbr
 	nano
 	netbase
+	net-tools
 	ntp
 	python-notify
 	resolvconf
