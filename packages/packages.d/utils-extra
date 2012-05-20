@@ -5,6 +5,7 @@ desc = """
 packages = """
 	aspell
 	apt-file
+	apt-listchanges
 	apt-show-versions
 	build-essential
 	cdebootstrap
