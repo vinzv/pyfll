@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu23) UNRELEASED; urgency=low
+pyfll (2012.1+nmu24) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -18,7 +18,12 @@ pyfll (2012.1+nmu23) UNRELEASED; urgency=low
   * added net-tools to utils-extra as netbase does not pull it in
     anymore
 
- -- Ferdinand Thommes <devil@siduction.org>  Fri, 18 May 2012 10:43:35 +0200
+  [ Torsten Wohlfarth ]
+  * add network-manager-gnome
+  * removed qemu-kvm
+  * fixed the safe graphics settings
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sun, 20 May 2012 21:34:15 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 

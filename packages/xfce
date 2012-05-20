@@ -23,7 +23,7 @@ deps = """
 
 packages = """
 	iceweasel
-	qemu-kvm
 	policykit-1
+	network-manager-gnome
 """
 

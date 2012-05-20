@@ -2146,7 +2146,7 @@ class FLLBuilder(object):
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             grubcfg.write('\nmenuentry \"%s %s (%s) Safe Graphics Settings\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
-            grubcfg.write('     linux /boot/%s boot=fll quiet nomodeset $kopts xmodule=vesa %s\n' % (vmlinuz_r, cmdline))
+            grubcfg.write('     linux /boot/%s boot=fll quiet i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 $kopts xmodule=vesa %s\n' % (vmlinuz_r, cmdline))
             grubcfg.write('     initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
@@ -2251,9 +2251,9 @@ class FLLBuilder(object):
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label start_%s_%s_%s  (Safe Graphics Settings)\n' % (distro, cpu, flavour))
+            isolinuxcfg.write('label start_%s_%s_(%s)  (Safe Graphics Settings)\n' % (distro, cpu, flavour))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll nomodeset xmodule=vesa %s\n' % (initrd, cmdline))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
             isolinuxmsg.write('%s_%s_(%s)\n' % (distro, cpu, k))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
