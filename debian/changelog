@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu25) UNRELEASED; urgency=low
+pyfll (2012.1+nmu26) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -25,8 +25,9 @@ pyfll (2012.1+nmu25) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * finalized packages list for razor mostly, added qtim
+  * added qtfm as filemanager
 
- -- Ferdinand Thommes <devil@siduction.org>  Mon, 21 May 2012 11:01:50 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 21 May 2012 18:46:41 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 

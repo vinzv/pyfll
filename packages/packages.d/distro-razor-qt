@@ -24,8 +24,9 @@ packages = """
 	qlipper
 	qmmp
 	qt4-qtconfig
+	qtfm
 	qupzilla
-	#qtim  				activate, if towo builds it
+	qtim
 	qxkb
 	librazorqt0
 	lightdm
@@ -47,6 +48,6 @@ packages = """
 	siduction-art-wallpaper
 	screengrab
 	system-config-printer-udev
-	xfe
+	#xfe  		let's look at qtfm
 	xscreensaver
 """
