@@ -3,7 +3,7 @@
 """
 
 packages = """
-	andromeda
+	#andromeda  		for later use maybe, for now its xfe
 	cups
 	cups-client
 	cups-bsd
@@ -25,6 +25,7 @@ packages = """
 	qmmp
 	qt4-qtconfig
 	qupzilla
+	#qtim  				activate, if towo builds it
 	qxkb
 	librazorqt0
 	lightdm
