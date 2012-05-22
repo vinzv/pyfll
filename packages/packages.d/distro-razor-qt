@@ -3,7 +3,6 @@
 """
 
 packages = """
-	#andromeda  		for later use maybe, for now its xfe
 	cups
 	cups-client
 	cups-bsd
@@ -46,6 +45,7 @@ packages = """
 	sane-utils
 	libsane-extras
 	siduction-art-wallpaper
+	silicon
 	screengrab
 	system-config-printer-udev
 	#xfe  		let's look at qtfm
