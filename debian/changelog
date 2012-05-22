@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu28) UNRELEASED; urgency=low
+pyfll (2012.1+nmu29) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -28,8 +28,9 @@ pyfll (2012.1+nmu28) UNRELEASED; urgency=low
   * added qtfm as filemanager
   * added silicon, synched kde-lists
   * fixed typo qtim <=> qutim
+  * added razorqt entries to razorqt-foo.conf
 
- -- Ferdinand Thommes <devil@siduction.org>  Tue, 22 May 2012 13:38:32 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Tue, 22 May 2012 13:50:56 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
