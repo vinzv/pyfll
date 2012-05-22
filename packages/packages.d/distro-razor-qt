@@ -25,7 +25,7 @@ packages = """
 	qt4-qtconfig
 	qtfm
 	qupzilla
-	qtim
+	qutim
 	qxkb
 	librazorqt0
 	lightdm
