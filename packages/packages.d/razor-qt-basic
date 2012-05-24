@@ -15,6 +15,7 @@ packages = """
 	reportbug-ng
 	transmission-qt
 	vlc
+	xchat
 	zim
 """
 
