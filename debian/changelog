@@ -30,6 +30,9 @@ pyfll (2012.1+nmu29) UNRELEASED; urgency=low
   * fixed typo qtim <=> qutim
   * added razorqt entries to razorqt-foo.conf
 
+  [ siduction builders ]
+  * qterminal added
+
  -- Ferdinand Thommes <devil@siduction.org>  Tue, 22 May 2012 13:50:56 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
