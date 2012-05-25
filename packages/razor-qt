@@ -7,7 +7,7 @@ deps = """
 	distro
 	distro-razor-qt
 	distro-tools
-	distro-tools-x
+	distro-tools-razorqt-x
 	hwsupport-essential
 	hwsupport-powermanagement
 	hwsupport-extra
