@@ -14,6 +14,7 @@ packages = """
 	desktop-defaults-razorqt
 	ghostscript-cups
 	ghostscript-x
+	gnome-icon-theme
 	juffed
 	nomacs
 	openbox-themes

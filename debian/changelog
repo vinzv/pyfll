@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu30) UNRELEASED; urgency=low
+pyfll (2012.1+nmu31) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -38,7 +38,10 @@ pyfll (2012.1+nmu30) UNRELEASED; urgency=low
   * added kvirc, siduction-irc and zenity to razorqt
   * removed flavour in gfxboot (pyfll)
 
- -- Torsten Wohlfarth <towo@siduction.org>  Sun, 27 May 2012 18:49:19 +0200
+  [ Ferdinand Thommes ]
+  * lets try out gnome-icon-theme for icons in gfxboot
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 27 May 2012 22:06:27 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
