@@ -4,6 +4,7 @@
 
 packages = """
 	icedove
+	kvirc
 	moc
 	moc-ffmpeg-plugin
 	myspell-de-de
@@ -11,7 +12,6 @@ packages = """
 	myspell-pt-br
 	pdfviewer
 	policykit-1
-	quassel
 	reportbug-ng
 	transmission-qt
 	vlc

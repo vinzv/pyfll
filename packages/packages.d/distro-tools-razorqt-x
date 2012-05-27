@@ -12,13 +12,15 @@ packages = """
 	fonts-droid
 	install-usb-gui
 	kernel-remover
+	kvirc
 	pywwetha
-	#siduction-irc
+	siduction-irc
 	sidu-disk-center
 	siguibui
 	setpassword
 	sidu-installer
 	xdg-browser-launcher
+	zenity
 """
 
 	
