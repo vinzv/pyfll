@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu31) UNRELEASED; urgency=low
+pyfll (2012.1+nmu32) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -41,7 +41,10 @@ pyfll (2012.1+nmu31) UNRELEASED; urgency=low
   [ Ferdinand Thommes ]
   * lets try out gnome-icon-theme for icons in gfxboot
 
- -- Ferdinand Thommes <devil@siduction.org>  Sun, 27 May 2012 22:06:27 +0200
+  [ siduction builders ]
+  * packgages.d/razor : art-wallpaper -> art-razor 
+
+ -- siduction builders <packaging@siduction.org>  Mon, 28 May 2012 16:57:27 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
