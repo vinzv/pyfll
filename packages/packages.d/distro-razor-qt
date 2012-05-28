@@ -46,7 +46,7 @@ packages = """
 	sane
 	sane-utils
 	libsane-extras
-	siduction-art-razorqt
+	siduction-art-wallpaper
 	silicon
 	screengrab
 	system-config-printer-udev

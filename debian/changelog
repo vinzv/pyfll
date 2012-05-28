@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu32) UNRELEASED; urgency=low
+pyfll (2012.1+nmu33) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -44,7 +44,10 @@ pyfll (2012.1+nmu32) UNRELEASED; urgency=low
   [ siduction builders ]
   * packgages.d/razor : art-wallpaper -> art-razor 
 
- -- siduction builders <packaging@siduction.org>  Mon, 28 May 2012 16:57:27 +0200
+  [ Ferdinand Thommes ]
+  * added dbus-x11 and gnome-icon-theme
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 28 May 2012 23:50:38 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 

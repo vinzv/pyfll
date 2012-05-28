@@ -3,6 +3,7 @@
 """
 
 packages = """
+	dbus-x11
 	icedove
 	kvirc
 	moc
