@@ -5,13 +5,13 @@
 deps = """
 	cli
 	distro
-	distro-razor-qt
+	distro-rqt
 	distro-tools
-	distro-tools-razorqt-x
+	distro-tools-rqt-x
 	hwsupport-essential
 	hwsupport-powermanagement
 	hwsupport-extra
-	razor-qt-basic
+	rqt-basic
 	utils-essential
 	utils-extra
 	xserver
