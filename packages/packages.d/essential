@@ -31,8 +31,8 @@ i386 = """
 
 amd64 = """
     grub-pc
-    #grub-efi-amd64-bin
-    #efibootmgr
+    grub-efi-amd64-bin
+    efibootmgr
     mtools
     syslinux
 """
