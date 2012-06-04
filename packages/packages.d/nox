@@ -7,21 +7,12 @@ packages = """
 
 	cone
 	cmus
-	exiv2
 	guacamole
 	newsbeuter
 	podget
 	rtorrent		
-	tree
-	python-apt
-	python-configobj 
-	debootstrap
-	genisoimage 
-	syslinux-common
-	python-fll
-	reprepro
-	xorriso
-	git
-	
+	scrot
+
+
 """
 

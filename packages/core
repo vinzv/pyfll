@@ -12,6 +12,8 @@ deps = """
 	hwsupport-extra
 	hwsupport-powermanagement
 	nox
+	nox-tools
+	nox-rescue
 	utils-essential
 	utils-extra
 
