@@ -1,0 +1,26 @@
+desc = """
+        no X tools.
+"""
+
+packages = """
+
+	denyhosts
+	exiv2
+	iftop
+	iotop
+	scrot
+	tmux
+	vnstat
+        git
+	python-apt
+        python-configobj
+        debootstrap
+        genisoimage
+        syslinux-common
+        python-fll
+        reprepro
+        xorriso
+        
+       
+"""
+

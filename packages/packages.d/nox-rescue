@@ -1,0 +1,25 @@
+desc = """
+	no X rescue.
+"""
+
+packages = """
+
+	chkrootkit
+	clamav
+	cmospwd
+	ddrescue
+	encfs
+	foremost
+	fuse-utils
+	gptsync
+	hddtemp
+	hdparm
+	john
+	partimage
+	rkhunter
+	sdparm
+	smartmontools
+
+
+"""
+
