@@ -10,6 +10,7 @@ packages = """
 	build-essential
 	cdebootstrap
 	cdrdao
+	cifs-utils
 	cryptsetup
 	debconf-utils
 	debhelper
@@ -34,7 +35,6 @@ packages = """
 	pwgen
 	reiserfsprogs
 	sshfs
-	cifs-tools
 	strace
 	testdisk
 	tofrodos
