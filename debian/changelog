@@ -51,9 +51,10 @@ pyfll (2012.1+nmu36) UNRELEASED; urgency=low
 
   [ Torsten Wohlfarth ]
   * removed module-assistant
-  * removed reportbug-ng from utils-x
+  * removed reportbug-ng from utils-x it pulls qt4
   * removed pragha, deadbeef and iceweasel from xfce
-  * added chromium to xfce
+  * added chromium and reportbug to xfce
+  * added cifs-utils to utils-extra
 
  -- Torsten Wohlfarth <towo@siduction.org>  Tue, 12 Jun 2012 17:19:53 +0200
 
