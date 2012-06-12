@@ -24,6 +24,7 @@ packages = """
 	ktorrent
 	kwalletmanager
 	polkit-kde-1
+	reportbug-ng
 	system-config-printer-kde
 	strigi-client
 	ttf-kochi-gothic

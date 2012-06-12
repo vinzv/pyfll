@@ -22,7 +22,6 @@ deps = """
 """
 
 packages = """
-	iceweasel
 	policykit-1
 	network-manager-gnome
 """

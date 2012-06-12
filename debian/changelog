@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu35) UNRELEASED; urgency=low
+pyfll (2012.1+nmu36) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -49,7 +49,13 @@ pyfll (2012.1+nmu35) UNRELEASED; urgency=low
   * readded siduction-art-razorqt
   * uncommented grub-efi-amd64-bin und efibootmgr in essentials
 
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 02 Jun 2012 14:37:07 +0200
+  [ Torsten Wohlfarth ]
+  * removed module-assistant
+  * removed reportbug-ng from utils-x
+  * removed pragha, deadbeef and iceweasel from xfce
+  * added chromium to xfce
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Tue, 12 Jun 2012 17:19:53 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 

@@ -4,6 +4,8 @@ desc = """
 
 
 packages = """
+        chromium
+        chromium-l10n
         desktop-file-utils
         gconf2
         gksu

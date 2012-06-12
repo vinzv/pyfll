@@ -30,6 +30,7 @@ packages = """
 	xserver-xorg-video-qxl
 	xserver-xorg-video-intel
 	xserver-xorg-video-fbdev
+	xserver-xorg-video-vmware
 	xinit
 	xutils
 """

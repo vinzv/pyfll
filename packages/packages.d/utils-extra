@@ -26,7 +26,6 @@ packages = """
 	manpages
 	memtest86+
 	mlocate
-	module-assistant
 	nfs-common
 	ntpdate
 	ntfs-3g
@@ -35,8 +34,7 @@ packages = """
 	pwgen
 	reiserfsprogs
 	sshfs
-	#smbclient
-	#smbfs
+	cifs-tools
 	strace
 	testdisk
 	tofrodos
