@@ -12,6 +12,7 @@ packages = """
 	cdrdao
 	cifs-utils
 	cryptsetup
+	ddrescue
 	debconf-utils
 	debhelper
 	dvd+rw-tools
@@ -19,6 +20,7 @@ packages = """
 	dosfstools
 	ftp-ssl
 	genisoimage
+	hdparm
 	imagemagick
 	iproute
 	jfsutils
