@@ -3,17 +3,19 @@ desc = """
 """
 
 packages = """
-	audacious
 	brasero
 	claws-mail-i18n
+	clipit
 	evince-gtk
 	fpm2
 	galculator
 	geany
-	gnome-mplayer
 	gpodder
 	osmo
 	putty
+	radiotray
+	tilda
 	transmission
 	tuxcmd-modules
+	xnoise
 """
