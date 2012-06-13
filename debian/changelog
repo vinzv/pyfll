@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu41) UNRELEASED; urgency=low
+pyfll (2012.1+nmu42) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -64,7 +64,10 @@ pyfll (2012.1+nmu41) UNRELEASED; urgency=low
   * changed ddrescue for gddrescue; added ptbatterysystemtray to distro-
     rqt
 
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 13 Jun 2012 11:57:27 +0200
+  [ Torsten Wohlfarth ]
+  * changed xfce4-powermanager to xfce4-power-manager-plugins
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Wed, 13 Jun 2012 15:32:13 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
