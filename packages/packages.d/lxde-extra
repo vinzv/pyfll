@@ -16,6 +16,4 @@ packages = """
 	putty
 	transmission
 	tuxcmd-modules
-	xsane
-	zim
 """
