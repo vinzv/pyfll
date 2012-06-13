@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu36) UNRELEASED; urgency=low
+pyfll (2012.1+nmu37) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -56,7 +56,10 @@ pyfll (2012.1+nmu36) UNRELEASED; urgency=low
   * added chromium and reportbug to xfce
   * added cifs-utils to utils-extra
 
- -- Torsten Wohlfarth <towo@siduction.org>  Tue, 12 Jun 2012 17:19:53 +0200
+  [ Ferdinand Thommes ]
+  * added kdocker and bsc, removed qtfm from distro-rqt
+
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 13 Jun 2012 10:31:24 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
