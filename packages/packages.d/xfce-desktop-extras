@@ -17,6 +17,7 @@ packages = """
 	orage
 	reportbug
 	tumbler
+	xfce4-powermanager 
 	xfce4-soundmenu-plugin
 	xnoise
 """
