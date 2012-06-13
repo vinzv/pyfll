@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu38) UNRELEASED; urgency=low
+pyfll (2012.1+nmu39) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -59,8 +59,9 @@ pyfll (2012.1+nmu38) UNRELEASED; urgency=low
   [ Ferdinand Thommes ]
   * added kdocker and bsc, removed qtfm from distro-rqt
   * added cantata to distro-rqt
+  * added hdparm, ddrescue to utils-extra
 
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 13 Jun 2012 10:35:07 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 13 Jun 2012 11:18:51 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
