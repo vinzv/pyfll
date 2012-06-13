@@ -36,6 +36,7 @@ packages = """
 	lightdm
 	lightdm-gtk-greeter
 	openprinting-ppds
+	ptbatterysystemtray
 	razorqt
 	razorqt-appswitcher
 	razorqt-config

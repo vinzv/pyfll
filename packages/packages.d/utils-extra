@@ -12,13 +12,13 @@ packages = """
 	cdrdao
 	cifs-utils
 	cryptsetup
-	ddrescue
 	debconf-utils
 	debhelper
 	dvd+rw-tools
 	dvb-apps
 	dosfstools
 	ftp-ssl
+	gddrescue
 	genisoimage
 	hdparm
 	imagemagick
