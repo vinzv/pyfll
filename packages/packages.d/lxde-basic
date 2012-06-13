@@ -13,13 +13,9 @@ packages = """
 	lxlauncher
 	lxtask
 	midori
-	myspell-de-de
-	myspell-en-us
-	myspell-pt-br
 	network-manager-gnome
 	policykit-1
 	python-vte
 	reportbug
 	xchat
-	zenity
 """
