@@ -11,7 +11,7 @@ packages = """
 	newsbeuter
 	podget
 	rtorrent		
-	scrot
+
 
 
 """

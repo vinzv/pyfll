@@ -15,7 +15,6 @@ packages = """
 	python-apt
         python-configobj
         debootstrap
-        genisoimage
         syslinux-common
         python-fll
         reprepro
