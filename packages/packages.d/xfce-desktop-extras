@@ -20,5 +20,6 @@ packages = """
 	xfce4-power-manager-plugins
 	xfce4-soundmenu-plugin
 	xnoise
+	xnoise-plugins
 """
 
