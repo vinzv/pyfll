@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu42) UNRELEASED; urgency=low
+pyfll (2012.1+nmu43) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -67,7 +67,11 @@ pyfll (2012.1+nmu42) UNRELEASED; urgency=low
   [ Torsten Wohlfarth ]
   * changed xfce4-powermanager to xfce4-power-manager-plugins
 
- -- Torsten Wohlfarth <towo@siduction.org>  Wed, 13 Jun 2012 15:32:13 +0200
+  [ Ferdinand Thommes ]
+  * created old&unused folder and moved old and unused package-sets
+    there
+
+ -- Ferdinand Thommes <devil@siduction.org>  Thu, 14 Jun 2012 20:55:40 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 
