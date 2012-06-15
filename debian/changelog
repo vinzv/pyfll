@@ -1,4 +1,4 @@
-pyfll (2012.1+nmu43) UNRELEASED; urgency=low
+pyfll (2012.1+nmu44) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
@@ -70,8 +70,10 @@ pyfll (2012.1+nmu43) UNRELEASED; urgency=low
   [ Ferdinand Thommes ]
   * created old&unused folder and moved old and unused package-sets
     there
+  * due to split-ups in KDE we missed to install mysql-server and
+    akonadi-backend-mysql, added them and also kdepim
 
- -- Ferdinand Thommes <devil@siduction.org>  Thu, 14 Jun 2012 20:55:40 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 15 Jun 2012 11:41:48 +0200
 
 pyfll (2012.1+nmu16) UNRELEASED; urgency=low
 

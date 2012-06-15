@@ -8,6 +8,7 @@ packages = """
 	kate
 	kcharselect
 	kdemultimedia-kio-plugins
+	kdepim
 	kdepim-kresources
 	kdepim-strigi-plugins
 	kdepim-wizards
