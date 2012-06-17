@@ -1,4 +1,13 @@
-pyfll (2012.1+nmu45) UNRELEASED; urgency=low
+pyfll (2012.1.1) UNRELEASED; urgency=low
+
+  * a new idea: stop endless nmu's
+  * major cleanup in packages.d
+  * documentation in chili: 
+    http://chili.siduction.org/projects/siduction/wiki/Pyfll
+ 
+ -- Alf Gaida <agaida@siductionramme>  Sun, 17 Jun 2012 00:31:27 +0200
+
+pyfll (2012.1+nmu44) unstable; urgency=low
 
   [ Ferdinand Thommes ]
   * added xfe as possible editor instead of andromeda
