@@ -1,4 +1,4 @@
-pyfll (2012.1.1) UNRELEASED; urgency=low
+pyfll (2012.1.2) UNRELEASED; urgency=low
 
   * a new idea: stop endless nmu's
   * major cleanup in packages.d
@@ -6,8 +6,10 @@ pyfll (2012.1.1) UNRELEASED; urgency=low
     http://chili.siduction.org/projects/siduction/wiki/Pyfll
   * packages/packages.d/old_crap created 
   * moved old crap to old_crap  
+  * added gnupg-agent and signingparty, fixes #753
+  * added ca-certificates, fixes #752 
 
- -- Alf Gaida <agaida@siductionramme>  Sun, 17 Jun 2012 00:31:27 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sun, 17 Jun 2012 20:30:43 +0200
 
 pyfll (2012.1+nmu44) unstable; urgency=low
 
