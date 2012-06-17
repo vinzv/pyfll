@@ -1,4 +1,4 @@
-pyfll (2012.1.4) UNRELEASED; urgency=low
+pyfll (2012.1.4) unstable; urgency=low
 
   [ Alf Gaida ]
   * a new idea: stop endless nmu's
@@ -9,12 +9,14 @@ pyfll (2012.1.4) UNRELEASED; urgency=low
   * moved old crap to old_crap  
   * added gnupg-agent and signingparty, fixes #753
   * added ca-certificates, fixes #752 
-  * added qtcurve, fixes #751 
+  * added qtcurve, fixes #751
+  * uncomment [release] on every flavour
+  * commented out mysql in kde-essential 
 
   [ Ferdinand Thommes ]
-  * cleaned up both rqt.conf files (removed kde-next, qt-kde)
+  * cleaned up both rqt.conf files (removed kde-next, qt-kde) 
 
- -- Ferdinand Thommes <devil@siduction.org>  Sun, 17 Jun 2012 21:47:55 +0200
+ -- Alf Gaida <agaida@siduction.org>  Mon, 18 Jun 2012 01:14:15 +0200
 
 pyfll (2012.1+nmu44) unstable; urgency=low
 

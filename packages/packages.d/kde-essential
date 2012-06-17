@@ -13,7 +13,7 @@ packages = """
 	kgamma
 	kmenuedit
 	konversation
-	mysql-server
+	#mysql-server
 	phonon-backend-gstreamer
 	phonon-backend-vlc
 	plasma-widgets-addons
