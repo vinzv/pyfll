@@ -11,12 +11,13 @@ pyfll (2012.1.4) unstable; urgency=low
   * added ca-certificates, fixes #752 
   * added qtcurve, fixes #751
   * uncomment [release] on every flavour
-  * commented out mysql in kde-essential 
+  * commented out mysql in kde-essential
+  * disabled package packages/packages.d/xserver: menu 
 
   [ Ferdinand Thommes ]
   * cleaned up both rqt.conf files (removed kde-next, qt-kde) 
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 18 Jun 2012 01:14:15 +0200
+ -- Alf Gaida <agaida@siductionramme>  Tue, 19 Jun 2012 00:44:50 +0200
 
 pyfll (2012.1+nmu44) unstable; urgency=low
 
