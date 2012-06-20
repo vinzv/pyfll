@@ -5,7 +5,7 @@ desc = """
 packages = """
 	brasero
 	claws-mail-i18n
-	clipit
+	#clipit
 	evince-gtk
 	fpm2
 	galculator
@@ -14,8 +14,8 @@ packages = """
 	osmo
 	putty
 	radiotray
-	tilda
+	#tilda
 	transmission
 	tuxcmd-modules
-	xnoise
+	xnoise-plugins
 """
