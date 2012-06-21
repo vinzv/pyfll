@@ -13,7 +13,7 @@ packages = """
 	myspell-pt-br
 	pdfviewer
 	policykit-1
-	reportbug-ng
+	#reportbug-ng
 	transmission-qt
 	vlc
 """

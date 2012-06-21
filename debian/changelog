@@ -1,4 +1,4 @@
-pyfll (2012.1.9) UNRELEASED; urgency=low
+pyfll (2012.1.10) UNRELEASED; urgency=low
 
   * removed zim for now from rqt-basic for LU-Edition, might come back
     later
@@ -6,8 +6,9 @@ pyfll (2012.1.9) UNRELEASED; urgency=low
   * fixed distro-codenames for 32-bit razor-qt lu-release
   * removed cantata from distro-rqt
   * altered panel.conf
+  * removed qtfm, commented reportbug-ng
 
- -- Ferdinand Thommes <devil@siduction.org>  Thu, 21 Jun 2012 22:32:53 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 22 Jun 2012 01:18:57 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 

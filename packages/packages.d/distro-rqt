@@ -26,7 +26,6 @@ packages = """
 	qlipper
 	qmmp
 	qt4-qtconfig
-	#qtfm
         qterminal
 	qupzilla
 	qutim
