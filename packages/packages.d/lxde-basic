@@ -5,6 +5,7 @@ desc = """
 packages = """
 	blueman
 	galternatives
+	gnome-keyring
 	gtk2-engines
 	gvfs-backends
 	gvfs-fuse
