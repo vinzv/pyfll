@@ -1,10 +1,15 @@
 pyfll (2012.1.8) UNRELEASED; urgency=low
 
+  [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
     later
   * fixed distro-codenames for razor-qt lu-release
   * fixed distro-codenames for 32-bit razor-qt lu-release
   * removed cantata from distro-rqt
+
+  [ Alf Gaida ]
+  * added fixed packages/packages.d/fixes/umountfs 
+  * modifid cli.postinst to cp umountfs to /etc/init.d
 
  -- Ferdinand Thommes <devil@siduction.org>  Thu, 21 Jun 2012 19:43:19 +0200
 
