@@ -4,7 +4,6 @@
 
 packages = """
 	bsc
-	cant	ata
 	cups
 	cups-client
 	cups-bsd
