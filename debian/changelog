@@ -1,5 +1,6 @@
 pyfll (2012.1.10) UNRELEASED; urgency=low
 
+  [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
     later
   * fixed distro-codenames for razor-qt lu-release
@@ -8,7 +9,13 @@ pyfll (2012.1.10) UNRELEASED; urgency=low
   * altered panel.conf
   * removed qtfm, commented reportbug-ng
 
- -- Ferdinand Thommes <devil@siduction.org>  Fri, 22 Jun 2012 01:18:57 +0200
+  [ Alf Gaida ]
+  * mirrors changed to uni frankfurt
+  * some whitespace changes
+  * some commented stuff moved to make the configurations more and easier
+    compareable 
+
+ -- Ferdinand Thommes <devil@siduction.org>  Thu, 21 Jun 2012 22:32:53 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 
