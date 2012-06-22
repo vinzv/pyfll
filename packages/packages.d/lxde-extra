@@ -11,10 +11,10 @@ packages = """
 	galculator
 	geany
 	gpodder
-	guake
+	#guake
 	osmo
 	putty
-	radiotray
+	#radiotray
 	#tilda
 	transmission
 	tuxcmd-modules
