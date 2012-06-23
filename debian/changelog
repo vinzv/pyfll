@@ -1,4 +1,4 @@
-pyfll (2012.1.11) UNRELEASED; urgency=low
+pyfll (2012.1.12) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
@@ -19,7 +19,10 @@ pyfll (2012.1.11) UNRELEASED; urgency=low
   * applied changes from b26c9360eac5ce855a8514f919c05ad412c7c1b5 to
     rqt_i368.conf
 
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 23 Jun 2012 08:29:23 +0200
+  [ Alf Gaida ]
+  * rework devils changes (make them more complete) 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Jun 2012 10:31:37 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 
