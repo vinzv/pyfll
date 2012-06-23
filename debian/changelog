@@ -1,4 +1,4 @@
-pyfll (2012.1.12) UNRELEASED; urgency=low
+pyfll (2012.1.13) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
@@ -21,8 +21,10 @@ pyfll (2012.1.12) UNRELEASED; urgency=low
 
   [ Alf Gaida ]
   * rework devils changes (make them more complete) 
+  * change   desktop-defaults-razorqt to desktop-default-rqt in 
+    packages/packages.d/distro-rqt
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 23 Jun 2012 10:31:37 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Jun 2012 15:27:11 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 

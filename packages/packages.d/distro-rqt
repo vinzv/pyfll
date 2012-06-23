@@ -12,7 +12,7 @@ packages = """
 	foomatic-db-engine
 	foomatic-db-gutenprint
 	foomatic-filters
-	desktop-defaults-razorqt
+	desktop-defaults-rqt
 	ghostscript-cups
 	ghostscript-x
 	gnome-icon-theme
