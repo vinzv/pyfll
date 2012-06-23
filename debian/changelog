@@ -1,4 +1,4 @@
-pyfll (2012.1.13) UNRELEASED; urgency=low
+pyfll (2012.1.13+nmu1) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
@@ -24,7 +24,10 @@ pyfll (2012.1.13) UNRELEASED; urgency=low
   * change   desktop-defaults-razorqt to desktop-default-rqt in 
     packages/packages.d/distro-rqt
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 23 Jun 2012 15:27:11 +0200
+  [ Torsten Wohlfarth ]
+  * changed the debian-mirror to http://http.debian.net/debian
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Sat, 23 Jun 2012 15:41:34 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 
