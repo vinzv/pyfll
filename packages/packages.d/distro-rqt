@@ -17,7 +17,7 @@ packages = """
 	ghostscript-x
 	gnome-icon-theme
 	juffed
-	kdocker
+	#kdocker
 	nomacs
 	openbox-themes
 	obconf
