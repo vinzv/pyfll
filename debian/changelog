@@ -1,4 +1,4 @@
-pyfll (2012.1.13+nmu1) UNRELEASED; urgency=low
+pyfll (2012.1.13+nmu2) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
@@ -27,7 +27,10 @@ pyfll (2012.1.13+nmu1) UNRELEASED; urgency=low
   [ Torsten Wohlfarth ]
   * changed the debian-mirror to http://http.debian.net/debian
 
- -- Torsten Wohlfarth <towo@siduction.org>  Sat, 23 Jun 2012 15:41:34 +0200
+  [ Ferdinand Thommes ]
+  * added dmeventd to utils-essential, needed by LVM, closes: #773
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 24 Jun 2012 19:52:25 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 

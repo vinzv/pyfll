@@ -9,6 +9,7 @@ packages = """
 	console-common
 	cron
 	debsums
+	dmeventd
 	firmware-linux-free
 	ffmpeg
 	gdisk
