@@ -4,7 +4,6 @@ desc = """
 
 packages = """
 	ark
-	akonadi-backend-mysql
 	akonadi-backend-sqlite
 	kaffeine
 	kde-config-cddb
@@ -13,7 +12,6 @@ packages = """
 	kgamma
 	kmenuedit
 	konversation
-	#mysql-server
 	phonon-backend-gstreamer
 	phonon-backend-vlc
 	plasma-widgets-addons
