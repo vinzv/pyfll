@@ -5,13 +5,10 @@ desc = """
 packages = """
 
 
-	cone
 	cmus
-	guacamole
-	newsbeuter
-	podget
-	rtorrent		
-
+	iftop
+	iotop
+	vnstat
 
 
 """

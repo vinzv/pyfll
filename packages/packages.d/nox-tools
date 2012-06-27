@@ -4,13 +4,7 @@ desc = """
 
 packages = """
 	
-	calcurse
-	denyhosts
-	exiv2
-	iftop
-	iotop
-	tmux
-	vnstat
+
         git
 	python-apt
         python-configobj
