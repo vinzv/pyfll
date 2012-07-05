@@ -4,6 +4,7 @@
 
 packages = """
 	dbus-x11
+	gparted
 	icedove
 	kvirc
 	moc

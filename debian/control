@@ -6,7 +6,7 @@ Uploaders: Alf Gaida <agaida@siduction.org>
 XSBC-Original-Maintainer: Kel Modderman <kel@otaku42.de>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.3
-Vcs-Git: git://git.siduction.org/packages/siduction-repository/pyfll
+Vcs-Git: git://git.siduction.org/code/pyfll
 Vcs-Browser: http://git.siduction.org/?p=packages/pyfll.git
 Homepage: http://svn.berlios.de/wsvn/fullstory/pyfll
 
