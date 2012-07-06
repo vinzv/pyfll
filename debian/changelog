@@ -1,4 +1,4 @@
-pyfll (2012.1.13+nmu4) UNRELEASED; urgency=low
+pyfll (2012.1.13+nmu5) UNRELEASED; urgency=low
 
   [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
@@ -32,8 +32,10 @@ pyfll (2012.1.13+nmu4) UNRELEASED; urgency=low
   * removed akonadi-backend-mysql from kde-essential as it pulls in
     mysql-server
   * added gparted to rqt-basic
+  * removed gparted from the distro-<flavour> packages and added it to
+    distro-toos-x, fixes: #783
 
- -- Ferdinand Thommes <devil@siduction.org>  Thu, 05 Jul 2012 17:34:29 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 06 Jul 2012 22:29:58 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 

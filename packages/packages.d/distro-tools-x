@@ -10,6 +10,7 @@ packages = """
 	fll-live-xorgconfig
 	fll-installer
 	fonts-droid
+	gparted
 	install-usb-gui
 	kernel-remover
 	pywwetha

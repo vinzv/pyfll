@@ -6,5 +6,4 @@ packages = """
 	desktop-defaults-kde
 	siduction-art-kde
 	skanlite
-	gparted
 """
