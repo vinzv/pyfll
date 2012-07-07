@@ -6,7 +6,6 @@ packages = """
 	bluewater-manual
 	configure-cups
 	dnsutils
-	#icedtea-plugin
 	fll-live-xorgconfig
 	fll-installer
 	fonts-droid

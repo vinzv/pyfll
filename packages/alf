@@ -3,18 +3,10 @@ desc = """
 """
 
 deps = """
-	cli
-	distro
-	distro-rqt
-	distro-tools
-	distro-tools-rqt-x
-	hwsupport-essential
-	hwsupport-powermanagement
-	hwsupport-extra
-	rqt-basic
-	utils-essential
-	utils-extra
-	xserver
+	pyfll-debian-base
+        pyfll-siduction-base
+        pyfll-x-debian
+        pyfll-rqt-siduction
 """
 
 packages = """

@@ -11,7 +11,6 @@ packages = """
 	fonts-droid
 	install-usb-gui
 	kernel-remover
-	kvirc
 	pywwetha
 	siduction-irc
 	sidu-disk-center
@@ -19,7 +18,6 @@ packages = """
 	setpassword
 	sidu-installer
 	xdg-browser-launcher
-	zenity
 """
 
 	
