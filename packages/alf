@@ -4,9 +4,9 @@ desc = """
 
 deps = """
 	pyfll-base-debian
-        pyfll-base-siduction
-        pyfll-x-debian
-        pyfll-rqt-siduction
+        # pyfll-base-siduction
+        # pyfll-x-debian
+        # pyfll-rqt-siduction
 """
 
 packages = """
