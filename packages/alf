@@ -3,8 +3,8 @@ desc = """
 """
 
 deps = """
-	pyfll-debian-base
-        pyfll-siduction-base
+	pyfll-base-debian
+        pyfll-base-siduction
         pyfll-x-debian
         pyfll-rqt-siduction
 """
