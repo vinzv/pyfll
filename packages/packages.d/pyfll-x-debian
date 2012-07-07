@@ -1,0 +1,76 @@
+### distro-tools-x
+desc = """
+	Distro specific packages with dependencies on X Window System.
+"""
+
+packages = """
+	bluewater-manual
+	configure-cups
+	dnsutils
+	#icedtea-plugin
+	fll-live-xorgconfig
+	fll-installer
+	fonts-droid
+	gparted
+	install-usb-gui
+	kernel-remover
+	pywwetha
+	siduction-irc
+	sidu-disk-center
+	siguibui
+	setpassword
+	sidu-installer
+	xdg-browser-launcher
+"""
+
+### utils-x
+desc = """
+	Utilities useful for all package profiles, that depends on X.
+"""
+
+packages = """
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
+	xsane
+	zenity
+	zim
+"""
+
+##ä xserver
+desc = """
+	X Server packages.
+"""
+
+packages = """
+	dmz-cursor-theme
+	fontconfig
+	fontconfig-config
+	libgl1-mesa-dri
+	# menu #ag 2012-06-19 
+	mesa-utils
+	sux
+	ttf-dejavu-core
+	ttf-dejavu-extra
+	fonts-liberation
+	xauth
+	xfonts-base
+	xfonts-75dpi
+	xfonts-75dpi-transcoded
+	xfonts-100dpi
+	xfonts-100dpi-transcoded
+	xserver-xorg
+	xserver-xorg-input-all
+	xserver-xorg-input-vmmouse
+	#xserver-xorg-video-all
+	xserver-xorg-video-ati
+	xserver-xorg-video-nouveau
+	xserver-xorg-video-vesa
+	xserver-xorg-video-mga
+	xserver-xorg-video-qxl
+	xserver-xorg-video-intel
+	xserver-xorg-video-fbdev
+	xserver-xorg-video-vmware
+	xinit
+	xutils
+"""

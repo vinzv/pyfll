@@ -1,0 +1,157 @@
+desc = """
+        pyfll-debian-base
+"""
+
+packages = """
+        ##
+        ## former cli start
+        ## Common command line utilities.
+        dialog
+        elinks-lite
+        gpm
+        htop
+        info
+        mc
+        moc
+        most
+        screen
+        unp
+        vim
+        weechat
+        weechat-scripts
+        weechat-plugins
+        gnupg-agent
+        signing-party
+        ca-certificates
+        ##
+        ## former utils-essential
+        ## Misc. utilities that should always be installed.
+        anacron
+        bzip2
+        console-data
+        console-common
+        cron
+        debsums
+        dmeventd
+        firmware-linux-free
+        ffmpeg
+        gdisk
+        gvfs-bin
+        gvfs-backends
+        iptables
+        iputils-ping
+        isc-dhcp-client
+        iw
+        kbd
+        kexec-tools
+        less
+        libmtp-runtime
+        logrotate
+        mbr
+        nano
+        netbase
+        net-tools
+        ntp
+        python-notify
+        resolvconf
+        rsync
+        rsyslog
+        scrot
+        sudo
+        wget
+        wireless-tools
+        wpasupplicant
+        ##
+        ## former utils-extra
+        ## Utilities that are very useful, but not absolutely required.
+        aspell
+        apt-file
+        apt-listchanges
+        apt-show-versions
+        build-essential
+        cdebootstrap
+        cdrdao
+        cifs-utils
+        cryptsetup
+        debconf-utils
+        debhelper
+        dvd+rw-tools
+        dvb-apps
+        dosfstools
+        ftp-ssl
+        gddrescue
+        genisoimage
+        hdparm
+        imagemagick
+        iproute
+        jfsutils
+        lm-sensors
+        man-db
+        manpages
+        memtest86+
+        mlocate
+        nfs-common
+        ntpdate
+        ntfs-3g
+        nmap
+        openssh-client
+        pwgen
+        reiserfsprogs
+        sshfs
+        strace
+        testdisk
+        tofrodos
+        traceroute
+        xfsprogs
+        unzip
+        vpnc
+        wodim
+        zip
+        ##
+        ## hwsupport-essential
+        ## Packages that provide some kind of support for very common harware.
+        alsa-base
+        br2684ctl
+        cpufrequtils
+        crda
+        irqbalance
+        laptop-detect
+        lvm2
+        mdadm
+        nbd-client
+        openfwwf
+        pcmciautils
+        pciutils
+        udev
+        usbutils
+        udisks
+        acpid
+        acpid
+        ##
+        ## Packages that provide support for powermanagement
+        ##This is a separate package so it does not conflict with powerdevil/kde4
+        acpi-support
+        pm-utils
+        powermgmt-base
+        upower
+        ##
+        ## Packages that provide some kind of support for harware, but are not
+        ## absolutely required.
+        alsa-utils
+        bluetooth
+        bluez-pcmcia-support
+        dmidecode
+        dmsetup
+        rfkill
+        usb-modeswitch
+        vbetool
+"""
+
+i386 = """
+        libc6-i686
+"""
+
+debconf = """
+        ## configs from utils essential
+        kexec-tools kexec-tools/load_kexec boolean false
+"""

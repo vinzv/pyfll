@@ -1,0 +1,22 @@
+desc = """
+	Basic Razor-QT desktop environment.
+"""
+
+deps = """
+	cli
+	distro
+	distro-rqt
+	distro-tools
+	distro-tools-rqt-x
+	hwsupport-essential
+	hwsupport-powermanagement
+	hwsupport-extra
+	rqt-basic
+	utils-essential
+	utils-extra
+	xserver
+"""
+
+packages = """
+"""
+

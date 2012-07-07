@@ -1,0 +1,76 @@
+### kde-essential
+desc = """
+	Minimal KDE desktop apps.
+"""
+
+packages = """
+	ark
+	akonadi-backend-sqlite
+	kaffeine
+	kde-config-cddb
+	kde-plasma-desktop
+	kdm
+	kgamma
+	kmenuedit
+	konversation
+	phonon-backend-gstreamer
+	phonon-backend-vlc
+	plasma-widgets-addons
+        qtcurve
+"""
+
+### kde-basic
+desc = """
+	Lite KDE desktop Applications
+"""
+
+packages = """
+	gwenview
+	k3b
+	kcalc
+	khelpcenter4
+	kmix
+	knemo
+	kppp
+	ksnapshot
+	okular
+	okular-extra-backends
+"""
+
+### kde-desktop
+
+desc = """
+	Normal KDE desktop Applications
+"""
+
+packages = """
+	akregator
+	digikam
+	kate
+	kcharselect
+	kdemultimedia-kio-plugins
+	kdepim
+	kdepim-kresources
+	kdepim-strigi-plugins
+	kdepim-wizards
+	kdf
+	kgpg
+	kipi-plugins-common
+	kmail
+	kmenuedit
+	konq-plugins
+	kontact
+	kopete
+	krdc
+	krusader
+	ktorrent
+	kwalletmanager
+	polkit-kde-1
+	reportbug-ng
+	system-config-printer-kde
+	strigi-client
+	ttf-kochi-gothic
+	virtuoso-minimal
+	wpagui
+	yakuake
+"""

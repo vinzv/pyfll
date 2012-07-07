@@ -1,0 +1,27 @@
+desc = """
+        Siduction specific packages.
+"""
+
+debconf = """
+        passwd passwd/root-password-crypted password *
+"""
+
+packages = """
+        ##
+        ## Distro specific common packages.
+	apt-conf-siduction
+	siduction-archive-keyring
+	siduction-art-icons
+	siduction-bootsplash
+	siduction-scripts
+	udev-config-siduction
+	gfxboot-theme-siduction
+        ## 
+	## Distro specific tools.
+	ceni
+	inxi
+	pppconfig
+	pppoeconf
+	sshstart
+	wvdial
+"""

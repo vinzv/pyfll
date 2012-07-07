@@ -1,0 +1,20 @@
+ desc = """
+	Minimal Razor-qt desktop environment.
+"""
+
+packages = """
+	dbus-x11
+	icedove
+	kvirc
+	moc
+	moc-ffmpeg-plugin
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
+	pdfviewer
+	policykit-1
+	reportbug-ng
+	transmission-qt
+	vlc
+"""
+
