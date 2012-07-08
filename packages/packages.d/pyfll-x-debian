@@ -1,49 +1,12 @@
-### distro-tools-x
 desc = """
-	Distro specific packages with dependencies on X Window System.
+       X-related packages.
 """
 
 packages = """
-	bluewater-manual
-	configure-cups
-	dnsutils
-	#icedtea-plugin
-	fll-live-xorgconfig
-	fll-installer
-	fonts-droid
-	gparted
-	install-usb-gui
-	kernel-remover
-	pywwetha
-	siduction-irc
-	sidu-disk-center
-	siguibui
-	setpassword
-	sidu-installer
-	xdg-browser-launcher
-"""
-
-### utils-x
-desc = """
-	Utilities useful for all package profiles, that depends on X.
-"""
-
-packages = """
-	myspell-de-de
-	myspell-en-us
-	myspell-pt-br
-	xsane
-	zenity
-	zim
-"""
-
-##ä xserver
-desc = """
-	X Server packages.
-"""
-
-packages = """
-	dmz-cursor-theme
+        ##
+        ## former xserver
+	## X-server-packages
+        dmz-cursor-theme
 	fontconfig
 	fontconfig-config
 	libgl1-mesa-dri
@@ -73,4 +36,33 @@ packages = """
 	xserver-xorg-video-vmware
 	xinit
 	xutils
+        ## 
+        ## utils-x
+        ## Utilities useful for all package profiles, that depends on X.
+        myspell-de-de
+        myspell-en-us
+        myspell-pt-br
+        xsane
+        zenity
+        zim
+        ##
+        ## former distro-tools-x
+        ## Siduction specific packages with dependencies on X Window System.
+        bluewater-manual
+        configure-cups
+        dnsutils
+        #icedtea-plugin
+        fll-live-xorgconfig
+        fll-installer
+        fonts-droid
+        gparted
+        install-usb-gui
+        kernel-remover
+        pywwetha
+        siduction-irc
+        sidu-disk-center
+        siguibui
+        setpassword
+        sidu-installer
+        xdg-browser-launcher
 """
