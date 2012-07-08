@@ -7,7 +7,7 @@ deps = """
 	distro
 	distro-rqt
 	distro-tools
-	distro-tools-rqt-x
+	distro-tools-x
 	hwsupport-essential
 	hwsupport-powermanagement
 	hwsupport-extra

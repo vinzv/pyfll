@@ -1,4 +1,12 @@
-pyfll (2012.1.13+nmu6) UNRELEASED; urgency=low
+pyfll (2012.07.08) UNRELEASED; urgency=low
+
+  * removed distro-tools-rqt-x, use distro-tools-x instead
+  * reflect these change in rqt 
+  * change numbering to date 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 08 Jul 2012 13:42:30 +0200
+
+pyfll (2012.1.13+nmu6) unstable; urgency=low
 
   [ Ferdinand Thommes ]
   * removed zim for now from rqt-basic for LU-Edition, might come back
@@ -36,7 +44,7 @@ pyfll (2012.1.13+nmu6) UNRELEASED; urgency=low
     distro-toos-x, fixes: #783
   * added gparted to distro-tools-rqt-x
 
- -- Ferdinand Thommes <devil@siduction.org>  Sun, 08 Jul 2012 13:05:35 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sun, 08 Jul 2012 13:42:23 +0200
 
 pyfll (2012.1.4) unstable; urgency=low
 
