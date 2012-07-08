@@ -8,6 +8,7 @@ debconf = """
 
 packages = """
         ##
+        ## distro
         ## Distro specific common packages.
 	apt-conf-siduction
 	siduction-archive-keyring
@@ -17,6 +18,7 @@ packages = """
 	udev-config-siduction
 	gfxboot-theme-siduction
         ## 
+        ## distro-tools
 	## Distro specific tools.
 	ceni
 	inxi

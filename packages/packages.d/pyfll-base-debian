@@ -108,7 +108,7 @@ packages = """
         wodim
         zip
         ##
-        ## hwsupport-essential
+        ## former hwsupport-essential
         ## Packages that provide some kind of support for very common harware.
         alsa-base
         br2684ctl
@@ -128,6 +128,7 @@ packages = """
         acpid
         acpid
         ##
+        ## former hwsupport-powermangement
         ## Packages that provide support for powermanagement
         ##This is a separate package so it does not conflict with powerdevil/kde4
         acpi-support
@@ -135,6 +136,7 @@ packages = """
         powermgmt-base
         upower
         ##
+        ## former hwsupport-extra
         ## Packages that provide some kind of support for harware, but are not
         ## absolutely required.
         alsa-utils
