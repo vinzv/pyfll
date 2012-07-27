@@ -55,7 +55,7 @@ packages = """
 	kdepim-wizards
 	kdf
 	kgpg
-	kipi-plugins-common
+	kipi-plugins
 	kmail
 	kmenuedit
 	konq-plugins
