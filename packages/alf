@@ -7,6 +7,7 @@ deps = """
         pyfll-base-siduction
         pyfll-x-debian
         pyfll-rqt-siduction
+        devel-debian
 """
 
 packages = """
