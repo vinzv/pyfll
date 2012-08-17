@@ -1,0 +1,27 @@
+desc = """
+	Normal GNOME desktop applications
+"""
+
+packages = """
+	evolution
+	evolution-data-server 
+	gnome-backgrounds
+	gnome-dictionary
+	gnome-disk-utility
+	gnome-games
+	gnome-icon-theme
+	gnome-system-log
+	gnome-tweak-tool
+	gnome-user-share
+	gucharmap
+	hamster-applet
+	gstreamer0.10-ffmpeg
+	shotwell
+	sound-juicer
+	vino
+	yelp
+	tomboy
+	tracker-gui
+	vinagre
+	zenity
+"""

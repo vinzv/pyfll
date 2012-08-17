@@ -1,0 +1,12 @@
+desc = """
+	Distro specific packages for an GNOME desktop.
+"""
+
+packages = """
+	siduction-settings-gnome
+	desktop-defaults-gnome
+	gksu
+	siduction-art-wallpaper-desperado-reloaded
+	#siduction-art-gnome
+	gparted
+"""

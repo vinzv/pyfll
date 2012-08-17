@@ -1,0 +1,37 @@
+desc = """
+	Lite GNOME desktop applications
+"""
+
+packages = """
+	alacarte
+	baobab
+	brasero
+	dconf-tools
+	eog
+	evince 
+	file-roller
+	gcalctool
+	gconf-editor
+	gedit
+	#gnome-about
+	gnome-bluetooth
+	gnome-control-center
+	gnome-media
+	gnome-screenshot
+	gnome-search-tool
+	gnome-themes-standard
+	gnome-user-guide
+	gstreamer0.10-alsa
+	gstreamer0.10-plugins-base
+	gstreamer0.10-plugins-good
+	gstreamer0.10-plugins-ugly
+	gstreamer0.10-pulseaudio
+	freedesktop-sound-theme
+	libcanberra-pulse
+	libmtp-runtime
+	mpg321
+	nautilus-open-terminal
+	pulseaudio
+	rhythmbox
+	totem
+"""

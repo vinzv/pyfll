@@ -1,3 +1,11 @@
+pyfll (2012.16.09) UNRELEASED; urgency=low
+
+  [ Angelescu Ovidiu ]
+  * fll.conf files for gnome as gnome_$arch.conf
+  * packages for gnome
+
+ -- Angelescu Ovidiu <mrhsaacdoh@gmail.com>  Fri, 17 Aug 2012 13:13:17 +0300
+
 pyfll (2012.07.09) UNRELEASED; urgency=low
 
   [ Alf Gaida ]
