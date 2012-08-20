@@ -31,7 +31,6 @@ packages = """
 	pidgin
 	qemu-kvm
 	libreoffice-gnome
-	iceweasel
 	inkscape
 	transmission-cli
 	transmission-gtk
