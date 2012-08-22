@@ -16,5 +16,4 @@ deps = """
 
 packages = """
 	cdebootstrap
-	iceweasel
 """
