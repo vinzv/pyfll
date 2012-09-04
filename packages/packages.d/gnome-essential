@@ -11,5 +11,6 @@ packages = """
 	iceweasel
 	metacity
 	nautilus
+	network-manager-gnome
 	xchat
 """

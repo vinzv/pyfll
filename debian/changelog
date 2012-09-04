@@ -1,3 +1,9 @@
+pyfll (2012.09.05) UNRELEASED; urgency=low
+
+  * added network-manager-gnome to gnome-esential to be pulled even in gnome-stripped
+
+ -- Angelescu Ovidiu <convbsd@siduction.net>  Wed, 05 Sep 2012 02:25:17 +0300
+
 pyfll (2012.22.10) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
