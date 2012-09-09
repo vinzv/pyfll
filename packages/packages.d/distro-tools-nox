@@ -1,0 +1,13 @@
+desc = """
+	Distro specific packages with dependencies on NoX.
+"""
+
+packages = """
+	cli-installer
+	configure-cups
+	dnsutils
+	fll-installer
+	kernel-remover
+	siduction-irc
+	setpassword
+"""

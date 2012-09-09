@@ -13,6 +13,7 @@ packages = """
 	install-usb-gui
 	kernel-remover
 	pywwetha
+	siduction-bug-report
 	siduction-irc
 	sidu-disk-center
 	siguibui
