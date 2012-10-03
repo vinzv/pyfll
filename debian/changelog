@@ -1,9 +1,14 @@
-pyfll (2012.10.01) UNRELEASED; urgency=low
+pyfll (2012.10.02) UNRELEASED; urgency=low
 
+  [ Angelescu Ovidiu ]
   * removed from gnome config files siduction-gnome repo
   * commented experimental repo in gnome config files
 
- -- Angelescu Ovidiu <convbsd@siduction.net>  Mon, 1 Oct 2012 19:22:17 +0300
+  [ Ferdinand Thommes ]
+  * added modemmanager and mobile-broadband-provider-info to
+    /packages.d/hwsupport-extra
+
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 03 Oct 2012 13:11:23 +0200
 
 pyfll (2012.09.09) UNRELEASED; urgency=low
 

@@ -9,6 +9,8 @@ packages = """
 	bluez-pcmcia-support
 	dmidecode
 	dmsetup
+	modemmanager 
+	mobile-broadband-provider-info 
 	rfkill
 	usb-modeswitch
 	vbetool
