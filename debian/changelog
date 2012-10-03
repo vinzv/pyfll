@@ -1,4 +1,4 @@
-pyfll (2012.10.02) UNRELEASED; urgency=low
+pyfll (2012.10.03) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
   * removed from gnome config files siduction-gnome repo
@@ -7,8 +7,9 @@ pyfll (2012.10.02) UNRELEASED; urgency=low
   [ Ferdinand Thommes ]
   * added modemmanager and mobile-broadband-provider-info to
     /packages.d/hwsupport-extra
+  * added xfwm4-themes to xfce-desktop-minimum
 
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 03 Oct 2012 13:11:23 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 03 Oct 2012 13:49:57 +0200
 
 pyfll (2012.09.09) UNRELEASED; urgency=low
 
