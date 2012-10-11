@@ -10,12 +10,14 @@ packages = """
 	gvfs-backends
 	gvfs-fuse
 	hardinfo
+	lxappearance-obconf
 	lxde
 	lxlauncher
+	lxpolkit
 	lxtask
 	midori
 	network-manager-gnome
-	policykit-1
+	#policykit-1
 	python-vte
 	reportbug
 	xchat
