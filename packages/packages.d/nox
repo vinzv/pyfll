@@ -19,7 +19,7 @@ packages = """
 	rkhunter
 	sdparm
 	smartmontools
-
+	ncdu
 
 """
 
