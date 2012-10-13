@@ -20,6 +20,7 @@ packages = """
 	sdparm
 	smartmontools
 	ncdu
+	glances
 
 """
 
