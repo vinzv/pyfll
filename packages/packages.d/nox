@@ -21,6 +21,8 @@ packages = """
 	smartmontools
 	ncdu
 	glances
+	whohas
+	whowatch
 
 """
 
