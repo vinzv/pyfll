@@ -9,6 +9,9 @@ pyfll (2012.10.03) UNRELEASED; urgency=low
     /packages.d/hwsupport-extra
   * added xfwm4-themes to xfce-desktop-minimum
 
+  [ Alf Gaida ]
+  * command-not-found added to utils-extra
+
  -- Ferdinand Thommes <devil@siduction.org>  Wed, 03 Oct 2012 13:49:57 +0200
 
 pyfll (2012.09.09) UNRELEASED; urgency=low
