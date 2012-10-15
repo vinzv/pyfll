@@ -11,6 +11,7 @@ packages = """
 	cdebootstrap
 	cdrdao
 	cifs-utils
+	command-not-found
 	cryptsetup
 	debconf-utils
 	debhelper
