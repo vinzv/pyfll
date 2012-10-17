@@ -17,7 +17,6 @@ packages = """
 	weechat
 	weechat-scripts
 	weechat-plugins
-        gnupg-agent
         signing-party
         ca-certificates
 """
