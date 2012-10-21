@@ -23,6 +23,7 @@ packages = """
 	glances
 	whohas
 	whowatch
-
+	canto
+	
 """
 

@@ -7,7 +7,6 @@ packages = """
 	fbterm
 	cmus
 	alpine
-	canto
 	links2
 	podget
 	tmux
