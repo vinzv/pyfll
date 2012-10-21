@@ -1,4 +1,4 @@
-pyfll (2012.10.03) UNRELEASED; urgency=low
+pyfll (2012.10.04) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
   * removed from gnome config files siduction-gnome repo
@@ -12,7 +12,10 @@ pyfll (2012.10.03) UNRELEASED; urgency=low
   [ Alf Gaida ]
   * command-not-found added to utils-extra
 
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 03 Oct 2012 13:49:57 +0200
+  [ Ferdinand Thommes ]
+  * removed transmission-qt from pyfll-rqt-siduction
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 21 Oct 2012 12:43:33 +0200
 
 pyfll (2012.09.09) UNRELEASED; urgency=low
 
