@@ -24,11 +24,8 @@ deps = """
 
 packages = """
 	## artwork for riders
-        desktop-defaults-xfce
         siduction-art-xfce-ridersonthestorm
         gfxboot-themes-siduction-12.2.0-ridersonthestorm
-
 	## artwork end
 	network-manager-gnome
 """
-
