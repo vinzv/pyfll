@@ -6,6 +6,5 @@ packages = """
 	desktop-defaults-lxde
 	gksu
 #	lightdm
-	siduction-art-wallpaper
 	slim
 """
