@@ -16,9 +16,7 @@ packages = """
 """
 
 i386 = """
-	gfxboot-theme-siduction
 """
 
 amd64 = """
-	gfxboot-theme-siduction
 """

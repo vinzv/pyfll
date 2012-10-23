@@ -4,6 +4,4 @@ desc = """
 
 packages = """
 	desktop-defaults-xfce
-	linuxlex-icon-theme
-	siduction-art-xfce
 """

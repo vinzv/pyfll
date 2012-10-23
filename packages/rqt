@@ -19,5 +19,9 @@ deps = """
 """
 
 packages = """
+        ## artwork for riders
+        siduction-art-rqt-ridersonthestorm
+        gfxboot-themes-siduction-12.2.0-ridersonthestorm
+        ## artwork end
 """
 
