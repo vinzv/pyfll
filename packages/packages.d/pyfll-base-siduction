@@ -16,7 +16,7 @@ packages = """
 	siduction-bootsplash
 	siduction-scripts
 	udev-config-siduction
-        ##
+        ## 
         ## distro-tools
 	## Distro specific tools.
 	ceni
