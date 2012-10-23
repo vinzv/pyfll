@@ -16,7 +16,6 @@ packages = """
 	siduction-bootsplash
 	siduction-scripts
 	udev-config-siduction
-	gfxboot-theme-siduction
         ## 
         ## distro-tools
 	## Distro specific tools.
