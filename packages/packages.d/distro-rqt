@@ -48,8 +48,6 @@ packages = """
 	sane
 	sane-utils
 	libsane-extras
-	siduction-art-rqt
-	siduction-art-wallpaper
 	silicon
 	screengrab
 	system-config-printer-udev
