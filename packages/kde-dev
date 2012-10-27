@@ -24,6 +24,4 @@ deps = """
 """
 
 packages = """
-	siduction-art-kde-paintitblack
-	gfxboot-themes-siduction-12.1.7-paintitblack
 """
