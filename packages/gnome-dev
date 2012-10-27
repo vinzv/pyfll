@@ -23,6 +23,4 @@ deps = """
 
 packages = """
 	xchat
-	siduction-art-gnome-paintitblack
-	gfxboot-themes-siduction-12.1.7-paintitblack
 """

@@ -35,8 +35,5 @@ packages = """
 	transmission-cli
 	transmission-gtk
 	xchat
-
-	siduction-art-wallpaper-ridersonthestorm
-	gfxboot-themes-siduction-12.2.0-ridersonthestorm
 """
 
