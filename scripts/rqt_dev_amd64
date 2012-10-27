@@ -1,0 +1,2 @@
+time ./pyfll/fll -vvvvv -P -c ./pyfll/rqt_dev_amd64.conf
+

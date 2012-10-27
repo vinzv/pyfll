@@ -14,13 +14,11 @@ deps = """
 	rqt-basic
 	utils-essential
 	utils-extra
-        utils-x
+	utils-x
 	xserver
 """
 
 packages = """
-        ## artwork for riders
         siduction-art-rqt-ridersonthestorm
         gfxboot-themes-siduction-12.2.0-ridersonthestorm
-        ## artwork end
 """

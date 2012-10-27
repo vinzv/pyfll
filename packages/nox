@@ -3,7 +3,6 @@ desc = """
 """
 
 deps = """
-
 	cli
 	distro
 	distro-tools
@@ -14,6 +13,9 @@ deps = """
 	nox
 	utils-essential
 	utils-extra
-
 """
 
+packages = """
+        siduction-art-wallpaper-ridersonthestorm
+        gfxboot-themes-siduction-12.2.0-ridersonthestorm
+"""
