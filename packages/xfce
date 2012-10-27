@@ -23,7 +23,5 @@ deps = """
 """
 
 packages = """
-	siduction-art-xfce-ridersonthestorm
-	gfxboot-themes-siduction-12.2.0-ridersonthestorm
 	network-manager-gnome
 """

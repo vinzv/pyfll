@@ -23,9 +23,5 @@ deps = """
 """
 
 packages = """
-	## artwork for riders
-        siduction-art-xfce-paintitblack
-        gfxboot-themes-siduction-12.1.7-paintitblack
-	## artwork end
 	network-manager-gnome
 """
