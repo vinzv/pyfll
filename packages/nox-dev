@@ -1,0 +1,24 @@
+desc = """
+	Only the essential software that is required to boot.
+"""
+
+deps = """
+	cli
+	distro
+	distro-tools
+	distro-tools-nox
+	hwsupport-essential
+	hwsupport-extra
+	hwsupport-powermanagement
+	nox
+	utils-essential
+	utils-extra
+"""
+
+packages = """
+        ## artwork for riders
+        siduction-art-wallpaper-paintitblack
+        gfxboot-themes-siduction-12.1.7-paintitblack
+        ## artwork end
+"""
+

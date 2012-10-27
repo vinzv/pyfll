@@ -1,20 +1,18 @@
 desc = """
-	Basic GNOME desktop environment.
+	A basic LXDE desktop.
 """
 
 deps = """
 	cli
 	distro
-	distro-gnome
+	distro-lxde
 	distro-tools
 	distro-tools-x
-	fluxbox
-	gnome-essential
-	gnome-basic
 	hwsupport-essential
-	hwsupport-powermanagement
 	hwsupport-extra
-	hwsupport-printscan
+	hwsupport-powermanagement
+	lxde-basic
+	lxde-extra
 	utils-essential
 	utils-extra
 	utils-x
@@ -22,8 +20,8 @@ deps = """
 """
 
 packages = """
-	xchat
-	siduction-art-gnome-paintitblack
+	## artwork for riders
+	siduction-art-wallpaper-paintitblack
 	gfxboot-themes-siduction-12.1.7-paintitblack
+	## artwork end
 """
-

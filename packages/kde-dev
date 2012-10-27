@@ -1,0 +1,29 @@
+desc = """
+	Basic KDE desktop environment.
+"""
+
+deps = """
+	cli
+	devel-debian
+	distro
+	distro-kde
+	distro-tools
+	distro-tools-x
+	fluxbox
+	hwsupport-essential
+	hwsupport-powermanagement
+	hwsupport-extra
+	hwsupport-printscan
+	kde-essential
+	kde-basic
+	kde-desktop
+	utils-essential
+	utils-extra
+	utils-x
+	xserver
+"""
+
+packages = """
+	siduction-art-kde-paintitblack
+	gfxboot-themes-siduction-12.1.7-paintitblack
+"""
