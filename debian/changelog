@@ -5,7 +5,7 @@ pyfll (2012.10.27) UNRELEASED; urgency=low
   * changes to dev-gnome packages list
   * added last gfxboot and art changes to gnome_i386.conf
 
- -- Angelescu Ovidiu <convbsd@siduction.net>  Wed, 05 Sep 2012 02:25:17 +0300
+ -- Angelescu Ovidiu <convbsd@siduction.net>  Wed, 27 Oct 2012 17:28:17 +0300
 
 pyfll (2012.10.04) UNRELEASED; urgency=low
 
