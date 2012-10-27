@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-	siduction-settings-gnome
 	desktop-defaults-gnome
 	gksu
 	gparted

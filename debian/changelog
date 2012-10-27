@@ -1,3 +1,12 @@
+pyfll (2012.10.27) UNRELEASED; urgency=low
+
+  * removed from distro-gnome siduction-settings-gnome
+  * changes to gnome packages list
+  * changes to dev-gnome packages list
+  * added last gfxboot and art changes to gnome_i386.conf
+
+ -- Angelescu Ovidiu <convbsd@siduction.net>  Wed, 05 Sep 2012 02:25:17 +0300
+
 pyfll (2012.10.04) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
@@ -24,12 +33,6 @@ pyfll (2012.09.09) UNRELEASED; urgency=low
   * changed distro-tools-x to distro-tools-nox in packages/nox
 
  -- Angelescu Ovidiu <convbsd@siduction.net>  Sun, 09 Sep 2012 18:17:17 +0300
-
-pyfll (2012.09.05) UNRELEASED; urgency=low
-
-  * added network-manager-gnome to gnome-esential to be pulled even in gnome-stripped
-
- -- Angelescu Ovidiu <convbsd@siduction.net>  Wed, 05 Sep 2012 02:25:17 +0300
 
 pyfll (2012.22.10) UNRELEASED; urgency=low
 
