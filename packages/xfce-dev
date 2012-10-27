@@ -1,0 +1,31 @@
+desc = """
+	A complete XFCE desktop environment.
+"""
+
+deps = """
+        # release-xfce ## should be in packages
+	cli
+	distro
+	distro-tools
+	distro-tools-x
+	distro-xfce
+	fluxbox
+	hwsupport-essential
+	hwsupport-extra
+	hwsupport-powermanagement
+	utils-essential
+	utils-extra
+	utils-x
+	xfce-desktop-min
+	xfce-desktop-goodies
+	xfce-desktop-extras
+	xserver
+"""
+
+packages = """
+	## artwork for riders
+        siduction-art-xfce-paintitblack
+        gfxboot-themes-siduction-12.1.7-paintitblack
+	## artwork end
+	network-manager-gnome
+"""

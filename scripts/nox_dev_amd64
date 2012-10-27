@@ -1,0 +1,2 @@
+time ./pyfll/fll -vvvvv -c ./pyfll/nox_dev_amd64.conf
+

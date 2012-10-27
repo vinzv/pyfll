@@ -24,6 +24,6 @@ deps = """
 """
 
 packages = """
-	siduction-art-kde-ridersonthestorm
-        gfxboot-themes-siduction-12.2.0-ridersonthestorm
+	siduction-art-kde-paintitblack
+        gfxboot-themes-siduction-12.1.7-paintitblack
 """

@@ -1,0 +1,26 @@
+desc = """
+	Basic Razor-QT desktop environment.
+"""
+
+deps = """
+	cli
+	distro
+	distro-rqt
+	distro-tools
+	distro-tools-x
+	hwsupport-essential
+	hwsupport-powermanagement
+	hwsupport-extra
+	rqt-basic
+	utils-essential
+	utils-extra
+        utils-x
+	xserver
+"""
+
+packages = """
+        ## artwork for riders
+        siduction-art-rqt-paintitblack
+        gfxboot-themes-siduction-12.1.7-paintitblack
+        ## artwork end
+"""

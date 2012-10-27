@@ -1,0 +1,2 @@
+time /home/debbuilder/pyfll-agaida/pyfll/fll -vv -c /home/debbuilder/pyfll-agaida/pyfll/kde_i386.conf
+

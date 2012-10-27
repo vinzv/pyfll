@@ -5,6 +5,7 @@ desc = """
 packages = """
 	akregator
 	digikam
+	iceweasel
 	kate
 	kcharselect
 	kdemultimedia-kio-plugins

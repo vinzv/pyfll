@@ -1,0 +1,2 @@
+time /home/debbuilder/pyfll-agaida/pyfll/fll -vv -c /home/debbuilder/pyfll-agaida/pyfll/xfce_amd64.conf
+

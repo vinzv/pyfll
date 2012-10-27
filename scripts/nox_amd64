@@ -1,0 +1,2 @@
+time /home/debbuilder/pyfll-agaida/pyfll/fll -vvvvv -c /home/debbuilder/pyfll-agaida/pyfll/nox_amd64.conf
+
