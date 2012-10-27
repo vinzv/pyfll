@@ -1,2 +1,2 @@
-time /home/debbuilder/pyfll-agaida/pyfll/fll -vvvvv -P -c /home/debbuilder/pyfll-agaida/pyfll/rqt_amd64.conf
+time ./pyfll/fll -vvvvv -P -c ./pyfll/rqt_dev_amd64.conf
 

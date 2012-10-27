@@ -1,2 +1,1 @@
-time /home/debbuilder/pyfll-agaida/pyfll/fll -vvvvv -c /home/debbuilder/pyfll-agaida/pyfll/gnome_amd64.conf
-
+time ./pyfll/fll -vv -c ./pyfll/gnome_amd64.conf

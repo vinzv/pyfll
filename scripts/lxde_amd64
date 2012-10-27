@@ -1,2 +1,2 @@
-time /home/debbuilder/pyfll-agaida/pyfll/fll -vvvvv -c /home/debbuilder/pyfll-agaida/pyfll/lxde_amd64.conf
+time ./pyfll/fll -vvvvv -c ./pyfll/lxde_amd64.conf
 

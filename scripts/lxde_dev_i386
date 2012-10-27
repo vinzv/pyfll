@@ -1,2 +1,1 @@
-time /home/debbuilder/pyfll-agaida/pyfll/fll -vv -c /home/debbuilder/pyfll-agaida/pyfll/lxde_i386.conf
-
+time ./pyfll/fll -vv -c ./pyfll/lxde_dev_i386.conf
