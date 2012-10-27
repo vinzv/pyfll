@@ -1,3 +1,12 @@
+pyfll (2012.10.27) UNRELEASED; urgency=low
+
+  * removed from distro-gnome siduction-settings-gnome
+  * changes to gnome packages list
+  * changes to dev-gnome packages list
+  * added last gfxboot and art changes to gnome_i386.conf
+
+ -- Angelescu Ovidiu <convbsd@siduction.net>  Wed, 27 Oct 2012 17:28:17 +0300
+
 pyfll (2012.10.04) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
@@ -53,8 +62,8 @@ pyfll (2012.07.09) UNRELEASED; urgency=low
 
   [ Alf Gaida ]
   * removed distro-tools-rqt-x, use distro-tools-x instead
-  * reflect these change in rqt 
-  * change numbering to date 
+  * reflect these change in rqt
+  * change numbering to date
 
   [ Ferdinand Thommes ]
   * changed kipi-pluigins-common to kipi-plugins, the latter pulls in
@@ -77,15 +86,15 @@ pyfll (2012.1.13+nmu6) unstable; urgency=low
   * mirrors changed to uni frankfurt
   * some whitespace changes
   * some commented stuff moved to make the configurations more and easier
-    compareable 
+    compareable
 
   [ Ferdinand Thommes ]
   * applied changes from b26c9360eac5ce855a8514f919c05ad412c7c1b5 to
     rqt_i368.conf
 
   [ Alf Gaida ]
-  * rework devils changes (make them more complete) 
-  * change   desktop-defaults-razorqt to desktop-default-rqt in 
+  * rework devils changes (make them more complete)
+  * change   desktop-defaults-razorqt to desktop-default-rqt in
     packages/packages.d/distro-rqt
 
   [ Torsten Wohlfarth ]
@@ -107,19 +116,19 @@ pyfll (2012.1.4) unstable; urgency=low
   [ Alf Gaida ]
   * a new idea: stop endless nmu's
   * major cleanup in packages.d
-  * documentation in chili: 
+  * documentation in chili:
     http://chili.siduction.org/projects/siduction/wiki/Pyfll
-  * packages/packages.d/old_crap created 
-  * moved old crap to old_crap  
+  * packages/packages.d/old_crap created
+  * moved old crap to old_crap
   * added gnupg-agent and signingparty, fixes #753
-  * added ca-certificates, fixes #752 
+  * added ca-certificates, fixes #752
   * added qtcurve, fixes #751
   * uncomment [release] on every flavour
   * commented out mysql in kde-essential
-  * disabled package packages/packages.d/xserver: menu 
+  * disabled package packages/packages.d/xserver: menu
 
   [ Ferdinand Thommes ]
-  * cleaned up both rqt.conf files (removed kde-next, qt-kde) 
+  * cleaned up both rqt.conf files (removed kde-next, qt-kde)
 
  -- Alf Gaida <agaida@siductionramme>  Tue, 19 Jun 2012 00:44:50 +0200
 
@@ -132,7 +141,7 @@ pyfll (2012.1+nmu44) unstable; urgency=low
 
   [ Alf Gaida ]
   * Modification to the *.conf files. Introducing release repo, desperadobeta,
-    some whitespaces  
+    some whitespaces
 
   [ Torsten Wohlfarth ]
   * changed the safe settings boot part
@@ -167,7 +176,7 @@ pyfll (2012.1+nmu44) unstable; urgency=low
   * lets try out gnome-icon-theme for icons in gfxboot
 
   [ siduction builders ]
-  * packgages.d/razor : art-wallpaper -> art-razor 
+  * packgages.d/razor : art-wallpaper -> art-razor
 
   [ Ferdinand Thommes ]
   * added dbus-x11 and gnome-icon-theme
@@ -293,7 +302,7 @@ pyfll (2012.1+nmu2) UNRELEASED; urgency=low
 
   * kelmos latest changes
   * remove hardcoded debootstrap, modified fll.conf should solve this
-  * dead languages removed 
+  * dead languages removed
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 05 May 2012 16:59:45 +0200
 

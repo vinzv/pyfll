@@ -10,7 +10,7 @@ deps = """
 	distro-tools
 	distro-tools-x
 	fluxbox
-	gimp
+	#gimp
 	gnome-basic
 	gnome-essential
 	gnome-desktop
@@ -27,18 +27,16 @@ deps = """
 
 packages = """
 	dnsutils
-	icedtea-plugin
+	icedtea-7-plugin
 	pidgin
 	qemu-kvm
 	libreoffice-gnome
-	inkscape
+	#inkscape
 	transmission-cli
 	transmission-gtk
 	xchat
 
-	## artwork for riders
 	siduction-art-wallpaper-ridersonthestorm
 	gfxboot-themes-siduction-12.2.0-ridersonthestorm
-	## artwork end
 """
 
