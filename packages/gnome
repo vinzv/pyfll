@@ -5,7 +5,7 @@ desc = """
 deps = """
 	cli
 	distro
-	devel-gnome
+	#devel-gnome
 	distro-gnome
 	distro-tools
 	distro-tools-x
