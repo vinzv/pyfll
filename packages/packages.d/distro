@@ -9,7 +9,6 @@ debconf = """
 packages = """
 	apt-conf-siduction
 	siduction-archive-keyring
-	siduction-art-icons
 	siduction-bootsplash
 	siduction-scripts
 	udev-config-siduction
