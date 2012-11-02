@@ -8,6 +8,7 @@ pyfll (2012.10.29+nmu1) UNRELEASED; urgency=low
 
   [ Alf Gaida ]
   * xfcenext in xfce*.conf 
+  * removed deprecated xfce4-utils from xfce-desktop-min
 
  -- Torsten Wohlfarth <towo@siduction.org>  Fri, 02 Nov 2012 21:00:35 +0100
 

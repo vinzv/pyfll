@@ -35,7 +35,6 @@ packages = """
         xfce4-panel
         xfce4-session
         xfce4-terminal
-        xfce4-utils
         xfdesktop4
         xfprint4
         xfwm4
