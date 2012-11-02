@@ -6,6 +6,9 @@ pyfll (2012.10.29+nmu1) UNRELEASED; urgency=low
   [ Torsten Wohlfarth ]
   * removed the password question.
 
+  [ Alf Gaida ]
+  * xfcenext in xfce*.conf 
+
  -- Torsten Wohlfarth <towo@siduction.org>  Fri, 02 Nov 2012 21:00:35 +0100
 
 pyfll (2012.10.28) UNRELEASED; urgency=low
