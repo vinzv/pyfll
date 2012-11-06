@@ -5,6 +5,7 @@ desc = """
 deps = """
 	cli
 	distro
+	distro-nox
 	distro-tools
 	distro-tools-nox
 	hwsupport-essential

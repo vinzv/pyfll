@@ -10,5 +10,5 @@ packages = """
 	kernel-remover
 	siduction-irc
 	setpassword
-	desktop-defaults-nox
+	
 """
