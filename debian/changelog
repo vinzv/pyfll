@@ -1,4 +1,4 @@
-pyfll (2012.10.29+nmu1) UNRELEASED; urgency=low
+pyfll (2012.10.29+nmu2) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
   * changes to gnome config files
@@ -10,7 +10,10 @@ pyfll (2012.10.29+nmu1) UNRELEASED; urgency=low
   * xfcenext in xfce*.conf 
   * removed deprecated xfce4-utils from xfce-desktop-min
 
- -- Torsten Wohlfarth <towo@siduction.org>  Fri, 02 Nov 2012 21:00:35 +0100
+  [ Torsten Wohlfarth ]
+  * fixed a typo in pyfll for the generation of the isolinux menu entrys
+
+ -- siduction builders <packaging@siduction.org>  Tue, 06 Nov 2012 14:00:33 +0100
 
 pyfll (2012.10.28) UNRELEASED; urgency=low
 
