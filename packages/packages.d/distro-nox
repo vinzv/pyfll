@@ -4,5 +4,5 @@ desc = """
 
 packages = """
 	desktop-defaults-nox
+	cli-installer	
 """
-

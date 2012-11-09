@@ -4,9 +4,15 @@ desc = """
 
 packages = """
 	ceni
+	configure-cups
+	dnsutils
+	fll-installer
 	inxi
+	kernel-remover
 	pppconfig
 	pppoeconf
+	setpassword
+	siduction-irc
 	sshstart
 	wvdial
 """

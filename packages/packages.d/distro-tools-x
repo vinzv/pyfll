@@ -4,20 +4,14 @@ desc = """
 
 packages = """
 	bluewater-manual
-	configure-cups
-	dnsutils
 	fll-live-xorgconfig
-	fll-installer
 	fonts-droid
 	gparted
 	install-usb-gui
-	kernel-remover
 	pywwetha
 	siduction-bug-report
-	siduction-irc
 	sidu-disk-center
 	siguibui
-	setpassword
 	sidu-installer
 	xdg-browser-launcher
 """
