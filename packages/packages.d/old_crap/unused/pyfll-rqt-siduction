@@ -71,6 +71,5 @@ packages = """
     pdfviewer
     policykit-1
     reportbug-ng
-    transmission-qt
     vlc
 """
