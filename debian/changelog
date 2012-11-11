@@ -1,4 +1,4 @@
-pyfll (2012.10.29+nmu2) UNRELEASED; urgency=low
+pyfll (2012.10.29+nmu3) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
   * changes to gnome config files
@@ -13,7 +13,10 @@ pyfll (2012.10.29+nmu2) UNRELEASED; urgency=low
   [ Torsten Wohlfarth ]
   * fixed a typo in pyfll for the generation of the isolinux menu entrys
 
- -- siduction builders <packaging@siduction.org>  Tue, 06 Nov 2012 14:00:33 +0100
+  [ Ferdinand Thommes ]
+  * added kpartsplugin to kde-desktop
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 11 Nov 2012 11:41:45 +0100
 
 pyfll (2012.10.28) UNRELEASED; urgency=low
 

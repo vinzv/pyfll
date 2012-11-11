@@ -21,6 +21,7 @@ packages = """
 	konq-plugins
 	kontact
 	kopete
+	kpartsplugin
 	krdc
 	krusader
 	ktorrent
