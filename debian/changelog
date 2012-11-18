@@ -1,4 +1,4 @@
-pyfll (2012.10.29+nmu4) UNRELEASED; urgency=low
+pyfll (2012.10.29+nmu5) UNRELEASED; urgency=low
 
   [ Angelescu Ovidiu ]
   * changes to gnome config files
@@ -18,7 +18,10 @@ pyfll (2012.10.29+nmu4) UNRELEASED; urgency=low
   * changed FLL_DISTRO_CODENAME to Riders on the Storm for
     KDE,RQT,LXDE,XFCE
 
- -- Ferdinand Thommes <devil@siduction.org>  Sat, 17 Nov 2012 22:50:03 +0100
+  [ siduction builders ]
+  * added some packages to the xfce confs
+
+ -- siduction builders <packaging@siduction.org>  Sun, 18 Nov 2012 14:27:25 +0100
 
 pyfll (2012.10.28) UNRELEASED; urgency=low
 
