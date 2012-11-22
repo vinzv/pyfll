@@ -52,4 +52,5 @@ packages = """
 	screengrab
 	system-config-printer-udev
 	xscreensaver
+	xterm
 """
