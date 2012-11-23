@@ -8,7 +8,7 @@ packages = """
 	fontconfig
 	fontconfig-config
 	libgl1-mesa-dri
-	menu # to be replaced in future 
+	menu
 	mesa-utils
 	sux
 	ttf-dejavu-core
