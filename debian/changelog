@@ -1,3 +1,9 @@
+pyfll (2012.10.29+nmu6) UNRELEASED; urgency=low
+
+  * outputdir for rqt changed to iso-rqt-{amd64,i386}
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 24 Nov 2012 09:16:51 +0100
+
 pyfll (2012.10.29+nmu5) unstable; urgency=low
 
   [ Angelescu Ovidiu ]
