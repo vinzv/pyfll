@@ -64,12 +64,6 @@ do_postinst() {
 	sed -i -e 's/^#\?\(EXTRA_GROUPS=\).*/\1"'"${GROUPS# }"'"/' \
 	       -e 's/^#\?\(ADD_EXTRA_GROUPS=\).*/\11/' \
 		/etc/adduser.conf
-
-	# cleanup repolists
-        if [ -f /etc/apt/sources.list.d/release.list ]; then
-            echo "Remove release.list"
-            rm -f /etc/apt/sources.list.d/release.list
-        fi
 }
 
 case "${1}" in
