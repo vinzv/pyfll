@@ -1,4 +1,10 @@
-pyfll (2012.10.29+nmu6) UNRELEASED; urgency=low
+pyfll (2012.11.30) UNRELEASED; urgency=low
+
+  * repolabels siduction- removed
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 30 Nov 2012 22:10:36 +0100
+
+pyfll (2012.10.29+nmu6) unstable; urgency=low
 
   [ Alf Gaida ]
   * outputdir for rqt changed to iso-rqt-{amd64,i386}
@@ -7,7 +13,7 @@ pyfll (2012.10.29+nmu6) UNRELEASED; urgency=low
   [ siduction builders ]
   * cleaned up configurations
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 24 Nov 2012 09:16:51 +0100
+ -- Alf Gaida <agaida@siduction.org>  Fri, 30 Nov 2012 22:10:32 +0100
 
 pyfll (2012.10.29+nmu5) unstable; urgency=low
 
