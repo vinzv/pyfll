@@ -33,6 +33,7 @@ packages = """
 	nfs-common
 	ntpdate
 	ntfs-3g
+	ntfs-config
 	nmap
 	openssh-client
 	pwgen

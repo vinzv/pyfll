@@ -1,9 +1,20 @@
 pyfll (2012.12.02) unstable; urgency=low
 
+  *  added romanian language support in packages/packages.d/esential and 
+     in ${flavour}_${arch}.conf files
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 02 Dec 2012 20:41:29 +0200
+
+pyfll (2012.11.31) UNRELEASED; urgency=low
+
+  [ Alf Gaida ]
   * repolabels siduction- removed
   * wbar-config for xfce added in conf
 
- -- Alf Gaida <agaida@siduction.org>  Sun, 02 Dec 2012 21:34:31 +0100
+  [ Ferdinand Thommes ]
+  * added ntfs-config to utils-extra
+
+ -- Ferdinand Thommes <devil@siduction.org>  Sun, 02 Dec 2012 12:35:29 +0100
 
 pyfll (2012.10.29+nmu6) unstable; urgency=low
 
