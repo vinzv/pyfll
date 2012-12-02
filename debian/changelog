@@ -1,8 +1,9 @@
-pyfll (2012.11.30) UNRELEASED; urgency=low
+pyfll (2012.12.02) unstable; urgency=low
 
   * repolabels siduction- removed
+  * wbar-config for xfce added in conf
 
- -- Alf Gaida <agaida@siduction.org>  Fri, 30 Nov 2012 22:10:36 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sun, 02 Dec 2012 21:34:31 +0100
 
 pyfll (2012.10.29+nmu6) unstable; urgency=low
 
