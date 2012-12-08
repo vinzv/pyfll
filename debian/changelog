@@ -1,3 +1,9 @@
+pyfll (2012.12.09) UNRELEASED; urgency=low
+
+  * remove fugly debian-menu in kde, rqt, xfce
+
+ -- siduction builders <packaging@siduction.org>  Sun, 09 Dec 2012 00:33:10 +0100
+
 pyfll (2012.12.02) unstable; urgency=low
 
   *  added romanian language support in packages/packages.d/esential and 
