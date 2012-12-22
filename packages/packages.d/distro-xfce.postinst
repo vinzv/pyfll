@@ -5,11 +5,6 @@ say() {
 }
 
 do_postinst() {
-    if [ -w /etc/ppp/peers/kppp-options ]; then
-        say 'Allowing kppp noauth capability'
-        sed -i 's/^#noauth/noauth/' /etc/ppp/peers/kppp-options
-    fi
-
     # get rid of fugly debian-menu (from menu-xdg)
     if [ -e /etc/xdg/menus/debian-menu.menu ]; then
         rm -f /etc/xdg/menus/debian-menu.menu

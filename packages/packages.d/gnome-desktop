@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+	aisleriot
 	evolution
 	evolution-data-server 
 	gnome-backgrounds
