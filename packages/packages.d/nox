@@ -11,7 +11,7 @@ packages = """
 	cmospwd
 	encfs
 	foremost
-	fuse-utils
+	#fuse-utils
 	gptsync
 	hddtemp
 	john
