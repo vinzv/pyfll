@@ -1,8 +1,14 @@
+pyfll (2012.12.26) UNRELEASED; urgency=low
+
+  * added gnome-shell-extensions to gnome-basic
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Wed, 26 Dec 2012 18:01:02 +0200
+
 pyfll (2012.12.23) UNRELEASED; urgency=low
 
   * in gnome_i386.conf changed to xmas and gfxboot-theme 12.2.5 
 
- -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 23 Dec 2012 14:16:02 +000
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 23 Dec 2012 14:16:02 +0200
 
 pyfll (2012.12.22) UNRELEASED; urgency=low
 

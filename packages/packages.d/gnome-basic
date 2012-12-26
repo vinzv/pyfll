@@ -19,6 +19,7 @@ packages = """
 	gnome-media
 	gnome-screenshot
 	gnome-search-tool
+	gnome-shell-extensions
 	gnome-themes-standard
 	gnome-user-guide
 	gstreamer0.10-alsa
