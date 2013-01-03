@@ -6,6 +6,7 @@ packages = """
 	ark
 	akonadi-backend-sqlite
 	kaffeine
+	kalternatives
 	kde-config-cddb
 	kde-plasma-desktop
 	kdm
