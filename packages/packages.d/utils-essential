@@ -12,6 +12,7 @@ packages = """
 	dmeventd
 	firmware-linux-free
 	ffmpeg
+	gamin
 	gdisk
 	gvfs-bin
 	gvfs-backends
