@@ -1,3 +1,0 @@
-Package: syslinux syslinux-common extlinux
-Pin: release a=testing
-Pin-Priority: 1001
