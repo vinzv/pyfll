@@ -597,7 +597,7 @@ class FLLBuilder(object):
                 pkgs['packages'].append(p)
                 self.log.debug('  %s' % p)
 
-        deps = ['essential']
+        deps = ['000-essential']
         if 'deps' in pfile:
             self.log.debug('deps:')
             for dep in self.__lines2list(pfile['deps']):

@@ -3,19 +3,34 @@ desc = """
 """
 
 deps = """
-	cli
-	distro
-	distro-rqt
-	distro-tools
-	distro-tools-x
-	hwsupport-essential
-	hwsupport-powermanagement
-	hwsupport-extra
-	rqt-basic
-	utils-essential
-	utils-extra
-        utils-x
-	xserver
+    010-debian-cli
+	# cli
+    # utils-essential
+	# utils-extra
+
+    020-siduction-cli
+	# distro
+	# distro-tools
+
+    030-hwsupport
+	# hwsupport-essential
+	# hwsupport-powermanagement
+	# hwsupport-extra
+    
+    100-xserver
+	# xserver
+    
+    110-x-debian
+    # utils-x
+    
+    120-x-sidcution
+	# distro-tools-x
+
+    400-rqt-basic
+	# rqt-basic
+
+    500-siduction-rqt
+	# distro-rqt
 """
 
 packages = """
