@@ -1,0 +1,69 @@
+desc = """
+	Packages that provide some kind of support for hardware.
+"""
+
+packages = """
+    #--------------------------------
+    # essential
+    #--------------------------------
+	acpid
+	alsa-base
+	br2684ctl
+	cpufrequtils
+	crda
+	irqbalance
+	laptop-detect
+	lvm2
+	mdadm
+	nbd-client
+	openfwwf
+	pcmciautils
+	pciutils
+	udev
+	usbutils
+	udisks
+    #--------------------------------
+    #  extra 
+    #--------------------------------
+	alsa-utils
+	bluetooth
+	bluez-pcmcia-support
+	dmidecode
+	dmsetup
+	modemmanager 
+	mobile-broadband-provider-info 
+	rfkill
+	usb-modeswitch
+	vbetool
+    #--------------------------------
+    # powermangement 
+    #--------------------------------
+	acpi-support
+	pm-utils
+	powermgmt-base
+	upower
+    #--------------------------------
+    # printing and scanning
+    #--------------------------------
+	cups
+	cups-client
+	cups-bsd
+	printer-driver-gutenprint
+	foomatic-db
+	foomatic-db-engine
+	foomatic-db-gutenprint
+	foomatic-filters
+	printer-driver-foo2zjs
+	ghostscript-cups
+	ghostscript-x
+	hpijs-ppds
+	hplip
+	openprinting-ppds
+	printer-driver-min12xxw
+	printer-driver-pnm2ppa
+	sane
+	sane-utils
+	libsane-extras
+	printer-driver-splix
+	system-config-printer-udev
+"""

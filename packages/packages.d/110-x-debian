@@ -1,0 +1,12 @@
+desc = """
+	Utilities useful for all package profiles, that depends on X.
+"""
+
+packages = """
+	myspell-de-de
+	myspell-en-us
+	myspell-pt-br
+	xsane
+	zenity
+	zim
+"""

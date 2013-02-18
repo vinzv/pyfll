@@ -1,0 +1,34 @@
+desc = """
+    Packages that are absolutely required to be included in the build
+    chroot or it will fail to build or boot properly. It is also for
+    packages providing core system defaults.
+"""
+
+debconf = """
+    locales locales/locales_to_be_generated multiselect de_CH.UTF-8 UTF-8, de_DE.UTF-8 UTF-8, en_GB.UTF-8 UTF-8, en_US.UTF-8 UTF-8, it_IT.UTF-8 UTF-8, pl_PL.UTF-8 UTF-8, pt_BR.UTF-8 UTF-8, pt_PT.UTF-8 UTF-8, ro_RO.UTF-8 UTF-8
+"""
+
+
+packages = """
+    adduser
+    console-setup
+    fll-live-initramfs
+    fll-live-initscripts
+    locales
+    squashfs-tools
+    initramfs-tools
+"""
+
+i386 = """
+    grub-pc
+    mtools
+    syslinux
+"""
+
+amd64 = """
+    grub-pc
+    grub-efi-amd64-bin
+    efibootmgr
+    mtools
+    syslinux
+"""

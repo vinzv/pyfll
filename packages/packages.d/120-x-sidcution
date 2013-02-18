@@ -1,0 +1,17 @@
+desc = """
+	Distro specific packages with dependencies on X Window System.
+"""
+
+packages = """
+	bluewater-manual
+	fll-live-xorgconfig
+	fonts-droid
+	gparted
+	install-usb-gui
+	pywwetha
+	siduction-bug-report
+	sidu-disk-center
+	siguibui
+	sidu-installer
+	xdg-browser-launcher
+"""
