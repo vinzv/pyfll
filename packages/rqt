@@ -3,20 +3,29 @@ desc = """
 """
 
 deps = """
+    #-------------------
+    010-cli
 	cli
-	distro
-	distro-rqt
-	distro-tools
-	distro-tools-x
-	hwsupport-essential
-	hwsupport-powermanagement
-	hwsupport-extra
-	rqt-basic
 	utils-essential
 	utils-extra
-	utils-x
+    # ------------------
+    020-distro
+	distro
+    # ------------------
+	distro-tools
+    030-hwsupport
+	rqt-basic
+    #-------------------
+    100-xserver
 	xserver
+    #-------------------
+	utils-x
+	distro-tools-x
+    #-------------------
+	distro-rqt
+    #-------------------    
 """
 
 packages = """
 """
+
