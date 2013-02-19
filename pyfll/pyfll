@@ -1343,7 +1343,7 @@ class FLLBuilder(object):
 
         self.log.info('detecting whitelisted recommended packages...')
         rec_module = ConfigObj(os.path.join(self.opts.s, 'packages',
-                                            'packages.d', 'recommends'))
+                                            'packages.d', '010-recommends-whitelist'))
         rec_dict = dict([(p, True) for p in
                          self.__lines2list(rec_module['packages'])])
         self.log.debug('rec_dict:')

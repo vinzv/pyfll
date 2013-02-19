@@ -2,6 +2,8 @@ pyfll (2013.03.18) UNRELEASED; urgency=low
 
   * new structure
   * some beautifing of files 
+  * new numbering
+  * recommends renamed to 010-recommends-whitelisted 
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 18 Feb 2013 22:47:42 +0100
 

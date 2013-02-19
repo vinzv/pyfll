@@ -3,30 +3,30 @@ desc = """
 """
 
 deps = """
-    010-debian-cli
+    100-debian-cli
     # cli
     # utils-essential
     # utils-extra
 
-    020-siduction-cli
+    200-siduction-cli
     # distro
     # distro-tools
 
-    030-hwsupport
+    300-hwsupport
     # hwsupport-essential
     # hwsupport-powermanagement
     # hwsupport-extra
 
-    100-xserver
+    400-xserver
     # xserver
     
-    110-x-debian
+    500-x-debian
     # utils-x
 
-    120-x-siduction
+    600-x-siduction
     # distro-tools-x
 
-    500-siduction-rqt
+    900-siduction-rqt
     # rqt-basic
     # distro-rqt
 """
