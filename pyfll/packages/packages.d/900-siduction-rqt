@@ -11,7 +11,8 @@ packages = """
     #-------------------------------------------------
     # Debian Packages
     #-------------------------------------------------
-    dbus-x11           # ??? wird das wirklich von keinem gezogen?
+    #dbus-x11    # ??? wird das wirklich von keinem gezogen?
+    dbus-x11
     gnome-icon-theme
     icedove
     lightdm
