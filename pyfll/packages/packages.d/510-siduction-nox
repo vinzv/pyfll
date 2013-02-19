@@ -1,0 +1,23 @@
+desc = """
+    Distro specific packages for an noX.
+"""
+
+packages = """
+    #-------------------------------------------------
+    # siduction nox packages.
+    #-------------------------------------------------
+    cli-installer  ##gehört nach cli für alle
+    desktop-defaults-nox
+
+    #-------------------------------------------------
+    # debian nox goodies.
+    #-------------------------------------------------
+    alpine
+    cmus
+    fbcat
+    fbi
+    fbterm
+    links2
+    podget
+    tmux
+"""

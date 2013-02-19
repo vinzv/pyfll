@@ -10,39 +10,32 @@ packages = """
     #------------------------------
     # distro
     #------------------------------
-	apt-conf-siduction
-	siduction-archive-keyring
-	siduction-bootsplash
-	siduction-scripts
-	udev-config-siduction
+    apt-conf-siduction
+    cli-installer
+    siduction-archive-keyring
+    siduction-bootsplash
+    siduction-scripts
+    udev-config-siduction
     #------------------------------
     # distro-tools
     #------------------------------
-	ceni
-	configure-cups
-	dnsutils
-	fll-installer
-	inxi
-	kernel-remover
-	pppconfig
-	pppoeconf
-	setpassword
-	siduction-irc
-	sshstart
-	wvdial
+    ceni
+    configure-cups
+    dnsutils
+    fll-installer
+    inxi
+    kernel-remover
+    pppconfig
+    pppoeconf
+    setpassword
+    siduction-irc
+    sshstart
+    wvdial
+    
     #------------------------------
     # distro-tools-x
     #------------------------------
-	bluewater-manual
-	fll-live-xorgconfig
-	fonts-droid
-	gparted
-	install-usb-gui
-	pywwetha
-	siduction-bug-report
-	sidu-disk-center
-	siguibui
-	sidu-installer
-	xdg-browser-launcher
+    bluewater-manual
+    pywwetha
 """
 

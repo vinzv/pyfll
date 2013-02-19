@@ -1,56 +1,51 @@
  desc = """
-	Distro specific packages for a Razor-qt desktop.
+    Razor-qt desktop environment.
 """
 
 packages = """
-	bsc
-	cups
-	cups-client
-	cups-bsd
-	printer-driver-gutenprint
-	foomatic-db
-	foomatic-db-engine
-	foomatic-db-gutenprint
-	foomatic-filters
-	desktop-defaults-rqt
-	ghostscript-cups
-	ghostscript-x
-	gnome-icon-theme
-	juffed
-	#kdocker
-	nomacs
-	openbox-themes
-	obconf
-	oxygen-icon-theme
-	qasmixer
-	qlipper
-	qmmp
-	qt4-qtconfig
-        qterminal
-	qupzilla
-	qutim
-	qxkb
-	librazorqt0
-	lightdm
-	lightdm-gtk-greeter
-	openprinting-ppds
-	ptbatterysystemtray
-	razorqt
-	razorqt-appswitcher
-	razorqt-config
-	razorqt-data
-	razorqt-desktop
-	razorqt-panel
-	razorqt-policykit-agent
-	razorqt-power
-	razorqt-runner
-	razorqt-session
-	sane
-	sane-utils
-	libsane-extras
-	silicon
-	screengrab
-	system-config-printer-udev
-	xscreensaver
-	xterm
+    #-------------------------------------------------
+    # Razor-qt desktop.
+    #-------------------------------------------------
+    razorqt
+
+    #-------------------------------------------------
+    # Debian Packages
+    #-------------------------------------------------
+    dbus-x11           # ??? wird das wirklich von keinem gezogen?
+    gnome-icon-theme
+    icedove
+    lightdm
+    lightdm-gtk-greeter
+    moc-ffmpeg-plugin
+    obconf
+    openbox-themes
+    oxygen-icon-theme
+    policykit-1
+    qbittorrent
+    qt4-qtconfig
+    reportbug-ng
+    vlc
+    xscreensaver
+    xterm
+
+    #-------------------------------------------------
+    # Distro specific packages for a Razor-qt desktop.
+    #-------------------------------------------------
+    bsc
+    desktop-defaults-rqt
+    juffed
+    #kdocker - Wozu brauchen wir den überhaupt???
+    kvirc
+    nomacs
+    pdfviewer
+    ptbatterysystemtray
+    qasmixer
+    qlipper
+    qmmp
+    qterminal
+    qupzilla
+    qutim
+    qxkb
+    silicon
+    screengrab
 """

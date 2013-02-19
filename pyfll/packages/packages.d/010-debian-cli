@@ -106,7 +106,31 @@ packages = """
 	vpnc
 	wodim
 	zip
+    #-------------------------------------
+    # no X environment 
+    #-------------------------------------
+	iftop
+	iotop
+	vnstat
+	chkrootkit
+	cmospwd
+	encfs
+	foremost
+	#fuse-utils
+	gptsync
+	hddtemp
+	john
+	partimage
+	rkhunter
+	sdparm
+	smartmontools
+	ncdu
+	glances
+	whohas
+	whowatch
+	canto
 """
+
 
 debconf = """
 	kexec-tools kexec-tools/load_kexec boolean false

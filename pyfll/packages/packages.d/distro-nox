@@ -1,8 +1,0 @@
-desc = """
-	Distro specific packages for an noX.
-"""
-
-packages = """
-	desktop-defaults-nox
-	cli-installer	
-"""
