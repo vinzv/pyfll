@@ -14,8 +14,6 @@ packages = """
     dbus-x11
     gnome-icon-theme
     icedove
-    lightdm
-    lightdm-gtk-greeter
     moc-ffmpeg-plugin
     obconf
     openbox-themes
@@ -47,6 +45,7 @@ packages = """
     qupzilla
     qutim
     qxkb
-    silicon
     screengrab
+    siduction-dm-rqt
+    silicon
 """

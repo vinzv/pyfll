@@ -1,3 +1,9 @@
+pyfll (2013.03.20) unstable; urgency=low
+
+  * rqt replace lightdm and lightdm-gtk-greeter with siduction-dm-rqt  
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 25 Feb 2013 00:03:09 +0100
+
 pyfll (2013.03.19) unstable; urgency=low
 
   * qtfm added added to rqt
