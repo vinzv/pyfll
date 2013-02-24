@@ -1,11 +1,18 @@
-pyfll (2013.03.18) UNRELEASED; urgency=low
+pyfll (2013.03.19) unstable; urgency=low
+
+  * qtfm added added to rqt
+  * juffed-plugins added to rqt 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Feb 2013 22:59:05 +0100
+
+pyfll (2013.03.18) unstable; urgency=low
 
   * new structure
   * some beautifing of files 
   * new numbering
   * recommends renamed to 010-recommends-whitelisted 
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 18 Feb 2013 22:47:42 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Feb 2013 22:58:21 +0100
 
 pyfll (2012.12.28) unstable; urgency=low
 

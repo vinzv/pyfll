@@ -11,7 +11,6 @@ packages = """
     #-------------------------------------------------
     # Debian Packages
     #-------------------------------------------------
-    #dbus-x11    # ??? wird das wirklich von keinem gezogen?
     dbus-x11
     gnome-icon-theme
     icedove
@@ -35,7 +34,7 @@ packages = """
     bsc
     desktop-defaults-rqt
     juffed
-    #kdocker - Wozu brauchen wir den überhaupt???
+    juffed-plugins
     kvirc
     nomacs
     pdfviewer
@@ -44,6 +43,7 @@ packages = """
     qlipper
     qmmp
     qterminal
+    qtfm
     qupzilla
     qutim
     qxkb
