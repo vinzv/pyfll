@@ -1,20 +1,23 @@
 desc = """
-	Only the essential software that is required to boot.
+    Siduction NO-X environment
 """
 
 deps = """
-	cli
-	distro
-	distro-nox
-	distro-tools
-	hwsupport-essential
-	hwsupport-extra
-	hwsupport-powermanagement
-	nox
-	utils-essential
-	utils-extra
-"""
+    100-debian-cli
+    # cli
+    # utils-essential
+    # utils-extra
 
-packages = """
-"""
+    200-siduction-cli
+    # distro
+    # distro-tools
 
+    300-hwsupport
+    # hwsupport-essential
+    # hwsupport-extra
+    # hwsupport-powermanagement
+
+    910-siduction-nox
+    # nox
+    # distro-nox
+"""

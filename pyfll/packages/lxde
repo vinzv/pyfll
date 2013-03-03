@@ -1,5 +1,5 @@
 desc = """
-	A basic LXDE desktop.
+	Siduction LXDE desktop.
 """
 
 deps = """

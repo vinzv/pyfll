@@ -1,5 +1,5 @@
 desc = """
-	Basic Razor-QT desktop environment.
+    Siducton Razor-QT desktop environment
 """
 
 deps = """
@@ -29,7 +29,4 @@ deps = """
     900-siduction-rqt
     # rqt-basic
     # distro-rqt
-"""
-
-packages = """
 """
