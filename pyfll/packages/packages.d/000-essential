@@ -17,18 +17,15 @@ packages = """
     locales
     squashfs-tools
     initramfs-tools
+    grub-pc
+    mtools
+    syslinux
 """
 
 i386 = """
-    grub-pc
-    mtools
-    syslinux
 """
 
 amd64 = """
-    grub-pc
     grub-efi-amd64-bin
     efibootmgr
-    mtools
-    syslinux
 """
