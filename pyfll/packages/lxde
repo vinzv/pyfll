@@ -1,23 +1,33 @@
 desc = """
-	Siduction LXDE desktop.
+    Siduction LXDE desktop environment
 """
 
 deps = """
-	cli
-	distro
-	distro-lxde
-	distro-tools
-	distro-tools-x
-	hwsupport-essential
-	hwsupport-extra
-	hwsupport-powermanagement
-	lxde-basic
-	lxde-extra
-	utils-essential
-	utils-extra
-	utils-x
-	xserver
-"""
+    100-debian-cli
+    # cli
+    # utils-essential
+    # utils-extra
 
-packages = """
+    200-siduction-cli
+    # distro
+    # distro-tools
+
+    300-hwsupport
+    # hwsupport-essential
+    # hwsupport-extra
+    # hwsupport-powermanagement
+
+    400-xserver
+    # xserver
+
+    500-x-debian
+    # utils-x
+
+    600-x-siduction
+    # distro-tools-x
+
+    920-siduction-lxde
+    # lxde-basic
+    # lxde-extra
+    # distro-lxde
 """

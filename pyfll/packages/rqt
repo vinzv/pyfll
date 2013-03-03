@@ -19,7 +19,7 @@ deps = """
 
     400-xserver
     # xserver
-    
+
     500-x-debian
     # utils-x
 
