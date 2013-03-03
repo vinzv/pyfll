@@ -1,3 +1,35 @@
+pyfll (2013.03.04) unstable; urgency=low
+
+  * gnome_amd64 cleanup
+  * gnome_dev_amd64 cleanup
+  * gnome_i386 cleanup
+  * gnome_dev_i386 cleanup
+  * kde_amd64 cleanup
+  * kde_dev_amd64 cleanup
+  * kde_i386 cleanup
+  * kde_dev_i386 cleanup
+  * lxde_amd64 cleanup
+  * lxde_dev_amd64 cleanup
+  * lxde_i386 cleanup
+  * lxde_dev_i386 cleanup
+  * nox_amd64
+  * nox_dev_amd64
+  * nox_i386
+  * nox_dev_i386
+  * rqt_amd64 cleanup
+  * rqt_dev_amd64 cleanup
+  * rqt_i386 cleanup
+  * rqt_dev_i386 cleanup
+  * xfce_amd4 cleanup
+  * xfce_dev_amd64 cleanup
+  * xfce_i386
+  * xfce_dev_i386 
+  * deleted:    pyfll/packages/kde-dev (ever the same as ./kde)
+  * deleted:    pyfll/packages/lxde-dev ^^
+  * deleted:    pyfll/packages/nox-dev  ^^
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 00:57:15 +0100
+
 pyfll (2013.03.03) unstable; urgency=low
 
   * some cleanup
