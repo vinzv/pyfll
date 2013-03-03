@@ -14,8 +14,8 @@ deps = """
 
     300-hwsupport
     # hwsupport-essential
-    # hwsupport-powermanagement
     # hwsupport-extra
+    # hwsupport-powermanagement
 
     400-xserver
     # xserver

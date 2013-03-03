@@ -1,0 +1,107 @@
+desc = """
+    Siduction GNOME desktop environment
+"""
+
+packages = """
+    ##
+    ## Minimal GNOME desktop environment
+    ##
+    gdm3
+    gnome-keyring
+    gnome-session-fallback
+    gnome-session
+    gnome-terminal
+    iceweasel
+    metacity
+    nautilus
+    network-manager-gnome
+    xchat
+    ##
+    ## Lite GNOME desktop applications
+    ##
+    alacarte
+    baobab
+    brasero
+    dconf-tools
+    eog
+    evince
+    file-roller
+    gcalctool
+    gconf-editor
+    gedit
+    # gnome-about
+    gnome-bluetooth
+    gnome-control-center
+    gnome-media
+    gnome-screenshot
+    gnome-search-tool
+    gnome-shell-extensions
+    gnome-themes-standard
+    gnome-user-guide
+    gstreamer0.10-alsa
+    gstreamer0.10-plugins-base
+    gstreamer0.10-plugins-good
+    gstreamer0.10-plugins-ugly
+    gstreamer0.10-pulseaudio
+    freedesktop-sound-theme
+    libcanberra-pulse
+    libmtp-runtime
+    mpg321
+    nautilus-open-terminal
+    pulseaudio
+    rhythmbox
+    totem
+    ##
+    ## Normal GNOME desktop applications
+    ##
+    aisleriot
+    evolution
+    evolution-data-server
+    gnome-backgrounds
+    gnome-dictionary
+    gnome-disk-utility
+    gnome-games
+    gnome-icon-theme
+    gnome-system-log
+    gnome-tweak-tool
+    gnome-user-share
+    gucharmap
+    hamster-applet
+    gstreamer0.10-ffmpeg
+    shotwell
+    sound-juicer
+    vino
+    yelp
+    tomboy
+    tracker-gui
+    vinagre
+    zenity
+    ##
+    ## Distro specific packages for an GNOME desktop.
+    ##
+    desktop-defaults-gnome
+    gksu
+    gparted
+    ##
+    ## Debian development utilities.
+    ## this section is obsolete and should be dropped
+    ## for siduction-dev-package
+    autotools-dev
+    automake
+    libgtk2.0-dev
+    libglade2-dev
+    imagemagick
+    asciidoc
+    docbook
+    gengetopt
+    xsltproc
+    docbook-xml
+    docbook-xsl
+    devscripts
+    pkg-config
+    libblkid-dev
+    libudev-dev
+    libxml2-utils
+    subversion
+"""
+

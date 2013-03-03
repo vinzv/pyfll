@@ -3,37 +3,47 @@ desc = """
 """
 
 deps = """
-	cli
-	distro
-	#devel-gnome
-	distro-gnome
-	distro-tools
-	distro-tools-x
-	fluxbox
-	#gimp
-	gnome-basic
-	gnome-essential
-	gnome-desktop
-	hwsupport-essential
-	hwsupport-extra
-	hwsupport-powermanagement
-	hwsupport-printscan
-	libreoffice-suite
-	utils-essential
-	utils-extra
-	utils-x
-	xserver
-"""
+    100-debian-cli
+    # cli
+    # utils-essential
+    # utils-extra
 
-packages = """
-	dnsutils
-	icedtea-7-plugin
-	pidgin
-	qemu-kvm
-	libreoffice-gnome
-	#inkscape
-	transmission-cli
-	transmission-gtk
-	xchat
-"""
+    200-siduction-cli
+    # distro
+    # distro-tools
 
+    300-hwsupport
+    # hwsupport-essential
+    # hwsupport-extra
+    # hwsupport-powermanagement
+    # hwsupport-printscan
+
+    400-xserver
+    # xserver
+
+    500-x-debian
+    # utils-x
+
+    600-x-siduction
+    # distro-tools-x
+
+    930-siduction-gnome
+    # distro-gnome
+    # gnome-essential
+    # gnome-basic
+    # gnome-desktop
+
+    ## eventually obsolete or false at this place
+    # fluxbox
+    # libreoffice-suite
+    # libreoffice-gnome
+    # inkscape
+
+    # dnsutils
+    # icedtea-7-plugin
+    # pidgin
+    # qemu-kvm
+    # transmission-cli
+    # transmission-gtk
+    # xchat
+"""

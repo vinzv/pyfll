@@ -1,0 +1,50 @@
+desc = """
+	Siduction LXDE desktop environment.
+"""
+
+packages = """
+    blueman
+    galternatives
+    gnome-keyring
+    gtk2-engines
+    gvfs-backends
+    gvfs-fuse
+    hardinfo
+    lxappearance-obconf
+    lxde
+    lxlauncher
+    lxpolkit
+    lxtask
+    midori
+    network-manager-gnome
+    #policykit-1
+    python-vte
+    reportbug
+    xchat
+    ##
+    ## Extra packages for the LXDE desktop environment.
+    ##
+    brasero
+    claws-mail-i18n
+    #clipit
+    evince-gtk
+    fpm2
+    galculator
+    geany
+    gpodder
+    # guake
+    osmo
+    putty
+    # radiotray
+    # tilda
+    transmission
+    tuxcmd-modules
+    xnoise-plugins
+    ##
+    ## Distro specific packages for an LXDE desktop.
+    ##
+    desktop-defaults-lxde
+    gksu
+    # lightdm
+    slim
+"""
