@@ -1,5 +1,5 @@
 desc = """
-	Basic GNOME desktop environment.
+	Siduction GNOME desktop environment
 """
 
 deps = """

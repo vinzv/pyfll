@@ -1,5 +1,5 @@
 desc = """
-	Complete GNOME desktop environment with OpenOffice.
+	Siduction GNOME desktop environment
 """
 
 deps = """

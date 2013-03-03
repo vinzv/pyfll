@@ -1,9 +1,19 @@
-pyfll (2013.02.25) UNRELEASED; urgency=low
+pyfll (2013.03.03) unstable; urgency=low
+
+  * some cleanup
+  * the dev-packages-sets should be dropped, because the only difference
+    between $flavour and $flavour-dev should be the theme. New packages
+    can be added to the conf for testing purposes (really dont know it
+    that is a good idea, but i honestly think so
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 03 Mar 2013 03:39:16 +0100
+
+pyfll (2013.02.25) unstable; urgency=low
 
   * some cosmetics
   * preload added to 100-debian-cli 
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 25 Feb 2013 00:43:52 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sun, 03 Mar 2013 03:36:22 +0100
 
 pyfll (2013.02.20) unstable; urgency=low
 
