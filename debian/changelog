@@ -29,8 +29,16 @@ pyfll (2013.03.04) unstable; urgency=low
   * deleted:    pyfll/packages/nox-dev  ^^
   * deleted cli-installer from /910-siduction-nox, it's part of the
     200-siduction-cli
+  * ffmpeg:        100-debian-cli -> 500-x-debian
+  * gvfs-bin:      100-debian-cli -> 500-x-debian      
+  * gvfs-backends: 100-debian-cli -> 500-x-debian
+  * imagemagick:   100-debian-cli -> 500-x-debian
+  * acpi-support-base added to 100-debian-cli
+  * acpi-support:  300-hw-support -> 500-x-debian
+  * ghostscript-x  300-hw-support -> 500-x-debian  
+   
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 01:08:40 +0100
+ -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 02:10:32 +0100
 
 pyfll (2013.03.03) unstable; urgency=low
 

@@ -38,7 +38,7 @@ packages = """
     #--------------------------------
     # powermangement 
     #--------------------------------
-	acpi-support
+	acpi-support-base
 	pm-utils
 	powermgmt-base
 	upower
@@ -55,7 +55,6 @@ packages = """
 	foomatic-filters
 	printer-driver-foo2zjs
 	ghostscript-cups
-	ghostscript-x
 	hpijs-ppds
 	hplip
 	openprinting-ppds

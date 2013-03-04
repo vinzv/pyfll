@@ -3,10 +3,23 @@ desc = """
 """
 
 packages = """
-	myspell-de-de
-	myspell-en-us
-	myspell-pt-br
-	xsane
-	zenity
-	zim
+    myspell-de-de
+    myspell-en-us
+    myspell-pt-br
+    xsane
+    zenity
+    zim
+    ##
+    ## aus 100-debian-cli
+    ##
+    ffmpeg
+    gvfs-bin
+    gvfs-backends
+    imagemagick
+    
+    ##
+    ## aus 300 hw-support    
+    ##
+    acpi-support
+    ghostscript-x  
 """

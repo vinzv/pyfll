@@ -30,11 +30,8 @@ packages = """
     debsums
     dmeventd
     firmware-linux-free
-    ffmpeg
     gamin
     gdisk
-    gvfs-bin
-    gvfs-backends
     iptables
     iputils-ping
     isc-dhcp-client
@@ -81,7 +78,6 @@ packages = """
     gddrescue
     genisoimage
     hdparm
-    imagemagick
     iproute
     jfsutils
     lm-sensors
