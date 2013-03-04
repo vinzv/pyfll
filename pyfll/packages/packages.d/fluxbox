@@ -1,10 +1,10 @@
 desc = """
-	fluxbox
+    fluxbox
 """
 
 packages = """
-	fluxbox
-	feh
+    fluxbox
+    feh
 """
 
 i386 = """

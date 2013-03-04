@@ -1,9 +1,9 @@
 desc = """
-	Distro specific common packages.
+    Distro specific common packages.
 """
 
 debconf = """
-        passwd passwd/root-password-crypted password *
+    passwd passwd/root-password-crypted password *
 """
 
 packages = """

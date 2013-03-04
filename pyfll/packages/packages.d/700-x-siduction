@@ -1,0 +1,15 @@
+desc = """
+    Distro specific packages with dependencies on X Window System.
+"""
+
+packages = """
+    fll-live-xorgconfig
+    fonts-droid
+    gparted
+    install-usb-gui
+    siduction-bug-report
+    sidu-disk-center
+    siguibui
+    sidu-installer
+    xdg-browser-launcher
+"""

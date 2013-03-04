@@ -1,5 +1,5 @@
 desc = """
-	Common command line utilities.
+    Common command line utilities.
 """
 
 packages = """
@@ -126,6 +126,5 @@ packages = """
 
 
 debconf = """
-	kexec-tools kexec-tools/load_kexec boolean false
+    kexec-tools kexec-tools/load_kexec boolean false
 """
-

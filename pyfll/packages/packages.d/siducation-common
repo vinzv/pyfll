@@ -1,24 +1,24 @@
 desc = """
-	Common packages for both versions of siducation.
+    Common packages for both versions of siducation.
 """
 
 packages = """
-	audacity
-	bluefish
-	#chromium
-	default-jre
-	eclipse
-	fp-ide
-	fpc
-	gcompris
-	#gimp
-	gobby
-	imagination
-	#inkscape
-	kompozer
-	lazarus
-	pauker
-	viking
-	wxmaxima
-	xplanet
+    audacity
+    bluefish
+    #chromium
+    default-jre
+    eclipse
+    fp-ide
+    fpc
+    gcompris
+    #gimp
+    gobby
+    imagination
+    #inkscape
+    kompozer
+    lazarus
+    pauker
+    viking
+    wxmaxima
+    xplanet
 """

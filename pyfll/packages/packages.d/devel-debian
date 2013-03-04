@@ -1,14 +1,14 @@
 desc = """
-	Debian development utilities.
+    Debian development utilities.
 """
 
 packages = """
-	cdbs
-	debhelper
-	debconf-utils
-	devscripts
-	fakeroot
-	pbuilder
-	lintian
+    cdbs
+    debhelper
+    debconf-utils
+    devscripts
+    fakeroot
+    pbuilder
+    lintian
 """
 

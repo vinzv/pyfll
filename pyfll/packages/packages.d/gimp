@@ -1,12 +1,12 @@
 desc = """
-	Packages needed for gimp
+    Packages needed for gimp
 """
 
 packages = """
-	gimp
-	gimp-plugin-registry
-	gimp-data-extras
-	gimp-texturize
-	gimp-ufraw
+    gimp
+    gimp-plugin-registry
+    gimp-data-extras
+    gimp-texturize
+    gimp-ufraw
 """
 
