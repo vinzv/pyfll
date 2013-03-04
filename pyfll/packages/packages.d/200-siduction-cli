@@ -20,7 +20,7 @@ packages = """
     # distro-tools
     #------------------------------
     ceni
-    configure-cups
+    # configure-cups libx11-6
     dnsutils
     fll-installer
     inxi

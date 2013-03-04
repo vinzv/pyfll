@@ -12,6 +12,7 @@ packages = """
     ##
     ## aus 100-debian-cli
     ##
+    dvb-apps
     ffmpeg
     gvfs-bin
     gvfs-backends
