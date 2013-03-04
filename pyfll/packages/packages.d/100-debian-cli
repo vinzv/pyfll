@@ -50,7 +50,6 @@ packages = """
     resolvconf
     rsync
     rsyslog
-    scrot
     sudo
     wget
     wireless-tools

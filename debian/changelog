@@ -1,6 +1,7 @@
 pyfll (2013.03.05) UNRELEASED; urgency=low
 
   * 
+  * 
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 02:56:58 +0100
 
@@ -41,6 +42,7 @@ pyfll (2013.03.04) unstable; urgency=low
   * imagemagick:   100-debian-cli -> 500-x-debian
   * ntfs-config    100-debian-cli -> 500-x-debian
   * python-notify  100-debian-cli -> 500-x-debian
+  * scrot          100-debian-cli -> 500-x-debian
   * acpi-support-base added to 100-debian-cli
   * acpi-support:  300-hw-support -> 500-x-debian
   * ghostscript-x  300-hw-support -> 500-x-debian  
