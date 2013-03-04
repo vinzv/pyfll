@@ -17,7 +17,7 @@ packages = """
     gvfs-backends
     imagemagick
     ntfs-config
-    
+    python-notify   
     ##
     ## aus 300 hw-support    
     ##

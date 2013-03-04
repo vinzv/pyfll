@@ -46,7 +46,6 @@ packages = """
     netbase
     net-tools
     ntp
-    python-notify
     preload
     resolvconf
     rsync
