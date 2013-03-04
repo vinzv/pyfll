@@ -1,3 +1,9 @@
+pyfll (2013.03.05) UNRELEASED; urgency=low
+
+  * 
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 02:27:52 +0100
+
 pyfll (2013.03.04) unstable; urgency=low
 
   * gnome_amd64 cleanup
@@ -36,7 +42,9 @@ pyfll (2013.03.04) unstable; urgency=low
   * acpi-support-base added to 100-debian-cli
   * acpi-support:  300-hw-support -> 500-x-debian
   * ghostscript-x  300-hw-support -> 500-x-debian  
-   
+  * sane           300-hw-support -> 500-x-debian
+  * sane-utils     300-hw-support -> 500-x-debian
+  * libsane-extras 300-hw-support -> 500-x-debian   
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 02:10:32 +0100
 

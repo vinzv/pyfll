@@ -22,4 +22,7 @@ packages = """
     ##
     acpi-support
     ghostscript-x  
+    sane
+    sane-utils
+    libsane-extras
 """
