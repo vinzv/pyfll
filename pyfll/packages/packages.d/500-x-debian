@@ -16,6 +16,7 @@ packages = """
     gvfs-bin
     gvfs-backends
     imagemagick
+    ntfs-config
     
     ##
     ## aus 300 hw-support    
