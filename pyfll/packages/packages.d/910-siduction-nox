@@ -6,7 +6,6 @@ packages = """
     #-------------------------------------------------
     # siduction nox packages.
     #-------------------------------------------------
-    cli-installer  ##gehört nach cli für alle
     desktop-defaults-nox
 
     #-------------------------------------------------

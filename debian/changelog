@@ -27,8 +27,10 @@ pyfll (2013.03.04) unstable; urgency=low
   * deleted:    pyfll/packages/kde-dev (ever the same as ./kde)
   * deleted:    pyfll/packages/lxde-dev ^^
   * deleted:    pyfll/packages/nox-dev  ^^
+  * deleted cli-installer from /910-siduction-nox, it's part of the
+    200-siduction-cli
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 00:57:15 +0100
+ -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 01:08:40 +0100
 
 pyfll (2013.03.03) unstable; urgency=low
 
