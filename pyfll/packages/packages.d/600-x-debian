@@ -24,8 +24,17 @@ packages = """
     ## aus 300 hw-support    
     ##
     acpi-support
-    ghostscript-x  
+    #--------------------------------
+    # printing and scanning for X
+    #--------------------------------
+    foomatic-db-gutenprint
+    ghostscript-x
+    hpijs-ppds
+    hplip
+    libsane-extras
+    printer-driver-gutenprint
+    printer-driver-splix
     sane
     sane-utils
-    libsane-extras
+    system-config-printer-udev
 """

@@ -122,6 +122,24 @@ packages = """
     whohas
     whowatch
     canto
+    #-------------------------------------
+    # printing
+    #-------------------------------------
+    cups-bsd
+    cups-client
+    cups-common
+    cups-filters
+    cups-ppdc
+    foomatic-db
+    foomatic-db-engine
+    printer-driver-foo2zjs
+    ghostscript-cups 
+    openprinting-ppds     
+    printer-driver-cjet
+    printer-driver-c2050
+    printer-driver-escpr 
+    printer-driver-min12xxw 
+    printer-driver-pnm2ppa
 """
 
 

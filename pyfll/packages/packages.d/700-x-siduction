@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    configure-cups
     fll-live-xorgconfig
     fonts-droid
     gparted

@@ -1,7 +1,7 @@
-pyfll (2013.03.04~2) UNRELEASED; urgency=low
+pyfll (2013.03.05) UNRELEASED; urgency=low
 
   * some packages moved
-  * reintroduced print/scan support 
+  * print/scan moved to 100-debian-cli and 600-x-debian 
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 21:58:19 +0100
 
