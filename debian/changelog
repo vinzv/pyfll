@@ -5,6 +5,12 @@ pyfll (2013.03.11) UNRELEASED; urgency=low
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 11 Mar 2013 23:46:16 +0100
 
+pyfll (2013.03.10) UNRELEASED; urgency=low
+
+  * set prefix=/boot/grub
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 22:51:18 +0100
+
 pyfll (2013.03.10) unstable; urgency=low
 
   [ Alf Gaida ]
@@ -89,7 +95,7 @@ pyfll (2013.02.25) unstable; urgency=low
   * some cosmetics
   * preload added to 100-debian-cli 
 
- -- Alf Gaida <agaida@siduction.org>  Sun, 03 Mar 2013 03:36:22 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 22:50:43 +0100
 
 pyfll (2013.02.20) unstable; urgency=low
 
