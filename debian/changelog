@@ -1,6 +1,10 @@
 pyfll (2013.03.10) UNRELEASED; urgency=low
 
+  [ Alf Gaida ]
   * gksu and alternatives added to 900-siduction-rqt
+
+  [ siduction builders ]
+  * fixed pyfll/packages/rqt
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 14:02:23 +0100
 
