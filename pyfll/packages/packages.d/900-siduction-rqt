@@ -12,7 +12,6 @@ packages = """
     # Debian Packages
     #-------------------------------------------------
     gksu
-    galternatives
     dbus-x11
     gnome-icon-theme
     icedove

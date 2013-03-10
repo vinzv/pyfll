@@ -1,12 +1,16 @@
-pyfll (2013.03.10) UNRELEASED; urgency=low
+pyfll (2013.03.10) unstable; urgency=low
 
   [ Alf Gaida ]
-  * gksu and alternatives added to 900-siduction-rqt
+  * gksu added to 900-siduction-rqt
+  * kalternatives removed from siduction-kde
+  * kdesudo added to siduction-kde
+  * galternatives removed from siduction-lxde
+  * galternatives added to 600-x-debian
 
   [ siduction builders ]
   * fixed pyfll/packages/rqt
 
- -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 14:02:23 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 14:48:04 +0100
 
 pyfll (2013.03.05) unstable; urgency=low
 
