@@ -1,9 +1,15 @@
-pyfll (2013.03.05) UNRELEASED; urgency=low
+pyfll (2013.03.10) UNRELEASED; urgency=low
+
+  * gksu and alternatives added to 900-siduction-rqt
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 14:02:23 +0100
+
+pyfll (2013.03.05) unstable; urgency=low
 
   * some packages moved
   * print/scan moved to 100-debian-cli and 600-x-debian 
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 21:58:19 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 14:02:15 +0100
 
 pyfll (2013.03.04) unstable; urgency=low
 
