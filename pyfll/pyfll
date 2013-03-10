@@ -2051,12 +2051,14 @@ class FLLBuilder(object):
         self.log.debug('writing grub.cfg for live media')
 
         grubcfg = open(os.path.join(grub_dir, 'grub.cfg'), 'w')
+        grubcfg.write('set prefix=/boot/grub/\n')
         grubcfg.write('insmod biosdisk\n')
         grubcfg.write('insmod pc\n')
         grubcfg.write('insmod gpt\n')
         grubcfg.write('set timeout=%d\n' % int(timeout))
         grubcfg.write('if loadfont /usr/share/grub/unicode.pf2 ; then\n')
-        grubcfg.write('  set gfxmode=640x480\n')
+        grubcfg.write('  set gfxmode=800x600\n')
+        grubcfg.write('  set gfxpayload=keep\n')
         grubcfg.write('  insmod gfxterm\n')
         grubcfg.write('  insmod vbe\n')
         grubcfg.write('  if terminal_output.gfxterm ; then true ; else\n')
@@ -2107,6 +2109,7 @@ class FLLBuilder(object):
         self.log.debug('writing efi grub.cfg for live media')
 
         grubcfg = open(os.path.join(grub_dir, 'grub.cfg'), 'w')
+        grubcfg.write('set prefix=/boot/grub/\n')
         grubcfg.write('insmod efi_gop\n')
         grubcfg.write('insmod efi_uga\n')
         grubcfg.write('insmod font\n')
