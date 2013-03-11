@@ -8,6 +8,8 @@ pyfll (2013.03.11) UNRELEASED; urgency=low
 pyfll (2013.03.10) UNRELEASED; urgency=low
 
   * set prefix=/boot/grub
+  * kipi-plugins-common changed to kipi-plugins
+    fixes #1078
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 22:51:18 +0100
 

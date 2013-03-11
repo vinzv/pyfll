@@ -1,0 +1,37 @@
+desc = """
+	Normal KDE desktop Applications
+"""
+
+packages = """
+	akregator
+	digikam
+	iceweasel
+	kate
+	kcharselect
+	kdemultimedia-kio-plugins
+	kdepim
+	kdepim-kresources
+	kdepim-strigi-plugins
+	kdepim-wizards
+	kdf
+	kgpg
+	kipi-plugins
+	kmail
+	kmenuedit
+	konq-plugins
+	kontact
+	kopete
+	kpartsplugin
+	krdc
+	krusader
+	ktorrent
+	kwalletmanager
+	polkit-kde-1
+	reportbug-ng
+	system-config-printer-kde
+	strigi-client
+	ttf-kochi-gothic
+	virtuoso-minimal
+	wpagui
+	yakuake
+"""
