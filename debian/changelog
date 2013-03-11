@@ -1,3 +1,10 @@
+pyfll (2013.03.11) UNRELEASED; urgency=low
+
+  * kde-packages: change kipi-plugins-common to kipi-plugins
+    fixes #1078
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 11 Mar 2013 23:46:16 +0100
+
 pyfll (2013.03.10) unstable; urgency=low
 
   [ Alf Gaida ]
