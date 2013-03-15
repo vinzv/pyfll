@@ -1,6 +1,7 @@
 pyfll (2013.03.12) UNRELEASED; urgency=low
 
   * fixed lxde
+  * fixed kde
   * fixed xfce
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 15 Mar 2013 06:31:40 +0100

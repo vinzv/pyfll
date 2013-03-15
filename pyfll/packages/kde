@@ -18,16 +18,16 @@ deps = """
     # hwsupport-powermanagement
     # hwsupport-printscan
 
-    400-xserver
+    500-xserver
     # xserver
 
-    500-x-debian
+    600-x-debian
     # utils-x
 
-    600-x-siduction
+    700-x-siduction
     # distro-tools-x
 
-    930-siduction-kde
+    940-siduction-kde
     # distro-kde
     # kde-essential
     # kde-basic
