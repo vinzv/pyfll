@@ -1,9 +1,15 @@
-pyfll (2013.03.11) UNRELEASED; urgency=low
+pyfll (2013.03.12) UNRELEASED; urgency=low
+
+  * fixed lxde
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 15 Mar 2013 06:31:40 +0100
+
+pyfll (2013.03.11) unstable; urgency=low
 
   * kde-packages: change kipi-plugins-common to kipi-plugins
     fixes #1078
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 11 Mar 2013 23:46:16 +0100
+ -- Alf Gaida <agaida@siduction.org>  Fri, 15 Mar 2013 06:31:36 +0100
 
 pyfll (2013.03.10) UNRELEASED; urgency=low
 

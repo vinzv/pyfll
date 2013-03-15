@@ -17,13 +17,13 @@ deps = """
     # hwsupport-extra
     # hwsupport-powermanagement
 
-    400-xserver
+    500-xserver
     # xserver
 
-    500-x-debian
+    600-x-debian
     # utils-x
 
-    600-x-siduction
+    700-x-siduction
     # distro-tools-x
 
     920-siduction-lxde
