@@ -1,8 +1,12 @@
 pyfll (2013.03.12) UNRELEASED; urgency=low
 
+  [ Alf Gaida ]
   * fixed lxde
   * fixed kde
   * fixed xfce
+
+  [ siduction builders ]
+  * fixed gnome
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 15 Mar 2013 06:31:40 +0100
 

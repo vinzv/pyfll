@@ -15,7 +15,7 @@ kvm -name Linux \
 	-spice port=7120,disable-ticketing \
 	-net nic,model=virtio \
 	-net user \
-	-cdrom  /home/debbuilder/iso-nox-amd64/siduction-12.2.0-ridersonthestorm-nox-amd64-201303042242.iso \
+	-cdrom  /home/debbuilder/iso-rqt-amd64/siduction-13.0.5-paintitblack-rqt-amd64-201303101816.iso \
 
 # Nach Beenden der KVM, Interface stoppen und entfernen
 #sudo /sbin/ifconfig $INTERFACE down
