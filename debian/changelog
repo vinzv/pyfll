@@ -1,3 +1,12 @@
+pyfll (2013.04.02) unstble; urgency=low
+
+  * john outdocumented 
+  * kde: qtcurve finally removed
+  * kde: gtk2-engines-oxygen, gtk3-engines-oxygen,
+    kde-config-gtk-style added
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 02 Apr 2013 00:55:16 +0200
+
 pyfll (2013.03.12) unstble; urgency=low
 
   [ Alf Gaida ]

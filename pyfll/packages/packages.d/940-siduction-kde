@@ -8,9 +8,12 @@ packages = """
     ##
     ark
     akonadi-backend-sqlite
+    gtk2-engines-oxygen
+    gtk3-engines-oxygen
     kaffeine
     kdesudo
     kde-config-cddb
+    kde-config-gtk-style
     kde-plasma-desktop
     kdm
     kgamma
@@ -19,7 +22,6 @@ packages = """
     phonon-backend-gstreamer
     phonon-backend-vlc
     plasma-widgets-addons
-    # qtcurve -- never ever use this package again!!
     ##
     ## Lite KDE desktop Applications
     ##

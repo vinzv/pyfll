@@ -112,7 +112,7 @@ packages = """
     #fuse-utils
     gptsync
     hddtemp
-    john
+    # john - do we really need this?
     partimage
     rkhunter
     sdparm
