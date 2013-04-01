@@ -1,8 +1,10 @@
-pyfll (2013.03.12) UNRELEASED; urgency=low
+pyfll (2013.03.12) unstble; urgency=low
 
   [ Alf Gaida ]
   * fixed lxde
   * fixed kde
+  * fixed nox
+  * fixed rqt
   * fixed xfce
 
   [ siduction builders ]
