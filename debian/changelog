@@ -4,8 +4,11 @@ pyfll (2013.04.02) unstble; urgency=low
   * kde: qtcurve finally removed
   * kde: gtk2-engines-oxygen, gtk3-engines-oxygen,
     kde-config-gtk-style added
+  * removed qt-kde repo from configurations
+  * changed kdenext experimental to kdenext unstable
+  * closes #1137
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 02 Apr 2013 00:55:16 +0200
+ -- Alf Gaida <agaida@siduction.org>  Tue, 02 Apr 2013 01:37:41 +0200
 
 pyfll (2013.03.12) unstble; urgency=low
 
