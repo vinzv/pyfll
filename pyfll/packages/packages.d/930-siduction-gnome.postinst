@@ -2,7 +2,7 @@
 
 set -e
 
-PATH=/sbin:/usr/sbin/:bin:/usr/bin
+PATH=/sbin:/usr/sbin/:/bin:/usr/bin
 
 if [ -f /etc/default/distro ]; then
 	. /etc/default/distro
