@@ -102,5 +102,6 @@ packages = """
     ##
     ## Distro specific packages for an XFCE desktop.
     ##
-    desktop-defaults-xfce
+    siduction-live-settings-xfce
+    siduction-settings-xfce
 """

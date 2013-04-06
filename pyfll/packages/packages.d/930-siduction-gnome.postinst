@@ -55,7 +55,7 @@ done
 user_gnome_settings()
 {
 # preseed user home settings
-su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/common/siduction-user-home-settings
+su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/gnome/siduction-gnome-user-home-settings
 }
 
 case "$1" in

@@ -1,3 +1,11 @@
+pyfll (2013.04.06.2) unstable; urgency=low
+
+  * added siduction-live-settings-$flavour  and siduction-settings-$flavour 
+    to $flavour packages lists
+  * added/changed xxx-siduction-$flavour.postinst files 
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sat, 06 Apr 2013 06:08:41 +0300
+
 pyfll (2013.04.06.1) unstable; urgency=low
 
   * fixed a typo in 930-siduction-gnome.postinst 

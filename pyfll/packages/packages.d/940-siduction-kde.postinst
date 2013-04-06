@@ -16,9 +16,16 @@ do_postinst() {
     fi
 }
 
+user_kde_settings()
+{
+# preseed user home settings
+su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/kdee/siduction-kde-user-home-settings
+}
+
 case "${1}" in
 	postinst)
 		do_postinst
+		user_kde_settings
 		;;
 	*)
 		echo "Usage: ${0} postinst"
