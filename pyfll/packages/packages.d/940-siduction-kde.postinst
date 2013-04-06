@@ -19,7 +19,7 @@ do_postinst() {
 user_kde_settings()
 {
 # preseed user home settings
-su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/kdee/siduction-kde-user-home-settings
+su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/kde/siduction-kde-user-home-settings
 }
 
 case "${1}" in

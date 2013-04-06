@@ -6,8 +6,8 @@ packages = """
     #-------------------------------------------------
     # siduction nox packages.
     #-------------------------------------------------
-    siduction-settings-nox
     siduction-live-settings-nox
+    siduction-settings-nox
     #-------------------------------------------------
     # debian nox goodies.
     #-------------------------------------------------
