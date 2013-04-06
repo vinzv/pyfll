@@ -15,7 +15,6 @@ etc/timezone
 etc/ssh/ssh_host_*key*
 etc/udev/rules.d/70-persistent-*.rules
 etc/X11/xorg.conf
-home/*
 lib/init/rw/*
 media/*
 media/.*

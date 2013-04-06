@@ -79,9 +79,10 @@ packages = """
     ##
     ## Distro specific packages for an GNOME desktop.
     ##
-    desktop-defaults-gnome
     gksu
     gparted
+    siduction-live-settings-gnome
+    siduction-settings-gnome
     ##
     ## Debian development utilities.
     ## this section is obsolete and should be dropped

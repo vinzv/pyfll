@@ -1,0 +1,73 @@
+#!/bin/sh
+
+set -e
+
+PATH=/sbin:/usr/sbin/:bin:/usr/bin
+
+if [ -f /etc/default/distro ]; then
+	. /etc/default/distro
+fi
+
+gnome_live_settings()
+{
+# we write gnome live settings
+	if [ -d /usr/share/siduction-live-settings/gnome ]; then
+#add siduction wallpaper to gnome wallpaper list (XReVan86's suggestion)
+	cat > "/usr/share/gnome-background-properties/siduction.xml" << EOF
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Siduction Default</name>
+    <filename>${FLL_WALLPAPER}.png</filename>
+    <options>stretched</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+</wallpapers>
+EOF
+	fi
+}
+
+gnome_inst_settings()
+{
+# we write gnome installed  settings
+	sed -e "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@"  /usr/share/glib-2.0/schemas/inst.siduction.settings.gschema.override
+# we rebuild schema
+	glib-compile-schemas /usr/share/glib-2.0/schemas
+}
+
+set_gdm3_background()
+{
+# gdm3 background
+	sed -e "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+}
+
+hold_gnome_settings()
+{
+# put on hold gnome packages to not be dist-upgraded
+for hold_pkg in siduction-settings-gnome siduction-live-settings-gnome; do
+	echo $hold_pkg hold | dpkg --set-selections
+done
+}
+
+user_gnome_settings()
+{
+# preseed user home settings
+su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/common/siduction-user-home-settings
+}
+
+case "$1" in
+	postinst)
+	gnome_live_settings
+	gnome_inst_settings
+	#hold_gnome_settings
+	set_gdm3_background
+	user_gnome_settings
+	;;
+	*)
+		echo "postinst called with unknown argument \`$1'" >&2
+		exit 1
+	;;
+esac

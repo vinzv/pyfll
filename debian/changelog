@@ -1,3 +1,24 @@
+pyfll (2013.04.06) unstable; urgency=low
+
+  * added say, add_live_user, hack_sudoers, hack_bashrc
+    routines to 200-siduction-cli.postinst to do desired actions
+  * removed from fll_sqfs_exclusion /home/* to be able to 
+    write settings in ${FLL_LIVE_USER} home 
+  * added all_users_settings routine to 500-xserver.postinst 
+    to write in iso common settings to all users as user root  
+  * added 700-x-siduction.postinst to handle display managers
+    setup such as autologin (wallpaper setup should be in 
+    xxx-siduction-$flavour.postinst if possible)
+  * added to 700-x-siduction siduction-dynamic-dms to handle 
+    using display managers resolution autodetect
+  * added 930-siduction-gnome.postinst to handle ${FLL_LIVE_USER} 
+    home gnome settings and wallaper setup
+  * removed desktop-defaults-gnome from 930-siduction-gnome list
+    since we won't use desktop-defaults anymore
+  * added siduction-live-settings-gnome to 930-siduction-gnome list 
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sat, 06 Apr 2013 01:10:41 +0300
+
 pyfll (2013.04.02) unstble; urgency=low
 
   * john outdocumented 

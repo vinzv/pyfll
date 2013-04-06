@@ -12,5 +12,6 @@ packages = """
     sidu-disk-center
     siguibui
     sidu-installer
+    siduction-dynamic-dms
     xdg-browser-launcher
 """

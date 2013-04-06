@@ -1,5 +1,11 @@
 #!/bin/sh -e
 
+PATH=/sbin:/usr/sbin/:bin:/usr/bin
+
+if [ -f /etc/default/distro ]; then
+	. /etc/default/distro
+fi
+
 say() {
 	echo "I: $@..."
 }
@@ -66,9 +72,39 @@ do_postinst() {
 		/etc/adduser.conf
 }
 
+add_live_user() {
+adduser --gecos "${FLL_LIVE_USER}" "${FLL_LIVE_USER}" <<EOF
+live
+live
+EOF
+}
+
+hack_sudoers() {
+	# append sudoers entry
+	cat >> "/etc/sudoers.d/15_${FLL_DISTRO_NAME}" \
+<<EOF
+# WARNING: This allows the unprivileged ${FLL_LIVE_USER} user to start commands as root
+# WARNING: This is totally insecure and (almost) makes ${FLL_LIVE_USER} a second root account.
+# WARNING: Never allow external access to the ${FLL_LIVE_USER} user!!!
+${FLL_LIVE_USER} ALL=(ALL:ALL) NOPASSWD: ALL
+EOF
+		chmod 0440 "/etc/sudoers.d/15_${FLL_DISTRO_NAME}"
+}
+
+hack_bashrc() {
+	FLL_LIVE_USER_HOME=$(getent passwd ${FLL_LIVE_USER} | cut -d\: -f 6)
+	grep -s -q 'alias su' ${FLL_LIVE_USER_HOME}/.bashrc && return 0
+	
+	printf "\nalias su='sudo su'\nalias sux='sudo sux'\n" \
+		>> ${FLL_LIVE_USER_HOME}/.bashrc
+}
+
 case "${1}" in
 	postinst)
 		do_postinst
+		add_live_user
+		hack_sudoers
+		hack_bashrc
 		;;
 	*)
 		echo "Usage: ${0} postinst"
