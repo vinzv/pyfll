@@ -16,6 +16,16 @@ do_postinst() {
     fi
 }
 
+
+all_users_kde_settings()
+{
+if [ -f /usr/share/siduction-live-settings/kde/siduction-all-users-kde-settings ] ;then
+# preseed user home settings
+	say 'Writing global KDE settings.'
+	/usr/share/siduction-live-settings/kde/siduction-all-users-kde-settings
+fi
+}
+
 user_kde_settings()
 {
 if [ -f /usr/share/siduction-live-settings/kde/siduction-kde-user-home-settings ] ;then
@@ -28,6 +38,7 @@ fi
 case "${1}" in
 	postinst)
 		do_postinst
+		all_users_kde_settings
 		user_kde_settings
 		;;
 	*)

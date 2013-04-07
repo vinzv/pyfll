@@ -1,3 +1,15 @@
+pyfll (2013.04.07.2) unstable; urgency=low
+
+  * changed 950-siduction-xfce.postinst and improved lxde and kde support
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 07 Apr 2013 06:51:41 +0300
+
+pyfll (2013.04.07.1) unstable; urgency=low
+
+  * fixed two typo's in 930-siduction-gnome.postinst in sed statement
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 07 Apr 2013 04:40:41 +0300
+
 pyfll (2013.04.07) unstable; urgency=low
 
   * rework of postinst files 

@@ -11,6 +11,14 @@ say()
 echo "I: $@..."
 }
 
+all_users_lxde_settings(){
+if [ -f /usr/share/siduction-live-settings/lxde/siduction-all-users-lxde-settings ]; then
+	# preseed user home settings
+	say 'Writing global lxde settings'
+	/usr/share/siduction-live-settings/lxde/siduction-all-users-lxde-settings
+fi
+}
+
 user_lxde_settings()
 {
 if [ -f /usr/share/siduction-live-settings/lxde/siduction-lxde-user-home-settings ]; then
@@ -22,6 +30,7 @@ fi
 
 case "${1}" in
 	postinst)
+		all_users_lxde_settings
 		user_lxde_settings
 		;;
 	*)

@@ -11,6 +11,21 @@ do_postinst() {
     fi
 }
 
+
+all_users_xfce_settings()
+{
+# gdm3 background if installed
+if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
+	say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
+	sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+fi
+# xfce global settings
+if [ -f /usr/share/siduction-live-settings/xfce/siduction-all-users-xfce-settings };then
+	say 'Writing global xfce settings'
+	/usr/share/siduction-live-settings/xfce/siduction-all-users-xfce-settings
+fi
+}
+
 user_xfce_settings()
 {
 if [ -f /usr/share/siduction-live-settings/xfce/siduction-xfce-user-home-settings };then
@@ -23,6 +38,7 @@ fi
 case "${1}" in
 	postinst)
 		do_postinst
+		all_uasers_xfce_settings
 		user_xfce_settings
 		;;
 	*)
@@ -30,3 +46,9 @@ case "${1}" in
 		;;
 esac
 
+if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
+# gdm3 background
+	say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
+	sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+fi
+}
