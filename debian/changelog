@@ -1,6 +1,12 @@
+pyfll (2013.04.07.5) unstable; urgency=low
+
+  * fixed some typos in 950-siduction-xfce.postinst and deleted some code
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 07 Apr 2013 13:09:41 +0300
+
 pyfll (2013.04.07.4) unstable; urgency=low
 
-  * fixed a typo in 950-siduction-xfce.postinst
+  * fixed two typo's in 950-siduction-xfce.postinst
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 07 Apr 2013 12:55:41 +0300
 
