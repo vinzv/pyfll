@@ -38,7 +38,7 @@ fi
 case "${1}" in
 	postinst)
 		do_postinst
-		all_uasers_xfce_settings
+		all_users_xfce_settings
 		user_xfce_settings
 		;;
 	*)

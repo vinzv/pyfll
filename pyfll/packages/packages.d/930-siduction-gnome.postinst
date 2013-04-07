@@ -37,7 +37,7 @@ gnome_inst_settings()
 {
 # we write gnome installed  settings
 say 'Adding ${FLL_DISTRO_NAME} wallpaper as gnome default wallpaper'
-sed -e "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@"  /usr/share/glib-2.0/schemas/inst.siduction.settings.gschema.override
+sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@"  /usr/share/glib-2.0/schemas/inst.siduction.settings.gschema.override
 # we rebuild schema
 glib-compile-schemas /usr/share/glib-2.0/schemas
 }
@@ -47,7 +47,7 @@ set_gdm3_background()
 if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
 # gdm3 background
 	say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
-	sed -e "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+	sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
 fi
 }
 
