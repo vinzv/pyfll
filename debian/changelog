@@ -1,3 +1,9 @@
+pyfll (2013.04.07.6) unstable; urgency=low
+
+  * removed wbar and wbar-config from xfce*.conf
+
+ -- siduction builders <packaging@siduction.org>  Sun, 07 Apr 2013 23:11:06 +0200
+
 pyfll (2013.04.07.5) unstable; urgency=low
 
   * fixed some typos in 950-siduction-xfce.postinst and deleted some code
