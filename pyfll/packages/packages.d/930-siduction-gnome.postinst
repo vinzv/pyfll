@@ -1,6 +1,4 @@
-#!/bin/sh
-
-set -e
+#!/bin/sh -e
 
 PATH=/sbin:/usr/sbin/:/bin:/usr/bin
 
@@ -8,11 +6,16 @@ if [ -f /etc/default/distro ]; then
 	. /etc/default/distro
 fi
 
+say()
+{
+echo "I:  $@..."
+}
+
 gnome_live_settings()
 {
-# we write gnome live settings
-	if [ -d /usr/share/siduction-live-settings/gnome ]; then
+if [ -d /usr/share/siduction-live-settings/gnome ]; then
 #add siduction wallpaper to gnome wallpaper list (XReVan86's suggestion)
+	say 'Adding ${FLL_DISTRO_NAME} wallpaper to gnome wallpapers'
 	cat > "/usr/share/gnome-background-properties/siduction.xml" << EOF
 <?xml version="1.0"?>
 <!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
@@ -27,21 +30,25 @@ gnome_live_settings()
   </wallpaper>
 </wallpapers>
 EOF
-	fi
+fi
 }
 
 gnome_inst_settings()
 {
 # we write gnome installed  settings
-	sed -e "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@"  /usr/share/glib-2.0/schemas/inst.siduction.settings.gschema.override
+say 'Adding ${FLL_DISTRO_NAME} wallpaper as gnome default wallpaper'
+sed -e "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@"  /usr/share/glib-2.0/schemas/inst.siduction.settings.gschema.override
 # we rebuild schema
-	glib-compile-schemas /usr/share/glib-2.0/schemas
+glib-compile-schemas /usr/share/glib-2.0/schemas
 }
 
 set_gdm3_background()
 {
+if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
 # gdm3 background
+	say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
 	sed -e "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+fi
 }
 
 hold_gnome_settings()
@@ -54,17 +61,20 @@ done
 
 user_gnome_settings()
 {
+if [ -f /usr/share/siduction-live-settings/gnome/siduction-gnome-user-home-settings ]; then
 # preseed user home settings
-su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/gnome/siduction-gnome-user-home-settings
+	say ' Writing gnome settings for default user'
+	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/gnome/siduction-gnome-user-home-settings
+fi
 }
 
 case "$1" in
 	postinst)
 	gnome_live_settings
 	gnome_inst_settings
-	#hold_gnome_settings
 	set_gdm3_background
 	user_gnome_settings
+	#hold_gnome_settings
 	;;
 	*)
 		echo "postinst called with unknown argument \`$1'" >&2

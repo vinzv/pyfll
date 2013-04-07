@@ -1,6 +1,4 @@
-#!/bin/sh
-
-set -e
+#!/bin/sh -e
 
 PATH=/sbin:/usr/sbin/:/bin:/usr/bin
 
@@ -8,11 +6,18 @@ if [ -f /etc/default/distro ]; then
 	. /etc/default/distro
 fi
 
+say()
+{
+echo "I: $@..."
+}
 
 user_lxde_settings()
 {
-# preseed user home settings
-su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/lxde/siduction-lxde-user-home-settings
+if [ -f /usr/share/siduction-live-settings/lxde/siduction-lxde-user-home-settings ]; then
+	# preseed user home settings
+	say 'Writing lxde settings for default user'
+	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/lxde/siduction-lxde-user-home-settings
+fi
 }
 
 case "${1}" in
@@ -24,4 +29,3 @@ case "${1}" in
 		;;
 esac
 
-:

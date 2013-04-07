@@ -18,8 +18,11 @@ do_postinst() {
 
 user_kde_settings()
 {
+if [ -f /usr/share/siduction-live-settings/kde/siduction-kde-user-home-settings ] ;then
 # preseed user home settings
-su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/kde/siduction-kde-user-home-settings
+	say 'Writing KDE settings for default user.'
+	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/kde/siduction-kde-user-home-settings
+fi
 }
 
 case "${1}" in
@@ -31,5 +34,3 @@ case "${1}" in
 		echo "Usage: ${0} postinst"
 		;;
 esac
-
-:

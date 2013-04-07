@@ -20,14 +20,17 @@ do_postinst() {
 
 user_rqt_settings()
 {
+if [ -f /usr/share/siduction-live-settings/rqt/siduction-rqt-user-home-settings ]; then
 # preseed user home settings
+say 'Writing RQT settings for default user.'
 su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/rqt/siduction-rqt-user-home-settings
+fi
 }
 
 case "${1}" in
 	postinst)
 		do_postinst
-		#user_rqt_settings
+		user_rqt_settings
 		;;
 	*)
 		echo "Usage: ${0} postinst"

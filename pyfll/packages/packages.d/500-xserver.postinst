@@ -1,5 +1,7 @@
 #!/bin/sh -e
 
+PATH=/sbin:/usr/sbin/:bin:/usr/bin
+
 say() {
 	echo "I: $@..."
 }
@@ -13,24 +15,9 @@ do_postinst() {
 		debconf-set-selections
 }
 
-all_users_settings()
-{
-	# we run all users settings
-	say 'Updating all users settings as root'
-	/usr/share/siduction-live-settings/common/siduction-all-users-settings
-}
-
-user_home_common_settings()
-{
-# preseed user home settings
-su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/common/siduction-user-home-settings
-}
-
 case "${1}" in
 	postinst)
 		do_postinst
-		all_users_settings
-		user_home_common_settings
 		;;
 	*)
 		echo "Usage: ${0} postinst"

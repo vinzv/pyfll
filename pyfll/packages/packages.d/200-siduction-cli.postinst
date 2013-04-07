@@ -11,7 +11,7 @@ say() {
 }
 
 do_postinst() {
-	say 'Reconfiguring distro-defaults'
+	say 'Reconfiguring distro-defaults and other settings'
 	# Reconfigure to ensure out LSB defaults are in place for
 	# starting desktop managers in runlevel 5 only
 	for dm in gdm3 kdm lxdm slim wdm xdm lightdm; do
@@ -70,17 +70,21 @@ do_postinst() {
 	sed -i -e 's/^#\?\(EXTRA_GROUPS=\).*/\1"'"${GROUPS# }"'"/' \
 	       -e 's/^#\?\(ADD_EXTRA_GROUPS=\).*/\11/' \
 		/etc/adduser.conf
+
 }
 
-add_live_user() {
+add_live_user()
+{
 adduser --gecos "${FLL_LIVE_USER}" "${FLL_LIVE_USER}" <<EOF
 live
 live
 EOF
 }
 
-hack_sudoers() {
-	# append sudoers entry
+hack_sudoers() 
+{
+say 'Adding ${FLL_USER_NAME} user to sudoers group' 
+# append sudoers entry
 	cat >> "/etc/sudoers.d/15_${FLL_DISTRO_NAME}" \
 <<EOF
 # WARNING: This allows the unprivileged ${FLL_LIVE_USER} user to start commands as root
@@ -91,13 +95,34 @@ EOF
 		chmod 0440 "/etc/sudoers.d/15_${FLL_DISTRO_NAME}"
 }
 
-hack_bashrc() {
-	FLL_LIVE_USER_HOME=$(getent passwd ${FLL_LIVE_USER} | cut -d\: -f 6)
-	grep -s -q 'alias su' ${FLL_LIVE_USER_HOME}/.bashrc && return 0
-	
-	printf "\nalias su='sudo su'\nalias sux='sudo sux'\n" \
-		>> ${FLL_LIVE_USER_HOME}/.bashrc
+hack_bashrc()
+{
+say 'Writing .bashrc for default user'
+FLL_LIVE_USER_HOME=$(getent passwd ${FLL_LIVE_USER} | cut -d\: -f 6)
+grep -s -q 'alias su' ${FLL_LIVE_USER_HOME}/.bashrc && return 0
+
+printf "\nalias su='sudo su'\nalias sux='sudo sux'\n" \
+	>> ${FLL_LIVE_USER_HOME}/.bashrc
 }
+
+all_users_settings()
+{
+# we run all users settings
+if [ -f /usr/share/siduction-live-settings/common/siduction-all-users-settings ] ;then
+	say 'Writng global users settings'
+	/usr/share/siduction-live-settings/common/siduction-all-users-settings
+fi
+}
+
+user_home_common_settings()
+{
+# preseed user home settings
+if [ -f /usr/share/siduction-live-settings/common/siduction-user-home-settings ] ;then
+	say 'Writing common settings for default user'
+	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/common/siduction-user-home-settings
+fi
+}
+
 
 case "${1}" in
 	postinst)
@@ -105,10 +130,11 @@ case "${1}" in
 		add_live_user
 		hack_sudoers
 		hack_bashrc
+		all_users_settings
+		user_home_common_settings
 		;;
 	*)
 		echo "Usage: ${0} postinst"
 		;;
 esac
 
-:

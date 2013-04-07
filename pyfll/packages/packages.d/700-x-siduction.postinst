@@ -17,6 +17,8 @@ say() {
 	echo "I: $@..."
 }
 
+say 'Writing display manager settings'
+
 setup_kdm() {
 	# wallpaper
 	echo "USEBACKGROUND=true"		>  /etc/default/kdm.d/wallpaper

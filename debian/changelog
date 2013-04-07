@@ -1,3 +1,9 @@
+pyfll (2013.04.07) unstable; urgency=low
+
+  * rework of postinst files 
+
+ -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 07 Apr 2013 03:50:41 +0300
+
 pyfll (2013.04.06.3) unstable; urgency=low
 
   * fixed a typo in 940-siduction-kde.postinst files 
