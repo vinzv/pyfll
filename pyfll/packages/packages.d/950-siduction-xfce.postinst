@@ -1,5 +1,9 @@
 #!/bin/sh -e
 
+if [ -f /etc/default/distro ]; then
+    . /etc/default/distro
+fi
+
 say() {
 	echo "I: $@..."
 }
