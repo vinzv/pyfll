@@ -22,6 +22,7 @@ packages = """
     phonon-backend-gstreamer
     phonon-backend-vlc
     plasma-widgets-addons
+    kalternatives
     ##
     ## Lite KDE desktop Applications
     ##
@@ -30,7 +31,7 @@ packages = """
     kcalc
     khelpcenter4
     kmix
-    knemo
+    plasma-widget-networkmanagement
     kppp
     ksnapshot
     okular
@@ -39,6 +40,7 @@ packages = """
     ## Normal KDE desktop Applications
     ##
     akregator
+    kamoso
     digikam
     iceweasel
     kate
@@ -62,11 +64,11 @@ packages = """
     kwalletmanager
     polkit-kde-1
     reportbug-ng
-    system-config-printer-kde
+    print-manager
+    kde-config-touchpad
     strigi-client
     ttf-kochi-gothic
     virtuoso-minimal
-    wpagui
     yakuake
     ##
     ## Distro specific KDE packages.
