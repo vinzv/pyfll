@@ -62,6 +62,7 @@ packages = """
     krusader
     ktorrent
     kwalletmanager
+    libkactivities-bin
     polkit-kde-1
     reportbug-ng
     print-manager
