@@ -9,7 +9,6 @@ packages = """
     chromium
     chromium-l10n
     desktop-file-utils
-    faenza-icon-theme
     gconf2
     gksu
     gtk2-engines-xfce
@@ -67,7 +66,7 @@ packages = """
     ##
     ## XFCE desktop goodies
     ##
-    linuxlex-icon-theme
+    faenza-icon-theme
     mousepad
     ristretto
     # squeeze
