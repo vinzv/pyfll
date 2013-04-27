@@ -9,6 +9,7 @@ packages = """
     chromium
     chromium-l10n
     desktop-file-utils
+    faenza-icon-theme
     gconf2
     gksu
     gtk2-engines-xfce
