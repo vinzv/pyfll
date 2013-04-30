@@ -69,6 +69,7 @@ packages = """
     faenza-icon-theme
     mousepad
     ristretto
+    wbar-siduction-config
     # squeeze
     xfce4-battery-plugin
     xfce4-clipman-plugin
