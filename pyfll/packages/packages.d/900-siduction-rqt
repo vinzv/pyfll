@@ -50,4 +50,5 @@ packages = """
     screengrab
     siduction-dm-rqt
     silicon
+    wbar-siduction-config
 """
