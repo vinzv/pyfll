@@ -1,3 +1,11 @@
+pyfll (2013.05.04) unstable; urgency=low
+
+  * reenabled ntpd in kde, no ntpd would do more harm than good
+  * this should mentioned in manual
+  * closes #1168
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 03 May 2013 22:53:26 +0200
+
 pyfll (2013.05.03) unstable; urgency=low
 
   * disabled ntpd in siduction-kde, ntpd collides with kde date/time settings

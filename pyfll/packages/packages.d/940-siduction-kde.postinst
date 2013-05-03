@@ -20,7 +20,9 @@ do_postinst() {
     fi
 
     # disable ntpd, kde collides with ntpd
-    update-rc.d ntp disable
+    # i think, this would do more harm then good
+    # disabled 2013-05-03
+    # update-rc.d ntp disable
 }
 
 
