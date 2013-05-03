@@ -18,6 +18,9 @@ do_postinst() {
     if [ -e /etc/xdg/menus/debian-menu.menu ]; then
         rm -f /etc/xdg/menus/debian-menu.menu
     fi
+
+    # disable ntpd, kde collides with ntpd
+    update-rc.d ntp disable
 }
 
 
