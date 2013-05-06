@@ -1,3 +1,9 @@
+pyfll (2013.05.06) unstable; urgency=low
+
+  * rqt_dev razor-suite set to unstable 
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 06 May 2013 22:27:16 +0200
+
 pyfll (2013.05.04) unstable; urgency=low
 
   * reenabled ntpd in kde, no ntpd would do more harm than good
