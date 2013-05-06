@@ -1,3 +1,9 @@
+pyfll (2013.05.06.2) unstable; urgency=low
+
+  * next_* foo added
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 06 May 2013 23:09:37 +0200
+
 pyfll (2013.05.06) unstable; urgency=low
 
   * rqt_dev razor-suite set to unstable 
