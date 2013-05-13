@@ -1,3 +1,9 @@
+pyfll (2013.05.11) UNRELEASED; urgency=low
+
+  * release firestarter i386 prepared (artwork, gfxboot) 
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 13 May 2013 22:40:42 +0200
+
 pyfll (2013.05.10) unstable; urgency=low
 
   * remove syslinux fix repo 
