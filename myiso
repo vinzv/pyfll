@@ -15,9 +15,4 @@ kvm -name Linux \
 	-spice port=7120,disable-ticketing \
 	-net nic,model=virtio \
 	-net user \
-	-cdrom  /home/debbuilder/iso-rqt-i386/siduction-13.0.5-paintitblack-rqt-i386-201304281049.iso \
-
-# Nach Beenden der KVM, Interface stoppen und entfernen
-#sudo /sbin/ifconfig $INTERFACE down
-#sudo /usr/sbin/tunctl -d $INTERFACE &> /dev/null
-#reset
+	-cdrom $1
