@@ -1,3 +1,10 @@
+pyfll (2013.05.10) unstable; urgency=low
+
+  * remove syslinux fix repo 
+  * closes #1191
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 13 May 2013 21:19:12 +0200
+
 pyfll (2013.05.09) unstable; urgency=low
 
   * changed 700-x-siduction.postinst to add kdm wallpaper
