@@ -1,9 +1,24 @@
-#!/bin/sh
+#!/bin/bash
 export QEMU_AUDIO_DRV=alsa
 
 #-device virtio-serial -chardev spicevmc,id=vdagent,debug=0,name=vdagent \
 #-device virtserialport,chardev=vdagent,name=com.redhat.spice.0 \
 #-spice port=7100,disable-ticketing \
+
+
+PORT="$2"
+if [ "x$PORT" = "x" ]; then
+  RANGE=100
+  PORT=$((7100+$RANDOM%100))
+fi
+
+echo "Spice-Port: $PORT"
+
+if [ "x$1" = "x" ]; then
+  echo "ISO angeben"
+else
+  ISO=$1
+fi
 
 kvm -name Linux \
 	-drive if=virtio,file=/home/debbuilder/lxde.qcow2,media=disk,cache=unsafe \
@@ -12,7 +27,7 @@ kvm -name Linux \
 	-m 1024 \
 	-usbdevice tablet \
 	-vga qxl \
-	-spice port=7120,disable-ticketing \
+	-spice port=${PORT},disable-ticketing \
 	-net nic,model=virtio \
 	-net user \
 	-cdrom $1
