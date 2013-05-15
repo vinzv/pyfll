@@ -1,8 +1,12 @@
 pyfll (2013.05.16) UNRELEASED; urgency=low
 
+  [ Ovidiu Angelescu ]
   * changes for gnome to see wallpaper on desktop
     and in gdm3
   * refs #1193
+
+  [ Alf Gaida ]
+  * changes for lightdm-background in rqt 
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Wed, 16 May 2013 00:02:11 +0300
 

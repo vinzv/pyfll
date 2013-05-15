@@ -1,11 +1,11 @@
 #!/bin/sh -e
 
 if [ -f /etc/default/distro ]; then
-	. /etc/default/distro
+    . /etc/default/distro
 fi
 
 say() {
-	echo "I: $@..."
+    echo "I: $@..."
 }
 
 do_postinst() {
@@ -22,23 +22,37 @@ do_postinst() {
     fi
 }
 
+
+all_users_rqt_settings()
+{
+# gdm3 background if installed
+if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
+    say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
+    sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+fi
+# rqt global settings
+if [ -f /usr/share/siduction-live-settings/rqt/siduction-all-users-rqt-settings ];then
+    say 'Writing global rqt settings'
+    /usr/share/siduction-live-settings/rqt/siduction-all-users-rqt-settings
+fi
+}
+
 user_rqt_settings()
 {
 if [ -f /usr/share/siduction-live-settings/rqt/siduction-rqt-user-home-settings ]; then
-# preseed user home settings
-say 'Writing RQT settings for default user.'
-su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/rqt/siduction-rqt-user-home-settings
+    # preseed user home settings
+    say 'Writing RQT settings for default user.'
+    su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/rqt/siduction-rqt-user-home-settings
 fi
 }
 
 case "${1}" in
-	postinst)
-		do_postinst
-		user_rqt_settings
-		;;
-	*)
-		echo "Usage: ${0} postinst"
-		;;
+    postinst)
+        do_postinst
+        all_users_rqt_settings
+        user_rqt_settings
+        ;;
+    *)
+        echo "Usage: ${0} postinst"
+        ;;
 esac
-
-:

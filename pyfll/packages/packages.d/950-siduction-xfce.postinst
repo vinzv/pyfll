@@ -5,7 +5,7 @@ if [ -f /etc/default/distro ]; then
 fi
 
 say() {
-	echo "I: $@..."
+    echo "I: $@..."
 }
 
 do_postinst() {
@@ -20,32 +20,32 @@ all_users_xfce_settings()
 {
 # gdm3 background if installed
 if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
-	say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
-	sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+    say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
+    sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}.png'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
 fi
 # xfce global settings
 if [ -f /usr/share/siduction-live-settings/xfce/siduction-all-users-xfce-settings ];then
-	say 'Writing global xfce settings'
-	/usr/share/siduction-live-settings/xfce/siduction-all-users-xfce-settings
+    say 'Writing global xfce settings'
+    /usr/share/siduction-live-settings/xfce/siduction-all-users-xfce-settings
 fi
 }
 
 user_xfce_settings()
 {
 if [ -f /usr/share/siduction-live-settings/xfce/siduction-xfce-user-home-settings ];then
-# preseed user home settings
-	say 'Writing xfce settings for default user'
-	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/xfce/siduction-xfce-user-home-settings
+    # preseed user home settings
+    say 'Writing xfce settings for default user'
+    su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/xfce/siduction-xfce-user-home-settings
 fi
 }
 
 case "${1}" in
-	postinst)
-		do_postinst
-		all_users_xfce_settings
-		user_xfce_settings
-		;;
-	*)
-		echo "Usage: ${0} postinst"
-		;;
+    postinst)
+        do_postinst
+        all_users_xfce_settings
+        user_xfce_settings
+        ;;
+    *)
+        echo "Usage: ${0} postinst"
+        ;;
 esac
