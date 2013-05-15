@@ -104,7 +104,7 @@ setup_sidu_installer() {
     mkdir -p /home/${FLL_LIVE_USER}/Desktop
     if [ -e /usr/share/applications/sidu-installer.desktop ]; then
         cp -f /usr/share/applications/sidu-installer.desktop /home/${FLL_LIVE_USER}/Desktop
-        chmod +ux /home/${FLL_LIVE_USER}/Desktop/sidu-installer.desktop
+        chmod +x /home/${FLL_LIVE_USER}/Desktop/sidu-installer.desktop
     fi
 }
 
