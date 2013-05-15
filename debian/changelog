@@ -1,9 +1,17 @@
-pyfll (2013.05.11) UNRELEASED; urgency=low
+pyfll (2013.05.15) unstable; urgency=low
+
+  * copy sidu-installer.desktop to /home/${FLL_LIVE_USER}/desktop
+  * make sidu-installer.desktop executable
+  * refs #1195	
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 15 May 2013 18:35:11 +0200
+
+pyfll (2013.05.11) unstable; urgency=low
 
   * release firestarter i386 prepared (artwork, gfxboot) 
-  * release firestarter i386 prepared (artwork, gfxboot)
+  * release firestarter amd64 prepared (artwork, gfxboot) 
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 13 May 2013 22:40:42 +0200
+ -- Alf Gaida <agaida@siduction.org>  Wed, 15 May 2013 18:24:07 +0200
 
 pyfll (2013.05.10) unstable; urgency=low
 
