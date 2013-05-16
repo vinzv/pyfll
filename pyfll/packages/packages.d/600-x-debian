@@ -3,39 +3,35 @@ desc = """
 """
 
 packages = """
-    galternatives
-    myspell-de-de
-    myspell-en-us
-    myspell-pt-br
-    xsane
-    zenity
-    zim
-    ##
-    ## aus 100-debian-cli
-    ##
-    dvb-apps
+    acpi-support
+    feh
     ffmpeg
+    ## recommends -whitelist?
+    dvb-apps
+    ##
+    foomatic-db-gutenprint
+    galternatives
     gvfs-bin
     gvfs-backends
-    imagemagick
-    ntfs-config
-    python-notify
-    scrot   
-    ##
-    ## aus 300 hw-support    
-    ##
-    acpi-support
-    #--------------------------------
-    # printing and scanning for X
-    #--------------------------------
-    foomatic-db-gutenprint
     ghostscript-x
     hpijs-ppds
     hplip
+    imagemagick
     libsane-extras
+    ## irgendwie unglücklich und unvollständig
+    myspell-de-de
+    myspell-en-us
+    myspell-pt-br
+    ## im Zweifel fehlt da was
+    ntfs-config
+    python-notify
     printer-driver-gutenprint
     printer-driver-splix
     sane
     sane-utils
+    scrot
     system-config-printer-udev
+    xsane
+    zenity
+    zim
 """

@@ -4,36 +4,10 @@ desc = """
 
 deps = """
     100-debian-cli
-    # cli
-    # utils-essential
-    # utils-extra
-
     200-siduction-cli
-    # distro
-    # distro-tools
-
     300-hwsupport
-    # hwsupport-essential
-    # hwsupport-extra
-    # hwsupport-powermanagement
-    # hwsupport-printscan
-
     500-xserver
-    # xserver
-
     600-x-debian
-    # utils-x
-
     700-x-siduction
-    # distro-tools-x
-
     930-siduction-gnome
-    # distro-gnome
-    # gnome-basic
-    # gnome-essential
-    # gnome-desktop
-
-    ## eventually obsolete or false at this place
-    # fluxbox
-    #xchat
 """

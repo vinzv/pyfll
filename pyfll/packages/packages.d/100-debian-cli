@@ -19,9 +19,6 @@ packages = """
     weechat-plugins
     signing-party
     ca-certificates
-    #-------------------------------------
-    # utils essential
-    #-------------------------------------
     anacron
     bzip2
     console-data
@@ -54,9 +51,6 @@ packages = """
     wget
     wireless-tools
     wpasupplicant
-    #-------------------------------------
-    # utils extra 
-    #-------------------------------------
     aspell
     apt-file
     apt-listchanges
@@ -99,9 +93,6 @@ packages = """
     vpnc
     wodim
     zip
-    #-------------------------------------
-    # no X environment 
-    #-------------------------------------
     iftop
     iotop
     vnstat
@@ -112,7 +103,6 @@ packages = """
     #fuse-utils
     gptsync
     hddtemp
-    # john - do we really need this?
     partimage
     rkhunter
     sdparm
@@ -122,9 +112,6 @@ packages = """
     whohas
     whowatch
     canto
-    #-------------------------------------
-    # printing
-    #-------------------------------------
     cups-bsd
     cups-client
     cups-common

@@ -11,6 +11,7 @@ packages = """
     #-------------------------------------------------
     # Debian Packages
     #-------------------------------------------------
+    clementine
     gksu
     dbus-x11
     gnome-icon-theme
@@ -41,11 +42,9 @@ packages = """
     ptbatterysystemtray
     qasmixer
     qlipper
-    qmmp
     qterminal
     qtfm
     qupzilla
-    qutim
     qxkb
     screengrab
     siduction-dm-rqt

@@ -4,46 +4,10 @@ desc = """
 
 deps = """
     100-debian-cli
-    # cli
-    # utils-essential
-    # utils-extra
-
     200-siduction-cli
-    # distro
-    # distro-tools
-
     300-hwsupport
-    # hwsupport-essential
-    # hwsupport-extra
-    # hwsupport-powermanagement
-    # hwsupport-printscan
-
     500-xserver
-    # xserver
-
     600-x-debian
-    # utils-x
-
     700-x-siduction
-    # distro-tools-x
-
     930-siduction-gnome
-    # distro-gnome
-    # gnome-essential
-    # gnome-basic
-    # gnome-desktop
-
-    ## eventually obsolete or false at this place
-    # fluxbox
-    # libreoffice-suite
-    # libreoffice-gnome
-    # inkscape
-
-    # dnsutils
-    # icedtea-7-plugin
-    # pidgin
-    # qemu-kvm
-    # transmission-cli
-    # transmission-gtk
-    # xchat
 """

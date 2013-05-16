@@ -4,20 +4,7 @@ desc = """
 
 deps = """
     100-debian-cli
-    # cli
-    # utils-essential
-    # utils-extra
-
     200-siduction-cli
-    # distro
-    # distro-tools
-
     300-hwsupport
-    # hwsupport-essential
-    # hwsupport-extra
-    # hwsupport-powermanagement
-
     910-siduction-nox
-    # nox
-    # distro-nox
 """
