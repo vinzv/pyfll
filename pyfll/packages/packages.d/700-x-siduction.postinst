@@ -22,13 +22,13 @@ say 'Writing display manager settings'
 setup_kdm() {
 THEME=$(echo  ${FLL_WALLPAPER} | cut -d / -f 5 )
 	# wallpaper
-	echo "USETHEME=true"                                      >  /etc/default/kdm.d/wallpaper
+	echo "USETHEME=false"		>  /etc/default/kdm.d/wallpaper
 	echo "THEME=\"/usr/share/kde4/apps/kdm/themes/${THEME}\"" >> /etc/default/kdm.d/wallpaper
-	echo "WALLPAPER=${FLL_WALLPAPER}"                         >> /etc/default/kdm.d/wallpaper
+	echo "WALLPAPER=${FLL_WALLPAPER}"	>> /etc/default/kdm.d/wallpaper
 	# autologin
-	echo "AUTOLOGINUSER=${FLL_LIVE_USER}"                     >  /etc/default/kdm.d/autologin
-	#echo "AUTOLOGINAGAIN=true"                               >> /etc/default/kdm.d/autologin
-	echo "AUTOLOGINDELAY=0"                                   >> /etc/default/kdm.d/autologin
+	echo "AUTOLOGINUSER=${FLL_LIVE_USER}"	>  /etc/default/kdm.d/autologin
+	#echo "AUTOLOGINAGAIN=true"		>> /etc/default/kdm.d/autologin
+	echo "AUTOLOGINDELAY=0"			>> /etc/default/kdm.d/autologin
 
 	if [ "${CUSTOM_DPI}" ]; then
 		sed -i	-e "s/\(^ServerArgsLocal\=.*\)\ \-dpi[ \t]*[0-9]*\(.*$\)/\1\2/" \
