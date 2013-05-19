@@ -10,4 +10,5 @@ deps = """
     600-x-debian
     700-x-siduction
     930-siduction-gnome
+    libreoffice-suite
 """
