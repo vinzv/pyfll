@@ -7,7 +7,7 @@ packages = """
     ## Minimal KDE desktop apps.
     ##
     ark
-    akonadi-backend-sqlite
+    akonadi-backend-mysql
     gtk2-engines-oxygen
     gtk3-engines-oxygen
     kaffeine
