@@ -19,4 +19,5 @@ packages = """
     # links2 - zieht hart libx11-6 mit
     podget
     tmux
+    tty-clock
 """
