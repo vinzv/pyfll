@@ -17,6 +17,7 @@ packages = """
     fbi
     fbterm
     # links2 - zieht hart libx11-6 mit
+    python-owncloud
     podget
     tmux
     tty-clock
