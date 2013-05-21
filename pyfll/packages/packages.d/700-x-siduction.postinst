@@ -22,7 +22,7 @@ say 'Writing display manager settings'
 setup_kdm() {
 THEME=$(echo  ${FLL_WALLPAPER} | cut -d / -f 5 )
 	# wallpaper
-	echo "USETHEME=false"		>  /etc/default/kdm.d/wallpaper
+	echo "USETHEME=true"		>  /etc/default/kdm.d/wallpaper
 	echo "THEME=\"/usr/share/kde4/apps/kdm/themes/${THEME}\"" >> /etc/default/kdm.d/wallpaper
 	echo "WALLPAPER=${FLL_WALLPAPER}"	>> /etc/default/kdm.d/wallpaper
 	# autologin
