@@ -20,6 +20,13 @@ else
   ISO=$1
 fi
 
+#gnome
+#kde
+#lxde
+#nox
+#rqt
+#xfce
+
 kvm -name Linux \
 	-drive if=virtio,file=/home/debbuilder/lxde.qcow2,media=disk,cache=unsafe \
 	-boot order=d \
