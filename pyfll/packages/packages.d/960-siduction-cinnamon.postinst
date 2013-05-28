@@ -1,0 +1,87 @@
+#!/bin/sh -e
+
+PATH=/sbin:/usr/sbin/:/bin:/usr/bin
+
+if [ -f /etc/default/distro ]; then
+	. /etc/default/distro
+fi
+
+if [ -d ${FLL_WALLPAPER} ]; then
+	FLL_WALLPAPER=$(find $(dirname ${FLL_WALLPAPER}) -maxdepth 1 -type l -iname $(basename ${FLL_WALLPAPER}).*)
+fi
+
+say()
+{
+echo "I:  $@..."
+}
+
+cinnamon_live_settings()
+{
+if [ -d /usr/share/siduction-live-settings/cinnamon ]; then
+#add siduction wallpaper to cinnamon wallpaper list (XReVan86's suggestion)
+	say 'Adding ${FLL_DISTRO_NAME} wallpaper to gnome wallpapers'
+	cat > "/usr/share/gnome-background-properties/siduction.xml" << EOF
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Siduction Default</name>
+    <filename>${FLL_WALLPAPER}</filename>
+    <options>stretched</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#000000</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+</wallpapers>
+EOF
+fi
+}
+
+cinnamon_inst_settings()
+{
+# we write gnome installed  settings
+say 'Adding ${FLL_DISTRO_NAME} wallpaper as gnome default wallpaper'
+sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}'@"  /usr/share/glib-2.0/schemas/inst.siduction.settings.gschema.override
+# we rebuild schema
+glib-compile-schemas /usr/share/glib-2.0/schemas
+}
+
+set_gdm3_background()
+{
+if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
+# gdm3 background
+	say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
+	sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
+fi
+}
+
+hold_cinnamon_settings()
+{
+# put on hold gnome packages to not be dist-upgraded
+for hold_pkg in siduction-settings-cinnamon siduction-live-settings-cinnamon; do
+	echo $hold_pkg hold | dpkg --set-selections
+done
+}
+
+user_cinnamon_settings()
+{
+if [ -f /usr/share/siduction-live-settings/cinnamon/siduction-cinnamon-user-home-settings ]; then
+# preseed user home settings
+	say ' Writing cinnamon settings for default user'
+	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/cinnamon/siduction-cinnamon-user-home-settings
+fi
+}
+
+case "$1" in
+	postinst)
+	cinnamon_live_settings
+	cinnamon_inst_settings
+	set_gdm3_background
+	user_cinnamon_settings
+	#hold_gnome_settings
+	;;
+	*)
+		echo "postinst called with unknown argument \`$1'" >&2
+		exit 1
+	;;
+esac

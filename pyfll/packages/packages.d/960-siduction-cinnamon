@@ -1,0 +1,39 @@
+desc = """ 
+       Siduction Cinnamon dektop
+"""
+
+packages = """
+        cinnamon
+        dconf-tools
+        dconf-gsettings-backend
+        dconf-service
+        desktop-file-utils
+        #gnome-themes
+        gnome-themes-standard
+        gconf-gsettings-backend
+        gconf2
+        gconf-service
+        gdm3
+        gksu
+        gnome-bluetooth
+        gnome-control-center
+        gnome-desktop3-data
+        gnome-icon-theme
+        gnome-keyring
+        gnome-menus
+        gnome-media
+        gnome-session-bin
+        gnome-settings-daemon
+        gnome-terminal
+        glib-networking
+        iceweasel
+        libglib2.0
+        muffin
+        nemo
+        network-manager
+        network-manager-gnome
+        siduction-settings-cinnamon
+        siduction-live-settings-cinnamon
+        totem
+        xchat
+"""
