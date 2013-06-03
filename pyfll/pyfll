@@ -1111,6 +1111,11 @@ class FLLBuilder(object):
         apt_pkg.init_config()
         apt_pkg.config.set('RootDir', chroot)
         apt_pkg.config.set('APT::Architecture', arch)
+        ## Reset APT::Default-Release, probably set in Hosts apt-config
+        ## This is more than hacky, because all other Host-Settings will
+        ## go in. There should be a clean solution within pyfll
+        apt_pkg.config.set('APT::Default-Release', '');
+        ## End fugly hacking
         apt_pkg.init_system()
 
 
