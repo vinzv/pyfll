@@ -38,7 +38,7 @@ packages = """
     xfce4-session
     xfce4-terminal
     xfdesktop4
-    xfprint4
+    #xfprint4
     xfwm4
     xfwm4-themes
     xtrlock
