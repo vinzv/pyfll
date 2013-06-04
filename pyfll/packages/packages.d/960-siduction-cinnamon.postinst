@@ -37,24 +37,6 @@ EOF
 fi
 }
 
-cinnamon_inst_settings()
-{
-# we write gnome installed  settings
-say 'Adding ${FLL_DISTRO_NAME} wallpaper as gnome default wallpaper'
-sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}'@"  /usr/share/glib-2.0/schemas/inst.siduction.settings.gschema.override
-# we rebuild schema
-glib-compile-schemas /usr/share/glib-2.0/schemas
-}
-
-set_gdm3_background()
-{
-if [ -f /usr/share/gdm/dconf/10-siduction-gdm-settings ]; then
-# gdm3 background
-	say 'Adding ${FLL_DISTRO_NAME} wallpaper as gdm3 background'
-	sed -i "s@picture-uri=.*@picture-uri='file://${FLL_WALLPAPER}'@" /usr/share/gdm/dconf/10-siduction-gdm-settings
-fi
-}
-
 hold_cinnamon_settings()
 {
 # put on hold gnome packages to not be dist-upgraded
@@ -63,21 +45,10 @@ for hold_pkg in siduction-settings-cinnamon siduction-live-settings-cinnamon; do
 done
 }
 
-user_cinnamon_settings()
-{
-if [ -f /usr/share/siduction-live-settings/cinnamon/siduction-cinnamon-user-home-settings ]; then
-# preseed user home settings
-	say ' Writing cinnamon settings for default user'
-	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/cinnamon/siduction-cinnamon-user-home-settings
-fi
-}
 
 case "$1" in
 	postinst)
 	cinnamon_live_settings
-	cinnamon_inst_settings
-	set_gdm3_background
-	user_cinnamon_settings
 	#hold_gnome_settings
 	;;
 	*)

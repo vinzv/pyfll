@@ -1,3 +1,10 @@
+pyfll (2013.06.02) UNRELEASED; urgency=low
+
+  * added in gnome package list siduction-gdm3-settings
+  * removed 700-siduction-xserver.postinst
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300
+
 pyfll (2013.05.27) UNRELEASED; urgency=low
 
   * added cinnamon support
