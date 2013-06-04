@@ -32,6 +32,7 @@ packages = """
         nemo
         network-manager
         network-manager-gnome
+        siduction-lightdm-settings
         siduction-settings-cinnamon
         siduction-live-settings-cinnamon
         totem

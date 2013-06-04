@@ -32,6 +32,7 @@ packages = """
     # Distro specific packages for a Razor-qt desktop.
     #-------------------------------------------------
     bsc
+    siduction-lightdm-settings
     siduction-live-settings-rqt
     siduction-settings-rqt
     juffed

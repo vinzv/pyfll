@@ -103,6 +103,7 @@ packages = """
     ##
     ## Distro specific packages for an XFCE desktop.
     ##
+    siduction-lightdm-settings
     siduction-live-settings-xfce
     siduction-settings-xfce
 """

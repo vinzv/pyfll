@@ -81,6 +81,7 @@ packages = """
     ##
     gksu
     gparted
+    siduction-gdm3-settings
     siduction-live-settings-gnome
     siduction-settings-gnome
     ##

@@ -1,3 +1,9 @@
+pyfll (2013.06.04) UNRELEASED; urgency=low
+
+  * added missed siduction-$dm-settings to flavours packages lists
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Tue, 04 Jun 2013 21:46:11 +0300
+
 pyfll (2013.06.02) UNRELEASED; urgency=low
 
   * added in gnome package list siduction-gdm3-settings
