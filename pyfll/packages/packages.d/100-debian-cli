@@ -127,6 +127,7 @@ packages = """
     printer-driver-escpr 
     printer-driver-min12xxw 
     printer-driver-pnm2ppa
+    systemd
 """
 
 
