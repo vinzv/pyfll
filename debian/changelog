@@ -1,10 +1,17 @@
-pyfll (2013.05.27) UNRELEASED; urgency=low
+pyfll (2013.06.09) UNRELEASED; urgency=low
 
-  * added cinnamon support
+  * move build-dir to /var/cache/pyfll
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 09 Jun 2013 22:10:49 +0200
+
+pyfll (2013.05.27) unstable; urgency=low
+
+  [ Ovidiu Angelescu ]
+  * added cinnamon support 
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300
 
-pyfll (2013.05.19) UNRELEASED; urgency=low
+pyfll (2013.05.19) unstable; urgency=low
 
   * added libreoffice-suite in  gnome package list
 
@@ -13,7 +20,7 @@ pyfll (2013.05.19) UNRELEASED; urgency=low
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 19 May 2013 10:26:11 +0300
 
-pyfll (2013.05.16) UNRELEASED; urgency=low
+pyfll (2013.05.16) unstable; urgency=low
 
   [ Ovidiu Angelescu ]
   * changes for gnome to see wallpaper on desktop
