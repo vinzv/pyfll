@@ -15,19 +15,9 @@ do_postinst() {
     fi
 }
 
-user_xfce_settings()
-{
-if [ -f /usr/share/siduction-live-settings/xfce/siduction-xfce-user-home-settings ];then
-    # preseed user home settings
-    say 'Writing xfce settings for default user'
-    su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/xfce/siduction-xfce-user-home-settings
-fi
-}
-
 case "${1}" in
     postinst)
         do_postinst
-        user_xfce_settings
         ;;
     *)
         echo "Usage: ${0} postinst"

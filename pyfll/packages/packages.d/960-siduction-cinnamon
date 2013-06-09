@@ -15,6 +15,7 @@ packages = """
         gconf-service
         gdm3
         gksu
+        # gnome-backgrounds
         gnome-bluetooth
         gnome-control-center
         gnome-desktop3-data
@@ -32,9 +33,12 @@ packages = """
         nemo
         network-manager
         network-manager-gnome
-        siduction-lightdm-settings
         siduction-settings-cinnamon
         siduction-live-settings-cinnamon
         totem
         xchat
+        #Distro specific packages
+        siduction-lightdm-settings
+        siduction-live-settings-cinnamon
+        siduction-settings-cinnamon
 """
