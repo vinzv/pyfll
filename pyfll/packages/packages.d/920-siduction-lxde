@@ -42,6 +42,7 @@ packages = """
     ##
     ## Distro specific packages for an LXDE desktop.
     ##
+    siduction-slim-settings
     siduction-live-settings-lxde
     siduction-settings-lxde
     gksu

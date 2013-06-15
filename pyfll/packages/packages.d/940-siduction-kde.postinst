@@ -26,29 +26,9 @@ do_postinst() {
 }
 
 
-all_users_kde_settings()
-{
-if [ -f /usr/share/siduction-live-settings/kde/siduction-all-users-kde-settings ] ;then
-# preseed user home settings
-	say 'Writing global KDE settings.'
-	/usr/share/siduction-live-settings/kde/siduction-all-users-kde-settings
-fi
-}
-
-user_kde_settings()
-{
-if [ -f /usr/share/siduction-live-settings/kde/siduction-kde-user-home-settings ] ;then
-# preseed user home settings
-	say 'Writing KDE settings for default user.'
-	su "${FLL_LIVE_USER}" -c /usr/share/siduction-live-settings/kde/siduction-kde-user-home-settings
-fi
-}
-
 case "${1}" in
 	postinst)
 		do_postinst
-		all_users_kde_settings
-		user_kde_settings
 		;;
 	*)
 		echo "Usage: ${0} postinst"

@@ -105,7 +105,7 @@ printf "\nalias su='sudo su'\nalias sux='sudo sux'\n" \
 	>> ${FLL_LIVE_USER_HOME}/.bashrc
 }
 
-all_users_settings()
+all_users_common_settings()
 {
 # we run all users settings
 if [ -f /usr/share/siduction-live-settings/common/siduction-all-users-settings ] ;then
@@ -130,7 +130,7 @@ case "${1}" in
 		add_live_user
 		hack_sudoers
 		hack_bashrc
-		all_users_settings
+		all_users_common_settings
 		user_home_common_settings
 		;;
 	*)

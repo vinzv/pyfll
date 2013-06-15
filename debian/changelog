@@ -1,12 +1,31 @@
 pyfll (2013.06.09) UNRELEASED; urgency=low
 
+  * changed $flavour.postinst according new changes in siduction-settings
+    and siduction-live-settings
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Tue, 04 Jun 2013 21:46:11 +0300
+
+pyfll (2013.06.04) UNRELEASED; urgency=low
+
+  * added missed siduction-$dm-settings to flavours packages lists
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Tue, 04 Jun 2013 21:46:11 +0300
+
+pyfll (2013.06.02) UNRELEASED; urgency=low
+
+  * added in gnome package list siduction-gdm3-settings
+  * removed 700-siduction-xserver.postinst
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300
+
+pyfll (2013.05.27.2) UNRELEASED; urgency=low
+
   * move build-dir to /var/cache/pyfll
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 09 Jun 2013 22:10:49 +0200
 
 pyfll (2013.05.27) unstable; urgency=low
 
-  [ Ovidiu Angelescu ]
   * added cinnamon support 
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300

@@ -74,6 +74,7 @@ packages = """
     ##
     ## Distro specific KDE packages.
     ##
+    siduction-kdm-settings
     siduction-live-settings-kde
     siduction-settings-kde
     skanlite
