@@ -43,6 +43,7 @@ packages = """
     gstreamer0.10-plugins-good
     gstreamer0.10-plugins-ugly
     gstreamer0.10-pulseaudio
+    gstreamer0.10-plugins-bad
     freedesktop-sound-theme
     libcanberra-pulse
     libmtp-runtime

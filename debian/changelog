@@ -1,3 +1,9 @@
+pyfll (2013.06.19) UNRELEASED; urgency=low
+
+  * added gstreamer-plugins-bad to gnome packages list (rhythmbox needs it )
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Wed, 19 Jun 2013 08:52:11 +0300
+
 pyfll (2013.06.09) UNRELEASED; urgency=low
 
   * changed $flavour.postinst according new changes in siduction-settings
