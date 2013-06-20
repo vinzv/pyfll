@@ -1,3 +1,9 @@
+pyfll (2013.06.21) UNRELEASED; urgency=low
+
+  * changed svr to srv in gnome config file for iso location
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Fri, 21 Jun 2013 00:32:11 +0300
+
 pyfll (2013.06.19) UNRELEASED; urgency=low
 
   * added gstreamer-plugins-bad to gnome packages list (rhythmbox needs it )
