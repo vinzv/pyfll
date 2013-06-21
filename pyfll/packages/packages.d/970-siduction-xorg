@@ -4,5 +4,6 @@ desc = """
 
 packages = """
 	fluxbox
+	siduction-live-settings-common
 	siduction-lightdm-settings
 """
