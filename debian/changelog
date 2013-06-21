@@ -1,3 +1,10 @@
+pyfll (2013.06.21.1) UNRELEASED; urgency=low
+
+  * added xorg profile to be able to test how siduction-settings 
+    installs on a pure xorg server iso
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Fri, 21 Jun 2013 07:38:11 +0300
+
 pyfll (2013.06.21) UNRELEASED; urgency=low
 
   * changed svr to srv in gnome config file for iso location

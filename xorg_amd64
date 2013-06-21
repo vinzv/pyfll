@@ -1,0 +1,1 @@
+time ./pyfll/fll -vvvvv -c ./pyfll/xorg_amd64.conf
