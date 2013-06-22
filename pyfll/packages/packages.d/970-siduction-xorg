@@ -4,6 +4,10 @@ desc = """
 
 packages = """
 	fluxbox
+	gconf2
+	gksu
+	iceweasel
 	siduction-live-settings-common
 	siduction-lightdm-settings
+	xchat
 """
