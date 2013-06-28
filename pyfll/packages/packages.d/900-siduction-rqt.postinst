@@ -4,11 +4,9 @@ if [ -f /etc/default/distro ]; then
     . /etc/default/distro
 fi
 
-say() {
-    echo "I: $@..."
-}
 
-do_postinst() {
+do_postinst() 
+{
     cd /usr/share/xsessions
     rm -f razor-*.desktop
     rm -f openbox-*.desktop

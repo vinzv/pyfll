@@ -1,52 +1,14 @@
-pyfll (2013.06.26) UNRELEASED; urgency=low
+pyfll (2013.06.28) UNRELEASED; urgency=low
 
-  * changes  to xorg package list (added gnome-icon-theme for lightdm)
+  * changes for 2013.06.28 siduction-settings
 
- -- Ovidiu Angelescu <convbsd@siduction.org>  Wed, 26 Jun 2013 07:18:11 +0300
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Fri, 28 Jun 2013 16:30:11 +0300
 
-pyfll (2013.06.22) UNRELEASED; urgency=low
+pyfll (2013.06.27) UNRELEASED; urgency=low
 
-  * changes  to xorg package list
+  * changes for 2013.06.27 siduction-settings
 
- -- Ovidiu Angelescu <convbsd@siduction.org>  Sat, 22 Jun 2013 08:23:11 +0300
-
-pyfll (2013.06.21.2) UNRELEASED; urgency=low
-
-  * added siduction-live-settings-common to xorg package list
-
- -- Ovidiu Angelescu <convbsd@siduction.org>  Fri, 21 Jun 2013 23:45:11 +0300
-
-pyfll (2013.06.21.1) UNRELEASED; urgency=low
-
-  * added xorg profile to be able to test how siduction-settings 
-    installs on a pure xorg server iso
-
- -- Ovidiu Angelescu <convbsd@siduction.org>  Fri, 21 Jun 2013 07:38:11 +0300
-
-pyfll (2013.06.21) UNRELEASED; urgency=low
-
-  * changed svr to srv in gnome config file for iso location
-
- -- Ovidiu Angelescu <convbsd@siduction.org>  Fri, 21 Jun 2013 00:32:11 +0300
-
-pyfll (2013.06.19) UNRELEASED; urgency=low
-
-  * added gstreamer-plugins-bad to gnome packages list (rhythmbox needs it )
-
- -- Ovidiu Angelescu <convbsd@siduction.org>  Wed, 19 Jun 2013 08:52:11 +0300
-
-pyfll (2013.06.09) UNRELEASED; urgency=low
-
-  * changed $flavour.postinst according new changes in siduction-settings
-    and siduction-live-settings
-
- -- Ovidiu Angelescu <convbsd@siduction.org>  Tue, 04 Jun 2013 21:46:11 +0300
-
-pyfll (2013.06.04) UNRELEASED; urgency=low
-
-  * added missed siduction-$dm-settings to flavours packages lists
-
- -- Ovidiu Angelescu <convbsd@siduction.org>  Tue, 04 Jun 2013 21:46:11 +0300
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Thu, 27 Jun 2013 16:11:11 +0300
 
 pyfll (2013.06.02) UNRELEASED; urgency=low
 
@@ -55,19 +17,13 @@ pyfll (2013.06.02) UNRELEASED; urgency=low
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300
 
-pyfll (2013.05.27.2) UNRELEASED; urgency=low
+pyfll (2013.05.27) UNRELEASED; urgency=low
 
-  * move build-dir to /var/cache/pyfll
-
- -- Alf Gaida <agaida@siduction.org>  Sun, 09 Jun 2013 22:10:49 +0200
-
-pyfll (2013.05.27) unstable; urgency=low
-
-  * added cinnamon support 
+  * added cinnamon support
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300
 
-pyfll (2013.05.19) unstable; urgency=low
+pyfll (2013.05.19) UNRELEASED; urgency=low
 
   * added libreoffice-suite in  gnome package list
 
@@ -76,7 +32,7 @@ pyfll (2013.05.19) unstable; urgency=low
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 19 May 2013 10:26:11 +0300
 
-pyfll (2013.05.16) unstable; urgency=low
+pyfll (2013.05.16) UNRELEASED; urgency=low
 
   [ Ovidiu Angelescu ]
   * changes for gnome to see wallpaper on desktop
