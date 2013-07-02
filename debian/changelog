@@ -1,3 +1,9 @@
+pyfll (2013.07.2) UNRELEASED; urgency=low
+
+  * aded  siduction-settings-common to xorg package list
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 02 July 2013 08:08:11 +0300
+
 pyfll (2013.06.28) UNRELEASED; urgency=low
 
   * changes for 2013.06.28 siduction-settings

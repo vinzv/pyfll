@@ -9,6 +9,7 @@ packages = """
 	gnome-icon-theme
 	iceweasel
 	siduction-live-settings-common
+	siduction-settings-common
 	siduction-lightdm-settings
 	xchat
 """
