@@ -1,3 +1,10 @@
+pyfll (2013.07.3) UNRELEASED; urgency=low
+
+  * aded  package razorqt-session in packages/rqt file
+    to force install it in iso before adding siduction-settings-rqt 
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
+
 pyfll (2013.07.2) UNRELEASED; urgency=low
 
   * aded  siduction-settings-common to xorg package list
