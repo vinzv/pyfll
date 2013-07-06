@@ -1,7 +1,11 @@
 pyfll (2013.07.6) UNRELEASED; urgency=low
 
+  [ Ovidiu Angelescu ]
   * aded  Siduction keyword before Razor-qt in 900-siduction-rqt
     Desc section to not crash addpkg from siduction-scripts 
+
+  [ Alf Gaida ]
+  * removed unneeded keyring entries from configurations
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
 
