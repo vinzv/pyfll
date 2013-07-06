@@ -977,8 +977,6 @@ class FLLBuilder(object):
         chroot = os.path.join(self.temp, arch)
         for repo in self.conf['repos'].keys():
             r = self.conf['repos'][repo]
-#            if r['label'] == 'siduction-release':
-#                continue
             file = os.path.join(chroot, 'etc/apt/sources.list.d',
                                 r['label'] + '.list')
 
@@ -1068,6 +1066,7 @@ class FLLBuilder(object):
         for repo in self.conf['repos'].keys():
             r = self.conf['repos'][repo]
             if 'keyring' in r and r['keyring']:
+                self.log.info('keyring for %s ' % r) 
                 keyrings.append(r['keyring'])
 
         if len(keyrings) > 0:

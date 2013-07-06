@@ -6,6 +6,8 @@ pyfll (2013.07.6) UNRELEASED; urgency=low
 
   [ Alf Gaida ]
   * removed unneeded keyring entries from configurations
+  * remove some debris from pyfll
+  * add log.info for used keys
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
 
