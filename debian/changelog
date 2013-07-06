@@ -8,6 +8,7 @@ pyfll (2013.07.6) UNRELEASED; urgency=low
   * removed unneeded keyring entries from configurations
   * remove some debris from pyfll
   * add log.info for used keys
+  * set the right unique label for base/experimental
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
 
