@@ -1,3 +1,10 @@
+pyfll (2013.07.6) UNRELEASED; urgency=low
+
+  * aded  Siduction keyword before Razor-qt in 900-siduction-rqt
+    Desc section to not crash addpkg from siduction-scripts 
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
+
 pyfll (2013.07.3) UNRELEASED; urgency=low
 
   * aded  package razorqt-session in packages/rqt file
