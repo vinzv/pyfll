@@ -12,7 +12,6 @@ packages = """
     #------------------------------
     apt-conf-siduction
     cli-installer
-    siduction-archive-keyring
     siduction-bootsplash
     siduction-scripts
     udev-config-siduction
