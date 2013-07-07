@@ -1,4 +1,10 @@
-pyfll (2013.07.6) UNRELEASED; urgency=low
+pyfll (2013.07.7) UNRELEASED; urgency=low
+
+  * changed rqt-dev-amd64 base-experimental -> base-next
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 08 Jul 2013 00:35:21 +0200
+
+pyfll (2013.07.6) unstable; urgency=low
 
   [ Ovidiu Angelescu ]
   * aded  Siduction keyword before Razor-qt in 900-siduction-rqt
@@ -8,49 +14,49 @@ pyfll (2013.07.6) UNRELEASED; urgency=low
   * removed unneeded keyring entries from configurations
   * remove some debris from pyfll
   * add log.info for used keys
-  * set the right unique label for base/experimental
+  * set the right unique label for base/experimental 
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
 
-pyfll (2013.07.3) UNRELEASED; urgency=low
+pyfll (2013.07.3) unstable; urgency=low
 
   * aded  package razorqt-session in packages/rqt file
     to force install it in iso before adding siduction-settings-rqt 
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
 
-pyfll (2013.07.2) UNRELEASED; urgency=low
+pyfll (2013.07.2) unstable; urgency=low
 
   * aded  siduction-settings-common to xorg package list
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 02 July 2013 08:08:11 +0300
 
-pyfll (2013.06.28) UNRELEASED; urgency=low
+pyfll (2013.06.28) unstable; urgency=low
 
   * changes for 2013.06.28 siduction-settings
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Fri, 28 Jun 2013 16:30:11 +0300
 
-pyfll (2013.06.27) UNRELEASED; urgency=low
+pyfll (2013.06.27) unstable; urgency=low
 
   * changes for 2013.06.27 siduction-settings
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thu, 27 Jun 2013 16:11:11 +0300
 
-pyfll (2013.06.02) UNRELEASED; urgency=low
+pyfll (2013.06.02) unstable; urgency=low
 
   * added in gnome package list siduction-gdm3-settings
   * removed 700-siduction-xserver.postinst
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300
 
-pyfll (2013.05.27) UNRELEASED; urgency=low
+pyfll (2013.05.27) unstable; urgency=low
 
   * added cinnamon support
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Mon, 27 May 2013 14:26:11 +0300
 
-pyfll (2013.05.19) UNRELEASED; urgency=low
+pyfll (2013.05.19) unstable; urgency=low
 
   * added libreoffice-suite in  gnome package list
 
@@ -59,7 +65,7 @@ pyfll (2013.05.19) UNRELEASED; urgency=low
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 19 May 2013 10:26:11 +0300
 
-pyfll (2013.05.16) UNRELEASED; urgency=low
+pyfll (2013.05.16) unstable; urgency=low
 
   [ Ovidiu Angelescu ]
   * changes for gnome to see wallpaper on desktop
