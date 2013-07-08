@@ -13,7 +13,7 @@ say() {
 	echo "I: $@..."
 }
 
-say 'Writing display manager settings'
+say 'finalize iso'
 
 case "${1}" in
 	postinst)
