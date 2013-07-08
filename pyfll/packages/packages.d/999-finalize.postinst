@@ -1,0 +1,26 @@
+#!/bin/sh
+
+# Needs to remove fll-xdm from fll-live-initscripts
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+
+if [ -r /etc/default/distro ]; then
+	. /etc/default/distro
+fi
+
+
+say() {
+	echo "I: $@..."
+}
+
+say 'Writing display manager settings'
+
+case "${1}" in
+	postinst)
+		siduction-live-settings configure
+		;;
+		*)
+		echo "Error: argument '${1}' not supported" >&2
+		exit 3
+		;;
+esac

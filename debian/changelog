@@ -1,12 +1,13 @@
-pyfll (2013.07.9) UNRELEASED; urgency=low
+pyfll (2013.07.8) UNRELEASED; urgency=low
 
+  * 999-finalize added
   * added siduction-live-settings-common in 000-esential to force live 
     user creation as early as possible to not crash siduction-settings
     which depends of a live user
 
- -- Ovidiu Angelescu <convbsd@siduction.org>  Tue, 09 Jul 2013 00:50:21 +0300
+ -- Alf Gaida <agaida@siduction.org>  Tue, 09 Jul 2013 01:29:39 +0200
 
-pyfll (2013.07.7) UNRELEASED; urgency=low
+pyfll (2013.07.7) unstable; urgency=low
 
   * changed rqt-dev-amd64 base-experimental -> base-next
 
