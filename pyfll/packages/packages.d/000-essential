@@ -19,6 +19,7 @@ packages = """
     initramfs-tools
     grub-pc
     mtools
+    siduction-live-settings-common
     syslinux
 """
 
