@@ -656,6 +656,7 @@ class FLLBuilder(object):
 
             self.log.debug('---')
 
+        self.log.info('last depfile %s' % depfile) 
         pkgs['postinst'].append('999-finalize.postinst')
 
 
