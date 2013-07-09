@@ -10,7 +10,6 @@ deps = """
     600-x-debian
     700-x-siduction
     900-siduction-rqt
-    999-finalize
 """
 packages = """
     razorqt-session

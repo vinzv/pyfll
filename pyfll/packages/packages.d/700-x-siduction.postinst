@@ -21,18 +21,9 @@ setup_x_cursor_theme() {
 	fi
 }
 
-setup_sidu_installer() {
-    mkdir -p /home/${FLL_LIVE_USER}/Desktop
-    if [ -e /usr/share/applications/sidu-installer.desktop ]; then
-        cp -f /usr/share/applications/sidu-installer.desktop /home/${FLL_LIVE_USER}/Desktop
-        chmod +x /home/${FLL_LIVE_USER}/Desktop/sidu-installer.desktop
-    fi
-}
-
 case "${1}" in
 	postinst)
 		setup_x_cursor_theme
-		# setup_sidu_installer
 		;;
 		*)
 		echo "Error: argument '${1}' not supported" >&2

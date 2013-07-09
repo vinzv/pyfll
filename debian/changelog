@@ -1,4 +1,11 @@
-pyfll (2013.07.8) UNRELEASED; urgency=low
+pyfll (2013.07.10) UNRELEASED; urgency=low
+
+  * moved copy sidu-installer.desktop to siduction-live-settings
+  * add 999-finalize.postinst after all collected postinst in pyfll
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 09 Jul 2013 21:10:39 +0200
+
+pyfll (2013.07.9) unstable; urgency=low
 
   * 999-finalize added
   * added siduction-live-settings-common in 000-esential to force live 

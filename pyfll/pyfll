@@ -656,10 +656,16 @@ class FLLBuilder(object):
 
             self.log.debug('---')
 
+        pkgs['postinst'].append('999-finalize.postinst')
+
+
         self.log.debug('package summary for %s:' % arch)
         pkgs['packages'].sort()
         for p in pkgs['packages']:
             self.log.debug('  %s' % p)
+
+
+
 
         self.log.debug('debconf summary for %s:' % arch)
         pkgs['debconf'].sort()
