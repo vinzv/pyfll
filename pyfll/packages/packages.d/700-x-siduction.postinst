@@ -32,7 +32,7 @@ setup_sidu_installer() {
 case "${1}" in
 	postinst)
 		setup_x_cursor_theme
-		setup_sidu_installer
+		# setup_sidu_installer
 		;;
 		*)
 		echo "Error: argument '${1}' not supported" >&2

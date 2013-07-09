@@ -4,6 +4,7 @@ pyfll (2013.07.8) UNRELEASED; urgency=low
   * added siduction-live-settings-common in 000-esential to force live 
     user creation as early as possible to not crash siduction-settings
     which depends of a live user
+  * deactivate installer copy
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 09 Jul 2013 01:29:39 +0200
 
