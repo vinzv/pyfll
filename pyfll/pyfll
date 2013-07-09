@@ -658,7 +658,10 @@ class FLLBuilder(object):
             self.log.debug('---')
 
         self.log.info('last depfile %s' % depfile) 
-        pkgs['postinst'].append('999-finalize.postinst')
+        
+        depfile = os.path.join(dir, 'packages.d', '999-finalize.postinst')
+
+	pkgs['postinst'].append(depfile)
 
 
         self.log.debug('package summary for %s:' % arch)
