@@ -618,13 +618,14 @@ class FLLBuilder(object):
 
         for dep in deps:
             depfile = os.path.join(dir, 'packages.d', dep)
-
+            
             if not os.path.isfile(depfile):
                 self.log.critical('no such dep file: %s' % depfile)
                 raise FllError
 
             dname = os.path.basename(depfile)
             self.log.debug('processing dependency file: %s' % dname)
+            self.log.info('current depfile: %s' % depfile)
 
             dfile = ConfigObj(depfile)
 
