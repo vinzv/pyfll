@@ -1,3 +1,10 @@
+pyfll (2013.07.10.1) UNRELEASED; urgency=low
+
+  * removed siduction-settings-common from xorg pkg list
+  # removed siduction-live-settings-common from 000-essential
+
+ -- Ovidiu Angelescu <convbsd@siduction.org>  Wed, 10 Jul 2013 17:59:39 +0300
+
 pyfll (2013.07.10) UNRELEASED; urgency=low
 
   * moved copy sidu-installer.desktop to siduction-live-settings
