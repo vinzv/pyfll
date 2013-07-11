@@ -3,9 +3,6 @@ desc = """
 """
 
 packages = """
-    #-------------------------------------------------
-    # siduction nox packages.
-    #-------------------------------------------------
     siduction-live-settings-nox
     siduction-settings-nox
     #-------------------------------------------------
@@ -16,7 +13,7 @@ packages = """
     fbcat
     fbi
     fbterm
-    # links2 - zieht hart libx11-6 mit
+    links
     python-owncloud
     podget
     tmux
