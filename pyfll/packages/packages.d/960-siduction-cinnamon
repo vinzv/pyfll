@@ -13,7 +13,6 @@ packages = """
         gconf-gsettings-backend
         gconf2
         gconf-service
-        gdm3
         gksu
         # gnome-backgrounds
         gnome-bluetooth

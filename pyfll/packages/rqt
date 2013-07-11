@@ -12,5 +12,4 @@ deps = """
     900-siduction-rqt
 """
 packages = """
-    razorqt-session
 """
