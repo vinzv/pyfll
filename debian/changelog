@@ -1,9 +1,15 @@
-pyfll (2013.07.11) UNRELEASED; urgency=low
+pyfll (2013.07.11) unstable; urgency=low
 
+  [ Ovidiu Angelescu ]
   * moved razorqt-session from packages/rqt to 900-siduction-rqt pkg list
   * removed gdm3 from cinnamon list because I will use lightdm
 
- -- Ovidiu Angelescu <convbsd@siduction.org>  Wed, 10 Jul 2013 17:59:39 +0300
+  [ Alf Gaida ]
+  * renamed siduction-settings-lightdm in cinnamon
+  * renamed siduction-settings-lightdm in rqt
+  * renamed siduction-settings-lightdm in xorg
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 11 Jul 2013 23:49:58 +0200
 
 pyfll (2013.07.10.1) UNRELEASED; urgency=low
 
