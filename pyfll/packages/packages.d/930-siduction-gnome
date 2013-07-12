@@ -82,8 +82,8 @@ packages = """
     ##
     gksu
     gparted
-    siduction-gdm3-settings
     siduction-live-settings-gnome
+    siduction-settings-gdm3
     siduction-settings-gnome
     ##
     ## Debian development utilities.

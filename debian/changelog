@@ -12,6 +12,7 @@ pyfll (2013.07.12) UNRELEASED; urgency=low
   * base/next in gnome_dev_amd64
   * freedesktop-sound-theme replaced by sound-theme-freedesktop 
     in 930..gnome
+  * renamed siduction-gdm3-settings to siduction-settings-gdm3 
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 12 Jul 2013 01:18:01 +0200
 
