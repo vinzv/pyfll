@@ -4,6 +4,8 @@ pyfll (2013.07.12) UNRELEASED; urgency=low
   * base/next in nox_dev_amd64
   * base/next in nox_dev_i386
   * renamed slim-settings to siduction-settings-slim
+  * base/next in lxde_dev_i386
+  * base/next in lxde_dev_amd64
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 12 Jul 2013 01:18:01 +0200
 
