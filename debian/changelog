@@ -1,4 +1,10 @@
-pyfll (2013.07.12) UNRELEASED; urgency=low
+pyfll (2013.07.28) UNRELEASED; urgency=low
+
+  * added reptyr, closes #x1271
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 28 Jul 2013 21:24:34 +0200
+
+pyfll (2013.07.14) unstable; urgency=low
 
   * base/next in rqt_dev_i386
   * base/next in nox_dev_amd64
@@ -12,9 +18,9 @@ pyfll (2013.07.12) UNRELEASED; urgency=low
   * base/next in gnome_dev_amd64
   * freedesktop-sound-theme replaced by sound-theme-freedesktop 
     in 930..gnome
-  * renamed siduction-gdm3-settings to siduction-settings-gdm3 
+  * renamed siduction-gdm3-settings to siduction-settings-gdm3  
 
- -- Alf Gaida <agaida@siduction.org>  Fri, 12 Jul 2013 01:18:01 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sun, 28 Jul 2013 21:24:27 +0200
 
 pyfll (2013.07.11) unstable; urgency=low
 
