@@ -1,4 +1,10 @@
-pyfll (2013.07.28) UNRELEASED; urgency=low
+pyfll (2013.07.29) UNRELEASED; urgency=low
+
+  * configurations completed for the moment 
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 30 Jul 2013 17:18:10 +0200
+
+pyfll (2013.07.28) unstable; urgency=low
 
   * added reptyr, closes #x1271
 
