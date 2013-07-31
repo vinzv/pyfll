@@ -1,4 +1,15 @@
-pyfll (2013.07.31) UNRELEASED; urgency=low
+pyfll (2013.08.01) UNRELEASED; urgency=low
+
+  * tree and colordiff added to 100-debian-cli
+  * canto moved to -nox
+  * systemd moved to 000-essential
+  * 100-debian-cli sorted alphabetical
+  * elinks-lite replaced by links
+  * links moved from nox to cli 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 01 Aug 2013 01:15:50 +0200
+
+pyfll (2013.07.31) unstable; urgency=low
 
   * nox_dev_* renamed to nox_next_*
 

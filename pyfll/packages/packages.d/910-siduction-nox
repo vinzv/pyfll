@@ -9,6 +9,7 @@ packages = """
     # debian nox goodies.
     #-------------------------------------------------
     alpine
+    canto
     cmus
     fbcat
     fbi

@@ -3,132 +3,131 @@ desc = """
 """
 
 packages = """
-    dialog
-    elinks-lite
-    gpm
-    htop
-    info
-    mc
-    moc
-    most
-    screen
-    unp
-    vim
-    weechat
-    weechat-scripts
-    weechat-plugins
-    signing-party
-    ca-certificates
     anacron
-    bzip2
-    console-data
-    console-common
-    cron
-    debsums
-    dmeventd
-    firmware-linux-free
-    gamin
-    gdisk
-    iptables
-    iputils-ping
-    isc-dhcp-client
-    iw
-    kbd
-    kexec-tools
-    less
-    libmtp-runtime
-    logrotate
-    mbr
-    nano
-    netbase
-    net-tools
-    ntp
-    preload
-    resolvconf
-    rsync
-    rsyslog
-    sudo
-    wget
-    wireless-tools
-    wpasupplicant
-    aspell
     apt-file
     apt-listchanges
     apt-show-versions
+    aspell
     build-essential
+    bzip2
+    ca-certificates
     cdebootstrap
     cdrdao
-    cifs-utils
-    command-not-found
-    cryptsetup
-    debconf-utils
-    debhelper
-    dvd+rw-tools
-    dosfstools
-    ftp-ssl
-    gddrescue
-    genisoimage
-    hdparm
-    iproute
-    jfsutils
-    lm-sensors
-    man-db
-    manpages
-    memtest86+
-    mlocate
-    nfs-common
-    ntpdate
-    ntfs-3g
-    nmap
-    openssh-client
-    pwgen
-    reiserfsprogs
-    sshfs
-    strace
-    testdisk
-    tofrodos
-    traceroute
-    xfsprogs
-    unzip
-    vpnc
-    wodim
-    zip
-    iftop
-    iotop
-    vnstat
     chkrootkit
+    cifs-utils
     cmospwd
-    encfs
-    foremost
-    #fuse-utils
-    gptsync
-    hddtemp
-    partimage
-    rkhunter
-    sdparm
-    smartmontools
-    ncdu
-    glances
-    whohas
-    whowatch
-    canto
+    colordiff
+    command-not-found
+    console-common
+    console-data
+    cron
+    cryptsetup
     cups-bsd
     cups-client
     cups-common
     cups-filters
     cups-ppdc
+    debconf-utils
+    debhelper
+    debsums
+    dialog
+    dmeventd
+    dosfstools
+    dvd+rw-tools
+    encfs
+    firmware-linux-free
+    foremost
     foomatic-db
     foomatic-db-engine
-    printer-driver-foo2zjs
-    ghostscript-cups 
-    openprinting-ppds     
+    ftp-ssl
+    gamin
+    gddrescue
+    gdisk
+    ghostscript-cups
+    glances
+    genisoimage
+    gpm
+    gptsync
+    htop
+    hddtemp
+    hdparm
+    iftop
+    info
+    iotop
+    iproute
+    iptables
+    iputils-ping
+    isc-dhcp-client
+    iw
+    jfsutils
+    kbd
+    kexec-tools
+    less
+    libmtp-runtime
+    links
+    lm-sensors
+    logrotate
+    man-db
+    manpages
+    mbr
+    mc
+    memtest86+
+    mlocate
+    moc
+    most
+    nfs-common
+    ntpdate
+    ntfs-3g
+    nmap
+    nano
+    ncdu
+    netbase
+    net-tools
+    ntp
+    openssh-client
+    openprinting-ppds
+    partimage
+    preload
     printer-driver-cjet
     printer-driver-c2050
-    printer-driver-escpr 
-    printer-driver-min12xxw 
+    printer-driver-escpr
+    printer-driver-foo2zjs
+    printer-driver-min12xxw
     printer-driver-pnm2ppa
-    systemd
+    pwgen
     reptyr
+    resolvconf
+    reiserfsprogs
+    rkhunter
+    rsync
+    rsyslog
+    screen
+    sdparm
+    signing-party
+    sshfs
+    smartmontools
+    strace
+    sudo
+    testdisk
+    tofrodos
+    tree
+    traceroute
+    unp
+    unzip
+    vim
+    vnstat
+    vpnc
+    weechat
+    weechat-scripts
+    weechat-plugins
+    wget
+    whohas
+    whowatch
+    wireless-tools
+    wodim
+    wpasupplicant
+    xfsprogs
+    zip
 """
 
 

@@ -20,6 +20,7 @@ packages = """
     grub-pc
     mtools
     syslinux
+    systemd
 """
 
 i386 = """
