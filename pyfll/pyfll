@@ -70,13 +70,13 @@ class FllLocales(object):
     """
     def __init__(self, cache, packages, map):
         self.loc_pkgs_set = set()
+        printf('AG debug loc_pkgs_set: %s', self.loc_pkgs_set)
         for pkg in cache.packages:
             if not pkg.version_list:
                 continue
             if pkg.name not in packages:
                 continue
             for loc_pkg in map.keys():
-                print 'AG debug loc_pkg: %s' % (loc_pkg)
                 if pkg.name == loc_pkg:
                     loc_pkg_prefix_list = map.get(loc_pkg)
                     for loc_pkg_prefix in loc_pkg_prefix_list:
