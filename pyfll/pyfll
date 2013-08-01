@@ -77,10 +77,10 @@ class FllLocales(object):
             if pkg.name not in packages:
                 continue
             for loc_pkg in map.keys():
-                    print "............................."
-                    print "pkg.name = %s" % pkg.name
-                    print "loc_pkg  = %s" % loc_pkg
-                    print "`````````````````````````````"
+                print "............................."
+                print "pkg.name = %s" % pkg.name
+                print "loc_pkg  = %s" % loc_pkg
+                print "`````````````````````````````"
                 if pkg.name == loc_pkg:
                     loc_pkg_prefix_list = map.get(loc_pkg)
                     for loc_pkg_prefix in loc_pkg_prefix_list:
