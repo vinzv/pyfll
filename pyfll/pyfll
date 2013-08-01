@@ -148,7 +148,7 @@ class FllLocales(object):
 
         print ""
         print "self.loc_pkgs_list_dict"
-        print self_loc_pkgs_list_dict.get(pkg)
+        print self.loc_pkgs_list_dict.get(pkg)
         loc_pkg_dict = dict()
         for pkg in self.loc_pkgs_set:
             loc_pkgs_list = self.loc_pkgs_list_dict.get(pkg)
