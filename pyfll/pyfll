@@ -106,6 +106,8 @@ class FllLocales(object):
         loc_suf_list = list()
         try:
             ll, cc = locale.lower().split('_')
+            print("ll : %s" % ll)
+            print("cc : %s" % cc)
         except ValueError, e:
             raise FllLocalesError(e)
         loc_suf_list.append(ll + '-' + cc)
@@ -126,7 +128,8 @@ class FllLocales(object):
 
         if ll != 'en':
             loc_suf_list.append('i18n')
-
+        print "loc_suf_list:"
+        print loc_suf_list
         return loc_suf_list
 
     def detect_locale_packages(self, locale):
@@ -140,6 +143,12 @@ class FllLocales(object):
         """
         suffixes = self.__compute_locale_loc_suf_list(locale)
 
+        print "suffixes"
+        print suffixes
+
+        print ""
+        print "self.loc_pkgs_list_dict"
+        print self_loc_pkgs_list_dict.get(pkg)
         loc_pkg_dict = dict()
         for pkg in self.loc_pkgs_set:
             loc_pkgs_list = self.loc_pkgs_list_dict.get(pkg)
@@ -160,6 +169,8 @@ class FllLocales(object):
             best = min(pkg_candidates)
             packages.append(pkg_candidates[best])
 
+        print "packages:"
+        print packages
         return packages
 
 
