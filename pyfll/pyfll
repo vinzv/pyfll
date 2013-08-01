@@ -77,6 +77,10 @@ class FllLocales(object):
                 continue
             for loc_pkg in map.keys():
                 if pkg.name == loc_pkg:
+                    print "............................."
+                    print "pkg.name = %s" % pkg.name
+                    print "loc_pkg  = %s" % loc_pkg
+                    print "`````````````````````````````"
                     loc_pkg_prefix_list = map.get(loc_pkg)
                     for loc_pkg_prefix in loc_pkg_prefix_list:
                         self.loc_pkgs_set.add(loc_pkg_prefix)
