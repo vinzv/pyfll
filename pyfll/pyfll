@@ -69,8 +69,12 @@ class FllLocales(object):
                ConfigObj('data/fll-locales-pkg-map').
     """
     def __init__(self, cache, packages, map):
+        print "______ CONSTRUCTS LOCALE ______"
         self.loc_pkgs_set = set()
         for pkg in cache.packages:
+            print "..................."
+            print "pkg.name = %s" % pkg.name
+            print "^^^^^^^^^^^^^^^^^^^"
             if not pkg.version_list:
                 continue
             if pkg.name not in packages:
