@@ -70,7 +70,7 @@ class FllLocales(object):
     """
     def __init__(self, cache, packages, map):
         self.loc_pkgs_set = set()
-        printf('AG debug loc_pkgs_set: %s', self.loc_pkgs_set)
+        print 'AG debug loc_pkgs_set: %s' % self.loc_pkgs_set
         for pkg in cache.packages:
             if not pkg.version_list:
                 continue
