@@ -70,6 +70,7 @@ class FllLocales(object):
     """
     def __init__(self, cache, packages, map):
         self.loc_pkgs_set = set()
+        self.log.info('ag debub map.keys: %s' % map.keys())
         for pkg in cache.packages:
             if not pkg.version_list:
                 continue
