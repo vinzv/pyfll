@@ -147,11 +147,11 @@ class FllLocales(object):
         print suffixes
 
         print ""
-        print "self.loc_pkgs_list_dict"
-        print self.loc_pkgs_list_dict.get(pkg)
         loc_pkg_dict = dict()
         for pkg in self.loc_pkgs_set:
             loc_pkgs_list = self.loc_pkgs_list_dict.get(pkg)
+            print "self.loc_pkgs_list_dict"
+            print self.loc_pkgs_list_dict.get(pkg)
             if not loc_pkgs_list:
                 continue
             if pkg not in loc_pkg_dict:
