@@ -1,1 +1,1 @@
-time ./pyfll/fll -vv -c ./pyfll/cinnamon_dev_i386.conf
+time ./pyfll/fll -vv -c ./pyfll/cinnamon_next_i386.conf

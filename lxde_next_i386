@@ -1,1 +1,1 @@
-time ./pyfll/fll -vv -c ./pyfll/lxde_dev_i386.conf
+time ./pyfll/fll -vv -c ./pyfll/lxde_next_i386.conf
