@@ -4,11 +4,9 @@ desc = """
 
 packages = """
     acpi-support
+    dvb-apps
     feh
     ffmpeg
-    ## recommends -whitelist?
-    dvb-apps
-    ##
     foomatic-db-gutenprint
     galternatives
     gvfs-bin
@@ -18,15 +16,15 @@ packages = """
     hplip
     imagemagick
     libsane-extras
-    ## irgendwie unglücklich und unvollständig
+    ## myspell should be installed via lang packages
     myspell-de-de
     myspell-en-us
     myspell-pt-br
-    ## im Zweifel fehlt da was
+    ##
     ntfs-config
-    python-notify
     printer-driver-gutenprint
     printer-driver-splix
+    python-notify
     sane
     sane-utils
     scrot
