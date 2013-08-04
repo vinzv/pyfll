@@ -12,5 +12,6 @@ deps = """
 """
 
 packages = """
+        siduction-meta-xorg
 	network-manager-gnome
 """
