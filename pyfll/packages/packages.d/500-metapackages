@@ -1,0 +1,7 @@
+desc = """
+    Siduction-Metapackages
+"""
+
+packages = """
+    siduction-meta-xorg
+"""
