@@ -1,4 +1,10 @@
-pyfll (2013.08.01) UNRELEASED; urgency=low
+pyfll (2013.08.04) UNRELEASED; urgency=low
+
+  * introducing siduction-meta-xorg
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 04 Aug 2013 16:41:33 +0200
+
+pyfll (2013.08.01) unstable; urgency=low
 
   * tree and colordiff added to 100-debian-cli
   * canto moved to -nox
