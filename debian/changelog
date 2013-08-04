@@ -1,8 +1,8 @@
 pyfll (2013.08.04) UNRELEASED; urgency=low
 
   * introducing siduction-meta-xorg
-  * in the meta-section - added xserver-xorg-video-mesa to provide at
-    least one package that satisfy the need for xserver-xorg-video-driver
+  * xfce modified and tested
+  * xorg modified and tested
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 04 Aug 2013 16:41:33 +0200
 
