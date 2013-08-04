@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    siduction-meta-xorg
     acpi-support
     dvb-apps
     feh

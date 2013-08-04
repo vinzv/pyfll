@@ -1,19 +1,19 @@
 desc = """
-    X Server packages.
+    X Server and related packages.
 """
 
 packages = """
-    gnupg-agent
     dmz-cursor-theme
+    gnupg-agent
     fontconfig
     fontconfig-config
+    fonts-liberation
     libgl1-mesa-dri
     menu
     mesa-utils
     sux
     ttf-dejavu-core
     ttf-dejavu-extra
-    fonts-liberation
     xauth
     xfonts-base
     xfonts-75dpi
@@ -23,7 +23,6 @@ packages = """
     xserver-xorg
     xserver-xorg-input-all
     xserver-xorg-input-vmmouse
-    #xserver-xorg-video-all
     xserver-xorg-video-ati
     xserver-xorg-video-nouveau
     xserver-xorg-video-vesa
