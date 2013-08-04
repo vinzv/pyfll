@@ -3,6 +3,5 @@ desc = """
 """
 
 packages = """
-    xserver-xorg-video-mesa
     siduction-meta-xorg
 """
