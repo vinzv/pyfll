@@ -6,12 +6,12 @@ deps = """
     100-debian-cli
     200-siduction-cli
     300-hwsupport
+    500-metapackages
     600-x-debian
     700-x-siduction
     950-siduction-xfce
 """
 
 packages = """
-        siduction-meta-xorg
 	network-manager-gnome
 """
