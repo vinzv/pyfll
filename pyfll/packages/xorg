@@ -7,6 +7,5 @@ deps = """
     200-siduction-cli
     300-hwsupport
     500-metapackages
-    700-x-siduction
     970-siduction-xorg
 """

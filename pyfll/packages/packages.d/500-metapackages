@@ -5,4 +5,5 @@ desc = """
 packages = """
     siduction-meta-xdebian
     siduction-meta-xorg
+    siduction-meta-xsiduction
 """

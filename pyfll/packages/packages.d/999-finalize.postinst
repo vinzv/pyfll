@@ -13,14 +13,21 @@ say() {
 	echo "I: $@..."
 }
 
+do_postinst() {
+    siduction-live-settings configure
+    apt-get purge siduction-meta-xdebian    || return 0
+    apt-get purge siduction-meta-xorg       || return 0
+    apt-get purge siduction-meta-xsiduction || return 0
+}
+
 say 'finalize iso'
 
 case "${1}" in
-	postinst)
-		siduction-live-settings configure
-		;;
-		*)
-		echo "Error: argument '${1}' not supported" >&2
-		exit 3
-		;;
+    postinst)
+        do_postinst
+        ;;
+    *)
+        echo "Error: argument '${1}' not supported" >&2
+        exit 3
+	;;
 esac

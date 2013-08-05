@@ -1,8 +1,15 @@
-pyfll (2013.08.04) UNRELEASED; urgency=low
+pyfll (2013.08.05) UNRELEASED; urgency=low
+
+  * modified 000-finalize.postinst to remove metapackages
+  * metapackages fully integrated in xorg 
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 05 Aug 2013 08:46:12 +0200
+
+pyfll (2013.08.04) unstable; urgency=low
 
   * introducing siduction-meta-xorg
   * xfce modified and tested
-  * xorg modified and tested
+  * xorg modified and tested 
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 04 Aug 2013 16:41:33 +0200
 
