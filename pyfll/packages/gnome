@@ -6,9 +6,7 @@ deps = """
     100-debian-cli
     200-siduction-cli
     300-hwsupport
-    500-xserver
-    600-x-debian
-    700-x-siduction
+    500-common-metapackages
     930-siduction-gnome
     libreoffice-suite
 """
