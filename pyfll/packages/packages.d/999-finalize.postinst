@@ -17,9 +17,9 @@ do_postinst() {
     say "Configure Live Settings"
     siduction-live-settings configure
     say "remove siduction-meta-packages"
-    apt-get purge siduction-meta-xdebian
-    apt-get purge siduction-meta-xorg       || return 0
-    apt-get purge siduction-meta-xsiduction || return 0
+    apt-get purge siduction-meta-xdebian --assume-yes
+    apt-get purge siduction-meta-xorg --assume-yes
+    apt-get purge siduction-meta-xsiduction --assume-yes
 }
 
 say 'finalize iso'
