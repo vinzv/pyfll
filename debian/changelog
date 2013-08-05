@@ -4,6 +4,7 @@ pyfll (2013.08.05) UNRELEASED; urgency=low
   * metapackages fully integrated in xorg 
   * lxde work with common metapackages
   * gnome work now with common metapackages
+  * fix rqt_next configs 
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 05 Aug 2013 08:46:12 +0200
 
