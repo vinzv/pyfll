@@ -12,3 +12,5 @@ deps = """
     #700-x-siduction
     920-siduction-lxde
 """
+packages = """
+"""

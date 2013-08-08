@@ -1,5 +1,5 @@
 desc = """
-	Siduction GNOME desktop environment
+    Siduction GNOME desktop environment
 """
 
 deps = """
@@ -12,4 +12,6 @@ deps = """
     700-x-siduction
     930-siduction-gnome
     libreoffice-suite
+"""
+packages = """
 """

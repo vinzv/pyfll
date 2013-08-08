@@ -10,5 +10,6 @@ deps = """
     600-x-debian
     700-x-siduction
     960-siduction-cinnamon
-    #libreoffice-suite
+"""
+packages = """
 """

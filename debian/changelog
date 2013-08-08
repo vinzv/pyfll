@@ -1,4 +1,11 @@
-pyfll (2013.08.05) UNRELEASED; urgency=low
+pyfll (2013.08.06) UNRELEASED; urgency=low
+
+  * fix some settings (whitespaces, blank sections)
+  * change rqt to common-metapackages 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 08 Aug 2013 02:25:07 +0200
+
+pyfll (2013.08.05) unstable; urgency=low
 
   * modified 000-finalize.postinst to remove metapackages
   * metapackages fully integrated in xorg 

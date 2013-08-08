@@ -8,3 +8,5 @@ deps = """
     300-hwsupport
     910-siduction-nox
 """
+packages = """
+"""

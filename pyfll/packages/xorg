@@ -9,3 +9,5 @@ deps = """
     500-common-metapackages
     970-siduction-xorg
 """
+packages = """
+"""
