@@ -2,6 +2,9 @@ pyfll (2013.08.08) UNRELEASED; urgency=low
 
   * change xfce to common-metapackages
   * remove kdenext/unstable from kde_amd64.conf
+  * readded kdenext/unstable - our package-lists are not compatible with
+    debian kde
+  * changed kde_next_amd64 kdnetxt to next 
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 08 Aug 2013 22:58:56 +0200
 
