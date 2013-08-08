@@ -60,7 +60,7 @@ packages = """
     kpartsplugin
     krdc
     krusader
-    ktorrent
+    # ktorrent
     kwalletmanager
     libkactivities-bin
     polkit-kde-1
