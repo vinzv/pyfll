@@ -1,4 +1,10 @@
-pyfll (2013.08.06) UNRELEASED; urgency=low
+pyfll (2013.08.08) UNRELEASED; urgency=low
+
+  * change xfce to common-metapackages
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 08 Aug 2013 22:58:56 +0200
+
+pyfll (2013.08.06) unstable; urgency=low
 
   * fix some settings (whitespaces, blank sections)
   * change rqt to common-metapackages 

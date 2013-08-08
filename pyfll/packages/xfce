@@ -6,10 +6,10 @@ deps = """
     100-debian-cli
     200-siduction-cli
     300-hwsupport
-    #500-common-metapackages
-    500-xserver
-    600-x-debian
-    700-x-siduction
+    500-common-metapackages
+    # 500-xserver
+    # 600-x-debian
+    # 700-x-siduction
     950-siduction-xfce
 """
 packages = """
