@@ -1,6 +1,7 @@
 pyfll (2013.08.08) UNRELEASED; urgency=low
 
   * change xfce to common-metapackages
+  * remove kdenext/unstable from kde_amd64.conf
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 08 Aug 2013 22:58:56 +0200
 
