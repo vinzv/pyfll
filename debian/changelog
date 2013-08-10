@@ -1,6 +1,9 @@
 pyfll (2013.08.10) UNRELEASED; urgency=low
 
   * removed old crap from pyfll/packages/rqt
+  * removed old crap from pyfll/packages/xfce 
+  * removed old crap from pyfll/packages/lxde
+  * removed old crap from pyfll/packages/gnome-dev
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 10 Aug 2013 13:59:33 +0200
 
