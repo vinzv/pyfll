@@ -1,8 +1,14 @@
-pyfll (2013.08.09) UNRELEASED; urgency=low
+pyfll (2013.08.10) UNRELEASED; urgency=low
+
+  * removed old crap from pyfll/packages/rqt
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 10 Aug 2013 13:59:33 +0200
+
+pyfll (2013.08.09) unstable; urgency=low
 
   * remove ktorrent from 940_kde
 
- -- Alf Gaida <agaida@siduction.org>  Fri, 09 Aug 2013 00:32:29 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sat, 10 Aug 2013 13:59:27 +0200
 
 pyfll (2013.08.08) unstable; urgency=low
 
