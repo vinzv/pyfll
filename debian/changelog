@@ -1,4 +1,10 @@
-pyfll (2013.08.10) UNRELEASED; urgency=low
+pyfll (2013.08.11) UNRELEASED; urgency=low
+
+  * change cinnamon to common-metapackages
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 11 Aug 2013 22:30:56 +0200
+
+pyfll (2013.08.10) unstable; urgency=low
 
   * removed old crap from pyfll/packages/rqt
   * removed old crap from pyfll/packages/xfce 
