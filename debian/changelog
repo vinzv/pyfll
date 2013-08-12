@@ -1,4 +1,10 @@
-pyfll (2013.08.11) UNRELEASED; urgency=low
+pyfll (2013.08.12) UNRELEASED; urgency=low
+
+  * change kde to common-metapackages
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 12 Aug 2013 11:40:28 +0200
+
+pyfll (2013.08.11) unstable; urgency=low
 
   * change cinnamon to common-metapackages
 
