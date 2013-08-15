@@ -1,1 +1,1 @@
-time ./pyfll/fll -vvvvv -c ./pyfll/xorg_next_amd64.conf
+time ./pyfll/fll -vvvvv -c ./pyfll/xorg_xperimental_amd64.conf

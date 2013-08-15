@@ -1,1 +1,1 @@
-time ./pyfll/fll -vv -c ./pyfll/xorg_next_i386.conf
+time ./pyfll/fll -vv -c ./pyfll/xorg_xperimental_i386.conf
