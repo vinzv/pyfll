@@ -1,0 +1,2 @@
+time ./pyfll/fll -vv -c ./pyfll/xfce_next_i386.conf
+
