@@ -69,10 +69,7 @@ class FllLocales(object):
                ConfigObj('data/fll-locales-pkg-map').
     """
     def __init__(self, cache, packages, map):
-        print "______ CONSTRUCTS LOCALE ______"
         self.loc_pkgs_set = set()
-        print "packages:"
-        print packages
         for pkg in cache.packages:
             
        
@@ -81,10 +78,6 @@ class FllLocales(object):
             if pkg.name not in packages:
                 continue
             for loc_pkg in map.keys():
-                print "............................."
-                print "pkg.name = %s" % pkg.name
-                print "loc_pkg  = %s" % loc_pkg
-                print "`````````````````````````````"
                 if pkg.name == loc_pkg:
                     loc_pkg_prefix_list = map.get(loc_pkg)
                     for loc_pkg_prefix in loc_pkg_prefix_list:
@@ -115,8 +108,6 @@ class FllLocales(object):
         loc_suf_list = list()
         try:
             ll, cc = locale.lower().split('_')
-            print("ll : %s" % ll)
-            print("cc : %s" % cc)
         except ValueError, e:
             raise FllLocalesError(e)
         loc_suf_list.append(ll + '-' + cc)
@@ -137,8 +128,6 @@ class FllLocales(object):
 
         if ll != 'en':
             loc_suf_list.append('i18n')
-        print "loc_suf_list:"
-        print loc_suf_list
         return loc_suf_list
 
     def detect_locale_packages(self, locale):
@@ -152,15 +141,9 @@ class FllLocales(object):
         """
         suffixes = self.__compute_locale_loc_suf_list(locale)
 
-        print "suffixes"
-        print suffixes
-
-        print ""
         loc_pkg_dict = dict()
         for pkg in self.loc_pkgs_set:
             loc_pkgs_list = self.loc_pkgs_list_dict.get(pkg)
-            print "self.loc_pkgs_list_dict"
-            print self.loc_pkgs_list_dict.get(pkg)
             if not loc_pkgs_list:
                 continue
             if pkg not in loc_pkg_dict:
@@ -178,8 +161,6 @@ class FllLocales(object):
             best = min(pkg_candidates)
             packages.append(pkg_candidates[best])
 
-        print "packages:"
-        print packages
         return packages
 
 
