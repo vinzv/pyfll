@@ -1,12 +1,13 @@
-pyfll (2013.08.18) UNRELEASED; urgency=low
+pyfll (2013.08.18) unstable; urgency=low
 
   * templates for configurations
   * bootstrap-scripts
   * release configurations renamed from $flavour_$arch to
     $flavour_current_$arch.conf
   * mv $flavour_$arch to $flavour_current_$arch 
+  * all configurations newly created
 
- -- Alf Gaida <agaida@siduction.org>  Sat, 17 Aug 2013 22:25:09 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sun, 18 Aug 2013 22:15:27 +0200
 
 pyfll (2013.08.12) unstable; urgency=low
 
