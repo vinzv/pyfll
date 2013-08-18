@@ -1,0 +1,2 @@
+time ./pyfll/fll -vv -c ./pyfll/xfce_current_amd64.conf
+

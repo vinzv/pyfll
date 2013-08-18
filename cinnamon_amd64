@@ -1,1 +1,0 @@
-time ./pyfll/fll -vv -c ./pyfll/cinnamon_amd64.conf

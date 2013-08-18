@@ -1,1 +1,0 @@
-time ./pyfll/fll -vv -c ./pyfll/xorg_i386.conf

@@ -1,2 +1,0 @@
-time ./pyfll/fll -vvvvv -c ./pyfll/lxde_amd64.conf
-

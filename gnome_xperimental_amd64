@@ -1,1 +1,1 @@
-time ./pyfll/fll -vvvvv -c ./pyfll/gnome_xperimental_amd64.conf
+time ./pyfll/fll -vv -c ./pyfll/gnome_xperimental_amd64.conf

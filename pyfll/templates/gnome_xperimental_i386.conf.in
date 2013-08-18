@@ -1,0 +1,210 @@
+[ 'sourcedistro' ]
+# this section is experimental, modify at your own risk
+#	name = debian
+#	codename = unstable
+
+[ 'packages' ]
+profile = gnome-dev
+
+i18n = """
+    # de_DE
+    # en_GB
+    # en_US
+    # it_IT
+    # pl_PL
+    # pt_BR
+    # ro_RO
+"""
+
+lang = """
+    de_DE
+    en_GB
+    en_US
+    it_IT
+    pl_PL
+    pt_BR
+    ro_RO
+"""
+
+packages = """
+    siduction-art-gnome-@CODENAME_SAFE@
+    gfxboot-themes-siduction-@VERSION@-@CODENAME_SAFE@-gnome
+"""
+
+# deps = """
+# """
+
+# debconf = """
+# """
+
+[ 'archs' ]
+    [[ 'i386' ]]
+    linux = siduction-686
+
+    # [[ 'amd64' ]]
+    # linux = siduction-amd64
+
+[ 'repos' ]
+    [[ 'debian' ]]
+    label           = debian
+    uri             = http://debian.siduction.org/
+    suite           = unstable
+    components      = main
+
+    [[ 'base' ]]
+    label           = base
+    uri             = http://packages.siduction.org/base
+    suite           = unstable
+    components      = main
+    keyring         = siduction-archive-keyring
+ 
+    [[ 'base-next' ]]
+    label           = base-next
+    uri             = http://packages.siduction.org/base
+    suite           = next
+    components      = main
+
+    [[ 'base-experimental' ]]
+    label           = base-experimental
+    uri             = http://packages.siduction.org/base
+    suite           = experimental
+    components      = main
+
+    [[ 'extra' ]]
+    label           = extra
+    uri             = http://packages.siduction.org/extra
+    suite           = unstable
+    components      = main
+
+    [[ 'extra-next' ]]
+    label           = extra-next
+    uri             = http://packages.siduction.org/extra
+    suite           = next
+    components      = main
+
+    [[ 'extra-experimental' ]]
+    label           = extra-experimental
+    uri             = http://packages.siduction.org/extra
+    suite           = experimental
+    components      = main
+
+    [[ 'fix' ]]
+    label           = fixes
+    uri             = http://packages.siduction.org/fixes
+    suite           = unstable
+    components      = main
+
+    [[ 'fix-next' ]]
+    label           = fixes-next
+    uri             = http://packages.siduction.org/fixes
+    suite           = next
+    components      = main
+
+    [[ 'fix-experimental' ]]
+    label           = fixes-experimental
+    uri             = http://packages.siduction.org/fixes
+    suite           = experimental
+    components      = main
+
+    # [[ 'kdenext' ]]
+    # label         = kdenext
+    # uri           = http://packages.siduction.org/kdenext
+    # suite         = unstable
+    # components    = main
+
+    # [[ 'kdenext-next' ]]
+    # label         = kdenext-next
+    # uri           = http://packages.siduction.org/kdenext
+    # suite         = next
+    # components    = main
+
+    # [[ 'kdenext-experimental' ]]
+    # label         = kdenext-experimental
+    # uri           = http://packages.siduction.org/kdenext
+    # suite         = experimental
+    # components    = main
+
+    # [[ 'experimental' ]]
+    # label         = experimental
+    # uri           = http://packages.siduction.org/experimental
+    # suite         = unstable
+    # components    = main
+
+    # [[ 'razorqt' ]]
+    # label         = razorqt
+    # uri           = http://packages.siduction.org/razorqt
+    # suite         = unstable
+    # components    = main
+
+    # [[ 'razorqt-next' ]]
+    # label         = razorqt-next
+    # uri           = http://packages.siduction.org/razorqt
+    # suite         = next
+    # components    = main
+
+    # [[ 'razorqt-experimental' ]]
+    # label         = razorqt-experimental
+    # uri           = http://packages.siduction.org/razorqt
+    # suite         = experimental
+    # components    = main
+
+    # [[ 'xfcenext' ]]
+    # label         = xfcenext
+    # uri           = http://packages.siduction.org/xfcenext
+    # suite         = unstable
+    # components    = main
+
+    # [[ 'xfcenext-next' ]]
+    # label         = xfcenext-next
+    # uri           = http://packages.siduction.org/xfcenext
+    # suite         = next
+    # components    = main
+
+    # [[ 'xfcenext-experimental' ]]
+    # label         = xfcenext-experimental
+    # uri           = http://packages.siduction.org/xfcenext
+    # suite         = experimental
+    # components    = main
+
+[ 'options' ]
+build_dir = /var/cache/pyfll
+output_dir = /srv/iso/gnome/i386
+# build_log = #/path/to/build.log
+# media_include = /path/to/release/notes
+apt_preferences = pyfll/apt/preferences
+# http_proxy =
+# ftp_proxy =
+
+# boot_cmdline = quiet
+# boot_timeout = 30
+# apt_recommends = yes
+bootstrapper = debootstrap
+# squashfs_comp = xz
+
+[ 'distro' ]
+FLL_DISTRO_NAME              = "siduction"
+FLL_DISTRO_URL               = "http://siduction.org"
+
+FLL_IMAGE_DIR                = "siduction"
+FLL_IMAGE_FILE               = "siduction"
+# FLL_IMAGE_FS               = "ext4"
+# FLL_IMAGE_MB               = "16384"
+FLL_UNION_MODULE             = "aufs"
+FLL_MOUNTPOINT               = "/fll/siduction"
+FLL_MEDIA_NAME               = "siduction.iso"
+FLL_LIVE_USER                = "siducer"
+FLL_LIVE_USER_GROUPS         = "dialout dip fuse cdrom audio video plugdev users floppy netdev powerdev scanner vboxusers kvm lp"
+
+FLL_WALLPAPER                = "/usr/share/wallpapers/siduction-@CODENAME_SAFE@"
+FLL_GFXBOOT_THEME            = "@VERSION@-@CODENAME_SAFE@-gnome"
+FLL_IRC_SERVER               = "irc.oftc.net"
+FLL_IRC_PORT                 = "6667"
+FLL_IRC_CHANNEL              = "#siduction"
+# FLL_CDROM_INDEX            = "siduction release notes"
+# FLL_CDROM_INDEX_ICON       = "release/release-notes"
+
+FLL_DISTRO_VERSION           = @VERSION@
+FLL_DISTRO_CODENAME_SAFE     = @CODENAME_SAFE@
+FLL_DISTRO_CODENAME          = @CODENAME@
+FLL_DISTRO_CODENAME_REV_SAFE =
+FLL_DISTRO_CODENAME_REV      =

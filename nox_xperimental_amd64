@@ -1,1 +1,1 @@
-time ./pyfll/fll -vvvvv --debug  -c ./pyfll/nox_xperimental_amd64.conf
+time ./pyfll/fll -vv --debug  -c ./pyfll/nox_xperimental_amd64.conf

@@ -1,6 +1,10 @@
-pyfll (2013.08.17) UNRELEASED; urgency=low
+pyfll (2013.08.18) UNRELEASED; urgency=low
 
-  * changed nox confs
+  * templates for configurations
+  * bootstrap-scripts
+  * release configurations renamed from $flavour_$arch to
+    $flavour_current_$arch.conf
+  * mv $flavour_$arch to $flavour_current_$arch 
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 17 Aug 2013 22:25:09 +0200
 
