@@ -31,7 +31,6 @@ packages = """
     siduction-live-settings-lxde
     siduction-settings-lxde
     siduction-settings-slim
-    slim
     transmission
     tuxcmd-modules
     xchat
