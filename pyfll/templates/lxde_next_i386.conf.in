@@ -28,7 +28,7 @@ lang = """
 
 packages = """
     siduction-art-wallpaper-@CODENAME_SAFE@
-    gfxboot-themes-siduction-@VERSION@-@CODENAME_SAFE@-lxde
+    gfxboot-themes-siduction-@CODENAME_SAFE@-lxde
 """
 
 # deps = """
@@ -196,7 +196,7 @@ FLL_LIVE_USER                = "siducer"
 FLL_LIVE_USER_GROUPS         = "dialout dip fuse cdrom audio video plugdev users floppy netdev powerdev scanner vboxusers kvm lp"
 
 FLL_WALLPAPER                = "/usr/share/wallpapers/@CODENAME_SAFE@"
-FLL_GFXBOOT_THEME            = "@VERSION@-@CODENAME_SAFE@-lxde"
+FLL_GFXBOOT_THEME            = "@CODENAME_SAFE@-lxde"
 FLL_IRC_SERVER               = "irc.oftc.net"
 FLL_IRC_PORT                 = "6667"
 FLL_IRC_CHANNEL              = "#siduction"
