@@ -23,14 +23,14 @@ packages = """
     kde-config-gtk-style
     kde-config-touchpad
     kde-plasma-desktop
-    kdepim
-    kdepim-kresources
-    kdepim-strigi-plugins
-    kdepim-wizards
-    kdf
-    kdm
+    #snafu kdepim
+    #snafu kdepim-kresources
+    #snafu kdepim-strigi-plugins
+    #snafu kdepim-wizards
+    #snafu kdf
+    #snafu kdm
     kgamma
-    kgpg
+    #snafu kgpg
     #snafu khelpcenter4
     #snafu kipi-plugins
     #snafu kmail
