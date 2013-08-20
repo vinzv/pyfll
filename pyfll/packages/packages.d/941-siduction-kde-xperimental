@@ -31,15 +31,15 @@ packages = """
     kdm
     kgamma
     kgpg
-    khelpcenter4
-    kipi-plugins
-    kmail
-    kmenuedit
-    kmix
-    konversation
-    konq-plugins
-    kontact
-    kopete
+    #snafu khelpcenter4
+    #snafu kipi-plugins
+    #snafu kmail
+    #snafu kmenuedit
+    #snafu kmix
+    #snafu konq-plugins
+    #snafu kontact
+    #snafu konversation
+    #snafu kopete
     #snafu kpartsplugin
     #snafu kppp
     #snafu krdc
