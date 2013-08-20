@@ -48,8 +48,8 @@ packages = """
     # ktorrent
     kwalletmanager
     libkactivities-bin
-    okular
-    okular-extra-backends
+    #snafu okular
+    #snafu okular-extra-backends
     phonon-backend-gstreamer
     phonon-backend-vlc
     #snafu polkit-kde-1
