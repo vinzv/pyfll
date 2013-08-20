@@ -12,7 +12,7 @@ packages = """
     gtk3-engines-oxygen
     gwenview
     iceweasel
-    k3b
+    #snafu k3b - (libk3b6-extracodecs)
     kaffeine
     kamoso
     kate
@@ -47,7 +47,7 @@ packages = """
     ksnapshot
     # ktorrent
     kwalletmanager
-    libkactivities-bin
+    #snafu libkactivities-bin
     #snafu okular
     #snafu okular-extra-backends
     phonon-backend-gstreamer
