@@ -40,13 +40,13 @@ packages = """
     konq-plugins
     kontact
     kopete
-    kpartsplugin
-    kppp
-    krdc
-    krusader
-    ksnapshot
+    #snafu kpartsplugin
+    #snafu kppp
+    #snafu krdc
+    #snafu krusader
+    #snafu ksnapshot
     # ktorrent
-    kwalletmanager
+    #snafu kwalletmanager
     #snafu libkactivities-bin
     #snafu okular
     #snafu okular-extra-backends
