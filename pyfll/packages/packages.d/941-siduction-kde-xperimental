@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    aptitude
     #snafu akregator
     #snafu ark
     akonadi-backend-sqlite
@@ -58,8 +59,8 @@ packages = """
     #snafu print-manager
     reportbug-ng
     siduction-live-settings-kde
-    siduction-settings-kde
-    siduction-settings-kdm
+    # siduction-settings-kde
+    # siduction-settings-kdm
     #snafu skanlite
     #snafu soprano-daemon
     strigi-client
