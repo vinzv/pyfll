@@ -47,6 +47,8 @@ packages = """
     #snafu ksnapshot
     # ktorrent
     #snafu kwalletmanager
+    libiodbc2
+    libmhash2
     #snafu libkactivities-bin
     #snafu okular
     #snafu okular-extra-backends
@@ -61,6 +63,7 @@ packages = """
     #really fucked up siduction-settings-kde
     #really fucked up siduction-settings-kdm
     #snafu skanlite
+    #snafu soprano-daemon
     strigi-client
     ttf-kochi-gothic
     virtuoso-minimal
