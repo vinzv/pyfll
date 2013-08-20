@@ -19,9 +19,9 @@ packages = """
     #snafu kcalc
     #snafu kcharselect
     #snafu kde-config-cddb
-    kde-config-gtk-style
-    kde-config-touchpad
-    kde-plasma-desktop
+    #snafu kde-config-gtk-style
+    #snafu kde-config-touchpad
+    #snafu kde-plasma-desktop
     #snafu kdepim
     #snafu kdepim-kresources
     #snafu kdepim-strigi-plugins
