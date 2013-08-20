@@ -52,17 +52,17 @@ packages = """
     okular-extra-backends
     phonon-backend-gstreamer
     phonon-backend-vlc
-    polkit-kde-1
-    plasma-widget-networkmanagement
-    plasma-widgets-addons
-    print-manager
+    #snafu polkit-kde-1
+    #snafu plasma-widget-networkmanagement
+    #snafu plasma-widgets-addons
+    #snafu print-manager
     reportbug-ng
     siduction-live-settings-kde
     siduction-settings-kde
     siduction-settings-kdm
-    skanlite
+    #snafu skanlite
     strigi-client
     ttf-kochi-gothic
     virtuoso-minimal
-    yakuake
+    #snafu yakuake
 """
