@@ -58,8 +58,8 @@ packages = """
     #snafu print-manager
     reportbug-ng
     siduction-live-settings-kde
-    siduction-settings-kde
-    siduction-settings-kdm
+    #really fucked up siduction-settings-kde
+    #really fucked up siduction-settings-kdm
     #snafu skanlite
     strigi-client
     ttf-kochi-gothic
