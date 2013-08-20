@@ -28,7 +28,7 @@ packages = """
     #snafu kdepim-wizards
     #snfau kdesudo 
     #snafu kdf
-    kdm
+    #snafu kdm
     kgamma
     #snafu kgpg
     #snafu khelpcenter4
@@ -47,8 +47,6 @@ packages = """
     #snafu ksnapshot
     # ktorrent
     #snafu kwalletmanager
-    libiodbc2
-    libmhash2
     #snafu libkactivities-bin
     #snafu okular
     #snafu okular-extra-backends
@@ -60,8 +58,8 @@ packages = """
     #snafu print-manager
     reportbug-ng
     siduction-live-settings-kde
-    #really fucked up siduction-settings-kde
-    #really fucked up siduction-settings-kdm
+    siduction-settings-kde
+    siduction-settings-kdm
     #snafu skanlite
     #snafu soprano-daemon
     strigi-client
