@@ -3,23 +3,22 @@ desc = """
 """
 
 packages = """
-    akregator
-    ark
+    #snafu akregator
+    #snafu ark
     akonadi-backend-sqlite
-    digikam
+    #snafu digikam
     galternatives
     gtk2-engines-oxygen
     gtk3-engines-oxygen
-    gwenview
+    #snafu gwenview
     iceweasel
     #snafu k3b - (libk3b6-extracodecs)
-    kaffeine
-    kamoso
-    kate
-    kcalc
-    kcharselect
-    kdesudo
-    kde-config-cddb
+    #snafu kaffeine
+    #snafu kamoso
+    #snafu kate
+    #snafu kcalc
+    #snafu kcharselect
+    #snafu kde-config-cddb
     kde-config-gtk-style
     kde-config-touchpad
     kde-plasma-desktop
@@ -27,6 +26,7 @@ packages = """
     #snafu kdepim-kresources
     #snafu kdepim-strigi-plugins
     #snafu kdepim-wizards
+    #snfau kdesudo 
     #snafu kdf
     #snafu kdm
     kgamma
