@@ -28,7 +28,7 @@ packages = """
     #snafu kdepim-wizards
     #snfau kdesudo 
     #snafu kdf
-    #snafu kdm
+    kdm
     kgamma
     #snafu kgpg
     #snafu khelpcenter4
