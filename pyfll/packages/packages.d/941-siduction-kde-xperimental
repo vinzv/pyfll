@@ -4,67 +4,66 @@ desc = """
 
 packages = """
     aptitude
-    #snafu akregator
-    #snafu ark
+    akregator
+    ark
     akonadi-backend-sqlite
-    #snafu digikam
+    digikam
     galternatives
     gtk2-engines-oxygen
     gtk3-engines-oxygen
-    #snafu gwenview
+    gwenview
     iceweasel
-    #snafu k3b - (libk3b6-extracodecs)
-    #snafu kaffeine
-    #snafu kamoso
-    #snafu kate
-    #snafu kcalc
-    #snafu kcharselect
-    #snafu kde-config-cddb
-    #snafu kde-config-gtk-style
-    #snafu kde-config-touchpad
-    #snafu kde-plasma-desktop
-    #snafu kdepim
-    #snafu kdepim-kresources
-    #snafu kdepim-strigi-plugins
-    #snafu kdepim-wizards
+    libk3b6-extracodecs
+    kaffeine
+    kamoso
+    kate
+    kcalc
+    kcharselect
+    kde-config-cddb
+    kde-config-gtk-style
+    kde-config-touchpad
+    kde-plasma-desktop
+    kdepim
+    #implizit kdepim-kresources
+    #implizit kdepim-strigi-plugins
+    #implizit kdepim-wizards
     kdesudo 
-    #snafu kdf
+    kdf
     kdm
     kgamma
-    #snafu kgpg
-    #snafu khelpcenter4
-    #snafu kipi-plugins
-    #snafu kmail
-    #snafu kmenuedit
-    #snafu kmix
-    #snafu konq-plugins
-    #snafu kontact
-    #snafu konversation
-    #snafu kopete
-    #snafu kpartsplugin
-    #snafu kppp
-    #snafu krdc
-    #snafu krusader
-    #snafu ksnapshot
+    kgpg
+    khelpcenter4
+    kipi-plugins
+    #implizit kmail
+    kmenuedit
+    kmix
+    konq-plugins
+    #implizit kontact
+    konversation
+    kopete
+    kpartsplugin
+    kppp
+    krdc
+    krusader
+    ksnapshot
     # ktorrent
-    #snafu kwalletmanager
-    #snafu libkactivities-bin
-    #snafu okular
-    #snafu okular-extra-backends
+    kwalletmanager
+    #implizit libkactivities-bin
+    okular
+    okular-extra-backends
     phonon-backend-gstreamer
     phonon-backend-vlc
-    #snafu polkit-kde-1
-    #snafu plasma-widget-networkmanagement
-    #snafu plasma-widgets-addons
-    #snafu print-manager
+    polkit-kde-1
+    plasma-widget-networkmanagement
+    plasma-widgets-addons
+    print-manager
     reportbug-ng
     siduction-live-settings-kde
     siduction-settings-kde
     siduction-settings-kdm
-    #snafu skanlite
-    #snafu soprano-daemon
+    skanlite
     strigi-client
     ttf-kochi-gothic
     virtuoso-minimal
-    #snafu yakuake
+    yakuake
 """
