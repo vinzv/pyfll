@@ -27,9 +27,9 @@ packages = """
     #snafu kdepim-kresources
     #snafu kdepim-strigi-plugins
     #snafu kdepim-wizards
-    #snfau kdesudo 
+    kdesudo 
     #snafu kdf
-    #snafu kdm
+    kdm
     kgamma
     #snafu kgpg
     #snafu khelpcenter4
@@ -59,8 +59,8 @@ packages = """
     #snafu print-manager
     reportbug-ng
     siduction-live-settings-kde
-    # siduction-settings-kde
-    # siduction-settings-kdm
+    siduction-settings-kde
+    siduction-settings-kdm
     #snafu skanlite
     #snafu soprano-daemon
     strigi-client
