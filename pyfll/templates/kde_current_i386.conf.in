@@ -28,7 +28,7 @@ lang = """
 
 packages = """
     siduction-art-kde-@CODENAME_SAFE@
-    gfxboot-themes-siduction-@VERSION@-@CODENAME_SAFE@-kde
+    gfxboot-themes-siduction-@CODENAME_SAFE@-kde
 """
 
 # deps = """
@@ -195,9 +195,9 @@ FLL_MEDIA_NAME               = "siduction.iso"
 FLL_LIVE_USER                = "siducer"
 FLL_LIVE_USER_GROUPS         = "dialout dip fuse cdrom audio video plugdev users floppy netdev powerdev scanner vboxusers kvm lp"
 
-FLL_WALLPAPER                = "/usr/share/wallpapers/siduction-@CODENAME_SAFE@"
-KDE_KSPLASH_THEME            = "siduction-@CODENAME_SAFE@"
-FLL_GFXBOOT_THEME            = "@VERSION@-@CODENAME_SAFE@-kde"
+FLL_WALLPAPER                = "/usr/share/wallpapers/@CODENAME_SAFE@"
+KDE_KSPLASH_THEME            = "@CODENAME_SAFE@"
+FLL_GFXBOOT_THEME            = "@CODENAME_SAFE@-kde"
 FLL_IRC_SERVER               = "irc.oftc.net"
 FLL_IRC_PORT                 = "6667"
 FLL_IRC_CHANNEL              = "#siduction"
