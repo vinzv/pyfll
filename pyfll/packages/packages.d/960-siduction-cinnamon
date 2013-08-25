@@ -1,4 +1,4 @@
-desc = """ 
+desc = """
     Siduction Cinnamon dektop
 """
 
@@ -14,6 +14,7 @@ packages = """
     gconf2
     gconf-service
     gksu
+    glib-networking
     # gnome-backgrounds
     gnome-bluetooth
     gnome-control-center
@@ -25,7 +26,6 @@ packages = """
     gnome-session-bin
     gnome-settings-daemon
     gnome-terminal
-    glib-networking
     iceweasel
     libglib2.0
     muffin
@@ -37,7 +37,7 @@ packages = """
     totem
     xchat
     #Distro specific packages
-    siduction-live-settings-cinnamon
-    siduction-settings-lightdm
-    siduction-settings-cinnamon
+    # siduction-live-settings-cinnamon
+    # siduction-settings-lightdm
+    # siduction-settings-cinnamon
 """
