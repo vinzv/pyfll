@@ -3,107 +3,93 @@ desc = """
 """
 
 packages = """
-    ##
-    ## Minimal GNOME desktop environment
-    ##
-    gdm3
-    gnome-keyring
-    gnome-session-fallback
-    gnome-session
-    gnome-terminal
-    iceweasel
-    metacity
-    nautilus
-    network-manager-gnome
-    xchat
-    ##
-    ## Lite GNOME desktop applications
-    ##
+    aisleriot
     alacarte
+    asciidoc
+    autotools-dev
+    automake
     baobab
     brasero
     dconf-tools
+    devscripts
+    docbook
+    docbook-xml
+    docbook-xsl
     eog
     evince
+    evolution
+    evolution-data-server
     file-roller
     gcalctool
     gconf-editor
+    gdm3
     gedit
+    gengetopt
+    gksu
     # gnome-about
+    gnome-backgrounds
     gnome-bluetooth
     gnome-control-center
+    gnome-dictionary
+    gnome-disk-utility
+    gnome-games
+    gnome-icon-theme
+    gnome-keyring
     gnome-media
     gnome-screenshot
     gnome-search-tool
+    gnome-session-fallback
+    gnome-session
     gnome-shell-extensions
+    gnome-system-log
+    gnome-terminal
     gnome-themes-standard
+    gnome-tweak-tool
     gnome-user-guide
+    gnome-user-share
+    gparted
     gstreamer0.10-alsa
+    gstreamer0.10-ffmpeg
     gstreamer0.10-plugins-base
     gstreamer0.10-plugins-good
     gstreamer0.10-plugins-ugly
     gstreamer0.10-pulseaudio
     gstreamer0.10-plugins-bad
-    sound-theme-freedesktop
-    libcanberra-pulse
-    libmtp-runtime
-    mpg321
-    nautilus-open-terminal
-    pulseaudio
-    rhythmbox
-    totem
-    ##
-    ## Normal GNOME desktop applications
-    ##
-    aisleriot
-    evolution
-    evolution-data-server
-    gnome-backgrounds
-    gnome-dictionary
-    gnome-disk-utility
-    gnome-games
-    gnome-icon-theme
-    gnome-system-log
-    gnome-tweak-tool
-    gnome-user-share
     gucharmap
     hamster-applet
-    gstreamer0.10-ffmpeg
-    shotwell
-    sound-juicer
-    vino
-    yelp
-    tomboy
-    tracker-gui
-    vinagre
-    zenity
-    ##
-    ## Distro specific packages for an GNOME desktop.
-    ##
-    gksu
-    gparted
-    siduction-live-settings-gnome
-    siduction-settings-gdm3
-    siduction-settings-gnome
-    ##
-    ## Debian development utilities.
-    ## this section is obsolete and should be dropped
-    ## for siduction-dev-package
-    autotools-dev
-    automake
-    libgtk2.0-dev
-    libglade2-dev
+    iceweasel
     imagemagick
-    asciidoc
-    docbook
-    gengetopt
-    xsltproc
-    docbook-xml
-    docbook-xsl
-    devscripts
-    pkg-config
     libblkid-dev
+    libcanberra-pulse
+    libglade2-dev
+    libgtk2.0-dev
+    libmtp-runtime
     libudev-dev
     libxml2-utils
+    metacity
+    mpg321
+    nautilus
+    nautilus-open-terminal
+    network-manager-gnome
+    pkg-config
+    pulseaudio
+    rhythmbox
+    tomboy
+    totem
+    tracker-gui
+    shotwell
+    # siduction-live-settings-gnome
+    # siduction-settings-gdm3
+    # siduction-settings-gnome
+    sound-juicer
+    sound-theme-freedesktop
+    # subversion as a gnome standard package?
+    # comment agaida
     subversion
+    vinagre
+    vino
+    yelp
+    xchat
+    xsltproc
+    zenity
 """
