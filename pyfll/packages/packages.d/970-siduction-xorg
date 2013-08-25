@@ -8,7 +8,7 @@ packages = """
 	gksu
 	gnome-icon-theme
 	iceweasel
-	siduction-live-settings-common
-	siduction-settings-lightdm
+	# siduction-live-settings-common
+	# siduction-settings-lightdm
 	xchat
 """
