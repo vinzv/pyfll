@@ -3,8 +3,8 @@ desc = """
 """
 
 packages = """
-    siduction-live-settings-nox
-    siduction-settings-nox
+    # siduction-live-settings-nox
+    # siduction-settings-nox
     #-------------------------------------------------
     # debian nox goodies.
     #-------------------------------------------------
