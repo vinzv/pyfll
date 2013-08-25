@@ -28,9 +28,9 @@ packages = """
     putty
     python-vte
     reportbug
-    siduction-live-settings-lxde
-    siduction-settings-lxde
-    siduction-settings-slim
+    #siduction-live-settings-lxde
+    #siduction-settings-lxde
+    #siduction-settings-slim
     transmission
     tuxcmd-modules
     xchat
