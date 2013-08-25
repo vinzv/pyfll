@@ -32,8 +32,6 @@ packages = """
     nemo
     network-manager
     network-manager-gnome
-    siduction-settings-cinnamon
-    siduction-live-settings-cinnamon
     totem
     xchat
     #Distro specific packages
