@@ -1,4 +1,11 @@
-pyfll (2013.08.20.2) UNRELEASED; urgency=low
+pyfll (2013.08.20.3) UNRELEASED; urgency=low
+
+  * apt-preferences modified - use current syslinux
+  * pinning perl perl-base perl-modules -t testing 
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 27 Aug 2013 17:49:27 +0200
+
+pyfll (2013.08.20.2) unstable; urgency=low
 
   * use cleaned flavour-packagenames, wallpapers, themes, maybe a
     adjustment of the relevant packages is required 
