@@ -3,79 +3,61 @@ desc = """
 """
 
 packages = """
-    ##
-    ## Minimal KDE desktop apps.
-    ##
+    akregator
     ark
     akonadi-backend-sqlite
     gtk2-engines-oxygen
     gtk3-engines-oxygen
+    gwenview
+    digikam
+    iceweasel
+    k3b
     kaffeine
+    kamoso
+    kate
+    kcalc
+    kcharselect
     kdesudo
     kde-config-cddb
     kde-config-gtk-style
+    kde-config-touchpad
     kde-plasma-desktop
-    kdm
-    kgamma
-    kmenuedit
-    konversation
-    phonon-backend-gstreamer
-    phonon-backend-vlc
-    plasma-widgets-addons
-    kalternatives
-    ##
-    ## Lite KDE desktop Applications
-    ##
-    gwenview
-    k3b
-    kcalc
-    khelpcenter4
-    kmix
-    plasma-widget-networkmanagement
-    kppp
-    ksnapshot
-    okular
-    okular-extra-backends
-    ##
-    ## Normal KDE desktop Applications
-    ##
-    akregator
-    kamoso
-    digikam
-    iceweasel
-    kate
-    kcharselect
     kdepim
     kdepim-kresources
     kdepim-strigi-plugins
     kdepim-wizards
     kdf
+    kdm
+    kgamma
     kgpg
+    khelpcenter4
     kipi-plugins
-    kmail
+    # kmail
     kmenuedit
+    kmix
     konq-plugins
-    kontact
+    # kontact
+    konversation
     kopete
     kpartsplugin
+    kppp
     krdc
     krusader
+    ksnapshot
     # ktorrent
     kwalletmanager
-    libkactivities-bin
+    phonon-backend-gstreamer
+    phonon-backend-vlc
+    plasma-widget-networkmanagement
+    plasma-widgets-addons
     polkit-kde-1
-    reportbug-ng
     print-manager
-    kde-config-touchpad
+    okular
+    okular-extra-backends
+    reportbug-ng
+    skanlite
     strigi-client
     ttf-kochi-gothic
     virtuoso-minimal
     yakuake
-    ##
-    ## Distro specific KDE packages.
-    ##
-    siduction-kdm-settings
-    siduction-live-settings-kde
-    siduction-settings-kde
-    skanlite
 """

@@ -3,6 +3,7 @@ pyfll (2013.08.28) UNRELEASED; urgency=low
   * use a snapshot for debian
   * http://snapshot.debian.org/archive/debian/20130820T154317Z -cinnamon 
   * -o Acquire::Check-Valid-Until=false 
+  * clan up kde packages 
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 28 Aug 2013 17:10:11 +0200
 
