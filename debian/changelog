@@ -1,8 +1,14 @@
-pyfll (2013.08.20.3) UNRELEASED; urgency=low
+pyfll (2013.08.28) UNRELEASED; urgency=low
+
+  * use a snapshot for debian
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 28 Aug 2013 17:10:11 +0200
+
+pyfll (2013.08.27) unstable; urgency=low
 
   * revert changes for perl 
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 27 Aug 2013 17:49:27 +0200
+ -- Alf Gaida <agaida@siduction.org>  Wed, 28 Aug 2013 17:10:07 +0200
 
 pyfll (2013.08.20.2) unstable; urgency=low
 
