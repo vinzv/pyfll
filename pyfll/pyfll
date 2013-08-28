@@ -1082,7 +1082,7 @@ class FLLBuilder(object):
                 keyrings.append(r['keyring'])
 
         if len(keyrings) > 0:
-            self._execInChroot(arch, 'apt-get -o Acquire::Languages=none update'.split())
+            self._execInChroot(arch, 'apt-get -o Acquire::Languages=none -o Acquire::Check-Valid-Until=false update'.split())
             cmd = 'apt-get --allow-unauthenticated --yes install'.split()
             cmd.extend(keyrings)
             self._execInChroot(arch, cmd)
@@ -1117,7 +1117,7 @@ class FLLBuilder(object):
         self._execInChroot(arch, 'apt-get -o Acquire::Languages=none -o Acquire::Check-Valid-Until=false update'.split())
         # Upgrade any essential packages from sources not available
         # during bootstrap phase.
-        self._execInChroot(arch, 'apt-get dist-upgrade -y'.split())
+        self._execInChroot(arch, 'apt-get -o Acquire::Check-Valid-Until=false dist-upgrade -y'.split())
 
         apt_pkg.init_config()
         apt_pkg.config.set('RootDir', chroot)
