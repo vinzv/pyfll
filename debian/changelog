@@ -4,6 +4,7 @@ pyfll (2013.08.30) UNRELEASED; urgency=low
   * lxde switched back to sid from snapshot
   * rqt switched back to sid from snapshot
   * rqt: kvirc is broken atm - time to change to quassel instead 
+  * xfce: switched back to sid from snapshot
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 30 Aug 2013 12:18:53 +0200
 
