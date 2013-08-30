@@ -1,6 +1,7 @@
-pyfll (2013.08.29) UNRELEASED; urgency=low
+pyfll (2013.08.30) UNRELEASED; urgency=low
 
-* nox switched beck to sid 
+  * nox switched beck to sid from snapshot
+  * lxde switchde back to sid from snapshot
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 30 Aug 2013 12:18:53 +0200
 
