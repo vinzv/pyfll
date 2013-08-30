@@ -7,6 +7,7 @@ pyfll (2013.08.30) UNRELEASED; urgency=low
   * xfce: switched back to sid from snapshot
   * xorg switched back to sid from snapshot
   * cinnamon switched back to sid from snapshot 
+  * gnome switched back ti sid from snapshot 
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 30 Aug 2013 12:18:53 +0200
 
