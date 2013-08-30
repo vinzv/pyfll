@@ -37,7 +37,9 @@ packages = """
     #siduction-settings-rqt
     juffed
     juffed-plugins
-    kvirc
+    # kvirc is broken
+    # using quassel instead
+    quassel
     nomacs
     pdfviewer
     ptbatterysystemtray
