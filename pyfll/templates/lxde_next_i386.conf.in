@@ -27,8 +27,11 @@ lang = """
 """
 
 packages = """
-    siduction-art-wallpaper-@CODENAME_SAFE@
     gfxboot-themes-siduction-@CODENAME_SAFE@-lxde
+    siduction-art-wallpaper-@CODENAME_SAFE@
+    siduction-live-settings-lxde-@CODENAME_SAFE@
+    siduction-settings-lxde-@CODENAME_SAFE@
+    siduction-settings-slim-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -57,7 +60,7 @@ packages = """
     suite           = unstable
     components      = main
     keyring         = siduction-archive-keyring
- 
+
     [[ 'base-next' ]]
     label           = base-next
     uri             = http://packages.siduction.org/base
@@ -121,6 +124,24 @@ packages = """
     # [[ 'kdenext-experimental' ]]
     # label         = kdenext-experimental
     # uri           = http://packages.siduction.org/kdenext
+    # suite         = experimental
+    # components    = main
+
+    [[ 'lxdenext' ]]
+    label           = lxdenext
+    uri             = http://packages.siduction.org/lxdenext
+    suite           = unstable
+    components      = main
+
+    [[ 'lxdenext-next' ]]
+    label           = lxdenext-next
+    uri             = http://packages.siduction.org/lxdenext
+    suite           = next
+    components      = main
+
+    # [[ 'lxdenext-experimental' ]]
+    # label         = lxdenext-experimental
+    # uri           = http://packages.siduction.org/lxdenext
     # suite         = experimental
     # components    = main
 

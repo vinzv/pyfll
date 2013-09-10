@@ -27,8 +27,11 @@ lang = """
 """
 
 packages = """
-    siduction-art-xfce-@CODENAME_SAFE@
     gfxboot-themes-siduction-@CODENAME_SAFE@-xfce
+    siduction-art-xfce-@CODENAME_SAFE@
+    siduction-live-settings-xfce-paintitblack
+    siduction-settings-xfce-paintitblack
+    siduction-settings-lightdm-paintitblack
 """
 
 # deps = """
@@ -57,7 +60,7 @@ packages = """
     suite           = unstable
     components      = main
     keyring         = siduction-archive-keyring
- 
+
     # [[ 'base-next' ]]
     # label         = base-next
     # uri           = http://packages.siduction.org/base

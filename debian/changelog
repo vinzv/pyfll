@@ -1,3 +1,9 @@
+pyfll (2013.08.32) UNRELEASED; urgency=low
+
+  * templates fixed
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 10 Sep 2013 17:34:35 +0200
+
 pyfll (2013.08.31) unstable; urgency=low
 
   * added siduction-settings-gdm3-paintitblack to

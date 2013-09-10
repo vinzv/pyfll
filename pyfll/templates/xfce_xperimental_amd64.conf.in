@@ -27,8 +27,11 @@ lang = """
 """
 
 packages = """
-    siduction-art-xfce-@CODENAME_SAFE@
     gfxboot-themes-siduction-@CODENAME_SAFE@-xfce
+    siduction-art-xfce-@CODENAME_SAFE@
+    siduction-live-settings-xfce-@CODENAME_SAFE@
+    siduction-settings-xfce-@CODENAME_SAFE@
+    siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -57,8 +60,8 @@ packages = """
     suite           = unstable
     components      = main
     keyring         = siduction-archive-keyring
- 
-    [[ 'base-next' ]] 
+
+    [[ 'base-next' ]]
     label           = base-next
     uri             = http://packages.siduction.org/base
     suite           = next
@@ -148,23 +151,23 @@ packages = """
     # suite         = experimental
     # components    = main
 
-    # [[ 'xfcenext' ]]
-    # label         = xfcenext
-    # uri           = http://packages.siduction.org/xfcenext
-    # suite         = unstable
-    # components    = main
+    [[ 'xfcenext' ]]
+    label           = xfcenext
+    uri             = http://packages.siduction.org/xfcenext
+    suite           = unstable
+    components      = main
 
-    # [[ 'xfcenext-next' ]]
-    # label         = xfcenext-next
-    # uri           = http://packages.siduction.org/xfcenext
-    # suite         = next
-    # components    = main
+    [[ 'xfcenext-next' ]]
+    label           = xfcenext-next
+    uri             = http://packages.siduction.org/xfcenext
+    suite           = next
+    components      = main
 
-    # [[ 'xfcenext-experimental' ]]
-    # label         = xfcenext-experimental
-    # uri           = http://packages.siduction.org/xfcenext
-    # suite         = experimental
-    # components    = main
+    [[ 'xfcenext-experimental' ]]
+    label           = xfcenext-experimental
+    uri             = http://packages.siduction.org/xfcenext
+    suite           = experimental
+    components      = main
 
 [ 'options' ]
 build_dir = /var/cache/pyfll

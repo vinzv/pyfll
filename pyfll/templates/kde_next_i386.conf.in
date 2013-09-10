@@ -7,13 +7,13 @@
 profile = kde
 
 i18n = """
-    # de_DE
-    # en_GB
-    # en_US
-    # it_IT
-    # pl_PL
-    # pt_BR
-    # ro_RO
+    de_DE
+    en_GB
+    en_US
+    it_IT
+    pl_PL
+    pt_BR
+    ro_RO
 """
 
 lang = """
@@ -27,8 +27,11 @@ lang = """
 """
 
 packages = """
-    siduction-art-kde-@CODENAME_SAFE@
     gfxboot-themes-siduction-@CODENAME_SAFE@-kde
+    siduction-art-kde-@CODENAME_SAFE@
+    siduction-live-settings-kde-@CODENAME_SAFE@
+    siduction-settings-kde-@CODENAME_SAFE@
+    siduction-settings-kdm-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -57,7 +60,7 @@ packages = """
     suite           = unstable
     components      = main
     keyring         = siduction-archive-keyring
- 
+
     [[ 'base-next' ]]
     label           = base-next
     uri             = http://packages.siduction.org/base
@@ -121,7 +124,7 @@ packages = """
     # [[ 'kdenext-experimental' ]]
     # label         = kdenext-experimental
     # uri           = http://packages.siduction.org/kdenext
-    # suite         = experimental
+    # suite         = experimental-snapshots
     # components    = main
 
     # [[ 'experimental' ]]
@@ -196,7 +199,6 @@ FLL_LIVE_USER                = "siducer"
 FLL_LIVE_USER_GROUPS         = "dialout dip fuse cdrom audio video plugdev users floppy netdev powerdev scanner vboxusers kvm lp"
 
 FLL_WALLPAPER                = "/usr/share/wallpapers/@CODENAME_SAFE@"
-KDE_KSPLASH_THEME            = "siduction-@CODENAME_SAFE@"
 FLL_GFXBOOT_THEME            = "@CODENAME_SAFE@-kde"
 FLL_IRC_SERVER               = "irc.oftc.net"
 FLL_IRC_PORT                 = "6667"

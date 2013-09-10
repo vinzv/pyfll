@@ -7,13 +7,13 @@
 profile = cinnamon
 
 i18n = """
-    de_DE
-    en_GB
-    en_US
-    it_IT
-    pl_PL
-    pt_BR
-    ro_RO
+    # de_DE
+    # en_GB
+    # en_US
+    # it_IT
+    # pl_PL
+    # pt_BR
+    # ro_RO
 """
 
 lang = """
@@ -27,8 +27,11 @@ lang = """
 """
 
 packages = """
-    siduction-art-wallpaper-@CODENAME_SAFE@
     gfxboot-themes-siduction-@CODENAME_SAFE@-cinnamon
+    siduction-art-wallpaper-@CODENAME_SAFE@
+    siduction-live-settings-cinnamon-@CODENAME_SAFE@
+    siduction-settings-cinnamon-@CODENAME_SAFE@
+    siduction-settings-gdm3-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -57,7 +60,7 @@ packages = """
     suite           = unstable
     components      = main
     keyring         = siduction-archive-keyring
- 
+
     [[ 'base-next' ]]
     label           = base-next
     uri             = http://packages.siduction.org/base

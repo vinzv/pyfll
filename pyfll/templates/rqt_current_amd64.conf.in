@@ -27,8 +27,11 @@ lang = """
 """
 
 packages = """
-    siduction-art-wallpaper-@CODENAME_SAFE@
     gfxboot-themes-siduction-@CODENAME_SAFE@-rqt
+    siduction-art-rqt-@CODENAME_SAFE@
+    siduction-live-settings-rqt-@CODENAME_SAFE@
+    siduction-settings-rqt-@CODENAME_SAFE@
+    siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -57,7 +60,7 @@ packages = """
     suite           = unstable
     components      = main
     keyring         = siduction-archive-keyring
- 
+
     # [[ 'base-next' ]]
     # label         = base-next
     # uri           = http://packages.siduction.org/base

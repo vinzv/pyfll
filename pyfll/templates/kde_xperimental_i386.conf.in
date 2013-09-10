@@ -4,16 +4,16 @@
 #	codename = unstable
 
 [ 'packages' ]
-profile = kde
+profile = kde-xperimental
 
 i18n = """
-     de_DE
-     en_GB
-     en_US
-     it_IT
-     pl_PL
-     pt_BR
-     ro_RO
+    de_DE
+    en_GB
+    en_US
+    it_IT
+    pl_PL
+    pt_BR
+    ro_RO
 """
 
 lang = """
@@ -27,8 +27,11 @@ lang = """
 """
 
 packages = """
-    siduction-art-kde-@CODENAME_SAFE@
     gfxboot-themes-siduction-@CODENAME_SAFE@-kde
+    siduction-art-kde-@CODENAME_SAFE@
+    siduction-live-settings-kde-@CODENAME_SAFE@
+    siduction-settings-kde-@CODENAME_SAFE@
+    siduction-settings-kdm-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -57,7 +60,7 @@ packages = """
     suite           = unstable
     components      = main
     keyring         = siduction-archive-keyring
- 
+
     [[ 'base-next' ]]
     label           = base-next
     uri             = http://packages.siduction.org/base
@@ -121,7 +124,7 @@ packages = """
     [[ 'kdenext-experimental' ]]
     label           = kdenext-experimental
     uri             = http://packages.siduction.org/kdenext
-    suite           = experimental
+    suite           = experimental-snapshots
     components      = main
 
     # [[ 'experimental' ]]
