@@ -52,8 +52,10 @@ packages = """
     rhythmbox
     # look at potential plugins
     totem
-    tracker-gui # why only the gui tracker-gui
-    goobox # instead of sound-juicer
+    tracker-gui
+    # why only the gui tracker-gui
+    goobox 
+    # instead of sound-juicer
     sound-theme-freedesktop
     vinagre
     vino
