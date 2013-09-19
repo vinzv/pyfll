@@ -6,37 +6,33 @@ packages = """
     akregator
     ark
     akonadi-backend-sqlite
+    digikam
+    galternatives
     gtk2-engines-oxygen
     gtk3-engines-oxygen
     gwenview
-    digikam
     iceweasel
-    k3b
+    libk3b6-extracodecs
     kaffeine
     kamoso
     kate
     kcalc
     kcharselect
-    kdesudo
     kde-config-cddb
     kde-config-gtk-style
     kde-config-touchpad
     kde-plasma-desktop
     kdepim
-    kdepim-kresources
-    kdepim-strigi-plugins
-    kdepim-wizards
+    kdesudo
     kdf
     kdm
     kgamma
     kgpg
     khelpcenter4
     kipi-plugins
-    # kmail
     kmenuedit
     kmix
     konq-plugins
-    # kontact
     konversation
     kopete
     kpartsplugin
@@ -46,14 +42,14 @@ packages = """
     ksnapshot
     # ktorrent
     kwalletmanager
+    okular
+    okular-extra-backends
     phonon-backend-gstreamer
     phonon-backend-vlc
     plasma-widget-networkmanagement
     plasma-widgets-addons
     polkit-kde-1
     print-manager
-    okular
-    okular-extra-backends
     reportbug-ng
     skanlite
     strigi-client

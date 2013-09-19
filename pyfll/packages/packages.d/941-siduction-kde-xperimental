@@ -24,21 +24,16 @@ packages = """
     kde-config-touchpad
     kde-plasma-desktop
     kdepim
-    #implizit kdepim-kresources
-    #implizit kdepim-strigi-plugins
-    #implizit kdepim-wizards
-    kdesudo 
+    kdesudo
     kdf
     kdm
     kgamma
     kgpg
     khelpcenter4
     kipi-plugins
-    #implizit kmail
     kmenuedit
     kmix
     konq-plugins
-    #implizit kontact
     konversation
     kopete
     kpartsplugin
@@ -48,19 +43,15 @@ packages = """
     ksnapshot
     # ktorrent
     kwalletmanager
-    #implizit libkactivities-bin
     okular
     okular-extra-backends
     phonon-backend-gstreamer
     phonon-backend-vlc
-    polkit-kde-1
     plasma-widget-networkmanagement
     plasma-widgets-addons
+    polkit-kde-1
     print-manager
     reportbug-ng
-    siduction-live-settings-kde
-    siduction-settings-kde
-    siduction-settings-kdm
     skanlite
     strigi-client
     ttf-kochi-gothic
