@@ -5,28 +5,19 @@ desc = """
 packages = """
     aisleriot
     alacarte
-    asciidoc
-    autotools-dev
-    automake
     baobab
     brasero
     dconf-tools
-    devscripts
-    docbook
-    docbook-xml
-    docbook-xsl
     eog
     evince
-    evolution
-    evolution-data-server
+    # broken evolution
+    # broken evolution-data-server
     file-roller
     gcalctool
     gconf-editor
-    gdm3
     gedit
     gengetopt
     gksu
-    # gnome-about
     gnome-backgrounds
     gnome-bluetooth
     gnome-control-center
@@ -43,53 +34,65 @@ packages = """
     gnome-shell-extensions
     gnome-system-log
     gnome-terminal
-    gnome-themes-standard
+    # gnome-themes-standard
     gnome-tweak-tool
     gnome-user-guide
     gnome-user-share
     gparted
-    gstreamer0.10-alsa
-    gstreamer0.10-ffmpeg
-    gstreamer0.10-plugins-base
-    gstreamer0.10-plugins-good
-    gstreamer0.10-plugins-ugly
-    gstreamer0.10-pulseaudio
-    gstreamer0.10-plugins-bad
     gucharmap
     hamster-applet
     iceweasel
-    imagemagick
-    libblkid-dev
     libcanberra-pulse
-    libglade2-dev
-    libgtk2.0-dev
     libmtp-runtime
-    libudev-dev
     libxml2-utils
-    metacity
     mpg321
     nautilus
     nautilus-open-terminal
     network-manager-gnome
-    pkg-config
-    pulseaudio
     rhythmbox
-    tomboy
+    # look at potential plugins
     totem
-    tracker-gui
-    shotwell
-    # siduction-live-settings-gnome
-    # siduction-settings-gdm3
-    # siduction-settings-gnome
-    sound-juicer
+    tracker-gui # why only the gui tracker-gui
+    goobox # instead of sound-juicer
     sound-theme-freedesktop
-    # subversion as a gnome standard package?
-    # comment agaida
-    subversion
     vinagre
     vino
-    yelp
     xchat
-    xsltproc
-    zenity
+
+    # to talk about
+    # why asciidoc
+    # why autotools-dev
+    # why automake
+    # why devscripts
+    # why docbook
+    # why docbook-xml
+    # why docbook-xsl
+    # why libblkid-dev
+    # why libglade2-dev
+    # why libgtk2.0-dev
+    # why libudev-dev
+    # why??? pulseaudio
+    # pkg-config
+    # why shotwell
+    # why subversion
+    # why tomboy - we use zim, one desktop wiki should be enough tomboy
+    # and tomboy throw in the whole mono crap
+    # why xsltproc
+
+    # why the old gstreamer?
+    # gstreamer0.10-alsa
+    # gstreamer0.10-ffmpeg
+    # gstreamer0.10-plugins-base
+    # gstreamer0.10-plugins-good
+    # gstreamer0.10-plugins-ugly
+    # gstreamer0.10-pulseaudio
+    # gstreamer0.10-plugins-bad
+
+
+
+    # no such package
+    # gnome-about
+
+
 """
+
