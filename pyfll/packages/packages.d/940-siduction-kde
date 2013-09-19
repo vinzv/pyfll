@@ -4,8 +4,8 @@ desc = """
 
 packages = """
     akregator
-    ark
     akonadi-backend-sqlite
+    ark
     digikam
     galternatives
     gtk2-engines-oxygen
@@ -13,6 +13,7 @@ packages = """
     gwenview
     iceweasel
     libk3b6-extracodecs
+    k3b-i18n
     kaffeine
     kamoso
     kate
@@ -40,7 +41,7 @@ packages = """
     krdc
     krusader
     ksnapshot
-    # ktorrent
+    ktorrent
     kwalletmanager
     okular
     okular-extra-backends
