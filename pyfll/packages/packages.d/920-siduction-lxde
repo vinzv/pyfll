@@ -35,9 +35,8 @@ packages = """
     tuxcmd-modules
     xchat
     xnoise-plugins
-    # clipit
-    # guake
-    # policykit-1
+    clipit
+    guake
     # radiotray
     # tilda
 """
