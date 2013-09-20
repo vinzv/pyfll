@@ -3,53 +3,37 @@ desc = """
 """
 
 packages = """
-    #-------------------------------------------------
-    # Razor-qt desktop.
-    #-------------------------------------------------
-    razorqt
-    razorqt-session
-    #-------------------------------------------------
-    # Debian Packages
-    #-------------------------------------------------
+    bsc
     clementine
-    gksu
     dbus-x11
-    gnome-icon-theme
+    gksu
     icedove
+    juffed
+    juffed-plugins
     moc-ffmpeg-plugin
+    nomacs
     obconf
     openbox-themes
     oxygen-icon-theme
-    policykit-1
-    qbittorrent
-    qt4-qtconfig
-    reportbug-ng
-    vlc
-    xscreensaver
-    xterm
-
-    #-------------------------------------------------
-    # Distro specific packages for a Razor-qt desktop.
-    #-------------------------------------------------
-    bsc
-    #siduction-live-settings-rqt
-    #siduction-settings-lightdm
-    #siduction-settings-rqt
-    juffed
-    juffed-plugins
-    # kvirc is broken
-    # using quassel instead
-    quassel
-    nomacs
     pdfviewer
+    policykit-1
     ptbatterysystemtray
     qasmixer
+    qbittorrent
     qlipper
+    qt4-qtconfig
     qterminal
     qtfm
+    quassel
     qupzilla
     qxkb
+    razorqt
+    razorqt-session
+    reportbug-ng
     screengrab
     silicon
+    vlc
     wbar-siduction-config
+    xscreensaver
+    xterm
 """

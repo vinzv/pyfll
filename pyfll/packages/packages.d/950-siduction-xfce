@@ -3,16 +3,12 @@ desc = """
 """
 
 packages = """
-    ##
-    ## Lite XFCE desktop
-    ##
     chromium
     chromium-l10n
     desktop-file-utils
     gconf2
     gksu
     gtk2-engines-xfce
-    gnome-icon-theme
     libnotify-bin
     lightdm
     lightdm-gtk-greeter
@@ -43,9 +39,6 @@ packages = """
     xfwm4-themes
     xtrlock
     zenity
-    ##
-    ## XFCE desktop add-ons
-    ##
     abiword
     brasero
     evince-gtk
@@ -63,9 +56,6 @@ packages = """
     xfce4-soundmenu-plugin
     xnoise
     xnoise-plugins
-    ##
-    ## XFCE desktop goodies
-    ##
     faenza-icon-theme
     mousepad
     ristretto
@@ -100,10 +90,4 @@ packages = """
     xfce4-weather-plugin
     xfce4-xkb-plugin
     xfburn
-    ##
-    ## Distro specific packages for an XFCE desktop.
-    ##
-    # siduction-live-settings-xfce
-    # siduction-settings-lightdm
-    # siduction-settings-xfce
 """

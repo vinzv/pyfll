@@ -24,7 +24,6 @@ packages = """
     gnome-dictionary
     gnome-disk-utility
     gnome-games
-    gnome-icon-theme
     gnome-keyring
     gnome-media
     gnome-screenshot

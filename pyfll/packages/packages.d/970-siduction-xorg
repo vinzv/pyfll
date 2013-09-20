@@ -6,9 +6,6 @@ packages = """
 	fluxbox
 	gconf2
 	gksu
-	gnome-icon-theme
 	iceweasel
-	# siduction-live-settings-common
-	# siduction-settings-lightdm
 	xchat
 """

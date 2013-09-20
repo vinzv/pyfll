@@ -1,11 +1,14 @@
-pyfll (2013.09.20) UNRELEASED; urgency=low
+pyfll (2013.09.20) unstable; urgency=low
 
   * templates fixed
   * some work on gnome 
   * removed kdm form 940-... as kdm is thrown in trough 
     siduction-settings-kdm-$foo 
+  * gnome-icon-theme removed from pyfll lists - gnome-icon-theme is
+    provided via siduction-settings-lightdm-$foo and
+    siduction-settings-gdm-$foo
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 10 Sep 2013 17:34:35 +0200
+ -- Alf Gaida <agaida@siduction.org>  Fri, 20 Sep 2013 23:46:46 +0200
 
 pyfll (2013.08.31) unstable; urgency=low
 

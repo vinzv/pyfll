@@ -19,7 +19,6 @@ packages = """
     gnome-bluetooth
     gnome-control-center
     gnome-desktop3-data
-    gnome-icon-theme
     gnome-keyring
     gnome-menus
     gnome-media
@@ -34,8 +33,4 @@ packages = """
     network-manager-gnome
     totem
     xchat
-    #Distro specific packages
-    # siduction-live-settings-cinnamon
-    # siduction-settings-lightdm
-    # siduction-settings-cinnamon
 """
