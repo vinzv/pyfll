@@ -26,7 +26,6 @@ packages = """
     kdepim
     kdesudo
     kdf
-    kdm
     kgamma
     kgpg
     khelpcenter4
