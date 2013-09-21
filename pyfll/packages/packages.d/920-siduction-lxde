@@ -32,7 +32,7 @@ packages = """
     transmission
     tuxcmd-modules
     xnoise-plugins
-    clipit
+    # clipit
     # guake
     # radiotray
     # tilda
