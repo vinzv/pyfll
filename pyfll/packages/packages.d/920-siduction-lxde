@@ -17,6 +17,7 @@ packages = """
     gvfs-backends
     gvfs-fuse
     hardinfo
+    hexchat
     lxappearance-obconf
     lxde
     lxlauncher
@@ -28,15 +29,11 @@ packages = """
     putty
     python-vte
     reportbug
-    #siduction-live-settings-lxde
-    #siduction-settings-lxde
-    #siduction-settings-slim
     transmission
     tuxcmd-modules
-    xchat
     xnoise-plugins
     clipit
-    guake
+    # guake
     # radiotray
     # tilda
 """
