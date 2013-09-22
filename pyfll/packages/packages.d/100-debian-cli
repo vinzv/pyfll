@@ -65,6 +65,7 @@ packages = """
     kexec-tools
     less
     libmtp-runtime
+    libnss-mdns
     links
     lm-sensors
     logrotate

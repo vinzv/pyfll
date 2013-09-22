@@ -1,9 +1,10 @@
 pyfll (2013.09.22) unstable; urgency=low
 
   * added cups-browsed in 100-debian-cli
+  * add libnss-mdns
   * refs #1331 
 
- -- Alf Gaida <agaida@siduction.org>  Sun, 22 Sep 2013 17:58:10 +0200
+ -- Alf Gaida <agaida@siduction.org>  Sun, 22 Sep 2013 21:48:06 +0200
 
 pyfll (2013.09.21) unstable; urgency=low
 
