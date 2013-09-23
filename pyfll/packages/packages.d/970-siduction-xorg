@@ -1,11 +1,11 @@
 desc = """ 
-       Siduction xorg env for testing
+    Siduction xorg env for testing
 """
 
 packages = """
-	fluxbox
-	gconf2
-	gksu
-	iceweasel
-	xchat
+    fluxbox
+    gconf2
+    gksu
+    hexchat
+    iceweasel
 """

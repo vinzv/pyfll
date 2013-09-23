@@ -9,6 +9,7 @@ packages = """
     gconf2
     gksu
     gtk2-engines-xfce
+    hexchat
     libnotify-bin
     lightdm
     lightdm-gtk-greeter
@@ -25,7 +26,6 @@ packages = """
     trayer
     xarchiver
     xbitmaps
-    xchat
     xfce4
     xfce4-artwork
     xfce4-dev-tools

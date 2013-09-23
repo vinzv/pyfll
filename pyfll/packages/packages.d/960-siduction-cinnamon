@@ -26,11 +26,11 @@ packages = """
     gnome-settings-daemon
     gnome-terminal
     iceweasel
+    hexchat
     libglib2.0
     muffin
     nemo
     network-manager
     network-manager-gnome
     totem
-    xchat
 """

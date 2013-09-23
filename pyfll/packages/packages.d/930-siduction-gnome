@@ -41,6 +41,7 @@ packages = """
     gucharmap
     hamster-applet
     iceweasel
+    hexchat
     libcanberra-pulse
     libmtp-runtime
     libxml2-utils
@@ -58,8 +59,6 @@ packages = """
     sound-theme-freedesktop
     vinagre
     vino
-    xchat
-
     # to talk about
     # why asciidoc
     # why autotools-dev
