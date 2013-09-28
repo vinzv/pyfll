@@ -35,7 +35,7 @@ packages = """
     kmix
     konq-plugins
     konversation
-    kopete
+    # kopete
     kpartsplugin
     kppp
     krdc
