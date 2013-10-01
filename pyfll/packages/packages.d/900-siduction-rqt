@@ -10,7 +10,6 @@ packages = """
     icedove
     juffed
     juffed-plugins
-    moc-ffmpeg-plugin
     nomacs
     obconf
     openbox-themes

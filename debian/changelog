@@ -1,3 +1,9 @@
+pyfll (2013.09.24) unstable; urgency=low
+
+  * ffmpeg removed from lists 
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 01 Oct 2013 19:57:42 +0200
+
 pyfll (2013.09.23) unstable; urgency=low
 
   * cinnamon xchat -> hexchat
