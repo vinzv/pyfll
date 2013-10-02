@@ -1,3 +1,9 @@
+pyfll (2013.10.02) unstable; urgency=low
+
+  * fix current xfce $arch templates and rerun bootstrap
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 03 Oct 2013 01:14:51 +0200
+
 pyfll (2013.09.24) unstable; urgency=low
 
   * ffmpeg removed from lists 

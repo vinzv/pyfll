@@ -29,9 +29,9 @@ lang = """
 packages = """
     gfxboot-themes-siduction-@CODENAME_SAFE@-xfce
     siduction-art-xfce-@CODENAME_SAFE@
-    siduction-live-settings-xfce-paintitblack
-    siduction-settings-xfce-paintitblack
-    siduction-settings-lightdm-paintitblack
+    siduction-live-settings-xfce-@CODENAME_SAFE@
+    siduction-settings-xfce-@CODENAME_SAFE@
+    siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
 # deps = """
