@@ -1,3 +1,10 @@
+pyfll (2013.10.03) UNRELEASED; urgency=low
+
+  * gnome-themes-standard added to kde xperimental
+  * gtk oxygen disabled in kde xperimental 
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 04 Oct 2013 00:33:38 +0200
+
 pyfll (2013.10.02) unstable; urgency=low
 
   * fix current xfce $arch templates and rerun bootstrap
