@@ -6,6 +6,7 @@ packages = """
     blueman
     gnome-keyring
     brasero
+    clipit
     claws-mail-i18n
     evince-gtk
     fpm2
@@ -32,7 +33,6 @@ packages = """
     transmission
     tuxcmd-modules
     xnoise-plugins
-    clipit
     # guake
     # radiotray
     # tilda
