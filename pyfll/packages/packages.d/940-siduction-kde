@@ -8,8 +8,10 @@ packages = """
     ark
     digikam
     galternatives
-    gtk2-engines-oxygen
-    gtk3-engines-oxygen
+    gtk-themes-standard
+# to much crashes
+#    gtk2-engines-oxygen
+#    gtk3-engines-oxygen
     gwenview
     iceweasel
     libk3b6-extracodecs
