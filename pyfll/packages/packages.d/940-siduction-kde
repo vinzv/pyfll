@@ -8,7 +8,7 @@ packages = """
     ark
     digikam
     galternatives
-    gtk-themes-standard
+    gnome-themes-standard
 # to much crashes
 #    gtk2-engines-oxygen
 #    gtk3-engines-oxygen
