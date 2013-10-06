@@ -3,16 +3,12 @@ desc = """
 """
 
 packages = """
-    aptitude
     akregator
     akonadi-backend-sqlite
     ark
     digikam
     galternatives
     gnome-themes-standard
-    # disabled, to much problems
-    # gtk2-engines-oxygen
-    # gtk3-engines-oxygen
     gwenview
     iceweasel
     libk3b6-extracodecs
