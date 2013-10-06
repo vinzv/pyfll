@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-    bsc
+    # ugly as can be -  bsc
     clementine
     dbus-x11
     gksu
@@ -30,7 +30,7 @@ packages = """
     razorqt-session
     reportbug-ng
     screengrab
-    silicon
+    # broken - and it moves only slow, not for daly use -  silicon
     vlc
     wbar-siduction-config
     xscreensaver
