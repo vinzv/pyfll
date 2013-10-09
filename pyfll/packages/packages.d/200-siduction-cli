@@ -7,33 +7,23 @@ debconf = """
 """
 
 packages = """
-    #------------------------------
-    # distro
-    #------------------------------
     apt-conf-siduction
-    cli-installer
-    siduction-bootsplash
-    siduction-scripts
-    udev-config-siduction
-    #------------------------------
-    # distro-tools
-    #------------------------------
     ceni
+    cli-installer
     dnsutils
     fll-installer
     inxi
     kernel-remover
     pppconfig
     pppoeconf
-    setpassword
-    siduction-irc
-    sshstart
-    wvdial
-    
-    #------------------------------
-    # distro-tools-x
-    #------------------------------
-    bluewater-manual
     pywwetha
+    setpassword
+    siduction-bootsplash
+    siduction-irc
+    siduction-scripts
+    sidu-manual
+    sshstart
+    udev-config-siduction
+    wvdial
 """
 

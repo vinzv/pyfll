@@ -14,11 +14,11 @@ packages = """
     console-setup
     fll-live-initramfs
     fll-live-initscripts
-    locales
-    squashfs-tools
-    initramfs-tools
     grub-pc
+    initramfs-tools
+    locales
     mtools
+    squashfs-tools
     syslinux
     systemd
 """
