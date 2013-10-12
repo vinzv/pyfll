@@ -31,6 +31,7 @@ packages = """
     cups-ppdc
     debconf-utils
     debhelper
+    debian-goodies
     debsums
     dialog
     dmeventd
@@ -90,6 +91,7 @@ packages = """
     openssh-client
     openprinting-ppds
     partimage
+    popularity-contest
     preload
     printer-driver-cjet
     printer-driver-c2050

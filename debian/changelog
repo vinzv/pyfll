@@ -1,3 +1,9 @@
+pyfll (2013.10.09) unstable; urgency=low
+
+  * add debian-goodies and popularity-contest to 100-debian-cli 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 12 Oct 2013 12:19:44 +0200
+
 pyfll (2013.10.08) unstable; urgency=low
 
   * sidu-manual instead of bluewater-manual 
