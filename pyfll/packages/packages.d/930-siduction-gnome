@@ -10,8 +10,8 @@ packages = """
     dconf-tools
     eog
     evince
-    # broken evolution
-    # broken evolution-data-server
+    evolution
+    evolution-data-server
     file-roller
     gcalctool
     gconf-editor
@@ -28,7 +28,6 @@ packages = """
     gnome-media
     gnome-screenshot
     gnome-search-tool
-    # not in gnome 3.8 anymore gnome-session-fallback
     gnome-session
     gnome-shell
     gnome-shell-extensions
@@ -76,23 +75,6 @@ packages = """
     # pkg-config
     # why shotwell
     # why subversion
-    # why tomboy - we use zim, one desktop wiki should be enough tomboy
-    # and tomboy throw in the whole mono crap
     # why xsltproc
-
-    # why the old gstreamer?
-    # gstreamer0.10-alsa
-    # gstreamer0.10-plugins-base
-    # gstreamer0.10-plugins-good
-    # gstreamer0.10-plugins-ugly
-    # gstreamer0.10-pulseaudio
-    # gstreamer0.10-plugins-bad
-
-
-
-    # no such package
-    # gnome-about
-
-
 """
 
