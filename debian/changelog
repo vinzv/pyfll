@@ -5,7 +5,8 @@ pyfll (2013.10.14) UNRELEASED; urgency=low
   * gnome-shell added to gnome-list 
   * gnome-tweak-tool breaks gnome-shell, commented out
   * reenabled evolution
-  * lightdm, gdm3 is broken
+  * gdm is broken, replaced with lightdm
+  * kdm replaced with lightdm (systemd prep)
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 14 Oct 2013 16:31:50 +0200
 
