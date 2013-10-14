@@ -30,6 +30,7 @@ packages = """
     gnome-search-tool
     # not in gnome 3.8 anymore gnome-session-fallback
     gnome-session
+    gnome-shell
     gnome-shell-extensions
     gnome-system-log
     gnome-terminal
