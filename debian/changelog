@@ -1,3 +1,10 @@
+pyfll (2013.10.14) UNRELEASED; urgency=low
+
+  * gnome-session-fallback removed from gnome-list, as the fallback
+    isn't part of gnome anymore
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 14 Oct 2013 16:31:50 +0200
+
 pyfll (2013.10.09) unstable; urgency=low
 
   * add debian-goodies and popularity-contest to 100-debian-cli 

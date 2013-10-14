@@ -28,12 +28,12 @@ packages = """
     gnome-media
     gnome-screenshot
     gnome-search-tool
-    gnome-session-fallback
+    # not in gnome 3.8 anymore gnome-session-fallback
     gnome-session
     gnome-shell-extensions
     gnome-system-log
     gnome-terminal
-    # gnome-themes-standard
+    gnome-themes-standard
     gnome-tweak-tool
     gnome-user-guide
     gnome-user-share
