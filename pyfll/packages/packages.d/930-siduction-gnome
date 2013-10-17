@@ -34,7 +34,7 @@ packages = """
     gnome-system-log
     gnome-terminal
     gnome-themes-standard
-    # gnome-tweak-tool break gnome-shell 3.8 gnome-tweak-tool
+    gnome-tweak-tool
     gnome-user-guide
     gnome-user-share
     gparted
@@ -59,22 +59,7 @@ packages = """
     sound-theme-freedesktop
     vinagre
     vino
-    # to talk about
-    # why asciidoc
-    # why autotools-dev
-    # why automake
-    # why devscripts
-    # why docbook
-    # why docbook-xml
-    # why docbook-xsl
-    # why libblkid-dev
-    # why libglade2-dev
-    # why libgtk2.0-dev
-    # why libudev-dev
     # why??? pulseaudio
-    # pkg-config
     # why shotwell
-    # why subversion
-    # why xsltproc
 """
 
