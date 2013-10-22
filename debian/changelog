@@ -4,6 +4,7 @@ pyfll (2013.10.18) UNRELEASED; urgency=low
   * lxappearance and lxappearanche added to razorqt
   * gnome-themes-standard added to razorqt 
   * lxdenext-repos added to razorqt
+  * added gtk2-engine-pixbuf to razorqt
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 22 Oct 2013 22:33:21 +0200
 
