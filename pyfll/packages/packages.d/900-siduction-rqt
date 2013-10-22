@@ -6,9 +6,13 @@ packages = """
     clementine
     dbus-x11
     gksu
+    gnome-themes-standard
+    hexchat
     icedove
     juffed
     juffed-plugins
+    lxappearance
+    lxappearance-obconf
     nomacs
     obconf
     openbox-themes
@@ -22,7 +26,6 @@ packages = """
     qt4-qtconfig
     qterminal
     qtfm
-    quassel
     qupzilla
     qxkb
     razorqt

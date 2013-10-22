@@ -1,4 +1,13 @@
-pyfll (2013.10.17) UNRELEASED; urgency=low
+pyfll (2013.10.18) UNRELEASED; urgency=low
+
+  * hexchat replaces quassel in razorqt
+  * lxappearance and lxappearanche added to razorqt
+  * gnome-themes-standard added to razorqt 
+  * lxdenext-repos added to razorqt
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 22 Oct 2013 22:33:21 +0200
+
+pyfll (2013.10.17) unstable; urgency=low
 
   * remove some dev-packages from gnome-list
   * reactivate gnome-tweak-tool
