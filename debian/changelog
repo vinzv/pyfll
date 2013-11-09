@@ -1,10 +1,14 @@
+pyfll (2013.11.09) UNRELEASER; urgency=low
+  * add libpam-systemd to essential
+ -- Alf Gaida <agaida@siduction.org>  Sat, 09 Nov 2013 22:18:46 +0100
+
 pyfll (2013.10.18) UNRELEASED; urgency=low
 
   * hexchat replaces quassel in razorqt
   * lxappearance and lxappearanche added to razorqt
   * gnome-themes-standard added to razorqt 
   * lxdenext-repos added to razorqt
-  * added gtk2-engine-pixbuf to razorqt
+  * added gtk2-engine-pixbuf to razorqt 
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 22 Oct 2013 22:33:21 +0200
 

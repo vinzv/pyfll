@@ -16,6 +16,7 @@ packages = """
     fll-live-initscripts
     grub-pc
     initramfs-tools
+    libpam-systemd
     locales
     mtools
     squashfs-tools
