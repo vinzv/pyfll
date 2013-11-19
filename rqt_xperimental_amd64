@@ -1,1 +1,1 @@
-time ./pyfll/fll -vv -c ./pyfll/rqt_xperimental_amd64.conf
+time ./pyfll/fll -vvvv -c ./pyfll/rqt_xperimental_amd64.conf
