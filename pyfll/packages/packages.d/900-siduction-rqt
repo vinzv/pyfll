@@ -27,7 +27,7 @@ packages = """
     qt4-qtconfig
     qterminal
     qtfm
-    qupzilla
+    # qupzilla
     qxkb
     razorqt
     razorqt-session
