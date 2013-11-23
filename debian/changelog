@@ -1,3 +1,13 @@
+pyfll (2013.11.22) UNRELEASER; urgency=low
+
+  * remove systemd and libpam-systemd from 000-essential. REASON:
+    They should be only installed, but for some unknown reason 
+    systemd-logind is started, but not proper configured and interact
+    badly with lightdm
+  * closes #1393
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 23 Nov 2013 11:18:28 +0100
+
 pyfll (2013.11.09) UNRELEASER; urgency=low
   * add libpam-systemd to essential
  -- Alf Gaida <agaida@siduction.org>  Sat, 09 Nov 2013 22:18:46 +0100
