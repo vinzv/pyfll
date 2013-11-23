@@ -17,7 +17,6 @@ packages = """
     gconf-editor
     gedit
     gengetopt
-    gksu
     gnome-backgrounds
     gnome-bluetooth
     gnome-control-center

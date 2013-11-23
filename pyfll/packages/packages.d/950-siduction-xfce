@@ -7,7 +7,6 @@ packages = """
     chromium-l10n
     desktop-file-utils
     gconf2
-    gksu
     gtk2-engines-xfce
     hexchat
     libnotify-bin
@@ -15,8 +14,6 @@ packages = """
     lightdm-gtk-greeter
     leafpad
     mpg321
-    pm-utils
-    policykit-1
     shared-mime-info
     thunar
     thunar-data

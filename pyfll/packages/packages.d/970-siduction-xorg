@@ -5,7 +5,6 @@ desc = """
 packages = """
     fluxbox
     gconf2
-    gksu
     hexchat
     iceweasel
 """

@@ -9,6 +9,7 @@ packages = """
     apt-show-versions
     aptitude
     aspell
+    btrfs-tools
     build-essential
     bzip2
     ca-certificates
@@ -35,10 +36,11 @@ packages = """
     debsums
     dialog
     dmeventd
+    dnsutils
     dosfstools
     dvd+rw-tools
     encfs
-    firmware-linux-free
+    exfat-utils
     foremost
     foomatic-db
     foomatic-db-engine
@@ -53,7 +55,6 @@ packages = """
     gptsync
     htop
     hddtemp
-    hdparm
     iftop
     info
     iotop
@@ -91,7 +92,10 @@ packages = """
     openssh-client
     openprinting-ppds
     partimage
+    policykit-1
     popularity-contest
+    pppconfig
+    pppoeconf
     preload
     printer-driver-cjet
     printer-driver-c2050
@@ -107,7 +111,6 @@ packages = """
     rsync
     rsyslog
     screen
-    sdparm
     signing-party
     sshfs
     smartmontools
@@ -131,6 +134,7 @@ packages = """
     wireless-tools
     wodim
     wpasupplicant
+    wvdial
     xfsprogs
     zip
 """

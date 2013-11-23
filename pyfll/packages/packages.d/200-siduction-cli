@@ -10,12 +10,9 @@ packages = """
     apt-conf-siduction
     ceni
     cli-installer
-    dnsutils
     fll-installer
     inxi
     kernel-remover
-    pppconfig
-    pppoeconf
     pywwetha
     setpassword
     siduction-bootsplash
@@ -24,6 +21,5 @@ packages = """
     sidu-manual
     sshstart
     udev-config-siduction
-    wvdial
 """
 

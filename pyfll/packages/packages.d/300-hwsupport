@@ -3,43 +3,41 @@ desc = """
 """
 
 packages = """
-    #--------------------------------
-    # essential
-    #--------------------------------
     acpid
+    acpi-support-base
     alsa-base
+    alsa-utils
+    bluetooth
+    bluez-pcmcia-support
     br2684ctl
     cpufrequtils
     crda
+    dmidecode
+    ethtool
+    hdparm
     irqbalance
+    firmware-linux-free
     laptop-detect
     lvm2
     mdadm
+    mobile-broadband-provider-info 
+    modemmanager 
     nbd-client
     openfwwf
     pcmciautils
     pciutils
-    udev
-    usbutils
-    udisks
-    #--------------------------------
-    #  extra 
-    #--------------------------------
-    alsa-utils
-    bluetooth
-    bluez-pcmcia-support
-    dmidecode
-    dmsetup
-    modemmanager 
-    mobile-broadband-provider-info 
-    rfkill
-    usb-modeswitch
-    vbetool
-    #--------------------------------
-    # powermangement 
-    #--------------------------------
-    acpi-support-base
     pm-utils
     powermgmt-base
+    rfkill
+    setserial
+    sdparm
+    udev
+    udisks
+    udisks2
     upower
+    usbmount
+    usbutils
+    usb-modeswitch
+    vbetool
+    wireless-tools
 """

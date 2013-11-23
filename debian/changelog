@@ -1,3 +1,10 @@
+pyfll (2013.11.23) UNRELEASER; urgency=low
+
+  * some sorting, wireless-tools added, setserial added, udisks2 added,
+    usbmount added, ethtool added 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Nov 2013 00:18:16 +0100
+
 pyfll (2013.11.22) UNRELEASER; urgency=low
 
   * remove systemd and libpam-systemd from 000-essential. REASON:

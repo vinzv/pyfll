@@ -12,7 +12,6 @@ packages = """
     fpm2
     galculator
     geany
-    gksu
     gpodder
     gtk2-engines
     gvfs-backends
