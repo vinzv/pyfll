@@ -1,5 +1,16 @@
+pyfll (2013.11.24) UNRELEASED; urgency=low
+
+  * systemd-sysv added in gnome  
+  * gnome now uses our revived release repository for non-essential
+    sysv-Packages
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 24 Nov 2013 03:48:29 +0100
+
 pyfll (2013.11.23) UNRELEASER; urgency=low
 
+  * all gnome changed back to gdm3 - this is the best solution for now
+    because lightdm is nearly unusable with gnome now there are systemd
+    and libpam-systemd dependencies
   * some sorting, wireless-tools added, setserial added, udisks2 added,
     usbmount added, ethtool added 
 

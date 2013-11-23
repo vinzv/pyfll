@@ -20,6 +20,12 @@ do_postinst() {
     apt-get purge siduction-meta-xdebian --assume-yes
     apt-get purge siduction-meta-xorg --assume-yes
     apt-get purge siduction-meta-xsiduction --assume-yes
+    echo " ------ "
+    if [ "${FLL_USE_SYSTEMD}" = YES ]; then
+        sh -c "apt-get install systemd-sysv" << BOFH
+Yes, do as I say!
+BOFH
+    fi
 }
 
 say 'finalize iso'

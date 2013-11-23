@@ -71,8 +71,8 @@ class FllLocales(object):
     def __init__(self, cache, packages, map):
         self.loc_pkgs_set = set()
         for pkg in cache.packages:
-            
-       
+
+
             if not pkg.version_list:
                 continue
             if pkg.name not in packages:
@@ -619,7 +619,7 @@ class FLLBuilder(object):
 
         for dep in deps:
             depfile = os.path.join(dir, 'packages.d', dep)
-            
+
             if not os.path.isfile(depfile):
                 self.log.critical('no such dep file: %s' % depfile)
                 raise FllError
@@ -658,8 +658,8 @@ class FLLBuilder(object):
 
             self.log.debug('---')
 
-        self.log.info('last depfile %s' % depfile) 
-        
+        self.log.info('last depfile %s' % depfile)
+
         depfile = os.path.join(dir, 'packages.d', '999-finalize.postinst')
 
 	pkgs['postinst'].append(depfile)
@@ -1078,7 +1078,7 @@ class FLLBuilder(object):
         for repo in self.conf['repos'].keys():
             r = self.conf['repos'][repo]
             if 'keyring' in r and r['keyring']:
-                self.log.info('keyring for %s ' % r) 
+                self.log.info('keyring for %s ' % r)
                 keyrings.append(r['keyring'])
 
         if len(keyrings) > 0:
@@ -1117,7 +1117,7 @@ class FLLBuilder(object):
         self._execInChroot(arch, 'apt-get -o Acquire::Languages=none -o Acquire::Check-Valid-Until=false update'.split())
         # Upgrade any essential packages from sources not available
         # during bootstrap phase.
-        self._execInChroot(arch, 'apt-get -o Acquire::Check-Valid-Until=false dist-upgrade -y'.split())
+        self._execInChroot(arch, 'apt-get -o Acquire::Check-Valid-Until=false dist-upgrade --yes'.split())
 
         apt_pkg.init_config()
         apt_pkg.config.set('RootDir', chroot)
