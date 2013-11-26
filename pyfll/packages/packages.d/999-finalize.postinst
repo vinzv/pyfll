@@ -26,6 +26,7 @@ do_postinst() {
 Yes, do as I say!
 BOFH
     fi
+    apt-mark hold systemd-sysv
 }
 
 say 'finalize iso'
