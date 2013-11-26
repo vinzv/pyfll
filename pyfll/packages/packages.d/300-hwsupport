@@ -15,6 +15,7 @@ packages = """
     dmidecode
     ethtool
     hdparm
+    hwdata
     irqbalance
     firmware-linux-free
     laptop-detect
