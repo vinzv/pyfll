@@ -1,12 +1,19 @@
-pyfll (2013.11.24) UNRELEASED; urgency=low
+pyfll (2013.11.25) UNRELEASED; urgency=low
+
+  * transition to systemd finished
+  * 999-finalize.postinst; apt-mark hold systemd-sysv added 
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 26 Nov 2013 20:22:11 +0100
+
+pyfll (2013.11.24) unstable; urgency=low
 
   * systemd-sysv added in gnome  
   * gnome now uses our revived release repository for non-essential
     sysv-Packages
 
- -- Alf Gaida <agaida@siduction.org>  Sun, 24 Nov 2013 03:48:29 +0100
+ -- Alf Gaida <agaida@siduction.org>  Tue, 26 Nov 2013 20:21:24 +0100
 
-pyfll (2013.11.23) UNRELEASER; urgency=low
+pyfll (2013.11.23) unstable; urgency=low
 
   * all gnome changed back to gdm3 - this is the best solution for now
     because lightdm is nearly unusable with gnome now there are systemd
@@ -16,7 +23,7 @@ pyfll (2013.11.23) UNRELEASER; urgency=low
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 24 Nov 2013 00:18:16 +0100
 
-pyfll (2013.11.22) UNRELEASER; urgency=low
+pyfll (2013.11.22) unstable; urgency=low
 
   * remove systemd and libpam-systemd from 000-essential. REASON:
     They should be only installed, but for some unknown reason 
@@ -26,7 +33,7 @@ pyfll (2013.11.22) UNRELEASER; urgency=low
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 23 Nov 2013 11:18:28 +0100
 
-pyfll (2013.11.09) UNRELEASER; urgency=low
+pyfll (2013.11.09) unstable; urgency=low
   * add libpam-systemd to essential
  -- Alf Gaida <agaida@siduction.org>  Sat, 09 Nov 2013 22:18:46 +0100
 
