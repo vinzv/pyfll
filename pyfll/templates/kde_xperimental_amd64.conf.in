@@ -31,6 +31,7 @@ packages = """
     siduction-art-kde-@CODENAME_SAFE@
     siduction-live-settings-kde-@CODENAME_SAFE@
     siduction-settings-kde-@CODENAME_SAFE@
+    # siduction-settings-kdm-@CODENAME_SAFE@
     siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
