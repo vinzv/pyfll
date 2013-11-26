@@ -30,8 +30,9 @@ packages = """
     gfxboot-themes-siduction-@CODENAME_SAFE@-cinnamon
     siduction-art-wallpaper-@CODENAME_SAFE@
     siduction-live-settings-cinnamon-@CODENAME_SAFE@
-    siduction-settings-cinnamon-@CODENAME_SAFE@
     siduction-settings-gdm3-@CODENAME_SAFE@
+    siduction-settings-cinnamon-@CODENAME_SAFE@
+    #siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -124,13 +125,25 @@ packages = """
     # [[ 'kdenext-experimental' ]]
     # label         = kdenext-experimental
     # uri           = http://packages.siduction.org/kdenext
-    # suite         = experimental
+    # suite         = experimental-snapshots
     # components    = main
 
-    # [[ 'experimental' ]]
-    # label         = experimental
-    # uri           = http://packages.siduction.org/experimental
-    # suite         = unstable
+    # [[ 'lxdenext' ]]
+    # label           = lxdenext
+    # uri             = http://packages.siduction.org/lxdenext
+    # suite           = unstable
+    # components      = main
+
+    # [[ 'lxdenext-next' ]]
+    # label           = lxdenext-next
+    # uri             = http://packages.siduction.org/lxdenext
+    # suite           = next
+    # components      = main
+
+    # [[ 'lxdenext-experimental' ]]
+    # label         = lxdenext-experimental
+    # uri           = http://packages.siduction.org/lxdenext
+    # suite         = experimental
     # components    = main
 
     # [[ 'razorqt' ]]
@@ -205,6 +218,8 @@ FLL_IRC_PORT                 = "6667"
 FLL_IRC_CHANNEL              = "#siduction"
 # FLL_CDROM_INDEX            = "siduction release notes"
 # FLL_CDROM_INDEX_ICON       = "release/release-notes"
+
+FLL_USE_SYSTEMD              = "YES"
 
 FLL_DISTRO_VERSION           = @VERSION@
 FLL_DISTRO_CODENAME_SAFE     = @CODENAME_SAFE@

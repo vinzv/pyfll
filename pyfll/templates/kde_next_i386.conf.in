@@ -7,13 +7,13 @@
 profile = kde
 
 i18n = """
-    de_DE
-    en_GB
-    en_US
-    it_IT
-    pl_PL
-    pt_BR
-    ro_RO
+    # de_DE
+    # en_GB
+    # en_US
+    # it_IT
+    # pl_PL
+    # pt_BR
+    # ro_RO
 """
 
 lang = """
@@ -31,7 +31,7 @@ packages = """
     siduction-art-kde-@CODENAME_SAFE@
     siduction-live-settings-kde-@CODENAME_SAFE@
     siduction-settings-kde-@CODENAME_SAFE@
-    siduction-settings-kdm-@CODENAME_SAFE@
+    siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -127,10 +127,22 @@ packages = """
     # suite         = experimental-snapshots
     # components    = main
 
-    # [[ 'experimental' ]]
-    # label         = experimental
-    # uri           = http://packages.siduction.org/experimental
-    # suite         = unstable
+    # [[ 'lxdenext' ]]
+    # label           = lxdenext
+    # uri             = http://packages.siduction.org/lxdenext
+    # suite           = unstable
+    # components      = main
+
+    # [[ 'lxdenext-next' ]]
+    # label           = lxdenext-next
+    # uri             = http://packages.siduction.org/lxdenext
+    # suite           = next
+    # components      = main
+
+    # [[ 'lxdenext-experimental' ]]
+    # label         = lxdenext-experimental
+    # uri           = http://packages.siduction.org/lxdenext
+    # suite         = experimental
     # components    = main
 
     # [[ 'razorqt' ]]
@@ -205,6 +217,8 @@ FLL_IRC_PORT                 = "6667"
 FLL_IRC_CHANNEL              = "#siduction"
 # FLL_CDROM_INDEX            = "siduction release notes"
 # FLL_CDROM_INDEX_ICON       = "release/release-notes"
+
+FLL_USE_SYSTEMD              = "YES"
 
 FLL_DISTRO_VERSION           = @VERSION@
 FLL_DISTRO_CODENAME_SAFE     = @CODENAME_SAFE@
