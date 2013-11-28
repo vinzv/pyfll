@@ -48,7 +48,7 @@ packages = """
     gamin
     gddrescue
     gdisk
-    ghostscript-cups
+    # broken - don't play well with current cups - ghostscript-cups
     glances
     genisoimage
     gpm

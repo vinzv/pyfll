@@ -3,6 +3,7 @@ pyfll (2013.11.25) UNRELEASED; urgency=low
   * transition to systemd finished
   * 999-finalize.postinst; apt-mark hold systemd-sysv added 
   * next new bootstrapped
+  * ghostscript-cups commented out 
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 26 Nov 2013 20:22:11 +0100
 
