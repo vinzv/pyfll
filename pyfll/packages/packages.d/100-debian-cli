@@ -42,13 +42,10 @@ packages = """
     encfs
     exfat-utils
     foremost
-    foomatic-db
-    foomatic-db-engine
     ftp-ssl
     gamin
     gddrescue
     gdisk
-    # broken - don't play well with current cups - ghostscript-cups
     glances
     genisoimage
     gpm
