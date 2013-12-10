@@ -35,5 +35,5 @@ packages = """
     wbar-siduction-config
     xscreensaver
     # xterm breaks iso build - dpkg sigsev
-    lxterminal
+    # lxterminal
 """
