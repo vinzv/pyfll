@@ -34,5 +34,6 @@ packages = """
     vlc
     wbar-siduction-config
     xscreensaver
-    xterm
+    # xterm breaks iso build - dpkg sigsev
+    lxterm
 """

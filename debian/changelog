@@ -1,11 +1,17 @@
-pyfll (2013.11.25) UNRELEASED; urgency=low
+pyfll (2013.12.11) UNRELEASED; urgency=medium
+
+  * xterm sigsev dpkg in rqt, replaced temporary with lxterm
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 11 Dec 2013 00:13:16 +0100
+
+pyfll (2013.11.25) unstable; urgency=low
 
   * transition to systemd finished
   * 999-finalize.postinst; apt-mark hold systemd-sysv added 
   * next new bootstrapped
   * ghostscript-cups commented out 
 
- -- Alf Gaida <agaida@siduction.org>  Tue, 26 Nov 2013 20:22:11 +0100
+ -- Alf Gaida <agaida@siduction.org>  Wed, 11 Dec 2013 00:13:12 +0100
 
 pyfll (2013.11.24) unstable; urgency=low
 
