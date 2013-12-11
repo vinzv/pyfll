@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    adequate
     anacron
     apt-file
     apt-listchanges
@@ -30,6 +31,7 @@ packages = """
     cups-common
     cups-filters
     cups-ppdc
+    daptup
     debconf-utils
     debhelper
     debian-goodies
