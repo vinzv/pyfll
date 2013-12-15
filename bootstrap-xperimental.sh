@@ -3,8 +3,8 @@
 set -e
 
 CODENAME="Thunderstruck"
-CODENAME_SAFE=thunderstruck
-VERSION=13.2.0
+CODENAME_SAFE="thunderstruck"
+VERSION="13.2.rc1"
 
 cd pyfll/templates
 for TEMPLATE in *xperimental*; do

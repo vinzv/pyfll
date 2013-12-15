@@ -2,9 +2,9 @@
 
 set -e
 
-CODENAME="WhiteRoom"
-CODENAME_SAFE="whiteroom"
-VERSION="13.2.0"
+CODENAME="December"
+CODENAME_SAFE="december"
+VERSION="13.2.rc1"
 
 cd pyfll/templates
 for TEMPLATE in *current*; do

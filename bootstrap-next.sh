@@ -3,8 +3,8 @@
 set -e
 
 CODENAME="Paint It Black"
-CODENAME_SAFE=paintitblack
-VERSION=13.2.0
+CODENAME_SAFE="paintitblack"
+VERSION="13.2.rc1"
 
 cd pyfll/templates
 for TEMPLATE in *next*; do
