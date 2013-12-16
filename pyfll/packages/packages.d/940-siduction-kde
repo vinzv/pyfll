@@ -7,7 +7,6 @@ packages = """
     akonadi-backend-sqlite
     ark
     digikam
-    gnome-themes-standard
     gwenview
     iceweasel
     libk3b6-extracodecs

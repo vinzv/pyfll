@@ -13,7 +13,6 @@ packages = """
     galculator
     geany
     gpodder
-    gtk2-engines
     gvfs-backends
     gvfs-fuse
     hardinfo

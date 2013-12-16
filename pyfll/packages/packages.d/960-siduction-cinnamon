@@ -9,7 +9,6 @@ packages = """
     dconf-service
     desktop-file-utils
     #gnome-themes
-    gnome-themes-standard
     gconf-gsettings-backend
     gconf2
     gconf-service
