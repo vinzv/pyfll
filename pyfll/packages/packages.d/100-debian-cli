@@ -31,7 +31,7 @@ packages = """
     cups-common
     cups-filters
     cups-ppdc
-    daptup
+    # daptup
     debconf-utils
     debhelper
     debian-goodies

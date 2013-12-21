@@ -1,9 +1,15 @@
-pyfll (2013.12.16) UNRELEASED; urgency=medium
+pyfll (2013.12.21) unstable; urgency=medium
+
+  * daptup temp disabled in pyfll
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 21 Dec 2013 02:20:34 +0100
+
+pyfll (2013.12.16) unstable; urgency=medium
 
   * gtk2-engines and gtk2-engines-pixbuf removed from flavour-packages
     and provided via meta-xdebian
   * gnome-themes-standard removed from gnome, cinnamon and kde
-    added to meta-xdebian, make sense for all x-flavours 
+    added to meta-xdebian, make sense for all x-flavours  
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 16 Dec 2013 02:47:39 +0100
 
