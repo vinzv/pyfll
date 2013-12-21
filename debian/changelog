@@ -1,3 +1,9 @@
+pyfll (2013.12.21) UNRELEASED; urgency=medium
+
+  * systemd-journal group and dir
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 21 Dec 2013 17:14:50 +0100
+
 pyfll (2013.12.21) unstable; urgency=medium
 
   * daptup temp disabled in pyfll
