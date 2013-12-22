@@ -30,9 +30,9 @@ packages = """
     gfxboot-themes-siduction-@CODENAME_SAFE@-gnome
     siduction-art-gnome-@CODENAME_SAFE@
     siduction-live-settings-gnome-@CODENAME_SAFE@
-    siduction-settings-gdm3-@CODENAME_SAFE@
+    # siduction-settings-gdm3-@CODENAME_SAFE@
     siduction-settings-gnome-@CODENAME_SAFE@
-    #siduction-settings-lightdm-@CODENAME_SAFE@
+    siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
 # deps = """
