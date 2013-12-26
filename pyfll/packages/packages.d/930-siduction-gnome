@@ -59,5 +59,29 @@ packages = """
     vino
     # why??? pulseaudio
     # why shotwell
+    #
+    # some languages hardwired
+    #
+    iceweasel-l10n-de
+    iceweasel-l10n-en-gb
+    iceweasel-l10n-it
+    iceweasel-l10n-pl
+    iceweasel-l10n-pt-br
+    iceweasel-l10n-ro
+    #
+    libreoffice-help-de
+    libreoffice-help-en-gb
+    libreoffice-help-en-us
+    libreoffice-help-it
+    libreoffice-help-pl
+    libreoffice-help-pt-br
+    #
+    libreoffice-l10n-de
+    libreoffice-l10n-en-gb
+    libreoffice-l10n-en-us
+    libreoffice-l10n-it
+    libreoffice-l10n-pl
+    libreoffice-l10n-pt-br
+    libreoffice-l10n-ro
 """
 
