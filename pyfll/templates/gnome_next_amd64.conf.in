@@ -30,9 +30,9 @@ packages = """
     gfxboot-themes-siduction-@CODENAME_SAFE@-gnome
     siduction-art-gnome-@CODENAME_SAFE@
     siduction-live-settings-gnome-@CODENAME_SAFE@
-    siduction-settings-gdm3-@CODENAME_SAFE@
+    # siduction-settings-gdm3-@CODENAME_SAFE@
     siduction-settings-gnome-@CODENAME_SAFE@
-    #siduction-settings-lightdm-@CODENAME_SAFE@
+    siduction-settings-lightdm-@CODENAME_SAFE@
 """
 
 # deps = """
@@ -209,7 +209,7 @@ FLL_UNION_MODULE             = "aufs"
 FLL_MOUNTPOINT               = "/fll/siduction"
 FLL_MEDIA_NAME               = "siduction.iso"
 FLL_LIVE_USER                = "siducer"
-FLL_LIVE_USER_GROUPS         = "dialout dip fuse cdrom audio video plugdev users floppy netdev powerdev scanner vboxusers kvm lp"
+FLL_LIVE_USER_GROUPS         = "dialout dip fuse cdrom audio video plugdev users floppy netdev powerdev scanner systemd-journal vboxusers kvm lp"
 
 FLL_WALLPAPER                = "/usr/share/wallpapers/@CODENAME_SAFE@"
 FLL_GFXBOOT_THEME            = "@CODENAME_SAFE@-gnome"
