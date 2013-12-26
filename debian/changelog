@@ -1,6 +1,7 @@
 pyfll (2013.12.26) UNRELEASED; urgency=medium
 
   * hardwired language-packages in pyfll
+  * kde lang integration 
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 26 Dec 2013 20:59:49 +0100
 
