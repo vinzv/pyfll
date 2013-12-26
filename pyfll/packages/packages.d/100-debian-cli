@@ -141,12 +141,13 @@ packages = """
     #
     # language-packages - quick and dirty
     #
-    hunspell-en-us
-    hunspell-de-de
     manpages-de
     manpages-it
     manpages-pl
     manpages-pt
+    myspell-de-de
+    myspell-en-gb
+    myspell-en-us
     myspell-it
     myspell-pl
     myspell-pt-br
