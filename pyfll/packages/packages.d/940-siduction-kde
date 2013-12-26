@@ -56,6 +56,14 @@ packages = """
     # 
     # brute-force languange integration
     #
+    # iceweasel
+    iceweasel-l10n-de
+    iceweasel-l10n-en-gb
+    iceweasel-l10n-it
+    iceweasel-l10n-pl
+    iceweasel-l10n-pt-br
+    iceweasel-l10n-ro
+    # kde
     kde-l10n-de
     kde-l10n-engb
     kde-l10n-it
