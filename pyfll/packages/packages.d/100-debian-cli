@@ -148,12 +148,10 @@ packages = """
     manpages-pl
     manpages-pt
     myspell-de-de
-    myspell-en
     myspell-en-gb
     myspell-en-us
     myspell-it
     myspell-pl
-    myspell-pt
     myspell-pt-br
     mythes-de
     mythes-en-gb
