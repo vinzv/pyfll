@@ -1,4 +1,10 @@
-pyfll (2013.12.21) UNRELEASED; urgency=medium
+pyfll (2013.12.26) UNRELEASED; urgency=medium
+
+  * hardwired language-packages in pyfll
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 26 Dec 2013 20:59:49 +0100
+
+pyfll (2013.12.21.1) UNRELEASED; urgency=medium
 
   * systemd-journal group and dir
 
@@ -15,7 +21,7 @@ pyfll (2013.12.16) unstable; urgency=medium
   * gtk2-engines and gtk2-engines-pixbuf removed from flavour-packages
     and provided via meta-xdebian
   * gnome-themes-standard removed from gnome, cinnamon and kde
-    added to meta-xdebian, make sense for all x-flavours  
+    added to meta-xdebian, make sense for all x-flavours
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 16 Dec 2013 02:47:39 +0100
 
@@ -30,15 +36,15 @@ pyfll (2013.12.11) unstable; urgency=medium
 pyfll (2013.11.25) unstable; urgency=low
 
   * transition to systemd finished
-  * 999-finalize.postinst; apt-mark hold systemd-sysv added 
+  * 999-finalize.postinst; apt-mark hold systemd-sysv added
   * next new bootstrapped
-  * ghostscript-cups commented out 
+  * ghostscript-cups commented out
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 11 Dec 2013 00:13:12 +0100
 
 pyfll (2013.11.24) unstable; urgency=low
 
-  * systemd-sysv added in gnome  
+  * systemd-sysv added in gnome
   * gnome now uses our revived release repository for non-essential
     sysv-Packages
 
@@ -50,14 +56,14 @@ pyfll (2013.11.23) unstable; urgency=low
     because lightdm is nearly unusable with gnome now there are systemd
     and libpam-systemd dependencies
   * some sorting, wireless-tools added, setserial added, udisks2 added,
-    usbmount added, ethtool added 
+    usbmount added, ethtool added
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 24 Nov 2013 00:18:16 +0100
 
 pyfll (2013.11.22) unstable; urgency=low
 
   * remove systemd and libpam-systemd from 000-essential. REASON:
-    They should be only installed, but for some unknown reason 
+    They should be only installed, but for some unknown reason
     systemd-logind is started, but not proper configured and interact
     badly with lightdm
   * closes #1393
@@ -72,9 +78,9 @@ pyfll (2013.10.18) UNRELEASED; urgency=low
 
   * hexchat replaces quassel in razorqt
   * lxappearance and lxappearanche added to razorqt
-  * gnome-themes-standard added to razorqt 
+  * gnome-themes-standard added to razorqt
   * lxdenext-repos added to razorqt
-  * added gtk2-engine-pixbuf to razorqt 
+  * added gtk2-engine-pixbuf to razorqt
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 22 Oct 2013 22:33:21 +0200
 
@@ -89,7 +95,7 @@ pyfll (2013.10.14) unstable; urgency=low
 
   * gnome-session-fallback removed from gnome-list, as the fallback
     isn't part of gnome anymore
-  * gnome-shell added to gnome-list 
+  * gnome-shell added to gnome-list
   * gnome-tweak-tool breaks gnome-shell, commented out
   * reenabled evolution
   * gdm is broken, replaced with lightdm
@@ -99,21 +105,21 @@ pyfll (2013.10.14) unstable; urgency=low
 
 pyfll (2013.10.09) unstable; urgency=low
 
-  * add debian-goodies and popularity-contest to 100-debian-cli 
+  * add debian-goodies and popularity-contest to 100-debian-cli
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 12 Oct 2013 12:19:44 +0200
 
 pyfll (2013.10.08) unstable; urgency=low
 
-  * sidu-manual instead of bluewater-manual 
+  * sidu-manual instead of bluewater-manual
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 10 Oct 2013 00:19:16 +0200
 
 pyfll (2013.10.07) unstable; urgency=low
 
   * gnome-themes-standard added to kde xperimental
-  * gtk oxygen disabled in kde xperimental 
-  * some cleanup 
+  * gtk oxygen disabled in kde xperimental
+  * some cleanup
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 04 Oct 2013 00:33:38 +0200
 
@@ -125,7 +131,7 @@ pyfll (2013.10.02) unstable; urgency=low
 
 pyfll (2013.09.24) unstable; urgency=low
 
-  * ffmpeg removed from lists 
+  * ffmpeg removed from lists
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 01 Oct 2013 19:57:42 +0200
 
@@ -134,7 +140,7 @@ pyfll (2013.09.23) unstable; urgency=low
   * cinnamon xchat -> hexchat
   * gnome xchat -> hexchat
   * xfce xchat -> hexchat
-  * xorg xchat -> hexchat 
+  * xorg xchat -> hexchat
   * added clipit to lxde packages
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 23 Sep 2013 13:09:20 +0200
@@ -143,22 +149,22 @@ pyfll (2013.09.22) unstable; urgency=low
 
   * added cups-browsed in 100-debian-cli
   * add libnss-mdns
-  * refs #1331 
+  * refs #1331
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 22 Sep 2013 21:48:06 +0200
 
 pyfll (2013.09.21) unstable; urgency=low
 
-  * hexchat in lxde  
+  * hexchat in lxde
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 21 Sep 2013 13:19:30 +0200
 
 pyfll (2013.09.20) unstable; urgency=low
 
   * templates fixed
-  * some work on gnome 
-  * removed kdm form 940-... as kdm is thrown in trough 
-    siduction-settings-kdm-$foo 
+  * some work on gnome
+  * removed kdm form 940-... as kdm is thrown in trough
+    siduction-settings-kdm-$foo
   * gnome-icon-theme removed from pyfll lists - gnome-icon-theme is
     provided via siduction-settings-lightdm-$foo and
     siduction-settings-gdm-$foo
@@ -177,11 +183,11 @@ pyfll (2013.08.30) UNRELEASED; urgency=low
   * nox switched beck to sid from snapshot
   * lxde switched back to sid from snapshot
   * rqt switched back to sid from snapshot
-  * rqt: kvirc is broken atm - time to change to quassel instead 
+  * rqt: kvirc is broken atm - time to change to quassel instead
   * xfce: switched back to sid from snapshot
   * xorg switched back to sid from snapshot
-  * cinnamon switched back to sid from snapshot 
-  * gnome switched back to sid from snapshot 
+  * cinnamon switched back to sid from snapshot
+  * gnome switched back to sid from snapshot
   * kde switched back to sid fom snapshot
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 30 Aug 2013 12:18:53 +0200
@@ -189,22 +195,22 @@ pyfll (2013.08.30) UNRELEASED; urgency=low
 pyfll (2013.08.28) unstable; urgency=low
 
   * use a snapshot for debian
-  * http://snapshot.debian.org/archive/debian/20130820T154317Z -cinnamon 
-  * -o Acquire::Check-Valid-Until=false 
-  * clan up kde packages 
+  * http://snapshot.debian.org/archive/debian/20130820T154317Z -cinnamon
+  * -o Acquire::Check-Valid-Until=false
+  * clan up kde packages
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 30 Aug 2013 12:18:24 +0200
 
 pyfll (2013.08.27) unstable; urgency=low
 
-  * revert changes for perl 
+  * revert changes for perl
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 28 Aug 2013 17:10:07 +0200
 
 pyfll (2013.08.20.2) unstable; urgency=low
 
   * use cleaned flavour-packagenames, wallpapers, themes, maybe a
-    adjustment of the relevant packages is required 
+    adjustment of the relevant packages is required
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 22 Aug 2013 01:20:11 +0200
 
@@ -212,31 +218,31 @@ pyfll (2013.08.20.1) unstable; urgency=low
 
   * debian/stable and /testing added to kde_xperimental*
   * removed all snafu packages, works with the rebuilt combination of
-    kde4libs/kde-workspace and a old libclucene0foo 
+    kde4libs/kde-workspace and a old libclucene0foo
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 20 Aug 2013 20:45:06 +0200
 
 pyfll (2013.08.20) unstable; urgency=low
 
   * kde-xperimental angelegt
-  * 941-$foo sorted and debugged 
+  * 941-$foo sorted and debugged
   * sorting out kde snafu packages
     - yakuake
     - skanlite
     - print-manager
-    - polkit-kde-1 
+    - polkit-kde-1
     - plasma-widgets-addons
-    - plasma-widget-networkmanagement 
+    - plasma-widget-networkmanagement
     - okular-extra-backends
-    - okular 
+    - okular
     - libkactivities-bin
-    - k3b 
+    - k3b
     - kwalletmanager
     - ksnapshot
     - krusader
     - krdc
     - kppp
-    - kpartsplugin 
+    - kpartsplugin
     - khelpcenter4
     - kipi-plugins
     - kmail
@@ -283,7 +289,7 @@ pyfll (2013.08.18) unstable; urgency=low
   * bootstrap-scripts
   * release configurations renamed from $flavour_$arch to
     $flavour_current_$arch.conf
-  * mv $flavour_$arch to $flavour_current_$arch 
+  * mv $flavour_$arch to $flavour_current_$arch
   * all configurations newly created
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 18 Aug 2013 22:15:27 +0200
@@ -303,7 +309,7 @@ pyfll (2013.08.11) unstable; urgency=low
 pyfll (2013.08.10) unstable; urgency=low
 
   * removed old crap from pyfll/packages/rqt
-  * removed old crap from pyfll/packages/xfce 
+  * removed old crap from pyfll/packages/xfce
   * removed old crap from pyfll/packages/lxde
   * removed old crap from pyfll/packages/gnome-dev
 
@@ -321,24 +327,24 @@ pyfll (2013.08.08) unstable; urgency=low
   * remove kdenext/unstable from kde_amd64.conf
   * readded kdenext/unstable - our package-lists are not compatible with
     debian kde
-  * changed kde_next_amd64 kdnetxt to next 
+  * changed kde_next_amd64 kdnetxt to next
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 09 Aug 2013 00:32:21 +0200
 
 pyfll (2013.08.06) unstable; urgency=low
 
   * fix some settings (whitespaces, blank sections)
-  * change rqt to common-metapackages 
+  * change rqt to common-metapackages
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 08 Aug 2013 02:25:07 +0200
 
 pyfll (2013.08.05) unstable; urgency=low
 
   * modified 000-finalize.postinst to remove metapackages
-  * metapackages fully integrated in xorg 
+  * metapackages fully integrated in xorg
   * lxde work with common metapackages
   * gnome work now with common metapackages
-  * fix rqt_next configs 
+  * fix rqt_next configs
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 05 Aug 2013 08:46:12 +0200
 
@@ -346,7 +352,7 @@ pyfll (2013.08.04) unstable; urgency=low
 
   * introducing siduction-meta-xorg
   * xfce modified and tested
-  * xorg modified and tested 
+  * xorg modified and tested
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 04 Aug 2013 16:41:33 +0200
 
@@ -357,7 +363,7 @@ pyfll (2013.08.01) unstable; urgency=low
   * systemd moved to 000-essential
   * 100-debian-cli sorted alphabetical
   * elinks-lite replaced by links
-  * links moved from nox to cli 
+  * links moved from nox to cli
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 01 Aug 2013 01:15:50 +0200
 
@@ -369,7 +375,7 @@ pyfll (2013.07.31) unstable; urgency=low
 
 pyfll (2013.07.29) unstable; urgency=low
 
-  * configurations completed for the moment 
+  * configurations completed for the moment
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 30 Jul 2013 17:18:10 +0200
 
@@ -391,9 +397,9 @@ pyfll (2013.07.14) unstable; urgency=low
   * base/next in xfce_dev_amd64
   * base/next in gnome_dev_i386
   * base/next in gnome_dev_amd64
-  * freedesktop-sound-theme replaced by sound-theme-freedesktop 
+  * freedesktop-sound-theme replaced by sound-theme-freedesktop
     in 930..gnome
-  * renamed siduction-gdm3-settings to siduction-settings-gdm3  
+  * renamed siduction-gdm3-settings to siduction-settings-gdm3
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 28 Jul 2013 21:24:27 +0200
 
@@ -427,7 +433,7 @@ pyfll (2013.07.10) UNRELEASED; urgency=low
 pyfll (2013.07.9) unstable; urgency=low
 
   * 999-finalize added
-  * added siduction-live-settings-common in 000-esential to force live 
+  * added siduction-live-settings-common in 000-esential to force live
     user creation as early as possible to not crash siduction-settings
     which depends of a live user
   * deactivate installer copy
@@ -444,20 +450,20 @@ pyfll (2013.07.6) unstable; urgency=low
 
   [ Ovidiu Angelescu ]
   * aded  Siduction keyword before Razor-qt in 900-siduction-rqt
-    Desc section to not crash addpkg from siduction-scripts 
+    Desc section to not crash addpkg from siduction-scripts
 
   [ Alf Gaida ]
   * removed unneeded keyring entries from configurations
   * remove some debris from pyfll
   * add log.info for used keys
-  * set the right unique label for base/experimental 
+  * set the right unique label for base/experimental
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
 
 pyfll (2013.07.3) unstable; urgency=low
 
   * aded  package razorqt-session in packages/rqt file
-    to force install it in iso before adding siduction-settings-rqt 
+    to force install it in iso before adding siduction-settings-rqt
 
  -- Ovidiu Angelescu <convbsd@siduction.org>  Thue, 03 July 2013 19:55:11 +0300
 
@@ -509,9 +515,9 @@ pyfll (2013.05.16) unstable; urgency=low
   * refs #1193
 
   [ Alf Gaida ]
-  * changes for lightdm-background in rqt 
-  * some cleanup 
-  * feh added to 600-x-debian 
+  * changes for lightdm-background in rqt
+  * some cleanup
+  * feh added to 600-x-debian
 
   [ José Manuel Santamaría Lema ]
   * Disable AutoLoginAgain for KDE, closes #960.
@@ -522,20 +528,20 @@ pyfll (2013.05.15) unstable; urgency=low
 
   * copy sidu-installer.desktop to /home/${FLL_LIVE_USER}/desktop
   * make sidu-installer.desktop executable
-  * refs #1195	
+  * refs #1195
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 15 May 2013 18:35:11 +0200
 
 pyfll (2013.05.11) unstable; urgency=low
 
-  * release firestarter i386 prepared (artwork, gfxboot) 
-  * release firestarter amd64 prepared (artwork, gfxboot) 
+  * release firestarter i386 prepared (artwork, gfxboot)
+  * release firestarter amd64 prepared (artwork, gfxboot)
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 15 May 2013 18:24:07 +0200
 
 pyfll (2013.05.10) unstable; urgency=low
 
-  * remove syslinux fix repo 
+  * remove syslinux fix repo
   * closes #1191
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 13 May 2013 21:19:12 +0200
@@ -556,7 +562,7 @@ pyfll (2013.05.06.2) unstable; urgency=low
 
 pyfll (2013.05.06) unstable; urgency=low
 
-  * rqt_dev razor-suite set to unstable 
+  * rqt_dev razor-suite set to unstable
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 06 May 2013 22:27:16 +0200
 
@@ -571,7 +577,7 @@ pyfll (2013.05.04) unstable; urgency=low
 pyfll (2013.05.03) unstable; urgency=low
 
   * disabled ntpd in siduction-kde, ntpd collides with kde date/time settings
-  * refs #1168 - setup internet time in kde is impossible 
+  * refs #1168 - setup internet time in kde is impossible
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 03 May 2013 20:26:17 +0200
 
@@ -625,27 +631,27 @@ pyfll (2013.04.07.1) unstable; urgency=low
 
 pyfll (2013.04.07) unstable; urgency=low
 
-  * rework of postinst files 
+  * rework of postinst files
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 07 Apr 2013 03:50:41 +0300
 
 pyfll (2013.04.06.3) unstable; urgency=low
 
-  * fixed a typo in 940-siduction-kde.postinst files 
+  * fixed a typo in 940-siduction-kde.postinst files
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sat, 06 Apr 2013 06:44:41 +0300
 
 pyfll (2013.04.06.2) unstable; urgency=low
 
-  * added siduction-live-settings-$flavour  and siduction-settings-$flavour 
+  * added siduction-live-settings-$flavour  and siduction-settings-$flavour
     to $flavour packages lists
-  * added/changed xxx-siduction-$flavour.postinst files 
+  * added/changed xxx-siduction-$flavour.postinst files
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sat, 06 Apr 2013 06:08:41 +0300
 
 pyfll (2013.04.06.1) unstable; urgency=low
 
-  * fixed a typo in 930-siduction-gnome.postinst 
+  * fixed a typo in 930-siduction-gnome.postinst
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sat, 06 Apr 2013 01:10:41 +0300
 
@@ -653,26 +659,26 @@ pyfll (2013.04.06) unstable; urgency=low
 
   * added say, add_live_user, hack_sudoers, hack_bashrc
     routines to 200-siduction-cli.postinst to do desired actions
-  * removed from fll_sqfs_exclusion /home/* to be able to 
-    write settings in ${FLL_LIVE_USER} home 
-  * added all_users_settings routine to 500-xserver.postinst 
-    to write in iso common settings to all users as user root  
+  * removed from fll_sqfs_exclusion /home/* to be able to
+    write settings in ${FLL_LIVE_USER} home
+  * added all_users_settings routine to 500-xserver.postinst
+    to write in iso common settings to all users as user root
   * added 700-x-siduction.postinst to handle display managers
-    setup such as autologin (wallpaper setup should be in 
+    setup such as autologin (wallpaper setup should be in
     xxx-siduction-$flavour.postinst if possible)
-  * added to 700-x-siduction siduction-dynamic-dms to handle 
+  * added to 700-x-siduction siduction-dynamic-dms to handle
     using display managers resolution autodetect
-  * added 930-siduction-gnome.postinst to handle ${FLL_LIVE_USER} 
+  * added 930-siduction-gnome.postinst to handle ${FLL_LIVE_USER}
     home gnome settings and wallaper setup
   * removed desktop-defaults-gnome from 930-siduction-gnome list
     since we won't use desktop-defaults anymore
-  * added siduction-live-settings-gnome to 930-siduction-gnome list 
+  * added siduction-live-settings-gnome to 930-siduction-gnome list
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sat, 06 Apr 2013 01:10:41 +0300
 
 pyfll (2013.04.02) unstble; urgency=low
 
-  * john outdocumented 
+  * john outdocumented
   * kde: qtcurve finally removed
   * kde: gtk2-engines-oxygen, gtk3-engines-oxygen,
     kde-config-gtk-style added
@@ -728,7 +734,7 @@ pyfll (2013.03.10) unstable; urgency=low
 pyfll (2013.03.05) unstable; urgency=low
 
   * some packages moved
-  * print/scan moved to 100-debian-cli and 600-x-debian 
+  * print/scan moved to 100-debian-cli and 600-x-debian
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 14:02:15 +0100
 
@@ -757,7 +763,7 @@ pyfll (2013.03.04) unstable; urgency=low
   * xfce_amd4 cleanup
   * xfce_dev_amd64 cleanup
   * xfce_i386
-  * xfce_dev_i386 
+  * xfce_dev_i386
   * deleted:    pyfll/packages/kde-dev (ever the same as ./kde)
   * deleted:    pyfll/packages/lxde-dev ^^
   * deleted:    pyfll/packages/nox-dev  ^^
@@ -765,7 +771,7 @@ pyfll (2013.03.04) unstable; urgency=low
     200-siduction-cli
 
   * ffmpeg:        100-debian-cli -> 500-x-debian
-  * gvfs-bin:      100-debian-cli -> 500-x-debian      
+  * gvfs-bin:      100-debian-cli -> 500-x-debian
   * gvfs-backends: 100-debian-cli -> 500-x-debian
   * imagemagick:   100-debian-cli -> 500-x-debian
   * ntfs-config    100-debian-cli -> 500-x-debian
@@ -773,10 +779,10 @@ pyfll (2013.03.04) unstable; urgency=low
   * scrot          100-debian-cli -> 500-x-debian
   * acpi-support-base added to 100-debian-cli
   * acpi-support:  300-hw-support -> 500-x-debian
-  * ghostscript-x  300-hw-support -> 500-x-debian  
+  * ghostscript-x  300-hw-support -> 500-x-debian
   * sane           300-hw-support -> 500-x-debian
   * sane-utils     300-hw-support -> 500-x-debian
-  * libsane-extras 300-hw-support -> 500-x-debian   
+  * libsane-extras 300-hw-support -> 500-x-debian
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 04 Mar 2013 02:10:32 +0100
 
@@ -793,29 +799,29 @@ pyfll (2013.03.03) unstable; urgency=low
 pyfll (2013.02.25) unstable; urgency=low
 
   * some cosmetics
-  * preload added to 100-debian-cli 
+  * preload added to 100-debian-cli
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 10 Mar 2013 22:50:43 +0100
 
 pyfll (2013.02.20) unstable; urgency=low
 
-  * rqt replace lightdm and lightdm-gtk-greeter with siduction-dm-rqt  
+  * rqt replace lightdm and lightdm-gtk-greeter with siduction-dm-rqt
 
  -- Alf Gaida <agaida@siduction.org>  Mon, 25 Feb 2013 00:03:09 +0100
 
 pyfll (2013.02.24) unstable; urgency=low
 
   * qtfm added added to rqt
-  * juffed-plugins added to rqt 
+  * juffed-plugins added to rqt
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 24 Feb 2013 22:59:05 +0100
 
 pyfll (2013.02.24) unstable; urgency=low
 
   * new structure
-  * some beautifing of files 
+  * some beautifing of files
   * new numbering
-  * recommends renamed to 010-recommends-whitelisted 
+  * recommends renamed to 010-recommends-whitelisted
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 24 Feb 2013 22:58:21 +0100
 
@@ -832,13 +838,13 @@ pyfll (2012.12.28) unstable; urgency=low
 
 pyfll (2012.12.23) UNRELEASED; urgency=low
 
-  * in gnome_i386.conf changed to xmas and gfxboot-theme 12.2.5 
+  * in gnome_i386.conf changed to xmas and gfxboot-theme 12.2.5
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 23 Dec 2012 14:16:02 +0200
 
 pyfll (2012.12.22) UNRELEASED; urgency=low
 
-  * gnome-configs changed to xmas and gfxboot-theme 12.2.5 
+  * gnome-configs changed to xmas and gfxboot-theme 12.2.5
 
  -- Alf Gaida <agaida@siduction.org>  Sat, 22 Dec 2012 23:52:02 +0100
 
@@ -856,7 +862,7 @@ pyfll (2012.12.09) UNRELEASED; urgency=low
 
 pyfll (2012.12.02) unstable; urgency=low
 
-  *  added romanian language support in packages/packages.d/esential and 
+  *  added romanian language support in packages/packages.d/esential and
      in ${flavour}_${arch}.conf files
 
  -- Ovidiu Angelescu <convbsd@siduction.net>  Sun, 02 Dec 2012 20:41:29 +0200
@@ -892,7 +898,7 @@ pyfll (2012.10.29+nmu5) unstable; urgency=low
   * removed the password question.
 
   [ Alf Gaida ]
-  * xfcenext in xfce*.conf 
+  * xfcenext in xfce*.conf
   * removed deprecated xfce4-utils from xfce-desktop-min
 
   [ Torsten Wohlfarth ]
@@ -907,7 +913,7 @@ pyfll (2012.10.29+nmu5) unstable; urgency=low
   * added some packages to the xfce confs
 
   [ Alf Gaida ]
-  * added xterm to distro-rqt, closes #976 
+  * added xterm to distro-rqt, closes #976
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 22 Nov 2012 02:26:35 +0100
 
