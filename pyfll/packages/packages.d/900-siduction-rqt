@@ -6,7 +6,6 @@ packages = """
     clementine
     dbus-x11
     hexchat
-    icedove
     juffed
     juffed-plugins
     lxappearance
@@ -32,6 +31,4 @@ packages = """
     vlc
     wbar-siduction-config
     xscreensaver
-    # xterm breaks iso build - dpkg sigsev
-    # lxterminal
 """

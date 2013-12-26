@@ -6,5 +6,5 @@ packages = """
     fluxbox
     gconf2
     hexchat
-    iceweasel
+    midori
 """
