@@ -31,7 +31,7 @@ packages = """
     cups-common
     cups-filters
     cups-ppdc
-    daptup
+    # daptup
     debconf-utils
     debhelper
     debian-goodies
@@ -138,6 +138,28 @@ packages = """
     wvdial
     xfsprogs
     zip
+    #
+    # language-packages - quick and dirty
+    #
+    hunspell-en-us
+    hunspell-de-de
+    manpages-de
+    manpages-it
+    manpages-pl
+    manpages-pt
+    myspell-de-de
+    myspell-en
+    myspell-en-gb
+    myspell-en-us
+    myspell-it
+    myspell-pl
+    myspell-pt
+    myspell-pt-br
+    mythes-de
+    mythes-en-gb
+    mythes-en-us
+    mythes-it
+    mythes-pl
 """
 
 

@@ -1,4 +1,10 @@
-pyfll (2013.12.16) UNRELEASED; urgency=medium
+pyfll (2013.12.26) UNRELEASED; urgency=medium
+
+  * hardwired language-packages in pyfll 
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 26 Dec 2013 20:59:49 +0100
+
+pyfll (2013.12.16) unstable; urgency=medium
 
   * gtk2-engines and gtk2-engines-pixbuf removed from flavour-packages
     and provided via meta-xdebian
