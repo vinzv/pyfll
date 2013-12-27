@@ -30,7 +30,7 @@ packages = """
     pm-utils
     powermgmt-base
     rfkill
-    setserial
+    # setserial
     sdparm
     udev
     udisks

@@ -3,6 +3,7 @@ pyfll (2013.12.26) UNRELEASED; urgency=medium
   * hardwired language-packages in pyfll
   * kde lang integration 
   * finally solved the language problems for this release 
+  * setserial disabled - nice to have, but not needed for now 
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 26 Dec 2013 20:59:49 +0100
 
