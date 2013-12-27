@@ -3,6 +3,8 @@ pyfll (2013.12.27) UNRELEASED; urgency=medium
   * add system group systemd-journal 
   * create /var/log/journal
   * set owner and group to systemd-journal 
+  * removed the mythes-* packages as they introduce a dependency to
+    libreoffice-core|openoffice 
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 27 Dec 2013 13:03:06 +0100
 
