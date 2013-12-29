@@ -1,3 +1,10 @@
+pyfll (2013.12.30) UNRELEASED; urgency=medium
+
+  * 999-postinst: remove the hold for systemd-sysvrc
+  * pin sysvinit to -1 - thanks, hsp 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 29 Dec 2013 16:39:44 +0100
+
 pyfll (2013.12.29) unstable; urgency=medium
 
   * kde: added missed vlc

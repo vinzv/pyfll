@@ -26,7 +26,12 @@ do_postinst() {
 Yes, do as I say!
 BOFH
     fi
-    apt-mark hold systemd-sysv
+    # apt-mark hold systemd-sysv
+    # thanks to hsp for this idea
+    [ ! -d etc/apt/preferences.d/999-finalize ] && mkdir -p etc/apt/preferences.d/999-finalize
+    echo "Package: sysvinit"        > /etc/apt/preferences.d/999-finalize
+    echo "Pin: release a=unstable" >> /etc/apt/preferences.d/999-finalize
+    echo "Pin-Priority: -1"        >> /etc/apt/preferences.d/999-finalize
 }
 
 say 'finalize iso'
