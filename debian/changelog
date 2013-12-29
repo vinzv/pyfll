@@ -1,4 +1,10 @@
-pyfll (2013.12.27) UNRELEASED; urgency=medium
+pyfll (2013.12.29) unstable; urgency=medium
+
+  * kde: added missed vlc
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 29 Dec 2013 01:19:01 +0100
+
+pyfll (2013.12.27) unstable; urgency=medium
 
   * add system group systemd-journal 
   * create /var/log/journal
@@ -6,7 +12,7 @@ pyfll (2013.12.27) UNRELEASED; urgency=medium
   * removed the mythes-* packages as they introduce a dependency to
     libreoffice-core|openoffice 
 
- -- Alf Gaida <agaida@siduction.org>  Fri, 27 Dec 2013 13:03:06 +0100
+ -- Alf Gaida <agaida@siduction.org>  Sun, 29 Dec 2013 01:18:57 +0100
 
 pyfll (2013.12.26) unstable; urgency=medium
 

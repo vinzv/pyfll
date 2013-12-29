@@ -48,10 +48,12 @@ packages = """
     polkit-kde-1
     print-manager
     reportbug-ng
+    sharpdot-cursor-theme
     skanlite
     strigi-client
     ttf-kochi-gothic
     virtuoso-minimal
+    vlc
     yakuake
     # 
     # brute-force languange integration
