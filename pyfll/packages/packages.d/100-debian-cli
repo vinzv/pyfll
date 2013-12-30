@@ -117,6 +117,7 @@ packages = """
     smartmontools
     strace
     sudo
+    sysv-rc-conf
     testdisk
     tofrodos
     tree

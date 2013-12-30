@@ -4,7 +4,7 @@ set -e
 
 CODENAME="December"
 CODENAME_SAFE="december"
-VERSION="13.2.rc1"
+VERSION="13.2.0"
 
 cd pyfll/templates
 for TEMPLATE in *current*; do
