@@ -1,4 +1,12 @@
-pyfll (2013.12.30) UNRELEASED; urgency=medium
+pyfll (2014.01.01) UNRELEASED; urgency=medium
+
+  * delete some unused lines in 999-finalize.postinst
+  * leave the 000-essentials.postinst as is, as it don't collide 
+    with systemd updates 
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 01 Jan 2014 21:32:18 +0100
+
+pyfll (2013.12.30) unstable; urgency=medium
 
   * 999-postinst: remove the hold for systemd-sysvrc
   * pin sysvinit to -1 - thanks, hsp 
