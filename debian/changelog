@@ -1,8 +1,9 @@
-pyfll (2014.01.01) UNRELEASED; urgency=medium
+pyfll (2014.01.10) UNRELEASED; urgency=medium
 
   * delete some unused lines in 999-finalize.postinst
   * leave the 000-essentials.postinst as is, as it don't collide 
     with systemd updates 
+  * remove the pinning for sysvinit
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 01 Jan 2014 21:32:18 +0100
 
