@@ -10,12 +10,10 @@ packages = """
     apt-conf-siduction
     ceni
     cli-installer
-    fll-installer
     inxi
     kernel-remover
     pywwetha
     setpassword
-    siduction-bootsplash
     siduction-irc
     siduction-scripts
     sidu-manual

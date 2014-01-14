@@ -1,4 +1,13 @@
-pyfll (2014.01.10) UNRELEASED; urgency=medium
+pyfll (2014.01.14) UNRELEASED; urgency=medium
+
+  * cleanup 200-siduction-cli
+    - siduction-bootstrap removed - not needed
+    - fll-installer remove - is a dependency of cli-installer and
+      sidu-installer
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 14 Jan 2014 23:15:35 +0100
+
+pyfll (2014.01.10) unstable; urgency=medium
 
   * delete some unused lines in 999-finalize.postinst
   * leave the 000-essentials.postinst as is, as it don't collide 
