@@ -1,4 +1,10 @@
-pyfll (2014.01.14) UNRELEASED; urgency=medium
+pyfll (2014.01.16) UNRELEASED; urgency=medium
+
+  * lighdm-kde-greeter in next
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 16 Jan 2014 02:21:01 +0100
+
+pyfll (2014.01.14) unstable; urgency=medium
 
   * cleanup 200-siduction-cli
     - siduction-bootstrap removed - not needed
