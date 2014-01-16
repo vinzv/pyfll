@@ -1,6 +1,7 @@
 pyfll (2014.01.16) UNRELEASED; urgency=medium
 
-  * lighdm-kde-greeter in next
+  * siduction-settings-lighdm-kde  in kde/next
+  * siduction-settings-lightdm-gtk in xorg/next
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 16 Jan 2014 02:21:01 +0100
 
