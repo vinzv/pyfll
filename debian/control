@@ -1,12 +1,10 @@
 Source: pyfll
 Section: misc
 Priority: optional
-Maintainer: Ferdinand Thommes <devil@siduction.org>
-Uploaders: Alf Gaida <agaida@siduction.org>
+Maintainer: Alf Gaida <agaida@siduction.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.4
 Vcs-Git: git://git.siduction.org/code/pyfll
 Vcs-Browser: http://git.siduction.org/?p=packages/pyfll.git
-Homepage: http://svn.berlios.de/wsvn/fullstory/pyfll
 
 # No binary packages are currently built from this source

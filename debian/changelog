@@ -1,4 +1,10 @@
-pyfll (2014.01.16) UNRELEASED; urgency=medium
+pyfll (2014.01.17) UNRELEASED; urgency=medium
+
+  * copyright
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 17 Jan 2014 18:56:59 +0100
+
+pyfll (2014.01.16) unstable; urgency=medium
 
   * siduction-settings-lighdm-kde  in kde/next
   * siduction-settings-lightdm-gtk in xorg/next
