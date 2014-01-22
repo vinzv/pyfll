@@ -19,6 +19,7 @@ packages = """
     locales
     mtools
     squashfs-tools
+    syslinux
     systemd
     libpam-systemd
 """
