@@ -31,7 +31,6 @@ packages = """
     cups-common
     cups-filters
     cups-ppdc
-    # daptup
     debconf-utils
     debhelper
     debian-goodies
@@ -82,7 +81,6 @@ packages = """
     moc
     most
     nfs-common
-    ntpdate
     ntfs-3g
     nmap
     nano
