@@ -2,8 +2,8 @@
 
 set -e
 
-CODENAME="December Fix Release"
-CODENAME_SAFE="decemberfix"
+CODENAME="December"
+CODENAME_SAFE="december"
 VERSION="13.2.1"
 
 cd pyfll/templates
