@@ -4,7 +4,7 @@ set -e
 
 CODENAME="Thunderstruck"
 CODENAME_SAFE="thunderstruck"
-VERSION="13.2.rc1"
+VERSION="14.1.0"
 
 cd pyfll/templates
 for TEMPLATE in *xperimental*; do
