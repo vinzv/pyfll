@@ -1,6 +1,6 @@
-pyfll (2014.01.22) UNRELEASED; urgency=medium
+pyfll (2014.02.23) UNRELEASED; urgency=medium
 
-  * cleanup packages for systemd
+  * whiteroom lxde switched to lightdm 
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 22 Jan 2014 20:21:37 +0100
 
