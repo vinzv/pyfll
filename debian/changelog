@@ -1,6 +1,8 @@
 pyfll (2014.02.23) UNRELEASED; urgency=medium
 
   * whiteroom lxde switched to lightdm 
+  * paintitblack lxde switched to lightdm
+  * thunderstruck lxde switched to lightdm
 
  -- Alf Gaida <agaida@siduction.org>  Wed, 22 Jan 2014 20:21:37 +0100
 
