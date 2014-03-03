@@ -1,4 +1,10 @@
-pyfll (2014.02.23) UNRELEASED; urgency=medium
+pyfll (2014.03.3) UNRELEASED; urgency=medium
+
+  * nox: python-owncloud commented out, broken
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 03 Mar 2014 22:29:46 +0100
+
+pyfll (2014.02.23) unstable; urgency=medium
 
   * whiteroom lxde switched to lightdm 
   * paintitblack lxde switched to lightdm

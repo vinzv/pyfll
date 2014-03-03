@@ -15,7 +15,7 @@ packages = """
     fbi
     fbterm
     links
-    python-owncloud
+    # python-owncloud - broken
     podget
     tmux
     tty-clock
