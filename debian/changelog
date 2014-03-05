@@ -1,8 +1,14 @@
-pyfll (2014.03.3) UNRELEASED; urgency=medium
+pyfll (2014.03.06) UNRELEASED; urgency=medium
+
+  * lxqt amd64 added
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 06 Mar 2014 00:44:15 +0100
+
+pyfll (2014.03.03) unstable; urgency=medium
 
   * nox: python-owncloud commented out, broken
 
- -- Alf Gaida <agaida@siduction.org>  Mon, 03 Mar 2014 22:29:46 +0100
+ -- Alf Gaida <agaida@siduction.org>  Thu, 06 Mar 2014 00:44:11 +0100
 
 pyfll (2014.02.23) unstable; urgency=medium
 

@@ -1,0 +1,1 @@
+time ./pyfll/fll -vv -c ./pyfll/lxqt_xperimental_amd64.conf

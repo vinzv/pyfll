@@ -1,0 +1,37 @@
+desc = """
+    Siduction LXDE desktop environment.
+"""
+
+packages = """
+    blueman
+    gnome-keyring
+    brasero
+    clipit
+    claws-mail-i18n
+    evince-gtk
+    fpm2
+    galculator
+    geany
+    gpodder
+    gvfs-backends
+    gvfs-fuse
+    hardinfo
+    hexchat
+    lxappearance-obconf
+    lxde
+    lxlauncher
+    lxpolkit
+    lxtask
+    midori
+    network-manager-gnome
+    osmo
+    putty
+    python-vte
+    reportbug
+    transmission
+    tuxcmd-modules
+    xnoise-plugins
+    # guake
+    # radiotray
+    # tilda
+"""
