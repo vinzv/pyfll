@@ -19,6 +19,7 @@ packages = """
     kde-config-cddb
     kde-config-gtk-style
     kde-config-touchpad
+    kdenetwork-filesharing 
     kde-plasma-desktop
     kdepim
     kdesudo

@@ -1,7 +1,13 @@
-pyfll (2014.03.07) UNRELEASED; urgency=medium
+pyfll (2014.03.08) UNRELEASED; urgency=medium
+
+  * kdenetwork-filesharing added to kde packages
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 08 Mar 2014 00:41:07 +0100
+
+pyfll (2014.03.07) unstable; urgency=medium
 
   * first attempt for lxqt package list 
-  * added qterminal 
+  * added qterminal  
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 07 Mar 2014 01:47:36 +0100
 
