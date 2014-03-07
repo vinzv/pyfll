@@ -48,6 +48,7 @@ packages = """
 #    putty
 #    python-vte
 #    reportbug
-#   transmission
+    sharpdot-cursor-theme
+#    transmission
 #    tuxcmd-modules
 """
