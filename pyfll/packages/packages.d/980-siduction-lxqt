@@ -42,6 +42,7 @@ packages = """
     pcmanfm-qt
     clementine
     qupzilla
+    qterminal
 #    network-manager-gnome
 #    osmo
 #    putty

@@ -1,6 +1,7 @@
 pyfll (2014.03.07) UNRELEASED; urgency=medium
 
   * first attempt for lxqt package list 
+  * added qterminal 
 
  -- Alf Gaida <agaida@siduction.org>  Fri, 07 Mar 2014 01:47:36 +0100
 
