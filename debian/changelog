@@ -1,9 +1,15 @@
-pyfll (2014.03.06) UNRELEASED; urgency=medium
+pyfll (2014.03.07) UNRELEASED; urgency=medium
+
+  * first attempt for lxqt package list 
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 07 Mar 2014 01:47:36 +0100
+
+pyfll (2014.03.06) unstable; urgency=medium
 
   * lxqt amd64 added
   * lxqt i386 added
 
- -- Alf Gaida <agaida@siduction.org>  Thu, 06 Mar 2014 00:44:15 +0100
+ -- Alf Gaida <agaida@siduction.org>  Fri, 07 Mar 2014 01:47:29 +0100
 
 pyfll (2014.03.03) unstable; urgency=medium
 

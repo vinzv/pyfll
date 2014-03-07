@@ -3,35 +3,50 @@ desc = """
 """
 
 packages = """
-    blueman
-    gnome-keyring
-    brasero
-    clipit
-    claws-mail-i18n
-    evince-gtk
-    fpm2
-    galculator
-    geany
-    gpodder
-    gvfs-backends
-    gvfs-fuse
+#    blueman
+#    gnome-keyring
+#    brasero
+    qlipper
+#    claws-mail-i18n
+#    evince-gtk
+#    fpm2
+#    galculator
+    juffed
+#    gpodder
+#    gvfs-backends
+#    gvfs-fuse
     hardinfo
     hexchat
-    lxappearance-obconf
-    lxde
-    lxlauncher
-    lxpolkit
-    lxtask
-    midori
-    network-manager-gnome
-    osmo
-    putty
-    python-vte
-    reportbug
-    transmission
-    tuxcmd-modules
-    xnoise-plugins
-    # guake
-    # radiotray
-    # tilda
+#    lxappearance-obconf
+#    lxde
+#    lxlauncher
+#    lxtask
+    lxqt-config
+    lxqt-session
+    lxqt-qtplugin
+    lxqt-globalkeys
+    lxqt-notificationd
+    lxinput-qt
+    lxqt-about
+    lxqt-appswitcher
+    lxqt-common
+    lxqt-openssh-askpass
+    lxqt-panel
+    lxqt-policykit
+    lxqt-power
+    lxqt-powermanagement
+    lxqt-runner
+    lxqt-config-randr
+    compton-conf
+    obconf-qt
+    pcmanfm-qt
+    clementine
+    qupzilla
+#    network-manager-gnome
+#    osmo
+#    putty
+#    python-vte
+#    reportbug
+#   transmission
+#    tuxcmd-modules
 """
