@@ -7,6 +7,7 @@ packages = """
     alacarte
     baobab
     brasero
+    cups-pk-helper
     dconf-tools
     eog
     evince
@@ -42,6 +43,7 @@ packages = """
     hexchat
     libcanberra-pulse
     libmtp-runtime
+    libpam-gnome-keyring
     libxml2-utils
     mpg321
     nautilus
