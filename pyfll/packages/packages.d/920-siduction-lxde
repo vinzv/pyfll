@@ -29,6 +29,7 @@ packages = """
     putty
     python-vte
     reportbug
+    reportbug-ng
     shared-mime-info
     transmission
     tuxcmd-modules

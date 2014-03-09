@@ -1,4 +1,10 @@
-pyfll (2014.03.08.1) UNRELEASED; urgency=medium
+pyfll (2014.03.08.2) UNRELEASED; urgency=medium
+
+  * some modification in package lists for lxde, lxqt and razor 
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 09 Mar 2014 23:18:30 +0100
+
+pyfll (2014.03.08.1) unstable; urgency=medium
 
   [ Angelescu Ovidiu ]
   * cups-pk-helper added to gnome packages for enable printing
@@ -12,7 +18,7 @@ pyfll (2014.03.08.1) UNRELEASED; urgency=medium
 
  -- Angelescu Ovidiu <convbsd@siduction.org>  Sat, 08 Mar 2014 11:14:07 +0200
 
-pyfll (2014.03.08) UNRELEASED; urgency=medium
+pyfll (2014.03.08) unstable; urgency=medium
 
   * kdenetwork-filesharing added to kde packages
 

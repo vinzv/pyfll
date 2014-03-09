@@ -6,50 +6,53 @@ packages = """
 #    blueman
 #    gnome-keyring
 #    brasero
-    qlipper
-#    claws-mail-i18n
-#    evince-gtk
+    clementine
+    compton-conf
+    dbus-x11
 #    fpm2
 #    galculator
-    juffed
 #    gpodder
 #    gvfs-backends
 #    gvfs-fuse
     hardinfo
     hexchat
-#    lxappearance-obconf
-#    lxde
-#    lxlauncher
-#    lxtask
-    lxqt-config
-    lxqt-session
-    lxqt-qtplugin
-    lxqt-globalkeys
-    lxqt-notificationd
+    juffed
+    juffed-plugins
     lxinput-qt
     lxqt-about
     lxqt-appswitcher
     lxqt-common
+    lxqt-config
+    lxqt-config-randr
+    lxqt-globalkeys
+    lxqt-notificationd
     lxqt-openssh-askpass
     lxqt-panel
     lxqt-policykit
     lxqt-power
     lxqt-powermanagement
+    lxqt-qtplugin
     lxqt-runner
-    lxqt-config-randr
-    compton-conf
+    lxqt-session
+    nomacs
     obconf-qt
+    openbox-themes
+    oxygen-icon-theme
     pcmanfm-qt
-    clementine
-    qupzilla
-    qterminal
-#    network-manager-gnome
-#    osmo
+    pdfviewer
     plank
-#    putty
+    qbittorrent
+    qlipper
+    qt4-qtconfig
+    qterminal
+    qupzilla
 #    python-vte
-#    reportbug
+    reportbug
+    reportbug-ng
+    screengrab
+    shared-mime-info
     sharpdot-cursor-theme
-#    transmission
+    vlc
 #    tuxcmd-modules
+    xscreensaver
 """
