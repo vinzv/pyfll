@@ -3,81 +3,76 @@ desc = """
 """
 
 packages = """
-    chromium
-    chromium-l10n
-    desktop-file-utils
-    gconf2
-    gtk2-engines-xfce
-    hexchat
-    libnotify-bin
-    lightdm
-    lightdm-gtk-greeter
-    leafpad
-    mpg321
-    shared-mime-info
-    thunar
-    thunar-data
-    thunar-archive-plugin
-    thunar-media-tags-plugin
-    thunar-volman
-    trayer
-    xarchiver
-    xbitmaps
-    xfce4
-    xfce4-artwork
-    xfce4-dev-tools
-    xfce4-mixer
-    xfce4-panel
-    xfce4-session
-    xfce4-terminal
-    xfdesktop4
-    #xfprint4
-    xfwm4
-    xfwm4-themes
-    xtrlock
-    zenity
     abiword
     brasero
+    chromium
+    chromium-l10n
+    cups-pk-helper
+    desktop-file-utils
     evince-gtk
     fonts-vlgothic
+    faenza-icon-theme
     gcalctool
+    gconf2
     gnome-keyring
     gnumeric
     gpicview
     gstreamer0.10-fluendo-mp3
+    gtk2-engines-xfce
+    hexchat
+    leafpad
+    libnotify-bin
+    libpam-gnome-keyring
     libtumbler-1-0
+    lightdm
+    lightdm-gtk-greeter
+    mousepad
+    mpg321
     orage
     reportbug
-    tumbler
-    xfce4-power-manager-plugins
-    xfce4-soundmenu-plugin
-    xnoise
-    xnoise-plugins
-    faenza-icon-theme
-    mousepad
     ristretto
+    shared-mime-info
+    thunar
+    thunar-archive-plugin
+    thunar-data
+    thunar-media-tags-plugin
+    thunar-volman
+    trayer
+    tumbler
     wbar-siduction-config
     # squeeze
+    xarchiver
+    xbitmaps
+    xfburn
+    xfce4
+    xfce4-artwork
     xfce4-battery-plugin
     xfce4-clipman-plugin
     xfce4-cpufreq-plugin
     xfce4-cpugraph-plugin
     xfce4-datetime-plugin
+    xfce4-dev-tools
     xfce4-dict
     xfce4-diskperf-plugin
     xfce4-fsguard-plugin
     xfce4-genmon-plugin
     xfce4-mailwatch-plugin
+    xfce4-mixer
     xfce4-mount-plugin
     xfce4-netload-plugin
     xfce4-notifyd
     xfce4-notes-plugin
+    xfce4-panel
     xfce4-places-plugin
+    xfce4-power-manager-plugins
     xfce4-quicklauncher-plugin
+    xfce4-terminal
     xfce4-screenshooter
     xfce4-screenshooter-plugin
     xfce4-sensors-plugin
+    xfce4-session
     xfce4-smartbookmark-plugin
+    xfce4-soundmenu-plugin
     xfce4-systemload-plugin
     xfce4-taskmanager
     xfce4-timer-plugin
@@ -86,5 +81,12 @@ packages = """
     xfce4-wavelan-plugin
     xfce4-weather-plugin
     xfce4-xkb-plugin
-    xfburn
+    xfdesktop4
+    # xfprint4
+    xfwm4
+    xfwm4-themes
+    xnoise
+    xnoise-plugins
+    xtrlock
+    zenity
 """

@@ -8,6 +8,7 @@ packages = """
     brasero
     clipit
     claws-mail-i18n
+    cups-pk-helper
     evince-gtk
     fpm2
     galculator
@@ -28,6 +29,7 @@ packages = """
     putty
     python-vte
     reportbug
+    shared-mime-info
     transmission
     tuxcmd-modules
     xnoise-plugins

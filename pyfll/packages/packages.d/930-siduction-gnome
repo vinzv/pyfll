@@ -51,6 +51,7 @@ packages = """
     network-manager-gnome
     rhythmbox
     # look at potential plugins
+    shared-mime-info
     totem
     tracker-gui
     # why only the gui tracker-gui

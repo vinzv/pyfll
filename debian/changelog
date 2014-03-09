@@ -1,7 +1,12 @@
 pyfll (2014.03.08.1) UNRELEASED; urgency=medium
 
+  [ Angelescu Ovidiu ]
   * cups-pk-helper added to gnome packages for enable printing
   * added libpam-gnome-keyring for gnome remote login
+
+  [ Alf Gaida ]
+  * cups-pk-helper and libpam-gnome-keyring added to 
+    all gtk-based flavours (lxde, cinnamon, xfce) 
 
  -- Angelescu Ovidiu <convbsd@siduction.org>  Sat, 08 Mar 2014 11:14:07 +0200
 

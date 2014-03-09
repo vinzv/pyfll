@@ -4,6 +4,7 @@ desc = """
 
 packages = """
     cinnamon
+    cups-pk-helper
     dconf-tools
     dconf-gsettings-backend
     dconf-service
@@ -26,9 +27,11 @@ packages = """
     iceweasel
     hexchat
     libglib2.0
+    libpam-gnome-keyring
     muffin
     nemo
     network-manager
     network-manager-gnome
     totem
+    shared-mime-info
 """
