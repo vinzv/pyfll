@@ -1,5 +1,5 @@
 desc = """
-    Siduction LXDE desktop environment.
+    Siduction LXQT desktop environment.
 """
 
 packages = """
@@ -21,7 +21,7 @@ packages = """
     lxinput-qt
     lxqt-about
     lxqt-appswitcher
-    lxqt-common
+#    lxqt-common
     lxqt-config
     lxqt-config-randr
     lxqt-globalkeys
