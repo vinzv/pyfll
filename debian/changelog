@@ -3,6 +3,7 @@ pyfll (2014.04.01) UNRELEASED; urgency=medium
   * fucked packages:
     - x*vmware /tmp removed in package
     - testdisk becaus of ntfs-3g / commented out in pyfll
+  * reconfigure sidu-$foo in 999-finalize.postinst 
 
  -- Alf Gaida <agaida@siduction.org>  Tue, 01 Apr 2014 02:44:35 +0200
 

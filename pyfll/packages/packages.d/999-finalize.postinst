@@ -29,6 +29,11 @@ do_postinst() {
 Yes, do as I say!
 BOFH
     fi
+
+    say "Make sure, that hosts is right set"
+    dpkg-reconfigure sidu-disk-center || return 0
+    dpkg-reconfigure sidu-installer || return 0
+    dpkg-reconfigure sidu-manual    || return 0
 }
 
 say 'finalize iso'
