@@ -1,4 +1,12 @@
-pyfll (2014.03.08.2) UNRELEASED; urgency=medium
+pyfll (2014.04.01) UNRELEASED; urgency=medium
+
+  * fucked packages:
+    - x*vmware /tmp removed in package
+    - testdisk becaus of ntfs-3g / commented out in pyfll
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 01 Apr 2014 02:44:35 +0200
+
+pyfll (2014.03.08.2) unstable; urgency=medium
 
   * some modification in package lists for lxde, lxqt and razor 
 
