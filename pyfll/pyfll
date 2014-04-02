@@ -1236,6 +1236,8 @@ class FLLBuilder(object):
         '''Initial creation of conffiles required in chroot.'''
         self._writeFile(arch, '/etc/fstab')
         self._writeFile(arch, '/etc/hostname')
+        '''hopefully the right time to write /etc/hosts too'''
+        self._writeFile(arch, '/etc/hosts')
         self._writeFile(arch, '/etc/network/interfaces')
 
 
@@ -1265,8 +1267,8 @@ class FLLBuilder(object):
             if f:
                 f.close()
                 os.chmod(distro_version, 0444)
-
-        self._writeFile(arch, '/etc/hosts')
+        ''' false timing - /etc/hosts needs to be writtern earlyer AG'''
+        '''self._writeFile(arch, '/etc/hosts')'''
         self._writeFile(arch, '/etc/motd.tail')
 
         self.log.debug('writing final apt sources.list(s)')
