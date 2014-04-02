@@ -1207,8 +1207,6 @@ class FLLBuilder(object):
                 f.write('ff02::3 ip6-allhosts\n')
                 f.write('# fuck it - my apt-configured hosts are gone!\n')
                 f.write('# write the sidu-hosts hard in pyfll\n')
-                f.write('#\n')
-                f.write('#\n')
                 f.write('# append it from an packages configuration file\n')
                 f.wirte('# in a later version\n')
                 f.write('127.0.0.86 sidu-disk-center\n')
