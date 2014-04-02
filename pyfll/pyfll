@@ -1205,13 +1205,6 @@ class FLLBuilder(object):
                 f.write('ff02::1 ip6-allnodes\n')
                 f.write('ff02::2 ip6-allrouters\n')
                 f.write('ff02::3 ip6-allhosts\n')
-                f.write('# fuck it - my apt-configured hosts are gone!\n')
-                f.write('# write the sidu-hosts hard in pyfll\n')
-                f.write('# append it from an packages configuration file\n')
-                f.write('# in a later version\n')
-                f.write('127.0.0.86 sidu-disk-center\n')
-                f.write('127.0.0.86 sidu-installer\n')
-                f.write('127.0.0.86 sidu-manual\n')
             elif file == '/etc/network/interfaces':
                 f.write('# /etc/network/interfaces - ')
                 f.write('configuration file for ifup(8), ifdown(8)\n\n')

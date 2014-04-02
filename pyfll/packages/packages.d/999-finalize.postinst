@@ -32,12 +32,6 @@ BOFH
 
     say "etc/host - without dpkg-reconfigure"
     cat /etc/hosts
-    say "Make sure, that hosts is right set"
-    dpkg-reconfigure sidu-disk-center || return 0
-    dpkg-reconfigure sidu-installer || return 0
-    dpkg-reconfigure sidu-manual    || return 0
-    say "just for fun - /etc/hosts again"
-    cat /etc/hosts
 }
 
 say 'finalize iso'
