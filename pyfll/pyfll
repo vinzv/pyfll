@@ -1205,6 +1205,8 @@ class FLLBuilder(object):
                 f.write('ff02::1 ip6-allnodes\n')
                 f.write('ff02::2 ip6-allrouters\n')
                 f.write('ff02::3 ip6-allhosts\n')
+                f.write('#\n');
+                f.write('configurations written by packages\n')
             elif file == '/etc/network/interfaces':
                 f.write('# /etc/network/interfaces - ')
                 f.write('configuration file for ifup(8), ifdown(8)\n\n')
@@ -1229,7 +1231,6 @@ class FLLBuilder(object):
         '''Initial creation of conffiles required in chroot.'''
         self._writeFile(arch, '/etc/fstab')
         self._writeFile(arch, '/etc/hostname')
-        '''hopefully the right time to write /etc/hosts too'''
         self._writeFile(arch, '/etc/hosts')
         self._writeFile(arch, '/etc/network/interfaces')
 
@@ -1260,8 +1261,6 @@ class FLLBuilder(object):
             if f:
                 f.close()
                 os.chmod(distro_version, 0444)
-        ''' false timing - /etc/hosts needs to be writtern earlyer AG'''
-        '''self._writeFile(arch, '/etc/hosts')'''
         self._writeFile(arch, '/etc/motd.tail')
 
         self.log.debug('writing final apt sources.list(s)')

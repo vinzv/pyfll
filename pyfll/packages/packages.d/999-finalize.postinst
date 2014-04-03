@@ -29,9 +29,6 @@ do_postinst() {
 Yes, do as I say!
 BOFH
     fi
-
-    say "etc/host - without dpkg-reconfigure"
-    cat /etc/hosts
 }
 
 say 'finalize iso'

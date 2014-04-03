@@ -39,7 +39,7 @@ packages = """
     thunar-volman
     trayer
     tumbler
-    wbar-siduction-config
+    siduction-settins-plank
     # squeeze
     xarchiver
     xbitmaps
