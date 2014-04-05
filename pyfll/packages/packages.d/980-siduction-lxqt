@@ -3,9 +3,7 @@ desc = """
 """
 
 packages = """
-#    blueman
 #    gnome-keyring
-#    brasero
     clementine
     compton-conf
     dbus-x11
@@ -18,6 +16,7 @@ packages = """
     hexchat
     juffed
     juffed-plugins
+    lxappearance
     lxinput-qt
     lxqt-about
     lxqt-appswitcher
@@ -45,6 +44,7 @@ packages = """
     qterminal
     qupzilla
 #    python-vte
+    qxkb
     reportbug
     reportbug-ng
     screengrab
@@ -52,6 +52,5 @@ packages = """
     sharpdot-cursor-theme
     siduction-settings-plank
     vlc
-#    tuxcmd-modules
     xscreensaver
 """

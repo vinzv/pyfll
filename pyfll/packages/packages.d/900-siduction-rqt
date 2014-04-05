@@ -10,13 +10,13 @@ packages = """
     hexchat
     juffed
     juffed-plugins
+    lxappearance
     nomacs
     obconf-qt
     openbox-themes
     oxygen-icon-theme
     pcmanfm-qt
     pdfviewer
-    plank
     qbittorrent
     qlipper
     qt4-qtconfig
@@ -30,6 +30,7 @@ packages = """
     screengrab
     shared-mime-info
     sharpdot-cursor-theme
+    siduction-settings-plank
     vlc
     xscreensaver
 """
