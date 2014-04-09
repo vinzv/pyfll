@@ -8,10 +8,9 @@ fi
 do_postinst() 
 {
     cd /usr/share/xsessions
-    rm -f razor-*.desktop
     rm -f openbox-*.desktop
     rm -f lightdm-xsession.desktop
-    ln -s razor.desktop lightdm-xsession.desktop
+    ln -s lxqt-qt.desktop lightdm-xsession.desktop
     cd -
 
     # get rid of fugly debian-menu (from menu-xdg)
