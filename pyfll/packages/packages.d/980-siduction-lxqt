@@ -17,7 +17,6 @@ packages = """
     juffed
     juffed-plugins
     lxappearance
-    lxinput-qt
     lxqt-about
     lxqt-appswitcher
     lxqt-config

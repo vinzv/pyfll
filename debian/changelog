@@ -1,4 +1,10 @@
-pyfll (2014.04.10) UNRELEASED; urgency=medium
+pyfll (2014.04.11) UNRELEASED; urgency=medium
+
+  * lxinput-qt is no longer needed, deprecated, merged with lxqt-config 
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 16 Apr 2014 23:32:52 +0200
+
+pyfll (2014.04.10) unstable; urgency=medium
 
   * don't link sessions in lxqt and rqt, use .dmrc instead 
 
