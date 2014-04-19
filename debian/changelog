@@ -1,4 +1,11 @@
-pyfll (2014.04.11) UNRELEASED; urgency=medium
+pyfll (2014.04.12) UNRELEASED; urgency=medium
+
+  * added pavucontrol to lxqt - if we go with pa in general we should
+    make it available for all flavours 
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 19 Apr 2014 02:56:33 +0200
+
+pyfll (2014.04.11) unstable; urgency=medium
 
   * lxinput-qt is no longer needed, deprecated, merged with lxqt-config 
 

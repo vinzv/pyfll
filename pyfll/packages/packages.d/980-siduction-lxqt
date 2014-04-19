@@ -35,6 +35,7 @@ packages = """
     obconf-qt
     openbox-themes
     oxygen-icon-theme
+    pavucontrol
     pcmanfm-qt
     pdfviewer
     qbittorrent
