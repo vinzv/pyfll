@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-#    gnome-keyring
+    gnome-keyring
     clementine
     compton-conf
     dbus-x11
@@ -35,7 +35,6 @@ packages = """
     obconf-qt
     openbox-themes
     oxygen-icon-theme
-    pavucontrol
     pcmanfm-qt
     pdfviewer
     qbittorrent
@@ -50,6 +49,7 @@ packages = """
     screengrab
     shared-mime-info
     sharpdot-cursor-theme
+    siduction-meta-mediabase
     siduction-settings-plank
     vlc
     xscreensaver

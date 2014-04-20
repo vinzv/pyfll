@@ -1,4 +1,10 @@
-pyfll (2014.04.12) UNRELEASED; urgency=medium
+pyfll (2014.04.13) UNRELEASED; urgency=medium
+
+  * siduction-meta-mediabase in lxqt
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 20 Apr 2014 17:59:44 +0200
+
+pyfll (2014.04.12) unstable; urgency=medium
 
   * added pavucontrol to lxqt - if we go with pa in general we should
     make it available for all flavours 
