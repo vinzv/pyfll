@@ -116,7 +116,7 @@ packages = """
     strace
     sudo
     sysv-rc-conf
-    # testdisk
+    testdisk
     tofrodos
     tree
     traceroute

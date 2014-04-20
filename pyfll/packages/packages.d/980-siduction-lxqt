@@ -5,8 +5,8 @@ desc = """
 packages = """
     gnome-keyring
     clementine
+    compton
     compton-conf
-    dbus-x11
 #    fpm2
 #    galculator
 #    gpodder
