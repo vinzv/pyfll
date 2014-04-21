@@ -14,8 +14,6 @@ packages = """
 #    gvfs-fuse
     hardinfo
     hexchat
-    juffed
-    juffed-plugins
     lxappearance
     lxqt-about
     lxqt-appswitcher
@@ -31,6 +29,7 @@ packages = """
     lxqt-qtplugin
     lxqt-runner
     lxqt-session
+    medit
     nomacs
     obconf-qt
     openbox-themes
