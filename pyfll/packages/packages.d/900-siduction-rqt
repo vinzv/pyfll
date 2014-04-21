@@ -8,9 +8,8 @@ packages = """
     dbus-x11
     hardinfo
     hexchat
-    juffed
-    juffed-plugins
     lxappearance
+    medit
     nomacs
     obconf-qt
     openbox-themes
