@@ -1,4 +1,10 @@
-pyfll (2014.04.22) UNRELEASED; urgency=medium
+pyfll (2014.04.30) UNRELEASED; urgency=medium
+
+  * lxqt-power removed from 980 - deprecated
+
+ -- Alf Gaida <agaida@siduction.org>  Wed, 30 Apr 2014 23:12:49 +0200
+
+pyfll (2014.04.22) unstable; urgency=medium
 
   * siduction-meta-mediabase in lxqt
   * testdisk reactivated
