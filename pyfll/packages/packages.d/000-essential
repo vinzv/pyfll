@@ -20,8 +20,8 @@ packages = """
     mtools
     squashfs-tools
     syslinux
-    systemd
-    libpam-systemd
+#    systemd
+#    libpam-systemd
 """
 
 i386 = """
