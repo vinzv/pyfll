@@ -32,7 +32,7 @@ do_postinst() {
 #    fi
 
     if [ "${FLL_USE_SYSTEMD}" = YES ]; then
-        sh -c "apt-get install libpam-systemd"
+        sh -c "apt-get install libpam-systemd --assume-yes"
     fi
 }
 
