@@ -23,11 +23,16 @@ do_postinst() {
     say "Remove ancient packages ..."
     apt-get purge rsyslog --assume-yes
 
-    say "Change system to systemd ... "
+#    say "Change system to systemd ... "
+#    if [ "${FLL_USE_SYSTEMD}" = YES ]; then
+#       say "Change system to systemd ... "
+#        sh -c "apt-get install systemd-sysv" << BOFH
+#Yes, do as I say!
+#BOFH
+#    fi
+
     if [ "${FLL_USE_SYSTEMD}" = YES ]; then
-        sh -c "apt-get install systemd-sysv" << BOFH
-Yes, do as I say!
-BOFH
+        sh -c "apt install libpam-systemd"
     fi
 }
 
