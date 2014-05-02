@@ -1,4 +1,10 @@
-pyfll (2014.04.30) UNRELEASED; urgency=medium
+pyfll (2014.04.31) UNRELEASED; urgency=medium
+
+  * reintroduced lxqt-power because of a regression 
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 02 May 2014 03:55:40 +0200
+
+pyfll (2014.04.30) unstable; urgency=medium
 
   * lxqt-power removed from 980 - deprecated
   * systemd commented out in essential

@@ -24,6 +24,7 @@ packages = """
     lxqt-openssh-askpass
     lxqt-panel
     lxqt-policykit
+    lxqt-power
     lxqt-powermanagement
     lxqt-qtplugin
     lxqt-runner
