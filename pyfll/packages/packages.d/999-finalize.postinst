@@ -34,7 +34,7 @@ do_postinst() {
     if [ "${FLL_USE_SYSTEMD}" = YES ]; then
         sh -c "apt-get install systemd-sysv --assume-yes"
         sh -c "apt-get install libpam-systemd --assume-yes"
-        sh -c "apt-get purge systemd-shim"
+        sh -c "apt-get purge systemd-shim --assume-yes"
     fi
 }
 
