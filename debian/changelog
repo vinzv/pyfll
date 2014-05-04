@@ -1,4 +1,13 @@
-pyfll (2014.04.31) UNRELEASED; urgency=medium
+pyfll (2014.05.04) UNRELEASED; urgency=medium
+
+  * add systemd-shim to 000-essential, fugly but leaves sysvinit intact
+    and prevent the system to beeing captured by systemd before its 
+    time for systemd - in case of a sysvinit-build systemd-shim prevents
+    the system beeing caputed if one install network-manager or gdm3
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 04 May 2014 02:31:23 +0200
+
+pyfll (2014.04.31) unstable; urgency=medium
 
   * reintroduced lxqt-power because of a regression 
 
