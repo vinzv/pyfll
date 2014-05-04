@@ -73,4 +73,6 @@ packages = """
     kde-l10n-pl
     kde-l10n-ptbr
     kde-l10n-ro
+    #fuck systemd
+    systemd-shim
 """
