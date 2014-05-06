@@ -1,4 +1,10 @@
-pyfll (2014.05.04) UNRELEASED; urgency=medium
+pyfll (2014.05.05) UNRELEASED; urgency=medium
+
+  * kmod breaks alsa-base, alsa-base removed from 300-hwsupport 
+
+ -- Alf Gaida <agaida@siduction.org>  Tue, 06 May 2014 17:55:57 +0200
+
+pyfll (2014.05.04) unstable; urgency=medium
 
   * add systemd-shim to 000-essential, fugly but leaves sysvinit intact
     and prevent the system to beeing captured by systemd before its 
