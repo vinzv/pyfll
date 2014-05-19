@@ -20,6 +20,8 @@ packages = """
     mtools
     squashfs-tools
     syslinux
+    syslinux-common
+    isolinux
     systemd-shim
 """
 

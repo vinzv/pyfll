@@ -1,4 +1,10 @@
-pyfll (2014.05.05) UNRELEASED; urgency=medium
+pyfll (2014.05.19) UNRELEASED; urgency=medium
+
+  * syslinux new version - new package structure
+
+ -- Alf Gaida <agaida@siduction.org>  Mon, 19 May 2014 17:52:14 +0200
+
+pyfll (2014.05.05) unstable; urgency=medium
 
   * kmod breaks alsa-base, alsa-base removed from 300-hwsupport 
 
