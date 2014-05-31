@@ -3,15 +3,11 @@ desc = """
 """
 
 packages = """
+    2048-qt
     gnome-keyring
     clementine
     compton
     compton-conf
-#    fpm2
-#    galculator
-#    gpodder
-#    gvfs-backends
-#    gvfs-fuse
     hardinfo
     hexchat
     lxappearance
@@ -41,7 +37,6 @@ packages = """
     qt4-qtconfig
     qterminal
     qupzilla
-#    python-vte
     qxkb
     reportbug
     reportbug-ng
