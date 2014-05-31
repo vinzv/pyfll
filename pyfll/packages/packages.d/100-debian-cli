@@ -16,6 +16,7 @@ packages = """
     ca-certificates
     cdebootstrap
     cdrdao
+    cfv
     chkrootkit
     cifs-utils
     cmospwd
