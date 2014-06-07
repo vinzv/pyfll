@@ -14,7 +14,6 @@ packages = """
     galculator
     geany
     gpodder
-    gvfs-backends
     gvfs-fuse
     hardinfo
     hexchat

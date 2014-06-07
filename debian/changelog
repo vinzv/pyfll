@@ -1,4 +1,11 @@
-pyfll (2014.05.19) UNRELEASED; urgency=medium
+pyfll (2014.05.20) UNRELEASED; urgency=medium
+
+  * remove gvfs-backends from lxde packagelist, gvfs backends are
+    part of siduction-meta-xdebian
+
+ -- Alf Gaida <agaida@siduction.org>  Sat, 07 Jun 2014 16:11:14 +0200
+
+pyfll (2014.05.19) unstable; urgency=medium
 
   * syslinux new version - new package structure
 
