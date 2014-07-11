@@ -44,7 +44,6 @@ packages = """
     okular-extra-backends
     phonon-backend-gstreamer
     phonon-backend-vlc
-    plasma-widget-networkmanagement
     plasma-widgets-addons
     polkit-kde-1
     print-manager

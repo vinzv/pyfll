@@ -1,3 +1,9 @@
+pyfll (2014.07.11.1) UNRELEASED; urgency=medium
+
+  * remove plasma-widget-networkmanagement, deprecated, oldlibs
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 11 Jul 2014 21:22:22 +0200
+
 pyfll (2014.07.11) unstable; urgency=medium
 
   * remove xnoise-plugins from xfce and lxde. They dont exist anymore
