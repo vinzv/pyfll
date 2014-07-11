@@ -87,7 +87,6 @@ packages = """
     xfwm4
     xfwm4-themes
     xnoise
-    xnoise-plugins
     xtrlock
     zenity
 """

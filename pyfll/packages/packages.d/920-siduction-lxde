@@ -32,7 +32,6 @@ packages = """
     shared-mime-info
     transmission
     tuxcmd-modules
-    xnoise-plugins
     # guake
     # radiotray
     # tilda

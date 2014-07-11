@@ -1,4 +1,10 @@
-pyfll (2014.05.20) UNRELEASED; urgency=medium
+pyfll (2014.07.11) unstable; urgency=medium
+
+  * remove xnoise-plugins from xfce and lxde. They dont exist anymore
+
+ -- Alf Gaida <agaida@siduction.org>  Fri, 11 Jul 2014 20:59:04 +0200
+
+pyfll (2014.05.20) unstable; urgency=medium
 
   * remove gvfs-backends from lxde packagelist, gvfs backends are
     part of siduction-meta-xdebian
