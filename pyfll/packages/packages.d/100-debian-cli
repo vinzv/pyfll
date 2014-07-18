@@ -91,19 +91,19 @@ packages = """
     ntp
     openssh-client
     openprinting-ppds
-    partimage
-    policykit-1
-    popularity-contest
-    pppconfig
-    pppoeconf
-    preload
-    printer-driver-cjet
-    printer-driver-c2050
-    printer-driver-escpr
-    printer-driver-foo2zjs
-    printer-driver-min12xxw
-    printer-driver-pnm2ppa
-    pwgen
+#    partimage
+#    policykit-1
+#    popularity-contest
+#    pppconfig
+#    pppoeconf
+#    preload
+#    printer-driver-cjet
+#    printer-driver-c2050
+#    printer-driver-escpr
+#    printer-driver-foo2zjs
+#    printer-driver-min12xxw
+#    printer-driver-pnm2ppa
+#    pwgen
 #    reptyr
 #    resolvconf
 #    reiserfsprogs
