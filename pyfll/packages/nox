@@ -4,7 +4,7 @@ desc = """
 
 deps = """
     100-debian-cli
-#    200-siduction-cli
+    200-siduction-cli
 #    300-hwsupport
 #    910-siduction-nox
 """
