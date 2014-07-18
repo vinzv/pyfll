@@ -54,25 +54,25 @@ packages = """
     genisoimage
     gpm
     gptsync
-#    htop
-#    hddtemp
-#    iftop
-#    info
-#    iotop
-#    iproute
-#    iptables
-#    iputils-ping
-#    isc-dhcp-client
-#    iw
-#    jfsutils
-#    kbd
-#    kexec-tools
-#    less
-#    libmtp-runtime
-#    libnss-mdns
-#    links
-#    lm-sensors
-#    logrotate
+    htop
+    hddtemp
+    iftop
+    info
+    iotop
+    iproute
+    iptables
+    iputils-ping
+    isc-dhcp-client
+    iw
+    jfsutils
+    kbd
+    kexec-tools
+    less
+    libmtp-runtime
+    libnss-mdns
+    links
+    lm-sensors
+    logrotate
 #    man-db
 #    manpages
 #    mbr
