@@ -15,7 +15,7 @@ do_postinst() {
 
 case "${1}" in
 	postinst)
-		do_postinst
+#		do_postinst
 		;;
 	*)
 		echo "Usage: ${0} postinst"
