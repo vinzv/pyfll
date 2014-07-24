@@ -1,0 +1,50 @@
+desc = """
+    Siduction LXQT desktop environment (Qt5).
+"""
+
+packages = """
+    2048-qt
+    gnome-keyring
+    clementine
+    compton
+    compton-conf
+    hardinfo
+    hexchat
+    lxappearance
+    lxqt-about-qt5
+#    lxqt-appswitcher
+    lxqt-config-qt5
+    lxqt-config-randr-qt5
+    lxqt-globalkeys-qt5
+    lxqt-notificationd-qt5
+    lxqt-openssh-askpass-qt5
+    lxqt-panel-qt5
+    lxqt-policykit-qt5
+#    lxqt-power
+    lxqt-powermanagement-qt5
+    lxqt-qtplugin-qt5
+    lxqt-runner-qt5
+    lxqt-session-qt5
+    medit
+    nomacs
+    obconf-qt5
+    openbox-themes
+    oxygen-icon-theme
+    pcmanfm-qt5
+    pdfviewer
+    qbittorrent
+    qlipper
+#    qt4-qtconfig
+    qterminal
+    qupzilla
+    qxkb
+    reportbug
+    reportbug-ng
+    screengrab
+    shared-mime-info
+    sharpdot-cursor-theme
+    siduction-meta-mediabase
+    siduction-settings-plank
+#    vlc
+#    xscreensaver
+"""

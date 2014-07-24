@@ -1,0 +1,1 @@
+time ./pyfll/fll -vv -c ./pyfll/lxqt5_next_i386.conf
