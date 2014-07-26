@@ -43,7 +43,7 @@ packages = """
     screengrab
     shared-mime-info
     sharpdot-cursor-theme
-    siduction-meta-mediabase
+#    siduction-meta-mediabase
     siduction-settings-plank
 #    vlc
 #    xscreensaver
