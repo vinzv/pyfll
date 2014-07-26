@@ -71,8 +71,6 @@ class FllLocales(object):
     def __init__(self, cache, packages, map):
         self.loc_pkgs_set = set()
         for pkg in cache.packages:
-
-
             if not pkg.version_list:
                 continue
             if pkg.name not in packages:
@@ -128,6 +126,7 @@ class FllLocales(object):
 
         if ll != 'en':
             loc_suf_list.append('i18n')
+
         return loc_suf_list
 
     def detect_locale_packages(self, locale):
@@ -670,9 +669,6 @@ class FLLBuilder(object):
         for p in pkgs['packages']:
             self.log.debug('  %s' % p)
 
-
-
-
         self.log.debug('debconf summary for %s:' % arch)
         pkgs['debconf'].sort()
         for d in pkgs['debconf']:
@@ -698,6 +694,11 @@ class FLLBuilder(object):
         self.pkgs = dict()
         for arch in self.conf['archs'].keys():
             self.pkgs[arch] = self._processPkgProfile(arch, file, dir)
+            try:
+                self.pkgs[arch]['packages'] += \
+                    self.__lines2list(self.conf['packages'][arch])
+            except KeyError:
+                pass
 
 
     def _getDebconfList(self, arch):
@@ -934,8 +935,9 @@ class FLLBuilder(object):
 
 
     def __cdebBootStrap(self, arch, dir, mirror, codename):
-        ''' Bootstrap a debian system with cdebootstrap.'''
-        cmd = ['cdebootstrap', '--arch=%s' % arch, '--include=apt-utils,gnupg,bzip2,xz-utils',
+        '''Bootstrap a debian system with cdebootstrap.'''
+        cmd = ['cdebootstrap', '--arch=%s' % arch, '--exclude=sysvinit,sysvinit-core',
+               '--include=apt-utils,bzip2,gnupg,systemd-sysv,xz-utils',
                '--flavour=minimal', codename, dir, mirror]
 
         if self.opts.d:
@@ -1261,6 +1263,7 @@ class FLLBuilder(object):
             if f:
                 f.close()
                 os.chmod(distro_version, 0444)
+
         self._writeFile(arch, '/etc/motd.tail')
 
         self.log.debug('writing final apt sources.list(s)')
@@ -1323,7 +1326,8 @@ class FLLBuilder(object):
                      if f.startswith('linux-image-')]
 
         if len(kvers) > 0:
-            kvers.sort()
+            kvers.sort(cmp=apt_pkg.version_compare)
+            kvers.reverse()
             return kvers
 
         self.log.critical('failed to detect linux version installed in chroot')
@@ -1361,8 +1365,13 @@ class FLLBuilder(object):
         self.log.info('detecting whitelisted recommended packages...')
         rec_module = ConfigObj(os.path.join(self.opts.s, 'packages',
                                             'packages.d', '010-recommends-whitelist'))
-        rec_dict = dict([(p, True) for p in
-                         self.__lines2list(rec_module['packages'])])
+        try:
+            rec_dict = dict([(p, True) for p in
+                             self.__lines2list(rec_module['packages'])])
+        except KeyError:
+            self.log.debug('rec_dict:')
+            return []
+
         self.log.debug('rec_dict:')
         self.log.debug(rec_dict)
 
@@ -1439,9 +1448,6 @@ class FLLBuilder(object):
 
         self.log.info('querying source package URIs for %s...' % arch)
 
-        sources = apt_pkg.SourceRecords()
-        sources.restart()
-
         packages = manifest.keys()
         packages.sort()
         srcpkg_seen = dict()
@@ -1468,6 +1474,8 @@ class FLLBuilder(object):
                 srcpkg_seen[srcpkg] = True
 
             u = []
+            sources = apt_pkg.SourceRecords()
+            sources.restart()
             while sources.lookup(srcpkg):
                 u.extend([sources.index.archive_uri(sources.files[f][2])
                           for f in range(len(sources.files))])
@@ -1513,9 +1521,11 @@ class FLLBuilder(object):
 
         # Fetch extra debs if appropriate and reprepro them
         extras = []
-        if os.path.isdir(os.path.join(self.temp, arch, 'usr/lib/grub/x86_64-efi')):
-            extras.append('grub-efi')
-            extras.append('grub-efi-amd64')
+        efitypes = { 'x86_64-efi':'amd64','i386-efi':'ia32' }
+        for efitype in (efitypes.keys()):
+            if os.path.isdir(os.path.join(self.temp, arch, 'usr/lib/grub/%s' % efitype)):
+                extras.append('grub-efi')
+                extras.append('grub-efi-%s' % efitypes[efitype])
         if len(extras):
             self.pkgs[arch]['extras'] = dict()
             self._execInChroot(arch, ['apt-get', 'clean'])
@@ -2361,7 +2371,7 @@ class FLLBuilder(object):
 
         cmdline =  self.conf['options'].get('boot_cmdline')
         if not cmdline:
-            cmdline = 'quiet'
+            cmdline = 'quiet systemd.show_status=1'
 
         self._writeYabootCfg(stage_dir, boot_dir, ppc_dir, kvers,
                                timeout, cmdline)
