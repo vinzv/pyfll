@@ -22,7 +22,7 @@ packages = """
     syslinux
 #    syslinux-common
 #    isolinux
-    systemd-shim
+#    systemd-shim
 """
 
 i386 = """
