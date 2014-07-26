@@ -10,27 +10,33 @@ packages = """
     cups-pk-helper
     dconf-tools
     eog
+    # new 3.12 apps: empathy, polari (todo: siduction settings), gnome-boxes, sushi, geary
+    empathy
     evince
     evolution
     evolution-data-server
     file-roller
     gcalctool
     gconf-editor
+    geary
     gedit
     gengetopt
     gnome-backgrounds
     gnome-bluetooth
+    gnome-boxes
     gnome-control-center
     gnome-dictionary
     gnome-disk-utility
     gnome-games
     gnome-keyring
     gnome-media
+    gnome-online-accounts
     gnome-screenshot
     gnome-search-tool
     gnome-session
     gnome-shell
     gnome-shell-extensions
+    gnome-sushi
     gnome-system-log
     gnome-terminal
     gnome-tweak-tool
@@ -48,7 +54,8 @@ packages = """
     mpg321
     nautilus
     nautilus-open-terminal
-    network-manager-gnome
+    network-manager-gnome  
+    polari
     rhythmbox
     # look at potential plugins
     shared-mime-info
@@ -72,19 +79,19 @@ packages = """
     iceweasel-l10n-pt-br
     iceweasel-l10n-ro
     #
-    libreoffice-help-de
-    libreoffice-help-en-gb
-    libreoffice-help-en-us
-    libreoffice-help-it
-    libreoffice-help-pl
-    libreoffice-help-pt-br
+    #libreoffice-help-de
+    #libreoffice-help-en-gb
+    #libreoffice-help-en-us
+    #libreoffice-help-it
+    #libreoffice-help-pl
+    #libreoffice-help-pt-br
     #
-    libreoffice-l10n-de
-    libreoffice-l10n-en-gb
-    libreoffice-l10n-en-us
-    libreoffice-l10n-it
-    libreoffice-l10n-pl
-    libreoffice-l10n-pt-br
-    libreoffice-l10n-ro
+    #libreoffice-l10n-de
+    #libreoffice-l10n-en-gb
+    #libreoffice-l10n-en-us
+    #libreoffice-l10n-it
+    #libreoffice-l10n-pl
+    #libreoffice-l10n-pt-br
+    #libreoffice-l10n-ro
 """
 
