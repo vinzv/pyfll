@@ -7,7 +7,7 @@ packages = """
     acpi-support-base
     alsa-utils
     bluetooth
-    bluez-pcmcia-support
+    # bluez-pcmcia-support - packaging changes - test for needed packages
     br2684ctl
     cpufrequtils
     crda

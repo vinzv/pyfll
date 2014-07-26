@@ -53,7 +53,7 @@ packages = """
     glances
     genisoimage
     gpm
-    gptsync
+    # gptsync - not in sid anymore
     htop
     hddtemp
     iftop
