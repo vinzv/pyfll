@@ -110,7 +110,7 @@ packages = """
     # gnome-bluetooth       # rep
     # gnome-control-center  # dep
     gnome-desktop3-data
-    gnome-keyring           # recommend
+    gnome-keyring           
     gnome-menus
     gnome-media
     # gnome-session-bin     # dep
