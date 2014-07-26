@@ -116,7 +116,7 @@ packages = """
     # gnome-session-bin     # dep
     # gnome-settings-daemon # rep
     gnome-terminal
-    # guake                   # new ?
+    guake
     iceweasel
     midori
     hexchat
