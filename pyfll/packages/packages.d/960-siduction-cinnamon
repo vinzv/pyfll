@@ -3,35 +3,155 @@ desc = """
 """
 
 packages = """
+
+  #  ---------- cinnamon 2.2 list edited by musca 
+  #  strategy: avoid metapackages - copy a list of  all dependencies here, and uncomment only the real dependencies.
+
+  # cinnamon depends: 
+  #caribou
+  #cinnamon-common  # (= 2.2.14-2) Depends: gir1.2-meta-muffin-0.0, python, dconf-gsettings-backend  # | gsettings-backend
+  #cinnamon-control-center  # (>= 2.2)
+  #cinnamon-desktop-data  # (>= 2.2)
+  #cinnamon-screensaver  # (>= 2.2)
+  #cinnamon-session  # (>= 2.2)
+  #cinnamon-settings-daemon  # (>= 2.2)
+  #cjs  # (>= 2.2)
+  #cups-pk-helper
+  #gir1.2-accountsservice-1.0
+  #gir1.2-caribou-1.0
+  #gir1.2-clutter-1.0
+  #gir1.2-cogl-1.0
+  #gir1.2-gconf-2.0
+  #gir1.2-gdkpixbuf-2.0
+  #gir1.2-gkbd-3.0
+  #gir1.2-glib-2.0
+  #gir1.2-cmenu-3.0
+  #gir1.2-nmgtk-1.0
+  #gir1.2-gnomebluetooth-1.0
+  #gir1.2-gnomedesktop-3.0
+  #gir1.2-gtk-3.0
+  #gir1.2-gtkclutter-1.0
+  #gir1.2-javascriptcoregtk-3.0
+  #gir1.2-networkmanager-1.0
+  #gir1.2-pango-1.0
+  #gir1.2-polkit-1.0
+  #gir1.2-soup-2.4
+  #gir1.2-upowerglib-1.0
+  #gir1.2-webkit-3.0
+  #gkbd-capplet
+  #gnome-icon-theme-symbolic  # (>= 2.91)
+  #gnome-session-bin
+  #gnome-settings-daemon  # (>= 2.91.5.1)
+  #gsettings-desktop-schemas  # (>= 0.1.7)
+  #libjs-jquery
+  #mesa-utils
+  #nemo  # (>= 2.2)
+  #network-manager-gnome
+  #policykit-1-gnome
+  #python-dbus
+  #python-gconf
+  #python-gi-cairo
+  #python-imaging
+  #python-lxml
+  #python-pam
+  #python-pexpect
+  #python-pyinotify
+  #gir1.2-meta-muffin-0.0
+  #dconf-gsettings-backend | gsettings-backend
+  #python:any
+  #libatk1.0-0  # (>= 1.12.4)
+  #libc6  # (>= 2.14)
+  #libcairo2  # (>= 1.10.0)
+  #libcanberra0  # (>= 0.2)
+  #libcinnamon-menu-3-0  # (>= 2.2.0)
+  #libcjs0  # (>= 2.0.0)
+  #libclutter-1.0-0  # (>= 1.10.0)
+  #libcogl-pango20  # (>= 1.17.4)
+  #libcogl-path20  # (>= 1.17.4)
+  #libcogl20  # (>= 1.17.4)
+  #libcroco3  # (>= 0.6.2)
+  #libdbus-glib-1-2  # (>= 0.78)
+  #libgdk-pixbuf2.0-0  # (>= 2.22.0)
+  #libgirepository-1.0-1  # (>= 0.9.2)
+  #libgl1-mesa-glx | libgl1
+  #libglib2.0-0  # (>= 2.37.3)
+  #libgstreamer1.0-0  # (>= 1.0.0)
+  #libgtk-3-0  # (>= 3.9.12)
+  #libmozjs185-1.0  # (>= 1.8.5-1.0.0+dfsg)
+  #libmuffin0  # (>= 2.0.5)
+  #libpango-1.0-0  # (>= 1.14.0)
+  #libpangocairo-1.0-0  # (>= 1.14.0)
+  #libpulse-mainloop-glib0  # (>= 0.99.1)
+  #libpulse0  # (>= 0.99.1)
+  #libstartup-notification0  # (>= 0.11)
+  #libx11-6
+  #libxfixes3  # (>= 1:5.0)
+  #libxml2  # (>= 2.7.4)
+
+#  Pre-Depends: multiarch-support
+#  Recommends: cinnamon-bluetooth, cinnamon-translations, gnome-terminal | x-terminal-emulator, gksu
+#  Suggests: python-opencv
+
+#  ---------- end new list
+
+# this is the old list from convbsd
     cinnamon
-    cups-pk-helper
+    # cups-pk-helper        # dep 
     dconf-tools
-    dconf-gsettings-backend
+    #dconf-gsettings-backend
     dconf-service
     desktop-file-utils
-    #gnome-themes
+    # gnome-themes
     gconf-gsettings-backend
     gconf2
-    gconf-service
+    # gconf-service         # dep 
     glib-networking
     # gnome-backgrounds
-    gnome-bluetooth
-    gnome-control-center
+    # gnome-bluetooth       # rep
+    # gnome-control-center  # dep
     gnome-desktop3-data
-    gnome-keyring
+    gnome-keyring           # recommend
     gnome-menus
     gnome-media
-    gnome-session-bin
-    gnome-settings-daemon
+    # gnome-session-bin     # dep
+    # gnome-settings-daemon # rep
     gnome-terminal
+    # guake                   # new ?
     iceweasel
+    midori
     hexchat
+    icedove
     libglib2.0
     libpam-gnome-keyring
     muffin
-    nemo
-    network-manager
-    network-manager-gnome
+    # nemo                  # dep
+    # network-manager       # dep
+    # network-manager-gnome # dep
     totem
+    eog
     shared-mime-info
+    #
+    # some languages hardwired
+    #
+    iceweasel-l10n-de
+    iceweasel-l10n-en-gb
+    iceweasel-l10n-it
+    iceweasel-l10n-pl
+    iceweasel-l10n-pt-br
+    iceweasel-l10n-ro
+    #
+    #libreoffice-help-de
+    #libreoffice-help-en-gb
+    #libreoffice-help-en-us
+    #libreoffice-help-it
+    #libreoffice-help-pl
+    #libreoffice-help-pt-br
+    #
+    #libreoffice-l10n-de
+    #libreoffice-l10n-en-gb
+    #libreoffice-l10n-en-us
+    #libreoffice-l10n-it
+    #libreoffice-l10n-pl
+    #libreoffice-l10n-pt-br
+    #libreoffice-l10n-ro
 """
