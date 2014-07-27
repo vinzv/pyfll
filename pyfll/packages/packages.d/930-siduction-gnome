@@ -18,6 +18,7 @@ packages = """
     file-roller
     gcalctool
     gconf-editor
+    gdm3
     geary
     gedit
     gengetopt
