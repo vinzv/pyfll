@@ -8,7 +8,7 @@ deps = """
     300-hwsupport
     500-common-metapackages
     930-siduction-gnome
-    libreoffice-suite
+    #libreoffice-suite
 """
 packages = """
 """
