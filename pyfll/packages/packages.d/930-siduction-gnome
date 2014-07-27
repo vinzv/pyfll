@@ -10,7 +10,7 @@ packages = """
     cups-pk-helper
     dconf-tools
     eog
-    # new 3.12 apps: empathy, polari (todo: siduction settings), gnome-boxes, sushi, geary
+    # new 3.12 apps: empathy, polari (todo: siduction settings), gnome-boxes, gnome-logs, gnome-sushi, geary
     empathy
     evince
     evolution
@@ -29,6 +29,7 @@ packages = """
     gnome-disk-utility
     gnome-games
     gnome-keyring
+    gnome-logs
     gnome-media
     gnome-online-accounts
     gnome-screenshot
