@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    apt-conf-siduction-ng
     2048-qt
     gnome-keyring
     clementine
