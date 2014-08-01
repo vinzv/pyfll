@@ -10,6 +10,8 @@ packages = """
     apt-show-versions
     aptitude
     aspell
+    attr
+    bash-completion
     btrfs-tools
     build-essential
     bzip2

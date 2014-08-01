@@ -3,12 +3,16 @@ desc = """
 """
 
 packages = """
+    acpi-fakekey
     acpid
     acpi-support-base
     alsa-utils
+    at-spi2-core
     bluetooth
-    # bluez-pcmcia-support - packaging changes - test for needed packages
+    bluez
     br2684ctl
+    colord
+    colord-data
     cpufrequtils
     crda
     dmidecode
