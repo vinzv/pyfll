@@ -26,13 +26,14 @@ packages = """
     # to be omitted:  browsers, java*jre, libsane, imagemagick, libgl1, libxrender1, pstoedit, unixodbc, gstreamer1.0-plugins,
 
     cups-bsd
-    hunspell-dictionary
-    hyphen-hyphenation-patterns
+    #virtual: hunspell-dictionary  but not all languages available
+    #virtual: hyphen-hyphenation-patterns but not all languages available
     # this goes into the desktop specific config: libreoffice-gnome + libreoffice-gtk or  libreoffice-kde,
     openclipart-libreoffice
-    libreoffice-grammarcheck
+    #virtual: libreoffice-grammarcheck
+    # only en (hu, ru) available: libreoffice-lightproof-en 
 
-    mythes-thesaurus
+    #virtual: mythes-thesaurus
     # languages
     mythes-de
     mythes-en-us
@@ -41,7 +42,7 @@ packages = """
     # non existent: mythes-pt(-br)
     mythes-ro
     
-    libreoffice-help-4.1
+    #virtual: libreoffice-help-4.1
     # languages
     libreoffice-help-de
     libreoffice-help-en-gb
@@ -51,7 +52,7 @@ packages = """
     libreoffice-help-pt-br
     # non-existent: libreoffice-help-ro 
     
-    libreoffice-l10n-4.1
+    #virtual: libreoffice-l10n-4.1
     # languages
     libreoffice-l10n-de
     libreoffice-l10n-en-gb
