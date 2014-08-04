@@ -2,8 +2,8 @@
 
 set -e
 
-CODENAME="Whiteroom"
-CODENAME_SAFE="whiteroom"
+CODENAME="August"
+CODENAME_SAFE="august"
 VERSION="14.1.0"
 
 cd pyfll/templates
