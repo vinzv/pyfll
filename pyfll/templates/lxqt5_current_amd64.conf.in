@@ -28,7 +28,7 @@ lang = """
 
 packages = """
     gfxboot-themes-siduction-@CODENAME_SAFE@-lxqt-qt5
-    siduction-art-lxqt-qt5--@CODENAME_SAFE@
+    siduction-art-lxqt-qt5-@CODENAME_SAFE@
     siduction-live-settings-lxqt-qt5-@CODENAME_SAFE@
     siduction-settings-lxqt-qt5-@CODENAME_SAFE@
     siduction-settings-lightdm-gtk-@CODENAME_SAFE@
