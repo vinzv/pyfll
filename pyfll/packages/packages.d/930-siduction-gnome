@@ -72,7 +72,8 @@ packages = """
     gstreamer1.0-plugins-good
     gstreamer1.0-plugins-bad
     gstreamer1.0-plugins-ugly
-    gstreamer1.0-ffmpeg
+    gstreamer1.0-fluendo-mp3
+    gstreamer1.0-tools
     gucharmap
     hamster-applet
     iceweasel
@@ -107,8 +108,8 @@ packages = """
     sound-theme-freedesktop
     vinagre
     vino
-    # why??? pulseaudio
+    # why??? pulseaudio [answer: will be one centralized managed package group for all flavours]
     # why shotwell
-    #
+    
 """
 
