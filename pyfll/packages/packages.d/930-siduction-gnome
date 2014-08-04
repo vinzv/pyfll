@@ -3,10 +3,11 @@ desc = """
 """
 
 packages = """
-    aisleriot
     alacarte
     baobab
     brasero
+    # needed by gnome-controlcenter to change password.
+    cracklib-runtime
     cups-pk-helper
     dconf-tools
     eog
@@ -18,6 +19,7 @@ packages = """
     file-roller
     gcalctool
     gconf-editor
+    # gdm3 is needed even with lightdm
     gdm3
     geary
     gedit
@@ -28,10 +30,30 @@ packages = """
     gnome-control-center
     gnome-dictionary
     gnome-disk-utility
-    gnome-games
+    # metapackage gnome-games depends: 
+      gnome-chess 
+      five-or-more
+      four-in-a-row
+      gnome-nibbles
+      gnome-robots
+      gnome-sudoku
+      gnome-mines
+      gnome-tetravex
+      gnome-klotski
+      tali
+      iagno
+      lightsoff
+      gnome-mahjongg
+      quadrapassel
+      swell-foop
+      # recommends:
+      aisleriot
+      # suggests:
+      gnome-hearts
     gnome-keyring
     gnome-logs
     gnome-media
+    #g-o-a is needed by empathy, polari
     gnome-online-accounts
     gnome-screenshot
     gnome-search-tool
@@ -45,13 +67,29 @@ packages = """
     gnome-user-guide
     gnome-user-share
     gparted
+    gstreamer1.0-alsa
+    gstreamer1.0-plugins-base
+    gstreamer1.0-plugins-good
+    gstreamer1.0-plugins-bad
+    gstreamer1.0-plugins-ugly
+    gstreamer1.0-ffmpeg
     gucharmap
     hamster-applet
     iceweasel
+    # some languages hardwired
+    iceweasel-l10n-de
+    iceweasel-l10n-en-gb
+    iceweasel-l10n-it
+    iceweasel-l10n-pl
+    iceweasel-l10n-pt-br
+    iceweasel-l10n-ro
     hexchat
     libcanberra-pulse
     libmtp-runtime
     libpam-gnome-keyring
+    # libreoffice gnome desktop integration and gtk filepicker
+    libreoffice-gnome
+    libreoffice-gtk
     libxml2-utils
     mpg321
     nautilus
@@ -72,28 +110,5 @@ packages = """
     # why??? pulseaudio
     # why shotwell
     #
-    # some languages hardwired
-    #
-    iceweasel-l10n-de
-    iceweasel-l10n-en-gb
-    iceweasel-l10n-it
-    iceweasel-l10n-pl
-    iceweasel-l10n-pt-br
-    iceweasel-l10n-ro
-    #
-    #libreoffice-help-de
-    #libreoffice-help-en-gb
-    #libreoffice-help-en-us
-    #libreoffice-help-it
-    #libreoffice-help-pl
-    #libreoffice-help-pt-br
-    #
-    #libreoffice-l10n-de
-    #libreoffice-l10n-en-gb
-    #libreoffice-l10n-en-us
-    #libreoffice-l10n-it
-    #libreoffice-l10n-pl
-    #libreoffice-l10n-pt-br
-    #libreoffice-l10n-ro
 """
 
