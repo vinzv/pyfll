@@ -159,3 +159,7 @@ packages = """
 debconf = """
     kexec-tools kexec-tools/load_kexec boolean false
 """
+
+i386 = """
+"""
+
