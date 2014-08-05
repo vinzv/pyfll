@@ -1,8 +1,12 @@
-pyfll (2014.08.05) UNRELEASED; urgency=medium
+pyfll (2014.08.05+nmu1) UNRELEASED; urgency=medium
 
+  [ Ovidiu Angelescu ]
   * changes to gnome package list for libreoffice
 
- -- Ovidiu Angelescu <convbsd@siduction.org>  Tue, 5 Aug 2014 08:43:12 +0300
+  [ Torsten Wohlfarth ]
+  * add siducion-settings-conky to xfce-flavour
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Tue, 05 Aug 2014 16:07:29 +0200
 
 pyfll (2014.07.25) UNRELEASED; urgency=medium
 
