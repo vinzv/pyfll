@@ -88,9 +88,6 @@ packages = """
     libcanberra-pulse
     libmtp-runtime
     libpam-gnome-keyring
-    # libreoffice gnome desktop integration and gtk filepicker
-    libreoffice-gnome
-    libreoffice-gtk
     libxml2-utils
     mpg321
     nautilus
