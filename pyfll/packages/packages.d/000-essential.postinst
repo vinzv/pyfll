@@ -93,6 +93,7 @@ case "${1}" in
     postinst)
         do_journaling
         do_postinst
+        apt-cache policy
         ;;
     *)
         echo "Usage: ${0} postinst"
