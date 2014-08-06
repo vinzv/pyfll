@@ -169,7 +169,7 @@ build_dir = /var/cache/pyfll
 output_dir = /srv/iso/kde/amd64
 # build_log = #/path/to/build.log
 # media_include = /path/to/release/notes
-apt_preferences = pyfll/apt/preferences
+apt_preferences = pyfll/apt/xperimental
 # http_proxy =
 # ftp_proxy =
 
