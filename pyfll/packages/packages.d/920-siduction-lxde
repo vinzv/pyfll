@@ -8,11 +8,11 @@ packages = """
     brasero
     clipit
     claws-mail-i18n
+    compton
     cups-pk-helper
     evince-gtk
     fpm2
     galculator
-    geany
     gpodder
     gvfs-fuse
     hardinfo
@@ -22,6 +22,7 @@ packages = """
     lxlauncher
     lxpolkit
     lxtask
+    medit
     midori
     network-manager-gnome
     osmo
@@ -34,7 +35,7 @@ packages = """
     siduction-meta-mediabase
     siduction-settings-plank
     transmission
-    tuxcmd-modules
+    xnoise
     # guake
     # radiotray
     # tilda
