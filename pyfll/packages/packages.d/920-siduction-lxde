@@ -30,6 +30,9 @@ packages = """
     reportbug
     reportbug-ng
     shared-mime-info
+    sharpdot-cursor-theme
+    siduction-meta-mediabase
+    siduction-settings-plank
     transmission
     tuxcmd-modules
     # guake
