@@ -1,0 +1,78 @@
+desc = """
+    Siduction KDE's Plasma 5 desktop
+"""
+
+packages = """
+xinit
+x-window-system
+plasma-desktop
+#    akregator
+#    akonadi-backend-sqlite
+#    ark
+#    digikam
+#    gwenview
+#    iceweasel
+#    libk3b6-extracodecs
+#    k3b-i18n
+#    kaffeine
+#    kamoso
+#    kate
+#    kcalc
+#    kcharselect
+#    kde-config-cddb
+#    kde-config-gtk-style
+#    kde-config-touchpad
+#    kdenetwork-filesharing 
+#    kde-plasma-desktop
+#    kdepim
+#    kdesudo
+#    kdf
+#    kgamma
+#    kgpg
+#    khelpcenter4
+#    kipi-plugins
+#    kmenuedit
+#    kmix
+#    konq-plugins
+#    konversation
+#    kopete
+#    kpartsplugin
+#    kppp
+#    krdc
+#    krusader
+#    ksnapshot
+#    ktorrent
+#    kwalletmanager
+#    okular
+#    okular-extra-backends
+#    phonon-backend-gstreamer
+#    phonon-backend-vlc
+#    plasma-widgets-addons
+#    polkit-kde-1
+#    print-manager
+#    reportbug-ng
+#    sharpdot-cursor-theme
+#    skanlite
+#    strigi-client
+#    ttf-kochi-gothic
+#    virtuoso-minimal
+#    vlc
+#    yakuake
+#    # 
+#    # brute-force languange integration
+#    #
+#    # iceweasel
+#    iceweasel-l10n-de
+#    iceweasel-l10n-en-gb
+#    iceweasel-l10n-it
+#    iceweasel-l10n-pl
+#    iceweasel-l10n-pt-br
+#    iceweasel-l10n-ro
+#    # kde
+#    kde-l10n-de
+#    kde-l10n-engb
+#    kde-l10n-it
+#    kde-l10n-pl
+#    kde-l10n-ptbr
+#    kde-l10n-ro
+"""

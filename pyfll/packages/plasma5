@@ -1,0 +1,13 @@
+desc = """
+    Siduction KDE's Plasma 5 desktop environment
+"""
+
+deps = """
+    100-debian-cli
+    200-siduction-cli
+    300-hwsupport
+    500-common-metapackages
+    940-siduction-plasma5
+"""
+packages = """
+"""
