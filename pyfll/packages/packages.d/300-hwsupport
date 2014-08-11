@@ -36,7 +36,6 @@ packages = """
     sdparm
     udev
     upower
-    usbmount
     usbutils
     usb-modeswitch
     vbetool
