@@ -8,7 +8,7 @@ desc = """
 packages = """
     cinnamon
     cinnamon-backgrounds
-    cinnamon-bluetooth
+    # cinnamon-bluetooth (experimental)
     # cinnamon-l10n
     dconf-tools
     dconf-service
