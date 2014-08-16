@@ -7,6 +7,9 @@ desc = """
 
 packages = """
     cinnamon
+    cinnamon-backgrounds
+    cinnamon-bluetooth
+    # cinnamon-l10n
     dconf-tools
     dconf-service
     desktop-file-utils
