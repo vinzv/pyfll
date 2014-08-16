@@ -1,3 +1,9 @@
+pyfll (2014.08.17) UNRELEASED; urgency=medium
+
+  * added initial mate support
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Aug 2014 00:00:29 +0300
+
 pyfll (2014.08.05+nmu1) UNRELEASED; urgency=medium
 
   [ Ovidiu Angelescu ]

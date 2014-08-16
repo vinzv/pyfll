@@ -1,0 +1,13 @@
+desc = """
+    Distro specific packages for Mate desktop.
+"""
+
+packages = """
+        dconf-editor
+        hexchat
+        iceweasel
+        mate-desktop-environment-core
+        mate-desktop-environment
+        mate-desktop-environment-extras
+        transmission-gtk
+"""
