@@ -1,6 +1,10 @@
 pyfll (2014.08.18.4) UNRELEASED; urgency=medium
 
+  [ Angelescu Ovidiu ]
   * changes in templates for mate
+
+  [ Alf Gaida ]
+  * get rid of consolekit
 
  -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 18 Aug 2014 12:56:29 +0300
 
