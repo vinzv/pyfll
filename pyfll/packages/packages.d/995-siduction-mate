@@ -12,6 +12,7 @@ packages = """
         eom
         exaile
         gstreamer1.0-plugins-bad
+        gvfs-backends
         hexchat
         iceweasel
         libcanberra-pulse
