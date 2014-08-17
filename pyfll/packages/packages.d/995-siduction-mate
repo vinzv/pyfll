@@ -9,7 +9,7 @@ packages = """
         exaile
         hexchat
         iceweasel
-        libdvdcss
+        #libdvdcss
         mate-desktop-environment-core
         mate-desktop-environment
         mate-desktop-environment-extras
