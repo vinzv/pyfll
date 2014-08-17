@@ -20,8 +20,6 @@ do_postinst() {
     apt-get purge siduction-meta-xdebian --assume-yes
     apt-get purge siduction-meta-xorg --assume-yes
     apt-get purge siduction-meta-xsiduction --assume-yes
-    say "Remove ancient packages ..."
-    apt-get purge rsyslog --assume-yes
 }
 
 say 'finalize iso'

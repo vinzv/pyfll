@@ -111,7 +111,6 @@ packages = """
     reiserfsprogs
     rkhunter
     rsync
-    rsyslog
     screen
     signing-party
     sshfs

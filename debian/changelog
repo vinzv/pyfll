@@ -5,6 +5,7 @@ pyfll (2014.08.18.4) UNRELEASED; urgency=medium
 
   [ Alf Gaida ]
   * get rid of consolekit
+  * get rid of rsyslog
 
  -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 18 Aug 2014 12:56:29 +0300
 
