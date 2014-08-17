@@ -3,11 +3,18 @@ desc = """
 """
 
 packages = """
+        atril
+        custom-tools
         dconf-editor
+        exaile
         hexchat
         iceweasel
+        libdvdcss
         mate-desktop-environment-core
         mate-desktop-environment
         mate-desktop-environment-extras
+        network-manager
+        shotwell
         transmission-gtk
+        vlc
 """
