@@ -4,16 +4,26 @@ desc = """
 
 packages = """
         atril
+        brasero
+        caja-extensions
         custom-tools
         dconf-editor
+        engrampa
+        eom
         exaile
+        gstreamer1.0-plugins-bad
         hexchat
         iceweasel
-        #libdvdcss
+        mate-applets
         mate-desktop-environment-core
         mate-desktop-environment
         mate-desktop-environment-extras
+        mate-media
+        mate-media-pulse
+        mate-utils
         network-manager
+        network-manager-gnome
+        pluma
         shotwell
         transmission-gtk
         vlc
