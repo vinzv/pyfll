@@ -1,4 +1,11 @@
-pyfll (2014.08.18.4) UNRELEASED; urgency=medium
+pyfll (2014.08.17.6) UNRELEASED; urgency=medium
+
+  * added exaile suggests in mate pkglist
+    fixed pyfll versions because it was a day increased 
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Aug 2014 19:43:29 +0300
+
+pyfll (2014.08.17.5) UNRELEASED; urgency=medium
 
   [ Angelescu Ovidiu ]
   * changes in templates for mate
@@ -7,31 +14,31 @@ pyfll (2014.08.18.4) UNRELEASED; urgency=medium
   * get rid of consolekit
   * get rid of rsyslog
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 18 Aug 2014 12:56:29 +0300
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Aug 2014 12:56:29 +0300
 
-pyfll (2014.08.18.3) UNRELEASED; urgency=medium
+pyfll (2014.08.17.4) UNRELEASED; urgency=medium
 
   * added caja-open-terminal in mate pkglist
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 18 Aug 2014 10:02:29 +0300
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Aug 2014 10:02:29 +0300
 
-pyfll (2014.08.18.2) UNRELEASED; urgency=medium
+pyfll (2014.08.17.3) UNRELEASED; urgency=medium
 
   * added libcanberra-pulse in mate pkglist to work test speakers
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 18 Aug 2014 10:02:29 +0300
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Aug 2014 10:02:29 +0300
 
-pyfll (2014.08.18.1) UNRELEASED; urgency=medium
+pyfll (2014.08.17.2) UNRELEASED; urgency=medium
 
   * changes in mate pkglist
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 18 Aug 2014 09:33:29 +0300
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Aug 2014 09:33:29 +0300
 
-pyfll (2014.08.18) UNRELEASED; urgency=medium
+pyfll (2014.08.17.1) UNRELEASED; urgency=medium
 
   * added some packages in mate pkglist
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 18 Aug 2014 08:05:29 +0300
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Aug 2014 08:05:29 +0300
 
 pyfll (2014.08.17) UNRELEASED; urgency=medium
 
