@@ -5,7 +5,7 @@ desc = """
 packages = """
         atril
         brasero
-        caja-extensions
+        caja-open-terminal
         custom-tools
         dconf-editor
         engrampa
