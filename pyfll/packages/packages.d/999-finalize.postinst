@@ -22,11 +22,6 @@ do_postinst() {
     apt-get purge siduction-meta-xsiduction --assume-yes
     say "Remove ancient packages ..."
     apt-get purge rsyslog --assume-yes
-
-    if [ "${FLL_USE_SYSTEMD}" = YES ]; then
-        sh -c "apt-get install systemd-sysv --assume-yes"
-        sh -c "apt-get install libpam-systemd --assume-yes"
-    fi
 }
 
 say 'finalize iso'
