@@ -25,6 +25,7 @@ packages = """
         network-manager
         network-manager-gnome
         pluma
+        sound-theme-freedesktop
         shotwell
         transmission-gtk
         vlc
