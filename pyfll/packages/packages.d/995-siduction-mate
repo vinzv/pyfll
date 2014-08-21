@@ -6,7 +6,6 @@ packages = """
         atril
         brasero
         caja-open-terminal
-        custom-tools
         dconf-editor
         engrampa
         eom
