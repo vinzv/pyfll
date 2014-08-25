@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-    apt-conf-siduction-ng
+#    apt-conf-siduction-ng
     2048-qt
     gnome-keyring
     clementine
@@ -13,7 +13,6 @@ packages = """
     hexchat
     lxappearance
     lxqt-about-qt5
-#    lxqt-appswitcher
     lxqt-config-qt5
     lxqt-config-randr-qt5
     lxqt-globalkeys-qt5
@@ -21,12 +20,13 @@ packages = """
     lxqt-openssh-askpass-qt5
     lxqt-panel-qt5
     lxqt-policykit-qt5
-#    lxqt-power
+    lxqt-power
     lxqt-powermanagement-qt5
     lxqt-qtplugin-qt5
     lxqt-runner-qt5
     lxqt-session-qt5
-    medit
+    juffed
+    network-manager
     nomacs
     obconf-qt5
     openbox-themes
@@ -35,7 +35,6 @@ packages = """
     pdfviewer
     qbittorrent
     qlipper
-#    qt4-qtconfig
     qterminal
     qupzilla
     qxkb
@@ -44,8 +43,8 @@ packages = """
     screengrab
     shared-mime-info
     sharpdot-cursor-theme
-#    siduction-meta-mediabase
+    siduction-meta-mediabase
     siduction-settings-plank
-#    vlc
-#    xscreensaver
+    vlc
+    xscreensaver
 """

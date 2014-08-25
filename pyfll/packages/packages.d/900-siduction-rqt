@@ -10,6 +10,7 @@ packages = """
     hexchat
     lxappearance
     medit
+    network-manager
     nomacs
     obconf-qt
     openbox-themes
