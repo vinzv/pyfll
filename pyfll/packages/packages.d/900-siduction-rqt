@@ -4,6 +4,7 @@ desc = """
 
 packages = """
     clementine
+    compton
     compton-conf
     dbus-x11
     hardinfo
