@@ -6,6 +6,7 @@ desc = """
 # after that we should build with recommends on and cherrypick missed useful packages
 
 packages = """
+    brasero
     cinnamon
     cinnamon-backgrounds
     # cinnamon-bluetooth (experimental)
@@ -28,6 +29,9 @@ packages = """
     libglib2.0
     libpam-gnome-keyring
     muffin
+    rhythmbox
+    sound-juicer
+    sound-theme-freedesktop
     totem
     eog
     shared-mime-info
