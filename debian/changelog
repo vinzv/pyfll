@@ -1,3 +1,11 @@
+pyfll (2014.09.01) UNRELEASED; urgency=medium
+
+  * changed pyfll to push FLL_DISTRO_CODENAME_SAFE to  /etc/default/distro
+    FLL_DISTRO_CODENAME_SAFE it's needed for reenabling automount and 
+    automount-open for gnome, mate and cinnamon
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Mon, 01 Sept 2014 01:30:29 +0300
+
 pyfll (2014.08.31.2) UNRELEASED; urgency=medium
 
   * added brasero, rhythmbox, sound-juicer and sound-theme-freedesktop 
