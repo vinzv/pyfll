@@ -40,6 +40,7 @@ packages = """
     thunar-volman
     trayer
     tumbler
+    siduction-settings-conky
     siduction-settings-plank
     # squeeze
     xarchiver
