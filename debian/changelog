@@ -1,3 +1,10 @@
+pyfll (2014.08.31.1) UNRELEASED; urgency=medium
+
+  * switched in templates for cinnamon gdm3 to lightdm 
+  * changed for cinnamon all conf files to switch from gdm3 to lightdm
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 31 Aug 2014 10:01:29 +0300
+
 pyfll (2014.08.31) UNRELEASED; urgency=medium
 
   * added in templates kde_plasma5_foo_conf.in for current, next and 
