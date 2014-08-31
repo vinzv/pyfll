@@ -27,7 +27,7 @@ lang = """
 """
 
 packages = """
-    # gfxboot-themes-siduction-@CODENAME_SAFE@-mate
+    gfxboot-themes-siduction-@CODENAME_SAFE@-mate
     siduction-art-mate-@CODENAME_SAFE@
     siduction-live-settings-mate-@CODENAME_SAFE@
     # siduction-settings-gdm3-@CODENAME_SAFE@

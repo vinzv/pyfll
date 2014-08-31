@@ -1,3 +1,9 @@
+pyfll (2014.09.01.1) UNRELEASED; urgency=medium
+
+  * changed mate templates and rebootstrap
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Mon, 01 Sept 2014 02:53:29 +0300
+
 pyfll (2014.09.01) UNRELEASED; urgency=medium
 
   * changed pyfll to push FLL_DISTRO_CODENAME_SAFE to  /etc/default/distro
