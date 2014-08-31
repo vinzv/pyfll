@@ -1,3 +1,12 @@
+pyfll (2014.08.31) UNRELEASED; urgency=medium
+
+  * added in templates kde_plasma5_foo_conf.in for current, next and 
+    xperimental
+  * removed old kde_plasma5_amd64.conf and kde_plasma5
+  * new bootstrap for next, current and xperimental
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 31 Aug 2014 09:25:29 +0300
+
 pyfll (2014.08.17.6) UNRELEASED; urgency=medium
 
   * added exaile suggests in mate pkglist
