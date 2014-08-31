@@ -24,7 +24,7 @@ packages = """
     iceweasel
     midori
     hexchat
-    icedove
+    #icedove
     libglib2.0
     libpam-gnome-keyring
     muffin
