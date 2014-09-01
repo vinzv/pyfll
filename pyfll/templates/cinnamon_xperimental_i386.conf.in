@@ -28,7 +28,7 @@ lang = """
 
 packages = """
     gfxboot-themes-siduction-@CODENAME_SAFE@-cinnamon
-    siduction-art-wallpaper-@CODENAME_SAFE@
+    siduction-art-cinnamon-@CODENAME_SAFE@
     siduction-live-settings-cinnamon-@CODENAME_SAFE@
     #siduction-settings-gdm3-@CODENAME_SAFE@
     siduction-settings-cinnamon-@CODENAME_SAFE@
