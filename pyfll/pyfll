@@ -1523,16 +1523,23 @@ class FLLBuilder(object):
 
         # Fetch extra debs if appropriate and reprepro them
         extras = []
+        commextra = []
         efitypes = { 'x86_64-efi':'amd64','i386-efi':'ia32' }
         for efitype in (efitypes.keys()):
+            archextra = []
             if os.path.isdir(os.path.join(self.temp, arch, 'usr/lib/grub/%s' % efitype)):
-                extras.append('grub-efi')
-                extras.append('grub-efi-%s' % efitypes[efitype])
+                commextra.append('grub-efi')
+                archextra.append('grub-efi-%s' % efitypes[efitype])
+                extras.append(archextra)
+                
         if len(extras):
+            commextra.append('grub2-fll-portable-efi')
+            extras.append(commextra)
             self.pkgs[arch]['extras'] = dict()
             self._execInChroot(arch, ['apt-get', 'clean'])
-            self._aptGetInstall(arch, extras,
-                                download_only = True)
+            for archextra in extras:
+                self._aptGetInstall(arch, archextra,
+                                    download_only = True)
             # Generate a basic reprepro conf/distributions.
             extras = os.path.join(self.temp, 'staging', 'extras')
             extras_conf = os.path.join(extras, 'conf')
@@ -1997,85 +2004,16 @@ class FLLBuilder(object):
                 raise FllError
 
 
-    def _writeMenuLst(self, stage_dir, boot_dir, grub_dir, kvers,
-                      timeout, cmdline):
-        '''Write grub-legacy menu.lst for live media.'''
-        self.log.debug('writing grub menu.lst for live media')
-
-        menulst = open(os.path.join(grub_dir, 'menu.lst'), 'w')
-        menulst.write('default 0\n')
-        menulst.write('timeout %d\n' % int(timeout))
-        menulst.write('color red/black light-red/black\n')
-        menulst.write('foreground EE0000\n')
-        menulst.write('background 400000\n')
-
-        if os.path.isfile(os.path.join(boot_dir, 'message')):
-            menulst.write('gfxmenu /boot/message\n')
-
-        distro = self.conf['distro']['FLL_DISTRO_NAME']
-        for k in kvers:
-            cpu = k[k.rfind('-') + 1:]
-            vmlinuz = 'vmlinuz-%s' % k
-            initrd = 'initrd.img-%s' % k
-
-            for f in [vmlinuz, initrd]:
-                if not os.path.isfile(os.path.join(boot_dir, f)):
-                    self.log.critical('%s was not found in %s' % (f, boot_dir))
-                    raise FllError
-
-            menulst.write('\n')
-            menulst.write('title  %s %s (%s)\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
-            menulst.write('kernel /boot/%s boot=fll %s\n' % (vmlinuz, cmdline))
-            menulst.write('initrd /boot/%s\n' % initrd)
-            menulst.write('\n')
-            menulst.write('title  %s %s Extra Options\n' % (distro, cpu))
-            menulst.write('configfile /boot/grub/menu.lst.%s\n' % cpu)
-
-            menucpu = open(os.path.join(grub_dir, 'menu.lst.%s' % cpu), 'w')
-            for lines in fileinput.input(os.path.join(self.opts.s, 'data',
-                                                      'menu.lst.cpu')):
-                for line in lines.splitlines():
-                    if line.find('@vmlinuz@') >= 0:
-                        line = line.replace('@vmlinuz@', vmlinuz)
-                    if line.find('@initrd@') >= 0:
-                        line = line.replace('@initrd@', initrd)
-                    menucpu.write('%s\n' % line)
-            menucpu.close()
-
-        if os.path.isfile(os.path.join(boot_dir, 'memtest')):
-            menulst.write('\n')
-            menulst.write('title Memory test (memtest86+)\n')
-            menulst.write('kernel /boot/memtest\n')
-
-        menulst.close()
-
-
     def _writeGrubCfg(self, stage_dir, boot_dir, grub_dir, kvers,
                       timeout, cmdline):
         '''Write grub.cfg for live media.'''
         self.log.debug('writing grub.cfg for live media')
 
-        grubcfg = open(os.path.join(grub_dir, 'grub.cfg'), 'w')
-        grubcfg.write('set prefix=/boot/grub/\n')
-        grubcfg.write('insmod biosdisk\n')
-        grubcfg.write('insmod pc\n')
-        grubcfg.write('insmod gpt\n')
-        grubcfg.write('set timeout=%d\n' % int(timeout))
-        grubcfg.write('if loadfont /usr/share/grub/unicode.pf2 ; then\n')
-        grubcfg.write('  set gfxmode=800x600\n')
-        grubcfg.write('  set gfxpayload=keep\n')
-        grubcfg.write('  insmod gfxterm\n')
-        grubcfg.write('  insmod vbe\n')
-        grubcfg.write('  if terminal_output.gfxterm ; then true ; else\n')
-        grubcfg.write('    terminal gfxterm\n')
-        grubcfg.write('  fi\n')
-        grubcfg.write('fi\n\n')
-        grubcfg.write('set menu_color_normal=cyan/blue\n')
-        grubcfg.write('set menu_color_highlight=white/blue\n\n')
-        grubcfg.write('set liveopts="$from"\n\n')
-        grubcfg.write('if [ -n "${iso_path}" ]; then liveopts="${liveopts} fromiso=${iso_path}"; fi\n\n')
+        grubcfg = open(os.path.join(grub_dir, 'kernels.cfg'), 'w')
 
         distro = self.conf['distro']['FLL_DISTRO_NAME']
+        
+        kcount = { '686': 0, 'amd': 0, 'pae': 0, '486': 0, 'ppc': 0 }
         for k in kvers:
             cpu = k[k.rfind('-') + 1:]
             vmlinuz = 'vmlinuz-%s' % k
@@ -2240,29 +2178,30 @@ class FLLBuilder(object):
         isolinuxmsg.write('\nWelcome!\n')
         isolinuxmsg.write('\nTo start the system, type one of the label names below and press [enter]:\n\n')
 
-        kcount = { '686': 0, 'amd': 0, 'ppc': 0 }
+        kcount = { '686': 0, 'amd': 0, 'pae': 0, '486': 0, 'ppc': 0 }
         for k in kvers:
             cpu = k[k.rfind('-') + 1:]
-            vmlinuz = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-            os.rename(os.path.join(boot_dir, 'vmlinuz-%s' % k), os.path.join(boot_dir, vmlinuz))
-            initrd = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-            os.rename(os.path.join(boot_dir, 'initrd.img-%s' % k), os.path.join(boot_dir, initrd))
+            vmlinuz = 'vmlinuz-%s' % k
+            initrd = 'initrd.img-%s' % k
 
             for f in [vmlinuz, initrd]:
                 if not os.path.isfile(os.path.join(boot_dir, f)):
                     self.log.critical('%s was not found in %s' % (f, boot_dir))
                     raise FllError
 
+            vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+            initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label start_%s_%s\n' % (distro, cpu))
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
+            isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz_r))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd_r, cmdline))
             isolinuxcfg.write('\n')
             isolinuxcfg.write('label start_%s_%s (Safe GFX Settings)\n' % (distro, cpu))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxmsg.write('%s_%s\n' % (distro, cpu))
+            isolinuxmsg.write('%s_%s_(%s)\n' % (distro, cpu, k))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
         isolinuxcfg.write('label Boot_from_Hard_Disk\n')
@@ -2353,6 +2292,33 @@ class FLLBuilder(object):
         self._writeIsolinuxWrap()
         if 'powerpc' in archs or 'ppc64' in archs:
             self._writeYabootWrap()
+        if self.opts.D:
+            return
+        stage_dir = os.path.join(self.temp, 'staging')
+        boot_dir = os.path.join(stage_dir, 'boot')
+        kcount = { '686': 0, 'amd': 0, 'pae': 0, '486': 0, 'ppc': 0 }
+        kvers = self._detectLinuxVersion(stage_dir)
+        for k in kvers:
+            cpu = k[k.rfind('-') + 1:]
+            initrd = os.path.join(boot_dir, 'initrd.img-' + k)
+            if os.path.isfile(initrd):
+                initrdsafe = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+                self.log.debug('renaming %s to %s' % (initrd, initrdsafe))
+                os.rename(initrd, os.path.join(boot_dir, initrdsafe))
+            else:
+                self.log.critical('could not find initramfs image to rename.')
+                raise FllError
+            
+            images = glob.glob(os.path.join(boot_dir, 'vmlinu*-' + k))
+            if len(images) == 1:
+                vmlinuzsafe = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+                self.log.debug('renaming %s to %s' % (images[0], vmlinuzsafe))
+                os.rename(images[0], os.path.join(boot_dir, vmlinuzsafe))
+            else:
+                self.log.critical('could not find linux kernel image to rename.')
+                raise FllError
+            kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
+
 
     def __md5sum(self, filename):
         '''Calculate md5sum of a file and return it.'''
