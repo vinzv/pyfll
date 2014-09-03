@@ -2,8 +2,8 @@
 
 set -e
 
-CODENAME="August"
-CODENAME_SAFE="august"
+CODENAME="Indian Summer"
+CODENAME_SAFE="indiansummer"
 VERSION="14.1.0"
 
 cd pyfll/templates
