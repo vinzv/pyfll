@@ -625,7 +625,6 @@ class FLLBuilder(object):
 
             dname = os.path.basename(depfile)
             self.log.debug('processing dependency file: %s' % dname)
-            self.log.info('current depfile: %s' % depfile)
 
             dfile = ConfigObj(depfile)
 
@@ -936,8 +935,8 @@ class FLLBuilder(object):
 
     def __cdebBootStrap(self, arch, dir, mirror, codename):
         '''Bootstrap a debian system with cdebootstrap.'''
-        cmd = ['cdebootstrap', '--arch=%s' % arch, '--exclude=sysvinit,sysvinit-core',
-               '--include=apt-utils,bzip2,gnupg,libpam-systemd,xz-utils',
+        cmd = ['cdebootstrap', '--arch=%s' % arch,
+               '--include=apt-utils,bzip2,gnupg,xz-utils',
                '--flavour=minimal', codename, dir, mirror]
 
         if self.opts.d:
@@ -1080,7 +1079,6 @@ class FLLBuilder(object):
         for repo in self.conf['repos'].keys():
             r = self.conf['repos'][repo]
             if 'keyring' in r and r['keyring']:
-                self.log.info('keyring for %s ' % r)
                 keyrings.append(r['keyring'])
 
         if len(keyrings) > 0:
@@ -1177,10 +1175,8 @@ class FLLBuilder(object):
                 d = self.conf['distro'].keys()
                 d.sort()
                 for k in d:
-                    if k.startswith('FLL_DISTRO_CODENAME_REV') or k == 'FLL_DISTRO_CODENAME':
+                    if k.startswith('FLL_DISTRO_CODENAME'):
                         continue
-                    elif k == 'FLL_DISTRO_CODENAME_SAFE':
-                        f.write('%s="%s"\n' % (k, self.conf['distro'][k]))
                     elif k == 'FLL_MOUNTPOINT':
                         f.write('%s="%s"\n' % (k, self.conf['distro'][k]))
                         test = '$([ -d "$%s" ] && echo live' % k
@@ -1209,8 +1205,6 @@ class FLLBuilder(object):
                 f.write('ff02::1 ip6-allnodes\n')
                 f.write('ff02::2 ip6-allrouters\n')
                 f.write('ff02::3 ip6-allhosts\n')
-                f.write('#\n');
-                f.write('configurations written by packages\n')
             elif file == '/etc/network/interfaces':
                 f.write('# /etc/network/interfaces - ')
                 f.write('configuration file for ifup(8), ifdown(8)\n\n')
@@ -1243,6 +1237,12 @@ class FLLBuilder(object):
         '''Write the /etc/default/distro file.'''
         self._writeFile(arch, '/etc/default/distro')
 
+
+    def _uuid(self, arch):
+        '''Copy iso_uuid into chroot if we have one'''
+        chroot = os.path.join(self.temp, arch)
+        if os.path.isfile(os.path.join(self.temp, 'staging', 'iso_uuid')):
+            shutil.copy(os.path.join(self.temp, 'staging', 'iso_uuid'), os.path.join(chroot, 'tmp', 'iso_uuid'))
 
     def _finalEtc(self, arch):
         '''Final editing of conffiles in chroot.'''
@@ -1731,7 +1731,7 @@ class FLLBuilder(object):
         image_size = 16 * 1024
         if ( 'FLL_IMAGE_MB' in self.conf['distro'] and len(self.conf['distro']['FLL_IMAGE_MB'])):
             image_size = int(self.conf['distro']['FLL_IMAGE_MB'])
-
+        
         # create the fs image
         # makes a sparse file which has to be bigger then target fs
         cmd = ['dd', 'if=/dev/zero', 'of=%s' % os.path.join(chroot, 'squash', image_file), 'bs=1K', 'seek=%s' % (image_size*1024-1), 'count=1']
@@ -1785,7 +1785,7 @@ class FLLBuilder(object):
                 break
             self.log.critical('failed to drop loop device: %s' % fsloop)
             raise FllError
-
+       
         # create a dir, loop mount squash/image_file on it and rsync in chroot
         fs_image_mnt='%s.mnt' % image_file
         cmd = ['mkdir', fs_image_mnt]
@@ -1828,7 +1828,7 @@ class FLLBuilder(object):
                     cmd.extend(['-Xbcj', 'x86'])
                 elif arch == 'powerpc' or arch == 'ppc64':
                     cmd.extend(['-Xbcj', 'powerpc'])
-
+        
         if not os.path.isfile(os.path.join(chroot, 'squash', '%s' % image_file)):
             cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
 
@@ -1904,9 +1904,9 @@ class FLLBuilder(object):
 
             if len(gfiles) > 0:
                 self.log.debug('copying grub stage files to boot dir')
-                grub_dir = os.path.join(boot_dir, 'grub')
+                grub_dir = os.path.join(boot_dir, 'grub', 'i386-pc')
                 if not os.path.isdir(grub_dir):
-                    os.mkdir(grub_dir, 0755)
+                    os.makedirs(grub_dir, 0755)
             else:
                 self.log.exception('grub stage files not found')
                 raise FllError
@@ -1967,31 +1967,7 @@ class FLLBuilder(object):
                bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
                bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
                for file in bootlogo:
-                   try:
-                       shutil.copy(file, syslinux_dir)
-                   except IOError:
-                       self.log.exception('failed to copy bootlogo files to staging dir')
-                       raise FllError
-               #isl_pxe = os.path.join(chroot, 'usr/lib/syslinux/pxelinux.0');
-               #shutil.copy(isl_pxe, stage_dir);
-               # both vesamenu.c32 and linux.c32 seem to be required
-               #isl_menu = os.path.join(chroot, 'usr/lib/syslinux/vesamenu.c32');
-               #shutil.copy(isl_menu, stage_dir);
-               #isl_linux = os.path.join(chroot, 'usr/lib/syslinux/linux.c32');
-               #shutil.copy(isl_linux, stage_dir);
-               # other modules probably useful to have available in syslinux
-               # not used in current config though
-               #isl_module = os.path.join(chroot, 'usr/lib/syslinux/chain.c32');
-               #shutil.copy(isl_module, stage_dir);
-               #isl_module = os.path.join(chroot, 'usr/lib/syslinux/cmd.c32');
-               #shutil.copy(isl_module, stage_dir);
-               #isl_module = os.path.join(chroot, 'usr/lib/syslinux/elf.c32');
-               #shutil.copy(isl_module, stage_dir);
-               #isl_module = os.path.join(chroot, 'usr/lib/syslinux/ifcpu64.c32');
-               #shutil.copy(isl_module, stage_dir);
-               #isl_module = os.path.join(chroot, 'usr/lib/syslinux/kbdmap.c32');
-               #shutil.copy(isl_module, stage_dir);
-               #isl_module = os.path.join(chroot, 'usr/lib/syslinux/reboot.c32');
+                   shutil.copy(file, syslinux_dir)
             except IOError:
                     self.log.exception('failed to copy isolinux files')
                     raise FllError
@@ -2340,18 +2316,8 @@ class FLLBuilder(object):
         timeout = self._configBootTimeout()
         cmdline =  self._configBootCmdline()
 
-        grub2_modules = glob.glob(os.path.join(grub_dir, '*.mod'))
-        if len(grub2_modules) > 0:
-            self._writeGrubCfg(stage_dir, boot_dir, grub_dir, kvers,
-                               timeout, cmdline)
-            grub_efi_dir = os.path.join(grub_dir, 'x86_64-efi')
-            if os.path.isdir(grub_efi_dir):
-                self._writeGrubEfiCfg(stage_dir, boot_dir, grub_efi_dir,
-                                      kvers, timeout, cmdline)
-        else:
-            self._writeMenuLst(stage_dir, boot_dir, grub_dir, kvers,
-                               timeout, cmdline)
-
+        self._writeGrubCfg(stage_dir, boot_dir, grub_dir, kvers,
+                           timeout, cmdline)
 
     def _writeYabootWrap(self):
         '''Write final yaboot configuration for live media.'''
@@ -2549,16 +2515,12 @@ class FLLBuilder(object):
         if os.path.isfile(os.path.join(stage, 'boot/isolinux/isolinux.bin')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
             cmd += ' -b boot/isolinux/isolinux.bin -c boot/isolinux/isolinux.cat'
-            cmd2 = 'isohybrid %s' % iso_file
+            cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file
 
         elif os.path.isdir(os.path.join(stage, 'boot/grub')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
-            if os.path.isfile(os.path.join(stage, 'boot/grub/grub_eltorito')):
-                cmd += ' -b boot/grub/grub_eltorito -no-emul-boot -boot-info-table --embedded-boot %s' % os.path.join(stage,'boot/grub/grub_embed')
-            elif os.path.isfile(os.path.join(stage, 'boot/grub/iso9660_stage1_5')):
-                cmd += ' -b boot/grub/iso9660_stage1_5 -c boot/grub/boot.cat'
-            elif os.path.isfile(os.path.join(stage, 'boot/grub/stage2_eltorito')):
-                cmd += ' -b boot/grub/stage2_eltorito -c boot/grub/boot.cat'
+            if os.path.isfile(os.path.join(stage, 'boot/grub/i386-pc/grub_eltorito')):
+                cmd += ' -b boot/grub/i386-pc/grub_eltorito -no-emul-boot -boot-info-table --embedded-boot %s' % os.path.join(stage,'boot/grub/i386-pc/grub_embed')
             else:
                 self.log.critical('failed to find grub El Torito image file')
                 raise FllError
@@ -2655,6 +2617,7 @@ class FLLBuilder(object):
             self._dpkgAddDivert(arch)
             self._defaultEtc(arch)
             self._distroDefaultEtc(arch)
+            self._uuid(arch)
             self._preseedDebconf(arch)
             self._primeApt(arch)
             self._installPkgs(arch, codename)
