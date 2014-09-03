@@ -11,7 +11,7 @@ packages = """
     cups-pk-helper
     dconf-tools
     eog
-    # new 3.12 apps: empathy, polari (todo: siduction settings), gnome-boxes, gnome-logs, gnome-sushi, geary
+    # new 3.12 apps: empathy, polari (todo: siduction settings), gnome-boxes, gnome-logs, gnome-photos, gnome-sushi, geary
     empathy
     evince
     evolution
@@ -26,14 +26,14 @@ packages = """
     gengetopt
     gnome-backgrounds
     gnome-bluetooth
-    gnome-boxes
+    #gnome-boxes
     gnome-control-center
     gnome-dictionary
     gnome-disk-utility
     # metapackage gnome-games depends: 
-      gnome-chess 
       five-or-more
       four-in-a-row
+      gnome-chess 
       gnome-nibbles
       gnome-robots
       gnome-sudoku
@@ -55,6 +55,7 @@ packages = """
     gnome-media
     #g-o-a is needed by empathy, polari
     gnome-online-accounts
+    gnome-photos
     gnome-screenshot
     gnome-search-tool
     gnome-session
