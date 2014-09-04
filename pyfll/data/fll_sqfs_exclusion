@@ -13,6 +13,8 @@ etc/lvm/backup
 etc/lvm/cache
 etc/timezone
 etc/ssh/ssh_host_*key*
+etc/ssl/certs/ssl-cert-snakeoil.pem
+etc/ssl/private/ssl-cert-snakeoil.key
 etc/udev/rules.d/70-persistent-*.rules
 etc/X11/xorg.conf
 lib/init/rw/*
@@ -22,6 +24,8 @@ mnt/*
 proc/*
 root/*
 root/.*
+run/*
+run/.*
 sys/*
 tmp/*
 tmp/.*
@@ -31,6 +35,9 @@ var/cache/debconf/*-old
 var/lib/alsa/asound.state
 var/lib/apt/extended_states
 var/lib/apt/lists/*_dists_*
+var/lib/dbus/machine-id
 var/lib/dpkg/*-old
 var/lib/initramfs-tools/*
+var/log/bootstrap.log
 var/run/*
+var/run/.*
