@@ -1,0 +1,29 @@
+Source: pyfll
+Section: misc
+Priority: optional
+Maintainer: Kel Modderman <kel@otaku42.de>
+Uploaders: Stefan Lippers-Hollmann <s.l-h@gmx.de>,
+ Joaquim Boura <x-un-i@sapo.pt>,
+ Chris Hildebrandt <slam@aptosid.com>
+Build-Depends: debhelper (>= 9.20120115)
+Standards-Version: 3.9.5
+Vcs-git: git://github.com/fullstory/pyfll.git
+Vcs-Browser: https://github.com/fullstory/pyfll
+
+# No binary packages are currently built from this source - but they could be!
+#Package: pyfll
+#Architecture: all
+#Depends: ${misc:Depends},
+#         ${python:Depends},
+#         python-apt,
+#         python-configobj,
+#         debootstrap | cdebootstrap,
+#         isolinux,
+#         xorriso,
+#         reprepro,
+#         squashfs-tools,
+#         syslinux,
+#         syslinux-utils
+#Description: FULLSTORY live linux media mastering utility
+# Live linux media mastering utility using an easily replicatable "cleanroom"
+# process
