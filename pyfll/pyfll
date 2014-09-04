@@ -1896,6 +1896,16 @@ class FLLBuilder(object):
                 raise FllError
 
         if os.path.isdir(os.path.join(chroot, 'usr/lib/grub')):
+            data_dir = os.path.join(self.opts.s, 'data')
+            grub_dir = os.path.join(boot_dir, 'grub')
+            if not os.path.isdir(grub_dir):
+                os.makedirs(grub_dir, 0755)
+            if not os.path.isfile(os.path.join(grub_dir, 'grub.cfg')):
+              shutil.copy(os.path.join(self.opts.s, 'data/grub.cfg'), grub_dir)
+              shutil.copy(os.path.join(chroot, 'usr/share/grub/unicode.pf2'), grub_dir)
+              shutil.copytree(os.path.join(self.opts.s, 'data/locales'), os.path.join(grub_dir, 'locales'))
+              shutil.copytree(os.path.join(self.opts.s, 'data/tz'), os.path.join(grub_dir, 'tz'))
+
             gfile_dir = glob.glob(os.path.join(chroot, 'usr/lib/grub/*-pc'))[0]
 
             grub2_modules = glob.glob(os.path.join(gfile_dir, '*.mod'))
