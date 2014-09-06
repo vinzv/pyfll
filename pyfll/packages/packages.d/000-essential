@@ -14,20 +14,21 @@ packages = """
     console-setup
     fll-live-initramfs
     fll-live-initscripts
-    grub-pc
-    initramfs-tools
     locales
-    mtools
     squashfs-tools
+    initramfs-tools
+
+    grub-pc
+    grub-efi-ia32-bin
+    grub-efi-amd64-bin
+    efibootmgr
+
+    mtools
     syslinux
-#    syslinux-common
-#    isolinux
 """
 
 i386 = """
 """
 
 amd64 = """
-    grub-efi-amd64-bin
-    efibootmgr
 """
