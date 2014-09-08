@@ -25,10 +25,12 @@ packages = """
     iceweasel
     midori
     hexchat
-    #icedove
+    icedove
     libglib2.0
     libpam-gnome-keyring
     muffin
+    nemo-fileroller
+    p7zip-full
     rhythmbox
     sound-juicer
     sound-theme-freedesktop
@@ -38,6 +40,13 @@ packages = """
     #
     # some languages hardwired
     #
+    icedove-l10n-de
+    icedove-l10n-en-gb
+    icedove-l10n-it
+    icedove-l10n-pl
+    icedove-l10n-pt-br
+    icedove-l10n-ro
+    # 
     iceweasel-l10n-de
     iceweasel-l10n-en-gb
     iceweasel-l10n-it
