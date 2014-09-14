@@ -1,3 +1,10 @@
+pyfll (2014.09.14) UNRELEASED; urgency=medium
+
+  * changed pyfll to provide vmlinuz and initrd instead of real kernel and
+    real intird
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 14 Sep 2014 21:28:52 +0300
+
 pyfll (2014.09.01.2) UNRELEASED; urgency=medium
 
   * changed cinnamon templates and rebootstrap
