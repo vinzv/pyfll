@@ -1,5 +1,5 @@
 desc = """
-    Siduction LXQT desktop environment.
+    Siduction LXQT desktop environment (Qt5).
 """
 
 packages = """
@@ -12,30 +12,29 @@ packages = """
     hardinfo
     hexchat
     lxappearance
-    lxqt-about
-    lxqt-config
-    lxqt-config-randr
-    lxqt-globalkeys
-    lxqt-notificationd
-    lxqt-openssh-askpass
-    lxqt-panel
-    lxqt-policykit
+    lxqt-about-qt5
+    lxqt-config-qt5
+    lxqt-config-randr-qt5
+    lxqt-globalkeys-qt5
+    lxqt-notificationd-qt5
+    lxqt-openssh-askpass-qt5
+    lxqt-panel-qt5
+    lxqt-policykit-qt5
     lxqt-power
-    lxqt-powermanagement
-    lxqt-qtplugin
-    lxqt-runner
-    lxqt-session
+    lxqt-powermanagement-qt5
+    lxqt-qtplugin-qt5
+    lxqt-runner-qt5
+    lxqt-session-qt5
     juffed
     network-manager
     nomacs
-    obconf-qt
+    obconf-qt5
     openbox-themes
     oxygen-icon-theme
-    pcmanfm-qt
+    pcmanfm-qt5
     pdfviewer
     qbittorrent
     qlipper
-    qt4-qtconfig
     qterminal
     qupzilla
     qxkb
