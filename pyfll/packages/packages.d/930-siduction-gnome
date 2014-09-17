@@ -24,6 +24,7 @@ packages = """
     geary
     gedit
     gengetopt
+    gkbd-capplet
     gnome-backgrounds
     gnome-bluetooth
     #gnome-boxes

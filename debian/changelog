@@ -1,5 +1,11 @@
 pyfll (2014.09.14) UNRELEASED; urgency=medium
 
+  * added gkbd-capplet to gnome pkg-list
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Sep 2014 08:21:52 +0300
+
+pyfll (2014.09.14) UNRELEASED; urgency=medium
+
   * changed pyfll to provide vmlinuz and initrd instead of real kernel and
     real intird
 
