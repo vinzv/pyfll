@@ -1,8 +1,12 @@
-pyfll (2014.09.14) UNRELEASED; urgency=medium
+pyfll (2014.09.14+nmu1) UNRELEASED; urgency=medium
 
+  [ Angelescu Ovidiu ]
   * added gkbd-capplet to gnome pkg-list
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 17 Sep 2014 08:21:52 +0300
+  [ Ferdinand Thommes ]
+  * added udisks to hwsupport
+
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 17 Sep 2014 08:11:14 +0200
 
 pyfll (2014.09.14) UNRELEASED; urgency=medium
 
