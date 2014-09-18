@@ -15,6 +15,7 @@ packages = """
     dconf-service
     desktop-file-utils
     gconf2
+    gedit
     glib-networking
     gnome-desktop3-data
     gnome-keyring           
@@ -23,7 +24,14 @@ packages = """
     gnome-terminal
     guake
     iceweasel
-    midori
+    #some uninteresting extras (keep them?):
+      abiword
+      gnumeric
+      midori
+      xombrero
+      gnome-sudoku
+      iagno
+      swell-foop
     hexchat
     icedove
     libglib2.0
