@@ -13,7 +13,6 @@ packages = """
     lxappearance
     lxqt-about-qt5
     lxqt-config-qt5
-    lxqt-config-randr-qt5
     lxqt-globalkeys-qt5
     lxqt-notificationd-qt5
     lxqt-openssh-askpass-qt5
