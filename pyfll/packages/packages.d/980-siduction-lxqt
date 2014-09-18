@@ -33,7 +33,7 @@ packages = """
     pdfviewer
     qbittorrent
     qlipper
-    qterminal
+    qterminal-qt5
     qupzilla
     qxkb
     reportbug
