@@ -3,12 +3,11 @@ desc = """
 """
 
 packages = """
-#    apt-conf-siduction-ng
     2048-qt
     gnome-keyring
     clementine
     compton
-    compton-conf
+    compton-conf-qt5
     hardinfo
     hexchat
     lxappearance
@@ -20,7 +19,7 @@ packages = """
     lxqt-openssh-askpass-qt5
     lxqt-panel-qt5
     lxqt-policykit-qt5
-    lxqt-power
+    # lxqt-power
     lxqt-powermanagement-qt5
     lxqt-qtplugin-qt5
     lxqt-runner-qt5
