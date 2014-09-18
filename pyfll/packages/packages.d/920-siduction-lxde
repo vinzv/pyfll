@@ -39,8 +39,8 @@ packages = """
     siduction-meta-mediabase
     siduction-settings-plank
     transmission
-### libtaginfo broken    xnoise
-    # guake
+    xnoise
+    guake
     # radiotray
     # tilda
 """
