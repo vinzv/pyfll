@@ -16,6 +16,7 @@ packages = """
     desktop-file-utils
     gconf2
     gedit
+    gir1.2-gtksource-3.0
     glib-networking
     gnome-desktop3-data
     gnome-keyring           
@@ -26,6 +27,7 @@ packages = """
     iceweasel
     #some uninteresting extras (keep them?):
       abiword
+      abw2odt
       gnumeric
       midori
       xombrero
