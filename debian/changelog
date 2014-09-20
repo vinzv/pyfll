@@ -1,12 +1,14 @@
-pyfll (2014.09.14+nmu1) UNRELEASED; urgency=medium
+pyfll (2014.09.14+nmu2) UNRELEASED; urgency=medium
 
   [ Angelescu Ovidiu ]
   * added gkbd-capplet to gnome pkg-list
 
   [ Ferdinand Thommes ]
   * added udisks to hwsupport
+  * added baloo4 and baloo-utils to 940-siduction-kde, as they are
+    essential to desktop search
 
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 17 Sep 2014 08:11:14 +0200
+ -- Ferdinand Thommes <devil@siduction.org>  Sat, 20 Sep 2014 20:33:00 +0200
 
 pyfll (2014.09.14) UNRELEASED; urgency=medium
 

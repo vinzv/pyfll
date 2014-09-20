@@ -6,6 +6,8 @@ packages = """
     akregator
     akonadi-backend-sqlite
     ark
+    baloo4	
+    baloo-utils
     digikam
     gwenview
     iceweasel
