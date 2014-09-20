@@ -36,7 +36,6 @@ packages = """
     screengrab
     shared-mime-info
     sharpdot-cursor-theme
-    siduction-meta-mediabase
     siduction-settings-plank
     transmission
     xnoise

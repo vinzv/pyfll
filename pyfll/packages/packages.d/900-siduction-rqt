@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    gnome-keyring
     clementine
     compton
     compton-conf
@@ -10,7 +11,7 @@ packages = """
     hardinfo
     hexchat
     lxappearance
-    medit
+    juffed
     network-manager
     nomacs
     obconf-qt

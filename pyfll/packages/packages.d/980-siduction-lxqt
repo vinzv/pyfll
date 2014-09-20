@@ -1,5 +1,5 @@
 desc = """
-    Siduction LXQT desktop environment (Qt5).
+    Siduction LXQt desktop environment.
 """
 
 packages = """
@@ -8,6 +8,7 @@ packages = """
     clementine
     compton
     compton-conf-qt5
+    dbus-x11
     hardinfo
     hexchat
     lxappearance
@@ -41,7 +42,6 @@ packages = """
     screengrab
     shared-mime-info
     sharpdot-cursor-theme
-    siduction-meta-mediabase
     siduction-settings-plank
     vlc
     xscreensaver

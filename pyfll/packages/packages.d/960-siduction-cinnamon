@@ -19,7 +19,7 @@ packages = """
     gir1.2-gtksource-3.0
     glib-networking
     gnome-desktop3-data
-    gnome-keyring           
+    gnome-keyring
     gnome-menus
     gnome-media
     gnome-terminal

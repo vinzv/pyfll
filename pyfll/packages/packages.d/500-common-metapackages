@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    siduction-meta-mediabase
     siduction-meta-xdebian
     siduction-meta-xorg
     siduction-meta-xsiduction

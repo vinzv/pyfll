@@ -9,6 +9,7 @@ deps = """
     500-common-metapackages
     950-siduction-xfce
 """
+
 packages = """
 	network-manager-gnome
 """
