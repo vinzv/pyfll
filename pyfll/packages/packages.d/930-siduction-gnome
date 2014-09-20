@@ -61,7 +61,7 @@ packages = """
     gnome-search-tool
     gnome-session
     gnome-shell
-    gnome-shell-extensions
+    #gnome-shell-extensions
     gnome-sushi
     gnome-system-log
     gnome-terminal
