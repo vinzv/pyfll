@@ -101,6 +101,7 @@ packages = """
     shared-mime-info
     totem
     tracker-gui
+    transmission-gtk
     # why only the gui tracker-gui
     goobox 
     # instead of sound-juicer
