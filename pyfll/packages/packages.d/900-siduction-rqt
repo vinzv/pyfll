@@ -6,7 +6,7 @@ packages = """
     gnome-keyring
     clementine
     compton
-    compton-conf
+    compton-conf-qt5
     dbus-x11
     hardinfo
     hexchat
@@ -14,10 +14,10 @@ packages = """
     juffed
     network-manager
     nomacs
-    obconf-qt
+    obconf-qt5
     openbox-themes
     oxygen-icon-theme
-    pcmanfm-qt
+    pcmanfm-qt5
     pdfviewer
     qbittorrent
     qlipper
