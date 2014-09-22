@@ -22,7 +22,7 @@ packages = """
     qbittorrent
     qlipper
     qt4-qtconfig
-    qterminal
+    qterminal-qt5
     qupzilla
     qxkb
     razorqt
