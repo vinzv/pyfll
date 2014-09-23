@@ -14,6 +14,7 @@ packages = """
     dconf-tools
     dconf-service
     desktop-file-utils
+    eog
     gconf2
     gedit
     gir1.2-gtksource-3.0
@@ -25,12 +26,11 @@ packages = """
     gnome-terminal
     guake
     iceweasel
-    #some uninteresting extras (keep them?):
+    #experimental extras (keep them?):
       abiword
       abw2odt
       gnumeric
-      midori
-      xombrero
+      gnome-calculator
       gnome-sudoku
       iagno
       swell-foop
@@ -44,8 +44,9 @@ packages = """
     rhythmbox
     sound-juicer
     sound-theme-freedesktop
+    thin-provisioning-tools
     totem
-    eog
+    vim-gtk
     shared-mime-info
     #
     # some languages hardwired
