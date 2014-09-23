@@ -33,5 +33,4 @@ packages = """
         smbclient
         shotwell
         transmission-gtk
-        vlc
 """

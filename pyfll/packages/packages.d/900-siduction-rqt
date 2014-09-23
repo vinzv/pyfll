@@ -33,6 +33,6 @@ packages = """
     shared-mime-info
     sharpdot-cursor-theme
     siduction-settings-plank
-    vlc
+    vlc-pulse-plugin
     xscreensaver
 """

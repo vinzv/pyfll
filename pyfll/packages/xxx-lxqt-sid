@@ -1,0 +1,13 @@
+desc = """
+    Siduction LXQT desktop environment
+"""
+
+deps = """
+    100-debian-cli
+    300-hwsupport
+    xxx-lxqt-sid
+"""
+
+packages = """
+
+"""

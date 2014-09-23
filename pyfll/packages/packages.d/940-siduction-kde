@@ -63,7 +63,7 @@ packages = """
     strigi-client
     ttf-kochi-gothic
     virtuoso-minimal
-    vlc
+    vlc-pulse-plugin
     yakuake
     #
     # brute-force languange integration
