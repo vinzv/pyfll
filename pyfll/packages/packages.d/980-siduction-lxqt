@@ -19,7 +19,12 @@ packages = """
     lxqt-openssh-askpass-qt5
     lxqt-panel-qt5
     lxqt-policykit-qt5
-    # lxqt-power
+    #
+    # lxqt-power is only available in Qt4
+    # and deprecated - but needed for the panel
+    # logoff button
+    lxqt-power
+    #
     lxqt-powermanagement-qt5
     lxqt-qtplugin-qt5
     lxqt-runner-qt5
