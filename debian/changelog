@@ -1,3 +1,9 @@
+pyfll (2014.09.25) UNRELEASED; urgency=medium
+
+  * reenabled gnome-shell-extensions in gnome pkglist
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Thu, 25 Sep 2014 03:55:52 +0300
+
 pyfll (2014.09.21) UNRELEASED; urgency=medium
 
   * added transmission-gtk to gnome pkglist
