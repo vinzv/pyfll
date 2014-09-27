@@ -15,6 +15,7 @@ packages = """
     dconf-service
     desktop-file-utils
     eog
+    evince
     gconf2
     gedit
     gir1.2-gtksource-3.0
@@ -39,15 +40,17 @@ packages = """
     libglib2.0
     libpam-gnome-keyring
     muffin
+    nemo
     nemo-fileroller
     p7zip-full
     rhythmbox
+    shared-mime-info
     sound-juicer
     sound-theme-freedesktop
     thin-provisioning-tools
     totem
     vim-gtk
-    shared-mime-info
+    yelp
     #
     # some languages hardwired
     #
