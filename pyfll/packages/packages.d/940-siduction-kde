@@ -54,6 +54,7 @@ packages = """
     network-manager-vpnc
     # end dependencies
     plasma-widgets-addons
+    plasma-widget-milou
     polkit-kde-1
     print-manager
     reportbug

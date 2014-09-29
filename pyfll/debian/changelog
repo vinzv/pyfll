@@ -1,4 +1,4 @@
-pyfll (2013.02) UNRELEASED; urgency=low
+pyfll (2013.02+nmu1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
@@ -83,7 +83,10 @@ pyfll (2013.02) UNRELEASED; urgency=low
   * add initial razorqt profile 
   * add qupzilla, qpdfview
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sun, 05 May 2013 18:23:39 +0200
+  [ Ferdinand Thommes ]
+  * added plasma-widget-milou to 940-siduction-kde
+
+ -- Ferdinand Thommes <devil@siduction.org>  Mon, 29 Sep 2014 18:36:04 +0200
 
 pyfll (2013.01) hesperides; urgency=low
 
