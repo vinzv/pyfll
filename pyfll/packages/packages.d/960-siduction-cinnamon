@@ -45,6 +45,7 @@ packages = """
     p7zip-full
     rhythmbox
     shared-mime-info
+    siduction-settings-plank
     sound-juicer
     sound-theme-freedesktop
     thin-provisioning-tools
@@ -67,19 +68,4 @@ packages = """
     iceweasel-l10n-pl
     iceweasel-l10n-pt-br
     iceweasel-l10n-ro
-    #
-    #libreoffice-help-de
-    #libreoffice-help-en-gb
-    #libreoffice-help-en-us
-    #libreoffice-help-it
-    #libreoffice-help-pl
-    #libreoffice-help-pt-br
-    #
-    #libreoffice-l10n-de
-    #libreoffice-l10n-en-gb
-    #libreoffice-l10n-en-us
-    #libreoffice-l10n-it
-    #libreoffice-l10n-pl
-    #libreoffice-l10n-pt-br
-    #libreoffice-l10n-ro
 """

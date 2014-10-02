@@ -1,6 +1,11 @@
 pyfll (2014.09.25) UNRELEASED; urgency=medium
 
+  [ Angelescu Ovidiu ]
   * reenabled gnome-shell-extensions in gnome pkglist
+
+  [ Alf Gaida ]
+  * remove siduction-meta-mediabase in 999
+  * added siduction-settings-cinnamon to cinnamon 
 
  -- Angelescu Ovidiu <convbsd@siduction.org>  Thu, 25 Sep 2014 03:55:52 +0300
 

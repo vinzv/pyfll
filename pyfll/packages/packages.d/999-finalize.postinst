@@ -17,6 +17,7 @@ do_postinst() {
     say "Configure Live Settings ..."
     siduction-live-settings configure
     say "Remove siduction-meta-packages ..."
+    apt-get purge siduction-meta-mediabase --assume-yes
     apt-get purge siduction-meta-xdebian --assume-yes
     apt-get purge siduction-meta-xorg --assume-yes
     apt-get purge siduction-meta-xsiduction --assume-yes
