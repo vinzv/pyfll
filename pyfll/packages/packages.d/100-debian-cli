@@ -73,6 +73,7 @@ packages = """
     less
     libmtp-runtime
     libnss-mdns
+    libnss-myhostname
     links
     lm-sensors
     logrotate
