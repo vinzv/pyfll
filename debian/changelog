@@ -1,4 +1,10 @@
-pyfll (2014.09.25) UNRELEASED; urgency=medium
+pyfll (2014.10.05) UNRELEASED; urgency=medium
+
+  * added accountsservice to 100-debian
+
+ -- Alf Gaida <agaida@siduction.org>  Sun, 05 Oct 2014 01:22:45 +0200
+
+pyfll (2014.09.25) unstable; urgency=medium
 
   [ Angelescu Ovidiu ]
   * reenabled gnome-shell-extensions in gnome pkglist
@@ -7,7 +13,7 @@ pyfll (2014.09.25) UNRELEASED; urgency=medium
   * remove siduction-meta-mediabase in 999
   * added siduction-settings-cinnamon to cinnamon 
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Thu, 25 Sep 2014 03:55:52 +0300
+ -- Alf Gaida <agaida@siduction.org>  Sun, 05 Oct 2014 01:22:40 +0200
 
 pyfll (2014.09.21) UNRELEASED; urgency=medium
 
