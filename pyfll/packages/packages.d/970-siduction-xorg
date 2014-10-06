@@ -5,7 +5,7 @@ desc = """
 packages = """
     fluxbox
     gconf2
-    gnome-icons
+    gnome-icon-theme
     hexchat
     midori
     network-manager
