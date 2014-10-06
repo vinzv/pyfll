@@ -56,7 +56,7 @@ packages = """
     glances
     genisoimage
     gpm
-    # gptsync - not in sid anymore
+#   gptsync - not in sid anymore
     htop
     hddtemp
     iftop
@@ -120,7 +120,7 @@ packages = """
     strace
     sudo
     sysv-rc-conf
-    testdisk
+# broken   testdisk
     tofrodos
     tree
     traceroute
