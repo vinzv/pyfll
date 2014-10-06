@@ -5,6 +5,9 @@ desc = """
 packages = """
     fluxbox
     gconf2
+    gnome-icons
     hexchat
     midori
+    network-manager
+    sidu-installer
 """

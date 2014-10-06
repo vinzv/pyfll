@@ -1,3 +1,9 @@
+pyfll (2014.10.06) UNRELEASED; urgency=medium
+
+  * added sidu-installer, gnome-icons and network-manager to xorg pkglist
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Mon, 06 Oct 2014 23:22:52 +0300
+
 pyfll (2014.10.05) UNRELEASED; urgency=medium
 
   * added accountsservice to 100-debian
