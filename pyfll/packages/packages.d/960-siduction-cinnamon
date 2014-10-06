@@ -17,7 +17,6 @@ packages = """
     eog
     evince
     gconf2
-    gedit
     gir1.2-gtksource-3.0
     glib-networking
     gnome-desktop3-data
@@ -39,6 +38,7 @@ packages = """
     icedove
     libglib2.0
     libpam-gnome-keyring
+    medit
     muffin
     nemo
     nemo-fileroller
