@@ -50,6 +50,8 @@ packages = """
     sound-theme-freedesktop
     thin-provisioning-tools
     totem
+    tracker
+    vcdimager
     vim-gtk
     yelp
     #

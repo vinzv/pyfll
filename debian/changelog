@@ -8,6 +8,7 @@ pyfll (2014.10.05) UNRELEASED; urgency=medium
 
   * added accountsservice to 100-debian
   * added libnss-myhostname closes #1708
+  * added tracker and vicd..
 
  -- Alf Gaida <agaida@siduction.org>  Sun, 05 Oct 2014 01:22:45 +0200
 
