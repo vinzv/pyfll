@@ -1,6 +1,16 @@
+pyfll (2014.10.08) UNRELEASED; urgency=medium
+
+  * removed sidu-installer from xorg pkglist because it's now pushed 
+    by live settings
+  * changed xorg templates for using siduction xorg settings and siduction
+    xorg live settings
+  * new rebootstrap in next, xperimental and current
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Wed, 08 Oct 2014 17:15:52 +0300
+
 pyfll (2014.10.06) UNRELEASED; urgency=medium
 
-  * added sidu-installer, gnome-icons and network-manager to xorg pkglist
+  * added sidu-installer, gnome-icon-theme and network-manager to xorg pkglist
 
  -- Angelescu Ovidiu <convbsd@siduction.org>  Mon, 06 Oct 2014 23:22:52 +0300
 
