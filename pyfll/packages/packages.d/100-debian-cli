@@ -46,6 +46,7 @@ packages = """
     dvd+rw-tools
     encfs
     exfat-utils
+    f2fs-utils
     foremost
     foomatic-db
     foomatic-db-engine

@@ -10,7 +10,11 @@ pyfll (2014.10.08) UNRELEASED; urgency=medium
 
 pyfll (2014.10.06) UNRELEASED; urgency=medium
 
-  * added sidu-installer, gnome-icon-theme and network-manager to xorg pkglist
+  [ Angelescu Ovidiu ]
+  * added sidu-installer, gnome-icons and network-manager to xorg pkglist
+
+  [ Alf Gaida ]
+  * f2fs-tools added to 100-debian-cli
 
  -- Angelescu Ovidiu <convbsd@siduction.org>  Mon, 06 Oct 2014 23:22:52 +0300
 
