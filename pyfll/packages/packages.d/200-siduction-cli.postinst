@@ -49,20 +49,14 @@ do_postinst() {
 	# leaves a broken partial /dev/nbd0 config
 	sed -i 's#/dev/nbd0##' /etc/nbd-client
 
-	say 'Hacking /etc/inittab for passwdless login'
-	# We also set default runlevel to 5
-	sed -e 's#^id:[0-6]:initdefault:#id:5:initdefault:#' \
-	    -e 's#:/sbin/getty#:/sbin/getty -n -i -l /usr/bin/fll_login#' \
-	    -e 's#^\([0-6]\):23:#\1:2345:#' \
-		/usr/share/sysvinit/inittab > /etc/inittab
 }
 
 case "${1}" in
-	postinst)
-#		do_postinst
-		;;
-	*)
-		echo "Usage: ${0} postinst"
-		;;
+    postinst)
+        do_postinst
+        ;;
+    *)
+        echo "Usage: ${0} postinst"
+        ;;
 esac
 
