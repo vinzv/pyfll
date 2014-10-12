@@ -8,6 +8,5 @@ packages = """
     gnome-icon-theme
     hexchat
     midori
-    network-manager
-    sidu-installer
+    #network-manager
 """

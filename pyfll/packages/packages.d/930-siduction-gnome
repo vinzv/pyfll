@@ -100,6 +100,7 @@ packages = """
     # look at potential plugins
     shared-mime-info
     totem
+    totem-plugins
     tracker-gui
     transmission-gtk
     # why only the gui tracker-gui
@@ -108,8 +109,5 @@ packages = """
     sound-theme-freedesktop
     vinagre
     vino
-    # why??? pulseaudio [answer: will be one centralized managed package group for all flavours]
-    # why shotwell
-    
 """
 

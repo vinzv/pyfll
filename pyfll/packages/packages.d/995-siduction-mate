@@ -32,5 +32,7 @@ packages = """
         sound-theme-freedesktop
         smbclient
         shotwell
+        totem
+        totem-plugins
         transmission-gtk
 """
