@@ -18,13 +18,15 @@ packages = """
     hardinfo
     hexchat
     lxappearance-obconf
+
     lxde
-    lxlauncher
-    lxpolkit
-    lxsession-default-apps
-    lxsession-logout
-    lxsession-message-gtk
-    lxtask
+#    lxlauncher
+#    lxpolkit
+#    lxsession-default-apps
+#    lxsession-logout
+#    lxsession-message-gtk
+#    lxtask
+
     medit
     midori
     network-manager-gnome
@@ -40,6 +42,4 @@ packages = """
     transmission
     xnoise
     guake
-    # radiotray
-    # tilda
 """
