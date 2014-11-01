@@ -20,12 +20,6 @@ packages = """
     lxappearance-obconf
 
     lxde
-#    lxlauncher
-#    lxpolkit
-#    lxsession-default-apps
-#    lxsession-logout
-#    lxsession-message-gtk
-#    lxtask
 
     medit
     midori
