@@ -6,6 +6,7 @@ desc = """
 # after that we should build with recommends on and cherrypick missed useful packages
 
 packages = """
+    audacious
     brasero
     cinnamon
     cinnamon-backgrounds
@@ -17,16 +18,18 @@ packages = """
     eog
     evince
     gconf2
+    # causes warnings when started from terminal: gedit
     gir1.2-gtksource-3.0
     glib-networking
     gnome-desktop3-data
     gnome-keyring
     gnome-menus
     gnome-media
+    gnome-screenshot
     gnome-terminal
-    guake
+    # segfaults in default config, and occupies x-terminal-emulator: guake
     iceweasel
-    #experimental extras (keep them?):
+    # some experimental extras (keep them?):
       abiword
       abw2odt
       gnumeric
@@ -43,16 +46,18 @@ packages = """
     nemo
     nemo-fileroller
     p7zip-full
-    rhythmbox
+    # doesn't play internet radio streams:  rhythmbox
     shared-mime-info
     siduction-settings-plank
     sound-juicer
     sound-theme-freedesktop
     thin-provisioning-tools
-    totem
+    # totem
+    gnome-mplayer
+    gecko-mediaplayer
     tracker
     vcdimager
-    vim-gtk
+    # causes monster icons in nemo's context menu: vim-gtk
     yelp
     #
     # some languages hardwired
