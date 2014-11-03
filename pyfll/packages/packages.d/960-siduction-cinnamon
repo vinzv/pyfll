@@ -39,7 +39,7 @@ packages = """
       swell-foop
     hexchat
     icedove
-    libglib2.0
+    # why this wildcard? # libglib2.0
     libpam-gnome-keyring
     medit
     muffin
