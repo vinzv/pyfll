@@ -1,9 +1,10 @@
-pyfll (2014.10.13) unstable; urgency=medium
+pyfll (2014.11.06) unstable; urgency=medium
 
   * moreutils added to 100-debian-cli
   * reportbug moved to 100-debian-cli
   * drop xnoise in lxde, add audacious, audacious-plugins, smplayer
     smtube
+  * add smplayer and smtube to lxqt
 
  -- Alf Gaida <agaida@siduction.org>  Thu, 06 Nov 2014 21:54:21 +0100
 

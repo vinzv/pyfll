@@ -44,6 +44,8 @@ packages = """
     qxkb
     reportbug-ng
     screengrab
+    smplayer
+    smtube
     shared-mime-info
     sharpdot-cursor-theme
     siduction-settings-plank
