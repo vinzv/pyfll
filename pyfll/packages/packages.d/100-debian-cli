@@ -84,6 +84,7 @@ packages = """
     memtest86+
     mlocate
     moc
+    moreutils
     most
     nfs-common
     ntfs-3g
@@ -111,6 +112,7 @@ packages = """
     reptyr
     resolvconf
     reiserfsprogs
+    reportbug
     rkhunter
     rsync
     screen

@@ -27,7 +27,6 @@ packages = """
     qxkb
     razorqt
     razorqt-session
-    reportbug
     reportbug-ng
     screengrab
     shared-mime-info

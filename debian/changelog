@@ -1,9 +1,19 @@
-pyfll (2014.10.12) UNRELEASED; urgency=medium
+pyfll (2014.10.13) unstable; urgency=medium
 
+  * moreutils added to 100-debian-cli
+  * reportbug moved to 100-debian-cli
+  * drop xnoise in lxde, add audacious, audacious-plugins, smplayer
+    smtube
+
+ -- Alf Gaida <agaida@siduction.org>  Thu, 06 Nov 2014 21:54:21 +0100
+
+pyfll (2014.10.12) unstable; urgency=medium
+
+  [ Angelescu Ovidiu ]
   * added totem-plugins to gnome and mate pkglist.
   * commented network-manager and removed sidu-installer from xorg pkglist
 
- -- Angelescu Ovidiu <convbsd@siduction.org>  Sun, 12 Oct 2014 07:12:52 +0300
+ -- Alf Gaida <agaida@siduction.org>  Thu, 06 Nov 2014 21:53:01 +0100
 
 pyfll (2014.10.08) UNRELEASED; urgency=medium
 

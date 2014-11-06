@@ -28,7 +28,6 @@ packages = """
     mousepad
     mpg321
     orage
-    reportbug
     ristretto
     shared-mime-info
     thunar

@@ -42,7 +42,6 @@ packages = """
     qterminal-qt5
     qupzilla
     qxkb
-    reportbug
     reportbug-ng
     screengrab
     shared-mime-info

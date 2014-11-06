@@ -58,7 +58,6 @@ packages = """
     plasma-widget-milou
     polkit-kde-1
     print-manager
-    reportbug
     reportbug-ng
     sharpdot-cursor-theme
     skanlite
