@@ -4,6 +4,7 @@ desc = """
 
 packages = """
     abiword
+    audacious
     brasero
     chromium
     chromium-l10n
@@ -66,8 +67,8 @@ packages = """
     xfce4-power-manager-plugins
     xfce4-quicklauncher-plugin
     xfce4-terminal
-    xfce4-screenshooter
-    xfce4-screenshooter-plugin
+    # replaced by screengrab: xfce4-screenshooter
+    # replaced by screengrab: xfce4-screenshooter-plugin
     xfce4-sensors-plugin
     xfce4-session
     xfce4-smartbookmark-plugin
@@ -75,7 +76,7 @@ packages = """
     xfce4-systemload-plugin
     xfce4-taskmanager
     xfce4-timer-plugin
-    xfce4-verve-plugin
+    # removed - requested by towo: xfce4-verve-plugin
     xfce4-volumed
     xfce4-wavelan-plugin
     xfce4-weather-plugin
@@ -84,7 +85,12 @@ packages = """
     # xfprint4
     xfwm4
     xfwm4-themes
-    xnoise
+    # replaced by audacious and smplayer, smtube: xnoise
     xtrlock
     zenity
+
+    # Qt4 Packages
+    screengrab
+    smplayer
+    smtube
 """
