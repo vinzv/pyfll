@@ -9,7 +9,7 @@ packages = """
     compton
     compton-conf-qt5
     dbus-x11
-    gucharmap,
+    gucharmap
     hardinfo
     hexchat
     lxappearance
