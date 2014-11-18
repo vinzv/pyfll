@@ -9,26 +9,17 @@ packages = """
     compton
     compton-conf-qt5
     dbus-x11
+    gucharmap,
     hardinfo
     hexchat
     lxappearance
-    lxqt-about-qt5
-    lxqt-config-qt5
-    lxqt-globalkeys-qt5
-    lxqt-notificationd-qt5
-    lxqt-openssh-askpass-qt5
-    lxqt-panel-qt5
-    lxqt-policykit-qt5
+    lxqt
     #
     # lxqt-power is only available in Qt4
     # and deprecated - but needed for the panel
     # logoff button
     lxqt-power
     #
-    lxqt-powermanagement-qt5
-    lxqt-qtplugin-qt5
-    lxqt-runner-qt5
-    lxqt-session-qt5
     juffed
     network-manager
     nomacs
@@ -39,11 +30,10 @@ packages = """
     pdfviewer
     qbittorrent
     qlipper
-    qterminal-qt5
     qupzilla
     qxkb
     reportbug-ng
-    screengrab
+    screengrab-qt5
     smplayer
     smtube
     shared-mime-info
