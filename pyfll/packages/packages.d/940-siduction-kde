@@ -18,6 +18,7 @@ packages = """
     kate
     kcalc
     kcharselect
+    kcmsystemd
     kde-config-baloo-advanced
     kde-config-cddb
     kde-config-gtk-style

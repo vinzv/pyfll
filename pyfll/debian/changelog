@@ -1,4 +1,4 @@
-pyfll (2013.02+nmu2) UNRELEASED; urgency=low
+pyfll (2013.02+nmu3) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
@@ -86,8 +86,9 @@ pyfll (2013.02+nmu2) UNRELEASED; urgency=low
   [ Ferdinand Thommes ]
   * added plasma-widget-milou to 940-siduction-kde
   * added kde-config-baloo-advanced
+  * added kcmsystemd module for systemsettings
 
- -- Ferdinand Thommes <devil@siduction.org>  Sun, 16 Nov 2014 08:48:53 +0100
+ -- Ferdinand Thommes <devil@siduction.org>  Wed, 19 Nov 2014 12:27:49 +0100
 
 pyfll (2013.01) hesperides; urgency=low
 
