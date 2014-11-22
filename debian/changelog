@@ -1,3 +1,9 @@
+pyfll (2014.11.22) unstable; urgency=medium
+
+  * added networkmanager options for openvpn pptp vnpc to gnome pkglist
+
+ -- Angelescu Ovidiu <convbsd@siduction.org>  Sat, 22 Nov 2014 21:19:01 +0200
+
 pyfll (2014.11.06) unstable; urgency=medium
 
   * moreutils added to 100-debian-cli
