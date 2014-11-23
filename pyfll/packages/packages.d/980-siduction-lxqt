@@ -9,9 +9,6 @@ packages = """
     compton
     compton-conf-qt5
     dbus-x11
-    ## testing only
-    git
-    ## testing only
     gucharmap
     hardinfo
     hexchat
