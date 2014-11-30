@@ -1,0 +1,16 @@
+desc = """
+    Siduction XFCE desktop environment.
+"""
+
+deps = """
+    100-debian-cli
+    200-siduction-cli
+    300-hwsupport
+    500-common-metapackages
+    950-siduction-xfce
+    955-siduction-steam
+"""
+
+packages = """
+	network-manager-gnome
+"""

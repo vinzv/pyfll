@@ -1,0 +1,22 @@
+#!/bin/sh -e
+
+if [ -f /etc/default/distro ]; then
+    . /etc/default/distro
+fi
+
+say() {
+    echo "I: $@..."
+}
+
+do_postinst() {
+
+}
+
+case "${1}" in
+    postinst)
+        do_postinst
+        ;;
+    *)
+        echo "Usage: ${0} postinst"
+        ;;
+esac
