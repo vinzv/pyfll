@@ -9,7 +9,7 @@ say() {
 }
 
 do_postinst() {
-
+  echo "blank postinst"
 }
 
 case "${1}" in

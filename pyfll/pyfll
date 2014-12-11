@@ -193,7 +193,8 @@ class FLLBuilder(object):
         self.log.setLevel(logging.DEBUG)
 
         self.time = datetime.datetime.utcnow()
-
+        self.uuid = self.time.strftime('%Y-%m-%d-%H-%M-%S-00')
+        self.timestamp = self.time.strftime('%Y%m%d%H%M')
 
     def __filterList(self, list, dup_warn = True):
         '''Return a list containing no duplicate items given a list that
@@ -458,7 +459,7 @@ class FLLBuilder(object):
                 raise FllError
             else:
                 self.opts.C = self.conf['sourcedistro']['codename']
-                
+ 
         if self.opts.N not in self.conf['repos']:
             self.log.critical('%s repo not configured in build config' % self.opts.N)
             raise FllError
@@ -1177,10 +1178,8 @@ class FLLBuilder(object):
                 d = self.conf['distro'].keys()
                 d.sort()
                 for k in d:
-                    if k.startswith('FLL_DISTRO_CODENAME_REV') or k == 'FLL_DISTRO_CODENAME':
+                    if k.startswith('FLL_DISTRO_CODENAME'):
                         continue
-                    elif k == 'FLL_DISTRO_CODENAME_SAFE':
-                        f.write('%s="%s"\n' % (k, self.conf['distro'][k]))
                     elif k == 'FLL_MOUNTPOINT':
                         f.write('%s="%s"\n' % (k, self.conf['distro'][k]))
                         test = '$([ -d "$%s" ] && echo live' % k
@@ -1219,6 +1218,9 @@ class FLLBuilder(object):
                 f.write('#!/bin/sh\n')
                 f.write('echo "$0 denied action: \`$1 $2\'" >&2\n')
                 f.write('exit 101\n')
+            elif file == '/tmp/iso_uuid':
+                f.write(self.uuid)
+                self.conf['distro']['FLL_UUID'] = self.uuid
         except IOError:
             self.log.exception('failed to open file for writing: %s' % file)
             raise FllError
@@ -1235,18 +1237,13 @@ class FLLBuilder(object):
         self._writeFile(arch, '/etc/hostname')
         self._writeFile(arch, '/etc/hosts')
         self._writeFile(arch, '/etc/network/interfaces')
+        self._writeFile(arch, '/tmp/iso_uuid')
 
 
     def _distroDefaultEtc(self, arch):
         '''Write the /etc/default/distro file.'''
         self._writeFile(arch, '/etc/default/distro')
 
-
-    def _uuid(self, arch):
-        '''Copy iso_uuid into chroot if we have one'''
-        chroot = os.path.join(self.temp, arch)
-        if os.path.isfile(os.path.join(self.temp, 'staging', 'iso_uuid')):
-            shutil.copy(os.path.join(self.temp, 'staging', 'iso_uuid'), os.path.join(chroot, 'tmp', 'iso_uuid'))
 
     def _finalEtc(self, arch):
         '''Final editing of conffiles in chroot.'''
@@ -1277,7 +1274,14 @@ class FLLBuilder(object):
 
         if os.path.isfile(os.path.join(chroot, 'etc/resolv.conf')) and \
            not os.path.islink(os.path.join(chroot, 'etc/resolv.conf')):
-            self._writeFile(arch, '/etc/resolv.conf')
+            # networkd+resolved so setup symlink and disable fallback DNS
+            try:
+                os.unlink(os.path.join(chroot, 'etc/resolv.conf'))
+                os.symlink('/run/systemd/resolve/resolv.conf', os.path.join(chroot, 'etc/resolv.conf'))
+                with open(os.path.join(chroot, 'etc/systemd/resolved.conf'), 'a') as f:
+                    f.write('DNS=\n')
+            except IOError:
+                self.log.exception('failed to setup resolv.conf and resolved.conf')
 
 
     def _makeInitramfs(self, arch):
@@ -1545,7 +1549,7 @@ class FLLBuilder(object):
                 self._aptGetInstall(arch, archextra,
                                     download_only = True)
             # Generate a basic reprepro conf/distributions.
-            extras = os.path.join(self.temp, 'staging', 'extras')
+            extras = os.path.join(self.temp, arch, 'fll', 'extras')
             extras_conf = os.path.join(extras, 'conf')
             if not os.path.isdir(extras_conf):
                 os.makedirs(extras_conf)
@@ -1888,17 +1892,6 @@ class FLLBuilder(object):
                                   'copy to staging dir.')
                 raise FllError
 
-        message = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'bootloader', 'message')
-        if os.path.isfile(message):
-            self.log.debug('copying grub-gfxboot message file to boot dir')
-            try:
-                shutil.copy(message, boot_dir)
-                message = os.path.join(boot_dir, 'message')
-            except IOError:
-                self.log.exception('failed to copy grub message file to ' +
-                                   'staging dir')
-                raise FllError
-
         if os.path.isdir(os.path.join(chroot, 'usr/lib/grub')):
             data_dir = os.path.join(self.opts.s, 'data')
             grub_dir = os.path.join(boot_dir, 'grub')
@@ -1909,6 +1902,9 @@ class FLLBuilder(object):
               shutil.copy(os.path.join(chroot, 'usr/share/grub/unicode.pf2'), grub_dir)
               shutil.copytree(os.path.join(self.opts.s, 'data/locales'), os.path.join(grub_dir, 'locales'))
               shutil.copytree(os.path.join(self.opts.s, 'data/tz'), os.path.join(grub_dir, 'tz'))
+              theme_dir = 'themes/%s' % self.conf['distro']['FLL_GFXBOOT_THEME']
+              if os.path.isfile(os.path.join(chroot, 'usr/share/grub/%s/theme.txt' % theme_dir)):
+                  shutil.copytree(os.path.join(chroot, 'usr/share/grub/%s' % theme_dir), os.path.join(grub_dir, theme_dir))
 
             gfile_dir = glob.glob(os.path.join(chroot, 'usr/lib/grub/*-pc'))[0]
 
@@ -1918,7 +1914,6 @@ class FLLBuilder(object):
                           if f.endswith('.mod') or f.endswith('.img')
                           or f.endswith('.lst')]
                 gfiles.append(os.path.join(chroot, 'tmp/grub_eltorito'))
-                gfiles.append(os.path.join(chroot, 'tmp/grub_embed'))
             else:
                 gfiles = [os.path.join(gfile_dir, f) for f in os.listdir(gfile_dir)
                           if f.startswith('stage2') or f.startswith('iso9660')]
@@ -1972,8 +1967,6 @@ class FLLBuilder(object):
                 try:
                     cmd = [ 'mformat', '-C', '-f', '2880', '-L', '16', '-i', '/tmp/efi.img', '::' ]
                     self._execInChroot(arch, cmd)
-                    cmd = [ 'mkdir', '-p', '/tmp/efi_img/efi', '::' ]
-                    self._execInChroot(arch, cmd)
                     cmd = [ 'mcopy', '-s', '-i', '/tmp/efi.img', '/tmp/efi_img/efi', '::/' ]
                     self._execInChroot(arch, cmd)
                     shutil.copy(os.path.join(chroot, 'tmp/efi.img'), os.path.join(self.temp, 'staging'))
@@ -1981,7 +1974,7 @@ class FLLBuilder(object):
                     uuid_dir = os.path.join(chroot, 'tmp/uuid')
                     ufiles = [os.path.join(uuid_dir, f) for f in os.listdir(uuid_dir)]
                     for file in ufiles:
-                        shutil.copy(file, grub_dir)
+                        shutil.copy(file, os.path.join(boot_dir, 'grub'))
                 except IOError:
                     self.log.exception('failed to create efi.img')
                     raise FllError
@@ -2055,15 +2048,24 @@ class FLLBuilder(object):
             if cpu[0:3] == 'amd':
               grubcfg.write('if cpuid -l; then\n')
             grubcfg.write('havekernel="Y"\n')
-            grubcfg.write('\nmenuentry \"%s %s (%s) $kopts\" {\n' % (distro, cpu, vmlinuz.partition('vmlinuz-')[2]))
-            grubcfg.write('	linux /boot/%s boot=fll quiet systemd.show_status=1 $kopts %s\n' % (vmlinuz_r, cmdline))
-            grubcfg.write('	initrd /boot/%s\n' % initrd_r)
+            grubcfg.write('title=""\n')
+            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz_r, cmdline))
+            grubcfg.write(' if [ -n "$title" ] ; then\n')
+            grubcfg.write('  title="$title $kopt";\n')
+            grubcfg.write(' else\n')
+            grubcfg.write('  title="$kopt";\n')
+            grubcfg.write(' fi;\n')
+            grubcfg.write('done\n')
+            grubcfg.write('menuentry --class=%s.%s \"$title\" {' % (distro, cpu))
+            grubcfg.write('# set arguments above with the editor\n')
+            grubcfg.write('linux /boot/$@\n')
+            grubcfg.write('initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             if cpu[0:3] == 'amd':
               grubcfg.write('fi\n')
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
         grubcfg.write('if [ "${havekernel}" != "Y" ]; then\n')
-        grubcfg.write('  menuentry "NO SUITABLE KERNELS AVAILABLE" {\n')
+        grubcfg.write('  menuentry --class=find.none "NO SUITABLE KERNELS AVAILABLE" {echo $@')
         grubcfg.write('  echo "There are no kernels suitable for this machine available."\n')
         grubcfg.write('  echo ""\n')
         grubcfg.write('  if ! cpuid -l; then\n')
@@ -2101,7 +2103,10 @@ class FLLBuilder(object):
         
         self.log.debug('writing variable.cfg for live media')
         grubcfg = open(os.path.join(grub_dir, 'variable.cfg'), 'w')
-        grubcfg.write('imagedir=%s\n' % self.conf['distro']['FLL_IMAGE_DIR'])
+        grub_theme = 'grub/themes/%s/theme.txt' % self.conf['distro']['FLL_GFXBOOT_THEME']
+        if os.path.isfile(os.path.join(boot_dir, grub_theme)):
+            grubcfg.write('grub_theme=/boot/%s\n' % grub_theme)
+        grubcfg.write('timeout=%s\n' % timeout)
         grubcfg.close()
 
     def _writeYabootCfg(self, stage_dir, boot_dir, ppc_dir, kvers,
@@ -2233,7 +2238,7 @@ class FLLBuilder(object):
     def _configBootTimeout(self):
         timeout = self.conf['options'].get('boot_timeout')
         if not timeout:
-            timeout = '30'
+            timeout = '-1'
         return timeout
 
     def _configBootCmdline(self):
@@ -2268,18 +2273,10 @@ class FLLBuilder(object):
         if not os.path.isdir(ppc_dir):
             return
         self.log.debug('writing yaboot config for live media')
-        kvers = self._detectLinuxVersion(stage_dir)
-        if len(kvers) < 1:
-            self.log.critical('failed to find vmlinux to include in grub conf')
-            raise FllError
 
-        timeout = self.conf['options'].get('boot_timeout')
-        if not timeout:
-            timeout = '30'
-
-        cmdline =  self.conf['options'].get('boot_cmdline')
-        if not cmdline:
-            cmdline = 'quiet systemd.show_status=1'
+        kvers = self._configBootKvers(stage_dir)
+        timeout = self._configBootTimeout()
+        cmdline =  self._configBootCmdline()
 
         self._writeYabootCfg(stage_dir, boot_dir, ppc_dir, kvers,
                                timeout, cmdline)
@@ -2342,6 +2339,8 @@ class FLLBuilder(object):
             if dir.endswith('grub') and f.find('stage') >= 0:
                 continue
             if dir.endswith('isolinux') and f.find('isolinux.bin') >= 0:
+                continue
+            if f.find('grub_eltorito') >= 0:
                 continue
             if f.find('iso_uuid') >= 0:
                 continue
@@ -2504,19 +2503,9 @@ class FLLBuilder(object):
             # (4.7*10^9)*(1/1024)
             cmd += ' -hfs-parms MAX_XTCSIZE=18287938'
 
+        cmd += ' --modification-date=%s' % self.uuid.replace("-","")
         if os.path.isfile(os.path.join(stage, 'efi.img')):
-            uuid_file = None
-            uuid = None
-            try:
-                uuid_file = open(os.path.join(stage, 'iso_uuid'), 'r')
-                uuid = uuid_file.read()
-            except IOError:
-                self.log.exception('failed to read iso_uuid file')
-                raise FllError
-            finally:
-                if uuid_file:
-                    uuid_file.close()
-            cmd += ' --modification-date=%s --efi-boot efi.img' % uuid
+            cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image'
 
         cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
         if os.path.isdir(os.path.join(stage, 'boot')):
@@ -2587,7 +2576,6 @@ class FLLBuilder(object):
             self._dpkgAddDivert(arch)
             self._defaultEtc(arch)
             self._distroDefaultEtc(arch)
-            self._uuid(arch)
             self._preseedDebconf(arch)
             self._primeApt(arch)
             self._installPkgs(arch, codename)
