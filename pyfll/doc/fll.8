@@ -1,0 +1,113 @@
+'\" t
+.\"     Title: fll
+.\"    Author: Kel Modderman <kel@otaku42.de>
+.\" Generator: DocBook XSL Stylesheets v1.78.1 <http://docbook.sf.net/>
+.\"      Date: 01/02/2015
+.\"    Manual: \ \&
+.\"    Source: \ \&
+.\"  Language: English
+.\"
+.TH "FLL" "8" "01/02/2015" "\ \&" "\ \&"
+.\" -----------------------------------------------------------------
+.\" * Define some portability stuff
+.\" -----------------------------------------------------------------
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.\" http://bugs.debian.org/507673
+.\" http://lists.gnu.org/archive/html/groff/2009-02/msg00013.html
+.\" ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.ie \n(.g .ds Aq \(aq
+.el       .ds Aq '
+.\" -----------------------------------------------------------------
+.\" * set default formatting
+.\" -----------------------------------------------------------------
+.\" disable hyphenation
+.nh
+.\" disable justification (adjust text to left margin only)
+.ad l
+.\" -----------------------------------------------------------------
+.\" * MAIN CONTENT STARTS HERE *
+.\" -----------------------------------------------------------------
+.SH "NAME"
+fll \- FULLSTORY build script for sid/siduction
+.SH "SYNOPSIS"
+.sp
+\fIfll \-c\fR <config file> [\-b <directory> \-o <directory> \-l <file>] [\-Bdpqv]
+.SH "DESCRIPTION"
+.sp
+fll(8) is a python script that provides a framework to build an ISO Image from the current repositories of sid/siduction\&.
+.SH "OPTIONS"
+.PP
+\-h, \-\-help
+.RS 4
+show this help message and exit
+.RE
+.PP
+\-a <arch>, \-\-arch=<arch>
+.RS 4
+Build architecture, overrides config file\&.
+.RE
+.PP
+\-b <directory>, \-\-build=<directory>
+.RS 4
+Build directory\&. A large amount of free space is required\&.
+.RE
+.PP
+\-B, \-\-binary
+.RS 4
+Do binary build only\&. Disable generation of URI lists\&. Default: False
+.RE
+.PP
+\-c <config file>, \-\-config=<config file>
+.RS 4
+Configuration file\&. This option may be used more than once to process multiple configurations\&. A configuration file must be specified\&.
+.RE
+.PP
+\-d, \-\-debug
+.RS 4
+Enable debug mode\&. Extra output will be to assist in development\&. Default: False
+.RE
+.PP
+\-l <file>, \-\-log=<file>
+.RS 4
+Log debug output to file\&. Note that when logging is enabled, output to the console is buffered\&.
+.RE
+.PP
+\-o <directory>, \-\-output=<directory>
+.RS 4
+Output directory, where the product of this program will be generated\&.
+.RE
+.PP
+\-p <profile>, \-\-profile=<profile>
+.RS 4
+Package profile, overrides config file\&.
+.RE
+.PP
+\-P, \-\-preserve
+.RS 4
+Preserve build directory\&. Disable automatic cleanup of the build area at exit\&.
+.RE
+.PP
+\-q, \-\-quiet
+.RS 4
+Enable quiet mode\&. Only high priority messages will be generated\&.
+.RE
+.PP
+\-v, \-\-verbose
+.RS 4
+Enable verbose mode\&. All messages will be generated, such as announcing current operation\&.
+.RE
+.SH "AUTHOR"
+.sp
+Kel Modderman <kel@otaku42\&.de>
+.SH "RESOURCES"
+.sp
+FULLSTORY Homepage: http://developer\&.berlios\&.de/projects/fullstory/ pyfll: git\&.siduction\&.org/?p=packages/pyfll\&.git
+.SH "COPYING"
+.sp
+Copyright (C) 2007 Kel Modderman\&. Free use of this software is granted under the terms of the GNU General Public License (GPL) version 2, or at your choice, any later version
+.SH "AUTHOR"
+.PP
+\fBKel Modderman\fR <\&kel@otaku42\&.de\&>
+.RS 4
+Author.
+.RE

@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+#!/usr/bin/python -t
 # -*- coding: utf-8 -*-
 
 __author__    = 'Kel Modderman'
@@ -526,6 +526,7 @@ class FLLBuilder(object):
             self.env['ftp_proxy'] = self.conf['options']['ftp_proxy']
 
         self.conf['options'].setdefault('apt_preferences', None)
+        self.conf['options'].setdefault('apt_configuration', None)
         self.conf['options'].setdefault('apt_recommends', 'no')
         self.conf['options'].setdefault('media_include', None)
 
@@ -661,7 +662,7 @@ class FLLBuilder(object):
 
         depfile = os.path.join(dir, 'packages.d', '999-finalize.postinst')
 
-	pkgs['postinst'].append(depfile)
+        pkgs['postinst'].append(depfile)
 
 
         self.log.debug('package summary for %s:' % arch)
@@ -1070,6 +1071,22 @@ class FLLBuilder(object):
                 self.log.error('apt preferences file failed to copy: %s' %
                                apt_preferences)
                 raise FllError
+
+
+
+
+        apt_configuration = self.conf['options']['apt_configuration']
+        if apt_configuration:
+            self.log.info('importing apt configuration file')
+            try:
+                shutil.copy(apt_configuration, os.path.join(chroot, 'etc/apt/'))
+            except IOError:
+                self.log.error('apt configuration file failed to copy: %s' %
+                               apt_configuration)
+                raise FllError
+
+
+
 
         self.log.debug('removing sources.list from %s chroot' % arch)
         list = os.path.join(chroot, 'etc/apt/sources.list')

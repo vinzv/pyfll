@@ -1,3 +1,0 @@
-Package: *
-Pin: release n=experimental,o=Siduction
-Pin-Priority: 1000

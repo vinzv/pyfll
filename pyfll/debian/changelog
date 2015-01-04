@@ -50,6 +50,21 @@ pyfll (2013.02+nmu3) UNRELEASED; urgency=low
   * move alsa-utils from hwsupport-extra to hwsupport-essential, it's required
     to set up audio mixers since alsa-base is gone.
   * drop temporary init overrides, systemd is now installed without them.
+  * distro.postinst: stop now obsolete displaymanager dance.
+  * drop vbetool from hwsupport-extra.
+  * fix up lamp package selection.
+  * exclude grub_eltorito from md5sum generation, it's modified after the
+    fact.
+  * hwsupport-powermanagement: drop pm-utils, acpi-support-base
+  * s/kbattleship/knavalbattle/
+  * don't modify lvm.conf anymore, it's been a no-op for a while already.
+  * fix memtest86+ entry for live grub.cfg.
+  * drop obsolete packages.d/bootchart.
+  * remove support for dmsetup based rootfs.
+  * drop obsolete FLL_UNION_MODULE definitions.
+  * switch to plymouth ("details" theme) for console multiplexing.
+  * improve grub2 preseeding for the installed system.
+  * drop unused FLL_DISTRO_URL variable.
 
   [ Joaquim Boura ]
   * cleaned up xfce4-desktop-min
@@ -78,6 +93,22 @@ pyfll (2013.02+nmu3) UNRELEASED; urgency=low
   * add i386-efi to kernel command line when booted under it
   * add grub2-fll-portable-efi to extras
   * add part_gpt to built in modules for cd efi loader (for detect efi anyway)
+  * create /disks to reflect changed fstab_generator
+  * enable networkd, resolved, timesyncd (drop ntpdate and resolvconf)
+    - setup symlink for resolved and stop it having any fallback DNS servers
+  * use xorriso newer grub2 boot handling and simplify things
+    - drop our grub_eltorito hackery and just build a grub2 eltorito image
+    - drop grub_embed hackery and use existing grub_hybrid.img
+    - drop to single set of efis as in efi.img
+    - detect fromhd in grub itself
+    - handle uuid creation in pyfll itself not grub
+  * grub menu
+    - start hotkeys and classes
+    - make more editor friendly
+    - add local kernel command line option menu(s)
+    - clock always at start, lang before default (kernel)
+  * add internal gpthybrid
+  * add secondary squashfs
 
   [ Roland Engert ]
   * add initial razorqt profile 
