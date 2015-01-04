@@ -1,2 +1,2 @@
-time ./pyfll/fll -vv -c ./pyfll/xfce_current_i386.conf
+time ./pyfll/fll -vv -c ./pyfll/conf/xfce_current_i386.conf
 
