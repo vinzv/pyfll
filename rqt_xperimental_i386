@@ -1,2 +1,2 @@
-time ./pyfll/fll -vvvv -c ./pyfll/rqt_xperimental_i386.conf
+time ./pyfll/fll -vvvv -c ./pyfll/conf/rqt_xperimental_i386.conf
 

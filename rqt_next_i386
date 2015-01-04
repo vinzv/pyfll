@@ -1,2 +1,2 @@
-time ./pyfll/fll -vv -c ./pyfll/rqt_next_i386.conf
+time ./pyfll/fll -vv -c ./pyfll/conf/rqt_next_i386.conf
 
