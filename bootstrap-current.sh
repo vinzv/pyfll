@@ -2,9 +2,9 @@
 
 set -e
 
-CODENAME="Indian Summer"
-CODENAME_SAFE="indiansummer"
-VERSION="14.1.0"
+CODENAME="White Room"
+CODENAME_SAFE="whiteroom"
+VERSION="15.1.0"
 
 cd pyfll/templates
 for TEMPLATE in *current*; do
