@@ -1,2 +1,2 @@
-time ./pyfll/fll -vv -c ./pyfll/conf/gnome_current_i386.conf
+time ./pyfll/fll -vv -c /etc/pyfll/conf/gnome_current_i386.conf
 
