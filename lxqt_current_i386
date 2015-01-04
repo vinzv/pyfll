@@ -1,2 +1,2 @@
-time ./pyfll/fll -vv -c ./pyfll/lxqt_current_i386.conf
+time ./pyfll/fll -vv -c ./pyfll/conf/lxqt_current_i386.conf
 
