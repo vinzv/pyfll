@@ -1,1 +1,1 @@
-time ./pyfll/fll -vv -c ./pyfll/kde_plasma5_next_amd64.conf
+time ./pyfll/fll -vv -c ./pyfll/conf/kde_plasma5_next_amd64.conf

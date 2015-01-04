@@ -1,1 +1,1 @@
-time eatmydata ./pyfll/fll -vv -c ./pyfll/kde_xperimental_amd64.conf
+time eatmydata ./pyfll/fll -vv -c ./pyfll/conf/kde_xperimental_amd64.conf
