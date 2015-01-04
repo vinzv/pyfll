@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## defaults
+options="-vv" 
+confpath="./pyfll/"
+flavour=gnome
+release=current
+arch=amd64
+
+
+time ./pyfll/fll -vv -c ${confpath}${flavour}_${release}_${arch}.conf
