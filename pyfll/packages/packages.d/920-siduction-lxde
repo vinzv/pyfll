@@ -39,7 +39,7 @@ packages = """
     audacious-plugins
 
     ## Qt Applications
-    screengrab
+    screengrab-legacy
     smplayer
     smtube
 """
