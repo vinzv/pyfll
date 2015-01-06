@@ -1,2 +1,0 @@
-time ./pyfll/fll -vv -c /etc/pyfll/conf/rqt_current_i386.conf
-

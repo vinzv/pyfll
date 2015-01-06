@@ -1,2 +1,0 @@
-time ./pyfll/fll -vv -c /etc/pyfll/conf/rqt_next_i386.conf
-

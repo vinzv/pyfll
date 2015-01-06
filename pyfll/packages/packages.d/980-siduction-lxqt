@@ -33,7 +33,7 @@ packages = """
     qupzilla
     qxkb
     reportbug-ng
-    screengrab-qt5
+    screengrab
     smplayer
     smtube
     shared-mime-info

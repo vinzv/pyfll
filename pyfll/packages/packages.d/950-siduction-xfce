@@ -90,7 +90,7 @@ packages = """
     zenity
 
     # Qt4 Packages
-    screengrab
+    screengrab-legacy
     smplayer
     smtube
 """
