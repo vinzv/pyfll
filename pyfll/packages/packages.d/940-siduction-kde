@@ -13,6 +13,7 @@ packages = """
     iceweasel
     libk3b6-extracodecs
     k3b-i18n
+    libkactivities-bin
     kaffeine
     kamoso
     kate
