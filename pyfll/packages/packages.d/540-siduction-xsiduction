@@ -1,0 +1,14 @@
+desc = """
+    Siduction-XSiduction
+"""
+
+packages = """
+    # siduction-meta-xsiduction
+    configure-cups
+    fonts-droid
+    gparted
+    siduction-bug-report
+    sidu-disk-center
+    siduction-dynamic-dms
+    xdg-browser-launcher
+"""

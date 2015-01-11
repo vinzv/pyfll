@@ -1,0 +1,33 @@
+desc = """
+    Siduction-XDebian
+"""
+
+packages = """
+    # siduction-meta-xdebian
+    acpi-support
+    cups-pdf
+    feh
+    foomatic-db-gutenprint
+    galternatives
+    gksu
+    gnome-themes-standard
+    gtk2-engines
+    gtk2-engines-pixbuf
+    gvfs-bin
+    gvfs-backends
+    ghostscript-x
+    hplip
+    imagemagick
+    libav-tools
+    libsane-extras
+    ntfs-config
+    printer-driver-gutenprint
+    printer-driver-splix
+    python-notify
+    scrot
+    system-config-printer-udev
+    systemd-ui
+    xterm
+    zenity
+    zim
+"""

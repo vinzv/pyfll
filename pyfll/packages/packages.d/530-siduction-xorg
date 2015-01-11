@@ -1,0 +1,55 @@
+desc = """
+    Siduction-Xorg
+   
+"""
+
+packages = """
+    # predepends
+    fontconfig
+    fontconfig-config
+    xserver-xorg-video-vesa
+    # 
+    dmz-cursor-theme
+    fonts-liberation
+    fonts-dejavu-core
+    fonts-dejavu-extra
+    gnupg-agent
+    libegl1-mesa-drivers
+    libgl1-mesa-dri
+    libgles2-mesa
+    libtxc-dxtn-s2tc0
+    libva-x11-1
+    libwayland-egl1-mesa
+    libx11-protocol-perl
+    libxcb-composite0
+    libxcb-damage0
+    libxcb-image0
+    libxcb-keysyms1
+    libxcb-randr0
+    libxcb-xtest0
+    libxcb-xv0
+    menu
+    mesa-utils
+    va-driver-all
+    x11-utils
+    x11-session-utils
+    x11-xfs-utils
+    x11-xserver-utils
+    xauth
+    xinit
+    xfonts-100dpi
+    xfonts-base
+    xfonts-utils
+    xserver-xorg
+    xserver-xorg-input-all
+    xserver-xorg-input-vmmouse
+    xserver-xorg-input-wacom
+    xserver-xorg-video-ati
+    xserver-xorg-video-fbdev
+    xserver-xorg-video-intel
+    xserver-xorg-video-mga
+    xserver-xorg-video-modesetting
+    xserver-xorg-video-nouveau
+    xserver-xorg-video-qxl
+    xserver-xorg-video-vmware
+"""
