@@ -20,13 +20,19 @@ packages = """
     imagemagick
     libav-tools
     libsane-extras
+    myspell-de-de
+    myspell-en-us
+    myspell-pt-br
     ntfs-config
     printer-driver-gutenprint
     printer-driver-splix
     python-notify
+    sane
+    sane-utils
     scrot
     system-config-printer-udev
     systemd-ui
+    xsane
     xterm
     zenity
     zim
