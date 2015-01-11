@@ -10,19 +10,13 @@ packages = """
         engrampa
         eom
         exaile
-        ### exaile suggests
-        gstreamer0.10-plugins-ugly
-        gstreamer0.10-plugins-bad
-        ####
         gnome-calculator
         gnome-icon-theme
         gnome-icon-theme-extras
         gnome-keyring
         gstreamer1.0-plugins-bad
-        gvfs-backends
         hexchat
         iceweasel
-        libcanberra-pulse
         mate-applets
         mate-desktop-environment-core
         mate-desktop-environment

@@ -22,6 +22,7 @@ packages = """
     #
     juffed
     network-manager
+    network-manager-gnome
     nomacs
     obconf-qt5
     openbox-themes
