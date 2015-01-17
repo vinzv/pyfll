@@ -14,12 +14,6 @@ packages = """
     hexchat
     lxappearance
     lxqt
-    #
-    # lxqt-power is only available in Qt4
-    # and deprecated - but needed for the panel
-    # logoff button
-    lxqt-power
-    #
     juffed
     network-manager
     network-manager-gnome
