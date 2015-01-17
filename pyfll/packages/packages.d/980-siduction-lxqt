@@ -7,7 +7,6 @@ packages = """
     gnome-keyring
     clementine
     compton
-    compton-conf-qt5
     dbus-x11
     gucharmap
     hardinfo
@@ -18,10 +17,8 @@ packages = """
     network-manager
     network-manager-gnome
     nomacs
-    obconf-qt5
     openbox-themes
     oxygen-icon-theme
-    pcmanfm-qt5
     pdfviewer
     qbittorrent
     qlipper
