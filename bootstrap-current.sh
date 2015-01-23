@@ -2,8 +2,8 @@
 
 set -e
 
-CODENAME="White Room"
-CODENAME_SAFE="whiteroom"
+CODENAME="Indian Summer"
+CODENAME_SAFE="indiansummer"
 VERSION="15.1.0"
 
 cd pyfll/templates
