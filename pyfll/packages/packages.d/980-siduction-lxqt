@@ -6,6 +6,7 @@ packages = """
     2048-qt
     gnome-keyring
     clementine
+    cmst
     compton
     dbus-x11
     gucharmap
@@ -14,8 +15,6 @@ packages = """
     lxappearance
     lxqt
     juffed
-    network-manager
-    network-manager-gnome
     nomacs
     openbox-themes
     oxygen-icon-theme
