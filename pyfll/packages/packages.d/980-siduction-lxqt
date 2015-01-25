@@ -6,6 +6,8 @@ packages = """
     2048-qt
     gnome-keyring
     clementine
+    connman
+    connman-vpn
     cmst
     compton
     dbus-x11
