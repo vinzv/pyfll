@@ -10,7 +10,7 @@ deps = """
     520-siduction-xdebian
     530-siduction-xorg
     540-siduction-xsiduction
-    940-siduction-plasma5
+    942-siduction-kde5
 """
 
 packages = """
