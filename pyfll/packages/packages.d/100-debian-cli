@@ -132,8 +132,8 @@ packages = """
     vnstat
     vpnc
     weechat
-    weechat-scripts
-    weechat-plugins
+#    weechat-scripts
+#    weechat-plugins
     wget
     whohas
     whowatch
