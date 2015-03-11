@@ -10,16 +10,16 @@ packages = """
     gstreamer0.10-plugins-good
     gstreamer0.10-plugins-bad
     gstreamer0.10-plugins-ugly
-#    gstreamer0.10-pulseaudio
+    gstreamer0.10-pulseaudio
     gstreamer0.10-tools
     gstreamer0.10-x
     libcanberra-gstreamer
     paman
-#    paprefs
-#    pavucontrol
-#    pulseaudio
-#    pulseaudio-module-bluetooth
-#    pulseaudio-module-x11
-#    libcanberra-pulse
+    paprefs
+    pavucontrol
+    pulseaudio
+    pulseaudio-module-bluetooth
+    pulseaudio-module-x11
+    libcanberra-pulse
     libfftw3-bin
 """

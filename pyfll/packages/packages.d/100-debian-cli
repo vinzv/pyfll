@@ -122,7 +122,7 @@ packages = """
     strace
     sudo
     sysv-rc-conf
-    # broken 2015-01-11 testdisk
+    testdisk
     tofrodos
     tree
     traceroute
@@ -131,9 +131,10 @@ packages = """
     vim
     vnstat
     vpnc
-    weechat
-#    weechat-scripts
-#    weechat-plugins
+    weechat-curses
+    weechat-core
+    weechat-scripts
+    weechat-plugins
     wget
     whohas
     whowatch
