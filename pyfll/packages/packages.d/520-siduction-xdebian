@@ -14,9 +14,9 @@ packages = """
     gtk2-engines
     gtk2-engines-pixbuf
     gvfs-bin
-    gvfs-backends
+    # gvfs-backends broken in experimental
     ghostscript-x
-    hplip
+    # hplip broken in experimental
     imagemagick
     libav-tools
     libsane-extras
@@ -27,12 +27,12 @@ packages = """
     printer-driver-gutenprint
     printer-driver-splix
     python-notify
-    sane
-    sane-utils
+    # sane broken in experimental
+    # sane-utils broken in experimental
     scrot
     system-config-printer-udev
     systemd-ui
-    xsane
+    # xsane broken in experimental
     xterm
     zenity
     zim

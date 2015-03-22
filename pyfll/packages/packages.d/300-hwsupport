@@ -11,7 +11,7 @@ packages = """
     bluetooth
     bluez
     br2684ctl
-    colord
+    # colord broken in experimental
     colord-data
     cpufrequtils
     crda
