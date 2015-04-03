@@ -7,6 +7,9 @@ packages = """
     amd64-microcode
     intel-microcode
     iucode-tool
+ 
+    # Video decoder
+    firmware-crystalhd 
 
     # Wired and Wireless
     # atmel-firmware
@@ -17,9 +20,8 @@ packages = """
     firmware-bnx2      
     firmware-bnx2x     
     firmware-brcm80211 
-    # firmware-chrystalhd
     firmware-intelwimax
-    firmware-ipw2x00 
+    # firmware-ipw2x00 manuell, da frage von dpkg
     firmware-iwlwifi 
     firmware-libertas
     firmware-linux-nonfree 
