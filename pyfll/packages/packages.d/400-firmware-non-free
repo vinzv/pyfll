@@ -17,10 +17,9 @@ packages = """
     firmware-bnx2      
     firmware-bnx2x     
     firmware-brcm80211 
-    firmware-chrystalhd
+    # firmware-chrystalhd
     firmware-intelwimax
     firmware-ipw2x00 
-    firmware-ipw3945 
     firmware-iwlwifi 
     firmware-libertas
     firmware-linux-nonfree 
