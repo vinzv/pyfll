@@ -1,0 +1,34 @@
+desc = """
+    Packages that provide some kind of non-free, but distributable firmware.
+"""
+
+packages = """
+    # Processor
+    amd64-microcode
+    intel-microcode
+    iucode-tool
+
+    # Wired and Wireless
+    # atmel-firmware
+    b43-fwcutter
+    firmware-atheros             
+    firmware-b43-installer       
+    firmware-b43legacy-installer 
+    firmware-bnx2      
+    firmware-bnx2x     
+    firmware-brcm80211 
+    firmware-chrystalhd
+    firmware-intelwimax
+    firmware-ipw2x00 
+    firmware-ipw3945 
+    firmware-iwlwifi 
+    firmware-libertas
+    firmware-linux-nonfree 
+    firmware-myricom
+    firmware-netxen 
+    firmware-qlogic 
+    firmware-ralink 
+    firmware-realtek
+    firmware-ti-connectivity
+    firmware-zd1211
+"""
