@@ -1,4 +1,4 @@
-#!/usr/bin/python -t
+#!/usr/bin/python -tt
 # -*- coding: utf-8 -*-
 
 __author__    = 'Kel Modderman'
@@ -1845,10 +1845,11 @@ class FLLBuilder(object):
             self._execInChroot(arch, cmd)
             return
 
-        if os.path.isfile(os.path.join(chroot, 'squash', '%s' % image_file)):
-            cmd = ['mksquashfs', 'squash', image_file, '-noappend']
-        else:
-            cmd = ['mksquashfs', '.', image_file, '-noappend']
+        cmd = ['mksquashfs', '.', image_file, '-noappend']
+
+        exclude_file = os.path.join(self.opts.s, 'data', 'fll_sqfs_exclusion')
+        shutil.copy(exclude_file, os.path.join(chroot, 'tmp'))
+        cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
 
         # set compression algorithm for squashfs-tools >= 4.1
         squashfs_comp = self.conf['options'].get('squashfs_comp')
@@ -1861,9 +1862,6 @@ class FLLBuilder(object):
                 elif arch == 'powerpc' or arch == 'ppc64':
                     cmd.extend(['-Xbcj', 'powerpc'])
         
-        if not os.path.isfile(os.path.join(chroot, 'squash', '%s' % image_file)):
-            cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
-
         if self.opts.l or self.opts.q:
             cmd.append('-no-progress')
 
