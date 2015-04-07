@@ -1713,127 +1713,6 @@ class FLLBuilder(object):
         os.path.walk(os.path.join(chroot, 'var/log'), self._zerologs, arch)
 
 
-    def _chrootImageFS(self, arch):
-        '''Make filesystem image of chroot.'''
-        chroot = os.path.join(self.temp, arch)
-
-        # exclusion file needed even if imaging isn't
-        # TODO rename away from sqfs
-        exclude_file = os.path.join(self.opts.s, 'data', 'fll_sqfs_exclusion')
-        shutil.copy(exclude_file, os.path.join(chroot, 'tmp'))
-
-        # no imagefs for aufs/unionfs
-        if 'FLL_UNION_MODULE' in self.conf['distro'] and len(self.conf['distro']['FLL_UNION_MODULE']) and self.conf['distro']['FLL_UNION_MODULE'] != "dmsetup":
-            return
-
-        # rsync needs absolute paths in exclude-file
-        exclusion_file = os.path.join(chroot, 'tmp', 'fll_sqfs_exclusion')
-        try:
-            exclusion_handle = open(exclusion_file, 'r')
-            exclusion_data = exclusion_handle.read()
-            exclusion_handle.close()
-            exclusion_handle = open(exclusion_file, 'w')
-            for line in exclusion_data.splitlines():
-                exclusion_handle.write('/%s\n' % line)
-        except IOError:
-            self.log.exception('error rewriting squashfs exclusion file')
-            raise FllError
-        finally:
-            if exclusion_handle:
-                exclusion_handle.close()
-
-        image_fs = 'ext4'
-        if ( 'FLL_IMAGE_FS' in self.conf['distro'] and len(self.conf['distro']['FLL_IMAGE_FS'])):
-            image_fs = self.conf['distro']['FLL_IMAGE_FS']
-
-        self.log.info('creating %s filesystem of %s chroot...' % (image_fs, arch))
-        image_file = self._getDistroImageFile(arch)
-
-        # create a dir for the image
-        cmd = ['mkdir', 'squash']
-        self._execInChroot(arch, cmd)
-
-        # Dummy build, just touch the image_file and return
-        if self.opts.D:
-            cmd = ['touch', os.path.join('squash', image_file)]
-            self._execInChroot(arch, cmd)
-            return
-
-        # 16G default is abitrary and large
-        image_size = 16 * 1024
-        if ( 'FLL_IMAGE_MB' in self.conf['distro'] and len(self.conf['distro']['FLL_IMAGE_MB'])):
-            image_size = int(self.conf['distro']['FLL_IMAGE_MB'])
-        
-        # create the fs image
-        # makes a sparse file which has to be bigger then target fs
-        cmd = ['dd', 'if=/dev/zero', 'of=%s' % os.path.join(chroot, 'squash', image_file), 'bs=1K', 'seek=%s' % (image_size*1024-1), 'count=1']
-        self._execCmd(cmd)
-
-        # Get free loop device
-        try:
-            retv = Popen(['losetup', '-f'],bufsize=1024, stdout=PIPE,
-                         stderr=STDOUT, preexec_fn=restore_sigpipe,
-                         close_fds = True)
-            rest = retv.communicate()
-            if rest[1] != None or rest[0] == None :
-                self.log.critical('failed to find a loop device: %s' % rest[1])
-            fsloop = rest[0][:-1]
-        except IOError:
-            self.log.exception('failed to retrieve free loop device from losetup')
-            raise FllError
-
-        # setup the loop device on the image file
-        cmd = ['losetup', fsloop, os.path.join(chroot, 'squash', image_file)]
-        self._execCmd(cmd)
-
-        # create the fs in the loop device
-        cmd = ['mkfs.%s' % image_fs]
-        if image_fs == 'ext3' or image_fs == 'ext4' :
-            cmd.append('-O')
-            cmd.append('^has_journal')
-        elif image_fs == 'jfs' :
-            cmd.append('-f')
-        elif image_fs == 'reiserfs' :
-            cmd.append('-f')
-        cmd.append(fsloop)
-        self._execCmd(cmd)
-        # we don't want fsck running on the live image
-        if image_fs[:3] == 'ext' :
-            cmd = ['tune2fs', '-c', '0', fsloop]
-            self._execCmd(cmd)
-
-        # drop the manual loop device
-        # XXX: work around "losetup -d" breakage
-        cmd = ['losetup', '-d', fsloop]
-        for i in range(0, 59):
-            try:
-                self._execCmd(cmd)
-            except:
-                self.log.info('Loop device still busy (%i seconds)!' % (i + 1))
-                time.sleep(1)
-                continue
-            finally:
-                self.log.info('successfully detached loop device: %s' % fsloop)
-                break
-            self.log.critical('failed to drop loop device: %s' % fsloop)
-            raise FllError
-       
-        # create a dir, loop mount squash/image_file on it and rsync in chroot
-        fs_image_mnt='%s.mnt' % image_file
-        cmd = ['mkdir', fs_image_mnt]
-        self._execInChroot(arch, cmd)
-        cmd = ['mount', '-t', image_fs, '-o', 'loop', os.path.join(chroot, 'squash', image_file), os.path.join(chroot, fs_image_mnt)]
-        # execCmd to leave it mounted, next execInChroot will umount it
-        self._execCmd(cmd)
-        # copy in to the loop with rsync using the "squashfs" exclusion list
-        # also exclude the squash dir itself
-        # TODO rename away from sqfs
-        self.log.info('rsync: move chroot into loop image.')
-        cmd = ['rsync', '-a', '--exclude=squash', '--exclude=%s' % fs_image_mnt, '--exclude-from=/tmp/fll_sqfs_exclusion', '.', fs_image_mnt]
-        self._execInChroot(arch, cmd)
-        # get rid of the mount point
-        self._nuke(os.path.join(chroot, fs_image_mnt))
-
     def _chrootSquashfs(self, arch):
         '''Make squashfs filesystem image of chroot.'''
         self.log.info('creating squashfs filesystem of %s chroot...' % arch)
@@ -1849,6 +1728,9 @@ class FLLBuilder(object):
             cmd = ['mksquashfs', 'squash', image_file, '-noappend']
         else:
             cmd = ['mksquashfs', '.', image_file, '-noappend']
+        exclude_file = os.path.join(self.opts.s, 'data', 'fll_sqfs_exclusion')
+        shutil.copy(exclude_file, os.path.join(chroot, 'tmp'))
+        cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion'])
 
         # set compression algorithm for squashfs-tools >= 4.1
         squashfs_comp = self.conf['options'].get('squashfs_comp')
@@ -1861,13 +1743,55 @@ class FLLBuilder(object):
                 elif arch == 'powerpc' or arch == 'ppc64':
                     cmd.extend(['-Xbcj', 'powerpc'])
         
-        if not os.path.isfile(os.path.join(chroot, 'squash', '%s' % image_file)):
-            cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
-
         if self.opts.l or self.opts.q:
             cmd.append('-no-progress')
 
         self._execInChroot(arch, cmd)
+
+
+    def secondSquashfs(self):
+        '''Make squashfs filesystem image of non chroot other material.'''
+        if self.opts.D:
+            return
+        self.log.info('creating secondary squashfs filesystem')
+        stage = os.path.join(self.temp, 'staging')
+        sqfs_file = os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])
+        excl_file = os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], '%s.2.excl' % self.conf['distro']['FLL_IMAGE_FILE'])
+        excl = open(excl_file, 'w')
+        excl.write('autorun.inf\n')
+        excl.write('boot\n')
+        excl.write('boot/*\n')
+        excl.write('boot.catalog\n')
+        excl.write('cdrom.ico\n')
+        excl.write('efi\n')
+        excl.write('efi/*\n')
+        excl.write('efi.img\n')
+        excl.write('iso_uuid\n')
+        excl.write('%s\n' % self.conf['distro']['FLL_IMAGE_DIR'])
+        excl.write('%s/*\n' % self.conf['distro']['FLL_IMAGE_DIR'])
+        excl.close()
+        cmd = ['mksquashfs', stage, sqfs_file, '-noappend']
+        cmd.extend(['-wildcards', '-ef', excl_file])
+
+        # set compression algorithm for squashfs-tools >= 4.1
+        squashfs_comp = self.conf['options'].get('squashfs_comp')
+        if squashfs_comp in ['gzip', 'lzo', 'xz']:
+            self.log.info('using squashfs(%s)...' % squashfs_comp)
+            cmd.extend(['-comp', '%s' % squashfs_comp])
+            if squashfs_comp == 'xz':
+                arch = self.conf['archs'].keys()[0]
+                if arch == 'amd64' or arch == 'i386':
+                    cmd.extend(['-Xbcj', 'x86'])
+                elif arch == 'powerpc' or arch == 'ppc64':
+                    cmd.extend(['-Xbcj', 'powerpc'])
+        
+        if self.opts.l or self.opts.q:
+            cmd.append('-no-progress')
+
+        self._execCmd(cmd)
+        self._nuke(os.path.join(stage,'extras'))
+        self._nuke(os.path.join(stage,'i18n'))
+        os.unlink(excl_file)
 
 
     def _stageArch(self, arch):
@@ -1996,7 +1920,7 @@ class FLLBuilder(object):
                     self.log.exception('failed to create efi.img')
                     raise FllError
 
-        isolinux = os.path.join(chroot, 'usr/lib/syslinux/isolinux.bin')
+        isolinux = os.path.join(chroot, 'usr/lib/ISOLINUX/isolinux.bin')
         if os.path.isfile(isolinux):
             try:
                stage_dir = os.path.join(self.temp, 'staging')
@@ -2004,8 +1928,74 @@ class FLLBuilder(object):
                if not os.path.isdir(syslinux_dir):
                    os.mkdir(syslinux_dir, 0755)
                shutil.copy(isolinux, syslinux_dir)
-	       gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
-               shutil.copy(gfxboot, syslinux_dir)
+               isolinux_path = os.path.join(chroot, 'usr/lib/syslinux/modules/bios')
+               # list(set([ uniquifys the list so each line can have the deps
+                   #'advdump',
+                   #'complex', 'libcom32', 'libmenu', 'libutil',
+                   #'display', 'libmenu', 'libutil', 'libcom32'
+                   #'entrydump',
+                   #'fancyhello', 'libutil',
+                   #'hello',
+                   #'keytest', 'libutil',
+                   #'localboot', 'libcom32',
+                   #'resolv',
+                   #'serialinfo',
+                   #'simple', 'libmenu', 'libutil', 'libcom32',
+                   #'test', 'libmenu', 'libutil', 'libcom32',
+                   #'test2', 'libmenu', 'libutil', 'libcom32',
+               for syslinux_file in list(set([
+                   'cat',
+                   'chain', 'libutil', 'libcom32',
+                   'cmd', 'libcom32',
+                   'config','libcom32',
+                   'cptime','libutil',
+                   'cpuid',
+                   'cpuidtest', 'libgpl',
+                   'debug',
+                   'disk', 'libgpl',
+                   'dmitest', 'libgpl',
+                   'elf', 'libcom32',
+                   'ethersel', 'libcom32',
+                   'gfxboot', 'libcom32',
+                   'gpxecmd', 'libcom32',
+                   'hdt', 'libutil', 'libgpl', 'libcom32', 'libmenu',
+                   'hexdump', 'libcom32',
+                   'host', 'libcom32',
+                   'ifcpu', 'libutil', 'libgpl', 'libcom32',
+                   'ifcpu64', 'libcom32',
+                   'ifmemdsk', 'libcom32',
+                   'ifplop', 'libcom32',
+                   'kbdmap', 'libcom32',
+                   'kontron_wdt', 'libcom32',
+                   'ldlinux',
+                   'libcom32',
+                   'libgpl',
+                   'liblua',
+                   'libmenu', 'libutil', 'libcom32',
+                   'libutil',
+                   'linux', 'libcom32',
+                   'ls',
+                   'lua', 'liblua', 'libgpl', 'libcom32',
+                   'mboot', 'libcom32',
+                   'meminfo',
+                   'menu', 'libutil',
+                   'pcitest', 'libcom32',
+                   'pmload', 'libcom32',
+                   'poweroff',
+                   'prdhcp', 'libutil', 'libcom32',
+                   'pwd',
+                   'pxechn', 'libutil', 'libcom32',
+                   'reboot', 'libcom32',
+                   'rosh', 'libutil', 'libcom32',
+                   'sanboot', 'libcom32',
+                   'sdi', 'libcom32',
+                   'sysdump', 'libcom32',
+                   'vesainfo',
+                   'vesamenu', 'libutil', 'libcom32',
+                   'vpdtest', 'libgpl',
+                   'whichsys', 'libcom32',
+                   'zzjson', 'libgpl' ])):
+                   shutil.copy(os.path.join(isolinux_path, '%s.c32' % syslinux_file), syslinux_dir)
                bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
                bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
                for file in bootlogo:
@@ -2059,14 +2049,11 @@ class FLLBuilder(object):
                     self.log.critical('%s was not found in %s' % (f, boot_dir))
                     raise FllError
 
-            vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-            initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-
             if cpu[0:3] == 'amd':
               grubcfg.write('if cpuid -l; then\n')
             grubcfg.write('havekernel="Y"\n')
             grubcfg.write('title=""\n')
-            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz_r, cmdline))
+            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz[8:], cmdline))
             grubcfg.write(' if [ -n "$title" ] ; then\n')
             grubcfg.write('  title="$title $kopt";\n')
             grubcfg.write(' else\n')
@@ -2075,8 +2062,8 @@ class FLLBuilder(object):
             grubcfg.write('done\n')
             grubcfg.write('menuentry --class=%s.%s \"$title\" {' % (distro, cpu))
             grubcfg.write('# set arguments above with the editor\n')
-            grubcfg.write('linux /boot/$@\n')
-            grubcfg.write('initrd /boot/%s\n' % initrd_r)
+            grubcfg.write('linux /boot/vmlinuz-$@\n')
+            grubcfg.write('initrd /boot/%s\n' % initrd)
             grubcfg.write('}\n')
             if cpu[0:3] == 'amd':
               grubcfg.write('fi\n')
@@ -2103,13 +2090,6 @@ class FLLBuilder(object):
         grubcfg.write('  menu_reload\n')
         grubcfg.write('  }\n')
         grubcfg.write('fi\n')
-
-        if os.path.isfile(os.path.join(boot_dir, 'memtest')):
-            grubcfg.write('if ! is_efi ; then\n')
-            grubcfg.write('  menuentry \"Memory test (memtest86+)\" {\n')
-            grubcfg.write('    linux16 /boot/memtest\n')
-            grubcfg.write('  }\n')
-            grubcfg.write('fi\n')
 
         grubcfg.close()
         
@@ -2309,30 +2289,6 @@ class FLLBuilder(object):
             self._writeYabootWrap()
         if self.opts.D:
             return
-        stage_dir = os.path.join(self.temp, 'staging')
-        boot_dir = os.path.join(stage_dir, 'boot')
-        kcount = { '686': 0, 'amd': 0, 'pae': 0, '486': 0, 'ppc': 0 }
-        kvers = self._detectLinuxVersion(stage_dir)
-        for k in kvers:
-            cpu = k[k.rfind('-') + 1:]
-            initrd = os.path.join(boot_dir, 'initrd.img-' + k)
-            if os.path.isfile(initrd):
-                initrdsafe = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-                self.log.debug('renaming %s to %s' % (initrd, initrdsafe))
-                os.rename(initrd, os.path.join(boot_dir, initrdsafe))
-            else:
-                self.log.critical('could not find initramfs image to rename.')
-                raise FllError
-            
-            images = glob.glob(os.path.join(boot_dir, 'vmlinu*-' + k))
-            if len(images) == 1:
-                vmlinuzsafe = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-                self.log.debug('renaming %s to %s' % (images[0], vmlinuzsafe))
-                os.rename(images[0], os.path.join(boot_dir, vmlinuzsafe))
-            else:
-                self.log.critical('could not find linux kernel image to rename.')
-                raise FllError
-            kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
 
     def __md5sum(self, filename):
@@ -2498,15 +2454,18 @@ class FLLBuilder(object):
         if os.path.isfile(os.path.join(stage, 'boot/isolinux/isolinux.bin')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
             cmd += ' -b boot/isolinux/isolinux.bin -c boot/isolinux/isolinux.cat'
-            ''' upstream idea with heads and sectors may be eventually not the best'''
-            ''' iso don't work with vbox - so we use the old code '''
-            '''cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file'''
-            cmd2 = 'isohybrid %s' % iso_file
+            cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file
 
         elif os.path.isdir(os.path.join(stage, 'boot/grub')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
+            cmd2 = '%s -l %s -i %s' % (os.path.join(self.opts.s, 'gpthybrid'), self.uuid, iso_file)
             if os.path.isfile(os.path.join(stage, 'boot/grub/i386-pc/grub_eltorito')):
-                cmd += ' -b boot/grub/i386-pc/grub_eltorito -no-emul-boot -boot-info-table --embedded-boot %s' % os.path.join(stage,'boot/grub/i386-pc/grub_embed')
+                cmd += ' -b boot/grub/i386-pc/grub_eltorito --grub2-boot-info --grub2-mbr %s' % os.path.join(stage, 'boot/grub/i386-pc/boot_hybrid.img')
+                for arch in self.conf['archs'].keys():
+                    if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))):
+                        cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))
+                if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])):
+                    cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])
             else:
                 self.log.critical('failed to find grub El Torito image file')
                 raise FllError
@@ -2602,7 +2561,6 @@ class FLLBuilder(object):
             self._dpkgUnDivert(arch)
             self._makeInitramfs(arch)
             self._cleanChroot(arch)
-            self._chrootImageFS(arch)
             self._chrootSquashfs(arch)
             self._stageArch(arch)
             self._nukeChroot(arch)
@@ -2619,6 +2577,7 @@ class FLLBuilder(object):
             sys.exit(0)
 
         self.buildChroots()
+        self.secondSquashfs()
         self.writeBootldr()
         self.writeMd5Sums()
         self.genLiveMedia()

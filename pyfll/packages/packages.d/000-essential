@@ -23,11 +23,5 @@ packages = """
     grub-efi-amd64-bin
     efibootmgr
     mtools
-    syslinux
-"""
-
-i386 = """
-"""
-
-amd64 = """
+  #  syslinux
 """
