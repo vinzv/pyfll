@@ -18,6 +18,7 @@ Vcs-Browser: https://github.com/fullstory/pyfll
 #         python-apt,
 #         python-configobj,
 #         debootstrap | cdebootstrap,
+#         gdisk,
 #         isolinux,
 #         xorriso,
 #         reprepro,
