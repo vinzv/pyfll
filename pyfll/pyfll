@@ -2047,11 +2047,14 @@ class FLLBuilder(object):
                     self.log.critical('%s was not found in %s' % (f, boot_dir))
                     raise FllError
 
+            vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+            initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+
             if cpu[0:3] == 'amd':
               grubcfg.write('if cpuid -l; then\n')
             grubcfg.write('havekernel="Y"\n')
             grubcfg.write('title=""\n')
-            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz[8:], cmdline))
+            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz_r, cmdline))
             grubcfg.write(' if [ -n "$title" ] ; then\n')
             grubcfg.write('  title="$title $kopt";\n')
             grubcfg.write(' else\n')
@@ -2060,8 +2063,8 @@ class FLLBuilder(object):
             grubcfg.write('done\n')
             grubcfg.write('menuentry --class=%s.%s \"$title\" {' % (distro, cpu))
             grubcfg.write('# set arguments above with the editor\n')
-            grubcfg.write('linux /boot/vmlinuz-$@\n')
-            grubcfg.write('initrd /boot/%s\n' % initrd)
+            grubcfg.write('linux /boot/$@\n')
+            grubcfg.write('initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             if cpu[0:3] == 'amd':
               grubcfg.write('fi\n')
@@ -2452,7 +2455,10 @@ class FLLBuilder(object):
         if os.path.isfile(os.path.join(stage, 'boot/isolinux/isolinux.bin')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
             cmd += ' -b boot/isolinux/isolinux.bin -c boot/isolinux/isolinux.cat'
-            cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file
+            ''' upstream idea with heads and sectors may be eventually not the best'''
+            ''' iso don't work with vbox - so we use the old code '''
+            '''cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file'''
+            cmd2 = 'isohybrid %s' % iso_file
 
         elif os.path.isdir(os.path.join(stage, 'boot/grub')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
