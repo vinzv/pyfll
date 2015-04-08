@@ -180,8 +180,6 @@ class FLLBuilder(object):
                '/usr/sbin/update-grub',
                '/usr/sbin/update-initramfs']
 
-    timestamp = datetime.datetime.utcnow().strftime('%Y%m%d%H%M')
-
 
     def __init__(self, options):
         '''Accept options dict, setup logging.'''
@@ -659,11 +657,8 @@ class FLLBuilder(object):
             self.log.debug('---')
 
         self.log.info('last depfile %s' % depfile)
-
         depfile = os.path.join(dir, 'packages.d', '999-finalize.postinst')
-
         pkgs['postinst'].append(depfile)
-
 
         self.log.debug('package summary for %s:' % arch)
         pkgs['packages'].sort()
@@ -1072,9 +1067,6 @@ class FLLBuilder(object):
                                apt_preferences)
                 raise FllError
 
-
-
-
         apt_configuration = self.conf['options']['apt_configuration']
         if apt_configuration:
             self.log.info('importing apt configuration file')
@@ -1084,9 +1076,6 @@ class FLLBuilder(object):
                 self.log.error('apt configuration file failed to copy: %s' %
                                apt_configuration)
                 raise FllError
-
-
-
 
         self.log.debug('removing sources.list from %s chroot' % arch)
         list = os.path.join(chroot, 'etc/apt/sources.list')
@@ -2041,20 +2030,19 @@ class FLLBuilder(object):
             cpu = k[k.rfind('-') + 1:]
             vmlinuz = 'vmlinuz-%s' % k
             initrd = 'initrd.img-%s' % k
+            self.log.info('vmlinuz: %s' % vmlinuz)
+            self.log.debug('initrd: %s' % initrd)
 
             for f in [vmlinuz, initrd]:
                 if not os.path.isfile(os.path.join(boot_dir, f)):
                     self.log.critical('%s was not found in %s' % (f, boot_dir))
                     raise FllError
 
-            vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-            initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
-
             if cpu[0:3] == 'amd':
               grubcfg.write('if cpuid -l; then\n')
             grubcfg.write('havekernel="Y"\n')
             grubcfg.write('title=""\n')
-            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz_r, cmdline))
+            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz[8:], cmdline))
             grubcfg.write(' if [ -n "$title" ] ; then\n')
             grubcfg.write('  title="$title $kopt";\n')
             grubcfg.write(' else\n')
@@ -2063,8 +2051,8 @@ class FLLBuilder(object):
             grubcfg.write('done\n')
             grubcfg.write('menuentry --class=%s.%s \"$title\" {' % (distro, cpu))
             grubcfg.write('# set arguments above with the editor\n')
-            grubcfg.write('linux /boot/$@\n')
-            grubcfg.write('initrd /boot/%s\n' % initrd_r)
+            grubcfg.write('linux /boot/vmlinuz-$@\n')
+            grubcfg.write('initrd /boot/%s\n' % initrd)
             grubcfg.write('}\n')
             if cpu[0:3] == 'amd':
               grubcfg.write('fi\n')
@@ -2195,6 +2183,8 @@ class FLLBuilder(object):
 
             vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
             initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+            self.log.info('vmlinuz_r: %s' % vmlinuz_r)
+            self.log.debug('initrd_r: %s' % initrd_r)
 
             isolinuxcfg.write('\n')
             isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
