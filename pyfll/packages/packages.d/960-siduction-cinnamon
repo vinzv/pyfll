@@ -7,10 +7,11 @@ desc = """
 
 packages = """
     audacious
+    # bluetooth is difficult: cinnamon-bluetooth depends on incompatible gnome-bluetooth, so meanwhile ship blueman
+    blueman
     brasero
     cinnamon
     cinnamon-backgrounds
-    # cinnamon-bluetooth (still only in experimental)
     cinnamon-l10n
     dconf-tools
     dconf-service
@@ -18,7 +19,8 @@ packages = """
     eog
     evince
     gconf2
-    # causes warnings when started from terminal: gedit
+    # doesn't cause deprecation warnings when started from terminal: 
+    gedit
     gir1.2-gtksource-3.0
     glib-networking
     gnome-desktop3-data
@@ -27,8 +29,8 @@ packages = """
     gnome-media
     gnome-screenshot
     gnome-terminal
-    # segfaults in default config, and occupies x-terminal-emulator: guake
-    iceweasel
+    # segfaults in default config, and occupies x-terminal-emulator: now test guake again:
+    guake
     # some experimental extras (keep them?):
       abiword
       abw2odt
@@ -36,12 +38,13 @@ packages = """
       gnome-calculator
       gnome-sudoku
       iagno
+      # test OpenGL easily with swell-foop
       swell-foop
     hexchat
     icedove
-    # why this wildcard? # libglib2.0
+    iceweasel
     libpam-gnome-keyring
-    medit
+    # replaced by gedit (which is gtk3-based): medit
     muffin
     nemo
     nemo-fileroller
@@ -54,7 +57,7 @@ packages = """
     thin-provisioning-tools
     # totem
     gnome-mplayer
-    gecko-mediaplayer
+    # replaced by gnome-mplayer:  gecko-mediaplayer
     tracker
     veromix
     vcdimager
