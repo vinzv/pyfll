@@ -1,4 +1,4 @@
-pyfll (2013.02+nmu3) UNRELEASED; urgency=low
+pyfll (2013.02) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
@@ -33,7 +33,7 @@ pyfll (2013.02+nmu3) UNRELEASED; urgency=low
   * elinks-lite no longer exists, use full elinks instead.
   * exclude (empty) bootstrap.log.
   * disable flegita for the time being, it's not installable.
-  * bump standards version to 3.9.5, no changes necessary.
+  * bump standards version to 3.9.6, no changes necessary.
   * debian/control: switch Vcs tags to github.
   * don't pull in alsa-base.
   * update README (depend on isolinux, syslinux-utils and reprepro).
@@ -65,6 +65,10 @@ pyfll (2013.02+nmu3) UNRELEASED; urgency=low
   * switch to plymouth ("details" theme) for console multiplexing.
   * improve grub2 preseeding for the installed system.
   * drop unused FLL_DISTRO_URL variable.
+  * drop ntpdate, systemd-timedated takes over the common cases - tlsdate is a
+    better choice for the uncommon ones.
+  * switch to http.debian.net as GeoMirror.
+  * convert to machine readable copyright.
 
   [ Joaquim Boura ]
   * cleaned up xfce4-desktop-min
@@ -87,10 +91,8 @@ pyfll (2013.02+nmu3) UNRELEASED; urgency=low
   * TEMP? drop isolinux and switch to grub (automatic fromhd broken)
   * drop bluez-pcmcia-support (gone with bluez 5.x)
   * add efibootmgr for i386.
-  * add firmware menuentry to grub.cfg
   * same bootloader (grub-* and efibootmgr) packages for i386 and amd64
   * set and export pager by default in grub.cfg
-  * add i386-efi to kernel command line when booted under it
   * add grub2-fll-portable-efi to extras
   * add part_gpt to built in modules for cd efi loader (for detect efi anyway)
   * create /disks to reflect changed fstab_generator
@@ -114,12 +116,7 @@ pyfll (2013.02+nmu3) UNRELEASED; urgency=low
   * add initial razorqt profile 
   * add qupzilla, qpdfview
 
-  [ Ferdinand Thommes ]
-  * added plasma-widget-milou to 940-siduction-kde
-  * added kde-config-baloo-advanced
-  * added kcmsystemd module for systemsettings
-
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 19 Nov 2014 12:27:49 +0100
+ -- Niall Walsh <niallwalsh@celtux.org>  Fri, 05 Sep 2014 02:39:12 +0100
 
 pyfll (2013.01) hesperides; urgency=low
 
