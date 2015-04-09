@@ -23,7 +23,10 @@ packages = """
     grub-efi-amd64-bin
     efibootmgr
     mtools
-#    syslinux
-#    syslinux-common
-#    isolinux
+    syslinux
+    syslinux-common
+    syslinux-efi
+    syslinux-utils
+    syslinux-theme-wheezy
+    isolinux
 """
