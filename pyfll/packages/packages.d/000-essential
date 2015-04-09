@@ -27,6 +27,6 @@ packages = """
     syslinux-common
     syslinux-efi
     syslinux-utils
-    syslinux-theme-wheezy
+    syslinux-themes-debian-wheezy
     isolinux
 """
