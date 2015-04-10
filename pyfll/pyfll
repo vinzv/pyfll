@@ -2440,6 +2440,9 @@ class FLLBuilder(object):
         if os.path.isfile(os.path.join(stage, 'boot/isolinux/isolinux.bin')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
             cmd += ' -b boot/isolinux/isolinux.bin -c boot/isolinux/isolinux.cat'
+            if os.path.isfile(os.path.join(stage, 'efi.img')):
+                cmd += ' -eltorito-alt-boot'
+                cmd += ' -e efi.img -no-emul-boot -isohybrid-gpt-basdat'
             ''' iso don't work with vbox - so using the old code might be a better idea'''
             '''cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file'''
             cmd2 = 'isohybrid %s' % iso_file
@@ -2468,8 +2471,8 @@ class FLLBuilder(object):
             cmd += ' -hfs-parms MAX_XTCSIZE=18287938'
 
         cmd += ' --modification-date=%s' % self.uuid.replace("-","")
-        if os.path.isfile(os.path.join(stage, 'efi.img')):
-            cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image'
+        '''if os.path.isfile(os.path.join(stage, 'efi.img')):
+            cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image' '''
 
         cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
         if os.path.isdir(os.path.join(stage, 'boot')):
