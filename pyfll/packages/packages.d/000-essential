@@ -18,9 +18,9 @@ packages = """
     squashfs-tools
     initramfs-tools
 
-#    grub-pc
-#    grub-efi-ia32-bin
-#    grub-efi-amd64-bin
+    grub-pc
+    grub-efi-ia32-bin
+    grub-efi-amd64-bin
     efibootmgr
     mtools
     syslinux
