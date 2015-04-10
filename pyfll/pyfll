@@ -457,7 +457,7 @@ class FLLBuilder(object):
                 raise FllError
             else:
                 self.opts.C = self.conf['sourcedistro']['codename']
- 
+
         if self.opts.N not in self.conf['repos']:
             self.log.critical('%s repo not configured in build config' % self.opts.N)
             raise FllError
@@ -1545,7 +1545,7 @@ class FLLBuilder(object):
                 commextra.append('grub-efi')
                 archextra.append('grub-efi-%s' % efitypes[efitype])
                 extras.append(archextra)
-                
+
         if len(extras):
             commextra.append('grub2-fll-portable-efi')
             extras.append(commextra)
@@ -1729,7 +1729,7 @@ class FLLBuilder(object):
                     cmd.extend(['-Xbcj', 'x86'])
                 elif arch == 'powerpc' or arch == 'ppc64':
                     cmd.extend(['-Xbcj', 'powerpc'])
-        
+
         if self.opts.l or self.opts.q:
             cmd.append('-no-progress')
 
@@ -1771,7 +1771,7 @@ class FLLBuilder(object):
                     cmd.extend(['-Xbcj', 'x86'])
                 elif arch == 'powerpc' or arch == 'ppc64':
                     cmd.extend(['-Xbcj', 'powerpc'])
-        
+
         if self.opts.l or self.opts.q:
             cmd.append('-no-progress')
 
@@ -1810,7 +1810,7 @@ class FLLBuilder(object):
                 self.log.critical('could not find initramfs image to ' +
                                   'copy to staging dir.')
                 raise FllError
-            
+
             images = glob.glob(os.path.join(chroot, 'boot', 'vmlinu*-' + k))
             if len(images) == 1:
                 self.log.debug('copying %s to staging dir' % images[0])
@@ -2024,7 +2024,7 @@ class FLLBuilder(object):
         grubcfg = open(os.path.join(grub_dir, 'kernels.cfg'), 'w')
 
         distro = self.conf['distro']['FLL_DISTRO_NAME']
-        
+
         kcount = { '686': 0, 'amd': 0, 'pae': 0, '486': 0, 'ppc': 0 }
         for k in kvers:
             cpu = k[k.rfind('-') + 1:]
@@ -2081,12 +2081,12 @@ class FLLBuilder(object):
         grubcfg.write('fi\n')
 
         grubcfg.close()
-        
+
         self.log.debug('writing loopback.cfg for live media')
         grubcfg = open(os.path.join(grub_dir, 'loopback.cfg'), 'w')
         grubcfg.write('source /boot/grub/grub.cfg\n')
         grubcfg.close()
-        
+
         self.log.debug('writing variable.cfg for live media')
         grubcfg = open(os.path.join(grub_dir, 'variable.cfg'), 'w')
         grub_theme = 'grub/themes/%s/theme.txt' % self.conf['distro']['FLL_GFXBOOT_THEME']
@@ -2480,6 +2480,7 @@ class FLLBuilder(object):
         cmd += ' -o %s %s' % (iso_file, stage)
 
         self.log.info('generating iso image of live media...')
+        self.log.info('used command: %s' % cmd)
         self._execCmd(cmd.split())
         if len(cmd2):
             self.log.info('converting to hybrid iso...')
