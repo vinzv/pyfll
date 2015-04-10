@@ -2477,8 +2477,11 @@ class FLLBuilder(object):
         cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
         if os.path.isdir(os.path.join(stage, 'boot')):
             cmd += ' --sort-weight 0 / --sort-weight 1 /boot'
-            if os.path.isdir(os.path.join(stage, 'boot/grub')):
-                cmd += ' --sort-weight 2 /boot/grub'
+            '''if os.path.isdir(os.path.join(stage, 'boot/grub')):
+                cmd += ' --sort-weight 2 /boot/grub' '''
+            if os.path.isdir(os.path.join(stage, 'boot/isolinux')):
+                cmd += ' --sort-weight 2 /boot/isolinux'
+
         cmd += ' -x iso_uuid -x genisoimage.sort'
         cmd += ' -o %s %s' % (iso_file, stage)
 
