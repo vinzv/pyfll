@@ -2438,8 +2438,10 @@ class FLLBuilder(object):
         cmd2 = ''
 
         if os.path.isfile(os.path.join(stage, 'boot/isolinux/isolinux.bin')):
+            cmd += ' -isohybrid-mbr /usr/lib/syslinux/isohdpfx.bin'
+            cmd += ' -c boot/isolinux/isolinux.cat'
+            cmd += ' -b boot/isolinux/isolinux.bin'
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
-            cmd += ' -b boot/isolinux/isolinux.bin -c boot/isolinux/isolinux.cat'
             if os.path.isfile(os.path.join(stage, 'efi.img')):
                 cmd += ' -eltorito-alt-boot'
                 cmd += ' -e efi.img -no-emul-boot -isohybrid-gpt-basdat'
