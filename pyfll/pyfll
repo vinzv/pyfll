@@ -1907,7 +1907,7 @@ class FLLBuilder(object):
                     self.log.exception('failed to create efi.img')
                     raise FllError
 
-        isolinux = os.path.join(chroot, 'usr/lib/ISOLINUX/isolinux.bin')
+        isolinux = os.path.join(chroot, '/usr/lib/syslinux/isolinux.bin')
         if os.path.isfile(isolinux):
             try:
                stage_dir = os.path.join(self.temp, 'staging')
@@ -2182,11 +2182,11 @@ class FLLBuilder(object):
                     raise FllError
 
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
+            isolinuxcfg.write('label %s_%s\n' % (distro, cpu, k))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label start_%s_%s (Safe GFX Settings)\n' % (distro, cpu))
+            isolinuxcfg.write('label %s_%s_safe_settings\n' % (distro, cpu))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
