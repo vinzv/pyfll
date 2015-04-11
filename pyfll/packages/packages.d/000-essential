@@ -25,7 +25,4 @@ packages = """
     mtools
     syslinux
     syslinux-common
-    syslinux-utils
-    syslinux-themes-debian-wheezy
-    isolinux
 """
