@@ -2193,7 +2193,7 @@ class FLLBuilder(object):
         isolinuxcfg.write('label hdt\n')
         isolinuxcfg.write('\tkernel hdt.c32\n')
         isolinuxcfg.write('\n')
-        isolinuxdfg.write('Hardware_detection')
+        isolinuxmsg.write('Hardware_detection')
 
         isolinuxcfg.close()
         shutil.copy(os.path.join(syslinux_dir, 'isolinux.cfg'),os.path.join(syslinux_dir, 'syslinux.cfg'))
