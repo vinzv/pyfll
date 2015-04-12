@@ -1938,7 +1938,7 @@ class FLLBuilder(object):
                    'cpuid',
                    'cpuidtest',
                    'disk',
-                   'dmitest'
+                   'dmitest',
                    'elf',
                    'ethersel',
                    'gfxboot',
