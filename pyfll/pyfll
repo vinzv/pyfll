@@ -2168,7 +2168,7 @@ class FLLBuilder(object):
                     raise FllError
 
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s\n' % (distro, cpu, k))
+            isolinuxcfg.write('label %s_%s\n' % (distro, cpu))
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
@@ -2176,7 +2176,7 @@ class FLLBuilder(object):
             isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxmsg.write('%s_%s_(%s)\n' % (distro, cpu, k))
+            isolinuxmsg.write('%s_%s\n' % (distro, cpu))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
         isolinuxcfg.write('label Boot_from_Hard_Disk\n')
