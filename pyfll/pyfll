@@ -1907,7 +1907,7 @@ class FLLBuilder(object):
                     self.log.exception('failed to create efi.img')
                     raise FllError
 
-        isolinux = os.path.join(chroot, '/usr/lib/syslinux/isolinux.bin')
+        isolinux = os.path.join(chroot, 'usr/lib/syslinux/isolinux.bin')
         if os.path.isfile(isolinux):
             try:
                stage_dir = os.path.join(self.temp, 'staging')
@@ -1915,72 +1915,8 @@ class FLLBuilder(object):
                if not os.path.isdir(syslinux_dir):
                    os.mkdir(syslinux_dir, 0755)
                shutil.copy(isolinux, syslinux_dir)
-               isolinux_path = os.path.join(chroot, 'usr/lib/syslinux')
-               for syslinux_file in list(set([
-                   'altmbr.bin',
-                   'altmbr_c.bin',
-                   'altmbr_f.bin',
-                   'cat.c32',
-                   'chain.c32',
-                   'cmd.c32',
-                   'config.c32',
-                   'cpuid.c32',
-                   'cpuidtest.c32',
-                   'disk.c32',
-                   'dmitest.c32',
-                   'elf.c32',
-                   'ethersel.c32',
-                   'gfxboot.c32',
-                   'gptmbr.bin',
-                   'gptmbr_c.bin',
-                   'gptmbr_f.bin',
-                   'gpxecmd.c32',
-                   'gpxelinux.0',
-                   'gpxelinuxk.0',
-                   'hdt.c32',
-                   'host.c32',
-                   'ifcpu.c32',
-                   'ifcpu64.c32',
-                   'ifplop.c32',
-                   'int18.com',
-                   'isohdpfx.bin',
-                   'isohdpfx_c.bin',
-                   'isohdpfx_f.bin',
-                   'isohdppx.bin',
-                   'isohdppx_c.bin',
-                   'isohdppx_f.bin',
-                   'isolinux.bin',
-                   'isolinux-debug.bin',
-                   'kbdmap.c32',
-                   'linux.c32',
-                   'ls.c32',
-                   'lua.c32',
-                   'mboot.c32',
-                   'mbr.bin',
-                   'mbr_c.bin',
-                   'mbr_f.bin',
-                   'memdisk',
-                   'memdump.com',
-                   'meminfo.c32',
-                   'menu.c32',
-                   'pcitest.c32',
-                   'pmload.c32',
-                   'poweroff.com',
-                   'pwd.c32',
-                   'reboot.c32',
-                   'pxechain.com',
-                   'pxelinux.0',
-                   'rosh.c32',
-                   'sanboot.c32',
-                   'sdi.c32',
-                   'sysdump.c32',
-                   'ver.com',
-                   'vesainfo.c32',
-                   'vesamenu.c32',
-                   'vpdtest.c32',
-                   'whichsys.c32',
-                   'zzjson.c32' ])):
-                   shutil.copy(os.path.join(isolinux_path, '%s' % syslinux_file), syslinux_dir)
+	       gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
+               shutil.copy(gfxboot, syslinux_dir)
                bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
                bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
                for file in bootlogo:
@@ -2028,8 +1964,6 @@ class FLLBuilder(object):
             cpu = k[k.rfind('-') + 1:]
             vmlinuz = 'vmlinuz-%s' % k
             initrd = 'initrd.img-%s' % k
-            self.log.info('vmlinuz: %s' % vmlinuz)
-            self.log.debug('initrd: %s' % initrd)
 
             for f in [vmlinuz, initrd]:
                 if not os.path.isfile(os.path.join(boot_dir, f)):
@@ -2077,6 +2011,13 @@ class FLLBuilder(object):
         grubcfg.write('  menu_reload\n')
         grubcfg.write('  }\n')
         grubcfg.write('fi\n')
+
+        if os.path.isfile(os.path.join(boot_dir, 'memtest')):
+            grubcfg.write('if ! is_efi ; then\n')
+            grubcfg.write('  menuentry \"Memory test (memtest86+)\" {\n')
+            grubcfg.write('    linux16 /boot/memtest\n')
+            grubcfg.write('  }\n')
+            grubcfg.write('fi\n')
 
         grubcfg.close()
 
@@ -2180,15 +2121,15 @@ class FLLBuilder(object):
                     raise FllError
 
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s\n' % (distro, cpu))
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
+            isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz_r))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd_r, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s_safe_settings\n' % (distro, cpu))
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd, cmdline))
+            isolinuxcfg.write('label start_%s_%s (Safe GFX Settings)\n' % (distro, cpu))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz_r))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd_r, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxmsg.write('%s_%s\n' % (distro, cpu))
+            isolinuxmsg.write('%s_%s_(%s)\n' % (distro, cpu, k))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
         isolinuxcfg.write('label Boot_from_Hard_Disk\n')
