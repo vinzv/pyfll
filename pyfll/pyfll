@@ -1915,7 +1915,7 @@ class FLLBuilder(object):
                if not os.path.isdir(syslinux_dir):
                    os.mkdir(syslinux_dir, 0755)
                shutil.copy(isolinux, syslinux_dir)
-               isolinux_path = os.path.join(chroot, 'usr/lib/syslinux/modules/bios')
+               isolinux_path = os.path.join(chroot, 'usr/lib/syslinux')
                # list(set([ uniquifys the list so each line can have the deps
                    #'advdump',
                    #'complex', 'libcom32', 'libmenu', 'libutil',
@@ -1968,7 +1968,7 @@ class FLLBuilder(object):
                    'menu', 'libutil',
                    'pcitest', 'libcom32',
                    'pmload', 'libcom32',
-                   'poweroff',
+                   #'poweroff',
                    'prdhcp', 'libutil', 'libcom32',
                    'pwd',
                    'pxechn', 'libutil', 'libcom32',
@@ -2203,6 +2203,11 @@ class FLLBuilder(object):
             isolinuxcfg.write('\tkernel /boot/memtest\n')
             isolinuxcfg.write('\n')
             isolinuxmsg.write('Memory_test_(memtest86+)\n')
+
+        isolinuxcfg.write('label hdt\n')
+        isolinuxcfg.write('\tkernel hdt.c32\n')
+        isolinuxcfg.write('\n')
+        isolinuxdfg.write('Hardware_detection')
 
         isolinuxcfg.close()
         shutil.copy(os.path.join(syslinux_dir, 'isolinux.cfg'),os.path.join(syslinux_dir, 'syslinux.cfg'))
