@@ -2122,11 +2122,11 @@ class FLLBuilder(object):
 
             isolinuxcfg.write('\n')
             isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz_r))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd_r, cmdline))
             isolinuxcfg.write('\n')
             isolinuxcfg.write('label start_%s_%s (Safe GFX Settings)\n' % (distro, cpu))
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz_r))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
             isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd_r, cmdline))
             isolinuxcfg.write('\n')
             isolinuxmsg.write('%s_%s_(%s)\n' % (distro, cpu, k))
