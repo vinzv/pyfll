@@ -180,7 +180,6 @@ class FLLBuilder(object):
                '/usr/sbin/update-grub',
                '/usr/sbin/update-initramfs']
 
-
     def __init__(self, options):
         '''Accept options dict, setup logging.'''
         self.opts = options
@@ -1915,15 +1914,21 @@ class FLLBuilder(object):
                if not os.path.isdir(syslinux_dir):
                    os.mkdir(syslinux_dir, 0755)
                shutil.copy(isolinux, syslinux_dir)
-	       gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
+               gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
                shutil.copy(gfxboot, syslinux_dir)
+               hdt = os.path.join(chroot, 'usr/lib/syslinux/hdt.c32')
+               shutil.copy(hdt, syslinux_dir)
+               pciids = os.path.join(chroot, '/usr/share/misc/pci.ids')
+               shutil.copy(pciids, syslinux_dir)
+               menu = os.path.join(chroot, 'usr/lib/syslinux/menu.c32')
+               shutil.copy(menu, syslinux_dir)
                bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
                bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
                for file in bootlogo:
                    shutil.copy(file, syslinux_dir)
             except IOError:
-                    self.log.exception('failed to copy isolinux files')
-                    raise FllError
+                self.log.exception('failed to copy isolinux files')
+                raise FllError
 
         yaboot = os.path.join(chroot, 'usr/lib/yaboot/yaboot')
         if os.path.isfile(yaboot):
@@ -1970,11 +1975,13 @@ class FLLBuilder(object):
                     self.log.critical('%s was not found in %s' % (f, boot_dir))
                     raise FllError
 
+            vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+            initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
             if cpu[0:3] == 'amd':
               grubcfg.write('if cpuid -l; then\n')
             grubcfg.write('havekernel="Y"\n')
             grubcfg.write('title=""\n')
-            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz[8:], cmdline))
+            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz_r, cmdline))
             grubcfg.write(' if [ -n "$title" ] ; then\n')
             grubcfg.write('  title="$title $kopt";\n')
             grubcfg.write(' else\n')
@@ -1983,8 +1990,8 @@ class FLLBuilder(object):
             grubcfg.write('done\n')
             grubcfg.write('menuentry --class=%s.%s \"$title\" {' % (distro, cpu))
             grubcfg.write('# set arguments above with the editor\n')
-            grubcfg.write('linux /boot/vmlinuz-$@\n')
-            grubcfg.write('initrd /boot/%s\n' % initrd)
+            grubcfg.write('linux /boot/$@\n')
+            grubcfg.write('initrd /boot/%s\n' % initrd_r)
             grubcfg.write('}\n')
             if cpu[0:3] == 'amd':
               grubcfg.write('fi\n')
@@ -2120,33 +2127,37 @@ class FLLBuilder(object):
                     self.log.critical('%s was not found in %s' % (f, boot_dir))
                     raise FllError
 
+            vmlinuz_r = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+            initrd_r = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label %s_%s_(%s)\n' % (distro, cpu, k))
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd, cmdline))
+            isolinuxcfg.write('label %s_%s\n' % (distro, cpu))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz_r))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll %s\n' % (initrd_r, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxcfg.write('label start_%s_%s (Safe GFX Settings)\n' % (distro, cpu))
-            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz))
-            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd, cmdline))
+            isolinuxmsg.write('%s_%s\n' % (distro, cpu))
+            isolinuxcfg.write('label %s_%s_safe_settings\n' % (distro, cpu))
+            isolinuxcfg.write('\tkernel /boot/%s\n' % (vmlinuz_r))
+            isolinuxcfg.write('\tappend initrd=/boot/%s boot=fll i915.modeset=0 radeon.modeset=0 nouveau.modeset=0 xmodule=vesa %s\n' % (initrd_r, cmdline))
             isolinuxcfg.write('\n')
-            isolinuxmsg.write('%s_%s_(%s)\n' % (distro, cpu, k))
+            isolinuxmsg.write('%s_%s_safe_settings\n' % (distro, cpu))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
-        isolinuxcfg.write('label Boot_from_Hard_Disk\n')
+        isolinuxcfg.write('label Boot_from_HardDisk\n')
         isolinuxcfg.write('\tlocalboot 0x80\n')
         isolinuxcfg.write('\n')
-        isolinuxmsg.write('Boot_from_Hard_Disk\n')
+        isolinuxmsg.write('hdboot\n')
 
         if os.path.isfile(os.path.join(boot_dir, 'memtest')):
-            isolinuxcfg.write('label Memory_test_(memtest86+)\n')
+            isolinuxcfg.write('label Memorytest\n')
             isolinuxcfg.write('\tkernel /boot/memtest\n')
             isolinuxcfg.write('\n')
-            isolinuxmsg.write('Memory_test_(memtest86+)\n')
+            isolinuxmsg.write('memtest\n')
 
-        isolinuxcfg.write('label hdt\n')
-        isolinuxcfg.write('\tkernel hdt.c32\n')
+        isolinuxcfg.write('label Hardwaredetection\n')
+        isolinuxcfg.write('\tkernel /boot/isolinux/hdt.c32\n')
         isolinuxcfg.write('\n')
-        isolinuxmsg.write('Hardware_detection')
+        isolinuxmsg.write('hdt')
 
         isolinuxcfg.close()
         shutil.copy(os.path.join(syslinux_dir, 'isolinux.cfg'),os.path.join(syslinux_dir, 'syslinux.cfg'))
@@ -2219,6 +2230,30 @@ class FLLBuilder(object):
             self._writeYabootWrap()
         if self.opts.D:
             return
+        stage_dir = os.path.join(self.temp, 'staging')
+        boot_dir = os.path.join(stage_dir, 'boot')
+        kcount = { '686': 0, 'amd': 0, 'pae': 0, '486': 0, 'ppc': 0 }
+        kvers = self._detectLinuxVersion(stage_dir)
+        for k in kvers:
+            cpu = k[k.rfind('-') + 1:]
+            initrd = os.path.join(boot_dir, 'initrd.img-' + k)
+            if os.path.isfile(initrd):
+                initrdsafe = 'initrd%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+                self.log.debug('renaming %s to %s' % (initrd, initrdsafe))
+                os.rename(initrd, os.path.join(boot_dir, initrdsafe))
+            else:
+                self.log.critical('could not find initramfs image to rename.')
+                raise FllError
+
+            images = glob.glob(os.path.join(boot_dir, 'vmlinu*-' + k))
+            if len(images) == 1:
+                vmlinuzsafe = 'vmlinuz%s.%s' % (kcount[cpu[0:3]], cpu[0:3])
+                self.log.debug('renaming %s to %s' % (images[0], vmlinuzsafe))
+                os.rename(images[0], os.path.join(boot_dir, vmlinuzsafe))
+            else:
+                self.log.critical('could not find linux kernel image to rename.')
+                raise FllError
+            kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
 
     def __md5sum(self, filename):

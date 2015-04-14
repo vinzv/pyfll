@@ -1,10 +1,10 @@
 #!/bin/bash
 
 ## defaults
-options="-vv -P" 
+options="-vv" 
 confpath="./pyfll/conf/"
 flavour=nox
-release=current
+release=xperimental
 arch=amd64
 
 
