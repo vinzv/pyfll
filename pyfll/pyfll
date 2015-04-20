@@ -461,6 +461,19 @@ class FLLBuilder(object):
             self.log.critical('%s repo not configured in build config' % self.opts.N)
             raise FllError
 
+        if self.conf['options'].get('apt_cacher'):
+            if not self.opts.t:
+                self.opts.t = self.conf['options']['apt_cacher']
+                self.log.debug('Using %s as apt-cacher uri.' % self.opts.t)
+
+        for repo in self.conf['repos'].keys():
+            if self.opts.t:
+                self.conf['repos'][repo]['cached'] = '%s/%s' % (self.opts.t,
+                    self.conf['repos'][repo]['uri'].split('//')[1])
+                self.log.info("Cached Repo %s: %s" %
+                    (self.conf['repos'][repo]['label'],
+                     self.conf['repos'][repo]['cached']))
+
         for repo in self.conf['repos'].keys():
             if self.conf['repos'][repo].get('trivial'):
                 words = ['label', 'uri']
@@ -476,7 +489,7 @@ class FLLBuilder(object):
         if self.opts.p:
             self.conf['packages']['profile'] = self.opts.p
         elif 'profile' not in self.conf['packages']:
-            self.conf['packages']['profile'] = 'kde-lite'
+            self.conf['packages']['profile'] = 'kde'
         self.log.debug('profile: %s' % self.conf['packages']['profile'])
 
         if 'i18n' not in self.conf['packages'] or \
@@ -526,6 +539,7 @@ class FLLBuilder(object):
         self.conf['options'].setdefault('apt_configuration', None)
         self.conf['options'].setdefault('apt_recommends', 'no')
         self.conf['options'].setdefault('media_include', None)
+        self.conf['options'].setdefault('apt_cacher', None)
 
         if 'distro' in self.conf:
                 self._processDefaults(self.conf['distro'])
@@ -967,6 +981,8 @@ class FLLBuilder(object):
             mirror = debian['cached']
         else:
             mirror = debian['uri']
+
+        self.log.info('debian mirror: %s' % mirror )
 
         dir = os.path.join(self.temp, arch)
 
@@ -1426,14 +1442,18 @@ class FLLBuilder(object):
         version = depcache.get_candidate_ver(pkg)
 
         if not version:
-            return None
-        file, index = version.file_list.pop(0)
-        records.lookup((file, index))
+            self.log.criticl('FUCK! No candidate_ver for %s in depcache found' % pkg.name)
+            srcpkg = pkg.name
+            return srcpkg
+        else:
+            file, index = version.file_list.pop(0)
+            records.lookup((file, index))
 
         if records.source_pkg != "":
             srcpkg = records.source_pkg
         else:
             srcpkg = pkg.name
+            self.log.debug('UPPS: no record.source_pkg  %s...' % pkg.name)
         return srcpkg
 
 
@@ -2565,7 +2585,7 @@ class FLLBuilder(object):
 
 if __name__ == '__main__':
     p = optparse.OptionParser(usage = 'fll -c <config file> [-b <directory> ' +
-                              '-o <directory> -l <file>] [-BdDpqv]')
+                              '-o <directory> -l <file>] [-BdDpqv] [-t <aptcacher>]')
 
     p.add_option('-a', '--arch', dest = 'a', action = 'store',
                  type = 'string', metavar = '<arch>',
@@ -2631,6 +2651,10 @@ if __name__ == '__main__':
                  type = 'string', metavar = '<directory>',
                  help = optparse.SUPPRESS_HELP)
 
+    p.add_option('-t', '--aptcacher', dest = 't', action = 'store',
+                 type = 'string', metavar = '<aptcacher>',
+                 help = 'apt-cacher uri. Note that all r.cached are new set!')
+
     p.add_option('-u', '--uid', dest = 'u', action = 'store',
                  type = 'int', metavar = '<user id>',
                  help = optparse.SUPPRESS_HELP)
@@ -2640,8 +2664,8 @@ if __name__ == '__main__':
                  'generated, such as announcing current operation.')
 
     p.set_defaults(b = None, B = False, d = False, D = False, g = os.getgid(),
-                   k = None, l = None, n = False, o = None, p = None,
-                   P = False, q = False, s = None, u = os.getuid(), v = False)
+                   k = None, l = None, n = False, o = None, p = None, P = False,
+                   q = False, s = None, t = None, u = os.getuid(), v = False)
 
     options = p.parse_args()[0]
 
