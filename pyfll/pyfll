@@ -1453,7 +1453,7 @@ class FLLBuilder(object):
             srcpkg = records.source_pkg
         else:
             srcpkg = pkg.name
-            self.log.debug('UPPS: no record.source_pkg  %s...' % pkg.name)
+            self.log.critical('UPPS: no record.source_pkg  %s...' % pkg.name)
         return srcpkg
 
 
