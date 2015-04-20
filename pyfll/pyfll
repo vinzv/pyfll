@@ -1442,7 +1442,7 @@ class FLLBuilder(object):
         version = depcache.get_candidate_ver(pkg)
 
         if not version:
-            self.log.criticl('FUCK! No candidate_ver for %s in depcache found' % pkg.name)
+            self.log.critical('FUCK! No candidate_ver for %s in depcache found' % pkg.name)
             srcpkg = pkg.name
             return srcpkg
         else:
