@@ -6,7 +6,6 @@ confpath="./pyfll/conf/"
 flavour=nox
 release=xperimental
 arch=amd64
+aptcache="-t http://192.168.150.41:3142"
 
-
-#time ./pyfll/fll ${options}  -c ${confpath}${flavour}_${release}_${arch}.conf -t http://192.168.150.41:3142
-time ./pyfll/fll ${options}  -c ${confpath}${flavour}_${release}_${arch}.conf 
+time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf 
