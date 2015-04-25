@@ -4,14 +4,13 @@ desc = """
 
 packages = """
     acpi-fakekey
-    acpid
     acpi-support-base
     alsa-utils
     at-spi2-core
     bluetooth
     bluez
     br2684ctl
-    # colord broken in experimental
+    colord 
     colord-data
     cpufrequtils
     crda

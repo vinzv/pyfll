@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-    # siduction-meta-xdebian
     acpi-support
     cups-pdf
     feh
@@ -14,9 +13,9 @@ packages = """
     gtk2-engines
     gtk2-engines-pixbuf
     gvfs-bin
-    # gvfs-backends broken in experimental
+    gvfs-backends
     ghostscript-x
-    # hplip broken in experimental
+    hplip
     imagemagick
     libav-tools
     libsane-extras
@@ -27,12 +26,12 @@ packages = """
     printer-driver-gutenprint
     printer-driver-splix
     python-notify
-    # sane broken in experimental
-    # sane-utils broken in experimental
+    sane
+    sane-utils
     scrot
     system-config-printer-udev
     systemd-ui
-    # xsane broken in experimental
+    xsane
     xterm
     zenity
     zim

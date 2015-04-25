@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-    # siduction-meta-mediabase
     gstreamer1.0-alsa
     gstreamer0.10-fluendo-mp3
     gstreamer0.10-nice

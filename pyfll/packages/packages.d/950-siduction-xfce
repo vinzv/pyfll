@@ -40,7 +40,6 @@ packages = """
     tumbler
     siduction-settings-conky
     siduction-settings-plank
-    # squeeze
     xarchiver
     xbitmaps
     xfburn
@@ -67,8 +66,6 @@ packages = """
     xfce4-power-manager-plugins
     xfce4-quicklauncher-plugin
     xfce4-terminal
-    # replaced by screengrab: xfce4-screenshooter
-    # replaced by screengrab: xfce4-screenshooter-plugin
     xfce4-sensors-plugin
     xfce4-session
     xfce4-smartbookmark-plugin
@@ -76,16 +73,13 @@ packages = """
     xfce4-systemload-plugin
     xfce4-taskmanager
     xfce4-timer-plugin
-    # removed - requested by towo: xfce4-verve-plugin
     xfce4-volumed
     xfce4-wavelan-plugin
     xfce4-weather-plugin
     xfce4-xkb-plugin
     xfdesktop4
-    # xfprint4
     xfwm4
     xfwm4-themes
-    # replaced by audacious and smplayer, smtube: xnoise
     xtrlock
     zenity
 

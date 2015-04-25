@@ -3,18 +3,12 @@ desc = """
 """
 
 packages = """
-    # siduction-live-settings-nox
-    # siduction-settings-nox
-    #-------------------------------------------------
-    # debian nox goodies.
-    #-------------------------------------------------
     alpine
     cmus
     fbcat
     fbi
     fbterm
     links
-    # python-owncloud - broken
     podget
     tmux
     tty-clock
