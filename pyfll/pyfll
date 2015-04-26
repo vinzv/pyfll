@@ -1947,8 +1947,8 @@ class FLLBuilder(object):
                for file in bootlogo:
                    shutil.copy(file, syslinux_dir)
             except IOError:
-                self.log.exception('failed to copy isolinux files')
-                raise FllError
+                    self.log.exception('failed to copy isolinux files')
+                    raise FllError
 
         yaboot = os.path.join(chroot, 'usr/lib/yaboot/yaboot')
         if os.path.isfile(yaboot):
@@ -2444,8 +2444,8 @@ class FLLBuilder(object):
             if os.path.isfile(os.path.join(stage, 'efi.img')):
                 cmd += ' -eltorito-alt-boot'
                 cmd += ' -e efi.img -no-emul-boot -isohybrid-gpt-basdat'
-            ''' iso don't work with vbox - so using the old code might be a better idea'''
-            '''cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file'''
+                # iso don't work with vbox - so using the old code might be a better idea
+                # cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file
             cmd2 = 'isohybrid %s' % iso_file
 
         elif os.path.isdir(os.path.join(stage, 'boot/grub')):
@@ -2472,14 +2472,14 @@ class FLLBuilder(object):
             cmd += ' -hfs-parms MAX_XTCSIZE=18287938'
 
         cmd += ' --modification-date=%s' % self.uuid.replace("-","")
-        '''if os.path.isfile(os.path.join(stage, 'efi.img')):
-            cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image' '''
+        # if os.path.isfile(os.path.join(stage, 'efi.img')):
+        #    cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image' 
 
         cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
         if os.path.isdir(os.path.join(stage, 'boot')):
             cmd += ' --sort-weight 0 / --sort-weight 1 /boot'
-            '''if os.path.isdir(os.path.join(stage, 'boot/grub')):
-                cmd += ' --sort-weight 2 /boot/grub' '''
+            # if os.path.isdir(os.path.join(stage, 'boot/grub')):
+            #     cmd += ' --sort-weight 2 /boot/grub' 
             if os.path.isdir(os.path.join(stage, 'boot/isolinux')):
                 cmd += ' --sort-weight 2 /boot/isolinux'
 
