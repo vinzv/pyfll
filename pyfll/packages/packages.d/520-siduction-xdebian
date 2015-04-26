@@ -13,7 +13,7 @@ packages = """
     gtk2-engines
     gtk2-engines-pixbuf
     gvfs-bin
-    gvfs-backends
+    # gvfs-backends broken
     ghostscript-x
     hplip
     imagemagick

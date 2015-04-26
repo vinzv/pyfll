@@ -27,7 +27,7 @@ packages = """
     qxkb
     reportbug-ng
     screengrab
-    smplayer
+#    smplayer broken
     smtube
     shared-mime-info
     sharpdot-cursor-theme
