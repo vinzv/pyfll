@@ -32,6 +32,7 @@ packages = """
     kgamma
     kgpg
     khelpcenter4
+    Kio-audiocd
     kipi-plugins
     kmenuedit
     kmix
@@ -65,7 +66,6 @@ packages = """
     sharpdot-cursor-theme
     skanlite
     strigi-client
-    ttf-kochi-gothic
     virtuoso-minimal
     vlc-plugin-pulse
     yakuake

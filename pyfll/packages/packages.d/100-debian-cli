@@ -62,7 +62,7 @@ packages = """
     iftop
     info
     iotop
-    iproute
+    iproute2
     iptables
     iputils-ping
     isc-dhcp-client
@@ -93,7 +93,6 @@ packages = """
     ncdu
     netbase
     net-tools
-    ntp
     openssh-client
     openprinting-ppds
     partimage
@@ -111,7 +110,6 @@ packages = """
     pv
     pwgen
     reptyr
-    resolvconf
     reiserfsprogs
     reportbug
     rkhunter

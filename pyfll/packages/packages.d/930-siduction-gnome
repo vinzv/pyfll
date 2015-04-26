@@ -87,7 +87,6 @@ packages = """
     iceweasel-l10n-pt-br
     iceweasel-l10n-ro
     hexchat
-    libmtp-runtime
     libpam-gnome-keyring
     libxml2-utils
     mpg321

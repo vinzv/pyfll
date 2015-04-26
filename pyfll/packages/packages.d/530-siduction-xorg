@@ -13,6 +13,7 @@ packages = """
     fonts-liberation
     fonts-dejavu-core
     fonts-dejavu-extra
+    fonts-vlgothic
     gnupg-agent
     libegl1-mesa-drivers
     libgl1-mesa-dri
@@ -42,14 +43,6 @@ packages = """
     xfonts-utils
     xserver-xorg
     xserver-xorg-input-all
-    xserver-xorg-input-vmmouse
     xserver-xorg-input-wacom
-    xserver-xorg-video-ati
-    xserver-xorg-video-fbdev
-    xserver-xorg-video-intel
-    xserver-xorg-video-mga
-    xserver-xorg-video-modesetting
-    xserver-xorg-video-nouveau
-    xserver-xorg-video-qxl
-    xserver-xorg-video-vmware
+    xserver-xorg-driver-all
 """

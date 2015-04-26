@@ -12,7 +12,6 @@ packages = """
     cups-pk-helper
     desktop-file-utils
     evince-gtk
-    fonts-vlgothic
     faenza-icon-theme
     gcalctool
     gconf2

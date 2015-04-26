@@ -20,9 +20,9 @@ packages = """
     nomacs
     openbox-themes
     oxygen-icon-theme
-    pdfviewer
     qbittorrent
     qlipper
+    qpdfview
     qupzilla
     qxkb
     reportbug-ng

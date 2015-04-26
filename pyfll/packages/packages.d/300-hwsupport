@@ -4,11 +4,9 @@ desc = """
 
 packages = """
     acpi-fakekey
-    acpi-support-base
     alsa-utils
     at-spi2-core
     bluetooth
-    bluez
     br2684ctl
     colord 
     colord-data
@@ -29,7 +27,6 @@ packages = """
     openfwwf
     pcmciautils
     pciutils
-    pm-utils
     powermgmt-base
     rfkill
     sdparm
@@ -38,6 +35,5 @@ packages = """
     upower
     usbutils
     usb-modeswitch
-    vbetool
     wireless-tools
 """
