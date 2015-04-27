@@ -24,6 +24,7 @@ packages = """
     gir1.2-gtksource-3.0
     glib-networking
     gnome-desktop3-data
+    gnome-disk-utility
     gnome-keyring
     gnome-menus
     gnome-media
