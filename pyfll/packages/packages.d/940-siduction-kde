@@ -50,6 +50,7 @@ packages = """
     okular-extra-backends
     phonon-backend-gstreamer
     phonon-backend-vlc
+    pinentry-qt4
     plasma-nm
     # additional dependencies for plasma-nm
     network-manager-openconnect

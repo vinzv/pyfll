@@ -96,6 +96,7 @@ packages = """
     openssh-client
     openprinting-ppds
     partimage
+    pinentry-curses
     policykit-1
     popularity-contest
     pppconfig

@@ -22,6 +22,7 @@ packages = """
     myspell-en-us
     myspell-pt-br
     ntfs-config
+    pinentry-gtk2
     printer-driver-gutenprint
     printer-driver-splix
     python-notify
