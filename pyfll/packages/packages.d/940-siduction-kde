@@ -8,6 +8,7 @@ packages = """
     ark
     baloo4	
     baloo-utils
+    converseen
     digikam
     gwenview
     iceweasel
