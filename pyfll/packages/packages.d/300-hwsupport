@@ -18,13 +18,11 @@ packages = """
     hwdata
     irqbalance
     firmware-linux-free
-    laptop-detect
     lvm2
     mdadm
     mobile-broadband-provider-info 
     modemmanager 
     nbd-client
-    openfwwf
     pcmciautils
     pciutils
     powermgmt-base

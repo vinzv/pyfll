@@ -4,12 +4,22 @@ if [ -f /etc/default/distro ]; then
     . /etc/default/distro
 fi
 
+say() {
+        echo "I: $@..."
+}
+
 
 do_postinst() 
 {
     # get rid of fugly debian-menu (from menu-xdg)
     if [ -e /etc/xdg/menus/debian-menu.menu ]; then
         rm -f /etc/xdg/menus/debian-menu.menu
+    fi
+
+    # lvm leaks
+    if [ -w /etc/mdadm/mdadm.conf ]; then
+        say 'Prune leaked build host mdadm setups from the ISO.'
+        sed -i "/^ARRAY.*/d" /etc/mdadm/mdadm.conf
     fi
 }
 

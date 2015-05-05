@@ -14,13 +14,19 @@ say() {
 }
 
 do_postinst() {
-    say "Configure Live Settings ..."
-    siduction-live-settings configure
-    say "Remove siduction-meta-packages ..."
-    apt-get purge siduction-meta-mediabase --assume-yes
-    apt-get purge siduction-meta-xdebian --assume-yes
-    apt-get purge siduction-meta-xorg --assume-yes
-    apt-get purge siduction-meta-xsiduction --assume-yes
+    say "................"
+    say "999-postinst ..."
+    say "................"
+
+    if [ -f /usr/bin/siduction-live-settings ]; then
+        say "Configure Live Settings ..."
+        siduction-live-settings configure
+    fi
+
+    if [ -f /usr/bin/live-settings ]; then
+        say "Configure Live Settings ..."
+        live-settings configure
+    fi
 }
 
 say 'finalize iso'

@@ -1916,7 +1916,7 @@ class FLLBuilder(object):
                     self._execInChroot(arch, cmd)
                     cmd = [ 'mcopy', '-s', '-i', '/tmp/efi.img', '/tmp/efi_img/efi', '::/' ]
                     self._execInChroot(arch, cmd)
-                    shutil.copy(os.path.join(chroot, 'tmp/efi.img'), os.path.join(self.temp, 'staging'))
+                    shutil.copy(os.path.join(chroot, 'tmp/efi.img'), os.path.join(self.temp, 'staging/boot/grub'))
                     shutil.copy(os.path.join(chroot, 'tmp/iso_uuid'), os.path.join(self.temp, 'staging'))
                     uuid_dir = os.path.join(chroot, 'tmp/uuid')
                     ufiles = [os.path.join(uuid_dir, f) for f in os.listdir(uuid_dir)]
@@ -2441,45 +2441,37 @@ class FLLBuilder(object):
             cmd += ' -c boot/isolinux/isolinux.cat'
             cmd += ' -b boot/isolinux/isolinux.bin'
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
-            if os.path.isfile(os.path.join(stage, 'efi.img')):
+            if os.path.isfile(os.path.join(stage, 'boot/grub/efi.img')):
                 cmd += ' -eltorito-alt-boot'
-                cmd += ' -e efi.img -no-emul-boot -isohybrid-gpt-basdat'
-                # iso don't work with vbox - so using the old code might be a better idea
-                # cmd2 = 'isohybrid -h 255 -s 63 %s' % iso_file
+                cmd += ' -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat'
             cmd2 = 'isohybrid %s' % iso_file
 
         elif os.path.isdir(os.path.join(stage, 'boot/grub')):
-            cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
+            cmd += ' -no-emul-boot'
+            cmd += ' -boot-load-size 4'
+            cmd += ' -boot-info-table'
             cmd2 = '%s -l %s -i %s' % (os.path.join(self.opts.s, 'gpthybrid'), self.uuid, iso_file)
             if os.path.isfile(os.path.join(stage, 'boot/grub/i386-pc/grub_eltorito')):
-                cmd += ' -b boot/grub/i386-pc/grub_eltorito --grub2-boot-info --grub2-mbr %s' % os.path.join(stage, 'boot/grub/i386-pc/boot_hybrid.img')
+                cmd += ' -b boot/grub/i386-pc/grub_eltorito'
+                cmd += ' --grub2-boot-info --grub2-mbr %s' % os.path.join(stage, 'boot/grub/i386-pc/boot_hybrid.img')
                 for arch in self.conf['archs'].keys():
                     if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))):
-                        cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))
+                       cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))
                 if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])):
                     cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])
             else:
                 self.log.critical('failed to find grub El Torito image file')
                 raise FllError
-        elif os.path.isdir(os.path.join(stage, 'ppc')):
-            cmd += ' -chrp-boot -T -netatalk -hfs -probe'
-            cmd += ' -map %s/boot/hfs.map' % stage
-            cmd += ' -part -no-desktop -hfs-bless %s/boot' % stage
-            cmd += ' -hfs-volid %s --iso-level 2 --chrp-boot' % distro_name[:32]
-            # 4M/1G reserved for hfs recommended
-            # This limits to a full 4.7GB DVD
-            # (4.7*10^9)*(1/1024)
-            cmd += ' -hfs-parms MAX_XTCSIZE=18287938'
 
         cmd += ' --modification-date=%s' % self.uuid.replace("-","")
-        # if os.path.isfile(os.path.join(stage, 'efi.img')):
-        #    cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image' 
+#        if os.path.isfile(os.path.join(stage, 'efi.img')):
+#            cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image'
 
         cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
         if os.path.isdir(os.path.join(stage, 'boot')):
             cmd += ' --sort-weight 0 / --sort-weight 1 /boot'
-            # if os.path.isdir(os.path.join(stage, 'boot/grub')):
-            #     cmd += ' --sort-weight 2 /boot/grub' 
+            if os.path.isdir(os.path.join(stage, 'boot/grub')):
+                cmd += ' --sort-weight 2 /boot/grub'
             if os.path.isdir(os.path.join(stage, 'boot/isolinux')):
                 cmd += ' --sort-weight 2 /boot/isolinux'
 
@@ -2487,7 +2479,8 @@ class FLLBuilder(object):
         cmd += ' -o %s %s' % (iso_file, stage)
 
         self.log.info('generating iso image of live media...')
-        self.log.info('used command: %s' % cmd)
+        self.log.info('used cmd: %s' % cmd)
+	self.log.info('used cmd2: %s' % cmd2)
         self._execCmd(cmd.split())
         if len(cmd2):
             self.log.info('converting to hybrid iso...')

@@ -19,10 +19,16 @@ packages = """
     initramfs-tools
 
     grub-pc
-    grub-efi-ia32-bin
-    grub-efi-amd64-bin
     efibootmgr
     mtools
     syslinux
     syslinux-common
+"""
+
+amd64 = """
+    grub-efi-amd64-bin
+"""
+
+i386 = """
+    grub-efi-ia32-bin
 """

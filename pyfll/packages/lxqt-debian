@@ -1,0 +1,12 @@
+desc = """
+    Siduction LXQT desktop environment
+"""
+
+deps = """
+    lxqt-debian-cli
+    lxqt-debian
+"""
+
+packages = """
+
+"""

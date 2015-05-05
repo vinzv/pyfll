@@ -1,0 +1,201 @@
+desc = """
+    Siduction-XDebian
+"""
+
+packages = """
+    cups-pdf
+    feh
+    foomatic-db-gutenprint
+    galternatives
+    gksu
+    gnome-themes-standard
+    gtk2-engines
+    gtk2-engines-pixbuf
+    gvfs-bin
+    gvfs-backends
+    ghostscript-x
+    hplip
+    imagemagick
+    libav-tools
+    libsane-extras
+    myspell-de-de
+    myspell-en-us
+    myspell-pt-br
+    ntfs-config
+    pinentry-gtk2
+    printer-driver-gutenprint
+    printer-driver-splix
+    python-notify
+    sane
+    sane-utils
+    scrot
+    system-config-printer-udev
+    systemd-ui
+    xsane
+    xterm
+    zenity
+    zim
+    # predepends
+    fontconfig
+    fontconfig-config
+    xserver-xorg-video-vesa
+    #
+    dmz-cursor-theme
+    fonts-liberation
+    fonts-dejavu-core
+    fonts-dejavu-extra
+    fonts-vlgothic
+    gnupg-agent
+    libegl1-mesa-drivers
+    libgl1-mesa-dri
+    libgles2-mesa
+    libtxc-dxtn-s2tc0
+    libva-x11-1
+    libwayland-egl1-mesa
+    libx11-protocol-perl
+    libxcb-composite0
+    libxcb-damage0
+    libxcb-image0
+    libxcb-keysyms1
+    libxcb-randr0
+    libxcb-xtest0
+    libxcb-xv0
+    menu
+    mesa-utils
+    va-driver-all
+    x11-utils
+    x11-session-utils
+    x11-xfs-utils
+    x11-xserver-utils
+    xauth
+    xinit
+    xfonts-100dpi
+    xfonts-base
+    xfonts-utils
+    xserver-xorg
+    xserver-xorg-input-all
+    xserver-xorg-input-wacom
+    xserver-xorg-video-ati
+    xserver-xorg-video-fbdev
+    xserver-xorg-video-intel
+    xserver-xorg-video-mga
+    xserver-xorg-video-modesetting
+    xserver-xorg-video-nouveau
+    xserver-xorg-video-qxl
+    xserver-xorg-video-vmware
+
+
+        gstreamer1.0-alsa
+    gstreamer0.10-fluendo-mp3
+    gstreamer0.10-nice
+    gstreamer0.10-plugins-good
+    gstreamer0.10-plugins-bad
+    gstreamer0.10-plugins-ugly
+    gstreamer0.10-pulseaudio
+    gstreamer0.10-tools
+    gstreamer0.10-x
+    libcanberra-gstreamer
+    paman
+    paprefs
+    pavucontrol
+    pulseaudio
+    pulseaudio-module-bluetooth
+    pulseaudio-module-x11
+    libcanberra-pulse
+    libfftw3-bin
+
+        acpi-fakekey
+    alsa-utils
+    at-spi2-core
+    bluetooth
+    br2684ctl
+    colord
+    colord-data
+    cpufrequtils
+    crda
+    dmidecode
+    ethtool
+    hdparm
+    hwdata
+    irqbalance
+    firmware-linux-free
+    lvm2
+    mdadm
+    mobile-broadband-provider-info
+    modemmanager
+    nbd-client
+    pcmciautils
+    pciutils
+    powermgmt-base
+    rfkill
+    sdparm
+    udev
+    udisks
+    upower
+    usbutils
+    usb-modeswitch
+    wireless-tools
+
+    # Processor
+    amd64-microcode
+    intel-microcode
+    iucode-tool
+
+    # Video decoder
+    firmware-crystalhd
+
+    # Wired and Wireless
+    # atmel-firmware
+    b43-fwcutter
+    firmware-atheros
+    firmware-b43-installer
+    firmware-b43legacy-installer
+    firmware-bnx2
+    firmware-bnx2x
+    firmware-brcm80211
+    firmware-intelwimax
+    # firmware-ipw2x00 manuell, da frage von dpkg
+    firmware-iwlwifi
+    firmware-libertas
+    firmware-linux-nonfree
+    firmware-myricom
+    firmware-netxen
+    firmware-qlogic
+    firmware-ralink
+    firmware-realtek
+    firmware-ti-connectivity
+    firmware-zd1211
+
+    2048-qt
+    gnome-keyring
+    clementine
+    connman
+    connman-vpn
+    cmst
+    compton
+    dbus-x11
+    gucharmap
+    hardinfo
+    hexchat
+    lxappearance
+    lxqt
+    juffed
+    nomacs
+#    openbox-themes
+    oxygen-icon-theme
+    qbittorrent
+    qlipper
+    qpdfview
+    qupzilla
+    qxkb
+    reportbug-ng
+    screengrab
+    smplayer
+    smtube
+    shared-mime-info
+#    sharpdot-cursor-theme
+#    siduction-settings-plank
+    vlc-plugin-pulse
+    xscreensaver
+
+"""
