@@ -48,7 +48,6 @@ packages = """
     xserver-xorg-video-fbdev
     xserver-xorg-video-intel
     xserver-xorg-video-mga
-    # removed from xserver 1.17: xserver-xorg-video-modesetting
     xserver-xorg-video-nouveau
     xserver-xorg-video-qxl
     xserver-xorg-video-vmware

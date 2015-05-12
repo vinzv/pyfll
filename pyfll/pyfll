@@ -1916,7 +1916,7 @@ class FLLBuilder(object):
                     self._execInChroot(arch, cmd)
                     cmd = [ 'mcopy', '-s', '-i', '/tmp/efi.img', '/tmp/efi_img/efi', '::/' ]
                     self._execInChroot(arch, cmd)
-                    shutil.copy(os.path.join(chroot, 'tmp/efi.img'), os.path.join(self.temp, 'staging/boot/grub'))
+                    shutil.copy(os.path.join(chroot, 'tmp/efi.img'), os.path.join(self.temp, 'staging'))
                     shutil.copy(os.path.join(chroot, 'tmp/iso_uuid'), os.path.join(self.temp, 'staging'))
                     uuid_dir = os.path.join(chroot, 'tmp/uuid')
                     ufiles = [os.path.join(uuid_dir, f) for f in os.listdir(uuid_dir)]
@@ -2429,62 +2429,30 @@ class FLLBuilder(object):
         md5_file = iso_file + '.md5'
         sha256_file = iso_file + '.sha256'
 
-        cmd = 'xorriso -report_about HINT -as mkisofs -graft-points'
-
-        if self.opts.v:
-            cmd += ' -v'
-        cmd += ' -pad -l'
-        cmd2 = ''
-
         if os.path.isfile(os.path.join(stage, 'boot/isolinux/isolinux.bin')):
-            cmd += ' -isohybrid-mbr /usr/lib/syslinux/isohdpfx.bin'
-            cmd += ' -c boot/isolinux/isolinux.cat'
-            cmd += ' -b boot/isolinux/isolinux.bin'
-            cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
-            if os.path.isfile(os.path.join(stage, 'boot/grub/efi.img')):
+            cmd =  'xorriso -as mkisofs'
+            cmd += '    -r -checksum_algorithm_iso md5,sha1,sha256,sha512 '  
+            if self.opts.v:
+                cmd += '    -vv'
+            cmd += '    -V %s' % distro_name[:32]
+            cmd += '    -J -J -joliet-long -cache-inodes '
+            cmd += '    --modification-date=%s' % self.uuid.replace("-","")
+            cmd += '    -isohybrid-mbr /usr/lib/syslinux/isohdpfx.bin'
+            cmd += '    -b boot/isolinux/isolinux.bin'
+            cmd += '    -c boot/isolinux/isolinux.cat'
+            cmd += '    -boot-load-size 4 -boot-info-table -no-emul-boot '
+            if os.path.isfile(os.path.join(stage, 'efi.img')):
                 cmd += ' -eltorito-alt-boot'
-                cmd += ' -e boot/grub/efi.img -no-emul-boot -isohybrid-gpt-basdat'
-            cmd2 = 'isohybrid %s' % iso_file
+                cmd += ' -e  efi.img -no-emul-boot '
+         	cmd += ' -isohybrid-gpt-basdat -isohybrid-apm-hfsplus '
+            cmd += ' -x iso_uuid '
+            cmd += '-x genisoimage.sort'
+            cmd += ' -o %s %s' % (iso_file, stage)
 
-        elif os.path.isdir(os.path.join(stage, 'boot/grub')):
-            cmd += ' -no-emul-boot'
-            cmd += ' -boot-load-size 4'
-            cmd += ' -boot-info-table'
-            cmd2 = '%s -l %s -i %s' % (os.path.join(self.opts.s, 'gpthybrid'), self.uuid, iso_file)
-            if os.path.isfile(os.path.join(stage, 'boot/grub/i386-pc/grub_eltorito')):
-                cmd += ' -b boot/grub/i386-pc/grub_eltorito'
-                cmd += ' --grub2-boot-info --grub2-mbr %s' % os.path.join(stage, 'boot/grub/i386-pc/boot_hybrid.img')
-                for arch in self.conf['archs'].keys():
-                    if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))):
-                       cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))
-                if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])):
-                    cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])
-            else:
-                self.log.critical('failed to find grub El Torito image file')
-                raise FllError
-
-        cmd += ' --modification-date=%s' % self.uuid.replace("-","")
-#        if os.path.isfile(os.path.join(stage, 'efi.img')):
-#            cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image'
-
-        cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
-        if os.path.isdir(os.path.join(stage, 'boot')):
-            cmd += ' --sort-weight 0 / --sort-weight 1 /boot'
-            if os.path.isdir(os.path.join(stage, 'boot/grub')):
-                cmd += ' --sort-weight 2 /boot/grub'
-            if os.path.isdir(os.path.join(stage, 'boot/isolinux')):
-                cmd += ' --sort-weight 2 /boot/isolinux'
-
-        cmd += ' -x iso_uuid -x genisoimage.sort'
-        cmd += ' -o %s %s' % (iso_file, stage)
 
         self.log.info('generating iso image of live media...')
         self.log.info('used cmd: %s' % cmd)
-	self.log.info('used cmd2: %s' % cmd2)
         self._execCmd(cmd.split())
-        if len(cmd2):
-            self.log.info('converting to hybrid iso...')
-            self._execCmd(cmd2.split())
 
         os.chown(iso_file, self.opts.u, self.opts.g)
 
