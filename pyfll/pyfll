@@ -535,8 +535,8 @@ class FLLBuilder(object):
         if self.conf['options'].get('ftp_proxy'):
             self.env['ftp_proxy'] = self.conf['options']['ftp_proxy']
 
-        self.conf['options'].setdefault('apt_preferences', None)
-        self.conf['options'].setdefault('apt_configuration', None)
+        self.conf['options'].setdefault('apt_preferences_d', None)
+        self.conf['options'].setdefault('apt_configuration_d', None)
         self.conf['options'].setdefault('apt_recommends', 'no')
         self.conf['options'].setdefault('media_include', None)
         self.conf['options'].setdefault('apt_cacher', None)
@@ -1072,25 +1072,51 @@ class FLLBuilder(object):
         self.log.info('preparing apt in %s chroot...' % arch)
         chroot = os.path.join(self.temp, arch)
 
-        apt_preferences = self.conf['options']['apt_preferences']
-        if apt_preferences:
-            self.log.info('importing apt preferences file')
+        #apt_preferences = self.conf['options']['apt_preferences']
+        #if apt_preferences:
+        #    self.log.info('importing apt preferences file')
+        #    try:
+        #        shutil.copy(apt_preferences, os.path.join(chroot, 'etc/apt/'))
+        #    except IOError:
+        #        self.log.error('apt preferences file failed to copy: %s' %
+        #                       apt_preferences)
+        #        raise FllError
+        
+        apt_preferences_d = self.conf['options']['apt_preferences_d']
+        if apt_preferences_d:
+            self.log.info('importing apt preferences directory')
             try:
-                shutil.copy(apt_preferences, os.path.join(chroot, 'etc/apt/'))
+                shutil.copytree(os.path.join(self.opts.s, 'data', 'preferences.d', '%s' 
+                                             % apt_preferences_d),
+                                             os.path.join(chroot, 'etc/apt/preferences.d'))
             except IOError:
-                self.log.error('apt preferences file failed to copy: %s' %
-                               apt_preferences)
+                self.log.error('apt preferences directory failed to copy: %s' %
+                               apt_preferences_d)
                 raise FllError
 
-        apt_configuration = self.conf['options']['apt_configuration']
-        if apt_configuration:
-            self.log.info('importing apt configuration file')
+        #apt_configuration = self.conf['options']['apt_configuration']
+        #if apt_configuration:
+        #    self.log.info('importing apt configuration file')
+        #    try:
+        #        shutil.copy(apt_configuration, os.path.join(chroot, 'etc/apt/'))
+        #    except IOError:
+        #        self.log.error('apt configuration file failed to copy: %s' %
+        #                       apt_configuration)
+        #        raise FllError
+
+        apt_configuration_d = self.conf['options']['apt_configuration_d']
+        if apt_configuration_d:
+            self.log.info('importing apt configuration directory')
             try:
-                shutil.copy(apt_configuration, os.path.join(chroot, 'etc/apt/'))
+                shutil.copytree(os.path.join(self.opts.s, 'data', 'apt.conf.d',
+                               '%s' % apt_configuration_d),
+                               os.path.join(chroot, 'etc/apt/apt.conf.d'))
             except IOError:
-                self.log.error('apt configuration file failed to copy: %s' %
-                               apt_configuration)
+                self.log.error('apt configuration directory failed to copy: %s'
+                               % apt_configuration_d)
                 raise FllError
+
+
 
         self.log.debug('removing sources.list from %s chroot' % arch)
         list = os.path.join(chroot, 'etc/apt/sources.list')
