@@ -1,0 +1,14 @@
+Package: *
+Pin: release o=Debian,a=experimental,n=experimental,l=Debian
+Pin-Priority: 501
+
+Package: *
+Pin: release n=experimental, o=Siduction
+Pin-Priority: 502
+
+
+Package: *
+Pin: release o=kdenext
+Pin-Priority: -1
+
+
