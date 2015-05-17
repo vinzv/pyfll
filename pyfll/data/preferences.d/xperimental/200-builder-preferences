@@ -15,3 +15,15 @@ Package: libsane
 Pin: release n=experimental, o=Debian
 Pin-Priority: -1 
 
+Package: libsane
+Pin: release n=unstable, o=Debian
+Pin-Priority: 500
+
+Package: libgphoto2-port10
+Pin: release n=experimental, o=Debian
+Pin-Priority: -1
+
+Package: libgphoto2-port10
+Pin: release n=unstable, o=Debian
+Pin-Priority: 500
+
