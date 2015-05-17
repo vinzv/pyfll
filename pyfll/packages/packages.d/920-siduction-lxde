@@ -27,7 +27,7 @@ packages = """
     osmo
     putty
     python-vte
-    reportbug-ng
+    # reportbug-ng - suspended until rewritten in Qt 5
     shared-mime-info
     sharpdot-cursor-theme
     siduction-settings-plank
@@ -39,7 +39,7 @@ packages = """
     audacious-plugins
 
     ## Qt Applications
-    screengrab-legacy
+    screengrab
     smplayer
     smtube
 """
