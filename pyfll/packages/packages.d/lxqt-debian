@@ -188,7 +188,7 @@ packages = """
     qpdfview
     qupzilla
     qxkb
-    reportbug-ng
+#    reportbug-ng - suspended until rereleased with Qt5
     screengrab
     smplayer
     smtube

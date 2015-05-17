@@ -26,9 +26,11 @@ packages = """
     printer-driver-gutenprint
     printer-driver-splix
     python-notify
+    python-vte
     sane
     sane-utils
     scrot
+    shared-mime-info
     system-config-printer-udev
     systemd-ui
     xsane

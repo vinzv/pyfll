@@ -29,7 +29,8 @@ packages = """
     mpg321
     orage
     ristretto
-    shared-mime-info
+    siduction-settings-conky
+    siduction-settings-plank
     thunar
     thunar-archive-plugin
     thunar-data
@@ -37,8 +38,6 @@ packages = """
     thunar-volman
     trayer
     tumbler
-    siduction-settings-conky
-    siduction-settings-plank
     xarchiver
     xbitmaps
     xfburn

@@ -51,7 +51,7 @@ plasma-desktop
 #    plasma-widgets-addons
 #    polkit-kde-1
 #    print-manager
-#    reportbug-ng
+#    reportbug-ng - suspended until rewritten in Qt5
 #    sharpdot-cursor-theme
 #    skanlite
 #    strigi-client

@@ -99,7 +99,6 @@ packages = """
     polari
     rhythmbox
     # look at potential plugins
-    shared-mime-info
     totem
     totem-plugins
     tracker-gui

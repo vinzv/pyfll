@@ -51,7 +51,6 @@ packages = """
     nemo-fileroller
     p7zip-full
     # doesn't play internet radio streams:  rhythmbox
-    shared-mime-info
     siduction-settings-plank
     sound-juicer
     sound-theme-freedesktop

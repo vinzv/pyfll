@@ -26,9 +26,7 @@ packages = """
     network-manager-gnome
     osmo
     putty
-    python-vte
     # reportbug-ng - suspended until rewritten in Qt 5
-    shared-mime-info
     sharpdot-cursor-theme
     siduction-settings-plank
     transmission

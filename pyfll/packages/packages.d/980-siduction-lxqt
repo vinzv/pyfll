@@ -25,11 +25,10 @@ packages = """
     qpdfview
     qupzilla
     qxkb
-    reportbug-ng
+    # reportbug-ng - suspended until rewritten in Qt5
     screengrab
     smplayer
     smtube
-    shared-mime-info
     sharpdot-cursor-theme
     siduction-settings-plank
     vlc-plugin-pulse
