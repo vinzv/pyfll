@@ -4,8 +4,12 @@ desc = """
 
 packages = """
     2048-qt
+    # Replacement for Clementine
+    audacious
+    audacious-plugins
+    audacious-plugins-data 
     gnome-keyring
-    clementine
+    # clementine - we want no Qt4 Apps
     connman
     connman-vpn
     cmst
