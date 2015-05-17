@@ -24,11 +24,11 @@ packages = """
     nomacs
     openbox-themes
     oxygen-icon-theme
-    qbittorrent
+    # qbittorrent - suspended until in Qt5
     qlipper
     qpdfview
     qupzilla
-    qxkb
+    # qxkb - Qt5 or replaced with lxqt specific
     # reportbug-ng - suspended until rewritten in Qt5
     screengrab
     smplayer
