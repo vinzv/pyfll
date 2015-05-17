@@ -4,6 +4,7 @@ desc = """
 
 deps = """
     lxqt-debian-cli
+    400-firmware-non-free
     lxqt-debian
 """
 
