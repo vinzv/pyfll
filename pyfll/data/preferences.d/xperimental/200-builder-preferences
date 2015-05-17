@@ -4,11 +4,14 @@ Pin-Priority: 501
 
 Package: *
 Pin: release n=experimental, o=Siduction
-Pin-Priority: 502
+Pin-Priority: 501
 
 
 Package: *
 Pin: release o=kdenext
 Pin-Priority: -1
 
+Package: libsane
+Pin: release n=experimental, o=Debian
+Pin-Priority: -1 
 
