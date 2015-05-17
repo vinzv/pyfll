@@ -1,0 +1,91 @@
+Package: libqt5core5a 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5concurrent5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5dbus5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5x11extras5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5gui5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5network5 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5opengl5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5printsupport5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5qml5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5quick5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5script5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5sql5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5sql5-sqlite 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5svg5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5webkit5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5widgets5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libqt5xml5
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: qml-module-qtquick2
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: qml-module-qtquick-controls
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: qml-module-qtquick-dialogs
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: qml-module-qtquick-layouts
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: qml-module-qtquick-privatewidgets
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: qml-module-qtquick-window2
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
