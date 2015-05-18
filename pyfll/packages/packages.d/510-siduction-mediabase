@@ -7,7 +7,8 @@ packages = """
     gstreamer0.10-fluendo-mp3
     gstreamer0.10-nice
     gstreamer0.10-plugins-good
-    gstreamer0.10-plugins-bad
+    # commented to test different dependencies on i386: gstreamer0.10-plugins-bad --> libdirectfb-1.2-9 --> libsysfs2
+    # gstreamer0.10-plugins-bad
     gstreamer0.10-plugins-ugly
     gstreamer0.10-pulseaudio
     gstreamer0.10-tools
