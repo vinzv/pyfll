@@ -3,38 +3,39 @@ desc = """
 """
 
 packages = """
-    2048-qt
-    # Replacement for Clementine
+    
+    ## gtk2
     audacious
     audacious-plugins
-    audacious-plugins-data 
+    audacious-plugins-data
+    hardinfo
+    hexchat
+    lxappearance 
+    xfwm4
+    siduction-settings-xfwm4    
+
+    ## gtk3 
+    siduction-settings-plank
+   
+    ## Qt 5
+    2048-qt
     gnome-keyring
-    # clementine - we want no Qt4 Apps
     connman
     connman-vpn
     cmst
-    compton
     dbus-x11
     gucharmap
-    hardinfo
-    hexchat
-    lxappearance
     lxqt
     juffed
     nomacs
-    openbox-themes
     oxygen-icon-theme
     # qbittorrent - suspended until in Qt5
     qlipper
     qpdfview
     qupzilla
-    # qxkb - Qt5 or replaced with lxqt specific
-    # reportbug-ng - suspended until rewritten in Qt5
     screengrab
     smplayer
     smtube
     sharpdot-cursor-theme
-    siduction-settings-plank
-    vlc-plugin-pulse
     xscreensaver
 """

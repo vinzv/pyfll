@@ -8,7 +8,7 @@ packages = """
     brasero
     clipit
     claws-mail-i18n
-    compton
+    # compton -- no longer needed with Xfwm4
     cups-pk-helper
     evince-gtk
     galculator
@@ -16,10 +16,10 @@ packages = """
     gvfs-fuse
     hardinfo
     hexchat
-    lxappearance-obconf
+    # lxappearance-obconf -- no longer needed with Xfwm4
 
     lxde
-    obconf
+    # obconf -- no longer needed with Xfwm4
 
     medit
     midori
@@ -28,15 +28,21 @@ packages = """
     putty
     # reportbug-ng - suspended until rewritten in Qt 5
     sharpdot-cursor-theme
-    siduction-settings-plank
+
     transmission
     guake
+
+    ## Settings package for Xfwm 4 - predepend on Xfwm4
+    ## and provide some desktop files and configurations
+    ## for Xfwm4 that are not available if installed pure
+    siduction-settings-xfwm4
 
     ## GTK 3
     audacious
     audacious-plugins
+    siduction-settings-plank
 
-    ## Qt Applications
+    ## Qt5 Applications
     screengrab
     smplayer
     smtube
