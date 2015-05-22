@@ -8,29 +8,25 @@ packages = """
     brasero
     clipit
     claws-mail-i18n
-    # compton -- no longer needed with Xfwm4
     cups-pk-helper
     evince-gtk
     galculator
     gpodder
+    guake
     gvfs-fuse
     hardinfo
     hexchat
-    # lxappearance-obconf -- no longer needed with Xfwm4
 
     lxde
-    # obconf -- no longer needed with Xfwm4
+    lxpolkit
+    lxtask
 
     medit
     midori
     network-manager-gnome
     osmo
     putty
-    # reportbug-ng - suspended until rewritten in Qt 5
     sharpdot-cursor-theme
-
-    transmission
-    guake
 
     ## Settings package for Xfwm 4 - predepend on Xfwm4
     ## and provide some desktop files and configurations
@@ -41,6 +37,7 @@ packages = """
     audacious
     audacious-plugins
     siduction-settings-plank
+    transmission-gtk
 
     ## Qt5 Applications
     screengrab
