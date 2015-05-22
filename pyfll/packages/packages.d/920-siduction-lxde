@@ -32,6 +32,8 @@ packages = """
     ## and provide some desktop files and configurations
     ## for Xfwm4 that are not available if installed pure
     siduction-settings-xfwm4
+    xfwm4
+    xfwm4-themes
 
     ## GTK 3
     audacious

@@ -11,8 +11,9 @@ packages = """
     hardinfo
     hexchat
     lxappearance 
-    xfwm4
     siduction-settings-xfwm4    
+    xfwm4
+    xfwm4-themes
 
     ## gtk3 
     siduction-settings-plank
