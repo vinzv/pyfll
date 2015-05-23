@@ -8,6 +8,11 @@ packages = """
     brasero
     clipit
     claws-mail-i18n
+    connman
+    connman-ui
+    libindicator3-7
+    libindicator-tools
+ 
     cups-pk-helper
     evince-gtk
     galculator
@@ -23,7 +28,6 @@ packages = """
 
     medit
     midori
-    network-manager-gnome
     osmo
     putty
     sharpdot-cursor-theme
