@@ -41,7 +41,7 @@ packages = """
 #    xarchiver
 #    xbitmaps
 #    xfburn
-    xfce4
+#    xfce4
 #    xfce4-artwork
 #    xfce4-battery-plugin
 #    xfce4-clipman-plugin
