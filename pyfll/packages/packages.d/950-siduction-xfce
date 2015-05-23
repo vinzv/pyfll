@@ -44,7 +44,7 @@ packages = """
     xfce4
     xfce4-artwork
     xfce4-battery-plugin
-    xfce4-clipman-plugin
+#    xfce4-clipman-plugin
     xfce4-cpufreq-plugin
     xfce4-cpugraph-plugin
     xfce4-datetime-plugin
@@ -54,13 +54,13 @@ packages = """
     xfce4-fsguard-plugin
     xfce4-genmon-plugin
     xfce4-mailwatch-plugin
-    xfce4-mixer
+ #   xfce4-mixer
     xfce4-mount-plugin
     xfce4-netload-plugin
     xfce4-notifyd
     xfce4-notes-plugin
     xfce4-panel
-    xfce4-places-plugin
+ #   xfce4-places-plugin
     xfce4-power-manager-plugins
     xfce4-quicklauncher-plugin
     xfce4-terminal
