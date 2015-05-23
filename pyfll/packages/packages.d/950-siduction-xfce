@@ -3,17 +3,11 @@ desc = """
 """
 
 packages = """
-    # xfce4 basisinstallation
-    xfce4
-    xfwm4
-    xfwm4-themes
-
     abiword
     audacious
     brasero
     chromium
     chromium-l10n
-    compton
     cups-pk-helper
     desktop-file-utils
     evince-gtk
@@ -25,6 +19,7 @@ packages = """
     gpicview
     gstreamer0.10-fluendo-mp3
     gtk2-engines-xfce
+    gtk3-engines-xfce
     hexchat
     leafpad
     libnotify-bin
@@ -36,52 +31,53 @@ packages = """
     ristretto
     siduction-settings-conky
     siduction-settings-plank
-#    thunar
-#    thunar-archive-plugin
-#    thunar-data
-#    thunar-media-tags-plugin
-#    thunar-volman
 #    trayer
 #    tumbler
-#    xarchiver
-#    xbitmaps
-#    xfburn
-#    xfce4-artwork
+    xarchiver
+    xbitmaps
+    # xfce4-soundmenu-plugin - suspended until built with new sources
+#    xtrlock
+    zenity
+
+    # xfce4 basisinstallation
+    thunar-archive-plugin
+    thunar-media-tags-plugin
+    thunar-volman
+    xfburn
+    xfce4
+    xfce4-artwork
+    xfce4-dev-tools
+    xfce4-dict
+    xfce4-notifyd
+    xfce4-taskmanager
+    xfce4-terminal
+    xfce4-volumed
+    xfwm4
+    xfwm4-themes
+
+    # xfce4 plugins
 #    xfce4-battery-plugin
 #    xfce4-clipman-plugin
 #    xfce4-cpufreq-plugin
 #    xfce4-cpugraph-plugin
 #    xfce4-datetime-plugin
-#    xfce4-dev-tools
-#    xfce4-dict
 #    xfce4-diskperf-plugin
 #    xfce4-fsguard-plugin
 #    xfce4-genmon-plugin
 #    xfce4-mailwatch-plugin
-#    xfce4-mixer
 #    xfce4-mount-plugin
 #    xfce4-netload-plugin
-#    xfce4-notifyd
 #    xfce4-notes-plugin
-#    xfce4-panel
 #    xfce4-places-plugin
 #    xfce4-power-manager-plugins
 #    xfce4-quicklauncher-plugin
-#    xfce4-terminal
 #    xfce4-sensors-plugin
-#    xfce4-session
 #    xfce4-smartbookmark-plugin
-    # xfce4-soundmenu-plugin - suspended until built with new sources
 #    xfce4-systemload-plugin
-#    xfce4-taskmanager
 #    xfce4-timer-plugin
-#    xfce4-volumed
 #    xfce4-wavelan-plugin
 #    xfce4-weather-plugin
 #    xfce4-xkb-plugin
-#   xfdesktop4
-#    xtrlock
-    zenity
 
     # Qt5 Packages
     screengrab
