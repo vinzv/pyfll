@@ -9,9 +9,7 @@ packages = """
     clipit
     claws-mail-i18n
     connman
-    connman-ui
-    libindicator3-7
-    libindicator-tools
+    cmst
  
     cups-pk-helper
     evince-gtk
