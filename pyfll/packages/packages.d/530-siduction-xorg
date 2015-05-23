@@ -31,6 +31,7 @@ packages = """
     libxcb-xv0
     menu
     mesa-utils
+    spice-vdagent
     va-driver-all
     x11-utils
     x11-session-utils
