@@ -31,12 +31,11 @@ packages = """
     ristretto
     siduction-settings-conky
     siduction-settings-plank
-#    trayer
-#    tumbler
+    trayer
+    tumbler
     xarchiver
     xbitmaps
-    # xfce4-soundmenu-plugin - suspended until built with new sources
-#    xtrlock
+    xtrlock
     zenity
 
     # xfce4 basisinstallation
@@ -56,28 +55,29 @@ packages = """
     xfwm4-themes
 
     # xfce4 plugins
-#    xfce4-battery-plugin
-#    xfce4-clipman-plugin
-#    xfce4-cpufreq-plugin
-#    xfce4-cpugraph-plugin
-#    xfce4-datetime-plugin
-#    xfce4-diskperf-plugin
-#    xfce4-fsguard-plugin
-#    xfce4-genmon-plugin
-#    xfce4-mailwatch-plugin
-#    xfce4-mount-plugin
-#    xfce4-netload-plugin
-#    xfce4-notes-plugin
-#    xfce4-places-plugin
-#    xfce4-power-manager-plugins
-#    xfce4-quicklauncher-plugin
-#    xfce4-sensors-plugin
-#    xfce4-smartbookmark-plugin
-#    xfce4-systemload-plugin
-#    xfce4-timer-plugin
-#    xfce4-wavelan-plugin
-#    xfce4-weather-plugin
-#    xfce4-xkb-plugin
+    xfce4-battery-plugin
+    xfce4-clipman-plugin
+    xfce4-cpufreq-plugin
+    xfce4-cpugraph-plugin
+    xfce4-datetime-plugin
+    xfce4-diskperf-plugin
+    xfce4-fsguard-plugin
+    xfce4-genmon-plugin
+    xfce4-mailwatch-plugin
+    xfce4-mount-plugin
+    xfce4-netload-plugin
+    xfce4-notes-plugin
+    xfce4-places-plugin
+    xfce4-power-manager-plugins
+    xfce4-quicklauncher-plugin
+    xfce4-sensors-plugin
+    xfce4-smartbookmark-plugin
+    # xfce4-soundmenu-plugin - suspended until built with new sources
+    xfce4-systemload-plugin
+    xfce4-timer-plugin
+    xfce4-wavelan-plugin
+    xfce4-weather-plugin
+    xfce4-xkb-plugin
 
     # Qt5 Packages
     screengrab
