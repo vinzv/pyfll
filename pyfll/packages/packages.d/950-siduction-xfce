@@ -3,6 +3,11 @@ desc = """
 """
 
 packages = """
+    # xfce4 basisinstallation
+    xfce4
+    xfwm4
+    xfwm4-themes
+
     abiword
     audacious
     brasero
@@ -41,7 +46,6 @@ packages = """
 #    xarchiver
 #    xbitmaps
 #    xfburn
-#    xfce4
 #    xfce4-artwork
 #    xfce4-battery-plugin
 #    xfce4-clipman-plugin
@@ -76,8 +80,6 @@ packages = """
 #    xfce4-weather-plugin
 #    xfce4-xkb-plugin
 #   xfdesktop4
-    xfwm4
-    xfwm4-themes
 #    xtrlock
     zenity
 
