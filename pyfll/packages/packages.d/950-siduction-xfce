@@ -31,11 +31,11 @@ packages = """
     ristretto
     siduction-settings-conky
     siduction-settings-plank
-    thunar
-    thunar-archive-plugin
-    thunar-data
-    thunar-media-tags-plugin
-    thunar-volman
+#    thunar
+#    thunar-archive-plugin
+#    thunar-data
+#    thunar-media-tags-plugin
+#    thunar-volman
     trayer
     tumbler
     xarchiver
@@ -75,7 +75,7 @@ packages = """
     xfce4-wavelan-plugin
     xfce4-weather-plugin
     xfce4-xkb-plugin
-    xfdesktop4
+ #   xfdesktop4
     xfwm4
     xfwm4-themes
     xtrlock
