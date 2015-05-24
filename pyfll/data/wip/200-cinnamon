@@ -1,0 +1,95 @@
+Package: cinnamon 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: cinnamon-backgrounds 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: cinnamon-common 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+
+
+
+Package: cinnamon-control-center
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+
+Package: cinnamon-control-center-data 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+
+
+Package: cinnamon-desktop-data 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: cinnamon-l10n 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: cinnamon-screensaver 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: cinnamon-session 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: cinnamon-settings-daemon
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: cjs
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+
+
+
+
+
+Package: gir1.2-cinnamondesktop-3.0  
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: gir1.2-meta-muffin-0.0 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+
+
+
+
+Package: libcjs0
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: libmuffin0
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+
+
+
+Package: muffin 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: muffin-common
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+
+
+Package: nemo 
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500
+
+Package: nemo-data
+Pin: release n=experimental, o=Debian
+Pin-Priority: 500

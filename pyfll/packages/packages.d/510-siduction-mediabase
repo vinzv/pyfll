@@ -16,6 +16,9 @@ packages = """
     libcanberra-gstreamer
     paman
     paprefs
+    # paman depends on gnome-icon-theme
+    gnome-icon-theme
+    #
     pavucontrol
     pulseaudio
     pulseaudio-module-bluetooth
