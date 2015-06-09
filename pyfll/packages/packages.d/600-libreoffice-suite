@@ -1,0 +1,67 @@
+desc = """
+    Essential libreoffice packages.
+"""
+
+packages = """
+    # metapackage libreoffice
+    # Depends:     
+    fonts-sil-gentium-basic
+    libreoffice-base
+    libreoffice-calc
+    libreoffice-core
+    libreoffice-draw
+    libreoffice-impress
+    libreoffice-gnome
+    libreoffice-gtk3
+    libreoffice-math
+    libreoffice-report-builder-bin
+    libreoffice-writer
+    fonts-dejavu
+    # libreoffice-java-common
+    python3-uno
+
+    # Recommends: fonts-liberation | ttf-mscorefonts-installer, libpaper-utils
+    fonts-liberation
+    libpaper-utils
+
+    # Suggests:
+    # to be omitted:  browsers, java*jre, libsane, imagemagick, libgl1, libxrender1, pstoedit, unixodbc, gstreamer1.0-plugins,
+
+    cups-bsd
+    #virtual: hunspell-dictionary  but not all languages available
+    #virtual: hyphen-hyphenation-patterns but not all languages available
+    # this goes into the desktop specific config: libreoffice-gnome + libreoffice-gtk or  libreoffice-kde,
+    openclipart-libreoffice
+    #virtual: libreoffice-grammarcheck
+    # only en (hu, ru) available: libreoffice-lightproof-en 
+
+    #virtual: mythes-thesaurus
+    # languages
+    mythes-de
+    mythes-en-us
+    mythes-it
+    mythes-pl
+    # non existent: mythes-pt(-br)
+    mythes-ro
+    
+    #virtual: libreoffice-help-4.1
+    # languages
+    libreoffice-help-de
+    libreoffice-help-en-gb
+    libreoffice-help-en-us
+    libreoffice-help-it
+    libreoffice-help-pl
+    libreoffice-help-pt-br
+    # non-existent: libreoffice-help-ro 
+    
+    #virtual: libreoffice-l10n-4.1
+    # languages
+    libreoffice-l10n-de
+    libreoffice-l10n-en-gb
+    libreoffice-l10n-en-us
+    libreoffice-l10n-it
+    libreoffice-l10n-pl
+    libreoffice-l10n-pt-br
+    libreoffice-l10n-ro
+    
+"""

@@ -11,8 +11,8 @@ deps = """
     520-siduction-xdebian
     530-siduction-xorg
     540-siduction-xsiduction
+    600-libreoffice-suite
     930-siduction-gnome
-    libreoffice-suite
 """
 
 packages = """
