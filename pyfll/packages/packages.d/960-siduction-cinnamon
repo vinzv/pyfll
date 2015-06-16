@@ -12,25 +12,35 @@ packages = """
     brasero
     cinnamon
     cinnamon-backgrounds
+    # cinnamon-l10n is a recommends of cinnamon:
     cinnamon-l10n
+    cheese
+    gir1.2-cheese-3.0
     dconf-tools
     dconf-service
     desktop-file-utils
     eog
     evince
+    # the old gtk2 configuration tool:
     gconf2
-    # doesn't cause deprecation warnings when started from terminal: 
     gedit
+    # syntaxhighlighting for gedit:
     gir1.2-gtksource-3.0
+    gitg
     glib-networking
     gnome-desktop3-data
     gnome-disk-utility
     gnome-keyring
+    gnome-logs
     gnome-menus
     gnome-media
+    gnome-mplayer
+    # replaced by gnome-mplayer:  gecko-mediaplayer
     gnome-screenshot
+    # is a recommends of cinnamon:
     gnome-terminal
-    # segfaults in default config, and occupies x-terminal-emulator: now test guake again:
+    # did segfault in default config, and occupied x-terminal-emulator: removed in IndianSummer, now test guake again:
+    gtkhash
     guake
     # some experimental extras (keep them?):
       abiword
@@ -49,6 +59,8 @@ packages = """
     muffin
     nemo
     nemo-fileroller
+    # add the digests-tab on the file properties page:
+    nemo-gtkhash
     p7zip-full
     # doesn't play internet radio streams:  rhythmbox
     siduction-settings-plank
@@ -56,8 +68,6 @@ packages = """
     sound-theme-freedesktop
     thin-provisioning-tools
     # totem
-    gnome-mplayer
-    # replaced by gnome-mplayer:  gecko-mediaplayer
     tracker
     veromix
     vcdimager
