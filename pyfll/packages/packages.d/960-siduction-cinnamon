@@ -1,5 +1,5 @@
 desc = """
-    Siduction Cinnamon dektop
+    siduction Cinnamon desktop
 """
 
 # for eventually missed and useful packages we should preconfigure cinnamon with the packages we think they are useful
@@ -12,8 +12,7 @@ packages = """
     brasero
     cinnamon
     cinnamon-backgrounds
-    # cinnamon-l10n is a recommends of cinnamon:
-    cinnamon-l10n
+    cinnamon-l10n  # is a recommends of cinnamon
     cheese
     gir1.2-cheese-3.0
     dconf-tools
@@ -21,11 +20,9 @@ packages = """
     desktop-file-utils
     eog
     evince
-    # the old gtk2 configuration tool:
-    gconf2
+    gconf2  # the old gtk2 configuration tool
     gedit
-    # syntaxhighlighting for gedit:
-    gir1.2-gtksource-3.0
+    gir1.2-gtksource-3.0  # syntaxhighlighting for gedit:
     gitg
     glib-networking
     gnome-desktop3-data
@@ -36,33 +33,30 @@ packages = """
     gnome-media
     gnome-mplayer
     # replaced by gnome-mplayer:  gecko-mediaplayer
-    gnome-screenshot
-    # is a recommends of cinnamon:
-    gnome-terminal
-    # did segfault in default config, and occupied x-terminal-emulator: removed in IndianSummer, now test guake again:
+    # gnome-screenshot # disabled while testing shutter
+    gnome-terminal  # is a recommends of cinnamon
     gtkhash
-    guake
+    guake  # did segfault in default config, and occupied x-terminal-emulator: removed in IndianSummer, now test again.
     # some experimental extras (keep them?):
-      abiword
-      abw2odt
-      gnumeric
-      gnome-calculator
-      gnome-sudoku
-      iagno
-      # test OpenGL easily with swell-foop
-      swell-foop
+        abiword
+        abw2odt
+        gnumeric
+        gnome-calculator
+        gnome-sudoku
+        iagno
+        shutter
+        swell-foop  # easily test OpenGL capabilities.
     hexchat
     icedove
     iceweasel
     libpam-gnome-keyring
-    # replaced by gedit (which is gtk3-based): medit
+    # medit (gtk2-based) was replaced by gedit (which is gtk3-based)
     muffin
     nemo
-    nemo-fileroller
-    # add the digests-tab on the file properties page:
-    nemo-gtkhash
+    nemo-fileroller  # adds items in the context menu of files and directories.
+    nemo-gtkhash  # adds the digests-tab on the file properties page
     p7zip-full
-    # doesn't play internet radio streams:  rhythmbox
+    # rhythmbox # doesn't play internet radio streams
     siduction-settings-plank
     sound-juicer
     sound-theme-freedesktop
