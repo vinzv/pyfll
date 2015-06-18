@@ -11,8 +11,13 @@ packages = """
     blueman
     brasero
     cinnamon
+        cinnamon-l10n  # is a recommends of cinnamon
+        gir1.2-gnomebluetooth-1.0
+        gir1.2-networkmanager-1.0
+        gir1.2-nmgtk-1.0
+        network-manager-gnome
+        gnome-terminal  # is a recommends of cinnamon
     cinnamon-backgrounds
-    cinnamon-l10n  # is a recommends of cinnamon
     cheese
     gir1.2-cheese-3.0
     dconf-tools
@@ -34,7 +39,7 @@ packages = """
     gnome-mplayer
     # replaced by gnome-mplayer:  gecko-mediaplayer
     # gnome-screenshot # disabled while testing shutter
-    gnome-terminal  # is a recommends of cinnamon
+    gnome-session
     gtkhash
     guake  # did segfault in default config, and occupied x-terminal-emulator: removed in IndianSummer, now test again.
     # some experimental extras (keep them?):
