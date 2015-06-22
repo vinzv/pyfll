@@ -29,7 +29,7 @@ packages = """
     rfkill
     sdparm
     udev
-    udisks
+    udisks2
     upower
     usbutils
     usb-modeswitch
