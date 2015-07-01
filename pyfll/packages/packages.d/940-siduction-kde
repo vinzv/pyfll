@@ -82,10 +82,10 @@ packages = """
     iceweasel-l10n-pt-br
     iceweasel-l10n-ro
     # kde
-    kde-l10n-de
-    kde-l10n-engb
-    kde-l10n-it
-    kde-l10n-pl
-    kde-l10n-ptbr
-    kde-l10n-ro
+#    kde-l10n-de
+#    kde-l10n-engb
+#    kde-l10n-it
+#    kde-l10n-pl
+#    kde-l10n-ptbr
+#    kde-l10n-ro
 """
