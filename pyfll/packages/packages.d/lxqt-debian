@@ -187,7 +187,6 @@ packages = """
     qlipper
     qpdfview
     qupzilla
-    qxkb
 #    reportbug-ng - suspended until rereleased with Qt5
     screengrab
     smplayer
