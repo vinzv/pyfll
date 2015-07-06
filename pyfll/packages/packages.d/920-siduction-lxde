@@ -12,7 +12,7 @@ packages = """
     cmst
  
     cups-pk-helper
-    evince-gtk
+    # evince-gtk - ersetzt durch qdfview 
     galculator
     gpodder
     guake
@@ -33,7 +33,7 @@ packages = """
     ## Settings package for Xfwm 4 - predepend on Xfwm4
     ## and provide some desktop files and configurations
     ## for Xfwm4 that are not available if installed pure
-    siduction-settings-xfwm4
+    ### siduction-settings-xfwm4 -- eventuell nicht notwendig
     xfwm4
     xfwm4-themes
 
@@ -44,6 +44,10 @@ packages = """
     transmission-gtk
 
     ## Qt5 Applications
+    qpdfview
+    qpdfview-djvu-plugin
+    qpdfview-ps-plugin
+    qpdfview-translations  
     screengrab
     smplayer
     smtube
