@@ -1,76 +1,61 @@
 desc = """
-    Siduction KDE desktop
+    Siduction KDE's Plasma 5 desktop
 """
 
 packages = """
-    akregator
-    akonadi-backend-sqlite
-    ark
-    baloo4	
-    baloo-utils
-    converseen
-    digikam
-    gwenview
-    iceweasel
-    libk3b6-extracodecs
-    k3b-i18n
-    libkactivities-bin
-    kaffeine
-    kamoso
-    kate
-    kcalc
-    kcharselect
-    kcmsystemd
-    kde-config-baloo-advanced
-    kde-config-cddb
-    kde-config-gtk-style
-    kde-config-touchpad
-    kdenetwork-filesharing
-    kde-plasma-desktop
-    kdepim
-    kdesudo
-    kdf
-    kgamma
-    kgpg
-    khelpcenter4
-    Kio-audiocd
-    kipi-plugins
-    kmenuedit
-    kmix
-    konq-plugins
-    konversation
-    kopete
-    kpartsplugin
-    kppp
-    krdc
-    krusader
-    ksnapshot
-    ktorrent
-    kwalletmanager
-    okular
-    okular-extra-backends
-    phonon-backend-gstreamer
-    phonon-backend-vlc
-    pinentry-qt4
-    plasma-nm
-    # additional dependencies for plasma-nm
-    network-manager-openconnect
-    network-manager-openvpn
-    network-manager-pptp
-    network-manager-vpnc
-    # end dependencies
-    plasma-widgets-addons
-    plasma-widget-homerun-kicker
-    plasma-widget-milou
-    polkit-kde-1
-    print-manager
-    reportbug-ng
-    sharpdot-cursor-theme
-    skanlite
-    strigi-client
-    virtuoso-minimal
-    vlc-plugin-pulse
-    yakuake
+kde-standard
+#    akregator
+#    akonadi-backend-sqlite
+#    ark
+#    converseen
+#    digikam
+#    gwenview
+#    iceweasel
+#    libk3b6-extracodecs
+#    k3b-i18n
+#    kaffeine
+#    kamoso
+#    kate
+#    kcalc
+#    kcharselect
+#    kde-config-cddb
+#    kde-config-gtk-style
+#    kde-config-touchpad
+#    kdenetwork-filesharing 
+#    kde-plasma-desktop
+#    kdepim
+#    kdesudo
+#    kdf
+#    kgamma
+#    kgpg
+#    khelpcenter4
+#    kipi-plugins
+#    kmenuedit
+#    kmix
+#    konq-plugins
+#    konversation
+#    kopete
+#    kpartsplugin
+#    kppp
+#    krdc
+#    krusader
+#    ksnapshot
+#    ktorrent
+#    kwalletmanager
+#    okular
+#    okular-extra-backends
+#    phonon-backend-gstreamer
+#    phonon-backend-vlc
+#    plasma-widgets-addons
+#    polkit-kde-1
+#    print-manager
+#    reportbug-ng - suspended until rewritten in Qt5
+#    sharpdot-cursor-theme
+#    skanlite
+#    strigi-client
+#    virtuoso-minimal
+#    vlc
+#    yakuake
     #
     # brute-force languange integration
     #
