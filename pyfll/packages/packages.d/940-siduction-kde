@@ -3,26 +3,28 @@ desc = """
 """
 
 packages = """
-kde-standard
-#    akregator
-#    akonadi-backend-sqlite
-#    ark
+    # kde-standard
+    akregator
+    akonadi-backend-sqlite
+    ark
+    baloo-kf5
+
 #    converseen
 #    digikam
-#    gwenview
-#    iceweasel
+    gwenview
+    iceweasel
 #    libk3b6-extracodecs
 #    k3b-i18n
 #    kaffeine
 #    kamoso
-#    kate
-#    kcalc
+    kate
+    kcalc
 #    kcharselect
+
 #    kde-config-cddb
 #    kde-config-gtk-style
 #    kde-config-touchpad
 #    kdenetwork-filesharing 
-#    kde-plasma-desktop
 #    kdepim
 #    kdesudo
 #    kdf
@@ -31,26 +33,27 @@ kde-standard
 #    khelpcenter4
 #    kipi-plugins
 #    kmenuedit
-#    kmix
+    kmix
 #    konq-plugins
 #    konversation
-#    kopete
+    kopete
 #    kpartsplugin
 #    kppp
 #    krdc
 #    krusader
-#    ksnapshot
+    ksnapshot
 #    ktorrent
-#    kwalletmanager
-#    okular
+    kwalletmanager
+    okular
 #    okular-extra-backends
 #    phonon-backend-gstreamer
-#    phonon-backend-vlc
+    phonon-backend-vlc
+    plasma-desktop
 #    plasma-widgets-addons
-#    polkit-kde-1
+    polkit-kde-1
 #    print-manager
 #    reportbug-ng - suspended until rewritten in Qt5
-#    sharpdot-cursor-theme
+    sharpdot-cursor-theme
 #    skanlite
 #    strigi-client
 #    virtuoso-minimal
@@ -66,11 +69,4 @@ kde-standard
     iceweasel-l10n-pl
     iceweasel-l10n-pt-br
     iceweasel-l10n-ro
-    # kde
-#    kde-l10n-de
-#    kde-l10n-engb
-#    kde-l10n-it
-#    kde-l10n-pl
-#    kde-l10n-ptbr
-#    kde-l10n-ro
 """
