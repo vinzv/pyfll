@@ -10,42 +10,47 @@ packages = """
     baloo-kf5
 
 #    converseen
-#    digikam
+    digikam
     gwenview
     iceweasel
 #    libk3b6-extracodecs
-#    k3b-i18n
+    k3b-i18n
 #    kaffeine
-#    kamoso
+    kamoso
     kate
     kcalc
-#    kcharselect
+    kcharselect
 
-#    kde-config-cddb
-#    kde-config-gtk-style
-#    kde-config-touchpad
-#    kdenetwork-filesharing 
-#    kdepim
-#    kdesudo
-#    kdf
-#    kgamma
-#    kgpg
-#    khelpcenter4
-#    kipi-plugins
-#    kmenuedit
+    kde-config-baloo-advanced
+    kde-config-cddb
+    kde-config-gtk-style
+    kde-config-gtk-style-preview
+    kde-config-sddm
+    kde-config-systemd
+    kde-config-touchpad
+   
+    kdenetwork-filesharing 
+    kdepim
+    kdesudo
+    kdf
+    kgamma
+    kgpg
+    khelpcenter
+    kipi-plugins
+    kmenuedit
     kmix
-#    konq-plugins
-#    konversation
+    konq-plugins
+    konversation
     kopete
 #    kpartsplugin
-#    kppp
-#    krdc
+    kppp
+    krdc
 #    krusader
     ksnapshot
-#    ktorrent
+    ktorrent
     kwalletmanager
     okular
-#    okular-extra-backends
+    okular-extra-backends
 #    phonon-backend-gstreamer
     phonon-backend-vlc
     plasma-desktop
