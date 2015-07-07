@@ -26,7 +26,7 @@ packages = """
     kde-config-gtk-style
     kde-config-gtk-style-preview
     kde-config-sddm
-    kde-config-systemd
+#    kde-config-systemd
     kde-config-touchpad
    
     kdenetwork-filesharing 
@@ -41,6 +41,7 @@ packages = """
     kmix
     konq-plugins
     konversation
+    konsole
     kopete
 #    kpartsplugin
     kppp
