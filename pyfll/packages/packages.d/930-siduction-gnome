@@ -91,7 +91,7 @@ packages = """
     libxml2-utils
     mpg321
     nautilus
-    nautilus-open-terminal
+    # nautilus-open-terminal
     network-manager-gnome
     network-manager-openvpn
     network-manager-pptp
