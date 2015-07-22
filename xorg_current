@@ -1,0 +1,10 @@
+#!/bin/bash
+
+## defaults
+options="-vv "
+confpath="./pyfll/conf/"
+flavour=xorg
+release=current
+arch=amd64
+
+time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf 
