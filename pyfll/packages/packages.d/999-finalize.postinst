@@ -42,7 +42,7 @@ do_postinst() {
     fi
 
 
-    if [ $LIVE_SETTINGS == 'none' ]; then
+    if [ "$LIVE_SETTINGS" = 'none' ]; then
         echo 'No live settings scripts found! Please fix! (exit in 999-finalize.postinst)'
         exit 1
     fi
