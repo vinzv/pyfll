@@ -27,6 +27,15 @@ do_postinst() {
         say "Configure Live Settings ..."
         live-settings configure
     fi
+
+    # add testuser
+    adduser --gecos tester tester \
+<< EOF
+tester
+tester
+EOF
+
+
 }
 
 say 'finalize iso'
