@@ -1,0 +1,11 @@
+#!/bin/bash
+
+## defaults
+options="-vv "
+confpath="./pyfll/conf/"
+flavour=gnome
+release=xperimental
+arch=amd64
+aptcache="-t http://192.168.150.41:3142"
+
+time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf 
