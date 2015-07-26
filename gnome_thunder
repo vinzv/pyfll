@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## defaults
-options="-vv "
+options="-vvvvv "
 confpath="./pyfll/conf/"
 flavour=gnome
 release=xperimental
