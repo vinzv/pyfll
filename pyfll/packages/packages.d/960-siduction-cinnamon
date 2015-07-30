@@ -75,17 +75,17 @@ packages = """
     #
     # some languages hardwired
     #
-    icedove-l10n-de
-    icedove-l10n-en-gb
-    icedove-l10n-it
-    icedove-l10n-pl
-    icedove-l10n-pt-br
-    icedove-l10n-ro
+#    icedove-l10n-de
+#    icedove-l10n-en-gb
+#    icedove-l10n-it
+#    icedove-l10n-pl
+#    icedove-l10n-pt-br
+#    icedove-l10n-ro
     # 
-    iceweasel-l10n-de
-    iceweasel-l10n-en-gb
-    iceweasel-l10n-it
-    iceweasel-l10n-pl
-    iceweasel-l10n-pt-br
-    iceweasel-l10n-ro
+#    iceweasel-l10n-de
+#    iceweasel-l10n-en-gb
+#    iceweasel-l10n-it
+#    iceweasel-l10n-pl
+#    iceweasel-l10n-pt-br
+#    iceweasel-l10n-ro
 """
