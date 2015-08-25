@@ -11,10 +11,9 @@ packages = """
     hardinfo
     hexchat
     lxappearance 
-    siduction-settings-xfwm4    
     xfwm4
     xfwm4-themes
-
+   
     ## gtk3 
     siduction-settings-plank
    
@@ -26,7 +25,6 @@ packages = """
     cmst
     dbus-x11
     gucharmap
-    lxqt
     juffed
     nomacs
     oxygen-icon-theme
