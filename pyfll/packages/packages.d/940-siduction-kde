@@ -3,76 +3,109 @@ desc = """
 """
 
 packages = """
-    # kde-standard
-    akregator
-    akonadi-backend-sqlite
-    ark
-    baloo-kf5
+  akonadi-backend-sqlite
+  baloo
+  bluedevil
+  converseen
 
-#    converseen
-    digikam
-    gwenview
-    iceweasel
-#    libk3b6-extracodecs
-    k3b-i18n
-#    kaffeine
-    kamoso
-    kate
-    kcalc
-    kcharselect
 
-    kde-config-baloo-advanced
-    kde-config-cddb
-    kde-config-gtk-style
-    kde-config-gtk-style-preview
-    kde-config-sddm
-#    kde-config-systemd
-    kde-config-touchpad
-   
-    kdenetwork-filesharing 
-    kdepim
-    kdesudo
-    kdf
-    kgamma
-    kgpg
-    khelpcenter
-    kipi-plugins
-    kmenuedit
-    kmix
-    konq-plugins
-    konversation
-    konsole
-    kopete
-#    kpartsplugin
-    kppp
-    krdc
-#    krusader
-    ksnapshot
-    ktorrent
-    kwalletmanager
-    okular
-    okular-extra-backends
-#    phonon-backend-gstreamer
-    phonon-backend-vlc
-    plasma-desktop
-#    plasma-widgets-addons
-    polkit-kde-1
-#    print-manager
-#    reportbug-ng - suspended until rewritten in Qt5
-    sharpdot-cursor-theme
-#    skanlite
-#    strigi-client
-#    virtuoso-minimal
+  k3b-i18n
+    libk3b6-extracodecs
+  kaffeine
+  kamoso
+  kdeaccessibility
+  kdeadmin
+
+  kde-config-baloo-advanced
+  kde-config-cddb
+  kde-config-cron
+  kde-config-fcitx
+  kde-config-gtk-style
+  kde-config-gtk-style-preview
+  kde-config-sddm
+  kde-config-systemd
+  kde-config-touchpad 
+
+
+  kdegraphics
+  kdemultimedia
+  kdenetwork
+  kdenetwork-filesharing
+  kdepim
+  kdeutils
+  kdesudo
+  kdetoys
+
+  kdiff3
+
+  kde-runtime
+  kde-standard
+
+  khotkeys
+  kinfocenter
+  kmenuedit
+
+  konversation
+  konqueror-nsplugins
+  konq-plugins
+  kppp
+  krusader
+  ksaneplugin
+  kscreen
+  ksshaskpass
+  ksysguard
+  kwin-addons
+  kwrited
+  ktorrent
+
+  okteta  
+
+  pinentry-qt4
+  plasma-desktop 
+  plasma-widget-ktorrent
+  plasma-workspace
+  plasma-desktop
+  plasma-nm
+    avahi-autoipd
+    libteam-utils
+    network-manager-openconnect
+    network-manager-openvpn
+    network-manager-pptp
+    network-manager-vpnc
+  powerdevil
+  print-manager
+  
+
+  udisks2
+  upower
+
+  reportbug-ng
+  sharpdot-cursor-theme
+
+  # sni-qt  
+  systemsettings
+
+  yakuake
+
+
+
+#  digikam
+#     kipi-plugins
+
+#  kpartsplugin
+#  phonon-backend-gstreamer
+#  phonon-backend-vlc
 #    vlc
-#    yakuake
-    #
-    # brute-force languange integration
-    #
-    # iceweasel
-    iceweasel-l10n-de
-    iceweasel-l10n-en-gb
-    iceweasel-l10n-it
-    iceweasel-l10n-pl
-    iceweasel-l10n-pt-br
-    iceweasel-l10n-ro
+
+
+  #
+  # brute-force languange integration
+  #
+  iceweasel
+  iceweasel-l10n-de
+  iceweasel-l10n-en-gb
+  iceweasel-l10n-it
+  iceweasel-l10n-pl
+  iceweasel-l10n-pt-br
+  iceweasel-l10n-ro
 """

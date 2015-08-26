@@ -95,6 +95,7 @@ packages = """
     net-tools
     openssh-client
     openprinting-ppds
+    p7zip-full
     partimage
     pinentry-curses
     policykit-1
