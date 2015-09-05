@@ -28,7 +28,7 @@ packages = """
     juffed
     nomacs
     oxygen-icon-theme
-    # qbittorrent - suspended until in Qt5
+    qbittorrent
     qlipper
     qpdfview
     qupzilla
