@@ -4,10 +4,6 @@ desc = """
 
 packages = """
     ffmpeg
-      libavdevice-ffmpeg56
-      libavfilter-ffmpeg5
-        libopencv-core2.4v5 
-        libopencv-imgproc2.4v5
     gstreamer1.0-alsa
     gstreamer0.10-fluendo-mp3
     gstreamer0.10-nice
