@@ -62,7 +62,7 @@ packages = """
 
   pinentry-qt4
   plasma-desktop 
-  plasma-widget-ktorrent
+#  plasma-widget-ktorrent old and outdated
   plasma-workspace
   plasma-desktop
   plasma-nm

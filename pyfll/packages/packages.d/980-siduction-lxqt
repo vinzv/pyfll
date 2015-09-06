@@ -26,7 +26,7 @@ packages = """
     dbus-x11
     gucharmap
     juffed
-    nomacs
+#    nomacs broken atm
     oxygen-icon-theme
     qbittorrent
     qlipper
