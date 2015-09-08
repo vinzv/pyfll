@@ -53,7 +53,7 @@ packages = """
       gnome-hearts
     gnome-keyring
     gnome-logs
-    gnome-media
+    #gnome-media
     #g-o-a is needed by empathy, polari
     gnome-online-accounts
     gnome-photos
