@@ -3,20 +3,20 @@ desc = """
 """
 
 packages = """
-    
+
     ## gtk2
     audacious
     audacious-plugins
     audacious-plugins-data
     hardinfo
     hexchat
-    lxappearance 
+    lxappearance
     xfwm4
     xfwm4-themes
-   
-    ## gtk3 
+
+    ## gtk3
     siduction-settings-plank
-   
+
     ## Qt 5
     2048-qt
     gnome-keyring
@@ -33,6 +33,7 @@ packages = """
     qpdfview
     qupzilla
     screengrab
+    sddm
     smplayer
     smtube
     sharpdot-cursor-theme
