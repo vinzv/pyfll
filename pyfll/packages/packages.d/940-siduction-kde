@@ -24,8 +24,7 @@ packages = """
   kde-config-gtk-style-preview
   kde-config-sddm
   kde-config-systemd
-  kde-config-touchpad 
-
+  kde-config-touchpad
 
   kdegraphics
   kdemultimedia
@@ -33,18 +32,15 @@ packages = """
   kdenetwork-filesharing
   kdepim
   kdeutils
+
   kdesudo
   kdetoys
-
   kdiff3
-
   kde-runtime
   kde-standard
-
   khotkeys
   kinfocenter
   kmenuedit
-
   konversation
   konqueror-nsplugins
   konq-plugins
@@ -58,10 +54,10 @@ packages = """
   kwrited
   ktorrent
 
-  okteta  
+  okteta
 
   pinentry-qt4
-  plasma-desktop 
+  plasma-desktop
 #  plasma-widget-ktorrent old and outdated
   plasma-workspace
   plasma-desktop
@@ -74,15 +70,15 @@ packages = """
     network-manager-vpnc
   powerdevil
   print-manager
-  
+
 
   udisks2
   upower
 
   reportbug-ng
-  sharpdot-cursor-theme
 
-  # sni-qt  
+  sharpdot-cursor-theme
+  sni-qt
   systemsettings
 
   yakuake
