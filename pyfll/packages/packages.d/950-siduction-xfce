@@ -17,7 +17,6 @@ packages = """
     gnome-keyring
     gnumeric
     gpicview
-    gstreamer0.10-fluendo-mp3
     gtk2-engines-xfce
     gtk3-engines-xfce
     hexchat

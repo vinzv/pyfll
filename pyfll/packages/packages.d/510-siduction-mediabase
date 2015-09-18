@@ -4,16 +4,24 @@ desc = """
 
 packages = """
     # ffmpeg broken atm
-    gstreamer1.0-alsa
-    gstreamer0.10-fluendo-mp3
+    # gstreamer0.10-fluendo-mp3
     gstreamer0.10-nice
     gstreamer0.10-plugins-good
-    # commented to test different dependencies on i386: gstreamer0.10-plugins-bad --> libdirectfb-1.2-9 --> libsysfs2
-    # gstreamer0.10-plugins-bad
+    gstreamer0.10-plugins-bad
     gstreamer0.10-plugins-ugly
     gstreamer0.10-pulseaudio
     gstreamer0.10-tools
     gstreamer0.10-x
+
+    gstreamer1.0-alsa
+    gstreamer1.0-nice
+    gstreamer1.0-plugins-bad
+    gstreamer1.0-plugins-good
+    gstreamer1.0-plugins-ugly
+    gstreamer1.0-pulseaudio
+    gstreamer1.0-tools
+    gstreamer1.0-x
+
     libcanberra-gstreamer
     paman
     paprefs
