@@ -13,7 +13,7 @@ packages = """
     adduser
     console-setup
     efibootmgr
-    efivars
+    efivar
     fll-live-initramfs
     fll-live-initscripts
     grub-pc
