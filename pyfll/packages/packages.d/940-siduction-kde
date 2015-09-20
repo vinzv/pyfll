@@ -6,7 +6,7 @@ packages = """
   akonadi-backend-sqlite
   baloo
   bluedevil
-  converseen
+ converseen
 
 
   k3b-i18n
@@ -68,6 +68,7 @@ packages = """
     network-manager-openvpn
     network-manager-pptp
     network-manager-vpnc
+  polkit-kde-1
   powerdevil
   print-manager
 
