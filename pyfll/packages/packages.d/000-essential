@@ -12,15 +12,15 @@ debconf = """
 packages = """
     adduser
     console-setup
+    efibootmgr
+    efivars
     fll-live-initramfs
     fll-live-initscripts
-    locales
-    squashfs-tools
-    initramfs-tools
-
     grub-pc
-    efibootmgr
+    initramfs-tools
+    locales
     mtools
+    squashfs-tools
     syslinux
     syslinux-common
 """
