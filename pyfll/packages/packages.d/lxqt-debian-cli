@@ -110,6 +110,7 @@ packages = """
     printer-driver-pnm2ppa
     pv
     pwgen
+    realpath
     reptyr
     reiserfsprogs
     reportbug
