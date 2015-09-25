@@ -55,6 +55,7 @@ packages = """
     icedove
     iceweasel
     libpam-gnome-keyring
+    liferea # linux feed reader
     # medit (gtk2-based) was replaced by gedit (which is gtk3-based)
     muffin
     nemo
@@ -68,9 +69,9 @@ packages = """
     thin-provisioning-tools
     # totem
     tracker
-    veromix
+    # veromix got removed from debian
     vcdimager
-    # causes monster icons in nemo's context menu: vim-gtk
+    vim-gtk
     yelp
     #
     # some languages hardwired
