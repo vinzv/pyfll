@@ -35,8 +35,8 @@ packages = """
     gnome-keyring
     gnome-logs
     gnome-menus
-    gnome-media
-    gnome-mplayer
+    # gnome-media
+    # gnome-mplayer
     # replaced by gnome-mplayer:  gecko-mediaplayer
     # gnome-screenshot # disabled while testing shutter
     gnome-session
