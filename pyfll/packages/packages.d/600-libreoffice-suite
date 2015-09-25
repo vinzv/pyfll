@@ -12,7 +12,7 @@ packages = """
     libreoffice-draw
     libreoffice-impress
     libreoffice-gnome
-    libreoffice-gtk3
+    libreoffice-gtk
     libreoffice-math
     libreoffice-report-builder-bin
     libreoffice-writer
