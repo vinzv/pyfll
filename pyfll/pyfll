@@ -1968,6 +1968,8 @@ class FLLBuilder(object):
                shutil.copy(pciids, syslinux_dir)
                menu = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/menu.c32')
                shutil.copy(menu, syslinux_dir)
+               ldlinux = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/ldlinux.c32')
+               shutil.copy(ldlinux, syslinux_dir)
                bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
                bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
                for file in bootlogo:
