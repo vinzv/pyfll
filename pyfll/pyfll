@@ -1952,7 +1952,7 @@ class FLLBuilder(object):
                     self.log.exception('failed to create efi.img')
                     raise FllError
 
-        isolinux = os.path.join(chroot, 'usr/lib/syslinux/isolinux.bin')
+        isolinux = os.path.join(chroot, 'usr/lib/ISOLINUX/isolinux.bin')
         if os.path.isfile(isolinux):
             try:
                stage_dir = os.path.join(self.temp, 'staging')
@@ -1960,13 +1960,13 @@ class FLLBuilder(object):
                if not os.path.isdir(syslinux_dir):
                    os.mkdir(syslinux_dir, 0755)
                shutil.copy(isolinux, syslinux_dir)
-               gfxboot = os.path.join(chroot, 'usr/lib/syslinux/gfxboot.c32')
+               gfxboot = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/gfxboot.c32')
                shutil.copy(gfxboot, syslinux_dir)
-               hdt = os.path.join(chroot, 'usr/lib/syslinux/hdt.c32')
+               hdt = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/hdt.c32')
                shutil.copy(hdt, syslinux_dir)
                pciids = os.path.join(chroot, '/usr/share/misc/pci.ids')
                shutil.copy(pciids, syslinux_dir)
-               menu = os.path.join(chroot, 'usr/lib/syslinux/menu.c32')
+               menu = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/menu.c32')
                shutil.copy(menu, syslinux_dir)
                bootlogo_dir = os.path.join(chroot, 'etc', 'bootsplash', 'themes', self.conf['distro']['FLL_GFXBOOT_THEME'], 'cdrom')
                bootlogo = glob.glob(os.path.join(bootlogo_dir, '*'))
@@ -2463,7 +2463,7 @@ class FLLBuilder(object):
             cmd += '    -V %s' % distro_name[:32]
             cmd += '    -J -J -joliet-long -cache-inodes '
             cmd += '    --modification-date=%s' % self.uuid.replace("-","")
-            cmd += '    -isohybrid-mbr /usr/lib/syslinux/isohdpfx.bin'
+            cmd += '    -isohybrid-mbr /usr/lib/ISOLINUX/isohdpfx.bin'
             cmd += '    -b boot/isolinux/isolinux.bin'
             cmd += '    -c boot/isolinux/isolinux.cat'
             cmd += '    -boot-load-size 4 -boot-info-table -no-emul-boot '
