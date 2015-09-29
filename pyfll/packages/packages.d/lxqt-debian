@@ -145,7 +145,6 @@ packages = """
     firmware-crystalhd
 
     # Wired and Wireless
-    # atmel-firmware
     b43-fwcutter
     firmware-atheros
     firmware-b43-installer
@@ -154,7 +153,6 @@ packages = """
     firmware-bnx2x
     firmware-brcm80211
     firmware-intelwimax
-    # firmware-ipw2x00 manuell, da frage von dpkg
     firmware-iwlwifi
     firmware-libertas
     firmware-linux-nonfree
@@ -181,18 +179,16 @@ packages = """
     lxqt
     juffed
     nomacs
-#    openbox-themes
     oxygen-icon-theme
     qbittorrent
     qlipper
     qpdfview
     qupzilla
-#    reportbug-ng - suspended until rereleased with Qt5
     screengrab
     smplayer
     smtube
     shared-mime-info
-#    sharpdot-cursor-theme
+    sharpdot-cursor-theme
 #    siduction-settings-plank
     vlc-plugin-pulse
     xscreensaver
