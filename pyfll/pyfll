@@ -1969,7 +1969,7 @@ class FLLBuilder(object):
                menu = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/menu.c32')
                shutil.copy(menu, syslinux_dir)
                libcom32 = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/libcom32.c32')
-               shutil.copy(libcom32, syslinux_dir
+               shutil.copy(libcom32, syslinux_dir)
                libmenu = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/libmenu.c32')
                shutil.copy(libmenu, syslinux_dir)
                libutil32 = os.path.join(chroot, 'usr/lib/syslinux/modules/bios/libutil.c32')
