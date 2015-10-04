@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## defaults
-options="-vvvv "
+options="-vv "
 confpath="./pyfll/conf/"
 flavour=nox
 release=current

@@ -23,8 +23,6 @@ packages = """
     squashfs-tools
     syslinux
     syslinux-common
-    syslinux-utils
-    isolinux
 """
 
 amd64 = """
