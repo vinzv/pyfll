@@ -6,7 +6,7 @@ packages = """
   akonadi-backend-sqlite
   baloo
   bluedevil
- converseen
+  converseen
 
 
   k3b-i18n
@@ -51,6 +51,7 @@ packages = """
   ksshaskpass
   ksysguard
   kwin-addons
+  kwin-x11
   kwrited
   ktorrent
 
