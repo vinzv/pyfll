@@ -85,7 +85,6 @@ packages = """
     mlocate
     moc
     moreutils
-    most
     nfs-common
     ntfs-3g
     nmap
