@@ -27,6 +27,7 @@ packages = """
   kde-config-touchpad
 
   kdegraphics
+  kdegraphics-thumbnailers 
   kdemultimedia
   kdenetwork
   kdenetwork-filesharing
@@ -40,6 +41,7 @@ packages = """
   kde-standard
   khotkeys
   kinfocenter
+  kio-extras
   kmenuedit
   konversation
   konqueror-nsplugins
@@ -55,6 +57,8 @@ packages = """
   kwrited
   ktorrent
 
+  mplayerthumbs
+  
   okteta
 
   pinentry-qt4
