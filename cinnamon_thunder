@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## defaults
-options="-vv "
+options="-vvvvv -P"
 confpath="./pyfll/conf/"
 flavour=cinnamon
 release=xperimental
