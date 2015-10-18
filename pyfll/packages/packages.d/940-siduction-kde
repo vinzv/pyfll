@@ -67,6 +67,7 @@ packages = """
   plasma-workspace
   plasma-desktop
   plasma-nm
+  plasma-systray-legacy 
     avahi-autoipd
     libteam-utils
     network-manager-openconnect
