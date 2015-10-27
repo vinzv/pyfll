@@ -25,10 +25,10 @@ packages = """
     firmware-iwlwifi 
     firmware-libertas
     firmware-linux-nonfree 
+    firmware-misc-nonfree
     firmware-myricom
     firmware-netxen 
     firmware-qlogic 
-    firmware-ralink 
     firmware-realtek
     firmware-ti-connectivity
     firmware-zd1211
