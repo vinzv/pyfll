@@ -15,7 +15,6 @@ packages = """
         gnome-icon-theme
         gnome-icon-theme-extras
         gnome-keyring
-        gstreamer1.0-plugins-bad
         hexchat
         iceweasel
         mate-applets
