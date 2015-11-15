@@ -18,9 +18,6 @@ packages = """
     imagemagick
     libav-tools
     libsane-extras
-    myspell-de-de
-    myspell-en-us
-    myspell-pt-br
     ntfs-config
     pinentry-gtk2
     printer-driver-gutenprint
