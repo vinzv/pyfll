@@ -11,8 +11,8 @@ packages = """
     gnome-themes-standard
     gtk2-engines
     gtk2-engines-pixbuf
-    gvfs-bin
-    gvfs-backends
+# dependency problems    gvfs-bin
+# dependency problems   gvfs-backends
     ghostscript-x
     hplip
     imagemagick

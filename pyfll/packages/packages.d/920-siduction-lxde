@@ -16,7 +16,7 @@ packages = """
     galculator
     gpodder
     guake
-    gvfs-fuse
+# dependency problems gvfs-fuse
     hardinfo
     hexchat
 
