@@ -35,8 +35,6 @@ packages = """
     screengrab
     sddm
     # sddm theme in config
-    smplayer
-    smtube
     sharpdot-cursor-theme
     xscreensaver
 """

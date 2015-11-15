@@ -174,11 +174,10 @@ packages = """
     qpdfview
     qupzilla
     screengrab
-    smplayer
-    smtube
+#    smplayer
+#    smtube
     shared-mime-info
     sharpdot-cursor-theme
-#    siduction-settings-plank
     vlc-plugin-pulse
     xscreensaver
 

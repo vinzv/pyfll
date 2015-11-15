@@ -10,9 +10,9 @@ packages = """
     claws-mail-i18n
     connman
     cmst
- 
+
     cups-pk-helper
-    # evince-gtk - ersetzt durch qdfview 
+    # evince-gtk - ersetzt durch qdfview
     galculator
     gpodder
     guake
@@ -47,8 +47,6 @@ packages = """
     qpdfview
     qpdfview-djvu-plugin
     qpdfview-ps-plugin
-    qpdfview-translations  
+    qpdfview-translations
     screengrab
-    smplayer
-    smtube
 """

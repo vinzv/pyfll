@@ -25,9 +25,9 @@ packages = """
     pulseaudio-module-x11
     libcanberra-pulse
     libfftw3-bin
-    
-    smplayer
-    smtube
-    
+
+#    smplayer
+#    smtube
+
     vokoscreen
 """

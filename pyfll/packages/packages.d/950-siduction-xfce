@@ -79,6 +79,4 @@ packages = """
 
     # Qt5 Packages
     screengrab
-    smplayer
-    smtube
 """
