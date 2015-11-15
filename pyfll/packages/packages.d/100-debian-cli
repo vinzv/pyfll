@@ -152,12 +152,18 @@ packages = """
     manpages-it
     manpages-pl
     manpages-pt
-    # myspell-de-de
-    # myspell-en-gb
-    # myspell-en-us
-    # myspell-it
-    # myspell-pl
-    # myspell-pt-br
+    # myspell-de-de, replaced by
+    hunspell-de-de
+    # myspell-en-gb, replaced by
+    hunspell-en-gb
+    # myspell-en-us, replaced by
+    hunspell-en-us
+    # myspell-it, replaced by
+    hunspell-it
+    # myspell-pl, replaced by
+    hunspell-pl
+    # myspell-pt-br, replaced by
+    hunspell-pt-br
 """
 
 
