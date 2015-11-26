@@ -54,7 +54,7 @@ packages = """
 
     # xfce4 plugins
     xfce4-battery-plugin
-    xfce4-clipman-plugin #- fucked up at the moment
+    # settings fucked up xfce4-clipman-plugin
     xfce4-cpufreq-plugin
     xfce4-cpugraph-plugin
     xfce4-datetime-plugin
