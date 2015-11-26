@@ -48,13 +48,13 @@ packages = """
     xfce4-notifyd
     xfce4-taskmanager
     xfce4-terminal
-    xfce4-volumed
+    # lost in gstreamer transition xfce4-volumed
     xfwm4
     xfwm4-themes
 
     # xfce4 plugins
     xfce4-battery-plugin
-#    xfce4-clipman-plugin - fucked up at the moment
+    xfce4-clipman-plugin #- fucked up at the moment
     xfce4-cpufreq-plugin
     xfce4-cpugraph-plugin
     xfce4-datetime-plugin
