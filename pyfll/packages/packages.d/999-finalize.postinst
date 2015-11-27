@@ -28,7 +28,7 @@ do_postinst() {
     say "Code name: ${CODENAME}"
     say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
 
-    apt install "${CODENAME}-${FLAVOUR}-livesettings"
+    apt install "${CODENAME}-${FLAVOUR}-livesettings" --assume-yes
 
     LIVE_SETTINGS='none'
 
