@@ -541,6 +541,10 @@ class FLLBuilder(object):
         self.conf['options'].setdefault('media_include', None)
         self.conf['options'].setdefault('apt_cacher', None)
 
+        '''Export some things to be available in the bash part of pyfll'''
+        os.environ['FLAVOUR'] = self.conf['distro'].get('FLL_FLAVOUR')
+        os.environ['CODENAME'] = self.conf['distro'].get('FLL_DISTRO_CODENAME_SAFE')
+
         if 'distro' in self.conf:
                 self._processDefaults(self.conf['distro'])
                 self.log.debug('distro-defaults:')
@@ -2457,7 +2461,7 @@ class FLLBuilder(object):
 
         if os.path.isfile(os.path.join(stage, 'boot/isolinux/isolinux.bin')):
             cmd =  'xorriso -as mkisofs'
-            cmd += '    -r -checksum_algorithm_iso md5,sha1,sha256,sha512 '  
+            cmd += '    -r -checksum_algorithm_iso md5,sha1,sha256,sha512 '
             if self.opts.v:
                 cmd += '    -vv'
             cmd += '    -V %s' % distro_name[:32]

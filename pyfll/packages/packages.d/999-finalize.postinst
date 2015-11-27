@@ -21,9 +21,9 @@ do_postinst() {
     say "..........................."
 
 
-    say "Flavour settings: ${FLL_FLAVOUR}"
-    say "Code name: ${FLL_DISTRO_CODENAME_SAFE}"
-    say "Install live settings: ${FLL_DISTRO_CODENAME_SAFE}-${FLL_FLAVOUR}-livesettings"
+    say "Flavour settings: ${FLAVOUR}"
+    say "Code name: ${CODENAME}"
+    say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
 
     apt install "${FLL_DISTRO_CODENAME_SAFE}-${FLL_FLAVOUR}-livesettings"
 
