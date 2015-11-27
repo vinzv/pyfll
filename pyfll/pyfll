@@ -541,10 +541,6 @@ class FLLBuilder(object):
         self.conf['options'].setdefault('media_include', None)
         self.conf['options'].setdefault('apt_cacher', None)
 
-        '''Export some things to be available in the bash part of pyfll'''
-        os.environ['FLAVOUR'] = self.conf['distro'].get('FLL_FLAVOUR')
-        os.environ['CODENAME'] = self.conf['distro'].get('FLL_DISTRO_CODENAME_SAFE')
-
         if 'distro' in self.conf:
                 self._processDefaults(self.conf['distro'])
                 self.log.debug('distro-defaults:')
@@ -1272,6 +1268,9 @@ class FLLBuilder(object):
             elif file == '/tmp/iso_uuid':
                 f.write(self.uuid)
                 self.conf['distro']['FLL_UUID'] = self.uuid
+            elif file == '/tmp/fll-data':
+                f.write('FLAVOUR="%s"\n' % (self.conf['distro'].get('FLL_FLAVOUR')))
+                f.write('CODENAME="%s"\n' % (self.conf['distro'].get('FLL_DISTRO_CODENAME_SAFE')))
         except IOError:
             self.log.exception('failed to open file for writing: %s' % file)
             raise FllError
@@ -1289,6 +1288,7 @@ class FLLBuilder(object):
         self._writeFile(arch, '/etc/hosts')
         self._writeFile(arch, '/etc/network/interfaces')
         self._writeFile(arch, '/tmp/iso_uuid')
+        self._writeFile(arch, '/tmp/fll-data')
 
 
     def _distroDefaultEtc(self, arch):

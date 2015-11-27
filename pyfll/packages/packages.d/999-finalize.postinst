@@ -8,6 +8,9 @@ if [ -r /etc/default/distro ]; then
 	. /etc/default/distro
 fi
 
+if [ -f /tmp/fll-data ]; then
+	. /tmp/fll-data
+fi
 
 say() {
 	echo "I: $@..."
@@ -25,7 +28,7 @@ do_postinst() {
     say "Code name: ${CODENAME}"
     say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
 
-    apt install "${FLL_DISTRO_CODENAME_SAFE}-${FLL_FLAVOUR}-livesettings"
+    apt install "${CODENAME}-${FLAVOUR}-livesettings"
 
     LIVE_SETTINGS='none'
 
