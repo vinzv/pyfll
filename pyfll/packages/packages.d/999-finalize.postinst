@@ -20,6 +20,13 @@ do_postinst() {
     say "..                       .."
     say "..........................."
 
+
+    say "Flavour settings: ${FLL_FLAVOUR}"
+    say "Code name: ${FLL_DISTRO_CODENAME_SAFE}"
+    say "Install live settings: ${FLL_DISTRO_CODENAME_SAFE}-${FLL_FLAVOUR}-livesettings"
+
+    apt install "${FLL_DISTRO_CODENAME_SAFE}-${FLL_FLAVOUR}-livesettings"
+
     LIVE_SETTINGS='none'
 
     if [ -f /usr/bin/siduction-live-settings ]; then
