@@ -1269,6 +1269,7 @@ class FLLBuilder(object):
                 f.write(self.uuid)
                 self.conf['distro']['FLL_UUID'] = self.uuid
             elif file == '/tmp/fll-data':
+                f.write('DISTRO="%s"\n' % (self.conf['distro'].get('FLL_DISTRO_NAME')))
                 f.write('FLAVOUR="%s"\n' % (self.conf['distro'].get('FLL_FLAVOUR')))
                 f.write('CODENAME="%s"\n' % (self.conf['distro'].get('FLL_DISTRO_CODENAME_SAFE')))
         except IOError:

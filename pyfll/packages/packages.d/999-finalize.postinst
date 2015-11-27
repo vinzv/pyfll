@@ -24,11 +24,14 @@ do_postinst() {
     say "..........................."
 
 
+    say "Distro:           ${DISTRO}"
     say "Flavour settings: ${FLAVOUR}"
-    say "Code name: ${CODENAME}"
-    say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
+    say "Code name:        ${CODENAME}"
 
-    apt install "${CODENAME}-${FLAVOUR}-livesettings" --assume-yes
+    if [ "${DISTRO}" == "siduction" ]; then
+        say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
+        apt install "${CODENAME}-${FLAVOUR}-livesettings" --assume-yes
+    fi
 
     LIVE_SETTINGS='none'
 
