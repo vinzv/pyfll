@@ -26,15 +26,13 @@ packages = """
     dbus-x11
     gucharmap
     juffed
-#    nomacs broken atm
+    nomacs
     oxygen-icon-theme
     qbittorrent
     qlipper
     qpdfview
     qupzilla
     screengrab
-    sddm
-    # sddm theme in config
     sharpdot-cursor-theme
     xscreensaver
 """

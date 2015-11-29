@@ -84,8 +84,6 @@ packages = """
 
   reportbug-ng
 
-  sddm
-  # sddm-theme in config
   sharpdot-cursor-theme
   sni-qt
   systemsettings
