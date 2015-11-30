@@ -20,7 +20,7 @@ packages = """
     gcalctool
     gconf-editor
     # gdm3 is needed even with lightdm
-    gdm3
+    # gdm3 why? AG, 2015-11-30
     geary
     gedit
     gengetopt
