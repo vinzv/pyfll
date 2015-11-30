@@ -46,6 +46,7 @@ packages = """
     dvd+rw-tools
     encfs
     exfat-utils
+    ext4magic       # testweise, AG 2015-11-30
     f2fs-tools
     foremost
     foomatic-db
