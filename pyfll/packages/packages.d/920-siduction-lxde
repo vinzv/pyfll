@@ -12,19 +12,18 @@ packages = """
     cmst
 
     cups-pk-helper
-    # evince-gtk - ersetzt durch qdfview
     galculator
     gpodder
     guake
-# dependency problems gvfs-fuse
+    gvfs-fuse
     hardinfo
     hexchat
+    juffed
 
     lxde
     lxpolkit
     lxtask
 
-    medit
     midori
     osmo
     putty
@@ -49,4 +48,6 @@ packages = """
     qpdfview-ps-plugin
     qpdfview-translations
     screengrab
+    # smtube
+    # smplayer
 """
