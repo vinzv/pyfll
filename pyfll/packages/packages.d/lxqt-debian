@@ -95,7 +95,6 @@ packages = """
 
         acpi-fakekey
     alsa-utils
-    at-spi2-core
     bluetooth
     br2684ctl
     colord
