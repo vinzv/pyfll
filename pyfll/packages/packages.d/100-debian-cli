@@ -62,6 +62,7 @@ packages = """
     hddtemp
     iftop
     info
+    inotify-tools
     iotop
     iproute2
     iptables
