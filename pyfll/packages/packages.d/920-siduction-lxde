@@ -10,31 +10,29 @@ packages = """
     claws-mail-i18n
     connman
     cmst
-
     cups-pk-helper
-    galculator
     gpodder
     guake
+    gucharmap
     gvfs-fuse
     hardinfo
     hexchat
     juffed
 
+    lxappearance-openbox
     lxde
     lxpolkit
     lxtask
 
     midori
+
     osmo
+    obconf
+    openbox
+
     putty
     sharpdot-cursor-theme
 
-    ## Settings package for Xfwm 4 - predepend on Xfwm4
-    ## and provide some desktop files and configurations
-    ## for Xfwm4 that are not available if installed pure
-    ### siduction-settings-xfwm4 -- eventuell nicht notwendig
-    xfwm4
-    xfwm4-themes
 
     ## GTK 3
     audacious
