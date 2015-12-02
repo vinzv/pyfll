@@ -19,7 +19,7 @@ packages = """
     hexchat
     juffed
 
-    lxappearance-openbox
+    lxappearance-oconf
     lxde
     lxpolkit
     lxtask
