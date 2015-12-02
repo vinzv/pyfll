@@ -8,8 +8,10 @@ packages = """
     brasero
     clipit
     claws-mail-i18n
+    cmst 
+    compton
+    compton-conf
     connman
-    cmst
     cups-pk-helper
     gpodder
     guake
