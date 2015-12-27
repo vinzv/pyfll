@@ -52,4 +52,7 @@ packages = """
     xserver-xorg-video-nouveau
     xserver-xorg-video-qxl
     xserver-xorg-video-vmware
+
+    # fix for 796956 802656 802690 802763 802656 und folgende
+    libqt5xcbqpa5
 """
