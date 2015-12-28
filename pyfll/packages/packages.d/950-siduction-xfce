@@ -28,7 +28,6 @@ packages = """
     mpg321
     orage
     ristretto
-    siduction-settings-conky
     siduction-settings-plank
     trayer
     tumbler

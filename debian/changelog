@@ -1,9 +1,13 @@
-pyfll (2015.04.26+nmu1) UNRELEASED; urgency=medium
+pyfll (2015.04.26+nmu2) UNRELEASED; urgency=medium
 
+  [ Ferdinand Thommes ]
   * Non-maintainer upload.
   * added converseen to kde
 
- -- Ferdinand Thommes <devil@siduction.org>  Wed, 29 Apr 2015 08:02:54 +0200
+  [ Torsten Wohlfarth ]
+  * removed sicuction-settings-conky from xfce
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Mon, 28 Dec 2015 23:44:11 +0100
 
 pyfll (2015.04.26) unstable; urgency=medium
 
