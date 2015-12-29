@@ -7,7 +7,7 @@ packages = """
     fonts-droid
     gparted
     siduction-bug-report
-    sidu-disk-center
+#    sidu-disk-center
     siduction-dynamic-dms
     xdg-browser-launcher
 """
