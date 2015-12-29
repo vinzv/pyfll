@@ -12,11 +12,11 @@ packages = """
     cli-installer
     inxi
     kernel-remover
-#    pywwetha
+    pywwetha
     setpassword
     siduction-irc
     siduction-scripts
-#    sidu-manual
+    sidu-manual
     sshstart
     udev-config-siduction
 """
