@@ -26,6 +26,7 @@ packages = """
     dbus-x11
     gucharmap
     juffed
+    lxqt
     nomacs
     oxygen-icon-theme
     qbittorrent
