@@ -8,6 +8,7 @@ packages = """
     anacron
     apt-file
     apt-listchanges
+    apt-rdepends
     apt-show-versions
     aptitude
     aspell
