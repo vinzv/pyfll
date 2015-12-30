@@ -6,11 +6,11 @@ packages = """
     alacarte
     baobab
     brasero
-    # needed by gnome-controlcenter to change password.
     caribou
     caribou-antler
       libcaribou-gtk-module
       libcaribou-gtk3-module
+    # needed by gnome-controlcenter to change password.
     cracklib-runtime
     cups-pk-helper
     dconf-tools
@@ -24,8 +24,6 @@ packages = """
     fonts-cantarell
     gcalctool
     gconf-editor
-    # gdm3 is needed even with lightdm
-    # gdm3 why? AG, 2015-11-30
     geary
     gedit
     gengetopt
@@ -112,5 +110,46 @@ packages = """
     sound-theme-freedesktop
     vinagre
     vino
+
+    # something may that be a good idea
+    gnome-applets # suggest gnome media
+    # gnome-audio
+    # gnome-blog
+    # gnome-boxes
+    gnome-calendar
+    gnome-characters
+    gnome-clocks
+    gnome-color-chooser
+    gnome-color-manager
+    gnome-documents
+    gnome-do
+        gnome-do-plugins
+    gnome-exe-thumbnailer
+    gnome-extra-icons
+    gnome-icon-theme-extras
+    gnome-maps
+    gnome-music
+    gnome-nettools
+    gnome-orca
+    gnome-paint
+    gnome-panel
+    # gnome-pie
+    gnome-power-manager
+    gnome-screensaver
+    gnome-shell-extension-autohidetopbar
+    gnome-shell-extension-redshift
+    gnome-shell-extensions-gpaste 
+    gnome-shell-extension-suspend-button
+    gnome-shell-extension-weather
+    gnome-shell-mailnag
+    gnome-shell-pomodoro
+    gnome-shell-timer
+    gnome-system-tools
+    gnome-todo
+    gnome-weather
+    gnome-web-photo
+    gnome-xcf-thumbnailer
+    ssh-askpass-gnome
+    uim-applet-gnome
 """
 
