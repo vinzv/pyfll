@@ -39,7 +39,6 @@ packages = """
     # gnome-mplayer
     # replaced by gnome-mplayer:  gecko-mediaplayer
     # gnome-screenshot # disabled while testing shutter
-    gnome-session
     gtkhash
     guake  # did segfault in default config, and occupied x-terminal-emulator: removed in IndianSummer, now test again.
     # some experimental extras (keep them?):
