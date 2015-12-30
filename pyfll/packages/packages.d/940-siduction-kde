@@ -7,7 +7,7 @@ packages = """
   baloo
   bluedevil
   converseen
-
+  dolphin4
 
   k3b-i18n
     libk3b6-extracodecs
