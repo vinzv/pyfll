@@ -129,7 +129,7 @@ packages = """
     gnome-icon-theme-extras
     gnome-maps
     gnome-music
-    gnome-nettools
+    gnome-nettool
     gnome-orca
     gnome-paint
     gnome-panel
