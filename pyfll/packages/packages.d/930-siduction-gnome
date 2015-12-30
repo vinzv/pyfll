@@ -7,6 +7,10 @@ packages = """
     baobab
     brasero
     # needed by gnome-controlcenter to change password.
+    caribou
+    caribou-antler
+      libcaribou-gtk-module
+      libcaribou-gtk3-module
     cracklib-runtime
     cups-pk-helper
     dconf-tools
@@ -17,6 +21,7 @@ packages = """
     evolution
     evolution-data-server
     file-roller
+    fonts-cantarell
     gcalctool
     gconf-editor
     # gdm3 is needed even with lightdm
@@ -28,6 +33,7 @@ packages = """
     gnome-backgrounds
     gnome-bluetooth
     #gnome-boxes
+    gnome-contacts
     gnome-control-center
     gnome-dictionary
     gnome-disk-utility
@@ -51,6 +57,7 @@ packages = """
       aisleriot
       # suggests:
       gnome-hearts
+    gnome-font-viewer
     gnome-keyring
     gnome-logs
     #gnome-media
@@ -68,6 +75,7 @@ packages = """
     gnome-tweak-tool
     gnome-user-guide
     gnome-user-share
+    gnome-system-viewer
     gparted
     gucharmap
     hamster-applet
@@ -82,6 +90,7 @@ packages = """
     hexchat
     libpam-gnome-keyring
     libxml2-utils
+    mousetweaks
     mpg321
     nautilus
     # nautilus-open-terminal
@@ -89,6 +98,7 @@ packages = """
     network-manager-openvpn
     network-manager-pptp
     network-manager-vpnc
+    pinentry-gnome3 
     polari
     rhythmbox
     # look at potential plugins

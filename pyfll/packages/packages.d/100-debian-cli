@@ -146,6 +146,7 @@ packages = """
     wodim
     wpasupplicant
     wvdial
+    xdg-utils
     xfsprogs
     zip
     #

@@ -11,15 +11,15 @@ packages = """
     gnome-themes-standard
     gtk2-engines
     gtk2-engines-pixbuf
-# dependency problems    gvfs-bin
-# dependency problems    gvfs-backends
+    gvfs-fuse
+    gvfs-bin
+    gvfs-backends
     ghostscript-x
     hplip
 # fucking outdated    imagemagick
     libav-tools
     libsane-extras
     ntfs-config
-# hmm - add other pinentries ???
     pinentry-gtk2
     printer-driver-gutenprint
     printer-driver-splix
