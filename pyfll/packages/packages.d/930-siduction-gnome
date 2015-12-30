@@ -75,7 +75,7 @@ packages = """
     gnome-tweak-tool
     gnome-user-guide
     gnome-user-share
-    gnome-system-viewer
+    gnome-system-monitor
     gparted
     gucharmap
     hamster-applet
