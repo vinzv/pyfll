@@ -55,7 +55,6 @@ packages = """
     iceweasel
     libpam-gnome-keyring
     liferea # linux feed reader
-    # medit (gtk2-based) was replaced by gedit (which is gtk3-based)
     muffin
     nemo
     nemo-fileroller  # adds items in the context menu of files and directories.
@@ -68,7 +67,6 @@ packages = """
     thin-provisioning-tools
     # totem
     tracker
-    # veromix got removed from debian
     vcdimager
     vim-gtk
     yelp
@@ -88,4 +86,9 @@ packages = """
 #    iceweasel-l10n-pl
 #    iceweasel-l10n-pt-br
 #    iceweasel-l10n-ro
+
+    # Alf
+    screengrab
+    smtube
+    smplayer		
 """
