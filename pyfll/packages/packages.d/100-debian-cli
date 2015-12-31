@@ -135,6 +135,7 @@ packages = """
     vim
     vnstat
     vpnc
+    vrms
     weechat-curses
     weechat-core
     weechat-scripts

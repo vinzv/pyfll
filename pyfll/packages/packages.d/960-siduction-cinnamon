@@ -35,10 +35,6 @@ packages = """
     gnome-keyring
     gnome-logs
     gnome-menus
-    # gnome-media
-    # gnome-mplayer
-    # replaced by gnome-mplayer:  gecko-mediaplayer
-    # gnome-screenshot # disabled while testing shutter
     gtkhash
     guake  # did segfault in default config, and occupied x-terminal-emulator: removed in IndianSummer, now test again.
     # some experimental extras (keep them?):
@@ -60,12 +56,10 @@ packages = """
     nemo-fileroller  # adds items in the context menu of files and directories.
     nemo-gtkhash  # adds the digests-tab on the file properties page
     p7zip-full
-    # rhythmbox # doesn't play internet radio streams
     siduction-settings-plank
     sound-juicer
     sound-theme-freedesktop
-    thin-provisioning-tools
-    # totem
+    thin-provisioning-tools # versteh ich ja alles, aber hier gehören die nich hin /Alf
     tracker
     vcdimager
     vim-gtk
@@ -79,7 +73,7 @@ packages = """
 #    icedove-l10n-pl
 #    icedove-l10n-pt-br
 #    icedove-l10n-ro
-    # 
+    #
 #    iceweasel-l10n-de
 #    iceweasel-l10n-en-gb
 #    iceweasel-l10n-it
@@ -90,5 +84,5 @@ packages = """
     # Alf
     screengrab
     smtube
-    smplayer		
+    smplayer
 """
