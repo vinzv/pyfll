@@ -22,7 +22,6 @@ packages = """
         mate-desktop-environment
         mate-desktop-environment-extras
         mate-media
-        mate-media-pulse
         mate-utils
         network-manager
         network-manager-gnome
