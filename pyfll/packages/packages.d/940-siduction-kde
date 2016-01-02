@@ -90,6 +90,19 @@ packages = """
 
   yakuake
 
+# missing dependencies
+  libkf5config-bin
+  libkf5dbusaddons-bin
+  libkf5emoticons-bin
+  libkf5filemetadata-bin
+  libkf5iconthemes-bin
+  libkf5kdelibs4support5-bin
+  libkf5khtml-bin
+  libkf5parts-plugins
+  libkf5su-bin
+  libkf5wallet-bin
+  libkf5xmlgui-bin
+  libqt5xcbqpa5
 
 
 #  digikam
