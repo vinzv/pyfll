@@ -12,7 +12,7 @@ packages = """
     hexchat
     lxappearance
     xfwm4
-    xfwm4-themes
+    xfwm4-theme-breeze
 
     ## gtk3
     siduction-settings-plank
@@ -28,7 +28,7 @@ packages = """
     juffed
     lxqt
     nomacs
-    oxygen-icon-theme
+    faenza-icon-theme
     qbittorrent
     qlipper
     qpdfview
