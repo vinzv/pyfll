@@ -32,6 +32,7 @@ packages = """
     qbittorrent
     qlipper
     qpdfview
+    qtpass
     qupzilla
     screengrab
     sharpdot-cursor-theme
