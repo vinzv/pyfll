@@ -35,5 +35,7 @@ packages = """
     qupzilla
     screengrab
     sharpdot-cursor-theme
+    smplayer
+    smtube
     xscreensaver
 """
