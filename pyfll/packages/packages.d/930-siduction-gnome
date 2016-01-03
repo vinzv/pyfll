@@ -122,8 +122,9 @@ packages = """
     gnome-color-chooser
     gnome-color-manager
     gnome-documents
-    gnome-do
-        gnome-do-plugins
+    # gnome-do not ok on wayland
+    #gnome-do
+        #gnome-do-plugins
     gnome-exe-thumbnailer
     gnome-extra-icons
     gnome-icon-theme-extras
