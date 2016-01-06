@@ -17,6 +17,7 @@ packages = """
     hwdata
     irqbalance
     firmware-linux-free
+    lshw
     lvm2
     mdadm
     mobile-broadband-provider-info 
