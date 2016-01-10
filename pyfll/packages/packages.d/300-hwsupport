@@ -18,6 +18,7 @@ packages = """
     irqbalance
     firmware-linux-free
     lshw
+    lsscsi
     lvm2
     mdadm
     mobile-broadband-provider-info 
@@ -33,5 +34,9 @@ packages = """
     upower
     usbutils
     usb-modeswitch
+    virtualbox-guest-dkms
+    virtualbox-guest-source
+    virtualbox-guest-utils
+    virtualbox-guest-x11 
     wireless-tools
 """
