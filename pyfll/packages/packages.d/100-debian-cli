@@ -26,7 +26,6 @@ packages = """
     cmospwd
     colordiff
     command-not-found
-    # console-common # conflicts with plymouth
     console-data
     cron
     cryptsetup
@@ -47,7 +46,7 @@ packages = """
     dvd+rw-tools
     encfs
     exfat-utils
-    ext4magic       # testweise, AG 2015-11-30
+    ext4magic
     f2fs-tools
     foremost
     foomatic-db
@@ -88,6 +87,7 @@ packages = """
     mlocate
     moc
     moreutils
+    most
     nfs-common
     ntfs-3g
     nmap
@@ -158,17 +158,11 @@ packages = """
     manpages-it
     manpages-pl
     manpages-pt
-    # myspell-de-de, replaced by
     hunspell-de-de
-    # myspell-en-gb, replaced by
     hunspell-en-gb
-    # myspell-en-us, replaced by
     hunspell-en-us
-    # myspell-it, replaced by
     hunspell-it
-    # myspell-pl, replaced by
     hunspell-pl
-    # myspell-pt-br, replaced by
     hunspell-pt-br
 """
 
