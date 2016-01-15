@@ -152,5 +152,34 @@ packages = """
     gnome-xcf-thumbnailer
     ssh-askpass-gnome
     uim-applet-gnome
+
+    # some packages of the 510-siduction-mediabase
+    gstreamer1.0-alsa
+    gstreamer1.0-nice
+    gstreamer1.0-plugins-bad
+    gstreamer1.0-plugins-good
+    gstreamer1.0-plugins-ugly
+    gstreamer1.0-pulseaudio
+    gstreamer1.0-tools
+    gstreamer1.0-x
+
+    libcanberra-gstreamer
+    paman
+    paprefs
+    # paman depends on gnome-icon-theme
+      gnome-icon-theme
+    #
+    pavucontrol
+    pulseaudio
+    pulseaudio-module-bluetooth
+    pulseaudio-module-x11
+    libcanberra-pulse
+    libfftw3-bin
+
+    # smplayer replaced by totem
+    # smtube replaced by totem
+
+    vokoscreen
+
 """
 
