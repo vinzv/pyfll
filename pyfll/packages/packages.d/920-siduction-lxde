@@ -48,6 +48,4 @@ packages = """
     qpdfview-ps-plugin
     qpdfview-translations
     screengrab
-    smtube
-    smplayer
 """

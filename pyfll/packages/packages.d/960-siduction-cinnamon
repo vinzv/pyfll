@@ -81,8 +81,5 @@ packages = """
 #    iceweasel-l10n-pt-br
 #    iceweasel-l10n-ro
 
-    # Alf
     screengrab
-    smtube
-    smplayer
 """

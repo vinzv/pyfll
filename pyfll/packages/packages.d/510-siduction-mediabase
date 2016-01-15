@@ -26,8 +26,8 @@ packages = """
     libcanberra-pulse
     libfftw3-bin
 
-#    smplayer
-#    smtube
+    smplayer
+    smtube
 
     vokoscreen
 """
