@@ -16,8 +16,6 @@ packages = """
     efivar
     fll-live-initramfs
     fll-live-initscripts
-    # libswitch-perl needed for fll-live-initscripts (only for testing)
-    libswitch-perl
     grub-pc
     initramfs-tools
     locales
