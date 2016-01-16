@@ -7,12 +7,16 @@ packages = """
     amd64-microcode
     intel-microcode
     iucode-tool
- 
+    
+    # Graphic and misc
+    firmware-amd-graphics
+    firmware-linux-nonfree
+    firmware-misc-nonfree
+  
     # Video decoder
     firmware-crystalhd 
 
     # Wired and Wireless
-    # atmel-firmware
     b43-fwcutter
     firmware-atheros             
     firmware-b43-installer       
@@ -21,11 +25,8 @@ packages = """
     firmware-bnx2x     
     firmware-brcm80211 
     firmware-intelwimax
-    # firmware-ipw2x00 manuell, da frage von dpkg
     firmware-iwlwifi 
     firmware-libertas
-    firmware-linux-nonfree 
-    firmware-misc-nonfree
     firmware-myricom
     firmware-netxen 
     firmware-qlogic 
