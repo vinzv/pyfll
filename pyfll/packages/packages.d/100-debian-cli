@@ -114,6 +114,7 @@ packages = """
     printer-driver-pnm2ppa
     pv
     pwgen
+    qemu-guest-agent
     realpath
     reptyr
     reiserfsprogs
