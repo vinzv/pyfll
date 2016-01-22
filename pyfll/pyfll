@@ -461,7 +461,7 @@ class FLLBuilder(object):
             self.log.critical('%s repo not configured in build config' % self.opts.N)
             raise FllError
 
-        if self.conf['options'].get('apt_cacher'):
+        if self.conf['options']['apt_cacher']:
             if not self.opts.t:
                 self.opts.t = self.conf['options']['apt_cacher']
                 self.log.debug('Using %s as apt-cacher uri.' % self.opts.t)
@@ -475,7 +475,7 @@ class FLLBuilder(object):
                      self.conf['repos'][repo]['cached']))
 
         for repo in self.conf['repos'].keys():
-            if self.conf['repos'][repo].get('trivial'):
+            if self.conf['repos'][repo]['trivial']:
                 words = ['label', 'uri']
             else:
                 words = ['label', 'uri', 'suite', 'components']
@@ -502,13 +502,13 @@ class FLLBuilder(object):
             self.log.info('No key for signing ISO hashes!')
             self.opts.k = None
         else:
-            self.opts.k = self.conf['options'].get('hashkey')
+            self.opts.k = self.conf['options']['hashkey']
             self.log.debug('Using key %s for signing.' % self.opts.k)
 
         if not 'options' in self.conf:
             self.conf['options'] = dict()
 
-        if self.conf['options'].get('build_dir'):
+        if self.conf['options']['build_dir']:
             if not self.opts.b:
                 dir = self.conf['options']['build_dir']
                 self.opts.b = self.__prepDir(dir)
@@ -516,7 +516,7 @@ class FLLBuilder(object):
             if not self.opts.b:
                 self.opts.b = self.__prepDir(os.getcwd())
 
-        if self.conf['options'].get('output_dir'):
+        if self.conf['options']['output_dir']:
             if not self.opts.o:
                 dir = self.conf['options']['output_dir']
                 self.opts.o = self.__prepDir(dir)
@@ -524,15 +524,15 @@ class FLLBuilder(object):
             if not self.opts.o:
                 self.opts.o = self.__prepDir(os.getcwd())
 
-        if self.conf['options'].get('build_log'):
+        if self.conf['options']['build_log']:
             if not self.opts.l:
                 self.opts.l = self.conf['options']['build_log']
                 self.__initLogFile(self.opts.l)
 
-        if self.conf['options'].get('http_proxy'):
+        if self.conf['options']['http_proxy']:
             self.env['http_proxy'] = self.conf['options']['http_proxy']
 
-        if self.conf['options'].get('ftp_proxy'):
+        if self.conf['options']['ftp_proxy']:
             self.env['ftp_proxy'] = self.conf['options']['ftp_proxy']
 
         self.conf['options'].setdefault('preferences_d', None)
@@ -988,7 +988,7 @@ class FLLBuilder(object):
 
         self.log.info('bootstrapping %s %s %s...' % (distro,codename,arch))
 
-        bootstrapper = self.conf['options'].get('bootstrapper')
+        bootstrapper = self.conf['options']['bootstrapper']
         if bootstrapper == 'debootstrap':
             self.__debBootStrap(arch, dir, mirror, codename)
         else:
@@ -1275,9 +1275,9 @@ class FLLBuilder(object):
                 f.write(self.uuid)
                 self.conf['distro']['FLL_UUID'] = self.uuid
             elif file == '/tmp/fll-data':
-                f.write('DISTRO="%s"\n' % (self.conf['distro'].get('FLL_DISTRO_NAME')))
-                f.write('FLAVOUR="%s"\n' % (self.conf['distro'].get('FLL_FLAVOUR')))
-                f.write('CODENAME="%s"\n' % (self.conf['distro'].get('FLL_DISTRO_CODENAME_SAFE')))
+                f.write('DISTRO="%s"\n' % (self.conf['distro']['FLL_DISTRO_NAME']))
+                f.write('FLAVOUR="%s"\n' % (self.conf['distro']['FLL_FLAVOUR']))
+                f.write('CODENAME="%s"\n' % (self.conf['distro']['FLL_DISTRO_CODENAME_SAFE']))
         except IOError:
             self.log.exception('failed to open file for writing: %s' % file)
             raise FllError
@@ -1297,7 +1297,7 @@ class FLLBuilder(object):
         # create or recreate /etc/sudoers.d in chroot
         cmd = 'mkdir -p /etc/sudoers.d'
         self._execInChroot(arch, cmd.split())
-        self._writeFile(arch, '/etc/sudoers.d/15_%s' % (self.conf['distro'].get('FLL_DISTRO_NAME')))
+        self._writeFile(arch, '/etc/sudoers.d/15_%s' % (self.conf['distro']['FLL_DISTRO_NAME']))
         self._writeFile(arch, '/tmp/iso_uuid')
         self._writeFile(arch, '/tmp/fll-data')
 
@@ -1779,7 +1779,7 @@ class FLLBuilder(object):
         cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
 
         # set compression algorithm for squashfs-tools >= 4.1
-        squashfs_comp = self.conf['options'].get('squashfs_comp')
+        squashfs_comp = self.conf['options']['squashfs_comp']
         if squashfs_comp in ['gzip', 'lzo', 'xz']:
             self.log.info('using squashfs(%s)...' % squashfs_comp)
             cmd.extend(['-comp', '%s' % squashfs_comp])
@@ -1820,7 +1820,7 @@ class FLLBuilder(object):
         cmd.extend(['-wildcards', '-ef', excl_file])
 
         # set compression algorithm for squashfs-tools >= 4.1
-        squashfs_comp = self.conf['options'].get('squashfs_comp')
+        squashfs_comp = self.conf['options']['squashfs_comp']
         if squashfs_comp in ['gzip', 'lzo', 'xz']:
             self.log.info('using squashfs(%s)...' % squashfs_comp)
             cmd.extend(['-comp', '%s' % squashfs_comp])
@@ -2234,13 +2234,13 @@ class FLLBuilder(object):
         return kvers
 
     def _configBootTimeout(self):
-        timeout = self.conf['options'].get('boot_timeout')
+        timeout = self.conf['options']['boot_timeout']
         if not timeout:
             timeout = '-1'
         return timeout
 
     def _configBootCmdline(self):
-        cmdline =  self.conf['options'].get('boot_cmdline')
+        cmdline =  self.conf['options']['boot_cmdline']
         if not cmdline:
             cmdline = ''
         return cmdline
@@ -2429,7 +2429,7 @@ class FLLBuilder(object):
 
         cached = dict()
         for r in self.conf['repos']:
-            if self.conf['repos'][r].get('cached'):
+            if self.conf['repos'][r]['cached']:
                 cached_uri = self.conf['repos'][r]['cached']
                 uri = self.conf['repos'][r]['uri']
                 cached[cached_uri.rstrip('/')] = uri.rstrip('/')
