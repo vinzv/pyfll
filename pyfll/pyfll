@@ -1261,6 +1261,12 @@ class FLLBuilder(object):
                 f.write('# The loopback interface\n')
                 f.write('auto lo\n')
                 f.write('iface lo inet loopback\n')
+            elif file == "/etc/sudoers.d/15_%s" % self.conf['distro']['FLL_DISTRO_NAME']:
+                liveuser= self.conf['distro']['FLL_LIVE_USER']
+                f.write('# WARNING: This allows the unprivileged %s user to start commands as root\n' % liveuser)
+                f.write('# WARNING: This is totally insecure and (almost) makes %s a second root account.\n' % liveuser)
+                f.write('# WARNING: Never allow external access to the %s user!!!\n' % liveuser )
+                f.write('%s ALL=(ALL:ALL) NOPASSWD: ALL\n' % liveuser )
             elif file == '/usr/sbin/policy-rc.d':
                 f.write('#!/bin/sh\n')
                 f.write('echo "$0 denied action: \`$1 $2\'" >&2\n')
@@ -1288,9 +1294,12 @@ class FLLBuilder(object):
         self._writeFile(arch, '/etc/hostname')
         self._writeFile(arch, '/etc/hosts')
         self._writeFile(arch, '/etc/network/interfaces')
+        # create or recreate /etc/sudoers.d in chroot
+        cmd = 'mkdir -p /etc/sudoers.d'
+        self._execInChroot(arch, cmd.split())
+        self._writeFile(arch, '/etc/sudoers.d/15_%s' % (self.conf['distro'].get('FLL_DISTRO_NAME')))
         self._writeFile(arch, '/tmp/iso_uuid')
         self._writeFile(arch, '/tmp/fll-data')
-
 
     def _distroDefaultEtc(self, arch):
         '''Write the /etc/default/distro file.'''
