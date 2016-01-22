@@ -461,7 +461,7 @@ class FLLBuilder(object):
             self.log.critical('%s repo not configured in build config' % self.opts.N)
             raise FllError
 
-        if self.conf['options']['apt_cacher']:
+        if self.conf['options'].get('apt_cacher'):
             if not self.opts.t:
                 self.opts.t = self.conf['options']['apt_cacher']
                 self.log.debug('Using %s as apt-cacher uri.' % self.opts.t)
@@ -475,7 +475,7 @@ class FLLBuilder(object):
                      self.conf['repos'][repo]['cached']))
 
         for repo in self.conf['repos'].keys():
-            if self.conf['repos'][repo]['trivial']:
+            if self.conf['repos'][repo].get('trivial'):
                 words = ['label', 'uri']
             else:
                 words = ['label', 'uri', 'suite', 'components']
@@ -508,7 +508,7 @@ class FLLBuilder(object):
         if not 'options' in self.conf:
             self.conf['options'] = dict()
 
-        if self.conf['options']['build_dir']:
+        if self.conf['options'].get('build_dir'):
             if not self.opts.b:
                 dir = self.conf['options']['build_dir']
                 self.opts.b = self.__prepDir(dir)
@@ -524,15 +524,15 @@ class FLLBuilder(object):
             if not self.opts.o:
                 self.opts.o = self.__prepDir(os.getcwd())
 
-        if self.conf['options']['build_log']:
+        if self.conf['options'].get('build_log'):
             if not self.opts.l:
                 self.opts.l = self.conf['options']['build_log']
                 self.__initLogFile(self.opts.l)
 
-        if self.conf['options']['http_proxy']:
+        if self.conf['options'].get('http_proxy'):
             self.env['http_proxy'] = self.conf['options']['http_proxy']
 
-        if self.conf['options']['ftp_proxy']:
+        if self.conf['options'].get('ftp_proxy'):
             self.env['ftp_proxy'] = self.conf['options']['ftp_proxy']
 
         self.conf['options'].setdefault('preferences_d', None)
