@@ -988,7 +988,7 @@ class FLLBuilder(object):
 
         self.log.info('bootstrapping %s %s %s...' % (distro,codename,arch))
 
-        bootstrapper = self.conf['options']['bootstrapper']
+        bootstrapper = self.conf['options'].get('bootstrapper')
         if bootstrapper == 'debootstrap':
             self.__debBootStrap(arch, dir, mirror, codename)
         else:
@@ -1779,7 +1779,7 @@ class FLLBuilder(object):
         cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
 
         # set compression algorithm for squashfs-tools >= 4.1
-        squashfs_comp = self.conf['options']['squashfs_comp']
+        squashfs_comp = self.conf['options'].get('squashfs_comp')
         if squashfs_comp in ['gzip', 'lzo', 'xz']:
             self.log.info('using squashfs(%s)...' % squashfs_comp)
             cmd.extend(['-comp', '%s' % squashfs_comp])
@@ -1820,7 +1820,7 @@ class FLLBuilder(object):
         cmd.extend(['-wildcards', '-ef', excl_file])
 
         # set compression algorithm for squashfs-tools >= 4.1
-        squashfs_comp = self.conf['options']['squashfs_comp']
+        squashfs_comp = self.conf['options'].get('squashfs_comp')
         if squashfs_comp in ['gzip', 'lzo', 'xz']:
             self.log.info('using squashfs(%s)...' % squashfs_comp)
             cmd.extend(['-comp', '%s' % squashfs_comp])
@@ -2234,13 +2234,13 @@ class FLLBuilder(object):
         return kvers
 
     def _configBootTimeout(self):
-        timeout = self.conf['options']['boot_timeout']
+        timeout = self.conf['options'].get('boot_timeout')
         if not timeout:
             timeout = '-1'
         return timeout
 
     def _configBootCmdline(self):
-        cmdline =  self.conf['options']['boot_cmdline']
+        cmdline =  self.conf['options'].get('boot_cmdline')
         if not cmdline:
             cmdline = ''
         return cmdline
@@ -2429,7 +2429,7 @@ class FLLBuilder(object):
 
         cached = dict()
         for r in self.conf['repos']:
-            if self.conf['repos'][r]['cached']:
+            if self.conf['repos'][r].get('cached'):
                 cached_uri = self.conf['repos'][r]['cached']
                 uri = self.conf['repos'][r]['uri']
                 cached[cached_uri.rstrip('/')] = uri.rstrip('/')
