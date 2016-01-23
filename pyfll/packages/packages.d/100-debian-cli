@@ -38,7 +38,7 @@ packages = """
     debconf-utils
     debhelper
     debian-goodies
-#    debsums  --- fucked up 2016-01-23
+    debsums
     dialog
     dmeventd
     dnsutils
