@@ -88,6 +88,7 @@ packages = """
     moc
     moreutils
     most
+    netselect
     nfs-common
     ntfs-3g
     nmap

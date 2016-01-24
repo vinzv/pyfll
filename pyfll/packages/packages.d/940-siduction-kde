@@ -9,6 +9,10 @@ packages = """
   converseen
   dolphin4
 
+  ffmpegthumbnailer
+  ffmpegthumbs
+
+
   k3b-i18n
     libk3b6-extracodecs
   kaffeine

@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-    # ffmpeg broken atm
+    ffmpeg
     gstreamer1.0-alsa
     gstreamer1.0-nice
     gstreamer1.0-plugins-bad
@@ -13,12 +13,11 @@ packages = """
     gstreamer1.0-tools
     gstreamer1.0-x
 
+    libavcodec-ffmpeg-extra56
     libcanberra-gstreamer
+    mplayer
     paman
     paprefs
-    # paman depends on gnome-icon-theme
-    gnome-icon-theme
-    #
     pavucontrol
     pulseaudio
     pulseaudio-module-bluetooth
