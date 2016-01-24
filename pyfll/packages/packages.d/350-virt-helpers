@@ -1,0 +1,11 @@
+desc = """
+    Helpers for misc. virts.
+"""
+
+packages = """
+    virt-what
+    qemu-guest-agent
+    virtualbox-guest-dkms
+    virtualbox-guest-utils
+    virtualbox-guest-x11
+"""

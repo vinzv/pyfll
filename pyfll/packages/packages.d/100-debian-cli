@@ -114,7 +114,6 @@ packages = """
     printer-driver-pnm2ppa
     pv
     pwgen
-    qemu-guest-agent
     realpath
     reptyr
     reiserfsprogs
@@ -135,7 +134,6 @@ packages = """
     unp
     unzip
     vim
-    virt-what
     vnstat
     vpnc
     vrms

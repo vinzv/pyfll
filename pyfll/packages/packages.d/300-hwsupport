@@ -34,9 +34,5 @@ packages = """
     upower
     usbutils
     usb-modeswitch
-    virtualbox-guest-dkms
-    virtualbox-guest-source
-    virtualbox-guest-utils
-    virtualbox-guest-x11 
     wireless-tools
 """
