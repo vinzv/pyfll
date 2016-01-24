@@ -135,6 +135,7 @@ packages = """
     unp
     unzip
     vim
+    virt-what
     vnstat
     vpnc
     vrms
