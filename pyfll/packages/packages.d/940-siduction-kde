@@ -46,6 +46,7 @@ packages = """
   khotkeys
   kinfocenter
   kio-extras
+  kio-mtp
   kmenuedit
   konversation
   konqueror-nsplugins
