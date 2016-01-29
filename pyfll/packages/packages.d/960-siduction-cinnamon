@@ -6,7 +6,6 @@ desc = """
 # after that we should build with recommends on and cherrypick missed useful packages
 
 packages = """
-    audacious
     # bluetooth is difficult: cinnamon-bluetooth depends on incompatible gnome-bluetooth, so meanwhile ship blueman
     blueman
     brasero
@@ -23,8 +22,6 @@ packages = """
     dconf-tools
     dconf-service
     desktop-file-utils
-    eog
-    evince
     gconf2  # the old gtk2 configuration tool
     gedit
     gir1.2-gtksource-3.0  # syntaxhighlighting for gedit:
@@ -36,34 +33,47 @@ packages = """
     gnome-logs
     gnome-menus
     gtkhash
-    guake  # did segfault in default config, and occupied x-terminal-emulator: removed in IndianSummer, now test again.
+    guake
+    yelp
     # some experimental extras (keep them?):
-        abiword
-        abw2odt
-        gnumeric
-        gnome-calculator
         gnome-sudoku
         iagno
-        shutter
+        # basic office applications
+	abiword
+        abw2odt
+	evince
+        gnumeric
+        gnome-calculator
+
         swell-foop  # easily test OpenGL capabilities.
     hexchat
     icedove
     iceweasel
     libpam-gnome-keyring
     liferea # linux feed reader
-    muffin
-    nemo
+    muffin  # cinnamon window manager (derived from gnome-shell mutter)
+    nemo    # cinnamon file manager   (derived from gnome nautilus)
     nemo-fileroller  # adds items in the context menu of files and directories.
-    nemo-gtkhash  # adds the digests-tab on the file properties page
-    p7zip-full
-    siduction-settings-plank
+    nemo-gtkhash     # adds the digests-tab on the file properties page
+    
+    # basic multimedia tools
+    audacious
+    eog
+    screengrab
+    shutter
     sound-juicer
     sound-theme-freedesktop
-    thin-provisioning-tools # versteh ich ja alles, aber hier gehören die nich hin /Alf
+
+    #some bloat
     tracker
+    tracker-gui
+    geany
+    medit
     vcdimager
     vim-gtk
-    yelp
+    p7zip-full
+    siduction-settings-plank
+    
     #
     # some languages hardwired
     #
@@ -81,5 +91,4 @@ packages = """
 #    iceweasel-l10n-pt-br
 #    iceweasel-l10n-ro
 
-    screengrab
 """

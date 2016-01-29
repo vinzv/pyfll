@@ -129,6 +129,7 @@ packages = """
     sudo
     sysv-rc-conf
     testdisk
+    thin-provisioning-tools # suggested by lvm2, recommended by kvpm
     tofrodos
     tree
     traceroute
