@@ -10,6 +10,7 @@ packages = """
     apt-listchanges
     apt-rdepends
     apt-show-versions
+    apt-transport-https
     aptitude
     aspell
     attr
