@@ -14,14 +14,14 @@ do_postinst() {
 	say 'Reconfiguring distro-defaults and other settings'
 	# Reconfigure to ensure out LSB defaults are in place for
 	# starting desktop managers in runlevel 5 only
-	for dm in gdm3 kdm lxdm slim wdm xdm lightdm; do
+	for dm in gdm3 kdm lxdm slim wdm xdm lightdm sddm; do
 		[ -x /etc/init.d/${dm} ] || continue
 		update-rc.d -f ${dm} remove
 	done
 
 	dpkg-reconfigure distro-defaults
 
-	for dm in gdm3 kdm lxdm slim wdm xdm lightdm; do
+	for dm in gdm3 kdm lxdm slim wdm xdm lightdm sddm; do
 		[ -x /etc/init.d/${dm} ] || continue
 		update-rc.d ${dm} defaults
 	done
@@ -59,4 +59,3 @@ case "${1}" in
         echo "Usage: ${0} postinst"
         ;;
 esac
-

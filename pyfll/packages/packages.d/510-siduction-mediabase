@@ -15,6 +15,8 @@ packages = """
 
     libavcodec-ffmpeg-extra56
     libcanberra-gstreamer
+    libcanberra-pulse
+    libfftw3-bin
     mplayer
     paman
     paprefs
@@ -22,11 +24,10 @@ packages = """
     pulseaudio
     pulseaudio-module-bluetooth
     pulseaudio-module-x11
-    libcanberra-pulse
-    libfftw3-bin
 
     smplayer
     smtube
+    sound-theme-freedesktop
 
     vokoscreen
 """

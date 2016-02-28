@@ -6,8 +6,6 @@ packages = """
 
     ## gtk2
     audacious
-    audacious-plugins
-    audacious-plugins-data
     hardinfo
     hexchat
     lxappearance

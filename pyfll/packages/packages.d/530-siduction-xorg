@@ -1,6 +1,6 @@
 desc = """
     Siduction-Xorg
-   
+
 """
 
 packages = """
@@ -8,7 +8,7 @@ packages = """
     fontconfig
     fontconfig-config
     xserver-xorg-video-vesa
-    # 
+    #
     dmz-cursor-theme
     fonts-liberation
     fonts-dejavu-core
@@ -54,7 +54,4 @@ packages = """
     xserver-xorg-video-nouveau
     xserver-xorg-video-qxl
     xserver-xorg-video-vmware
-
-    # fix for 796956 802656 802690 802763 802656 und folgende
-    libqt5xcbqpa5
 """

@@ -3,33 +3,34 @@ desc = """
 """
 
 packages = """
-        atril
-        brasero
-        caja-open-terminal
-        dconf-editor
-        engrampa
-        eom
-        exaile
-        gnome-calculator
-        gnome-disk-utility
-        gnome-icon-theme
-        gnome-icon-theme-extras
-        gnome-keyring
-        hexchat
-        iceweasel
-        mate-applets
-        mate-desktop-environment-core
-        mate-desktop-environment
-        mate-desktop-environment-extras
-        mate-media
-        mate-utils
-        network-manager
-        network-manager-gnome
-        pluma
-        sound-theme-freedesktop
-        smbclient
-        shotwell
-        totem
-        totem-plugins
-        transmission-gtk
+    atril
+    audacious    
+    brasero
+    caja-open-terminal
+    dconf-editor
+    engrampa
+    eom
+    # exaile removed from debian because gstreamer 0.10
+    gnome-calculator
+    gnome-disk-utility
+    gnome-icon-theme
+    gnome-icon-theme-extras
+    gnome-keyring
+    hexchat
+    iceweasel
+    mate-applets
+    mate-desktop-environment-core
+    mate-desktop-environment
+    mate-desktop-environment-extras
+    mate-media
+    mate-utils
+    network-manager
+    network-manager-gnome
+    pluma
+    sound-theme-freedesktop
+    smbclient
+    shotwell
+    totem
+    totem-plugins
+    transmission-gtk
 """

@@ -1,4 +1,4 @@
-desc = """ 
+desc = """
     Siduction xorg env for testing
 """
 
@@ -7,6 +7,5 @@ packages = """
     gconf2
     gnome-icon-theme
     hexchat
-    midori
-    #network-manager
+    qupzilla
 """

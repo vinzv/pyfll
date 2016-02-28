@@ -18,10 +18,6 @@ do_postinst() {
     if [ -e /etc/xdg/menus/debian-menu.menu ]; then
         rm -f /etc/xdg/menus/debian-menu.menu
     fi
-
-    # hack for systemd-resolved until network-manager is fixed
-    systemctl enable systemd-resolved.service
-
 }
 
 

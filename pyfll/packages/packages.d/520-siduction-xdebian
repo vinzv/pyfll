@@ -1,5 +1,5 @@
 desc = """
-    Siduction-XDebian
+    Siduction-X-Debian
 """
 
 packages = """
@@ -16,7 +16,6 @@ packages = """
     gvfs-backends
     ghostscript-x
     hplip
-# fucking outdated    imagemagick
     libav-tools
     libsane-extras
     ntfs-config

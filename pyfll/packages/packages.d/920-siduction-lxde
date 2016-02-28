@@ -8,9 +8,7 @@ packages = """
     brasero
     clipit
     claws-mail-i18n
-    cmst 
     compton
-    compton-conf
     connman
     cups-pk-helper
     gpodder
@@ -19,7 +17,6 @@ packages = """
     gvfs-fuse
     hardinfo
     hexchat
-    juffed
 
     lxappearance-obconf
     lxde
@@ -43,6 +40,9 @@ packages = """
     transmission-gtk
 
     ## Qt5 Applications
+    cmst
+    compton-conf
+    juffed
     qpdfview
     qpdfview-djvu-plugin
     qpdfview-ps-plugin
