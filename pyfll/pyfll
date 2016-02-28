@@ -180,6 +180,7 @@ class FLLBuilder(object):
                '/usr/sbin/update-grub',
                '/usr/sbin/update-initramfs']
 
+
     def __init__(self, options):
         '''Accept options dict, setup logging.'''
         self.opts = options
@@ -502,7 +503,7 @@ class FLLBuilder(object):
             self.log.info('No key for signing ISO hashes!')
             self.opts.k = None
         else:
-            self.opts.k = self.conf['options']['hashkey']
+            self.opts.k = self.conf['options'].get('hashkey')
             self.log.debug('Using key %s for signing.' % self.opts.k)
 
         if not 'options' in self.conf:
@@ -516,7 +517,7 @@ class FLLBuilder(object):
             if not self.opts.b:
                 self.opts.b = self.__prepDir(os.getcwd())
 
-        if self.conf['options']['output_dir']:
+        if self.conf['options'].get('output_dir'):
             if not self.opts.o:
                 dir = self.conf['options']['output_dir']
                 self.opts.o = self.__prepDir(dir)
@@ -946,7 +947,8 @@ class FLLBuilder(object):
     def __cdebBootStrap(self, arch, dir, mirror, codename):
         '''Bootstrap a debian system with cdebootstrap.'''
         cmd = ['cdebootstrap', '--arch=%s' % arch,
-               '--include=apt-utils,bzip2,gnupg,xz-utils',
+               '--include=apt-utils,bzip2,gnupg2,xz-utils',
+               '--exclude=gnupg',
                '--flavour=minimal', codename, dir, mirror]
 
         if self.opts.d:
@@ -963,7 +965,7 @@ class FLLBuilder(object):
     def __debBootStrap(self, arch, dir, mirror, codename):
         '''Bootstrap a debian system with debootstrap.'''
         cmd = ['debootstrap', '--arch=%s' % arch,
-               '--include=apt-utils,bzip2,gnupg,xz-utils',
+               '--include=apt-utils,bzip2,gnupg2,xz-utils',
                '--variant=minbase', codename, dir, mirror]
 
         if self.opts.d or self.opts.v:
@@ -1070,16 +1072,6 @@ class FLLBuilder(object):
         self.log.info('preparing apt in %s chroot...' % arch)
         chroot = os.path.join(self.temp, arch)
 
-        #apt_preferences = self.conf['options']['apt_preferences']
-        #if apt_preferences:
-        #    self.log.info('importing apt preferences file')
-        #    try:
-        #        shutil.copy(apt_preferences, os.path.join(chroot, 'etc/apt/'))
-        #    except IOError:
-        #        self.log.error('apt preferences file failed to copy: %s' %
-        #                       apt_preferences)
-        #        raise FllError
-
         preferences_d = self.conf['options']['preferences_d']
         if preferences_d:
             self.log.info('importing apt preferences directory')
@@ -1091,16 +1083,6 @@ class FLLBuilder(object):
                 self.log.error('apt preferences directory failed to copy: %s' %
                                preferences_d)
                 raise FllError
-
-        #apt_configuration = self.conf['options']['apt_configuration']
-        #if apt_configuration:
-        #    self.log.info('importing apt configuration file')
-        #    try:
-        #        shutil.copy(apt_configuration, os.path.join(chroot, 'etc/apt/'))
-        #    except IOError:
-        #        self.log.error('apt configuration file failed to copy: %s' %
-        #                       apt_configuration)
-        #        raise FllError
 
         apt_conf_d = self.conf['options']['apt_conf_d']
         if apt_conf_d:
@@ -2190,16 +2172,16 @@ class FLLBuilder(object):
             isolinuxmsg.write('%s_%s_safe_settings\n' % (distro, cpu))
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
 
-        isolinuxcfg.write('label Boot_from_HardDisk\n')
+        isolinuxcfg.write('label Boot_from_Hard_Disk\n')
         isolinuxcfg.write('\tlocalboot 0x80\n')
         isolinuxcfg.write('\n')
-        isolinuxmsg.write('hdboot\n')
+        isolinuxmsg.write('Boot_from_Hard_Disk\n')
 
         if os.path.isfile(os.path.join(boot_dir, 'memtest')):
-            isolinuxcfg.write('label Memorytest\n')
+            isolinuxcfg.write('label Memory_test_(memtest86+)\n')
             isolinuxcfg.write('\tkernel /boot/memtest\n')
             isolinuxcfg.write('\n')
-            isolinuxmsg.write('memtest\n')
+            isolinuxmsg.write('Memory_test_(memtest86+)\n')
 
         isolinuxcfg.write('label Hardwaredetection\n')
         isolinuxcfg.write('\tkernel /boot/isolinux/hdt.c32\n')
