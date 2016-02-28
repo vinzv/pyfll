@@ -1,19 +1,14 @@
 #!/bin/sh -e
 
 if [ -f /etc/default/distro ]; then
-	. /etc/default/distro
-fi 
+    . /etc/default/distro
+fi
 
 say() {
-	echo "I: $@..."
+    echo "I: $@..."
 }
 
 do_postinst() {
-    if [ -w /etc/ppp/peers/kppp-options ]; then
-        say 'Allowing kppp noauth capability'
-        sed -i 's/^#noauth/noauth/' /etc/ppp/peers/kppp-options
-    fi
-
     # get rid of fugly debian-menu (from menu-xdg)
     if [ -e /etc/xdg/menus/debian-menu.menu ]; then
         rm -f /etc/xdg/menus/debian-menu.menu
@@ -21,15 +16,13 @@ do_postinst() {
 
     # hack for systemd-resolved until network-manager is fixed
     systemctl enable systemd-resolved.service
-
 }
 
-
 case "${1}" in
-	postinst)
-		do_postinst
-		;;
-	*)
-		echo "Usage: ${0} postinst"
-		;;
+    postinst)
+        do_postinst
+        ;;
+    *)
+        echo "Usage: ${0} postinst"
+        ;;
 esac
