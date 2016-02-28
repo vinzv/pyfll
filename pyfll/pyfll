@@ -994,8 +994,12 @@ class FLLBuilder(object):
         else:
             self.__cdebBootStrap(arch, dir, mirror, codename)
 
-        shutil.copy('/etc/hosts', os.path.join(dir, 'etc'))
-        shutil.copy('/etc/resolv.conf', os.path.join(dir, 'etc'))
+        ## Don't reuse the hosts nor resolv.conf from build hosts
+        ## This will turn out as a bad idea without proper cleanup
+        ## and in case of resolv.conf it does
+        ##
+        # shutil.copy('/etc/hosts', os.path.join(dir, 'etc'))
+        # shutil.copy('/etc/resolv.conf', os.path.join(dir, 'etc'))
         os.mkdir(os.path.join(dir, 'disks'), 0755)
 
 
