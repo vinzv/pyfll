@@ -994,12 +994,6 @@ class FLLBuilder(object):
         else:
             self.__cdebBootStrap(arch, dir, mirror, codename)
 
-        ## Don't reuse the hosts nor resolv.conf from build hosts
-        ## This will turn out as a bad idea without proper cleanup
-        ## and in case of resolv.conf it does
-        ##
-        # shutil.copy('/etc/hosts', os.path.join(dir, 'etc'))
-        # shutil.copy('/etc/resolv.conf', os.path.join(dir, 'etc'))
         os.mkdir(os.path.join(dir, 'disks'), 0755)
 
 
@@ -1336,25 +1330,6 @@ class FLLBuilder(object):
 
         self.log.debug('writing final apt sources.list(s)')
         self._writeAptLists(arch)
-
-
-        ## ok - not ranting right now, it was not a bad idea at all
-        ## as long as resolvconf jumps in for networkmanager
-        ## But: times are changing - network manager dont use resolvconf
-        ## anymore and now this code does harm - the created symlink point to
-        ## a file which only exist if systemd-resolved is used. this is not
-        ## the case with networkmanager
-        ##
-        ## if os.path.isfile(os.path.join(chroot, 'etc/resolv.conf')) and \
-        ##    not os.path.islink(os.path.join(chroot, 'etc/resolv.conf')):
-        ##     # networkd+resolved so setup symlink and disable fallback DNS
-        ##     try:
-        ##         os.unlink(os.path.join(chroot, 'etc/resolv.conf'))
-        ##         os.symlink('/run/systemd/resolve/resolv.conf', os.path.join(chroot, 'etc/resolv.conf'))
-        ##         with open(os.path.join(chroot, 'etc/systemd/resolved.conf'), 'a') as f:
-        ##             f.write('DNS=\n')
-        ##     except IOError:
-        ##         self.log.exception('failed to setup resolv.conf and resolved.conf')
 
 
     def _makeInitramfs(self, arch):
