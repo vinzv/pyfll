@@ -6,17 +6,22 @@ desc = """
 # after that we should build with recommends on and cherrypick missed useful packages
 
 packages = """
-    # bluetooth is difficult: cinnamon-bluetooth depends on incompatible gnome-bluetooth, so meanwhile ship blueman
-    blueman
+    # bluetooth is difficult: cinnamon-bluetooth depends on incompatible gnome-bluetooth
+    blueman # so meanwhile ship blueman
     brasero
     cinnamon
         cinnamon-l10n  # is a recommends of cinnamon
         gir1.2-gnomebluetooth-1.0
         gir1.2-networkmanager-1.0
         gir1.2-nmgtk-1.0
-        network-manager-gnome
         gnome-terminal  # is a recommends of cinnamon
     cinnamon-backgrounds
+    muffin  # cinnamon window manager (derived from gnome-shell mutter)
+    nemo    # cinnamon file manager   (derived from gnome nautilus)
+    nemo-fileroller  # adds items in the context menu of files and directories.
+    nemo-gtkhash     # adds the digests-tab on the file properties page
+    # network-manager-gnome # cinnamon now has its own
+    
     cheese
     gir1.2-cheese-3.0
     dconf-tools
@@ -24,12 +29,13 @@ packages = """
     desktop-file-utils
     gconf2  # the old gtk2 configuration tool
     gedit
-    gir1.2-gtksource-3.0  # syntaxhighlighting for gedit:
-    gitg
+    gir1.2-gtksource-3.0  # syntaxhighlighting for gedit
+    # gitg
     glib-networking
     gnome-desktop3-data
     gnome-disk-utility
     gnome-keyring
+    libpam-gnome-keyring
     gnome-logs
     gnome-menus
     gtkhash
@@ -38,57 +44,48 @@ packages = """
     # some experimental extras (keep them?):
         gnome-sudoku
         iagno
-        # basic office applications
-	abiword
-        abw2odt
-	evince
-        gnumeric
-        gnome-calculator
-
         swell-foop  # easily test OpenGL capabilities.
+    # only basic office applications
+    abiword
+    abw2odt
+    evince
+    gnumeric
+    gnome-calculator
+
+    firefox # switch to release-channel, since firefox-esr has replaced iceweasel
+	firefox-l10n-de
+	firefox-l10n-en-gb
+	firefox-l10n-it
+	firefox-l10n-pl
+	firefox-l10n-pt-br
+	firefox-l10n-ro
     hexchat
     icedove
-    iceweasel
-    libpam-gnome-keyring
+	icedove-l10n-de
+	icedove-l10n-en-gb
+	icedove-l10n-it
+	icedove-l10n-pl
+	icedove-l10n-pt-br
+	icedove-l10n-ro
+    
     liferea # linux feed reader
-    muffin  # cinnamon window manager (derived from gnome-shell mutter)
-    nemo    # cinnamon file manager   (derived from gnome nautilus)
-    nemo-fileroller  # adds items in the context menu of files and directories.
-    nemo-gtkhash     # adds the digests-tab on the file properties page
     
     # basic multimedia tools
-    audacious
+    audacious  # gtk2
     eog
     screengrab
-    shutter
+    #shutter
     sound-juicer
     sound-theme-freedesktop
 
     #some bloat
     tracker
-    tracker-gui
-    geany
-    medit
+    #tracker-gui
+    #geany
+    #medit
     vcdimager
     vim-gtk
-    p7zip-full
+    #p7zip-full
     siduction-settings-plank
-    
-    #
-    # some languages hardwired
-    #
-#    icedove-l10n-de
-#    icedove-l10n-en-gb
-#    icedove-l10n-it
-#    icedove-l10n-pl
-#    icedove-l10n-pt-br
-#    icedove-l10n-ro
-    #
-#    iceweasel-l10n-de
-#    iceweasel-l10n-en-gb
-#    iceweasel-l10n-it
-#    iceweasel-l10n-pl
-#    iceweasel-l10n-pt-br
-#    iceweasel-l10n-ro
 
 """
