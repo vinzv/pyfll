@@ -118,11 +118,11 @@ packages = """
   #
   # brute-force languange integration
   #
-  iceweasel
-  iceweasel-l10n-de
-  iceweasel-l10n-en-gb
-  iceweasel-l10n-it
-  iceweasel-l10n-pl
-  iceweasel-l10n-pt-br
-  iceweasel-l10n-ro
+  firefox
+  firefox-l10n-de
+  firefox-l10n-en-gb
+  firefox-l10n-it
+  firefox-l10n-pl
+  firefox-l10n-pt-br
+  firefox-l10n-ro
 """
