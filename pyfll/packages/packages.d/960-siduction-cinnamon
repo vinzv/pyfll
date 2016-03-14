@@ -20,7 +20,7 @@ packages = """
     nemo    # cinnamon file manager   (derived from gnome nautilus)
     nemo-fileroller  # adds items in the context menu of files and directories.
     nemo-gtkhash     # adds the digests-tab on the file properties page
-    # network-manager-gnome # cinnamon now has its own
+    network-manager-gnome
     
     cheese
     gir1.2-cheese-3.0
