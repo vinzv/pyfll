@@ -69,6 +69,8 @@ packages = """
   kwrited
   ktorrent
 
+  libpam-kwallet5
+
   mplayerthumbs
 
   okteta
