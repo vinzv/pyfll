@@ -152,6 +152,7 @@ packages = """
     wpasupplicant
     wvdial
     xdg-utils
+    xdg-user-dirs
     xfsprogs
     zip
     #
