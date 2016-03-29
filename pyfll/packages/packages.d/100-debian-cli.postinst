@@ -23,7 +23,7 @@ EOF
     fi
 
     # systemd should end all user processes at logout
-    [ -f /etc/systemd/logind.conf ] && sed -i "s/^#KillUser/KillUser/1" /etc/systemd/logind.conf
+    [ -f /etc/systemd/logind.conf ] && sed -i "s/#KillUserProcesses=no/KillUserProcesses=yes/1" /etc/systemd/logind.conf
 }
 
 case "${1}" in
