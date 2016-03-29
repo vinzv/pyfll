@@ -1,13 +1,13 @@
 #!/bin/sh -e
 
 say() {
-	echo "I: $@..."
+    echo "I: $@..."
 }
 
 do_postinst() {
-	if which vim >/dev/null; then
-		say 'Adding /etc/vim/vimrc.local'
-		cat > /etc/vim/vimrc.local \
+    if which vim >/dev/null; then
+        say 'Adding /etc/vim/vimrc.local'
+        cat > /etc/vim/vimrc.local \
 <<EOF
 syntax on
 set autoindent
@@ -15,12 +15,15 @@ set background=light
 set showmatch
 set pastetoggle=<F10>
 EOF
-	fi
+    fi
 
-	if which most >/dev/null; then
-		say "Setting default pager to ${most}"
-		update-alternatives --set pager $(which most) >/dev/null
-	fi
+    if which most >/dev/null; then
+        say "Setting default pager to ${most}"
+        update-alternatives --set pager $(which most) >/dev/null
+    fi
+
+    # systemd should end all user processes at logout
+    [ -f /etc/systemd/logind.conf ] && sed -i "s/^#KillUser/KillUser/1" /etc/systemd/logind.conf
 }
 
 case "${1}" in
