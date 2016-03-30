@@ -86,6 +86,6 @@ packages = """
     vcdimager
     vim-gtk
     #p7zip-full
-    siduction-settings-plank
 
+    plank
 """

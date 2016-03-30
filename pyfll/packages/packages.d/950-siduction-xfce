@@ -28,7 +28,6 @@ packages = """
     mpg321
     orage
     ristretto
-    siduction-settings-plank
     trayer
     tumbler
     xarchiver
@@ -75,6 +74,9 @@ packages = """
     xfce4-wavelan-plugin
     xfce4-weather-plugin
     xfce4-xkb-plugin
+
+    # gtk3 
+    plank
 
     # Qt5 Packages
     screengrab
