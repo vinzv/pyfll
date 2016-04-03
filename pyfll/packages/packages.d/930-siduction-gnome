@@ -24,8 +24,6 @@ packages = """
     fonts-cantarell
     gcalctool
     gconf-editor
-    # reintroduce gdm AG 2016-04-03
-    gdm3
     geary
     gedit
     gengetopt
@@ -135,7 +133,7 @@ packages = """
     gnome-panel
     # gnome-pie
     gnome-power-manager
-    gnome-screensaver
+    # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
     gnome-shell-extension-autohidetopbar
     gnome-shell-extension-redshift
     # breaks build AG 2016-04-03 gnome-shell-extensions-gpaste
@@ -175,8 +173,8 @@ packages = """
     libcanberra-pulse
     libfftw3-bin
 
-    # smplayer replaced by totem
-    # smtube replaced by totem
+    # working replacement for gnome-screensaver
+    xscreensaver
 
     # Qt5 Apps
     vokoscreen
