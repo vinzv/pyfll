@@ -14,9 +14,9 @@ do_postinst() {
         rm -f /etc/xdg/menus/debian-menu.menu
     fi
     # link xscreensaver to gnome-screensaver
-    if [ -e /usr/bin/xscreensaver-command ]
+    if [ -e /usr/bin/xscreensaver-command ]; then
         ln -sf /usr/bin/xscreensaver-command  /usr/bin/gnome-screensaver-command
-    fi 
+    fi
 }
 
 case "${1}" in
