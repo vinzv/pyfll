@@ -138,7 +138,7 @@ packages = """
     gnome-screensaver
     gnome-shell-extension-autohidetopbar
     gnome-shell-extension-redshift
-    gnome-shell-extensions-gpaste
+    # breaks build AG 2016-04-03 gnome-shell-extensions-gpaste
     gnome-shell-extension-suspend-button
     gnome-shell-extension-weather
     gnome-shell-mailnag
