@@ -6,7 +6,7 @@ CODENAME="Thunderstruck"
 CODENAME_SAFE="thunderstruck"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
 RELEASE="xperimental"
-VERSION="15.1.0"
+VERSION="16.1.0"
 
 
 cd pyfll/templates
