@@ -40,7 +40,6 @@ packages = """
     thunar-volman
     xfburn
     xfce4
-    xfce4-artwork
     xfce4-dev-tools
     xfce4-dict
     xfce4-notifyd
