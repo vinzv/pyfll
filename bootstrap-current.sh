@@ -6,7 +6,7 @@ CODENAME="White Room"
 CODENAME_SAFE="whiteroom"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
 RELEASE="current"
-VERSION="15.1.0"
+VERSION="16.1.0"
 
 
 cd pyfll/templates
