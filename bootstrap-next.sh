@@ -6,7 +6,7 @@ CODENAME="Paint It Black"
 CODENAME_SAFE="paintitblack"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
 RELEASE="next"
-VERSION="15.1.0"
+VERSION="16.1.0"
 
 
 cd pyfll/templates
