@@ -174,8 +174,7 @@ packages = """
     libfftw3-bin
 
     # working replacement for gnome-screensaver
-    # xscreensaver
-    gnome-screensaver
+    xscreensaver
 
     # Qt5 Apps
     vokoscreen
