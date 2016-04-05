@@ -33,6 +33,5 @@ packages = """
     qtpass
     qupzilla
     screengrab
-    sharpdot-cursor-theme
     xscreensaver
 """

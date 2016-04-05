@@ -11,6 +11,7 @@ packages = """
     compton
     connman
     cups-pk-helper
+    faenza-icon-theme
     gpodder
     guake
     gucharmap
