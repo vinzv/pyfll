@@ -30,8 +30,6 @@ packages = """
     openbox
 
     putty
-    sharpdot-cursor-theme
-
 
     ## GTK 3
     audacious
