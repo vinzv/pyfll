@@ -5,7 +5,6 @@ desc = """
 packages = """
     accountsservice
 #    adequate
-    anacron
     apt-file
     apt-listchanges
     apt-show-versions
@@ -27,7 +26,6 @@ packages = """
     command-not-found
     console-common
     console-data
-    cron
     cryptsetup
     cups-browsed
     cups-bsd
