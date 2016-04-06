@@ -1,11 +1,10 @@
 #!/bin/bash
 
-## defaults
-options="-vP "
-confpath="./pyfll/conf/"
+# one will find a sample defaults.conf in ./pyfll
+[ -e /etc/pyfll/defaults.conf ] && source /etc/pyfll/defaults.conf
+
 flavour=nox
 release=current
 arch=amd64
-aptcache="-t http://192.168.150.41:3142"
 
-time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf 
+time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf

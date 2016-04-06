@@ -1,0 +1,7 @@
+## defaults
+options="-vv "
+confpath="./pyfll/conf/"
+flavour=lxqt
+release=xperimental
+arch=amd64
+aptcache="-t http://192.168.150.41:3142"
