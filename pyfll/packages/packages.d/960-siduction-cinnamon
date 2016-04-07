@@ -6,8 +6,10 @@ desc = """
 # after that we should build with recommends on and cherrypick missed useful packages
 
 packages = """
-    # bluetooth is difficult: cinnamon-bluetooth depends on incompatible gnome-bluetooth
-    blueman # so meanwhile ship blueman
+    # bluetooth is difficult:
+    # cinnamon-bluetooth depends on incompatible gnome-bluetooth
+    # so meanwhile ship blueman
+    blueman
     brasero
     cinnamon
         cinnamon-l10n  # is a recommends of cinnamon
