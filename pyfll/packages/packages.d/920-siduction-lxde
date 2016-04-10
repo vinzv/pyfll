@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    audacious
     blueman
     gnome-keyring
     brasero
@@ -29,11 +30,9 @@ packages = """
     osmo
     obconf
     openbox
+    openbox-theme-breeze
 
-    putty
-
-    ## GTK 3
-    audacious
+    ## GTK 3 ##
     plank
     transmission-gtk
 
