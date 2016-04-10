@@ -34,7 +34,6 @@ packages = """
 
     ## GTK 3
     audacious
-    audacious-plugins
     plank
     transmission-gtk
 
