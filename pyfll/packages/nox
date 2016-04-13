@@ -6,7 +6,7 @@ deps = """
     100-debian-cli
     200-siduction-cli
     300-hwsupport
-    350-virt-helpers
+    # 350-virt-helpers keine gute idee, x11
     910-siduction-nox
 """
 
