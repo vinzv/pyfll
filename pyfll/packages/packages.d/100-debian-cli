@@ -34,6 +34,7 @@ packages = """
     cups-common
     cups-filters
     cups-ppdc
+    dconf-cli
     debconf-utils
     debhelper
     debian-goodies

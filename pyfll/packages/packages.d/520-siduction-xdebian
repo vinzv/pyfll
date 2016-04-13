@@ -4,6 +4,7 @@ desc = """
 
 packages = """
     cups-pdf
+    dconf-editor
     feh
     foomatic-db-gutenprint
     galternatives
