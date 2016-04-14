@@ -33,5 +33,6 @@ packages = """
     qtpass
     qupzilla
     screengrab
+    trojita
     xscreensaver
 """
