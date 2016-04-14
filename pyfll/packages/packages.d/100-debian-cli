@@ -58,6 +58,7 @@ packages = """
     glances
     genisoimage
     gpm
+    haveged
     htop
     hddtemp
     iftop
