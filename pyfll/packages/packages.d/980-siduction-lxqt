@@ -17,6 +17,8 @@ packages = """
 
     ## Qt 5
     2048-qt
+    audacious-qt-plugins
+
     gnome-keyring
     connman
     connman-vpn
