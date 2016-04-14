@@ -26,6 +26,7 @@ packages = """
     lxtask
 
     midori
+    mousepad
 
     osmo
     obconf
@@ -39,7 +40,6 @@ packages = """
     ## Qt5 Applications
     cmst
     compton-conf
-    juffed
     qpdfview
     qpdfview-djvu-plugin
     qpdfview-ps-plugin
