@@ -132,7 +132,7 @@ packages = """
     systemd-coredump
     systemd-container
     systemd-cron
-    testdisk
+    #    testdisk broken again, 2016-04-24 AG
     thin-provisioning-tools # suggested by lvm2, recommended by kvpm
     tofrodos
     tree
