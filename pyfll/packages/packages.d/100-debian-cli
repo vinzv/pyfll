@@ -38,6 +38,7 @@ packages = """
     debconf-utils
     debhelper
     debian-goodies
+    deborphan
     debsums
     dialog
     dmeventd
