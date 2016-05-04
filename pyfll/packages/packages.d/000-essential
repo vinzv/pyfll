@@ -21,7 +21,6 @@ packages = """
     locales
     mtools
     squashfs-tools
-    plymouth
     syslinux
     syslinux-common
 """
