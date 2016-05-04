@@ -135,7 +135,7 @@ packages = """
     gnome-power-manager
     # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
     gnome-shell-extension-autohidetopbar
-    gnome-shell-extension-redshift
+    # breajs build AG 2016-05-03 gnome-shell-extension-redshift
     # breaks build AG 2016-04-03 gnome-shell-extensions-gpaste
     gnome-shell-extension-suspend-button
     gnome-shell-extension-weather
