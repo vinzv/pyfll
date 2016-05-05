@@ -9,7 +9,7 @@ packages = """
     br2684ctl
     colord 
     colord-data
-    cpufrequtils
+    # cpufrequtils
     crda
     dmidecode
     ethtool
