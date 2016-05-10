@@ -10,29 +10,34 @@ packages = """
     caribou-antler
       libcaribou-gtk-module
       libcaribou-gtk3-module
-    # needed by gnome-controlcenter to change password.
-    cracklib-runtime
-    cups-pk-helper
     dconf-tools
     eog
-    # new 3.12 apps: empathy, polari (todo: siduction settings), gnome-boxes, gnome-logs, gnome-photos, gnome-sushi, geary
     empathy
     evince
     evolution
     evolution-data-server
     file-roller
     fonts-cantarell
-    gcalctool
     gconf-editor
     geary
     gedit
+    gedit-plugins
     gengetopt
     gkbd-capplet
     gnome-backgrounds
     gnome-bluetooth
     #gnome-boxes
     gnome-contacts
-    gnome-control-center
+    gnome-control-center # recommends: cups-pk-helper, gnome-online-accounts, gnome-user-guide, gnome-user-share, gkbd-capplet, iso-codes, mesa-utils, mousetweaks, policykit-1, rygel | rygel-tracker, system-config-printer (>= 1.4), network-manager-gnome (>= 0.9.8), libnss-myhostname, cracklib-runtime, pulseaudio-module-bluetooth, realmd
+        cracklib-runtime # needed by gnome-controlcenter to change password.
+        cups-pk-helper
+        gnome-online-accounts # needed by empathy, polari
+        mousetweaks # still needed with 3.20 (libinput)?
+        network-manager-gnome
+        network-manager-openvpn
+        network-manager-pptp
+        network-manager-vpnc
+        system-config-printer
     gnome-dictionary
     gnome-disk-utility
     # metapackage gnome-games depends:
@@ -59,8 +64,6 @@ packages = """
     gnome-keyring
     gnome-logs
     #gnome-media
-    #g-o-a is needed by empathy, polari
-    gnome-online-accounts
     gnome-photos
     gnome-screenshot
     gnome-search-tool
@@ -75,6 +78,7 @@ packages = """
     gnome-user-share
     gnome-system-monitor
     gparted
+    guake
     gucharmap
     hamster-applet
     firefox
@@ -88,23 +92,18 @@ packages = """
     hexchat
     libpam-gnome-keyring
     libxml2-utils
-    mousetweaks
     mpg321
     nautilus
     # nautilus plugins needs review
-    network-manager-gnome
-    network-manager-openvpn
-    network-manager-pptp
-    network-manager-vpnc
+    nautilus-gtkhash
     pinentry-gnome3
     polari
     rhythmbox
     # look at potential plugins
     totem
     totem-plugins
-    tracker-gui
+    tracker-gui     # why only the gui tracker-gui?
     transmission-gtk
-    # why only the gui tracker-gui
     goobox
     # instead of sound-juicer
     sound-theme-freedesktop
@@ -116,6 +115,7 @@ packages = """
     # gnome-audio
     # gnome-blog
     # gnome-boxes
+    gnome-calculator
     gnome-calendar
     gnome-characters
     gnome-clocks
@@ -173,7 +173,7 @@ packages = """
     libcanberra-pulse
     libfftw3-bin
 
-    # working replacement for gnome-screensaver
+    # working replacement for gnome-screensaver (screenlocker even!)
     xscreensaver
 
     # Qt5 Apps
