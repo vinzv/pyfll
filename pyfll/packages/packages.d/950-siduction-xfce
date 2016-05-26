@@ -12,7 +12,7 @@ packages = """
     desktop-file-utils
     evince-gtk
     faenza-icon-theme
-    gcalctool
+    gnome-calculator # replaces gcalctool
     gconf2
     gnome-keyring
     gnumeric
