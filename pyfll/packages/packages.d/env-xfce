@@ -26,6 +26,7 @@ packages = """
     libtumbler-1-0
     mousepad
     mpg321
+    network-manager-gnome
     orage
     ristretto
     trayer

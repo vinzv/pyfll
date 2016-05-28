@@ -1,0 +1,36 @@
+desc = """
+    File systems and utils.
+"""
+
+packages = """
+    acl
+    attr
+    btrfs-tools
+    cdrdao
+    cifs-utils
+    cryptsetup
+    dmeventd
+    dosfstools
+    dvd+rw-tools
+    encfs
+    exfat-utils
+    ext4magic
+    f2fs-tools
+#    gamin
+    gdisk
+    gddrescue
+    genisoimage
+    inotify-tools
+    jfsutils
+    mbr
+    nfs-common
+    ntfs-3g
+    partimage
+    reiserfsprogs
+    testdisk                # was broken again, 2016-04-24 AG
+    thin-provisioning-tools # suggested by lvm2, recommended by kvpm
+    xfsprogs
+"""
+
+i386 = """
+"""

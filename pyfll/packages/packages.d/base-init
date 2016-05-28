@@ -1,0 +1,14 @@
+syysdesc = """
+    Common command line utilities.
+"""
+
+packages = """
+    systemd-coredump
+    systemd-container
+    # systemd-cron - boot with 90s timeout, not so nice
+    sysv-rc
+    sysv-rc-conf
+"""
+
+i386 = """
+"""

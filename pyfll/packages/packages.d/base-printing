@@ -1,0 +1,24 @@
+desc = """
+    Common command line utilities.
+"""
+
+packages = """
+    cups-browsed
+    cups-bsd
+    cups-client
+    cups-common
+    cups-filters
+    cups-ppdc
+    foomatic-db
+    foomatic-db-engine
+    openprinting-ppds
+    printer-driver-cjet
+    printer-driver-c2050
+    printer-driver-escpr
+    printer-driver-foo2zjs
+    printer-driver-min12xxw
+    printer-driver-pnm2ppa
+"""
+
+i386 = """
+"""

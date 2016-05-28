@@ -29,7 +29,7 @@ do_postinst() {
 	say 'Disabling selected initscripts which should not start in live mode'
 
 	# remember keep service blacklists in sync with fll-installer!
-	DISABLED_SERVICES="bootlogd bootlogs stop-bootlogd stop-bootlogd-single"
+	DISABLED_SERVICES="anacron cron bootlogd bootlogs stop-bootlogd stop-bootlogd-single"
 	REMOVED_SERVICES=""
 	SERVICE_BLACKLIST="rsync ssh lirc mysql postfix"
 

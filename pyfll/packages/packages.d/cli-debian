@@ -4,179 +4,71 @@ desc = """
 
 packages = """
     accountsservice
-    adequate
+    acpi-fakekey
+    apt-conf-siduction
     apt-file
     apt-listchanges
-    apt-rdepends
     apt-show-versions
     apt-transport-https
     aptitude
-    aspell
-    attr
     bash-completion
-    btrfs-tools
-    build-essential
     bzip2
     ca-certificates
-    cdebootstrap
-    cdrdao
     cfv
     chkrootkit
-    cifs-utils
-    cmospwd
-    colordiff
-    command-not-found
     console-data
-    cryptsetup
-    cups-browsed
-    cups-bsd
-    cups-client
-    cups-common
-    cups-filters
-    cups-ppdc
+    cmospwd
+    command-not-found
     dconf-cli
     debconf-utils
-    debhelper
     debian-goodies
     deborphan
-    debsums
     dialog
-    dmeventd
-    dnsutils
-    dosfstools
-    dvd+rw-tools
-    encfs
-    exfat-utils
-    ext4magic
-    f2fs-tools
     foremost
-    foomatic-db
-    foomatic-db-engine
-    ftp-ssl
-    gamin
-    gddrescue
-    gdisk
-    glances
-    genisoimage
     gpm
     haveged
     htop
     hddtemp
-    iftop
-    info
-    inotify-tools
+    inxi
     iotop
-    iproute2
-    iptables
-    iputils-ping
-    isc-dhcp-client
-    iw
-    jfsutils
     kbd
-    kexec-tools
     less
     libmtp-runtime
-    libnss-mdns
-    libnss-myhostname
-    links
     lm-sensors
     logrotate
-    man-db
-    manpages
-    mbr
     mc
     memtest86+
     mlocate
-    moc
     moreutils
     most
-    netselect
-    nfs-common
-    ntfs-3g
-    nmap
     nano
     ncdu
-    netbase
-    net-tools
-    openssh-client
-    openprinting-ppds
     p7zip-full
-    partimage
     pinentry-curses
     policykit-1
     popularity-contest
-    pppconfig
-    pppoeconf
     preload
-    printer-driver-cjet
-    printer-driver-c2050
-    printer-driver-escpr
-    printer-driver-foo2zjs
-    printer-driver-min12xxw
-    printer-driver-pnm2ppa
     pv
     pwgen
     realpath
     reptyr
-    reiserfsprogs
     reportbug
     rkhunter
-    rsync
     screen
-    signing-party
-    sshfs
     smartmontools
     strace
     sudo
-    sysv-rc-conf
-    systemd-coredump
-    systemd-container
-    systemd-cron
-    testdisk                # was broken again, 2016-04-24 AG
-    thin-provisioning-tools # suggested by lvm2, recommended by kvpm
+    signing-party
     tofrodos
     tree
-    traceroute
     unp
     unzip
     vim
-    vnstat
-    vpnc
     vrms
-    weechat-curses
-    weechat-core
-    weechat-scripts
-    weechat-plugins
-    wget
     whohas
     whowatch
-    wireless-tools
     wodim
-    wpasupplicant
-    wvdial
     xdg-utils
     xdg-user-dirs
-    xfsprogs
     zip
-    #
-    # language-packages - quick and dirty
-    #
-    manpages-de
-    manpages-it
-    manpages-pl
-    manpages-pt
-    hunspell-de-de
-    hunspell-en-gb
-    hunspell-en-us
-    hunspell-it
-    hunspell-pl
-    hunspell-pt-br
-"""
-
-
-debconf = """
-    kexec-tools kexec-tools/load_kexec boolean false
-"""
-
-i386 = """
 """

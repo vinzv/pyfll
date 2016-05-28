@@ -1,0 +1,22 @@
+desc = """
+    Common command line utilities.
+"""
+
+packages = """
+    aspell
+    manpages
+    man-db
+    #
+    # language-packages - quick and dirty
+    #
+    manpages-de
+    manpages-it
+    manpages-pl
+    manpages-pt
+    hunspell-de-de
+    hunspell-en-gb
+    hunspell-en-us
+    hunspell-it
+    hunspell-pl
+    hunspell-pt-br
+"""

@@ -1,0 +1,38 @@
+desc = """
+    Basic networking support and utilities.
+"""
+
+packages = """
+    dnsutils
+    ftp-ssl
+    iftop
+    iproute2
+    iptables
+    iputils-ping
+    isc-dhcp-client
+    iw
+    libnss-mdns
+    libnss-myhostname
+    links
+    netselect
+    nmap
+    netbase
+    net-tools
+    openssh-client
+    pppconfig
+    pppoeconf
+    sshfs
+    traceroute
+    vnstat
+    vpnc
+    weechat-curses
+    weechat-core
+    weechat-scripts
+    weechat-plugins
+    wget
+    wireless-tools
+    wpasupplicant
+    wvdial
+"""
+i386 = """
+"""

@@ -1,0 +1,13 @@
+desc = """
+    Common command line utilities.
+"""
+
+packages = """
+    build-essential
+    colordiff
+    debhelper
+    debsums
+    moc
+"""
+i386 = """
+"""
