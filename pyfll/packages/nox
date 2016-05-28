@@ -1,13 +1,23 @@
 desc = """
-    Siduction NO-X environment
+    NO-X environment
 """
 
 deps = """
-    #cli-debian
-    #cli-distro
-    #base-hwsupport
-    # 350-virt-helpers keine gute idee, x11
-    # env-nox
+    base-devel
+    base-filesystems
+    base-firmware-non-free
+    base-hwsupport
+    base-init
+    base-l10n
+    base-media
+    base-networking
+    base-printing
+
+    # virt-helpers keine gute idee, x11
+    cli-debian
+    cli-distro
+
+    env-nox
 """
 
 packages = """

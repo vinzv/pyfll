@@ -1,18 +1,27 @@
 desc = """
-    Siduction GNOME desktop environment
+    GNOME desktop environment
 """
 
 deps = """
-    cli-debian
-    cli-distro
-    base-hwsupport
-    base-virt-helpers
+    base-devel
+    base-filesystems
     base-firmware-non-free
+    base-hwsupport
+    base-init
+    base-l10n
     base-media
-    base-xorg
-    base-xorg-fonts
+    base-networking
+    base-printing
+
+    base-virt-helpers
     base-xapps-debian
     base-xapps-distro
+    base-xorg
+    base-xorg-fonts
+
+    cli-debian
+    cli-distro
+
     env-gnome
 """
 

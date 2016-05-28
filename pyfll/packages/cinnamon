@@ -1,18 +1,27 @@
 desc = """
-	Siduction Cinnamon desktop environment
+    Cinnamon desktop environment
 """
 
 deps = """
-    cli-debian
-    cli-distro
-    base-hwsupport
-    base-virt-helpers
+    base-devel
+    base-filesystems
     base-firmware-non-free
+    base-hwsupport
+    base-init
+    base-l10n
+    base-media
+    base-networking
+    base-printing
+
+    base-virt-helpers
+    base-xapps-debian
+    base-xapps-distro
     base-xorg
     base-xorg-fonts
-    base-xapps-debian
-    base-media
-    base-xapps-distro
+
+    cli-debian
+    cli-distro
+
     env-cinnamon
 """
 
