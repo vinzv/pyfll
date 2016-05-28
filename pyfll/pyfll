@@ -611,7 +611,7 @@ class FLLBuilder(object):
                 pkgs['packages'].append(p)
                 self.log.debug('  %s' % p)
 
-        deps = ['000-essential']
+        deps = ['essential']
         if 'deps' in pfile:
             self.log.debug('deps:')
             for dep in self.__lines2list(pfile['deps']):
@@ -670,8 +670,12 @@ class FLLBuilder(object):
 
             self.log.debug('---')
 
+
+
+
+
         self.log.info('last depfile %s' % depfile)
-        depfile = os.path.join(dir, 'packages.d', '999-finalize.postinst')
+        depfile = os.path.join(dir, 'packages.d', 'finalize.postinst')
         pkgs['postinst'].append(depfile)
 
         self.log.debug('package summary for %s:' % arch)
@@ -984,8 +988,6 @@ class FLLBuilder(object):
         else:
             mirror = debian['uri']
 
-        self.log.info('debian mirror: %s' % mirror )
-
         dir = os.path.join(self.temp, arch)
 
         self.log.info('bootstrapping %s %s %s...' % (distro,codename,arch))
@@ -1072,6 +1074,10 @@ class FLLBuilder(object):
         self.log.info('preparing apt in %s chroot...' % arch)
         chroot = os.path.join(self.temp, arch)
 
+
+
+
+
         preferences_d = self.conf['options']['preferences_d']
         if preferences_d:
             self.log.info('importing apt preferences directory')
@@ -1095,6 +1101,13 @@ class FLLBuilder(object):
                 self.log.error('apt configuration directory failed to copy: %s'
                                % apt_conf_d)
                 raise FllError
+
+
+
+
+
+
+
 
 
 
@@ -1414,7 +1427,7 @@ class FLLBuilder(object):
 
         self.log.info('detecting whitelisted recommended packages...')
         rec_module = ConfigObj(os.path.join(self.opts.s, 'packages',
-                                            'packages.d', '010-recommends-whitelist'))
+                                            'packages.d', 'recommends'))
         try:
             rec_dict = dict([(p, True) for p in
                              self.__lines2list(rec_module['packages'])])
@@ -1755,7 +1768,7 @@ class FLLBuilder(object):
 
         exclude_file = os.path.join(self.opts.s, 'data', 'fll_sqfs_exclusion')
         shutil.copy(exclude_file, os.path.join(chroot, 'tmp'))
-        cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion', '-e', image_file])
+        cmd.extend(['-wildcards', '-ef', '/tmp/fll_sqfs_exclusion'])
 
         # set compression algorithm for squashfs-tools >= 4.1
         squashfs_comp = self.conf['options'].get('squashfs_comp')
@@ -1770,6 +1783,9 @@ class FLLBuilder(object):
 
         if self.opts.l or self.opts.q:
             cmd.append('-no-progress')
+
+        # can only be last argument
+        cmd.extend(['-e', image_file])
 
         self._execInChroot(arch, cmd)
 

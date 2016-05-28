@@ -10,10 +10,6 @@ packages = """
     xserver-xorg-video-vesa
     #
     dmz-cursor-theme
-    fonts-liberation
-    fonts-dejavu-core
-    fonts-dejavu-extra
-    fonts-vlgothic
     gnupg-agent
     libegl1-mesa-drivers
     libgl1-mesa-dri

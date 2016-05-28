@@ -1,7 +1,5 @@
 #!/bin/sh
 
-# Needs to remove fll-xdm from fll-live-initscripts
-
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 
 if [ -r /etc/default/distro ]; then
@@ -19,7 +17,7 @@ say() {
 do_postinst() {
     say "..........................."
     say "..                       .."
-    say ".. 999-finalize.postinst .."
+    say ".. finalize.postinst .."
     say "..                       .."
     say "..........................."
 
@@ -56,7 +54,7 @@ do_postinst() {
 
 
     if [ "$LIVE_SETTINGS" = 'none' ]; then
-        echo 'No live settings scripts found! Please fix! (exit in 999-finalize.postinst)'
+        echo 'No live settings scripts found! Please fix! (exit in finalize.postinst)'
         exit 1
     fi
 }

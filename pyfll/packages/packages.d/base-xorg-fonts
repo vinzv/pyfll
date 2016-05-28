@@ -1,0 +1,16 @@
+desc = """
+    Base Fonts
+"""
+
+packages = """
+    fonts-noto
+    fonts-noto-hinted
+    fonts-noto-unhinted
+    fonts-noto-mono
+    fonts-noto-cjk
+
+    fonts-liberation
+    fonts-dejavu-core
+    fonts-dejavu-extra
+    fonts-vlgothic
+"""

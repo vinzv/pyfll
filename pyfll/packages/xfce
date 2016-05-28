@@ -3,16 +3,16 @@ desc = """
 """
 
 deps = """
-    100-debian-cli
-    200-siduction-cli
-    300-hwsupport
-    350-virt-helpers
-    400-firmware-non-free
-    510-siduction-mediabase
-    520-siduction-xdebian
-    530-siduction-xorg
-    540-siduction-xsiduction
-    950-siduction-xfce
+    cli-debian
+    cli-distro
+    base-hwsupport
+    base-virt-helpers
+    base-firmware-non-free
+    base-xorg
+    base-xorg-fonts
+    base-xapps-debian
+    base-xapps-distro
+    env-xfce
 """
 
 packages = """
