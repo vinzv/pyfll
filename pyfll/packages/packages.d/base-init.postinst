@@ -5,9 +5,8 @@ say() {
 }
 
 do_postinst() {
-    # say 'Disable systemd-cron in live-mode'
-    # systemctl disable cron.target
-    echo
+    # OBACHT - muss vor dem Release raus
+    systemctl enable debug-shell
 }
 
 case "${1}" in
