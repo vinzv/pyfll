@@ -5,7 +5,8 @@ syysdesc = """
 packages = """
     systemd-coredump
     systemd-container
-    systemd-cron #- boot with 90s timeout, not so nice
+    # systemd-cron -  boot with 90s timeout, not so nice
+    systemd-sysv
     sysv-rc
     sysv-rc-conf
 """
