@@ -21,8 +21,6 @@ packages = """
     locales
     mtools
     squashfs-tools
-    syslinux
-    syslinux-common
 """
 
 amd64 = """
