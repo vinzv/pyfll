@@ -6,7 +6,8 @@ say() {
 
 do_postinst() {
     # OBACHT - muss vor dem Release raus
-    systemctl enable debug-shell
+    echo "debug-shell not enabled"
+    # systemctl enable debug-shell
 }
 
 case "${1}" in
