@@ -1,4 +1,4 @@
-pyfll (2013.02) UNRELEASED; urgency=low
+pyfll (2013.02+nmu1) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
@@ -164,7 +164,12 @@ pyfll (2013.02) UNRELEASED; urgency=low
   * add xserver-xorg-input-all and xserver-xorg-video-all to the automated
     recommends handling.
 
- -- Niall Walsh <niallwalsh@celtux.org>  Tue, 09 Jun 2015 18:49:51 +0100
+  [ Ferdinand Thommes ]
+  * added packages to env-kde:kactivitiesmanagerd kde-config-screensaver
+    plasma-integration, commented sni-qt plasma-systray-legacy, enabled
+    digikam kipi-plugins kpartsplugin
+
+ -- Ferdinand Thommes <devil@siduction.org>  Fri, 10 Jun 2016 10:46:23 +0200
 
 pyfll (2013.01) hesperides; urgency=low
 
