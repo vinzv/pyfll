@@ -9,8 +9,8 @@ packages = """
   converseen
   dolphin4
 
-  #  digikam
-  #     kipi-plugins
+  digikam
+  kipi-plugins
 
   ffmpegthumbnailer
   ffmpegthumbs
@@ -34,6 +34,7 @@ packages = """
   kde-config-systemd
   kde-config-touchpad
   kde-config-screenlocker
+  kdeconnect
   kdegraphics
   kdegraphics-thumbnailers
 
@@ -41,7 +42,7 @@ packages = """
   kdenetwork
   kdenetwork-filesharing
   kdepim
-  kdepim-addons 
+ # kdepim-addons 
   kdeutils
 
   kdesudo
@@ -58,7 +59,7 @@ packages = """
   konqueror-nsplugins
   konq-plugins
 
-  #  kpartsplugin
+  kpartsplugin
 
   kppp
   krusader
