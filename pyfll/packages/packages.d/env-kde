@@ -9,16 +9,15 @@ packages = """
   converseen
   dolphin4
 
-  digikam
-  kipi-plugins
+  #  digikam
+  #     kipi-plugins
 
   ffmpegthumbnailer
   ffmpegthumbs
-  mplayerthumbs
+
 
   k3b-i18n
-  libk3b6-extracodecs
-  kactivitymanagerd 
+    libk3b6-extracodecs
   kaffeine
   kamoso
   kdeaccessibility
@@ -33,8 +32,7 @@ packages = """
   kde-config-sddm
   kde-config-systemd
   kde-config-touchpad
-  kde-config-screenlocker
-  kdeconnect
+
   kdegraphics
   kdegraphics-thumbnailers
 
@@ -42,7 +40,6 @@ packages = """
   kdenetwork
   kdenetwork-filesharing
   kdepim
- # kdepim-addons 
   kdeutils
 
   kdesudo
@@ -59,7 +56,7 @@ packages = """
   konqueror-nsplugins
   konq-plugins
 
-  kpartsplugin
+  #  kpartsplugin
 
   kppp
   krusader
@@ -74,25 +71,34 @@ packages = """
 
   libpam-kwallet5
 
-  
+  mplayerthumbs
 
   okteta
 
   phonon-backend-gstreamer
   phonon4qt5-backend-gstreamer
+
   pinentry-qt4
   plasma-desktop
   plasma-workspace
   plasma-desktop
-  plasma-integration
   plasma-nm
-  #plasma-systray-legacy (should not be needed with plasma 5.6.x)
+
+  #   plasma-systray-legacy - no longer in sid, should be provided by plasma workspace
     avahi-autoipd
     libteam-utils
     network-manager-openconnect
     network-manager-openvpn
     network-manager-pptp
     network-manager-vpnc
+
+
+
+
+
+
+
+
   polkit-kde-1
   powerdevil
   print-manager
@@ -102,7 +108,7 @@ packages = """
 
   reportbug-ng
 
-  #sni-qt  (should not be needed with plasma 5.6.x)
+  sni-qt
   systemsettings
 
   yakuake

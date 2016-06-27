@@ -2257,6 +2257,7 @@ class FLLBuilder(object):
         sha256_file = iso_file + '.sha256'
 
         cmd = 'xorriso -report_about HINT -as mkisofs -graft-points'
+
         if self.opts.v:
            cmd += ' -vv'
         cmd += ' -pad -l'
