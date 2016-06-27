@@ -24,8 +24,8 @@ packages = """
     nemo-gtkhash     # adds the digests-tab on the file properties page
     network-manager-gnome
     
-    cheese
-    gir1.2-cheese-3.0
+    # cheese               broken 2016-06-27
+    # gir1.2-cheese-3.0
     dconf-tools
     dconf-service
     desktop-file-utils
