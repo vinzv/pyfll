@@ -153,7 +153,7 @@ packages = """
     # some packages of the 510-siduction-mediabase
     gstreamer1.0-alsa
     gstreamer1.0-nice
-    gstreamer1.0-plugins-bad
+    #  gstreamer1.0-plugins-bad -- dependency problems 2016-08-27
     gstreamer1.0-plugins-good
     gstreamer1.0-plugins-ugly
     gstreamer1.0-pulseaudio
