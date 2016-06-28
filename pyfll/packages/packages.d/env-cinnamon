@@ -6,33 +6,32 @@ desc = """
 # after that we should build with recommends on and cherrypick missed useful packages
 
 packages = """
-    # bluetooth is difficult:
-    # cinnamon-bluetooth depends on incompatible gnome-bluetooth
-    # so meanwhile ship blueman
-    blueman
-    brasero
+    blueman # is a recommends of cinnamon-desktop-environment
     cinnamon
         cinnamon-l10n  # is a recommends of cinnamon
-        gir1.2-gnomebluetooth-1.0
-        gir1.2-networkmanager-1.0
-        gir1.2-nmgtk-1.0
+        # gir1.2-gnomebluetooth-1.0
+        # gir1.2-networkmanager-1.0 is now a dependency of cinnamon
+        network-manager
+	    modemmanager
+	        usb-modeswitch
+	# network-manager-gnome
+        # gir1.2-nmgtk-1.0
         gnome-terminal  # is a recommends of cinnamon
     cinnamon-backgrounds
     muffin  # cinnamon window manager (derived from gnome-shell mutter)
     nemo    # cinnamon file manager   (derived from gnome nautilus)
     nemo-fileroller  # adds items in the context menu of files and directories.
     nemo-gtkhash     # adds the digests-tab on the file properties page
-    network-manager-gnome
     
-    # cheese               broken 2016-06-27
-    # gir1.2-cheese-3.0
+    cheese # unbroken 2016-06-28
+    gir1.2-cheese-3.0
     dconf-tools
     dconf-service
     desktop-file-utils
     gconf2  # the old gtk2 configuration tool
     gedit
-    gir1.2-gtksource-3.0  # syntaxhighlighting for gedit
-    # gitg
+    gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
+    gitg
     glib-networking
     gnome-desktop3-data
     gnome-disk-utility
@@ -40,10 +39,11 @@ packages = """
     libpam-gnome-keyring
     gnome-logs
     gnome-menus
-    gtkhash
+    # gtkhash is a dependency of nemo-gtkhash
     guake
     yelp
-    # some experimental extras (keep them?):
+    zenity
+    # some extras (keep them?)
         gnome-sudoku
         iagno
         swell-foop  # easily test OpenGL capabilities.
@@ -69,25 +69,33 @@ packages = """
 	icedove-l10n-pl
 	icedove-l10n-pt-br
 	icedove-l10n-ro
-    
-    liferea # linux feed reader
-    
+    liferea          # linux feed reader
+    transmission-gtk # bittorent 
+    vinagre          # remote desktop client
+    vino             # a VNC server allowing to export your running desktop
+    virt-viewer
+
     # basic multimedia tools
-    audacious  # gtk2
-    eog
+    audacious # gtk2
+    brasero   # the dvd authoring tool
+    eog       # the image viewer, eye of gnome  
     screengrab
-    #shutter
+    quodlibet # the music manager, depends on exfalso
+    shotwell  # the photo manager
+    #shutter  # screenshots (based on perl)
     sound-juicer
     sound-theme-freedesktop
 
     #some bloat
     tracker
     #tracker-gui
-    #geany
-    #medit
+    geany
+    # geany-plugins
+    geany-plugin-git-changebar
+    medit
+    pluma
     vcdimager
-    vim-gtk
-    #p7zip-full
-
+    vim-gtk3 # vim-gui-common does provide a gvim.desktop file
+    p7zip-full
     plank
 """
