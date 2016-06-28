@@ -9,20 +9,19 @@ packages = """
     blueman # is a recommends of cinnamon-desktop-environment
     cinnamon
         cinnamon-l10n  # is a recommends of cinnamon
-        # gir1.2-gnomebluetooth-1.0
+        # gir1.2-gnomebluetooth-1.0 is now a dependency of cinnamon
         # gir1.2-networkmanager-1.0 is now a dependency of cinnamon
-        network-manager
-	    modemmanager
-	        usb-modeswitch
-	# network-manager-gnome
-        # gir1.2-nmgtk-1.0
-        gnome-terminal  # is a recommends of cinnamon
+        # gir1.2-nmgtk-1.0          is now a dependency of cinnamon
+	# network-manager-gnome     is now a dependency of cinnamon
+        # network-manager is a dependency
+	  modemmanager
+	  usb-modeswitch
+    gnome-terminal  # is a recommends of cinnamon
     cinnamon-backgrounds
     muffin  # cinnamon window manager (derived from gnome-shell mutter)
     nemo    # cinnamon file manager   (derived from gnome nautilus)
     nemo-fileroller  # adds items in the context menu of files and directories.
     nemo-gtkhash     # adds the digests-tab on the file properties page
-    
     cheese # unbroken 2016-06-28
     gir1.2-cheese-3.0
     dconf-tools
@@ -84,7 +83,7 @@ packages = """
     shotwell  # the photo manager
     #shutter  # screenshots (based on perl)
     sound-juicer
-    sound-theme-freedesktop
+    vcdimager
 
     #some bloat
     tracker
@@ -94,7 +93,6 @@ packages = """
     geany-plugin-git-changebar
     medit
     pluma
-    vcdimager
     vim-gtk3 # vim-gui-common does provide a gvim.desktop file
     p7zip-full
     plank
