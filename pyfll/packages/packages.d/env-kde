@@ -23,7 +23,7 @@ packages = """
   kdeaccessibility
   kdeadmin
 
-  kde-config-baloo-advanced
+  # kde-config-baloo-advanced removed from testing & unstable 29.6.16
   kde-config-cddb
   kde-config-cron
   kde-config-fcitx
