@@ -12,7 +12,7 @@ packages = """
       network-manager
         modemmanager
         usb-modeswitch
-      network-manager-gnome
+      #network-manager-gnome
       gir1.2-networkmanager-1.0
       gir1.2-nmgtk-1.0
       gir1.2-gnomebluetooth-1.0 
