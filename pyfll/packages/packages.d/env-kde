@@ -29,6 +29,7 @@ packages = """
   kde-config-fcitx
   kde-config-gtk-style
   kde-config-gtk-style-preview
+  kde-config-screenlocker # thx der_bud for heads-up
   kde-config-sddm
   kde-config-systemd
   kde-config-touchpad
@@ -82,6 +83,7 @@ packages = """
   plasma-desktop
   plasma-workspace
   plasma-desktop
+  plasma-integration # adjust icons in Kmenu. thx, der_bud
   plasma-nm
 
   #   plasma-systray-legacy - no longer in sid, should be provided by plasma workspace
