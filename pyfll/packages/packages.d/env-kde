@@ -9,21 +9,21 @@ packages = """
   converseen
   dolphin4
 
-  #  digikam
-  #     kipi-plugins
+  digikam
+  kipi-plugins
 
   ffmpegthumbnailer
   ffmpegthumbs
 
 
   k3b-i18n
-    libk3b6-extracodecs
+  libk3b6-extracodecs
   kaffeine
   kamoso
   kdeaccessibility
   kdeadmin
 
-  # kde-config-baloo-advanced removed from testing & unstable 29.6.16
+  kde-config-baloo-advanced
   kde-config-cddb
   kde-config-cron
   kde-config-fcitx
@@ -57,7 +57,7 @@ packages = """
   konqueror-nsplugins
   konq-plugins
 
-  #  kpartsplugin
+  kpartsplugin
 
   kppp
   krusader
@@ -81,36 +81,29 @@ packages = """
 
   pinentry-qt4
   plasma-desktop
+  plasma-mediaplayer
   plasma-workspace
   plasma-desktop
   plasma-integration # adjust icons in Kmenu. thx, der_bud
   plasma-nm
 
-  #   plasma-systray-legacy - no longer in sid, should be provided by plasma workspace
-    avahi-autoipd
-    libteam-utils
-    network-manager-openconnect
-    network-manager-openvpn
-    network-manager-pptp
-    network-manager-vpnc
-
-
-
-
-
-
-
+  
+  avahi-autoipd
+  libteam-utils
+  network-manager-openconnect
+  network-manager-openvpn
+  network-manager-pptp
+  network-manager-vpnc
 
   polkit-kde-1
   powerdevil
   print-manager
-
   udisks2
   upower
 
   reportbug-ng
 
-  sni-qt
+  # sni-qt (test if still needed)
   systemsettings
 
   yakuake
