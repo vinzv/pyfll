@@ -29,7 +29,7 @@ packages = """
   kde-config-fcitx
   kde-config-gtk-style
   kde-config-gtk-style-preview
-  kde-config-screenlocker # thx der_bud for heads-up
+  kde-config-screenlocker
   kde-config-sddm
   kde-config-systemd
   kde-config-touchpad
@@ -84,7 +84,7 @@ packages = """
   plasma-mediaplayer
   plasma-workspace
   plasma-desktop
-  plasma-integration # adjust icons in Kmenu. thx, der_bud
+  plasma-integration
   plasma-nm
 
   
