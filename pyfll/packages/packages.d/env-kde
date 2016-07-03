@@ -23,7 +23,7 @@ packages = """
   kdeaccessibility
   kdeadmin
 
-  kde-config-baloo-advanced
+  #kde-config-baloo-advanced
   kde-config-cddb
   kde-config-cron
   kde-config-fcitx
@@ -81,7 +81,7 @@ packages = """
 
   pinentry-qt4
   plasma-desktop
-  plasma-mediaplayer
+  plasma-mediacenter
   plasma-workspace
   plasma-desktop
   plasma-integration
