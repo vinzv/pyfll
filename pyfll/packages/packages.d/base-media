@@ -24,6 +24,7 @@ packages = """
     pulseaudio
     pulseaudio-module-bluetooth
     pulseaudio-module-x11
+    pulseaudio-module-udev
 
     smplayer
     smtube
