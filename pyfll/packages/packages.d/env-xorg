@@ -7,5 +7,5 @@ packages = """
     gconf2
     gnome-icon-theme
     hexchat
-    qupzilla
+    firefox
 """

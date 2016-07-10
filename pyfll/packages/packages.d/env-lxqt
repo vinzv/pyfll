@@ -17,13 +17,14 @@ packages = """
 
     ## Qt 5
     2048-qt
-    audacious-qt-plugins
+    # audacious-qt-plugins not production ready
 
     gnome-keyring
     connman
     connman-vpn
     cmst
     dbus-x11
+    firefox
     gucharmap
     juffed
     lxqt
@@ -33,7 +34,6 @@ packages = """
     qlipper
     qpdfview
     qtpass
-    qupzilla
     screengrab
     trojita
     xscreensaver

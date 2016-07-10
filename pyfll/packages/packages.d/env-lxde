@@ -13,6 +13,7 @@ packages = """
     connman
     cups-pk-helper
     faenza-icon-theme
+    firefox
     gpodder
     guake
     gucharmap
@@ -25,7 +26,6 @@ packages = """
     lxpolkit
     lxtask
 
-    midori
     mousepad
 
     osmo
