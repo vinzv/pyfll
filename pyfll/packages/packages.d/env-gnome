@@ -102,7 +102,7 @@ packages = """
     # look at potential plugins
     totem
     totem-plugins
-    tracker-gui     # why only the gui tracker-gui?
+    tracker-gui     # depends: tracker
     transmission-gtk
     goobox
     # instead of sound-juicer
@@ -125,7 +125,7 @@ packages = """
     gnome-exe-thumbnailer
     gnome-extra-icons
     gnome-icon-theme-extras
-    gnome-maps
+    # gnome-maps # access is disabled by MapQuest (LP #1602035)
     gnome-music
     gnome-nettool
     gnome-orca
