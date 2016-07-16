@@ -33,6 +33,7 @@ packages = """
   kde-config-sddm
   kde-config-systemd
   kde-config-touchpad
+  kdeconnect
 
   kdegraphics
   kdegraphics-thumbnailers
