@@ -82,9 +82,8 @@ packages = """
   pinentry-qt4
   plasma-desktop
   plasma-mediacenter
-  plasma-workspace
-  plasma-desktop
-  plasma-integration
+  # plasma-workspace
+  # plasma-integration
   plasma-nm
 
   
