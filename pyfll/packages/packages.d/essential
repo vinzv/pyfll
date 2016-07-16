@@ -11,22 +11,17 @@ debconf = """
 
 packages = """
     adduser
+    apt-transport-https
     console-setup
-    efibootmgr
-    efivar
     fll-live-initramfs
     fll-live-initscripts
-    grub-pc
-    initramfs-tools
     locales
-    mtools
     squashfs-tools
-"""
-
-amd64 = """
-    grub-efi-amd64-bin
-"""
-
-i386 = """
+    initramfs-tools
+    grub-pc
     grub-efi-ia32-bin
+    grub-efi-amd64-bin
+    efibootmgr
+    efivar
+    mtools
 """
