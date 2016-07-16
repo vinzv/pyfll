@@ -17,7 +17,7 @@ packages = """
 
 
   k3b-i18n
-  libk3b6-extracodecs
+  #libk3b6-extracodecs #breaks build 16.07.16
   kaffeine
   kamoso
   kdeaccessibility
