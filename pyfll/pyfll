@@ -1079,8 +1079,6 @@ class FLLBuilder(object):
 
 
 
-
-
         preferences_d = self.conf['options']['preferences_d']
         if preferences_d:
             self.log.info('importing apt preferences directory')
@@ -1104,13 +1102,6 @@ class FLLBuilder(object):
                 self.log.error('apt configuration directory failed to copy: %s'
                                % apt_conf_d)
                 raise FllError
-
-
-
-
-
-
-
 
 
 
@@ -1989,6 +1980,8 @@ class FLLBuilder(object):
             cpu = k[k.rfind('-') + 1:]
             vmlinuz = 'vmlinuz-%s' % k
             initrd = 'initrd.img-%s' % k
+            display_iso = 'From CD/DVD/ISO: %s.%s %s' % (distro, cpu, self.conf['distro']['FLL_FLAVOUR'])
+            display_hdd = 'From Stick/HDD: %s.%s %s' % (distro, cpu, self.conf['distro']['FLL_FLAVOUR'])
 
             for f in [vmlinuz, initrd]:
                 if not os.path.isfile(os.path.join(boot_dir, f)):
@@ -1999,16 +1992,21 @@ class FLLBuilder(object):
               grubcfg.write('if cpuid -l; then\n')
             grubcfg.write('havekernel="Y"\n')
             grubcfg.write('title=""\n')
-            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1 splash; do\n' % (vmlinuz[8:], cmdline))
+            grubcfg.write('for kopt in %s $kopts %s boot=fll quiet systemd.show_status=1; do\n' % (vmlinuz[8:], cmdline))
             grubcfg.write(' if [ -n "$title" ] ; then\n')
             grubcfg.write('  title="$title $kopt";\n')
             grubcfg.write(' else\n')
             grubcfg.write('  title="$kopt";\n')
             grubcfg.write(' fi;\n')
             grubcfg.write('done\n')
-            grubcfg.write('menuentry --class=%s.%s \"$title\" {' % (distro, cpu))
+            grubcfg.write('menuentry \"%s \" --class=%s.%s \"$title\" {' % (display_iso, distro, cpu))
             grubcfg.write('# set arguments above with the editor\n')
-            grubcfg.write('linux /boot/vmlinuz-$@\n')
+            grubcfg.write('linux /boot/vmlinuz-$2\n')
+            grubcfg.write('initrd /boot/%s\n' % initrd)
+            grubcfg.write('}\n')
+            grubcfg.write('menuentry \"%s \" --class=%s.%s \"$title fromhd\" {' % (display_hdd, distro, cpu))
+            grubcfg.write('# set arguments above with the editor\n')
+            grubcfg.write('linux /boot/vmlinuz-$2\n')
             grubcfg.write('initrd /boot/%s\n' % initrd)
             grubcfg.write('}\n')
             if cpu[0:3] == 'amd':
@@ -2036,13 +2034,6 @@ class FLLBuilder(object):
         grubcfg.write('  menu_reload\n')
         grubcfg.write('  }\n')
         grubcfg.write('fi\n')
-
-        if os.path.isfile(os.path.join(boot_dir, 'memtest')):
-            grubcfg.write('if ! is_efi ; then\n')
-            grubcfg.write('  menuentry \"Memory test (memtest86+)\" {\n')
-            grubcfg.write('    linux16 /boot/memtest\n')
-            grubcfg.write('  }\n')
-            grubcfg.write('fi\n')
 
         grubcfg.close()
 

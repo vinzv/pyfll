@@ -6,14 +6,14 @@ packages = """
     ffmpeg
     gstreamer1.0-alsa
     gstreamer1.0-nice
-    # gstreamer1.0-plugins-bad depedency problems 2016-06-27
+    gstreamer1.0-plugins-bad
     gstreamer1.0-plugins-good
     gstreamer1.0-plugins-ugly
     gstreamer1.0-pulseaudio
     gstreamer1.0-tools
     gstreamer1.0-x
 
-    libavcodec-ffmpeg-extra56
+    libavcodec-extra57
     libcanberra-gstreamer
     libcanberra-pulse
     libfftw3-bin
