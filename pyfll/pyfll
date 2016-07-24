@@ -1452,11 +1452,20 @@ class FLLBuilder(object):
             depends = current.depends_list
             list = depends.get('Recommends', [])
             for dependency in list:
-                name = dependency[0].target_pkg.name
-                dep = cache[name]
-                if dep.current_ver:
-                    continue
-                rec_list.append(dep.name)
+                depdone = 0
+                for deppart in dependency:
+                    if depdone > 0:
+                        continue
+                    name = deppart.target_pkg.name
+                    if name in wanted.keys():
+                        depdone = 1
+                        continue
+                if depdone == 0:
+                    name = dependency[0].target_pkg.name
+                    dep = cache[name]
+                    if dep.current_ver:
+                        continue
+                    rec_list.append(dep.name)
 
         self.log.debug('rec_list:')
         self.log.debug(rec_list)
@@ -1468,20 +1477,19 @@ class FLLBuilder(object):
         version = depcache.get_candidate_ver(pkg)
 
         if not version:
-            self.log.critical('FUCK! No candidate_ver for %s in depcache found' % pkg.name)
-            srcpkg = pkg.name
-            return srcpkg
-        else:
-            file, index = version.file_list.pop(0)
-            records.lookup((file, index))
+            return None
+        file, index = version.file_list.pop(0)
+        records.lookup((file, index))
 
+        srcpkg = pkg.name
+        srcver = version.ver_str
         if records.source_pkg != "":
             srcpkg = records.source_pkg
-        else:
-            srcpkg = pkg.name
-            self.log.debug('UPPS: no record.source_pkg  %s...' % pkg.name)
-        return srcpkg
 
+        if records.source_ver != "":
+            srcver = records.source_ver
+
+        return [srcpkg,srcver]
 
     def _collectManifest(self, arch):
         '''Collect package and source package URI information from each
@@ -1522,7 +1530,9 @@ class FLLBuilder(object):
             if p.startswith('cdebootstrap-helper'):
                 continue
 
-            srcpkg = self.__getSourcePkg(cache[p], depcache, records)
+            srcpv = self.__getSourcePkg(cache[p], depcache, records)
+            srcpkg=srcpv[0]
+            srcver=srcpv[1]
             if not srcpkg:
                 self.log.critical('failed to lookup srcpkg name for %s' % p)
                 raise FllError
@@ -1538,8 +1548,9 @@ class FLLBuilder(object):
             sources = apt_pkg.SourceRecords()
             sources.restart()
             while sources.lookup(srcpkg):
-                u.extend([sources.index.archive_uri(sources.files[f][2])
-                          for f in range(len(sources.files))])
+                if sources.version == srcver:
+                    u.extend([sources.index.archive_uri(sources.files[f][2])
+                              for f in range(len(sources.files))])
             if len(u) > 0:
                 self.log.debug(u)
                 uris.extend(u)
@@ -1560,25 +1571,47 @@ class FLLBuilder(object):
             self.log.info('installPkgs cache has %s' % cache.ver_file_count)
 
         i18n_list = self.__lines2list(self.conf['packages']['i18n'])
-        pkgs_want = self._getPackageList(arch)
         pkgs_base = [p.name for p in cache.packages if p.current_ver]
-        pkgs_dict = dict([(p, True) for p in pkgs_base + pkgs_want])
-
-        pkgs_want.extend(self._detectLocalePkgs(i18n_list, pkgs_dict, cache))
-        pkgs_want.extend(self._detectRecommendedPkgs(pkgs_dict, cache))
-
-        self.log.info('installing packages in %s chroot...' % arch)
-        self._aptGetInstall(arch, self.__filterList(pkgs_want),
-                            download_only = self.opts.D)
+        pkgs_want = self.__filterList(pkgs_base + self._getPackageList(arch))
+        pkgs_dict = dict([(p, True) for p in pkgs_want])
+        pkgs_want = self.__filterList(pkgs_dict.keys()
+                                      + self._detectLocalePkgs(i18n_list, pkgs_dict, cache)
+                                      + self._detectRecommendedPkgs(pkgs_dict, cache))
+        pkgs_had = list()
 
         if self.opts.D:
+            self.pkgs[arch]['install'] = dict()
+
+        self.log.info('downloading packages in %s chroot...' % arch)
+        # re-runs detect*Pkgs using what will now be installed
+        # repeat until nothing was added
+        while len(pkgs_want) > len(pkgs_had):
+            self.log.debug('%i new in package list for this run'
+                          % (len(pkgs_want)-len(pkgs_had)))
+            pkgs_had = list()
+            pkgs_had.extend(pkgs_want)
+            self._aptGetInstall(arch, self.__filterList(pkgs_want),
+                                download_only = True)
+
             chroot = os.path.join(self.temp, arch)
             aptcache = os.path.join(chroot, 'var/cache/apt/archives/*.deb')
-            self.pkgs[arch]['install'] = dict()
             for debfile in glob.glob(aptcache):
-                # create dict with package name = version to extend manifest
                 pkg, vers, extra = debfile.split('/')[-1].split('_')
-                self.pkgs[arch]['install'][pkg] = vers.replace('%3a', ':')
+                # big dict given below to detect*Pkgs
+                pkgs_dict[pkg] = True
+                if self.opts.D:
+                    # create dict with package name = version to extend manifest
+                    self.pkgs[arch]['install'][pkg] = vers.replace('%3a', ':')
+
+            for pkg in ( self._detectLocalePkgs(i18n_list, pkgs_dict, cache) 
+                       + self._detectRecommendedPkgs(pkgs_dict, cache) ):
+                if pkg not in pkgs_want:
+                    pkgs_want.append(pkg)
+                    self.log.debug('%s now added to wanted packages had %i now %i' % (pkg,len(pkgs_had),len(pkgs_want)))
+
+        if not self.opts.D:
+            self.log.info('installing packages in %s chroot...' % arch)
+            self._aptGetInstall(arch, pkgs_want)
 
         # Fetch extra debs if appropriate and reprepro them
         extras = []
@@ -2143,7 +2176,7 @@ class FLLBuilder(object):
         '''Sign a file with hashkey if available.'''
         if self.opts.k:
             self.log.info('Signing file %s...' % file)
-            cmd = ['gpg', '-s', '--default-key']
+            cmd = ['gpg2', '-s', '--default-key']
             cmd.append(self.opts.k)
             cmd.append(file)
             self._execCmd(cmd)
@@ -2250,7 +2283,7 @@ class FLLBuilder(object):
         cmd = 'xorriso -report_about HINT -as mkisofs -graft-points'
 
         if self.opts.v:
-           cmd += ' -vv'
+           cmd += ' -v'
         cmd += ' -pad -l'
         cmd2 = ''
 
@@ -2260,18 +2293,12 @@ class FLLBuilder(object):
             cmd2 = '%s -l %s -i %s' % (os.path.join(self.opts.s, 'gpthybrid'), self.uuid, iso_file)
             if os.path.isfile(os.path.join(stage, 'boot/grub/i386-pc/grub_eltorito')):
                 cmd += ' -b boot/grub/i386-pc/grub_eltorito --grub2-boot-info --grub2-mbr %s' % os.path.join(stage, 'boot/grub/i386-pc/boot_hybrid.img')
-#                for arch in self.conf['archs'].keys():
-#                    if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))):
- #                       cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], self._getDistroImageFile(arch))
-  #              if os.path.isfile(os.path.join(stage, self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])):
-   #                 cmd2 += " %s" % os.path.join(self.conf['distro']['FLL_IMAGE_DIR'], '%s.2' % self.conf['distro']['FLL_IMAGE_FILE'])
             else:
                 self.log.critical('failed to find grub El Torito image file')
                 raise FllError
         cmd += ' --modification-date=%s' % self.uuid.replace("-","")
         if os.path.isfile(os.path.join(stage, 'efi.img')):
             cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image'
- #           cmd2 += ' efi.img'
 
         cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
         if os.path.isdir(os.path.join(stage, 'boot')):
@@ -2288,9 +2315,6 @@ class FLLBuilder(object):
         self.log.info('generating iso image of live media...')
         self.log.info('used cmd: %s' % cmd)
         self._execCmd(cmd.split())
-#        if len(cmd2):
-#            self.log.info('converting to hybrid iso...')
-#            self._execCmd(cmd2.split())
 
         os.chown(iso_file, self.opts.u, self.opts.g)
 

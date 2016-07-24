@@ -6,11 +6,22 @@ desc = """
 packages = """
     bash
     fll-live-initscripts
+    gnome-keyring
+    gnome-session
+    initscripts
     k3b
     kdebase-workspace-bin
     kontact
     kopete
+    lxqt
+    lxqt-core
+    task-lxqt-desktop
     netbase
     python-dbus
+	qemu-system-x86
+	qpdfview
+	seahorse-daemon
+	udisks2
+	upower
     xfce4-session
 """
