@@ -5,11 +5,13 @@ desc = """
 packages = """
     virt-what
     qemu-guest-agent
+    qemu-system-x86
 
     virtualbox-guest-dkms
     #depends: virtualbox-guest-utils
     virtualbox-guest-x11
 
+    ovmf
     open-vm-tools-desktop
     #depends: open-vm-tools 
     open-vm-tools-dkms
