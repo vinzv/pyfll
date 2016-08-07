@@ -1132,17 +1132,17 @@ class FLLBuilder(object):
                 gpgkeys.append(r['gpgkey'])
 
                 if r['gpgkey'].startswith('http'):
-                    cmd = 'gpg --fetch-keys ' + r['gpgkey']
+                    cmd = 'gpg2 --fetch-keys ' + r['gpgkey']
                     self._execInChroot(arch, cmd.split())
                 elif os.path.isfile(r['gpgkey']):
                     dest = os.path.join(self.temp, arch, 'root')
                     file = os.path.basename(r['gpgkey'])
                     shutil.copy(r['gpgkey'], dest)
-                    cmd = 'gpg --import /root/' + file
+                    cmd = 'gpg2 --import /root/' + file
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
                 else:
-                    cmd = 'gpg --keyserver wwwkeys.pgp.net '
+                    cmd = 'gpg2 --keyserver wwwkeys.pgp.net '
                     cmd += '--recv-keys ' + r['gpgkey']
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
