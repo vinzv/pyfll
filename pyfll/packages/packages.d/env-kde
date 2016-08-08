@@ -16,14 +16,14 @@ packages = """
   ffmpegthumbs
 
 
-  k3b-i18n
-  #libk3b6-extracodecs #breaks build 16.07.16
+  # k3b-i18n
+  # libk3b6-extracodecs #breaks build 16.07.16
   kaffeine
   kamoso
   kdeaccessibility
   kdeadmin
 
-  #kde-config-baloo-advanced
+  # kde-config-baloo-advanced
   kde-config-cddb
   kde-config-cron
   kde-config-fcitx
@@ -41,7 +41,7 @@ packages = """
   kdemultimedia
   kdenetwork
   kdenetwork-filesharing
-  kdepim
+  # kdepim
   kdeutils
 
   kdesudo
