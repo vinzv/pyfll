@@ -39,7 +39,7 @@ packages = """
   kdegraphics-thumbnailers
 
   kdemultimedia
-  kdenetwork
+  # kdenetwork
   kdenetwork-filesharing
   # kdepim
   kdeutils
