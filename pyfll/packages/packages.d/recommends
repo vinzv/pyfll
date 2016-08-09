@@ -18,10 +18,9 @@ packages = """
     task-lxqt-desktop
     netbase
     python-dbus
-	qemu-system-x86
-	qpdfview
-	seahorse-daemon
-	udisks2
-	upower
-    xfce4-session
+    qemu-system-x86
+    qpdfview
+    seahorse-daemon
+    udisks2
+    upower
 """
