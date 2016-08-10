@@ -3,7 +3,9 @@ desc = """
 """
 
 packages = """
-  akonadi-backend-sqlite
+  # akonadi-backend-sqlite - we should remove it
+  # and handle the havoc this descision make in
+  # the installer
   baloo
   bluedevil
   converseen

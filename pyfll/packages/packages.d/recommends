@@ -13,8 +13,8 @@ packages = """
     kdebase-workspace-bin
     kontact
     kopete
-    lxqt
-    lxqt-core
+#    lxqt
+#    lxqt-core
     task-lxqt-desktop
     netbase
     python-dbus
