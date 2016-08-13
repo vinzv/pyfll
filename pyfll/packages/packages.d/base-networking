@@ -9,6 +9,8 @@ packages = """
     iproute2
     iptables
     iputils-ping
+    irssi
+    irssi-scripts
     isc-dhcp-client
     iw
     libnss-mdns

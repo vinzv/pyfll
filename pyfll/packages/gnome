@@ -23,7 +23,7 @@ deps = """
     cli-distro
 
     env-gnome
-    suite-libreoffice
+    # suite-libreoffice broken 2016-08-10
 """
 
 packages = """

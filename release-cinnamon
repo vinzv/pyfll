@@ -3,10 +3,8 @@
 # one will find a sample defaults.conf in ./pyfll
 [ -e /etc/pyfll/defaults.conf ] && source /etc/pyfll/defaults.conf
 
-flavour=kde
-release=current
+flavour=cinnamon
+release=patience
 arch=amd64
-
-options="$options -vvvP"
 
 time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf

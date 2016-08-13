@@ -2,10 +2,10 @@
 
 set -e
 
-CODENAME="Indian Summer"
-CODENAME_SAFE="indiansummer"
+CODENAME="Patience"
+CODENAME_SAFE="patience"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
-RELEASE="indiansummer"
+RELEASE="patience"
 VERSION="16.1.0"
 
 

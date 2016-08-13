@@ -11,8 +11,8 @@ packages = """
   converseen
   dolphin4
 
-  digikam
-  kipi-plugins
+  # digikam
+  # kipi-plugins
 
   ffmpegthumbnailer
   ffmpegthumbs
@@ -66,6 +66,7 @@ packages = """
   krusader
   ksaneplugin
   kscreen
+  ksnapshot
   ksshaskpass
   ksysguard
   kwin-addons
@@ -74,6 +75,8 @@ packages = """
   ktorrent
 
   libpam-kwallet5
+  libkipi11 
+  libkipi-data
 
   mplayerthumbs
 
