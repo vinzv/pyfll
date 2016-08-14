@@ -114,7 +114,7 @@ packages = """
     gnome-applets # suggest gnome media
     # gnome-audio
     # gnome-blog
-    # gnome-boxes
+    gnome-boxes
     gnome-calculator
     gnome-calendar
     gnome-characters
@@ -149,24 +149,6 @@ packages = """
     gnome-xcf-thumbnailer
     ssh-askpass-gnome
     uim-applet-gnome
-
-    # some packages of the 510-siduction-mediabase
-    gstreamer1.0-alsa
-    gstreamer1.0-nice
-    #  gstreamer1.0-plugins-bad -- dependency problems 2016-08-27
-    gstreamer1.0-plugins-good
-    gstreamer1.0-plugins-ugly
-    gstreamer1.0-tools
-    gstreamer1.0-x
-
-    libcanberra-gstreamer
-    paman
-    paprefs
-    # paman depends on gnome-icon-theme
-      gnome-icon-theme
-    #
-    pavucontrol
-    libfftw3-bin
 
     # working replacement for gnome-screensaver (screenlocker even!)
     xscreensaver
