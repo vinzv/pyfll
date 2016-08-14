@@ -21,6 +21,7 @@ packages = """
     paman
     paprefs
     pavucontrol
+
     pulseaudio
     pulseaudio-module-bluetooth
 

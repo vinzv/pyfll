@@ -156,7 +156,6 @@ packages = """
     #  gstreamer1.0-plugins-bad -- dependency problems 2016-08-27
     gstreamer1.0-plugins-good
     gstreamer1.0-plugins-ugly
-    gstreamer1.0-pulseaudio
     gstreamer1.0-tools
     gstreamer1.0-x
 
@@ -167,15 +166,9 @@ packages = """
       gnome-icon-theme
     #
     pavucontrol
-    pulseaudio
-    pulseaudio-module-bluetooth
-    pulseaudio-module-x11
-    libcanberra-pulse
     libfftw3-bin
 
     # working replacement for gnome-screensaver (screenlocker even!)
     xscreensaver
 
-    # Qt5 Apps
-    vokoscreen
 """
