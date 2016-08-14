@@ -10,7 +10,7 @@ packages = """
     xserver-xorg-video-vesa
     #
     dmz-cursor-theme
-    gnupg-agent
+    #gnupg-agent # is a depends of gnupg
     libegl1-mesa-drivers
     libgl1-mesa-dri
     libgles2-mesa
