@@ -23,7 +23,7 @@ packages = """
   kaffeine
   kamoso
   kdeaccessibility
-  kdeadmin
+  # kdeadmin #went into meta-kde
 
   # kde-config-baloo-advanced
   kde-config-cddb
@@ -37,7 +37,7 @@ packages = """
   kde-config-touchpad
   kdeconnect
 
-  kdegraphics
+  # kdegraphics  #went into meta-kde
   kdegraphics-thumbnailers
 
   kdemultimedia
@@ -46,6 +46,7 @@ packages = """
   # kdepim
   kdeutils
 
+  kde-spectacle
   kdesudo
   kdetoys
   kdiff3
