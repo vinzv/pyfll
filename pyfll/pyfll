@@ -475,6 +475,11 @@ class FLLBuilder(object):
                     (self.conf['repos'][repo]['label'],
                      self.conf['repos'][repo]['cached']))
 
+        if self.conf['options'].get('builder_uri'):
+            if not self.opts.x:
+                self.opts.x = self.conf['options']['builder_uri']
+                self.log.debug('Using %s as builder uri.' % self.opts.x)
+
         for repo in self.conf['repos'].keys():
             if self.conf['repos'][repo].get('trivial'):
                 words = ['label', 'uri']
@@ -541,6 +546,7 @@ class FLLBuilder(object):
         self.conf['options'].setdefault('apt_recommends', 'no')
         self.conf['options'].setdefault('media_include', None)
         self.conf['options'].setdefault('apt_cacher', None)
+        self.conf['options'].setdefault('builder_uri',None)
 
         if 'distro' in self.conf:
                 self._processDefaults(self.conf['distro'])
@@ -1603,7 +1609,7 @@ class FLLBuilder(object):
                     # create dict with package name = version to extend manifest
                     self.pkgs[arch]['install'][pkg] = vers.replace('%3a', ':')
 
-            for pkg in ( self._detectLocalePkgs(i18n_list, pkgs_dict, cache) 
+            for pkg in ( self._detectLocalePkgs(i18n_list, pkgs_dict, cache)
                        + self._detectRecommendedPkgs(pkgs_dict, cache) ):
                 if pkg not in pkgs_want:
                     pkgs_want.append(pkg)
@@ -2361,6 +2367,13 @@ class FLLBuilder(object):
         for f in glob.glob('%s*' % os.path.splitext(iso_file)[0]):
             self.log.info(f)
 
+        if self.opts.x:
+            self.log.info('-----------------------')
+            self.log.info('Links to current build:')
+            for f in glob.glob('%s*' % os.path.splitext(iso_file)[0]):
+                arch = ''.join(self.conf['archs'].keys())
+                self.log.info(' * %s/%s/%s/%s', self.opts.x,
+                    self.conf['packages']['profile'], arch, os.path.basename(f))
 
     def buildChroots(self):
         '''Main loop to call all chroot building functions.'''
@@ -2486,9 +2499,15 @@ if __name__ == '__main__':
                  help = 'Enable verbose mode. All messages will be ' +
                  'generated, such as announcing current operation.')
 
+    p.add_option('-x', '--builderuri', dest = 'x', action = 'store',
+                 type = 'string', metavar = '<builder uri>',
+                 help = 'Builder-Uri like http(s)://domain.tld - Base for ' +
+                 'direct download links for build files.')
+
     p.set_defaults(b = None, B = False, d = False, D = False, g = os.getgid(),
                    k = None, l = None, n = False, o = None, p = None, P = False,
-                   q = False, s = None, t = None, u = os.getuid(), v = False)
+                   q = False, s = None, t = None, u = os.getuid(), v = False,
+                   x = None)
 
     options = p.parse_args()[0]
 
