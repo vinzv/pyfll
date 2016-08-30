@@ -1225,7 +1225,7 @@ class FLLBuilder(object):
                 d.sort()
                 for k in d:
                     if k.startswith('FLL_DISTRO_CODENAME'):
-                        continue
+                        f.write('%s="%s"\n' % (k, self.conf['distro'][k]))
                     elif k == 'FLL_MOUNTPOINT':
                         f.write('%s="%s"\n' % (k, self.conf['distro'][k]))
                         test = '$([ -d "$%s" ] && echo live' % k
