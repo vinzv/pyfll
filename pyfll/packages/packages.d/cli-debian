@@ -12,6 +12,7 @@ packages = """
     apt-transport-https
     aptitude
     bash-completion
+    byobu # Description: text window manager, shell multiplexer, integrated DevOps environment
     bzip2
     ca-certificates
     cfv
@@ -40,6 +41,7 @@ packages = """
     memtest86+
     mlocate
     moreutils
+    mosh # mobile shell, ssh roaming over udp
     most
     nano
     ncdu
@@ -58,7 +60,7 @@ packages = """
     smartmontools
     strace
     sudo
-    signing-party
+    tmux
     tofrodos
     tree
     unp
