@@ -51,6 +51,7 @@ packages = """
   kdetoys
   kdiff3
   kde-runtime
+  kde-spectacle
   kde-standard
   khotkeys
   kinfocenter
@@ -67,7 +68,7 @@ packages = """
   krusader
   ksaneplugin
   kscreen
-  ksnapshot
+  #ksnapshot #deprecated#
   ksshaskpass
   ksysguard
   kwin-addons
