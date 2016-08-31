@@ -53,7 +53,7 @@ packages = """
     gnumeric
     gnome-calculator
 
-    firefox # switch to release-channel, since firefox-esr has replaced iceweasel
+    firefox
 	firefox-l10n-de
 	firefox-l10n-en-gb
 	firefox-l10n-it
@@ -69,25 +69,25 @@ packages = """
 	icedove-l10n-pt-br
 	icedove-l10n-ro
     liferea          # linux feed reader
-    transmission-gtk # bittorent 
+    transmission-gtk # bittorent
+    uget	     # downloader
     vinagre          # remote desktop client
     vino             # a VNC server allowing to export your running desktop
     virt-viewer
 
     # basic multimedia tools
-    audacious # gtk2
+    audacious # a media player, gtk2
     brasero   # the dvd authoring tool
     eog       # the image viewer, eye of gnome  
-    screengrab
+    parole    # the media player, gtk3
     quodlibet # the music manager, depends on exfalso
+    screengrab
     shotwell  # the photo manager
     #shutter  # screenshots (based on perl)
     sound-juicer
     vcdimager
 
     #some bloat
-    tracker
-    #tracker-gui
     geany
     # geany-plugins
     geany-plugin-git-changebar
@@ -96,4 +96,6 @@ packages = """
     vim-gtk3 # vim-gui-common does provide a gvim.desktop file
     p7zip-full
     plank
+    tracker
+    #tracker-gui
 """
