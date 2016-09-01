@@ -21,7 +21,6 @@ packages = """
     connman
     connman-vpn
     cmst
-    dbus-x11
     firefox
     gucharmap
     juffed

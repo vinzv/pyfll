@@ -20,6 +20,7 @@ packages = """
     console-data
     cmospwd
     command-not-found
+    dbus-user-session  # new, should someday replace dbus-x11  
     dconf-cli
     debconf-utils
     debian-goodies
