@@ -46,7 +46,6 @@ packages = """
   # kdepim
   kdeutils
 
-  kde-spectacle
   kdesudo
   kdetoys
   kdiff3
@@ -79,8 +78,6 @@ packages = """
   libpam-kwallet5
   libkipi11 
   libkipi-data
-
-  mplayerthumbs
 
   okteta
 
