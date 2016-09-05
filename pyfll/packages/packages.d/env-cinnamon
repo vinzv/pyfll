@@ -29,7 +29,7 @@ packages = """
     desktop-file-utils
     gconf2  # the old gtk2 configuration tool
     gedit
-    gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
+# broken right now 2016-09-05    gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
     gitg
     glib-networking
     gnome-desktop3-data

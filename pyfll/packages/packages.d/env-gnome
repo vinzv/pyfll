@@ -21,7 +21,7 @@ packages = """
     gconf-editor
     geary
     gedit
-    gedit-plugins
+# broken right now 2016-09-05    gedit-plugins
     gengetopt
     gkbd-capplet
     gnome-backgrounds
