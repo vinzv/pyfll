@@ -134,13 +134,13 @@ packages = """
     # gnome-pie
     gnome-power-manager
     # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
-    gnome-shell-extension-autohidetopbar
+    # 2016-09-05 broken AG  gnome-shell-extension-autohidetopbar
     # breajs build AG 2016-05-03 gnome-shell-extension-redshift
     # breaks build AG 2016-04-03 gnome-shell-extensions-gpaste
-    gnome-shell-extension-suspend-button
-    gnome-shell-extension-weather
+    # 2016-09-05 broken AG gnome-shell-extension-suspend-button
+    # 2016-09-05 broken AG gnome-shell-extension-weather
     gnome-shell-mailnag
-    gnome-shell-pomodoro
+    # broken 2016-09-05 AG gnome-shell-pomodoro
     gnome-shell-timer
     gnome-system-tools
     gnome-todo
