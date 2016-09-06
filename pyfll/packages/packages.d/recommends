@@ -14,7 +14,7 @@ packages = """
     kdebase-workspace-bin
     kontact
     kopete
-#    lxqt
+    lxqt
 #    lxqt-core
     task-lxqt-desktop
     netbase
