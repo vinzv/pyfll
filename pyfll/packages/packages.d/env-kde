@@ -6,10 +6,10 @@ packages = """
   # akonadi-backend-sqlite - we should remove it
   # and handle the havoc this descision make in
   # the installer
-  baloo
-  bluedevil
-  converseen
-  dolphin4
+#ag  baloo
+#ag  bluedevil
+#ag  converseen
+#ag  dolphin4
 
   # digikam
   # kipi-plugins
@@ -20,110 +20,110 @@ packages = """
 
   # k3b-i18n
   # libk3b6-extracodecs #breaks build 16.07.16
-  kaffeine
-  kamoso
-  kdeaccessibility
+#ag  kaffeine
+#ag  kamoso
+#ag  kdeaccessibility
   # kdeadmin #went into meta-kde
 
   # kde-config-baloo-advanced
-  kde-config-cddb
-  kde-config-cron
-  kde-config-fcitx
-  kde-config-gtk-style
-  kde-config-gtk-style-preview
-  kde-config-screenlocker
-  kde-config-sddm
-  kde-config-systemd
-  kde-config-touchpad
-  kdeconnect
+#ag  kde-config-cddb
+#ag  kde-config-cron
+#ag  kde-config-fcitx
+#ag  kde-config-gtk-style
+#ag  kde-config-gtk-style-preview
+#ag  kde-config-screenlocker
+#ag  kde-config-sddm
+#ag  kde-config-systemd
+#ag  kde-config-touchpad
+#ag  kdeconnect
 
   # kdegraphics  #went into meta-kde
-  kdegraphics-thumbnailers
+#ag  kdegraphics-thumbnailers
 
-  kdemultimedia
+#ag  kdemultimedia
   # kdenetwork
-  kdenetwork-filesharing
+#ag  kdenetwork-filesharing
   # kdepim
-  kdeutils
+#ag  kdeutils
 
-  kdesudo
-  kdetoys
-  kdiff3
-  kde-runtime
+#ag  kdesudo
+#ag  kdetoys
+#ag  kdiff3
+#ag  kde-runtime
 # broken AG  kde-spectacle
   kde-standard
   khotkeys
-  kinfocenter
-  kio-extras
-  kio-mtp
-  kmenuedit
-  konversation
-  konqueror-nsplugins
-  konq-plugins
+#ag  kinfocenter
+#ag  kio-extras
+#ag  kio-mtp
+#ag  kmenuedit
+#ag  konversation
+#ag  konqueror-nsplugins
+#ag  konq-plugins
 
-  kpartsplugin
+#ag  kpartsplugin
 
-  kppp
-  krusader
-  ksaneplugin
-  kscreen
+#ag  kppp
+#ag  krusader
+#ag  ksaneplugin
+#ag  kscreen
   #ksnapshot #deprecated#
-  ksshaskpass
-  ksysguard
-  kwin-addons
+#ag  ksshaskpass
+#ag  ksysguard
+#ag  kwin-addons
   kwin-x11
-  kwrited
-  ktorrent
+#ag  kwrited
+#ag  ktorrent
 
-  libpam-kwallet5
-  libkipi11 
-  libkipi-data
+#ag  libpam-kwallet5
+#ag  libkipi11 
+#agg  libkipi-data
 
-  okteta
+#ag  okteta
 
   phonon-backend-gstreamer
   phonon4qt5-backend-gstreamer
 
-  pinentry-qt4
-  plasma-desktop
-  plasma-mediacenter
+#ag  pinentry-qt4
+#ag  plasma-desktop
+#ag  plasma-mediacenter
   # plasma-workspace
   # plasma-integration
-  plasma-nm
+#ag  plasma-nm
 
   
-  avahi-autoipd
-  libteam-utils
-  network-manager-openconnect
-  network-manager-openvpn
-  network-manager-pptp
-  network-manager-vpnc
+#ag  avahi-autoipd
+#ag  libteam-utils
+#ag  network-manager-openconnect
+#ag  network-manager-openvpn
+#ag  network-manager-pptp
+#ag  network-manager-vpnc
 
-  polkit-kde-1
-  powerdevil
-  print-manager
-  udisks2
-  upower
+#ag  polkit-kde-1
+#ag  powerdevil
+#ag  print-manager
+#ag  udisks2
+#ag  upower
 
-  reportbug-ng
+#ag  reportbug-ng
 
   # sni-qt (test if still needed)
-  systemsettings
+#ag  systemsettings
 
-  yakuake
+#ag  yakuake
 
 # missing dependencies
-  libkf5config-bin
-  libkf5dbusaddons-bin
-  libkf5emoticons-bin
-  libkf5filemetadata-bin
-  libkf5iconthemes-bin
-  libkf5kdelibs4support5-bin
-  libkf5khtml-bin
-  libkf5parts-plugins
-  libkf5su-bin
-  libkf5wallet-bin
-  libkf5xmlgui-bin
+#ag  libkf5config-bin
+#ag  libkf5dbusaddons-bin
+#ag  libkf5emoticons-bin
+#ag  libkf5filemetadata-bin
+#ag  libkf5iconthemes-bin
+#ag  libkf5kdelibs4support5-bin
+#ag  libkf5khtml-bin
+#ag  libkf5parts-plugins
+#ag  libkf5su-bin
+#ag  libkf5wallet-bin
+#ag  libkf5xmlgui-bin
 
   #
   # brute-force languange integration
