@@ -12,13 +12,9 @@ packages = """
     initscripts
     k3b
 
-    kde-standard
-
-    kdebase-workspace-bin
     kontact
     kopete
     lxqt
-#    lxqt-core
     task-lxqt-desktop
     netbase
     python-dbus

@@ -3,6 +3,14 @@ desc = """
 """
 
 packages = """
+
+kde-standard
+
+konq-plugins
+network-manager
+plasma-nm
+
+
   # akonadi-backend-sqlite - we should remove it
   # and handle the havoc this descision make in
   # the installer
@@ -51,7 +59,6 @@ packages = """
 #ag  kdiff3
 #ag  kde-runtime
 # broken AG  kde-spectacle
-  kde-standard
   khotkeys
 #ag  kinfocenter
 #ag  kio-extras
@@ -59,7 +66,6 @@ packages = """
 #ag  kmenuedit
 #ag  konversation
 #ag  konqueror-nsplugins
-#ag  konq-plugins
 
 #ag  kpartsplugin
 
@@ -76,7 +82,7 @@ packages = """
 #ag  ktorrent
 
 #ag  libpam-kwallet5
-#ag  libkipi11 
+#ag  libkipi11
 #agg  libkipi-data
 
 #ag  okteta
@@ -89,9 +95,8 @@ packages = """
 #ag  plasma-mediacenter
   # plasma-workspace
   # plasma-integration
-#ag  plasma-nm
 
-  
+
 #ag  avahi-autoipd
 #ag  libteam-utils
 #ag  network-manager-openconnect
