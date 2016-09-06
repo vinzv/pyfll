@@ -50,8 +50,8 @@ packages = """
   kdetoys
   kdiff3
   kde-runtime
-# 2016-09-06 broken AG -  kde-spectacle
-# 2016-09-06 broken AG -  kde-standard
+  kde-spectacle
+  kde-standard
   khotkeys
   kinfocenter
   kio-extras
