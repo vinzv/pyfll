@@ -27,7 +27,6 @@ packages = """
     ffmpegthumbs
     k3b-i18n
     kaffeine
-    kamoso
     kde-config-cddb
     kde-config-cron
     kde-config-fcitx
