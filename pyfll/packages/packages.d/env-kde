@@ -48,13 +48,13 @@ packages = """
     kdesudo
     kdetoys
     kdeutils
-    kdiff3 -- dafür kompare
     khotkeys
     kinfocenter
     kio-extras
     kio-mtp
     kipi-plugins
     kmenuedit
+    kompare
     kompare
     konq-plugins
     konqueror-nsplugins
@@ -75,7 +75,7 @@ packages = """
     network-manager-openvpn
     network-manager-pptp
     network-manager-vpnc
-    okteta -- test nötig
+    okteta
     phonon-backend-gstreamer
     phonon4qt5-backend-gstreamer
     pinentry-qt
@@ -84,7 +84,7 @@ packages = """
     powerdevil
     print-manager
     sni-qt
-    svgparts
+    svgpart
     systemsettings
     yakuake
 
