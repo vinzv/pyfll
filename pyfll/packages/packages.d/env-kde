@@ -4,8 +4,7 @@ desc = """
 
 packages = """
 
-    kde-full
-#    kde-standard
+    kde-standard
         #drin dolphin4
         #drin kde-runtime
         #drin kde-spectacle
@@ -18,19 +17,17 @@ packages = """
         #drin udisks2
         #drin upower
 
-        #auf jeden  plasma-mediacenter
-
-
-#    ffmpegthumbnailer
-#    ffmpegthumbs
-#    khotkeys
-#    konq-plugins
-#    konversation
-#    kwin-x11
-#    network-manager
-#    phonon-backend-gstreamer
-#    phonon4qt5-backend-gstreamer
-#    plasma-nm
+    ffmpegthumbnailer
+    ffmpegthumbs
+    khotkeys
+    konq-plugins
+    konversation
+    kwin-x11
+    network-manager
+    phonon-backend-gstreamer
+    phonon4qt5-backend-gstreamer
+    plasma-mediacenter
+    plasma-nm
 
 
 
