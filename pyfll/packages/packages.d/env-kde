@@ -4,140 +4,157 @@ desc = """
 
 packages = """
 
-kde-standard
+    kde-full
+#    kde-standard
+        #drin dolphin4
+        #drin kde-runtime
+        #drin kde-spectacle
+        #drin libkf5emoticons-bin
+        #drin libkf5filemetadata-bin
+        #drin libkf5wallet-bin
+        #drin plasma-desktop
+        #drin plasma-integration
+        #drin plasma-workspace
+        #drin udisks2
+        #drin upower
 
-konq-plugins
-network-manager
-plasma-nm
+        #auf jeden  plasma-mediacenter
 
 
-  # akonadi-backend-sqlite - we should remove it
-  # and handle the havoc this descision make in
-  # the installer
-#ag  baloo
-#ag  bluedevil
+#    ffmpegthumbnailer
+#    ffmpegthumbs
+#    khotkeys
+#    konq-plugins
+#    konversation
+#    kwin-x11
+#    network-manager
+#    phonon-backend-gstreamer
+#    phonon4qt5-backend-gstreamer
+#    plasma-nm
+
+
+
+
+# rein
+#ag bluedevil
+#ag kaffeine
+#ag kde-config-cron
+#ag kde-config-fcitx
+#ag kde-config-gtk-style
+#ag kde-config-gtk-style-preview
+#ag kde-config-screenlocker
+#ag kde-config-sddm
+#ag kde-config-systemd
+#ag kdeconnect
+#ag kdegraphics-thumbnailers
+#ag kdenetwork-filesharing
+#ag kdetoys
+#ag kdeutils
+#ag kompare
+#ag kinfocenter
+#ag kio-extras
+#ag kmenuedit
+#ag kscreen
+#ag ksshaskpass
+#ag ksysguard
+#ag kwin-addons
+#ag kwrited
+#ag libpam-kwallet5
+#ag network-manager-openconnect
+#ag network-manager-openvpn
+#ag network-manager-pptp
+#ag network-manager-vpnc
+#ag pinentry-qt
+#ag powerdevil
+#ag print-manager
+#ag systemsettings
+#ag yakuake
+#ag kdepim
+
+
+#ag  libteam-utils -- Kanalbündlung? Really?
+# digikam
+# kipi-plugins
+
+## check
+#ag  libkf5xmlgui-bin
+#ag  libkf5su-bin
+#ag  libkf5parts-plugins
+#ag  libkf5khtml-bin
+#ag  libkf5config-bin
+#ag  libkf5dbusaddons-bin
+#ag  libkf5iconthemes-bin
+#ag  libkf5kdelibs4support5-bin
+
+
+
+# k3b-i18n
+# kde-config-baloo-advanced
+# kdeadmin #went into meta-kde
+# kdegraphics  #went into meta-kde
+# kdenetwork
+#ag  avahi-autoipd
+
+#oldlibs  baloo - baloo-kf5
+
+
+# übergangspakete
+#ag  kde-config-touchpad -- saugt plasma-desktop
+#ag  polkit-kde-1 -- saugt polkit-kde-agent-1
+
+
+## dagegen -- QT4
 #ag  converseen
-#ag  dolphin4
-
-  # digikam
-  # kipi-plugins
-
-  ffmpegthumbnailer
-  ffmpegthumbs
-
-
-  # k3b-i18n
-  # libk3b6-extracodecs #breaks build 16.07.16
-#ag  kaffeine
 #ag  kamoso
-#ag  kdeaccessibility
-  # kdeadmin #went into meta-kde
-
-  # kde-config-baloo-advanced
 #ag  kde-config-cddb
-#ag  kde-config-cron
-#ag  kde-config-fcitx
-#ag  kde-config-gtk-style
-#ag  kde-config-gtk-style-preview
-#ag  kde-config-screenlocker
-#ag  kde-config-sddm
-#ag  kde-config-systemd
-#ag  kde-config-touchpad
-#ag  kdeconnect
-
-  # kdegraphics  #went into meta-kde
-#ag  kdegraphics-thumbnailers
-
+#ag  kdeaccessibility
 #ag  kdemultimedia
-  # kdenetwork
-#ag  kdenetwork-filesharing
-  # kdepim
-#ag  kdeutils
-
 #ag  kdesudo
-#ag  kdetoys
-#ag  kdiff3
-#ag  kde-runtime
-# broken AG  kde-spectacle
-  khotkeys
-#ag  kinfocenter
-#ag  kio-extras
+#ag  kdiff3 -- dafür kompare
 #ag  kio-mtp
-#ag  kmenuedit
-#ag  konversation
-#ag  konqueror-nsplugins
-
 #ag  kpartsplugin
-
 #ag  kppp
 #ag  krusader
 #ag  ksaneplugin
-#ag  kscreen
-  #ksnapshot #deprecated#
-#ag  ksshaskpass
-#ag  ksysguard
-#ag  kwin-addons
-  kwin-x11
-#ag  kwrited
+#ag  okteta -- test nötig
+#ag  konqueror-nsplugins
 #ag  ktorrent
+#ag sni-qt (test if still needed)
+#ag  reportbug-ng - besser reportbug mit gtk
 
-#ag  libpam-kwallet5
+
+
+
+
+
+
+
+#
+# brute-force languange integration
+#
+firefox
+firefox-l10n-de
+firefox-l10n-en-gb
+firefox-l10n-it
+firefox-l10n-pl
+firefox-l10n-pt-br
+firefox-l10n-ro
+
+
+
+
+## giftige Ecke ##
+
+# akonadi-backend-sqlite - we should remove it
+# and handle the havoc this descision make in
+# the installer
+
+
+#deprecated ksnapshot
+
+## giftig
 #ag  libkipi11
-#agg  libkipi-data
+#ag  libkipi-data
 
-#ag  okteta
-
-  phonon-backend-gstreamer
-  phonon4qt5-backend-gstreamer
-
-#ag  pinentry-qt4
-#ag  plasma-desktop
-#ag  plasma-mediacenter
-  # plasma-workspace
-  # plasma-integration
-
-
-#ag  avahi-autoipd
-#ag  libteam-utils
-#ag  network-manager-openconnect
-#ag  network-manager-openvpn
-#ag  network-manager-pptp
-#ag  network-manager-vpnc
-
-#ag  polkit-kde-1
-#ag  powerdevil
-#ag  print-manager
-#ag  udisks2
-#ag  upower
-
-#ag  reportbug-ng
-
-  # sni-qt (test if still needed)
-#ag  systemsettings
-
-#ag  yakuake
-
-# missing dependencies
-#ag  libkf5config-bin
-#ag  libkf5dbusaddons-bin
-#ag  libkf5emoticons-bin
-#ag  libkf5filemetadata-bin
-#ag  libkf5iconthemes-bin
-#ag  libkf5kdelibs4support5-bin
-#ag  libkf5khtml-bin
-#ag  libkf5parts-plugins
-#ag  libkf5su-bin
-#ag  libkf5wallet-bin
-#ag  libkf5xmlgui-bin
-
-  #
-  # brute-force languange integration
-  #
-  firefox
-  firefox-l10n-de
-  firefox-l10n-en-gb
-  firefox-l10n-it
-  firefox-l10n-pl
-  firefox-l10n-pt-br
-  firefox-l10n-ro
+#breaks build 16.07.16 libk3b6-extracodecs
 """

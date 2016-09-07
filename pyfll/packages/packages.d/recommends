@@ -12,6 +12,8 @@ packages = """
     initscripts
     k3b
 
+   kde-full
+
     kontact
     kopete
     lxqt
