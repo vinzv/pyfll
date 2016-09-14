@@ -1561,8 +1561,12 @@ class FLLBuilder(object):
                 self.log.debug(u)
                 uris.extend(u)
             else:
+                self.log.critical('')
+                self.log.critical('----------------------------------')
                 self.log.critical('failed to query source uris for %s' % srcpkg)
-                raise FllError
+                self.log.critical('----------------------------------')
+                self.log.critical('')
+                # raise FllError
 
         uris.sort()
         self.pkgs[arch]['source'] = uris
