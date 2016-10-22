@@ -47,6 +47,7 @@ packages = """
     kdesudo
     kdetoys
     kdeutils
+    kdesdk-dolphin-plugins
     khotkeys
     kinfocenter
     kio-extras
