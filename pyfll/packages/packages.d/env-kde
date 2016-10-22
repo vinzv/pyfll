@@ -22,7 +22,7 @@ packages = """
     baloo-kf5
     bluedevil
     converseen
-    digikam
+# broken again as usual - 2016-10-23 AG    digikam
     ffmpegthumbnailer
     ffmpegthumbs
     k3b-i18n
@@ -52,7 +52,7 @@ packages = """
     kinfocenter
     kio-extras
     kio-mtp
-    kipi-plugins
+# broken as usual 2016-10-23 AG    kipi-plugins
     kmenuedit
     kompare
     kompare
