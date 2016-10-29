@@ -7,11 +7,12 @@ packages = """
     alsa-utils
     bluetooth
     br2684ctl
+    cdtool
     colord 
     colord-data
-    # cpufrequtils
     crda
     dmidecode
+    eject
     ethtool
     hdparm
     hwdata
