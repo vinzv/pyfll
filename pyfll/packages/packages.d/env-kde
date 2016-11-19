@@ -22,7 +22,7 @@ packages = """
     baloo-kf5
     bluedevil
     converseen
-# broken again as usual - 2016-10-23 AG    digikam
+broken again as usual - 2016-10-23 AG    digikam
     ffmpegthumbnailer
     ffmpegthumbs
     k3b-i18n
@@ -53,7 +53,7 @@ packages = """
     kio-extras
     kio-extras-data
     kio-mtp
-# broken as usual 2016-10-23 AG    kipi-plugins
+ broken as usual 2016-10-23 AG    kipi-plugins
     kmenuedit
     kompare
     kompare
@@ -84,6 +84,7 @@ packages = """
     plasma-nm
     powerdevil
     print-manager
+    qt5-gtk-platformtheme
     sni-qt
     svgpart
     systemsettings
