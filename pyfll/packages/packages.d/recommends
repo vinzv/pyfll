@@ -4,23 +4,30 @@ desc = """
 """
 
 packages = """
+    # common whitelist
     bash
     fll-live-initscripts
     gnome-keyring
     gnome-session
     gnupg
     initscripts
-    k3b
-
-    kontact
-    kopete
-    lxqt
-    task-lxqt-desktop
     netbase
     python-dbus
     qemu-system-x86
-    qpdfview
     seahorse-daemon
     udisks2
     upower
+
+    # kde whitelist
+    k3b
+    kontact
+    kopete
+    #kde-plasma-desktop
+    #plasma-desktop 
+
+    # lxqt whitelist
+    lxqt
+    lxqt-core
+    task-lxqt-desktop
+    qpdfview
 """
