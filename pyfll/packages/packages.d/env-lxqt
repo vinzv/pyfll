@@ -16,6 +16,7 @@ packages = """
     plank
 
     ## Qt 5
+    adwaita-qt # integrate this into settings
     2048-qt
     gnome-keyring
     connman

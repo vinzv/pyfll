@@ -18,6 +18,7 @@ packages = """
         #drin upower
 
 # some additional packages
+    adwaita-qt # just for now, eventually integrate in the settings package
     avahi-autoipd
     baloo-kf5
     bluedevil
