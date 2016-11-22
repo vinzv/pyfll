@@ -36,6 +36,7 @@ packages = """
     kbd
     less
     libmtp-runtime
+    linux-cpupower
     lm-sensors
     logrotate
     mc
