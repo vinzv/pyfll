@@ -3,24 +3,23 @@
 PATH=/sbin:/usr/sbin:/bin:/usr/bin
 
 if [ -r /etc/default/distro ]; then
-	. /etc/default/distro
+    . /etc/default/distro
 fi
 
 if [ -f /tmp/fll-data ]; then
-	. /tmp/fll-data
+    . /tmp/fll-data
 fi
 
 say() {
-	echo "I: $@..."
+    echo "I: $@..."
 }
 
 do_postinst() {
     say "..........................."
     say "..                       .."
-    say ".. finalize.postinst .."
+    say "..   finalize.postinst   .."
     say "..                       .."
     say "..........................."
-
 
     say "Distro:           ${DISTRO}"
     say "Flavour settings: ${FLAVOUR}"
@@ -45,25 +44,16 @@ do_postinst() {
         LIVE_SETTINGS='found'
     fi
 
-
     if [ -f /usr/bin/livesettings ]; then
         say "Configure Live Settings ... (current livesettings scripts)"
         livesettings configure
         LIVE_SETTINGS='found'
     fi
 
-
     if [ "$LIVE_SETTINGS" = 'none' ]; then
         echo 'No live settings scripts found! Please fix! (exit in finalize.postinst)'
         exit 1
     fi
- 
-    # copy fll_user's .bashrc to /root
-    echo "cp -fv /home/${FLL_LIVE_USER}/.bashrc /root"
-    cp -fv /home/${FLL_LIVE_USER}/.bashrc /root/
-
-
-
 }
 
 case "${1}" in
