@@ -60,7 +60,7 @@ do_postinst() {
  
     # copy fll_user's .bashrc to /root
     echo "cp -fv /home/${FLL_LIVE_USER}/.bashrc /root"
-    cp -fv /home/${FLL_LIVE_USER}/.bashrc /root/"
+    cp -fv /home/${FLL_LIVE_USER}/.bashrc /root/
 
 
 
