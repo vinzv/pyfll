@@ -9,7 +9,7 @@ packages = """
 
     virtualbox-guest-dkms
     #depends: virtualbox-guest-utils
-    #virtualbox-guest-x11 # depends on xorg-video-abi-20
+    virtualbox-guest-x11
 
     ovmf
     open-vm-tools-desktop
