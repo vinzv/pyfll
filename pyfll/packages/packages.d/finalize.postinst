@@ -57,6 +57,13 @@ do_postinst() {
         echo 'No live settings scripts found! Please fix! (exit in finalize.postinst)'
         exit 1
     fi
+ 
+    # copy fll_user's .bashrc to /root
+    echo "cp -fv /home/${FLL_LIVE_USER}/.bashrc /root"
+    cp -fv /home/${FLL_LIVE_USER}/.bashrc /root/"
+
+
+
 }
 
 case "${1}" in
