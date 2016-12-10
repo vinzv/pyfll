@@ -8,7 +8,7 @@ packages = """
     bash
     fll-live-initscripts
     gnome-keyring
-    gnome-session
+    #gnome-session # doesn't have any recommends
     gnupg
     initscripts
     netbase
