@@ -23,7 +23,11 @@ packages = """
 
     lxappearance-obconf
     lxde
+    lxde-settings-daemon
+    lxhotkey-gtk
+    lxhotkey-plugin-openbox
     lxpolkit
+    lxsession-default-apps
     lxtask
 
     mousepad
@@ -32,6 +36,8 @@ packages = """
     obconf
     openbox
     openbox-theme-breeze
+
+    xscreensaver
 
     ## GTK 3 ##
     plank
