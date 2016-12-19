@@ -29,7 +29,7 @@ packages = """
       cmst
       lximage-qt
       lxqt-sudo
-      pavucontrol
+      pavucontrol-qt
       smplayer
       smtube
       qps
@@ -39,13 +39,35 @@ packages = """
       sddm
       xarchiver
 
+    # translations
+    libfm-qt-l10n
+    liblxqt-l10n
+    lximage-qt-l10n
+    lxqt-about-l10n
+    lxqt-admin-l10n
+    lxqt-config-l10n
+    lxqt-globalkeys-l10n
+    lxqt-notificationd-l10n
+    lxqt-openssh-askpass-l10n
+    lxqt-panel-l10n
+    lxqt-policykit-l10n
+    lxqt-powermanagement-l10n
+    lxqt-runner-l10n
+    lxqt-session-l10n
+    lxqt-sudo-l10n
+    pavucontrol-qt-l10n
+    pcmanfm-qt-l10n
+    qterminal-l10n
+
     nomacs
     faenza-icon-theme
-    # qbittorrent broken
+    qbittorrent
     qlipper
     qpdfview
-    qtpass
     screengrab
     trojita
     xscreensaver
+
+    # i want my gtk styles
+    qt5-style-plugins 
 """
