@@ -54,6 +54,17 @@ do_postinst() {
         echo 'No live settings scripts found! Please fix! (exit in finalize.postinst)'
         exit 1
     fi
+
+    # setup tmpfs the systemd way
+    if [ -f /usr/share/systemd/tmp.mount ]; then
+        cp -a /usr/share/systemd/tmp.mount /lib/systemd/system
+        systemctl enable tmp.mount
+    else
+        echo "**************************************************"
+        echo "Someone changed the tmp.mount descision in debian!"
+        echo "One should consider to change pyfll that way!     "
+        echo "**************************************************"
+     fi
 }
 
 case "${1}" in
