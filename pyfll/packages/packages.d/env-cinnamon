@@ -29,7 +29,7 @@ packages = """
     desktop-file-utils
     gconf2  # the old gtk2 configuration tool
     gedit
-# broken right now 2016-09-05    gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
+    gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
     gitg
     glib-networking
     gnome-desktop3-data
@@ -79,7 +79,7 @@ packages = """
     audacious # a media player, gtk2
     brasero   # the dvd authoring tool
     eog       # the image viewer, eye of gnome  
-    parole    # the media player, gtk3
+    # parole    # the media player, gtk3
     quodlibet # the music manager, depends on exfalso
     screengrab
     shotwell  # the photo manager
@@ -88,12 +88,12 @@ packages = """
     vcdimager
 
     #some bloat
-    geany
+    # geany
     # geany-plugins
-    geany-plugin-git-changebar
-    medit
-    pluma
-    vim-gtk3 # vim-gui-common does provide a gvim.desktop file
+    # geany-plugin-git-changebar
+    # medit
+    # pluma
+    # vim-gtk3 # vim-gui-common does provide a gvim.desktop file
     p7zip-full
     plank
     tracker
