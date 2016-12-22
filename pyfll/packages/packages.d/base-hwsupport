@@ -24,7 +24,6 @@ packages = """
     mdadm
     mobile-broadband-provider-info 
     modemmanager 
-    nbd-client
     pcmciautils
     pciutils
     powermgmt-base

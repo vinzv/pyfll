@@ -44,12 +44,6 @@ do_postinst() {
 		[ -x "/etc/init.d/${service}" ] || continue
 		update-rc.d -f "${service}" remove
 	done
-
-	# Quite hacky, but /etc/nbd-client default conf
-	# leaves a broken partial /dev/nbd0 config
-	  # commented 2016-07-03, /etc/nbd-client --> /etc/nbdtab
-	# sed -i 's#/dev/nbd0##' /etc/nbd-client
-
 }
 
 case "${1}" in
