@@ -45,6 +45,7 @@ packages = """
     kdenetwork
     kdenetwork-filesharing
     kdepim
+    kdepim-addons
     kdesudo
     kdetoys
     kdeutils
