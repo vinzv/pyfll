@@ -9,6 +9,7 @@ packages = """
     fbi
     fbterm
     links
+    mplayer
     podget
     tmux
     tty-clock
