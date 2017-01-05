@@ -19,9 +19,14 @@ packages = """
     adwaita-qt # integrate this into settings
     2048-qt
     gnome-keyring
-    connman
-    connman-vpn
-    cmst
+#    connman
+#    connman-vpn
+#    cmst
+# testing the worst case
+     network-manager
+     network-manager-gnome
+# testing the worst case
+
     firefox
     gucharmap
     juffed
