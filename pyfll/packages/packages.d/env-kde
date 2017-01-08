@@ -86,6 +86,7 @@ packages = """
     plasma-nm
     powerdevil
     print-manager
+    qml-module-org-kde-kholidays
     qt5-gtk-platformtheme
     sni-qt
     svgpart
