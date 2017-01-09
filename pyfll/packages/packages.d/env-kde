@@ -91,6 +91,7 @@ packages = """
     sni-qt
     svgpart
     systemsettings
+    user-manager
     yakuake
 
 ## check
