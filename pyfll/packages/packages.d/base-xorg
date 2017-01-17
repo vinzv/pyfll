@@ -4,6 +4,8 @@ desc = """
 """
 
 packages = """
+    calamares
+
     # predepends
     fontconfig
     fontconfig-config
@@ -48,9 +50,6 @@ packages = """
       xserver-xorg-input-libinput # The default driver
       # recommends:
       xserver-xorg-input-wacom    # overrides libinput for wacom devices
-    # extra drivers to be installed only by user:
-    # xserver-xorg-input-synaptics # causes the gnome control panel's touchpad bits to stop working
-    # xserver-xorg-input-vmmouse
 
     # video drivers: 
     # siduction avoids the meta package xserver-xorg-video-all, but installs all of its depends
@@ -66,8 +65,4 @@ packages = """
     # Recommends:
       xserver-xorg-video-intel # example config: /usr/share/doc/xserver-xorg-video-intel/xorg.conf
       xserver-xorg-video-qxl
-    # extra drivers?
-    # xserver-xorg-video-mach64
-    # xserver-xorg-video-r128 
-    # xserver-xorg-video-mga
 """
