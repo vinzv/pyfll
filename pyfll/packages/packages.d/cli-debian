@@ -67,7 +67,7 @@ packages = """
     tree
     unp
     unzip
-# broken 2016-09-10 AG    vim
+    vim-nox
     vrms
     whohas
     whowatch
