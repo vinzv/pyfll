@@ -18,31 +18,12 @@ packages = """
     ## Qt 5
     adwaita-qt # integrate this into settings
     2048-qt
+    cmst
     gnome-keyring
-#    connman
-#    connman-vpn
-#    cmst
-# testing the worst case
-     network-manager
-     network-manager-gnome
-# testing the worst case
-
     firefox
     gucharmap
     juffed
     lxqt
-      cmst
-      lximage-qt
-      lxqt-sudo
-      pavucontrol-qt
-      smplayer
-      smtube
-      qps
-      qterminal
-      gucharmap
-      firefox
-      sddm
-      xarchiver
 
     # translations
     libfm-qt-l10n
