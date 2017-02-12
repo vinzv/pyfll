@@ -36,6 +36,9 @@ packages = """
     x11-xfs-utils
     x11-xserver-utils
     xauth
+    xautomation
+    xbindkeys
+    xbindkeys-config
     xinit
     xinput
     xfonts-100dpi
