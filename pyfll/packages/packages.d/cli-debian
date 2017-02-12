@@ -20,7 +20,7 @@ packages = """
     console-data
     cmospwd
     command-not-found
-    dbus-user-session  # new, should someday replace dbus-x11  
+    dbus-user-session  
     dconf-cli
     debconf-utils
     debian-goodies
@@ -58,6 +58,7 @@ packages = """
     reptyr
     reportbug
     rkhunter
+    rtkit
     screen
     smartmontools
     strace
