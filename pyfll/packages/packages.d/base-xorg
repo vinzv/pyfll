@@ -4,8 +4,7 @@ desc = """
 """
 
 packages = """
-    calamares
-    calamares-settings-siduction
+    calamares-branding-siduction
 
     # predepends
     fontconfig
