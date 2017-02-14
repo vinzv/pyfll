@@ -26,7 +26,7 @@ EOF
     [ -f /etc/systemd/logind.conf ] && sed -i "s/#KillUserProcesses=no/KillUserProcesses=yes/1" /etc/systemd/logind.conf
 
     # just source /etc/profile even in non-login shells
-    echo "\n. /etc/profile" /root/.bashrc
+    echo "\n. /etc/profile" >> /root/.bashrc
 }
 
 case "${1}" in
