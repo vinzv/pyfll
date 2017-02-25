@@ -18,6 +18,7 @@ packages = """
     hwdata
     irqbalance
     firmware-linux-free
+    libusb-0.1-4
     lshw
     lsscsi
     lvm2
