@@ -51,4 +51,5 @@ packages = """
     qpdfview-ps-plugin
     qpdfview-translations
     screengrab
+    system-config-printer
 """

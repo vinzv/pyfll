@@ -16,6 +16,7 @@ packages = """
       gir1.2-networkmanager-1.0
       gir1.2-nmgtk-1.0
       gir1.2-gnomebluetooth-1.0 
+    configure-cups
     gnome-terminal       # is a recommends of cinnamon
     cinnamon-backgrounds # siduction-wallpaper
     muffin               # cinnamon window manager (derived from gnome-shell mutter)

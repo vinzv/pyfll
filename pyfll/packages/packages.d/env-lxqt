@@ -51,6 +51,7 @@ packages = """
     qlipper
     qpdfview
     screengrab
+    system-config-printer
     trojita
     xscreensaver
 

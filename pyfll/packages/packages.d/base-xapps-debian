@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-    cups-pdf
     dconf-editor
     feh
     foomatic-db-gutenprint
@@ -21,8 +20,8 @@ packages = """
     libsane-extras
     ntfs-config
     pinentry-gtk2
+    printer-driver-cups-pdf
     printer-driver-gutenprint
-    printer-driver-splix
     python-notify
     python-vte
     sane

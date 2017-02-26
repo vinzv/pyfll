@@ -6,15 +6,16 @@ desc = """
 packages = """
     # common whitelist
     bash
+    cups
     fll-live-initscripts
     gnome-keyring
-    #gnome-session # doesn't have any recommends
     gnupg
     initscripts
     netbase
     python-dbus
     qemu-system-x86
     seahorse-daemon
+    system-config-printer
     udisks2
     upower
 
@@ -22,8 +23,7 @@ packages = """
     k3b
     kontact
     kopete
-    #kde-plasma-desktop
-    #plasma-desktop 
+    print-manager
 
     # lxqt whitelist
     lxqt

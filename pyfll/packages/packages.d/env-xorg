@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    configure-cups
     fluxbox
     gconf2
     gnome-icon-theme

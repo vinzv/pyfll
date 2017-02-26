@@ -29,6 +29,7 @@ packages = """
     network-manager-gnome
     orage
     ristretto
+    system-config-printer
     trayer
     tumbler
     xarchiver

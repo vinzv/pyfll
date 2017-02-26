@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-    configure-cups
     gparted
     siduction-bug-report
     siduction-dynamic-dms
