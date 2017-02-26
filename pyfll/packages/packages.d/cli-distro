@@ -13,7 +13,7 @@ packages = """
     siduction-irc
     siduction-scripts
     sidu-manual
-    sshstart
+    sshactivate
 """
 
 debconf = """
