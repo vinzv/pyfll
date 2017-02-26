@@ -17,7 +17,6 @@ packages = """
     libcanberra-gstreamer
     libcanberra-pulse
     libfftw3-bin
-    mplayer
     paman
     paprefs
     pavucontrol
