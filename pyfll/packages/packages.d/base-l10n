@@ -9,6 +9,7 @@ packages = """
     #
     # language-packages - quick and dirty
     #
+    kde-l10n-de
     manpages-de
     manpages-it
     manpages-pl
