@@ -1,2 +1,3 @@
 # forbid editors temp files
 *.swp
+wget-log.*
