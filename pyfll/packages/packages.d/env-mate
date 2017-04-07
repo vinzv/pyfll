@@ -3,77 +3,71 @@ desc = """
 """
 
 packages = """
-    audacious    
-    brasero
-	caja-gtkhash
-    caja-open-terminal
-    configure-cups
-    gnome-calculator
-    gnome-disk-utility
-    gnome-icon-theme
-    gnome-icon-theme-extras
-	gnumeric
+    # audacious    
+    # brasero
+    #	caja-gtkhash
+    # caja-open-terminal
+    # configure-cups
+    # gnome-calculator
+    # gnome-disk-utility
+    # gnome-icon-theme
+    # gnome-icon-theme-extras
+    #	gnumeric
     hexchat
     firefox
-		firefox-l10n-de
-		firefox-l10n-en-gb
-		firefox-l10n-it
-		firefox-l10n-pl
-		firefox-l10n-pt-br
-		firefox-l10n-ro
-	thunderbird
-		thunderbird-l10n-de
-		thunderbird-l10n-en-gb
-		thunderbird-l10n-it
-		thunderbird-l10n-pl
-		thunderbird-l10n-pt-br
-		thunderbird-l10n-ro
+        firefox-l10n-de
+        firefox-l10n-en-gb
+	firefox-l10n-it
+	firefox-l10n-pl
+	firefox-l10n-pt-br
+	firefox-l10n-ro
+    thunderbird
+        thunderbird-l10n-de
+        thunderbird-l10n-en-gb
+        thunderbird-l10n-it
+        thunderbird-l10n-pl
+        thunderbird-l10n-pt-br
+        thunderbird-l10n-ro
 
     # mate-desktop-environment ommitted, directly include its recommends
-	mate-desktop-environment-core
-	    atril
-	    engrampa
-	    eom
-	    mate-applets
-    	mate-icon-theme-faenza
-	    mate-media
-		mate-notification-daemon
-		mate-power-manager
-		mate-screensaver
-		mate-system-monitor
-		mate-utils
-	    pluma
+    #   mate-desktop-environment-core
+    #	    atril
+    #	    engrampa
+    #	    eom
+    #	    mate-applets
+    #	mate-icon-theme-faenza
+    #	    mate-media
+    #		mate-notification-daemon
+    #		mate-power-manager
+    #		mate-screensaver
+    #		mate-system-monitor
+    #		mate-utils
+    #	    pluma
     # mate-desktop-environment-extras
-		blueman
-		caja-gksu
-		caja-image-converter
-		caja-open-terminal
-		caja-sendto
-		caja-share
-		caja-wallpaper
-		dconf-editor
-		gnome-keyring
-		mate-sensors-applet
-		mate-user-share
-		mozo
-		yelp
-    network-manager
-    network-manager-gnome
-	rhythmbox
-    sound-theme-freedesktop
-    smbclient
-    shotwell
+    #		blueman
+    #		caja-gksu
+    #		caja-image-converter
+    #		caja-open-terminal
+    #		caja-sendto
+    #		caja-share
+    #		caja-wallpaper
+    #		dconf-editor
+    #		gnome-keyring
+    #		mate-sensors-applet
+    #		mate-user-share
+    #		mozo
+    #		yelp
+    # network-manager
+    # network-manager-gnome
+    #	rhythmbox
+    # sound-theme-freedesktop
+    # smbclient
+    # shotwell
     # totem ommitted, because killed by gnome3
     # totem-plugins
-    transmission-gtk
+    # transmission-gtk
 
     # alf pöse
-    mate-desktop
-    mate-desktop-common
-    mate-desktop-environment                                     
-    mate-desktop-environment-core               
-    mate-desktop-environment-extra                 
-    mate-desktop-environment-extras
-    mate-tweak
     task-mate-desktop
+    mate-tweak
 """
