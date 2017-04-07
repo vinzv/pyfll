@@ -69,5 +69,10 @@ packages = """
 
     # alf pöse
     task-mate-desktop
+    audacious
+    brasero
+    mate-desktop-environment-extras
     mate-tweak
+    shotwell
+    transmission-gtk
 """
