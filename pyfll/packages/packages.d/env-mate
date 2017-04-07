@@ -75,4 +75,5 @@ packages = """
     mate-desktop-environment-extra                 
     mate-desktop-environment-extras
     mate-tweak
+    task-mate-desktop
 """
