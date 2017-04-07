@@ -66,4 +66,13 @@ packages = """
     # totem ommitted, because killed by gnome3
     # totem-plugins
     transmission-gtk
+
+    # alf pöse
+    mate-desktop
+    mate-desktop-common
+    mate-desktop-environment                                     
+    mate-desktop-environment-core               
+    mate-desktop-environment-extra                 
+    mate-desktop-environment-extras
+    mate-tweak
 """
