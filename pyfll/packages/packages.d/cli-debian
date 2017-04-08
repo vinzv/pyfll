@@ -56,7 +56,7 @@ packages = """
     pwgen
     realpath
     reptyr
-    reportbug
+# install without recommends    reportbug
     rkhunter
     rtkit
     screen
