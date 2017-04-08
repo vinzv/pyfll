@@ -8,7 +8,7 @@ deps = """
     base-firmware-non-free
     base-hwsupport
     base-init
-#not the best idea    base-l10n
+    base-l10n
     base-networking
 
     cli-debian
