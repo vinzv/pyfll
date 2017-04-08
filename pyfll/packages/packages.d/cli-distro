@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-    apt-conf-siduction
+# disable that for now, use debian standards    apt-conf-siduction
     ceni
 # install without recommends   cli-installer
 # install without recommends   kernel-remover
