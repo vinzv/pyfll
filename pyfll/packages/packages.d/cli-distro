@@ -7,10 +7,10 @@ packages = """
     ceni
 #    cli-installer
     inxi
-    kernel-remover
+#    kernel-remover
     pywwetha
     setpassword
-    siduction-irc
+#    siduction-irc
     siduction-scripts
     sidu-manual
     sshactivate
