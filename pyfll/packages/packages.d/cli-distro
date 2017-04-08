@@ -5,7 +5,7 @@ desc = """
 packages = """
     apt-conf-siduction
     ceni
-    cli-installer
+#    cli-installer
     inxi
     kernel-remover
     pywwetha
