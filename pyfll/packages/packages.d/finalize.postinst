@@ -28,6 +28,17 @@ do_postinst() {
     if [ "${DISTRO}" = "siduction" ]; then
         say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
         apt install "${CODENAME}-${FLAVOUR}-livesettings" --assume-yes
+        # if siduction install some packages with not so nice recommends
+        # without recommends
+        apt installl --no-install-recommends --assume-yes \
+            cli-installer \
+            kernel-remover \
+            siduction-irc \
+            inxi \
+            popularity-contest \
+            reportbug \
+            xdg-utils \
+            xdg-user-dirs
     fi
 
     LIVE_SETTINGS='none'
