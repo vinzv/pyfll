@@ -73,7 +73,7 @@ packages = """
     whohas
     whowatch
     wodim
-    xdg-utils
-    xdg-user-dirs
+# install without recommends    xdg-utils
+# install without recommends    xdg-user-dirs
     zip
 """
