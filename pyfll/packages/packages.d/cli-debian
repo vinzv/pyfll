@@ -31,7 +31,7 @@ packages = """
     haveged
     htop
     hddtemp
-    inxi
+# install without recommends    inxi
     iotop
     kbd
     less

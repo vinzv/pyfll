@@ -5,12 +5,11 @@ desc = """
 packages = """
     apt-conf-siduction
     ceni
-#    cli-installer
-    inxi
-#    kernel-remover
+# install without recommends   cli-installer
+# install without recommends   kernel-remover
     pywwetha
     setpassword
-#    siduction-irc
+# install without recommends   siduction-irc
     siduction-scripts
     sidu-manual
     sshactivate
