@@ -10,9 +10,7 @@ deps = """
     base-init
     base-l10n
     base-networking
-    base-printing
 
-    # virt-helpers keine gute idee, x11
     cli-debian
     cli-distro
 
