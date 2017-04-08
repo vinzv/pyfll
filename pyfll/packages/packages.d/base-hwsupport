@@ -8,8 +8,8 @@ packages = """
     bluetooth
     br2684ctl
     cdtool
-    colord 
-    colord-data
+#    colord 
+#    colord-data
     crda
     dmidecode
     eject

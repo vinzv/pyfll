@@ -4,8 +4,6 @@ desc = """
 
 packages = """
     alpine
-    cmus
-    configure-cups
     fbcat
     fbi
     fbterm
