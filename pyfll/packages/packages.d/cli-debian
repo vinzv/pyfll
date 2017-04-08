@@ -61,6 +61,7 @@ packages = """
     rtkit
     screen
     smartmontools
+    ssmtp
     strace
     sudo
     tmux
