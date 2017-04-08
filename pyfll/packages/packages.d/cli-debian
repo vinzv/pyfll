@@ -12,8 +12,8 @@ packages = """
     aptitude
     bash-completion
     byobu # Description: text window manager, shell multiplexer, integrated DevOps environment
-    bzip2
-    ca-certificates
+# in debootstrap    bzip2
+# in debootstrap    ca-certificates
     cfv
     chkrootkit
     console-data
@@ -26,7 +26,6 @@ packages = """
     deborphan
     dialog
     foremost
-    gnupg
     gpm
     haveged
     htop
@@ -48,7 +47,7 @@ packages = """
     nano
     ncdu
     p7zip-full
-    pinentry-curses
+# in debootstrap    pinentry-curses
     policykit-1
 # install without recommends    popularity-contest
     preload

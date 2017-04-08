@@ -10,8 +10,8 @@ debconf = """
 
 
 packages = """
-    adduser
-    apt-transport-https
+# in debootstrap    adduser
+# in debootstrap    apt-transport-https
     console-setup
     fll-live-initramfs
     fll-live-initscripts
