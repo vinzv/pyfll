@@ -42,7 +42,6 @@ packages = """
     # gtkhash is a dependency of nemo-gtkhash
     guake
     yelp
-    zenity
     # some extras (keep them?)
         gnome-sudoku
         iagno
