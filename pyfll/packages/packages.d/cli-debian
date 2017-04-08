@@ -50,7 +50,7 @@ packages = """
     p7zip-full
     pinentry-curses
     policykit-1
-    popularity-contest
+# install without recommends    popularity-contest
     preload
     pv
     pwgen
