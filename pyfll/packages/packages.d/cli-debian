@@ -27,6 +27,7 @@ packages = """
     deborphan
     dialog
     foremost
+    gnupg
     gpm
     haveged
     htop
