@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    task-lxqt-desktop
 
     ## gtk2
     audacious
