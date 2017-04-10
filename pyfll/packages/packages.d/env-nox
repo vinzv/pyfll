@@ -3,12 +3,5 @@ desc = """
 """
 
 packages = """
-    alpine
-    fbcat
-    fbi
-    fbterm
-    links
-    podget
-    tmux
-    tty-clock
+
 """

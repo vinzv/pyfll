@@ -12,14 +12,12 @@ packages = """
     aptitude
     bash-completion
     byobu # Description: text window manager, shell multiplexer, integrated DevOps environment
-# in debootstrap    bzip2
-# in debootstrap    ca-certificates
     cfv
     chkrootkit
     console-data
     cmospwd
     command-not-found
-    dbus-user-session  
+    dbus-user-session
     dconf-cli
     debconf-utils
     debian-goodies
@@ -30,7 +28,6 @@ packages = """
     haveged
     htop
     hddtemp
-# install without recommends    inxi
     iotop
     kbd
     less
@@ -47,15 +44,12 @@ packages = """
     nano
     ncdu
     p7zip-full
-# in debootstrap    pinentry-curses
     policykit-1
-# install without recommends    popularity-contest
     preload
     pv
     pwgen
     realpath
     reptyr
-# install without recommends    reportbug
     rkhunter
     rtkit
     screen
@@ -73,7 +67,10 @@ packages = """
     whohas
     whowatch
     wodim
-# install without recommends    xdg-utils
-# install without recommends    xdg-user-dirs
+    # install without recommends    inxi
+    # install without recommends    popularity-contest
+    # install without recommends    reportbug
+    # install without recommends    xdg-utils
+    # install without recommends    xdg-user-dirs
     zip
 """

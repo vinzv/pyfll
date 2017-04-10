@@ -7,9 +7,9 @@ packages = """
     ceni
 # install without recommends   cli-installer
 # install without recommends   kernel-remover
+# install without recommends   siduction-irc
     pywwetha
     setpassword
-# install without recommends   siduction-irc
     siduction-scripts
     sidu-manual
     sshactivate
