@@ -3,41 +3,42 @@ desc = """
 """
 
 packages = """
-    audacious
-    blueman
-    gnome-keyring
-    brasero
-    clipit
-    claws-mail-i18n
-    compton
-    connman
-    cups-pk-helper
-    faenza-icon-theme
-    firefox
-    gpodder
-    guake
-    gucharmap
-    gvfs-fuse
-    hardinfo
-    hexchat
+    task-lxde-desktop
 
-    lxappearance-obconf
+
+#    audacious
+#    blueman
+#    gnome-keyring
+#    brasero
+#    clipit
+#    claws-mail-i18n
+#    cups-pk-helper
+#    faenza-icon-theme
+#    firefox
+#    gpodder
+#    guake
+#    gucharmap
+#    gvfs-fuse
+#    hardinfo
+#    hexchat
+
+#    lxappearance-obconf
     lxde
-    lxde-settings-daemon
-    lxhotkey-gtk
-    lxhotkey-plugin-openbox
-    lxpolkit
-    lxsession-default-apps
-    lxtask
+#    lxde-settings-daemon
+#    lxhotkey-gtk
+#    lxhotkey-plugin-openbox
+#    lxpolkit
+#    lxsession-default-apps
+#    lxtask
 
     mousepad
 
-    osmo
-    obconf
-    openbox
+#    osmo
+#    obconf
+#    openbox
     openbox-theme-breeze
 
-    xscreensaver
+#    xscreensaver
 
     ## GTK 3 ##
     plank
@@ -46,10 +47,10 @@ packages = """
     ## Qt5 Applications
     cmst
     compton-conf
-    qpdfview
-    qpdfview-djvu-plugin
-    qpdfview-ps-plugin
-    qpdfview-translations
-    screengrab
-    system-config-printer
+#    qpdfview
+#    qpdfview-djvu-plugin
+#    qpdfview-ps-plugin
+#    qpdfview-translations
+#    screengrab
+#    system-config-printer
 """
