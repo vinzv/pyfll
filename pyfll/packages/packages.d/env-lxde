@@ -19,7 +19,6 @@ packages = """
 
     lxde
         wicd-
-        leafpad-
 
     mousepad
     openbox-theme-breeze

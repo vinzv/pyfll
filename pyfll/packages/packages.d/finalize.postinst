@@ -26,10 +26,15 @@ do_postinst() {
     say "Code name:        ${CODENAME}"
 
     if [ "${DISTRO}" = "siduction" ]; then
+        # if anything else is installed - install the siducton branding
+        # packages in top of the current installation. Not the very best
+        # solution but the best we can have right now without changing
+        # pyfll to much
         say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
         apt install "${CODENAME}-${FLAVOUR}-livesettings" --assume-yes
-        # if siduction install some packages with not so nice recommends
-        # without recommends
+
+        # we install some packages with not recommends because the
+        # recommends are really fugly
         apt install --no-install-recommends --assume-yes \
             cli-installer \
             kernel-remover \
