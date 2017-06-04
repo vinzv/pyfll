@@ -40,7 +40,7 @@ packages = """
 #    openbox
     openbox-theme-breeze
 
-#    xscreensaver
+    xscreensaver
 
     ## GTK 3 ##
     plank
