@@ -21,7 +21,7 @@ packages = """
     # thunar-vcs-plugin
     xfwm4-themes
     xfwm4-theme-breeze
-    xfwm4-equake-plugin
+    xfce4-equake-plugin
     xfce4-indicator-plugin
     xfce4-linelight-plugin
     xfce4-messenger-plugin
