@@ -4,85 +4,39 @@ desc = """
 
 packages = """
     sddm
+    firefox
+
     task-xfce-desktop
-
-#    abiword
-#    audacious
-#    brasero
-#    chromium
-#    chromium-l10n
-#    cups-pk-helper
-#    desktop-file-utils
-#    evince-gtk
-#    faenza-icon-theme
-#    gnome-calculator # replaces gcalctool
-#    gconf2
-#    gnome-keyring
-#    gnumeric
-#    gpicview
-#    gtk2-engines-xfce
-#    gtk3-engines-xfce
-#    hexchat
-#    leafpad
-#    libnotify-bin
-#    libpam-gnome-keyring
-#    libtumbler-1-0
-#    mousepad
-#    mpg321
-#    network-manager-gnome
-#    orage
-#    ristretto
-#    system-config-printer
-#    trayer
-#    tumbler
-#    xarchiver
-#    xbitmaps
-#    xtrlock
-
-    # xfce4 basisinstallation
-#    thunar-archive-plugin
-#    thunar-media-tags-plugin
-#    thunar-volman
-#    xfburn
-#    xfce4
-#    xfce4-dev-tools
-#    xfce4-dict
-#    xfce4-notifyd
-#    xfce4-taskmanager
-#    xfce4-terminal
-    # lost in gstreamer transition xfce4-volumed
-#    xfwm4
-#    xfwm4-themes
-#    xfwm4-theme-breeze
-
-    # xfce4 plugins
-#    xfce4-battery-plugin
-#    xfce4-clipman-plugin
-#    xfce4-cpufreq-plugin
-#    xfce4-cpugraph-plugin
-#    xfce4-datetime-plugin
-#    xfce4-diskperf-plugin
-#    xfce4-fsguard-plugin
-#    xfce4-genmon-plugin
-#    xfce4-mailwatch-plugin
-#    xfce4-mount-plugin
-#    xfce4-netload-plugin
-#    xfce4-notes-plugin
-#    xfce4-places-plugin
-#    xfce4-power-manager-plugins
-#    xfce4-quicklauncher-plugin
-#    xfce4-sensors-plugin
-#    xfce4-smartbookmark-plugin
-#    xfce4-systemload-plugin
-#    xfce4-timer-plugin
-#    xfce4-wavelan-plugin
-#    xfce4-weather-plugin
-#    xfce4-xkb-plugin
+        quodlibet-
+        vlc-
+        tango-icon-theme-
+        
+    audacious
+    faenza-icon-theme
+    mate-calc 
+    hexchat
+    #    libnotify-bin
+    mpg321 ## sollte eventuell generell dabeisein
+    thunar-gtkhash
+    # thunar-vcs-plugin
+    xfwm4-themes
+    xfwm4-theme-breeze
+    xfwm4-equake-plugin
+    xfce4-indicator-plugin
+    xfce4-linelight-plugin
+    xfce4-messenger-plugin
+    xfce4-mpc-plugin
+    xfce4-quicklauncher-plugin
+    xfce4-radio-plugin
+    xfce4-screenshooter-plugin
+    xfce4-soundmenu-plugin
+    xfce4-wmdock-plugin
+    xscreensaver
 
     # gtk3 
     plank
+    gtk3-engines-xfce 
 
     # Qt5 Packages
     screengrab
-
 """
