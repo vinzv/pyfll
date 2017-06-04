@@ -25,7 +25,6 @@ packages = """
     pppoeconf
     sshfs
     traceroute
-    vnstat
     vpnc
     weechat-curses
     weechat-core
