@@ -87,7 +87,7 @@ packages = """
     audacious
     brasero
     caja-actions
-    caja-gtk-hash
+    caja-gtkhash
     gnome-disk-utility               # ok, doppelbesetzung mit gparted
     mate-desktop-environment-extras
     mate-calc
