@@ -6,40 +6,22 @@ packages = """
     sddm
     task-lxde-desktop
 
-#    audacious
-#    blueman
-#    gnome-keyring
-#    brasero
-#    clipit
-#    claws-mail-i18n
-#    cups-pk-helper
-#    faenza-icon-theme
-#    firefox
-#    gpodder
-#    guake
-#    gucharmap
-#    gvfs-fuse
-#    hardinfo
-#    hexchat
+    audacious
+    blueman
+    brasero
+    claws-mail-i18n
+    faenza-icon-theme
+    firefox
+    gpodder
+    guake
+    hardinfo
+    hexchat
 
-#    lxappearance-obconf
     lxde
         wicd-
 
-#    lxde-settings-daemon
-#    lxhotkey-gtk
-#    lxhotkey-plugin-openbox
-#    lxpolkit
-#    lxsession-default-apps
-#    lxtask
-
     mousepad
-
-#    osmo
-#    obconf
-#    openbox
     openbox-theme-breeze
-
     xscreensaver
 
     ## GTK 3 ##
@@ -49,10 +31,6 @@ packages = """
     ## Qt5 Applications
     cmst
     compton-conf
-#    qpdfview
-#    qpdfview-djvu-plugin
-#    qpdfview-ps-plugin
-#    qpdfview-translations
-#    screengrab
-#    system-config-printer
+    qpdfview
+    screengrab
 """
