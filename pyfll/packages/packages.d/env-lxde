@@ -5,7 +5,6 @@ desc = """
 packages = """
     task-lxde-desktop
 
-
 #    audacious
 #    blueman
 #    gnome-keyring
@@ -24,6 +23,8 @@ packages = """
 
 #    lxappearance-obconf
     lxde
+        wicd-
+
 #    lxde-settings-daemon
 #    lxhotkey-gtk
 #    lxhotkey-plugin-openbox
