@@ -8,10 +8,10 @@ packages = """
     #	caja-gtkhash
     # caja-open-terminal
     # configure-cups
-    # gnome-calculator
-    # gnome-disk-utility
-    # gnome-icon-theme
-    # gnome-icon-theme-extras
+    # gnome-calculator - use mate-calc instead
+    # gnome-disk-utility - mate-disk-utility once it is packaged
+    # gnome-icon-theme - wozu?
+    # gnome-icon-theme-extras - wozu?
     #	gnumeric
     hexchat
     firefox
@@ -64,16 +64,35 @@ packages = """
     # smbclient
     # shotwell
     # totem ommitted, because killed by gnome3
+
+# totem (3.22.1-1) unstable; urgency=medium
+#
+#  [ Jeremy Bicha ]
+#  * debian/control.in:
+#    - Add Multi-Arch flags (Closes: #813018)
+#
+#  [ Michael Biebl ]
+#  * New upstream release.
+#
+# -- Michael Biebl <biebl@debian.org>  Sun, 05 Mar 2017 02:04:16 +0100
+#
+# ???? so tot sieht das gar nicht aus! Alf
+
     # totem-plugins
     # transmission-gtk
 
     # alf pöse
     task-mate-desktop
+
     audacious
     brasero
+    caja-actions
+    caja-gtk-hash
+    gnome-disk-utility               # ok, doppelbesetzung mit gparted
     mate-desktop-environment-extras
+    mate-calc
     mate-tweak
+    rhythmbox                        # ok. ist ein wenig heftig, wenn man schon audacious hat
     shotwell
     transmission-gtk
-    xscreensaver
 """
