@@ -4,8 +4,10 @@ desc = """
 
 packages = """
     task-xfce-desktop
-        lightdm
-        light-locker
+        lightdm-
+        light-locker-
+        lightdm-gtk-greeter-
+        liblightdm-gobject-1-0-
         quodlibet-
         vlc-
         tango-icon-theme-
