@@ -3,10 +3,9 @@ desc = """
 """
 
 packages = """
-    sddm
-    firefox
-
     task-xfce-desktop
+        lightdm
+        light-locker
         quodlibet-
         vlc-
         tango-icon-theme-
@@ -37,4 +36,7 @@ packages = """
 
     # Qt5 Packages
     screengrab
+    sddm
+
+    xscreensaver
 """
