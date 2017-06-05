@@ -7,80 +7,24 @@ packages = """
 
 
 #    alacarte
-#    baobab
-#    brasero
-#    caribou
 #    caribou-antler
-#      libcaribou-gtk-module
-#      libcaribou-gtk3-module
 #    dconf-tools
-#    eog
 #    empathy
-#    evince
-#    evolution
-#    evolution-data-server
-#    file-roller
-#    fonts-cantarell
 #    gconf-editor
 #    geary
-#    gedit
-# broken right now 2016-09-05    gedit-plugins
-#    gengetopt
-#    gkbd-capplet
-#    gnome-backgrounds
-#    gnome-bluetooth
-#    #gnome-boxes
-#    gnome-contacts
-#    gnome-control-center # recommends: cups-pk-helper, gnome-online-accounts, gnome-user-guide, gnome-user-share, gkbd-capplet, iso-codes, mesa-utils, mousetweaks, policykit-1, rygel | rygel-tracker, system-config-printer (>= 1.4), network-manager-gnome (>= 0.9.8), libnss-myhostname, cracklib-runtime, pulseaudio-module-bluetooth, realmd
-#        cracklib-runtime # needed by gnome-controlcenter to change password.
-#        cups-pk-helper
-#        gnome-online-accounts # needed by empathy, polari
-#        mousetweaks # still needed with 3.20 (libinput)?
-#        network-manager-gnome
-#        network-manager-openvpn
-#        network-manager-pptp
-#        network-manager-vpnc
-#        system-config-printer
-#    gnome-dictionary
-#    gnome-disk-utility
-#    # metapackage gnome-games depends:
-#      five-or-more
-#      four-in-a-row
-#      gnome-chess
-#      gnome-nibbles
-#      gnome-robots
-#      gnome-sudoku
-#      gnome-mines
-#      gnome-tetravex
-#      gnome-klotski
-#      tali
-#      iagno
-#      lightsoff
-#      gnome-mahjongg
-#      quadrapassel
-#      swell-foop
-#      # recommends:
+#    gengetopt warum - ich sehe den sinn nicht
+
+#    network-manager-openvpn
+#    network-manager-pptp
+#    network-manager-vpnc
+
+#    games
 #      aisleriot
-#      # suggests:
 #      gnome-hearts
-#    gnome-font-viewer
-#    gnome-keyring
-#    gnome-logs
-#    #gnome-media
+
 #    gnome-photos
-#    gnome-screenshot
 #    gnome-search-tool
-#    gnome-session
-#    gnome-shell
-#    gnome-shell-extensions
-#    gnome-sushi
 #    gnome-system-log
-#    gnome-terminal
-#    gnome-tweak-tool
-#    gnome-user-guide
-#    gnome-user-share
-#    gnome-system-monitor
-#    gparted
 #    guake
 #    gucharmap
 #    hamster-applet
@@ -92,63 +36,55 @@ packages = """
     firefox-l10n-pl
     firefox-l10n-pt-br
     firefox-l10n-ro
-#    hexchat
-#    libpam-gnome-keyring
+    hexchat
 #    libxml2-utils
 #    mpg321
-#    nautilus
-#    # nautilus plugins needs review
-#    nautilus-gtkhash
-#    pinentry-gnome3
-#    polari
-#    rhythmbox
-#    # look at potential plugins
-#    totem
-#    totem-plugins
-#    tracker-gui     # depends: tracker
-#    transmission-gtk
+
+# nautilus-actions
+# nautilus-admin 
+# nautilus-compare
+# nautilus-dropbox
+# nautilus-emblems 
+# nautilus-filename-repairer 
+# nautilus-gtkhash
+# nautilus-hide 
+# nautilus-image-converter
+# nautilus-image-manipulator
+# nautilus-owncloud
+# nautilus-scripts-manager
+# nautilus-share
+# nautilus-wipe
+
+# look at potential plugins
+# rhythmbox-ampache
+# rhythmbox-plugin-alternative-toolbar
+
 #    goobox
 #    # instead of sound-juicer
-#    sound-theme-freedesktop
-#    vinagre
-#    vino
 
-    # something may that be a good idea
 #    gnome-applets # suggest gnome media
 #    # gnome-audio
 #    # gnome-blog
 #    gnome-boxes
-#    gnome-calculator
-#    gnome-calendar
-#    gnome-characters
-#    gnome-clocks
 #    gnome-color-chooser
-#    gnome-color-manager
-#    gnome-documents
 #    gnome-exe-thumbnailer
 #    gnome-extra-icons
 #    gnome-icon-theme-extras
-#    # gnome-maps # access is disabled by MapQuest (LP #1602035)
-#    gnome-music
 #    gnome-nettool
-#    gnome-orca
 #    gnome-paint
 #    gnome-panel
 #    # gnome-pie
 #    gnome-power-manager
 #    # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
-#    # 2016-09-05 broken AG  gnome-shell-extension-autohidetopbar
-#    # breajs build AG 2016-05-03 gnome-shell-extension-redshift
-#    # breaks build AG 2016-04-03 gnome-shell-extensions-gpaste
-#    # 2016-09-05 broken AG gnome-shell-extension-suspend-button
-#    # 2016-09-05 broken AG gnome-shell-extension-weather
-#    gnome-shell-mailnag
-#    # broken 2016-09-05 AG gnome-shell-pomodoro
+
+# list end rethink shell-extensions
+#   gnome-shell-mailnag
+#   # broken 2016-09-05 AG gnome-shell-pomodoro
 #    gnome-shell-timer
 #    gnome-system-tools
 #    gnome-todo
-#    gnome-weather
-#    gnome-web-photo
+
+     gnome-web-photo
 #    gnome-xcf-thumbnailer
 #    ssh-askpass-gnome
 #    uim-applet-gnome
