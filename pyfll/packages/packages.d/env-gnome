@@ -3,93 +3,112 @@ desc = """
 """
 
 packages = """
-   task-gnome-desktop
-
-
-#    alacarte
-#    caribou-antler
-#    dconf-tools
-#    empathy
-#    gconf-editor
-#    geary
-#    gengetopt warum - ich sehe den sinn nicht
-
-#    network-manager-openvpn
-#    network-manager-pptp
-#    network-manager-vpnc
-
-#    games
-#      aisleriot
-#      gnome-hearts
-
-#    gnome-photos
-#    gnome-search-tool
-#    gnome-system-log
-#    guake
-#    gucharmap
-#    hamster-applet
+    # Paket: task-gnome-desktop
+    # Version: 3.39+siduction1
+    # Hängt ab von: tasksel (= 3.39+siduction1), task-desktop, gnome-core
+    # Empfiehlt: gnome, libreoffice-gnome, libreoffice-evolution, gimp, synaptic, firefox-esr | firefox,
+    #            libreoffice, libreoffice-help-en-us, mythes-en-us, hunspell-en-us, hyphen-en-us,
+    #            network-manager-gnome
+    gnome-core
+    gnome
+    libre-office-gnome
+    libre-office-evolution
+    gimp
+    synaptic
     firefox
+    libreoffice
+    network-manager-gnome
+
+    # siduction packages
+    alacarte
+    aisleriot
+    caribou-antler
+    dconf-tools
+    empathy
+    gconf-editor
+    geary
+    gnome-hearts
+    gnome-photos
+    gnome-search-tool
+    gnome-system-log
+    guake
+    hamster-applet
+    hexchat
+    mpg321
+
+    # nautilus-actions
+    # nautilus-admin
+    # nautilus-compare
+    # nautilus-dropbox
+    # nautilus-emblems
+    # nautilus-filename-repairer
+    # nautilus-gtkhash
+    # nautilus-hide
+    # nautilus-image-converter
+    # nautilus-image-manipulator
+    # nautilus-owncloud
+    # nautilus-scripts-manager
+    # nautilus-share
+    # nautilus-wipe
+
+    # look at potential plugins
+    # rhythmbox-ampache
+    # rhythmbox-plugin-alternative-toolbar
+    #    goobox
+    #    # instead of sound-juicer
+
+
+
+    #    network-manager-openvpn
+    #    network-manager-pptp
+    #    network-manager-vpnc
+
+
+     # gucharmap - warum nicht einfach gnome-chars?
+     #    gnome-applets # suggest gnome media
+     #    # gnome-audio
+     #    # gnome-blog
+     #    gnome-boxes
+     #    gnome-color-chooser
+     #    gnome-exe-thumbnailer
+     #    gnome-extra-icons
+     #    gnome-icon-theme-extras
+     #    gnome-nettool
+     #    gnome-paint
+     #    gnome-panel
+     #    # gnome-pie
+     #    gnome-power-manager
+     #    # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
+
+     #    list end rethink shell-extensions
+     #    gnome-shell-mailnag
+     #    gnome-shell-timer
+     #    gnome-system-tools
+     #    gnome-todo
+
+     #    gnome-web-photo
+     #    gnome-xcf-thumbnailer
+     #    ssh-askpass-gnome
+     #    uim-applet-gnome
+
+
     # some languages hardwired
+    # we should provide such things with pyfll embeded repo
     firefox-l10n-de
     firefox-l10n-en-gb
     firefox-l10n-it
     firefox-l10n-pl
     firefox-l10n-pt-br
     firefox-l10n-ro
-    hexchat
-#    libxml2-utils
-#    mpg321
 
-# nautilus-actions
-# nautilus-admin 
-# nautilus-compare
-# nautilus-dropbox
-# nautilus-emblems 
-# nautilus-filename-repairer 
-# nautilus-gtkhash
-# nautilus-hide 
-# nautilus-image-converter
-# nautilus-image-manipulator
-# nautilus-owncloud
-# nautilus-scripts-manager
-# nautilus-share
-# nautilus-wipe
+    libreoffice-help-en-us
+    mythes-en-us
+    hunspell-en-us
+    hyphen-en-us
 
-# look at potential plugins
-# rhythmbox-ampache
-# rhythmbox-plugin-alternative-toolbar
 
-#    goobox
-#    # instead of sound-juicer
-
-#    gnome-applets # suggest gnome media
-#    # gnome-audio
-#    # gnome-blog
-#    gnome-boxes
-#    gnome-color-chooser
-#    gnome-exe-thumbnailer
-#    gnome-extra-icons
-#    gnome-icon-theme-extras
-#    gnome-nettool
-#    gnome-paint
-#    gnome-panel
-#    # gnome-pie
-#    gnome-power-manager
-#    # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
-
-# list end rethink shell-extensions
-#   gnome-shell-mailnag
-#   # broken 2016-09-05 AG gnome-shell-pomodoro
-#    gnome-shell-timer
-#    gnome-system-tools
-#    gnome-todo
-
-     gnome-web-photo
-#    gnome-xcf-thumbnailer
-#    ssh-askpass-gnome
-#    uim-applet-gnome
+    # libxml2-utils - Wozu das Zeug - entzieht sich meiner Vorstellungskraft
 
     # working replacement for gnome-screensaver (screenlocker even!)
     xscreensaver
-
 """
