@@ -11,8 +11,8 @@ packages = """
     #            network-manager-gnome
     gnome-core
     gnome
-    libre-office-gnome
-    libre-office-evolution
+    libreoffice-gnome
+    libreoffice-evolution
     gimp
     synaptic
     firefox
