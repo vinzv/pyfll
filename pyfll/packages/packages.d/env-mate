@@ -37,7 +37,7 @@ packages = """
     lightning
 
 
-    libreoffice, 
+    libreoffice 
     libreoffice-gtk3
     inkscape
     gimp             # wird eh durch irgendwelchen Abhängigkeiten gezogen
