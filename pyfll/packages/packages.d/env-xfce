@@ -15,7 +15,7 @@ packages = """
     audacious
     evince-gtk
     faenza-icon-theme
-    gnome-orca       # kann auch raus, für Halbblinde gibt es aber keine Alternative
+    # gnome-orca       # kann auch raus, für Halbblinde gibt es aber keine Alternative
     mate-calc 
     mousepad
     network-manager-gnome
@@ -49,5 +49,10 @@ packages = """
 
     # Qt5 Packages
     screengrab
+
+    # not install some recommends
+    light-locker- 
+    lightdm-
+    lightdm-gtk-greeter-
 
 """
