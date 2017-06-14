@@ -3,12 +3,6 @@ desc = """
 """
 
 packages = """
-    xfce4
-    xfce4-goodies
-    xfce4-power-manager
-    xfce4-mixer
-    xfce4-terminal
-
     # libreoffice-gtk2
     # libreoffice
     # libreoffice-help-en-us
@@ -31,16 +25,22 @@ packages = """
     orage
     system-config-printer
     thunar-gtkhash
+
     xfwm4-themes
     xfwm4-theme-breeze
+
+    xfce4
     xfce4-equake-plugin
+    xfce4-goodies
     xfce4-indicator-plugin
     xfce4-linelight-plugin
     xfce4-messenger-plugin
     xfce4-mpc-plugin
+    xfce4-power-manager
     xfce4-quicklauncher-plugin
     xfce4-radio-plugin
     xfce4-screenshooter-plugin
+    xfce4-terminal
     xscreensaver
 
     # gtk3 
