@@ -11,6 +11,8 @@ packages = """
     # hyphen-en-us
     gimp
     inkscape
+    thunderbird
+    lightning
         
     audacious
     evince-gtk
