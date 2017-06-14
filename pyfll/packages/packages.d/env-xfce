@@ -3,23 +3,34 @@ desc = """
 """
 
 packages = """
-    task-xfce-desktop
-        lightdm-
-        light-locker-
-        lightdm-gtk-greeter-
-        liblightdm-gobject-1-0-
-        quodlibet-
-        vlc-
-        tango-icon-theme-
+    xfce4
+    xfce4-goodies
+    xfce4-power-manager
+    xfce4-mixer
+    xfce4-terminal
+
+    # libreoffice-gtk2
+    # libreoffice
+    # libreoffice-help-en-us
+    # mythes-en-us
+    # hunspell-en-us
+    # hyphen-en-us
+    # gimp
+    # inkscape
         
     audacious
+    evince-gtk
     faenza-icon-theme
+    gnome-orca       # kann auch raus, für Halbblinde gibt es aber keine Alternative
     mate-calc 
+    mousepad
+    network-manager-gnome
     hexchat
     #    libnotify-bin
     mpg321 ## sollte eventuell generell dabeisein
+    orage
+    system-config-printer
     thunar-gtkhash
-    # thunar-vcs-plugin
     xfwm4-themes
     xfwm4-theme-breeze
     xfce4-equake-plugin
@@ -38,7 +49,5 @@ packages = """
 
     # Qt5 Packages
     screengrab
-    sddm
 
-    xscreensaver
 """

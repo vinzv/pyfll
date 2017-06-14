@@ -5,6 +5,7 @@ desc = """
 packages = """
     dconf-editor
     feh
+    firefox
     foomatic-db-gutenprint
     galternatives
     gksu
@@ -30,6 +31,7 @@ packages = """
     shared-mime-info
     system-config-printer-udev
     systemd-ui
+    synaptic
     xsane
     xterm
     zenity
