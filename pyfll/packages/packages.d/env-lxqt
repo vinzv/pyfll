@@ -3,17 +3,23 @@ desc = """
 """
 
 packages = """
-    task-lxqt-desktop
+    lxqt
+    lxqt-xfwm-helper
+    xfwm4-theme-breeze
+
+    firefox 
+    thunderbird
+    lightning
+    libreoffice
+    libreoffice-gtk2
+    systemconfig-printer
+    xfburn
+    
 
     ## gtk2
     audacious
     hardinfo
     hexchat
-    lxappearance
-
-    # should be the upcoming lxqt-xfwm4-helpers
-    xfwm4
-    xfwm4-theme-breeze
 
     # gtk3
     plank
@@ -21,16 +27,13 @@ packages = """
     ## Qt 5
     adwaita-qt # integrate this into settings
     2048-qt
-    firefox
-
     nomacs
-    faenza-icon-theme
     qbittorrent
-#    qpdfview
+    qpdfview
     screengrab
-    trojita
     xscreensaver
 
     # i want my gtk styles
     qt5-style-plugins 
+    faenza-icon-theme
 """
