@@ -3,16 +3,11 @@ desc = """
 """
 
 packages = """
-    # audacious    
-    # brasero
-    #	caja-gtkhash
+
     # caja-open-terminal
-    # configure-cups
     # gnome-calculator - use mate-calc instead
     # gnome-disk-utility - mate-disk-utility once it is packaged
-    # gnome-icon-theme - wozu?
-    # gnome-icon-theme-extras - wozu?
-    #	gnumeric
+
     hexchat
     firefox
         firefox-l10n-de
@@ -28,6 +23,8 @@ packages = """
         thunderbird-l10n-pl
         thunderbird-l10n-pt-br
         thunderbird-l10n-ro
+    lightning
+
 
     # mate-desktop-environment ommitted, directly include its recommends
     #   mate-desktop-environment-core
@@ -82,7 +79,18 @@ packages = """
     # transmission-gtk
 
     # alf pöse
-    task-mate-desktop
+    mate-desktop-environment
+#    gimp
+#    firefox, 
+
+# libreoffice, 
+# network-manager-gnome, 
+# gnome-orca, 
+# libreoffice-gtk3
+
+
+
+
 
     audacious
     brasero
