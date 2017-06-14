@@ -3,14 +3,14 @@ desc = """
 """
 
 packages = """
-    # libreoffice-gtk2
-    # libreoffice
+    libreoffice-gtk2
+    libreoffice
     # libreoffice-help-en-us
     # mythes-en-us
     # hunspell-en-us
     # hyphen-en-us
-    # gimp
-    # inkscape
+    gimp
+    inkscape
         
     audacious
     evince-gtk
@@ -20,7 +20,6 @@ packages = """
     mousepad
     network-manager-gnome
     hexchat
-    #    libnotify-bin
     mpg321 ## sollte eventuell generell dabeisein
     orage
     system-config-printer
