@@ -12,7 +12,7 @@ packages = """
     lightning
     libreoffice
     libreoffice-gtk2
-    systemconfig-printer
+    system-config-printer
     xfburn
     
 
