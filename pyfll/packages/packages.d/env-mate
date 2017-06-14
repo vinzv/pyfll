@@ -4,64 +4,6 @@ desc = """
 
 packages = """
 
-    # caja-open-terminal
-    # gnome-calculator - use mate-calc instead
-    # gnome-disk-utility - mate-disk-utility once it is packaged
-
-    hexchat
-    firefox
-        firefox-l10n-de
-        firefox-l10n-en-gb
-	firefox-l10n-it
-	firefox-l10n-pl
-	firefox-l10n-pt-br
-	firefox-l10n-ro
-    thunderbird
-        thunderbird-l10n-de
-        thunderbird-l10n-en-gb
-        thunderbird-l10n-it
-        thunderbird-l10n-pl
-        thunderbird-l10n-pt-br
-        thunderbird-l10n-ro
-    lightning
-
-
-    # mate-desktop-environment ommitted, directly include its recommends
-    #   mate-desktop-environment-core
-    #	    atril
-    #	    engrampa
-    #	    eom
-    #	    mate-applets
-    #	mate-icon-theme-faenza
-    #	    mate-media
-    #		mate-notification-daemon
-    #		mate-power-manager
-    #		mate-screensaver
-    #		mate-system-monitor
-    #		mate-utils
-    #	    pluma
-    # mate-desktop-environment-extras
-    #		blueman
-    #		caja-gksu
-    #		caja-image-converter
-    #		caja-open-terminal
-    #		caja-sendto
-    #		caja-share
-    #		caja-wallpaper
-    #		dconf-editor
-    #		gnome-keyring
-    #		mate-sensors-applet
-    #		mate-user-share
-    #		mozo
-    #		yelp
-    # network-manager
-    # network-manager-gnome
-    #	rhythmbox
-    # sound-theme-freedesktop
-    # smbclient
-    # shotwell
-    # totem ommitted, because killed by gnome3
-
 # totem (3.22.1-1) unstable; urgency=medium
 #
 #  [ Jeremy Bicha ]
@@ -76,31 +18,45 @@ packages = """
 # ???? so tot sieht das gar nicht aus! Alf
 
     # totem-plugins
-    # transmission-gtk
 
-    # alf pöse
+
+    firefox
+        firefox-l10n-de
+        firefox-l10n-en-gb
+        firefox-l10n-it
+        firefox-l10n-pl
+        firefox-l10n-pt-br
+        firefox-l10n-ro
+    thunderbird
+        thunderbird-l10n-de
+        thunderbird-l10n-en-gb
+        thunderbird-l10n-it
+        thunderbird-l10n-pl
+        thunderbird-l10n-pt-br
+        thunderbird-l10n-ro
+    lightning
+
+
+    libreoffice, 
+    libreoffice-gtk3
+    inkscape
+    gimp             # wird eh durch irgendwelchen Abhängigkeiten gezogen
+
     mate-desktop-environment
-#    gimp
-#    firefox, 
-
-# libreoffice, 
-# network-manager-gnome, 
-# gnome-orca, 
-# libreoffice-gtk3
-
-
-
-
-
     audacious
     brasero
     caja-actions
     caja-gtkhash
+    # gnome-disk-utility - mate-disk-utility once it is packaged
     gnome-disk-utility               # ok, doppelbesetzung mit gparted
+    gnome-orca
+    hexchat
     mate-desktop-environment-extras
     mate-calc
     mate-tweak
+    network-manager-gnome
     rhythmbox                        # ok. ist ein wenig heftig, wenn man schon audacious hat
     shotwell
+    smbclient
     transmission-gtk
 """
