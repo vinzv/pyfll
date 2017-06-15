@@ -30,20 +30,20 @@ packages = """
     hexchat
     mpg321
 
-    # nautilus-actions
-    # nautilus-admin
-    # nautilus-compare
+    nautilus-actions
+    nautilus-admin
+    nautilus-compare
     # nautilus-dropbox
     # nautilus-emblems
-    # nautilus-filename-repairer
-    # nautilus-gtkhash
-    # nautilus-hide
+    nautilus-filename-repairer
+    nautilus-gtkhash
+    nautilus-hide
     # nautilus-image-converter
     # nautilus-image-manipulator
     # nautilus-owncloud
     # nautilus-scripts-manager
-    # nautilus-share
-    # nautilus-wipe
+    nautilus-share
+    nautilus-wipe
 
     # look at potential plugins
     # rhythmbox-ampache
@@ -59,7 +59,6 @@ packages = """
 
 
      # gucharmap - warum nicht einfach gnome-chars?
-     #    gnome-applets # suggest gnome media
      #    # gnome-audio
      #    # gnome-blog
      #    gnome-boxes
@@ -69,15 +68,12 @@ packages = """
      #    gnome-icon-theme-extras
      #    gnome-nettool
      #    gnome-paint
-     #    gnome-panel
      #    # gnome-pie
-     #    gnome-power-manager
      #    # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
 
      #    list end rethink shell-extensions
      #    gnome-shell-mailnag
      #    gnome-shell-timer
-     #    gnome-system-tools
      #    gnome-todo
 
      #    gnome-web-photo
