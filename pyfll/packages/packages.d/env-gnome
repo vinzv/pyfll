@@ -3,21 +3,16 @@ desc = """
 """
 
 packages = """
-    # Paket: task-gnome-desktop
-    # Version: 3.39+siduction1
-    # Hängt ab von: tasksel (= 3.39+siduction1), task-desktop, gnome-core
-    # Empfiehlt: gnome, libreoffice-gnome, libreoffice-evolution, gimp, synaptic, firefox-esr | firefox,
+    libreoffice-gnome, libreoffice-evolution, gimp, synaptic, firefox-esr | firefox,
     #            libreoffice, libreoffice-help-en-us, mythes-en-us, hunspell-en-us, hyphen-en-us,
     #            network-manager-gnome
-    gnome-core
     gnome
+
+    gimp
+    inkscape 
+    libreoffice
     libreoffice-gnome
     libreoffice-evolution
-    gimp
-    synaptic
-    firefox
-    libreoffice
-    network-manager-gnome
 
     # siduction packages
     alacarte
@@ -58,7 +53,7 @@ packages = """
     #    # instead of sound-juicer
 
 
-
+    network-manager-gnome
     #    network-manager-openvpn
     #    network-manager-pptp
     #    network-manager-vpnc
@@ -94,6 +89,7 @@ packages = """
 
     # some languages hardwired
     # we should provide such things with pyfll embeded repo
+    firefox
     firefox-l10n-de
     firefox-l10n-en-gb
     firefox-l10n-it
@@ -101,13 +97,11 @@ packages = """
     firefox-l10n-pt-br
     firefox-l10n-ro
 
-    libreoffice-help-en-us
-    mythes-en-us
-    hunspell-en-us
-    hyphen-en-us
+    # libreoffice-help-en-us
+    # mythes-en-us
+    # hunspell-en-us
+    # hyphen-en-us
 
-
-    # libxml2-utils - Wozu das Zeug - entzieht sich meiner Vorstellungskraft
 
     # working replacement for gnome-screensaver (screenlocker even!)
     xscreensaver
