@@ -3,9 +3,6 @@ desc = """
 """
 
 packages = """
-    libreoffice-gnome, libreoffice-evolution, gimp, synaptic, firefox-esr | firefox,
-    #            libreoffice, libreoffice-help-en-us, mythes-en-us, hunspell-en-us, hyphen-en-us,
-    #            network-manager-gnome
     gnome
 
     gimp
