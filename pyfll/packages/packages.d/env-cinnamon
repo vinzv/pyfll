@@ -9,7 +9,7 @@ packages = """
     cinnamon-desktop-environment
     firefox
     thunderbird
-
+    sddm
 
     # network-manager-gnome # needed to enter wifi password
     # muffin               # cinnamon window manager (derived from gnome-shell mutter)
