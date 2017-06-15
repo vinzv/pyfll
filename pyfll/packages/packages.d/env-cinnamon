@@ -6,52 +6,44 @@ desc = """
 # after that we should build with recommends on and cherrypick missed useful packages
 
 packages = """
-    blueman # is a recommends of cinnamon-desktop-environment
-    cinnamon
-      cinnamon-l10n    # is a recommends of cinnamon
-      network-manager
-        modemmanager
-        usb-modeswitch
-      network-manager-gnome # needed to enter wifi password
-      gir1.2-networkmanager-1.0
-      gir1.2-nmgtk-1.0
-      gir1.2-gnomebluetooth-1.0 
-    configure-cups
-    gnome-terminal       # is a recommends of cinnamon
-    cinnamon-backgrounds # siduction-wallpaper
-    muffin               # cinnamon window manager (derived from gnome-shell mutter)
-    nemo                 # cinnamon file manager   (derived from gnome nautilus)
-    nemo-fileroller      # adds items in the context menu of files and directories.
-    nemo-gtkhash         # adds the digests-tab on the file properties page
-    cheese
-    gir1.2-cheese-3.0
-    dconf-tools
-    dconf-service
-    desktop-file-utils
-    gconf2  # the old gtk2 configuration tool
-    gedit
-    gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
-    gitg
-    glib-networking
-    gnome-desktop3-data
-    gnome-disk-utility
-    gnome-keyring
-    libpam-gnome-keyring
-    gnome-logs
-    gnome-menus
+    cinnamon-desktop-environment
+    firefox
+    thunderbird
+
+
+    # network-manager-gnome # needed to enter wifi password
+    # muffin               # cinnamon window manager (derived from gnome-shell mutter)
+    # nemo                 # cinnamon file manager   (derived from gnome nautilus)
+    # nemo-fileroller      # adds items in the context menu of files and directories.
+    # nemo-gtkhash         # adds the digests-tab on the file properties page
+    # cheese
+    # dconf-tools
+    # dconf-service
+    # desktop-file-utils
+    # gconf2  # the old gtk2 configuration tool
+    # gedit
+    # gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
+    # gitg
+    # glib-networking
+    # gnome-desktop3-data
+    # gnome-disk-utility
+    # gnome-keyring
+    # libpam-gnome-keyring
+    # gnome-logs
+    # gnome-menus
     # gtkhash is a dependency of nemo-gtkhash
-    guake
-    yelp
+    # guake
+    # yelp
     # some extras (keep them?)
-        gnome-sudoku
-        iagno
-        swell-foop  # easily test OpenGL capabilities.
+    #    gnome-sudoku
+    #    iagno
+    #    swell-foop  # easily test OpenGL capabilities.
     # only basic office applications
-    abiword
-    abw2odt
-    evince
-    gnumeric
-    gnome-calculator
+    # abiword
+    # abw2odt
+    # evince
+    # gnumeric
+    # gnome-calculator
 
     firefox
 	firefox-l10n-de
@@ -60,32 +52,30 @@ packages = """
 	firefox-l10n-pl
 	firefox-l10n-pt-br
 	firefox-l10n-ro
-    hexchat
-    icedove
-	icedove-l10n-de
-	icedove-l10n-en-gb
-	icedove-l10n-it
-	icedove-l10n-pl
-	icedove-l10n-pt-br
-	icedove-l10n-ro
-    liferea          # linux feed reader
-    transmission-gtk # bittorent
-    uget	     # downloader
-    vinagre          # remote desktop client
-    vino             # a VNC server allowing to export your running desktop
-    virt-viewer
+#    icedove
+#	icedove-l10n-de
+#	icedove-l10n-en-gb
+#	icedove-l10n-it
+#	icedove-l10n-pl
+#	icedove-l10n-pt-br
+#	icedove-l10n-ro
+#    liferea          # linux feed reader
+#    uget	     # downloader
+#    vinagre          # remote desktop client
+#    vino             # a VNC server allowing to export your running desktop
+#    virt-viewer
 
     # basic multimedia tools
-    audacious # a media player, gtk2
-    brasero   # the dvd authoring tool
-    eog       # the image viewer, eye of gnome  
-    # parole    # the media player, gtk3
-    quodlibet # the music manager, depends on exfalso
-    screengrab
-    shotwell  # the photo manager
-    #shutter  # screenshots (based on perl)
-    sound-juicer
-    vcdimager
+#    audacious # a media player, gtk2
+#    brasero   # the dvd authoring tool
+#    eog       # the image viewer, eye of gnome  
+#    # parole    # the media player, gtk3
+#    quodlibet # the music manager, depends on exfalso
+#    screengrab
+#    shotwell  # the photo manager
+#    #shutter  # screenshots (based on perl)
+#    sound-juicer
+#    vcdimager
 
     #some bloat
     # geany
@@ -94,8 +84,8 @@ packages = """
     # medit
     # pluma
     # vim-gtk3 # vim-gui-common does provide a gvim.desktop file
-    p7zip-full
+#    p7zip-full
     plank
-    tracker
+#    tracker
     #tracker-gui
 """
