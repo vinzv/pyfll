@@ -4,24 +4,32 @@ desc = """
 
 packages = """
     sddm
-    task-lxde-desktop
+    lxde
+
+
+    gimp
+    inkscape
+    libreoffice
+    libreoffice-gtk
+   
 
     audacious
     blueman
-    brasero
-    claws-mail-i18n
     faenza-icon-theme
     firefox
     gpodder
     guake
     hardinfo
     hexchat
-
-    lxde
-        wicd-
-
+    lxlauncher
+    lxtask
     mousepad
+    network-manager-gnome
     openbox-theme-breeze
+    pk-update-icon
+    thunderbird
+    xfburn
+    xfce4-power-manager
     xscreensaver
 
     ## GTK 3 ##
