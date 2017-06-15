@@ -3,8 +3,9 @@ desc = """
 """
 
 packages = """
-    gnome
+    gnome 
     sddm   # fulfill our new introduced x-display-manager dependency
+    gdm3-
 
     gimp
     inkscape 
