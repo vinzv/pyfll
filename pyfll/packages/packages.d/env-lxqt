@@ -7,13 +7,13 @@ packages = """
     lxqt-xfwm-helper
     xfwm4-theme-breeze
 
-    firefox 
-    thunderbird
-    lightning
-    libreoffice
-    libreoffice-gtk2
-    system-config-printer
-    xfburn
+#    firefox 
+#    thunderbird
+#    lightning
+#    libreoffice
+#    libreoffice-gtk2
+#    system-config-printer
+#    xfburn
     
 
     ## gtk2
@@ -25,8 +25,9 @@ packages = """
     plank
 
     ## Qt 5
-    adwaita-qt # integrate this into settings
     2048-qt
+    adwaita-qt # integrate this into settings
+    juffed
     nomacs
     qbittorrent
     qpdfview
