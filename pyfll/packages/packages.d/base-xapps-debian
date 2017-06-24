@@ -6,7 +6,6 @@ packages = """
     dconf-editor
     feh
     firefox
-    foomatic-db-gutenprint
     galternatives
     gksu
     gnome-themes-standard
