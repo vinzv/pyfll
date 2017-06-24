@@ -7,10 +7,10 @@ packages = """
     lxde
 
 
-    gimp
-    inkscape
-    libreoffice
-    libreoffice-gtk
+#    gimp
+#    inkscape
+#    libreoffice
+#    libreoffice-gtk
    
 
     audacious
@@ -37,7 +37,6 @@ packages = """
     transmission-gtk
 
     ## Qt5 Applications
-    cmst
     compton-conf
     qpdfview
     screengrab
