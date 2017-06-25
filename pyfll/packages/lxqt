@@ -4,7 +4,7 @@ desc = """
 
 deps = """
     base-cli-debian
-#    base-cli-distro
+    base-cli-distro
 
     base-devel
     base-filesystems

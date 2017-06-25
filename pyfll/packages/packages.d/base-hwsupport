@@ -13,11 +13,14 @@ packages = """
     eject
     ethtool
     firmware-linux
+    hddtemp
     hdparm
     hwdata
     libusb-0.1-4
+    lm-sensors
     lshw
     lsscsi
+    memtest86+
     mobile-broadband-provider-info 
     modemmanager 
     pcmciautils
@@ -25,6 +28,7 @@ packages = """
     powermgmt-base
     rfkill
     sdparm
+    smartmontools
     udev
     udisks2
     upower

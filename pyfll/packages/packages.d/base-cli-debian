@@ -1,78 +1,89 @@
+
 desc = """
     Common command line utilities.
 """
 
 packages = """
-    acpi-fakekey
+    # package management
     apt-file
     apt-listchanges
     apt-show-versions
     apt-transport-https
     aptitude
+
+    # daemons
+    haveged
+    preload
+    ssmtp                 # some mtp - suck less than exim
+
     bash-completion
-    byobu # Description: text window manager, shell multiplexer, integrated DevOps environment
-    cfv
-    chkrootkit
-    console-data
-    cmospwd
     command-not-found
-    dbus-user-session
+    dbus-user-session     # überdenken
     dconf-cli
     debconf-utils
     debian-goodies
     deborphan
     dialog
-    foremost
-    gpm
-    haveged
-    htop
-    hddtemp
-    iotop
-    kbd
-    less
     libmtp-runtime
     librsvg2-common
     linux-cpupower
-    lm-sensors
     logrotate
     mc
-    memtest86+
-    mlocate
-    moreutils
-    mosh # mobile shell, ssh roaming over udp
-    most
-    nano
     ncdu
-    p7zip-full
-    policykit-1
-    preload
     pv
-    pwgen
     realpath
     reptyr
-    rkhunter
-    rtkit
-    screen
-    smartmontools
-    ssmtp
-    strace
     sudo
-    tmux
     tofrodos
     tree
-    unp
-    unzip
-    vim-nox
-    vrms
     whohas
     whowatch
-    wodim
+
+    # terminal multiplexer etc
+    byobu              # Description: text window manager, shell multiplexer, integrated DevOps environment
+    mosh               # mobile shell, ssh roaming over udp
+    screen
+    tmux
+
+    # debugging
+    strace 
+
+    # forensic and securety
+    cmospwd
+    chkrootkit
+    foremost
+    pwgen
+    rkhunter
+
+    # packer
+    p7zip-full
+    unp
+    unzip
+    zip
+
+    # pager
+    less
+    most
+
+    # utils (must have)
+    cfv           # checksums and co.
+    gpm           # mouse for console
+    htop          # ncurses top
+    iotop         # i/o top
+    kbd           # console setup
+       console-data
+    mlocate       # locate etc
+    moreutils     # more utils
+    nano          # the ultimative editor
+    vim-nox       # editor for people who think they are geeks
+    vrms          # virtual R. M. Stallman
+
+
     # install without recommends    inxi
     # install without recommends    popularity-contest
     # install without recommends    reportbug
     # install without recommends    xdg-utils
     # install without recommends    xdg-user-dirs
-    zip
 
     # removals
     rsyslog- # not of any usage with systemd

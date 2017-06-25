@@ -3,16 +3,17 @@ desc = """
 """
 
 packages = """
-# disable that for now, use debian standards    apt-conf-siduction
+#    disable that for now, use debian standards    apt-conf-siduction
     ceni
-# install without recommends   cli-installer
-# install without recommends   kernel-remover
-# install without recommends   siduction-irc
     pywwetha
     setpassword
     siduction-scripts
     sidu-manual
     sshactivate
+
+# install without recommends   cli-installer
+# install without recommends   kernel-remover
+# install without recommends   siduction-irc
 """
 
 debconf = """
