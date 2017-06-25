@@ -3,10 +3,10 @@ desc = """
 """
 
 deps = """
-#    base-devel
-#    base-filesystems
+    base-devel
+    base-filesystems
 #    base-firmware-non-free
-#    base-hwsupport
+    base-hwsupport
 #    base-init
 #    base-l10n
 #    base-media
