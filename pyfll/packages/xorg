@@ -3,6 +3,9 @@ desc = """
 """
 
 deps = """
+    basec-cli-debian
+    basde-cli-distro
+
     base-devel
     base-filesystems
     base-firmware-non-free
@@ -18,9 +21,6 @@ deps = """
     base-xapps-distro
     base-xorg
     base-xorg-fonts
-
-    cli-debian
-    cli-distro
 
     env-xorg
 """

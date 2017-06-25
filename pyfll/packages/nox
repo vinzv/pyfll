@@ -3,6 +3,9 @@ desc = """
 """
 
 deps = """
+    base-cli-debian
+    base-cli-distro
+
     base-devel
     base-filesystems
     base-firmware-non-free
@@ -10,9 +13,6 @@ deps = """
     base-init
     base-l10n
     base-networking
-
-    cli-debian
-    cli-distro
 
     env-nox
 """
