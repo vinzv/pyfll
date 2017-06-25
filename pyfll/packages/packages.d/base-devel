@@ -3,11 +3,11 @@ desc = """
 """
 
 packages = """
-    build-essential
-    colordiff
-    debhelper
-    debsums
-    moc
+#    build-essential wozu?
+#    colordiff schwachfug - color always
+#    debhelper warum? tut das not?
+#    debsums warum? tut das wirklich not?
+#    moc eher media, wenn überhaupt
 """
 i386 = """
 """

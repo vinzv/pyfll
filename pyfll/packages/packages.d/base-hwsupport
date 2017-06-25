@@ -3,26 +3,21 @@ desc = """
 """
 
 packages = """
-    acpi-fakekey
     alsa-utils
     bluetooth
     br2684ctl
-    cdtool
-#    colord 
-#    colord-data
+    colord
+    colord-data
     crda
     dmidecode
     eject
     ethtool
+    firmware-linux
     hdparm
     hwdata
-    irqbalance
-    firmware-linux-free
     libusb-0.1-4
     lshw
     lsscsi
-    lvm2
-    mdadm
     mobile-broadband-provider-info 
     modemmanager 
     pcmciautils
@@ -33,7 +28,6 @@ packages = """
     udev
     udisks2
     upower
-    usbutils
     usb-modeswitch
     wireless-tools
 """
