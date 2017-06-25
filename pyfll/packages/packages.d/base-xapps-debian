@@ -7,6 +7,7 @@ packages = """
     feh
     galternatives
     gnome-themes-standard
+    gparted
     gtk2-engines
     gtk2-engines-pixbuf
     gvfs-fuse

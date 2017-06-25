@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-    gparted
     siduction-bug-report
     siduction-dynamic-dms
     xdg-browser-launcher
