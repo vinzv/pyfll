@@ -5,11 +5,12 @@ desc = """
 packages = """
     lxqt
     lxqt-xfwm-helper
+    phonon4qt5-backend-gstreamer
     xfwm4-theme-breeze
 
     firefox 
-#    thunderbird
-#    lightning
+    thunderbird
+    lightning
 #    libreoffice
 #    libreoffice-gtk2
     system-config-printer

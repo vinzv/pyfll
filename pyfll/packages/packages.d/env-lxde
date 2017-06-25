@@ -38,6 +38,7 @@ packages = """
     transmission-gtk
 
     ## Qt5 Applications
+    qt5phonon4qt5-backend-gstreamer
     compton-conf
     qpdfview
     screengrab
