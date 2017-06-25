@@ -6,12 +6,12 @@ packages = """
     sddm
     lxde
 
-
-#    gimp
-#    inkscape
-#    libreoffice
-#    libreoffice-gtk
-   
+    gimp
+    inkscape
+    libreoffice
+    libreoffice-gtk2
+       java-common-
+       firebird3.0-common-
 
     audacious
     blueman
@@ -30,7 +30,7 @@ packages = """
     pk-update-icon
     thunderbird
     xfburn
-    xfce4-power-manager
+#    xfce4-power-manager
     xscreensaver
 
     ## GTK 3 ##

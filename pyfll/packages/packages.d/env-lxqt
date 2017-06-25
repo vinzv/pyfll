@@ -11,8 +11,6 @@ packages = """
     firefox 
     thunderbird
     lightning
-#    libreoffice
-#    libreoffice-gtk2
     system-config-printer
     xfburn
     
@@ -21,9 +19,13 @@ packages = """
     audacious
     hardinfo
     hexchat
+    inkscape 
+    gimp 
 
     # gtk3
     plank
+    libreoffice 
+    libreoffice-gtk3
 
     ## Qt 5
     2048-qt
@@ -42,4 +44,8 @@ packages = """
     # i want my gtk styles
     qt5-style-plugins 
     faenza-icon-theme
+
+    # packages that we don't want
+    java-common- 
+    firebird3.0-common-
 """
