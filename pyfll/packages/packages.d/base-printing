@@ -7,6 +7,8 @@ packages = """
     foomatic-db
     hpijs-ppds
     openprinting-ppds
+    printer-driver-cups-pdf
+    printer-driver-gutenprint
 """
 
 i386 = """

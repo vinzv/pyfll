@@ -14,7 +14,7 @@ deps = """
     base-printing
 
     base-virt-helpers
-#    base-xapps-debian
+    base-xapps-debian
 #    base-xapps-distro
 #    base-xorg
 #    base-xorg-fonts

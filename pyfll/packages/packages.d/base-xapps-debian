@@ -5,9 +5,7 @@ desc = """
 packages = """
     dconf-editor
     feh
-    firefox
     galternatives
-    gksu
     gnome-themes-standard
     gtk2-engines
     gtk2-engines-pixbuf
@@ -15,24 +13,17 @@ packages = """
     gvfs-bin
     gvfs-backends
     ghostscript-x
-    hplip
     libav-tools
     libsane-extras
     ntfs-config
-    pinentry-gtk2
-    printer-driver-cups-pdf
-    printer-driver-gutenprint
-    python-notify
-    python-vte
+#    python-notify
+#    python-vte
     sane
     sane-utils
     scrot
     shared-mime-info
-    system-config-printer-udev
-    systemd-ui
     synaptic
     xsane
-    xterm
     zenity
     zim
 """
