@@ -10,7 +10,7 @@ packages = """
     cryptsetup
     ext4magic
     nfs-common
-    ntfs-3G
+    ntfs-3g
     reiserfsprogs
     xfsprogs
 
