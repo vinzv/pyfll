@@ -54,6 +54,8 @@ packages = """
     plasma-nm
     yakuake
 
+    pavucontrol
+
     ## brute-force languange integration 
     kde-l10n-de
     firefox-l10n-de
@@ -62,4 +64,9 @@ packages = """
     firefox-l10n-pl
     firefox-l10n-pt-br
     firefox-l10n-ro
+
+#    smplayer
+#    smtube
+    vokoscreen
+
 """

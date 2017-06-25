@@ -28,7 +28,6 @@ packages = """
     guake
     hamster-applet
     hexchat
-    mpg321
 
     nautilus-actions
     nautilus-admin
@@ -56,6 +55,8 @@ packages = """
     #    network-manager-openvpn
     #    network-manager-pptp
     #    network-manager-vpnc
+
+    pavucontrol
 
 
      # gucharmap - warum nicht einfach gnome-chars?
@@ -100,4 +101,9 @@ packages = """
 
     # working replacement for gnome-screensaver (screenlocker even!)
     xscreensaver
+
+#    smplayer
+#    smtube
+    vokoscreen
+
 """

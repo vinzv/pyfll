@@ -55,8 +55,14 @@ packages = """
     mate-calc
     mate-tweak
     network-manager-gnome
+    pavucontrol
     rhythmbox                        # ok. ist ein wenig heftig, wenn man schon audacious hat
     shotwell
     smbclient
     transmission-gtk
+
+#    smplayer
+#    smtube
+    vokoscreen
+
 """

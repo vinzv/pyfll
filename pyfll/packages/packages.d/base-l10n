@@ -9,6 +9,8 @@ packages = """
     #
     # language-packages - quick and dirty
     #
+    # get the fucking python-fll and delivery via iso-repo
+    # up and running
     manpages-de
     manpages-it
     manpages-pl

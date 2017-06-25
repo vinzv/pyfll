@@ -9,13 +9,11 @@ packages = """
     iproute2
     iptables
     iputils-ping
-    irssi
-    irssi-scripts
     isc-dhcp-client
     iw
     libnss-mdns
     libnss-myhostname
-    links
+    lynx
     netselect
     nmap
     netbase
@@ -25,15 +23,14 @@ packages = """
     pppoeconf
     sshfs
     traceroute
-    vpnc
-    weechat-curses
-    weechat-core
-    weechat-scripts
-    weechat-plugins
     wget
     wireless-tools
     wpasupplicant
     wvdial
-"""
-i386 = """
+
+    #irc
+    irssi
+    irssi-scripts
+    weechat
+    weechat-scripts
 """

@@ -7,13 +7,13 @@ packages = """
     lxqt-xfwm-helper
     xfwm4-theme-breeze
 
-#    firefox 
+    firefox 
 #    thunderbird
 #    lightning
 #    libreoffice
 #    libreoffice-gtk2
-#    system-config-printer
-#    xfburn
+    system-config-printer
+    xfburn
     
 
     ## gtk2
@@ -29,10 +29,14 @@ packages = """
     adwaita-qt # integrate this into settings
     juffed
     nomacs
+    pavucontrol-qt
     qbittorrent
     qpdfview
     screengrab
     xscreensaver
+    smplayer
+    smtube
+    vokoscreen
 
     # i want my gtk styles
     qt5-style-plugins 

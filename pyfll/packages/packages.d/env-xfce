@@ -22,8 +22,8 @@ packages = """
     mousepad
     network-manager-gnome
     hexchat
-    mpg321 ## sollte eventuell generell dabeisein
     orage
+    pavucontrol
     system-config-printer
     thunar-gtkhash
 
@@ -50,6 +50,12 @@ packages = """
 
     # Qt5 Packages
     screengrab
+
+    smplayer
+    smtube
+    vokoscreen
+
+
 
     # not install some recommends
     light-locker- 

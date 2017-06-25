@@ -29,5 +29,4 @@ packages = """
     udisks2
     upower
     usb-modeswitch
-    wireless-tools
 """

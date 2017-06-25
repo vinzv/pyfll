@@ -11,6 +11,8 @@ packages = """
     thunderbird
     sddm
 
+    pavucontrol
+
     # network-manager-gnome # needed to enter wifi password
     # muffin               # cinnamon window manager (derived from gnome-shell mutter)
     # nemo                 # cinnamon file manager   (derived from gnome nautilus)
@@ -88,4 +90,8 @@ packages = """
     plank
 #    tracker
     #tracker-gui
+
+#    smplayer
+#    smtube
+    vokoscreen
 """

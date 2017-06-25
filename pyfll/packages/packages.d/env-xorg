@@ -9,4 +9,5 @@ packages = """
     gnome-icon-theme
     hexchat
     firefox
+    pavucontrol
 """

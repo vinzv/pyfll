@@ -3,21 +3,10 @@ desc = """
 """
 
 packages = """
-    cups-browsed
-    cups-bsd
-    cups-client
-    cups-common
-    cups-filters
-    cups-ppdc
+    cups 
     foomatic-db
-    foomatic-db-engine
+    hpijs-ppds
     openprinting-ppds
-    printer-driver-cjet
-    printer-driver-c2050
-    printer-driver-escpr
-    printer-driver-foo2zjs
-    printer-driver-min12xxw
-    printer-driver-pnm2ppa
 """
 
 i386 = """
