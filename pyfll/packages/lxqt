@@ -5,7 +5,7 @@ desc = """
 deps = """
     base-devel
     base-filesystems
-#    base-firmware-non-free
+    base-firmware-non-free
     base-hwsupport
 #    base-init
 #    base-l10n

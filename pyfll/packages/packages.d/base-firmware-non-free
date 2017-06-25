@@ -3,18 +3,12 @@ desc = """
 """
 
 packages = """
-    # Processor
-    amd64-microcode
-    intel-microcode
-    iucode-tool
-    
-    # Graphic and misc
-    firmware-amd-graphics
-    firmware-linux-nonfree
-    firmware-misc-nonfree
-  
+    # we provide firmware-linux, that includes the major needed firmwares
+    # both free and non-free in base-hardware. Additional to that we 
+    # provide misc. firmware we think we can put on the image
+
     # Video decoder
-    firmware-crystalhd 
+    firmware-crystalhd
 
     # Wired and Wireless
     b43-fwcutter
