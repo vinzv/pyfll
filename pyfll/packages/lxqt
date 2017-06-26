@@ -22,7 +22,6 @@ deps = """
     base-xorg
     base-xorg-fonts
 
-
     env-lxqt
 """
 

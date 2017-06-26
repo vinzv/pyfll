@@ -7,9 +7,6 @@ packages = """
     # both free and non-free in base-hardware. Additional to that we 
     # provide misc. firmware we think we can put on the image
 
-    # Video decoder
-    firmware-crystalhd
-
     # Wired and Wireless
     b43-fwcutter
     firmware-atheros             

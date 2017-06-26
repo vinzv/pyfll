@@ -5,68 +5,68 @@ desc = """
 packages = """
     kde-standard
 
-    gimp
-    inkscape
-    libreoffice
-    libreoffice-kde
+#    gimp
+#    inkscape
+#    libreoffice
+#    libreoffice-kde
 
-    adwaita-qt # just for now, eventually integrate in the settings package
-    avahi-autoipd
-    apper
-    converseen
-    digikam
-    dragonplayer
-    firefox
-    ffmpegthumbnailer
-    gnome-orca
-    kdeaccessibility
-    k3b-i18n
-    kaffeine
+#    adwaita-qt # just for now, eventually integrate in the settings package
+#    avahi-autoipd
+#    apper
+#    converseen
+#    digikam
+#    dragonplayer
+#    firefox
+#    ffmpegthumbnailer
+#    gnome-orca
+#    kdeaccessibility
+#    k3b-i18n
+#    kaffeine
 
-    kde-config-fcitx
-    kde-config-gtk-style-preview
-    kde-config-systemd
+#    kde-config-fcitx
+#    kde-config-gtk-style-preview
+#    kde-config-systemd
 
-    kdeadmin
-    kdegraphics 
-    kdemultimedia
-    kdenetwork
-    kdepim
-    kdetoys
-    kdeutils
-    kdesdk-dolphin-plugins
-    kdesudo
-    kio-mtp
-    kompare
-    konversation
-    kpartsplugin
-    krusader
-    ktorrent
-    kwin-addons
-    network-manager-openconnect
-    network-manager-openvpn
-    network-manager-pptp
-    network-manager-vpnc
-    okteta
-    phonon4qt5-backend-gstreamer
-    pinentry-qt
-    plasma-mediacenter
-    plasma-nm
-    yakuake
+#    kdeadmin
+#    kdegraphics 
+#    kdemultimedia
+#    kdenetwork
+#    kdepim
+#    kdetoys
+#    kdeutils
+#    kdesdk-dolphin-plugins
+#    kdesudo
+#    kio-mtp
+#    kompare
+#    konversation
+#    kpartsplugin
+#    krusader
+#    ktorrent
+#    kwin-addons
+#    network-manager-openconnect
+#    network-manager-openvpn
+#    network-manager-pptp
+#    network-manager-vpnc
+#    okteta
+#    phonon4qt5-backend-gstreamer
+#    pinentry-qt
+#    plasma-mediacenter
+#    plasma-nm
+#    yakuake
 
-    pavucontrol
+#    pavucontrol
 
     ## brute-force languange integration 
-    kde-l10n-de
-    firefox-l10n-de
-    firefox-l10n-en-gb
-    firefox-l10n-it
-    firefox-l10n-pl
-    firefox-l10n-pt-br
-    firefox-l10n-ro
+#    kde-l10n-de
+#    firefox-l10n-de
+#    firefox-l10n-en-gb
+#    firefox-l10n-it
+#    firefox-l10n-pl
+#    firefox-l10n-pt-br
+#    firefox-l10n-ro
 
 #    smplayer
 #    smtube
-    vokoscreen
+#    vokoscreen
 
 """
