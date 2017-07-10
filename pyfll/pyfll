@@ -1148,7 +1148,7 @@ class FLLBuilder(object):
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
                 else:
-                    cmd = 'apt-key adv --keyserver hkp://eu.pool.sks-keyservers.net '
+                    cmd = 'apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 '
                     cmd += '--recv-keys ' + r['gpgkey']
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
