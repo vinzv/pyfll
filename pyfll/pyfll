@@ -1149,7 +1149,9 @@ class FLLBuilder(object):
                                        check_returncode = False)
                 else:
                     ok = 1
-                    while (ok > 0):
+                    gpgcount = 0
+                    while ((ok > 0) and (gpgcount < 15)):
+                        gpgcount += 1
                         cmd = 'apt-key adv --keyserver hkps://hkps.pool.sks-keyservers.net '
                         cmd += '--recv-keys ' + r['gpgkey']
                         ok = self._execInChroot(arch, cmd.split(),
