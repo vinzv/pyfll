@@ -1131,6 +1131,9 @@ class FLLBuilder(object):
             self._execInChroot(arch, cmd)
 
         gpgkeys = []
+        cmd = 'touch /root/.gnupg/dirmngr_ldapservers.conf'
+        self._execInChroot(arch, cmd.split(),
+                           check_returncode = False)
         for repo in self.conf['repos'].keys():
             r = self.conf['repos'][repo]
             if 'gpgkey' in r:
