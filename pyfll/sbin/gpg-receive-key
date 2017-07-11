@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Copyright © 2017 Alf Gaida <agaida@siduction.org>
+# This work is free. You can redistribute it and/or modify it under the
+# terms of the Do What The Fuck You Want To Public License, Version 2,
+# as published by Sam Hocevar. See the COPYING file or http://www.wtfpl.net/
+# for more details.
+
+GPGKEY=$1
+[ "x$GPGKEY" = "x" ] && echo "gpgkey missed! exit!" && exit 2
+
+RES=1
+CNT=0
+until [ "$CNT" -gt "10" ] || [ "$RES" -eq "0" ];  do
+    (( ++CNT ))
+    gpg --keyserver hkps://hkps.pool.sks-keyservers.net --trust-model always --recv-keys "$GPGKEY"
+    RES=$(echo $?)
+done
+

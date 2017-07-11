@@ -1083,7 +1083,14 @@ class FLLBuilder(object):
         self.log.info('preparing apt in %s chroot...' % arch)
         chroot = os.path.join(self.temp, arch)
 
-
+        # copy helper files
+        try:
+           files = glob.glob(os.path.join(self.opts.s, 'sbin', '*'))
+           for file in files:
+               shutil.copy(file, os.path.join(chroot, 'usr/sbin/'))
+        except IOError:
+            self.log.error('failed to copy: %s' % file)
+            raise FllError
 
         preferences_d = self.conf['options']['preferences_d']
         if preferences_d:
@@ -1108,8 +1115,6 @@ class FLLBuilder(object):
                 self.log.error('apt configuration directory failed to copy: %s'
                                % apt_conf_d)
                 raise FllError
-
-
 
         self.log.debug('removing sources.list from %s chroot' % arch)
         list = os.path.join(chroot, 'etc/apt/sources.list')
@@ -1148,16 +1153,10 @@ class FLLBuilder(object):
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
                 else:
-                    ok = 1
-                    gpgcount = 0
-                    while ((ok > 0) and (gpgcount < 15)):
-                        gpgcount += 1
-                        cmd = 'apt-key adv --keyserver hkps://hkps.pool.sks-keyservers.net '
-                        cmd += '--recv-keys ' + r['gpgkey']
-                        ok = self._execInChroot(arch, cmd.split(),
-                                                check_returncode = False)
-                        if ( ok ==  0 ) :
-                            break
+                    cmd = 'gpg-receive-key ' + r['gpgkey']
+                    self._execInChroot(arch, cmd.split(), check_returncode = False)
+                    cmd = 'apt-import-key ' + r['gpgkey']
+                    self._execInChroot(arch, cmd.split(), check_returncode = False)
 
         self._execInChroot(arch, 'apt-get -o Acquire::Languages=none -o Acquire::Check-Valid-Until=false update'.split())
         # Upgrade any essential packages from sources not available
@@ -1173,7 +1172,6 @@ class FLLBuilder(object):
         apt_pkg.config.set('APT::Default-Release', '');
         ## End fugly hacking
         apt_pkg.init_system()
-
 
     def _dpkgAddDivert(self, arch):
         '''Divert some facilities and replace temporaily with /bin/true (or
@@ -1788,7 +1786,7 @@ class FLLBuilder(object):
         self._execInChroot(arch, cmd.split())
         self._execInChroot(arch, 'apt-get clean'.split())
         self._execInChroot(arch, 'dpkg --clear-avail'.split())
-
+        self._execInChroot(arch, 'del-gpg-helpers'.split())
         os.path.walk(os.path.join(chroot, 'var/log'), self._zerologs, arch)
 
 
