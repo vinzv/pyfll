@@ -1131,6 +1131,12 @@ class FLLBuilder(object):
             self._execInChroot(arch, cmd)
 
         gpgkeys = []
+        # that will hopefully fix the gnupg crap:
+        # gpg: keyserver receive failed: Cannot assign requested address
+        # https://bbs.archlinux.org/viewtopic.php?id=190380
+        cmd = 'mkdir -p /root/.gnupg'
+        self._execInChroot(arch, cmd.split(),
+                           check_returncode = False)
         cmd = 'touch /root/.gnupg/dirmngr_ldapservers.conf'
         self._execInChroot(arch, cmd.split(),
                            check_returncode = False)
