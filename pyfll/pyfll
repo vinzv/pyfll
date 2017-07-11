@@ -1148,11 +1148,14 @@ class FLLBuilder(object):
                     self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
                 else:
-                    cmd = 'apt-key adv --keyserver hkps://hkps.pool.sks-keyservers.net '
-                    cmd += '--recv-keys ' + r['gpgkey']
-                    ok = self._execInChroot(arch, cmd.split(),
-                                       check_returncode = True)
-                    self.log.info('gpgkey return value:' % ok)
+                    ok = 1
+                    while (ok > 0):
+                        cmd = 'apt-key adv --keyserver hkps://hkps.pool.sks-keyservers.net '
+                        cmd += '--recv-keys ' + r['gpgkey']
+                        ok = self._execInChroot(arch, cmd.split(),
+                                                check_returncode = False)
+                        if ( ok ==  0 ) :
+                            break
 
         self._execInChroot(arch, 'apt-get -o Acquire::Languages=none -o Acquire::Check-Valid-Until=false update'.split())
         # Upgrade any essential packages from sources not available
