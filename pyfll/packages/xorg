@@ -3,8 +3,8 @@ desc = """
 """
 
 deps = """
-    basec-cli-debian
-    basde-cli-distro
+    base-cli-debian
+    base-cli-distro
 
     base-devel
     base-filesystems
