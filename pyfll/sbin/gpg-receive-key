@@ -16,8 +16,10 @@ until [ "$CNT" -gt "10" ] || [ "$RES" -eq "0" ];  do
     gpg --keyserver hkps://hkps.pool.sks-keyservers.net --trust-model always --recv-keys "$GPGKEY"
     RES=$(echo $?)
     if [ ! "$RES" -eq "0" ]; then
+         sleep 3
          gpg --keyserver hkps://pgp.mit.edu --recv-keys --trust-model always --recv-keys "$GPGKEY"
          RES=$(echo $?)
     fi
+    [ ! "$RES" -eq "0" ] && sleep 3
 done
 
