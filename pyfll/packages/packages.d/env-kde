@@ -5,68 +5,68 @@ desc = """
 packages = """
     kde-standard
 
-#    gimp
-#    inkscape
-#    libreoffice
-#    libreoffice-kde
+    adwaita-qt
+    avahi-autoipd
+    digikam                       # ca 130 M
+    firefox                       # ca  50 M
 
-#    adwaita-qt # just for now, eventually integrate in the settings package
-#    avahi-autoipd
-#    apper
-#    converseen
-#    digikam
-#    dragonplayer
-#    firefox
-#    ffmpegthumbnailer
-#    gnome-orca
+    kde-config-fcitx              # ca   7 M
+    kde-config-gtk-style-preview  # ca  10 K 
+    kde-config-systemd            # ca 200 K
+    kdeadmin                      # ca   2 M
+    kdegraphics                   # ca   2 M
+    kdemultimedia                 # ca   1 M
+    kdenetwork                    # ca   9 M
+        kde-zeroconf              # ca  13 M
+    kdepim                        # ca   4 M
+        gnokii                    # ca  11 M       
+    kdetoys                       # ca 106 K
+    kdeutils                      # ca   8 M
+    kde-dolphin-plugins           # ca 156 K
+    kdesudo                       # ca  50 K
+    konversation                  # ca   4 M
+    ktorrent                      # ca   3 M
+    kwin-addons                   # ca  24 K
+    krusader                      # ca  14 M
+
+    okteta                        # ca   1 M
+    kompare                       # ca   1 M
+
+    # Standard applications
+    gimp                          # already installed with kde-standard
+    inkscape                      # ca  20 M
+    libreoffice                   # ca 182 M
+    libreoffice-kde               # ca   1 M
+
+     apper                        # cm   1 M
+     converseen                   # ca 200 K
+     gnome-orca                   # ca   3 M
 #    kdeaccessibility
-#    k3b-i18n
-#    kaffeine
+     k3b-i18n                     # ca  11 M
+     kaffeine                     # ca  11 M
 
-#    kde-config-fcitx
-#    kde-config-gtk-style-preview
-#    kde-config-systemd
-
-#    kdeadmin
-#    kdegraphics 
-#    kdemultimedia
-#    kdenetwork
-#    kdepim
-#    kdetoys
-#    kdeutils
-#    kdesdk-dolphin-plugins
-#    kdesudo
-#    kio-mtp
-#    kompare
-#    konversation
-#    kpartsplugin
-#    krusader
-#    ktorrent
-#    kwin-addons
 #    network-manager-openconnect
 #    network-manager-openvpn
 #    network-manager-pptp
 #    network-manager-vpnc
-#    okteta
-#    phonon4qt5-backend-gstreamer
-#    pinentry-qt
-#    plasma-mediacenter
-#    plasma-nm
-#    yakuake
+    phonon4qt5-backend-gstreamer  # ca 110 K
+    pinentry-qt                   # ca  70 K
+    plasma-mediacenter            # ca 250 K
+    yakuake                       # ca 400 K
 
 #    pavucontrol
 
     ## brute-force languange integration 
-#    kde-l10n-de
-#    firefox-l10n-de
-#    firefox-l10n-en-gb
-#    firefox-l10n-it
-#    firefox-l10n-pl
-#    firefox-l10n-pt-br
-#    firefox-l10n-ro
+    kde-l10n-de                   # ca  38 M
+    firefox-l10n-de              # ca 500 K
+    firefox-l10n-en-gb           # ca 500 K
+    firefox-l10n-it              # ca 500 K
+    firefox-l10n-pl              # ca 500 K
+    firefox-l10n-pt-br           # ca 500 K
+    firefox-l10n-ro              # ca 500 K
 
-#    smplayer
-#    smtube
-#    vokoscreen
+    smplayer                    # ca   7 M
+    smtube                      # ca 400 K
+    vokoscreen                  # ca   5 M
 
 """
