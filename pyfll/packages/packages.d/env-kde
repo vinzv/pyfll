@@ -67,4 +67,6 @@ packages = """
      smtube                       # ca 400 K
      vokoscreen                   # ca   5 M
 
+     # some packages we don't want to be installed
+     lirc- 
 """
