@@ -13,6 +13,8 @@ do_postinst() {
     if [ -e /etc/xdg/menus/debian-menu.menu ]; then
         rm -f /etc/xdg/menus/debian-menu.menu
     fi
+
+    systemctl mask NetworkManager-wait-online.service
 }
 
 case "${1}" in
