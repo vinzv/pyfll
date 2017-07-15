@@ -26,9 +26,6 @@ do_postinst() {
     say "Code name:        ${CODENAME}"
 
     if [ "${DISTRO}" = "siduction" ]; then
-        # move a possible sddm.conf out of the way - we really want our own
-        [ -f /etc/sddm.conf ] && mv /etc/sddm.conf /etc/sddm.conf.debian
-
         # if anything else is installed - install the siducton branding
         # packages in top of the current installation. Not the very best
         # solution but the best we can have right now without changing
