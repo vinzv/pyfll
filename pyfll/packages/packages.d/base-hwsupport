@@ -22,7 +22,7 @@ packages = """
     lsscsi
     memtest86+
     mobile-broadband-provider-info 
-    modemmanager 
+#    modemmanager 
     pcmciautils
     pciutils
     powermgmt-base
