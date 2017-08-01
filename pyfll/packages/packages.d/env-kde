@@ -10,7 +10,8 @@ packages = """
     digikam                       # ca 130 M
     firefox                       # ca  50 M
 
-    kde-config-fcitx              # ca   7 M
+#    kde-config-fcitx              # ca   7 M blocks startup for 3 mins 
+                                   #          together with kded5
     kde-config-gtk-style-preview  # ca  10 K 
     kde-config-systemd            # ca 200 K
     kdeadmin                      # ca   2 M
