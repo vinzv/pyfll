@@ -16,7 +16,7 @@ do_postinst() {
     # link xscreensaver to gnome-screensaver
     if [ -e /usr/bin/xscreensaver-command ]; then
         ln -sf /usr/bin/xscreensaver-command  /usr/bin/gnome-screensaver-command
-    f
+    fi
 
     systemctl mask NetworkManager-wait-online.service
 }
