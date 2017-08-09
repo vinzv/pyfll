@@ -7,4 +7,4 @@ flavour=lxqt
 release=patience
 arch=amd64
 
-time ./pyfll/fll -P ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf
+time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf
