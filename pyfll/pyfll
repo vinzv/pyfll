@@ -1092,6 +1092,15 @@ class FLLBuilder(object):
             self.log.error('failed to copy: %s' % file)
             raise FllError
 
+        # copy repo keys to /tmp
+        try:
+           files = glob.glob(os.path.join(self.opts.s, 'data/repo-keys/', '*.asc'))
+           for file in files:
+               shutil.copy(file, os.path.join(chroot, 'tmp/'))
+        except IOError:
+            self.log.error('failed to copy: %s' % file)
+            raise FllError
+
         preferences_d = self.conf['options']['preferences_d']
         if preferences_d:
             self.log.info('importing apt preferences directory')
