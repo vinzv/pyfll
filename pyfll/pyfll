@@ -1154,12 +1154,14 @@ class FLLBuilder(object):
                 if r['gpgkey'].startswith('http'):
                     cmd = 'apt-key adv --fetch-keys ' + r['gpgkey']
                     self._execInChroot(arch, cmd.split())
-                elif os.path.isfile(r['gpgkey']):
-                    dest = os.path.join(self.temp, arch, 'root')
-                    file = os.path.basename(r['gpgkey'])
-                    shutil.copy(r['gpgkey'], dest)
-                    cmd = 'apt-key --import /root/' + file
-                    self._execInChroot(arch, cmd.split(),
+                elif r['gpgkey'].endswith('asc'):
+                    keyfile = os.path.join('tmp', r['gpgkey'])
+                    self.log.info('keyfile %s' % keyfile)
+                    if os.path.isfile(os.path.join(chroot, keyfile)):
+                        # we copied them to /tmp before - didn't we? :P
+                        cmd = 'apt-key add ' + keyfile
+                        self.log.info('cmd %s' % cmd)
+                        self._execInChroot(arch, cmd.split(),
                                        check_returncode = False)
                 else:
                     cmd = 'gpg-receive-key ' + r['gpgkey']
