@@ -1,0 +1,10 @@
+# 3A05D5979A01C951 - packages.siduction.org
+
+to add a new key to pyfll/data/repo-keys do 
+
+cd pyfll/data/repo-keys 
+gpg --keyserver hkps://hkps.pool.sks-keyservers.net --trust-model always --recv-keys 3A05D5979A01C951
+gpg --export --armor --output 3A05D5979A01C951.asc 3A05D5979A01C951
+git add .
+git commit -m 'Key $foo added'
+git push
