@@ -3,9 +3,13 @@ desc = """
 """
 
 packages = """
-    gnome 
+    gnome
+       # don't install gdm3 nor dependencies
+       gdm3- 
+       libgdm1-
+       gir1.2-gdm-1.0-
+ 
     sddm   # fulfill our new introduced x-display-manager dependency
-    gdm3- libgdm1- gir1.2-gdm-1.0- # don't install gdm3 nor dependencies
 
     gimp
     inkscape 
