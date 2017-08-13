@@ -5,6 +5,7 @@ desc = """
 packages = """
 #    disable that for now, use debian standards    apt-conf-siduction
     ceni
+    neofetch
     pywwetha
     setpassword
     siduction-scripts
