@@ -37,7 +37,7 @@ packages = """
     gimp                          # already installed with kde-standard
     inkscape                      # ca  20 M
     libreoffice                   # ca 182 M
-    libreoffice-gtk
+    libreoffice-gtk3
     libreoffice-style-breeze
      apper                        # cm   1 M
      converseen                   # ca 200 K
