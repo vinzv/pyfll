@@ -21,7 +21,6 @@ packages = """
     dbus-user-session     # überdenken
     dconf-cli
     debconf-utils
-    debian-goodies
     deborphan
     dialog
     libmtp-runtime
@@ -30,6 +29,7 @@ packages = """
     logrotate
     mc
     ncdu
+    needrestart
     pv
     realpath
     reptyr
