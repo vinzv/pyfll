@@ -31,7 +31,6 @@ packages = """
     ncdu
     needrestart
     pv
-    realpath
     reptyr
     sudo
     tofrodos
