@@ -10,7 +10,7 @@ packages = """
     fontconfig
     fontconfig-config
     #
-    libegl1-mesa-drivers
+    # libegl1-mesa-drivers # package doesn't exist as of 22-10-2017 musca
     libgl1-mesa-dri
     libgles2-mesa
     libinput-tools
