@@ -8,7 +8,6 @@ packages = """
     apt-file
     apt-listchanges
     apt-show-versions
-    apt-transport-https
     aptitude
 
     # daemons
