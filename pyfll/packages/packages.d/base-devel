@@ -4,10 +4,13 @@ desc = """
 
 packages = """
 #    build-essential wozu?
-#    colordiff schwachfug - color always
-#    debhelper warum? tut das not?
-#    debsums warum? tut das wirklich not?
-#    moc eher media, wenn überhaupt
+
+    virtualbox-guest-dkms-
+    open-vm-tools-dkms-
+
+    gcc-5-base-
+    gcc-6-base-
+
 """
 i386 = """
 """
