@@ -11,41 +11,44 @@ packages = """
     fontconfig-config
     #
     # libegl1-mesa-drivers # package doesn't exist as of 22-10-2017 musca
-    libgl1-mesa-dri
-    libgles2-mesa
+    # libgl1-mesa-dri xorg dependency
+    # libgles2-mesa mesa-utils-extra dependency
     libinput-tools
-    libtxc-dxtn-s2tc0
-    libva-x11-1
-    libwayland-egl1-mesa
+    # libtxc-dxtn-s2tc0  virtual package
+    # libwayland-egl1-mesa dependency of many packages
     libx11-protocol-perl
-    libxcb-composite0
-    libxcb-damage0
-    libxcb-image0
-    libxcb-keysyms1
-    libxcb-randr0
-    libxcb-xtest0
-    libxcb-xv0
+    # libxcb-composite0 - plasma and kwin dependency
+    # libxcb-damage0 plasma and kwin dependency
+    # libxcb-image0 only dependencies
+    # libxcb-keysyms1 only dependencies
+    # libxcb-randr0 only dependencies
+    # libxcb-xtest0 only dependencies
+    # libxcb-xv0 only dependencies
     menu
     mesa-utils
+    mesa-utils-extra
     spice-vdagent
     va-driver-all
-    x11-apps
-    x11-utils
-    x11-session-utils
+    # x11-apps xorg dependency
+    # x11-utils xorg dependency
+    # x11-session-utils xorg dependency
     x11-xfs-utils
-    x11-xserver-utils
-    xauth
+    # x11-xserver-utils xorg dependency
+    # xauth xorg dependency
     xautomation
     xbindkeys
     xbindkeys-config
-    xinit
+    # xinit xorg dependency
     xinput
-    xfonts-100dpi
-    xfonts-base
-    xfonts-scalable
-    xfonts-utils
-    xserver-xorg
-    xserver-xorg-core
+    # xfonts-100dpi xorg dependency
+    # xfonts-base xorg dependency
+    # xfonts-scalable xorg dependency
+    # xfonts-utils xorg dependency
+    # xserver-xorg xorg dependency
+    # xserver-xorg-core *-video *-input dependency
+
+    xorg
+
     # input drivers in order of precedence, see http://who-t.blogspot.de/2016/08/new-xserver-driver-sort-order.html
     # xserver-xorg-input-evdev
     xserver-xorg-input-all
