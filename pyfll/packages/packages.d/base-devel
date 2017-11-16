@@ -3,14 +3,9 @@ desc = """
 """
 
 packages = """
-#    build-essential wozu?
-
+    build-essential
     virtualbox-guest-dkms
     open-vm-tools-dkms
-
-    gcc-5-base-
-    gcc-6-base-
-    libgcj-common-
 """
 i386 = """
 """
