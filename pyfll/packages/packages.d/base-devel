@@ -10,7 +10,7 @@ packages = """
 
     gcc-5-base-
     gcc-6-base-
-    gcj-common-
+    libgcj-common-
 """
 i386 = """
 """
