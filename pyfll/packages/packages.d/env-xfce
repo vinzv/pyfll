@@ -15,7 +15,7 @@ packages = """
     lightning
         
     audacious
-    evince-gtk
+    evince
     faenza-icon-theme
     # gnome-orca       # kann auch raus, für Halbblinde gibt es aber keine Alternative
     mate-calc 
@@ -50,12 +50,9 @@ packages = """
 
     # Qt5 Packages
     screengrab
-
     smplayer
     smtube
     vokoscreen
-
-
 
     # not install some recommends
     light-locker- 
