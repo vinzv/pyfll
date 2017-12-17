@@ -25,8 +25,6 @@ packages = """
     # gconf2  # the old gtk2 configuration tool
     # gedit
     # gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
-    # gitg
-    # glib-networking
     # gnome-desktop3-data
     # gnome-disk-utility
     # gnome-keyring
@@ -40,9 +38,6 @@ packages = """
     #    gnome-sudoku
     #    iagno
     #    swell-foop  # easily test OpenGL capabilities.
-    # only basic office applications
-    # abiword
-    # abw2odt
     # evince
     # gnumeric
     # gnome-calculator
@@ -70,7 +65,7 @@ packages = """
     # basic multimedia tools
 #    audacious # a media player, gtk2
 #    brasero   # the dvd authoring tool
-#    eog       # the image viewer, eye of gnome  
+#    eog       # the image viewer, eye of gnome
 #    # parole    # the media player, gtk3
 #    quodlibet # the music manager, depends on exfalso
 #    screengrab

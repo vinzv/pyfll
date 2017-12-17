@@ -5,13 +5,13 @@ desc = """
 packages = """
     gnome
        # don't install gdm3 nor dependencies
-       gdm3- 
+       gdm3-
        gir1.2-gdm-1.0-
- 
+
     sddm   # fulfill our new introduced x-display-manager dependency
 
     gimp
-    inkscape 
+    inkscape
     libreoffice
     libreoffice-gnome
     libreoffice-evolution
@@ -20,7 +20,8 @@ packages = """
     alacarte
     aisleriot
     caribou-antler
-    dconf-tools
+    dconf-cli
+    dconf-editor
     empathy
     gconf-editor
     geary
@@ -105,8 +106,6 @@ packages = """
     # working replacement for gnome-screensaver (screenlocker even!)
     xscreensaver
 
-#    smplayer
-#    smtube
     vokoscreen
 
 """
