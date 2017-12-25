@@ -10,6 +10,8 @@ packages = """
 #    virtualbox-guest-dkms moved to base-dev
     virtualbox-guest-utils
     virtualbox-guest-x11
+# needed for live-builds
+    libelf-dev
 
     ovmf
     open-vm-tools-desktop
