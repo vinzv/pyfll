@@ -4,21 +4,8 @@ desc = """
 
 packages = """
 
-# totem (3.22.1-1) unstable; urgency=medium
-#
-#  [ Jeremy Bicha ]
-#  * debian/control.in:
-#    - Add Multi-Arch flags (Closes: #813018)
-#
-#  [ Michael Biebl ]
-#  * New upstream release.
-#
-# -- Michael Biebl <biebl@debian.org>  Sun, 05 Mar 2017 02:04:16 +0100
-#
-# ???? so tot sieht das gar nicht aus! Alf
-
-    # totem-plugins
-
+    totem
+    totem-plugins
 
     firefox
         firefox-l10n-de
@@ -37,17 +24,15 @@ packages = """
     lightning
 
 
-    libreoffice 
+    libreoffice
     libreoffice-gtk3
     inkscape
     gimp             # wird eh durch irgendwelchen Abhängigkeiten gezogen
 
     mate-desktop-environment
-    audacious
     brasero
     caja-actions
     caja-gtkhash
-    # gnome-disk-utility - mate-disk-utility once it is packaged
     gnome-disk-utility               # ok, doppelbesetzung mit gparted
     gnome-orca
     hexchat
@@ -56,13 +41,8 @@ packages = """
     mate-tweak
     network-manager-gnome
     pavucontrol
-    rhythmbox                        # ok. ist ein wenig heftig, wenn man schon audacious hat
+    rhythmbox
     shotwell
     smbclient
     transmission-gtk
-
-#    smplayer
-#    smtube
-    vokoscreen
-
 """

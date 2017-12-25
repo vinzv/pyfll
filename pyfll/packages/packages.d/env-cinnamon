@@ -2,91 +2,61 @@ desc = """
     siduction Cinnamon desktop
 """
 
-# for eventually missed and useful packages we should preconfigure cinnamon with the packages we think they are useful
-# after that we should build with recommends on and cherrypick missed useful packages
+# for eventually missed and useful packages we should preconfigure cinnamon
+# with the packages we think they are useful after that we should build with
+# recommends on and cherrypick missed useful packages
 
 packages = """
     cinnamon-desktop-environment
-    firefox
-    thunderbird
+    pavucontrol
     sddm
 
-    pavucontrol
-
-    # network-manager-gnome # needed to enter wifi password
-    # muffin               # cinnamon window manager (derived from gnome-shell mutter)
-    # nemo                 # cinnamon file manager   (derived from gnome nautilus)
-    # nemo-fileroller      # adds items in the context menu of files and directories.
-    # nemo-gtkhash         # adds the digests-tab on the file properties page
-    # cheese
-    # dconf-tools
-    # dconf-service
-    # desktop-file-utils
-    # gconf2  # the old gtk2 configuration tool
-    # gedit
-    # gedit-plugins # includes gir1.2-gtksource-3.0 syntaxhighlighting and git
-    # gnome-desktop3-data
     # gnome-disk-utility
-    # gnome-keyring
-    # libpam-gnome-keyring
     # gnome-logs
     # gnome-menus
-    # gtkhash is a dependency of nemo-gtkhash
-    # guake
-    # yelp
     # some extras (keep them?)
     #    gnome-sudoku
     #    iagno
     #    swell-foop  # easily test OpenGL capabilities.
-    # evince
-    # gnumeric
-    # gnome-calculator
 
     firefox
-	firefox-l10n-de
-	firefox-l10n-en-gb
-	firefox-l10n-it
-	firefox-l10n-pl
-	firefox-l10n-pt-br
-	firefox-l10n-ro
-#    icedove
-#	icedove-l10n-de
-#	icedove-l10n-en-gb
-#	icedove-l10n-it
-#	icedove-l10n-pl
-#	icedove-l10n-pt-br
-#	icedove-l10n-ro
-#    liferea          # linux feed reader
+        firefox-l10n-de
+	      firefox-l10n-en-gb
+	      firefox-l10n-it
+	      firefox-l10n-pl
+	      firefox-l10n-pt-br
+	      firefox-l10n-ro
+    guake
+
+    liferea
+
+    nemo-gtkhash
+
+    p7zip-full
+    plank
+
+    thunderbird
+        thunderbird-l10n-de
+        thunderbird-l10n-en-gb
+        thunderbird-l10n-it
+        thunderbird-l10n-pl
+        thunderbird-l10n-pt-br
+        thunderbird-l10n-ro
+
 #    uget	     # downloader
-#    vinagre          # remote desktop client
-#    vino             # a VNC server allowing to export your running desktop
 #    virt-viewer
+    vim-gtk3
 
     # basic multimedia tools
-#    audacious # a media player, gtk2
-#    brasero   # the dvd authoring tool
 #    eog       # the image viewer, eye of gnome
 #    # parole    # the media player, gtk3
 #    quodlibet # the music manager, depends on exfalso
-#    screengrab
 #    shotwell  # the photo manager
 #    #shutter  # screenshots (based on perl)
 #    sound-juicer
 #    vcdimager
 
-    #some bloat
-    # geany
-    # geany-plugins
-    # geany-plugin-git-changebar
-    # medit
-    # pluma
-    # vim-gtk3 # vim-gui-common does provide a gvim.desktop file
-#    p7zip-full
-    plank
-#    tracker
-    #tracker-gui
 
-#    smplayer
-#    smtube
-    vokoscreen
+    # tracker
+    #     tracker-gui
 """

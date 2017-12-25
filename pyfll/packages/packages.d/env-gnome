@@ -3,50 +3,44 @@ desc = """
 """
 
 packages = """
-    gnome
-       # don't install gdm3 nor dependencies
-       gdm3-
-       gir1.2-gdm-1.0-
+  gnome
+  gimp
+  inkscape
+  libreoffice
+     libreoffice-gnome
+     libreoffice-evolution
 
-    sddm   # fulfill our new introduced x-display-manager dependency
-
-    gimp
-    inkscape
-    libreoffice
-    libreoffice-gnome
-    libreoffice-evolution
-
-    # siduction packages
+  # siduction packages
     alacarte
     aisleriot
     caribou-antler
-    dconf-cli
-    dconf-editor
-    empathy
-    gconf-editor
-    geary
-    gnome-hearts
-    gnome-photos
-    gnome-search-tool
-    gnome-system-log
-    guake
-    hamster-applet
-    hexchat
+#    dconf-cli
+#    dconf-editor
+#    empathy
+#    gconf-editor
+#    geary
+#    gnome-hearts
+#    gnome-photos
+#    gnome-search-tool
+#    gnome-system-log
+#    guake
+#    hamster-applet
+#    hexchat
 
-    nautilus-actions
-    nautilus-admin
-    nautilus-compare
+#    nautilus-actions
+#    nautilus-admin
+#    nautilus-compare
     # nautilus-dropbox
     # nautilus-emblems
-    nautilus-filename-repairer
-    nautilus-gtkhash
-    nautilus-hide
+#    nautilus-filename-repairer
+#    nautilus-gtkhash
+#    nautilus-hide
     # nautilus-image-converter
     # nautilus-image-manipulator
     # nautilus-owncloud
     # nautilus-scripts-manager
-    nautilus-share
-    nautilus-wipe
+#    nautilus-share
+#    nautilus-wipe
 
     # look at potential plugins
     # rhythmbox-ampache
@@ -55,12 +49,12 @@ packages = """
     #    # instead of sound-juicer
 
 
-    network-manager-gnome
+#    network-manager-gnome
     #    network-manager-openvpn
     #    network-manager-pptp
     #    network-manager-vpnc
 
-    pavucontrol
+#    pavucontrol
 
 
      # gucharmap - warum nicht einfach gnome-chars?
@@ -87,15 +81,20 @@ packages = """
      #    uim-applet-gnome
 
 
-    # some languages hardwired
-    # we should provide such things with pyfll embeded repo
-    firefox
-    firefox-l10n-de
-    firefox-l10n-en-gb
-    firefox-l10n-it
-    firefox-l10n-pl
-    firefox-l10n-pt-br
-    firefox-l10n-ro
+#    firefox
+#        firefox-l10n-de
+#        firefox-l10n-en-gb
+#        firefox-l10n-it
+#        firefox-l10n-pl
+#        firefox-l10n-pt-br
+#        firefox-l10n-ro
+#    thunderbird
+#        thunderbird-l10n-de
+#        thunderbird-l10n-en-gb
+#        thunderbird-l10n-it
+#        thunderbird-l10n-pl
+#        thunderbird-l10n-pt-br
+#        thunderbird-l10n-ro
 
     # libreoffice-help-en-us
     # mythes-en-us
@@ -104,8 +103,7 @@ packages = """
 
 
     # working replacement for gnome-screensaver (screenlocker even!)
-    xscreensaver
+#    xscreensaver
 
-    vokoscreen
 
 """
