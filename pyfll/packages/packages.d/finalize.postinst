@@ -31,7 +31,8 @@ do_postinst() {
         # solution but the best we can have right now without changing
         # pyfll to much
         say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
-        apt install "${CODENAME}-${FLAVOUR}-livesettings" --assume-yes
+        apt install "${CODENAME}-${FLAVOUR}-livesettings" \
+                    "${CODENAME}-${FLAVOUR}-settings" --assume-yes
 
         # we install some packages with not recommends because the
         # recommends are really fugly
