@@ -65,6 +65,7 @@ packages = """
 
     # utils (must have)
     cfv           # checksums and co.
+    cpufrequtils  #
     gpm           # mouse for console
     htop          # ncurses top
     iotop         # i/o top
@@ -73,15 +74,14 @@ packages = """
     mlocate       # locate etc
     moreutils     # more utils
     nano          # the ultimative editor
+    rsync         #
     vim-nox       # editor for people who think they are geeks
     vrms          # virtual R. M. Stallman
 
 
-    # install without recommends    inxi
-    # install without recommends    popularity-contest
-    # install without recommends    reportbug
-    # install without recommends    xdg-utils
-    # install without recommends    xdg-user-dirs
+    # misc
+    libglib2.0-bin
+    udev-config-siduction
 
     # removals
     rsyslog- # not of any usage with systemd
