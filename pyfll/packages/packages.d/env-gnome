@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+  sddm
   gnome
   gimp
   inkscape
