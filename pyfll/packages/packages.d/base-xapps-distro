@@ -5,5 +5,4 @@ desc = """
 packages = """
     siduction-bug-report
     siduction-dynamic-dms
-    xdg-browser-launcher
 """
