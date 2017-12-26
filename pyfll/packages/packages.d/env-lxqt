@@ -5,7 +5,7 @@ desc = """
 packages = """
     sddm
     lxqt
-#    lxqt-xfwm-helper
+    lxqt-xfwm-helper
 
     phonon4qt5-backend-gstreamer
     xfwm4-theme-breeze
@@ -30,7 +30,8 @@ packages = """
 
     ## Qt 5
     2048-qt
-    adwaita-qt # integrate this into settings
+    adwaita-qt              # integrate this into settings
+    featherpad
     juffed
     nomacs
     pavucontrol-qt
