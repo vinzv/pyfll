@@ -15,7 +15,6 @@ packages = """
     lightning
     system-config-printer
     xfburn
-    
 
     ## gtk2
     audacious

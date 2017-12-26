@@ -5,6 +5,7 @@ desc = """
 packages = """
     configure-cups
     fluxbox
+    fbpanel
     gconf2
     gnome-icon-theme
     hexchat

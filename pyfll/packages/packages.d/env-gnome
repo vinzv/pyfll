@@ -9,103 +9,56 @@ packages = """
   gimp
   inkscape
   libreoffice
-     libreoffice-gnome
-     libreoffice-evolution
+    libreoffice-gnome
+    libreoffice-evolution
 
   # siduction packages
     alacarte
     aisleriot
-    caribou-antler
-#    dconf-cli
-#    dconf-editor
-#    empathy
-#    gconf-editor
-#    geary
-#    gnome-hearts
-#    gnome-photos
-#    gnome-search-tool
-#    gnome-system-log
-#    guake
-#    hamster-applet
-#    hexchat
+    empathy
+    gconf-editor
+    geary
+    gnome-photos
+    gnome-search-tool
+    guake
+    hexchat
 
-#    nautilus-actions
-#    nautilus-admin
-#    nautilus-compare
+    nautilus-admin
+    nautilus-compare
     # nautilus-dropbox
-    # nautilus-emblems
-#    nautilus-filename-repairer
-#    nautilus-gtkhash
-#    nautilus-hide
-    # nautilus-image-converter
-    # nautilus-image-manipulator
+    nautilus-filename-repairer
+    nautilus-gtkhash
+    nautilus-hide
     # nautilus-owncloud
-    # nautilus-scripts-manager
-#    nautilus-share
-#    nautilus-wipe
+    pavucontrol
+    gucharmap 
+    # gnome-boxes könnte cool sein
+    gnome-exe-thumbnailer
+    gnome-pie
+    gnome-screensaver
 
-    # look at potential plugins
-    # rhythmbox-ampache
-    # rhythmbox-plugin-alternative-toolbar
-    #    goobox
-    #    # instead of sound-juicer
+    gnome-shell-mailnag
+    gnome-shell-timer
+    gnome-todo
 
-
-#    network-manager-gnome
-    #    network-manager-openvpn
-    #    network-manager-pptp
-    #    network-manager-vpnc
-
-#    pavucontrol
-
-
-     # gucharmap - warum nicht einfach gnome-chars?
-     #    # gnome-audio
-     #    # gnome-blog
-     #    gnome-boxes
-     #    gnome-color-chooser
-     #    gnome-exe-thumbnailer
-     #    gnome-extra-icons
-     #    gnome-icon-theme-extras
-     #    gnome-nettool
-     #    gnome-paint
-     #    # gnome-pie
-     #    # gnome-screensaver AG 2016-04-03 commented out in favor of xscreensaver
-
-     #    list end rethink shell-extensions
-     #    gnome-shell-mailnag
-     #    gnome-shell-timer
-     #    gnome-todo
-
-     #    gnome-web-photo
-     #    gnome-xcf-thumbnailer
-     #    ssh-askpass-gnome
-     #    uim-applet-gnome
-
-
-#    firefox
-#        firefox-l10n-de
-#        firefox-l10n-en-gb
-#        firefox-l10n-it
-#        firefox-l10n-pl
-#        firefox-l10n-pt-br
-#        firefox-l10n-ro
-#    thunderbird
-#        thunderbird-l10n-de
-#        thunderbird-l10n-en-gb
-#        thunderbird-l10n-it
-#        thunderbird-l10n-pl
-#        thunderbird-l10n-pt-br
-#        thunderbird-l10n-ro
+    firefox
+        firefox-l10n-de
+        firefox-l10n-en-gb
+        firefox-l10n-it
+        firefox-l10n-pl
+        firefox-l10n-pt-br
+        firefox-l10n-ro
+    thunderbird
+        thunderbird-l10n-de
+        thunderbird-l10n-en-gb
+        thunderbird-l10n-it
+        thunderbird-l10n-pl
+        thunderbird-l10n-pt-br
+        thunderbird-l10n-ro
 
     # libreoffice-help-en-us
     # mythes-en-us
     # hunspell-en-us
     # hyphen-en-us
-
-
-    # working replacement for gnome-screensaver (screenlocker even!)
-#    xscreensaver
-
 
 """
