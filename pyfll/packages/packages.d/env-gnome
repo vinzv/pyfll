@@ -9,8 +9,9 @@ packages = """
   gimp
   inkscape
   libreoffice
-    libreoffice-gnome
-    libreoffice-evolution
+      libreoffice-gtk3
+      libreoffice-gnome
+      libreoffice-evolution
 
   # siduction packages
     alacarte

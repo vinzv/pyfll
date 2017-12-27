@@ -4,11 +4,18 @@ desc = """
 
 packages = """
     kde-standard
+        kde-l10n-de               # ca  38 M
 
     adwaita-qt
     avahi-autoipd
     digikam                       # ca 130 M
     firefox                       # ca  50 M
+        firefox-l10n-de           # ca 500 K
+        firefox-l10n-en-gb        # ca 500 K
+        firefox-l10n-it           # ca 500 K
+        firefox-l10n-pl           # ca 500 K
+        firefox-l10n-pt-br        # ca 500 K
+        firefox-l10n-ro           # ca 500 K
 
 #    kde-cli-tools
     kde-config-gtk-style-preview  # ca  10 K 
@@ -32,16 +39,17 @@ packages = """
     kompare                       # ca   1 M
 
     # Standard applications
+    # warum eigentlich?    apper                         # cm   1 M
+    converseen                    # ca 200 K
+    gnome-orca                    # ca   3 M
     gimp                          # already installed with kde-standard
     inkscape                      # ca  20 M
+    k3b-i18n                      # ca  11 M
+    kaffeine                      # ca  11 M
+
     libreoffice                   # ca 182 M
-    libreoffice-gtk3
-    libreoffice-style-breeze
-     apper                        # cm   1 M
-     converseen                   # ca 200 K
-     gnome-orca                   # ca   3 M
-     k3b-i18n                     # ca  11 M
-     kaffeine                     # ca  11 M
+        libreoffice-gtk3
+        libreoffice-style-breeze
 
      network-manager-openconnect
      network-manager-openvpn
@@ -50,20 +58,11 @@ packages = """
      phonon4qt5-backend-gstreamer # ca 110 K
      pinentry-qt                  # ca  70 K
      plasma-mediacenter           # ca 250 K
-     yakuake                      # ca 400 K
-
-     ## brute-force languange integration 
-     kde-l10n-de                  # ca  38 M
-     firefox-l10n-de              # ca 500 K
-     firefox-l10n-en-gb           # ca 500 K
-     firefox-l10n-it              # ca 500 K
-     firefox-l10n-pl              # ca 500 K
-     firefox-l10n-pt-br           # ca 500 K
-     firefox-l10n-ro              # ca 500 K
-
      smplayer                     # ca   7 M
      smtube                       # ca 400 K
      vokoscreen                   # ca   5 M
+     yakuake                      # ca 400 K
+
 
      # some packages we don't want to be installed
      kdeaccessibility-

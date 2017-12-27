@@ -3,45 +3,57 @@ desc = """
 """
 
 packages = """
-    libreoffice-gtk2
-    libreoffice
-    # libreoffice-help-en-us
-    # mythes-en-us
-    # hunspell-en-us
-    # hyphen-en-us
-    gimp
-    inkscape
-    thunderbird
-    lightning
-        
     audacious
     evince
     faenza-icon-theme
-    # gnome-orca                      # kann auch raus, für Halbblinde gibt es aber keine Alternative
-    mate-calc 
+    firefox
+        firefox-l10n-de       
+        firefox-l10n-en-gb    
+        firefox-l10n-it       
+        firefox-l10n-pl       
+        firefox-l10n-pt-br    
+        firefox-l10n-ro       
+    gimp
+    hexchat
+    inkscape
+    libreoffice
+        libreoffice-gtk2
+        # libreoffice-help-en-us
+        # mythes-en-us
+        # hunspell-en-us
+        # hyphen-en-us
+    mate-calc
     mousepad
     network-manager-gnome
-    hexchat
     orage
     pavucontrol
     system-config-printer
     thunar-gtkhash
+    thunderbird
+        lightning
+        thunderbird-l10n-de
+        thunderbird-l10n-en-gb
+        thunderbird-l10n-it
+        thunderbird-l10n-pl
+        thunderbird-l10n-pt-br
+        thunderbird-l10n-ro
+
+    xfce4
+       xfce4-equake-plugin
+       xfce4-goodies
+       xfce4-indicator-plugin
+       xfce4-linelight-plugin
+       xfce4-messenger-plugin
+       xfce4-mpc-plugin
+       xfce4-power-manager
+       xfce4-quicklauncher-plugin
+       xfce4-radio-plugin
+       xfce4-screenshooter-plugin
+       xfce4-terminal
 
     xfwm4-themes
     xfwm4-theme-breeze
 
-    xfce4
-    xfce4-equake-plugin
-    xfce4-goodies
-    xfce4-indicator-plugin
-    xfce4-linelight-plugin
-    xfce4-messenger-plugin
-    xfce4-mpc-plugin
-    xfce4-power-manager
-    xfce4-quicklauncher-plugin
-    xfce4-radio-plugin
-    xfce4-screenshooter-plugin
-    xfce4-terminal
     xscreensaver
 
     # gtk3 
@@ -58,5 +70,4 @@ packages = """
     light-locker- 
     lightdm-
     lightdm-gtk-greeter-
-
 """

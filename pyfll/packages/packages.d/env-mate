@@ -4,9 +4,7 @@ desc = """
 
 packages = """
 
-    totem
-    totem-plugins
-
+    brasero
     firefox
         firefox-l10n-de
         firefox-l10n-en-gb
@@ -14,34 +12,33 @@ packages = """
         firefox-l10n-pl
         firefox-l10n-pt-br
         firefox-l10n-ro
+    gimp                             # wird eh durch irgendwelchen Abhängigkeiten gezogen
+    gnome-disk-utility               # ok, doppelbesetzung mit gparted
+    gnome-orca
+    hexchat
+    inkscape
+    libreoffice
+        libreoffice-gtk3
+    mate-desktop-environment
+       caja-actions
+       caja-gtkhash
+       mate-desktop-environment-extras
+       mate-calc
+       mate-tweak
+    network-manager-gnome
+    pavucontrol
+    rhythmbox
+    shotwell
+    smbclient
     thunderbird
+        lightning
         thunderbird-l10n-de
         thunderbird-l10n-en-gb
         thunderbird-l10n-it
         thunderbird-l10n-pl
         thunderbird-l10n-pt-br
         thunderbird-l10n-ro
-    lightning
-
-    libreoffice
-    libreoffice-gtk3
-    inkscape
-    gimp                             # wird eh durch irgendwelchen Abhängigkeiten gezogen
-
-    mate-desktop-environment
-    brasero
-    caja-actions
-    caja-gtkhash
-    gnome-disk-utility               # ok, doppelbesetzung mit gparted
-    gnome-orca
-    hexchat
-    mate-desktop-environment-extras
-    mate-calc
-    mate-tweak
-    network-manager-gnome
-    pavucontrol
-    rhythmbox
-    shotwell
-    smbclient
+    totem
+       totem-plugins
     transmission-gtk
 """

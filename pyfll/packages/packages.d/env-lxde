@@ -3,33 +3,47 @@ desc = """
 """
 
 packages = """
-    sddm
-    lxde
-
-    gimp
-    inkscape
-    libreoffice
-    libreoffice-gtk2
-       java-common-
-       firebird3.0-common-
-
     audacious
     blueman
     faenza-icon-theme
     firefox
+        firefox-l10n-de
+        firefox-l10n-en-gb
+        firefox-l10n-it
+        firefox-l10n-pl
+        firefox-l10n-pt-br
+        firefox-l10n-ro
+    gimp
     gpodder
     guake
     hardinfo
     hexchat
-    lxlauncher
-    lxtask
+    inkscape
+    libreoffice
+        libreoffice-gtk2
+        java-common-
+        firebird3.0-common-
+    lxde
+        lxlauncher
+        lxtask
+
+
+
     mousepad
     network-manager-gnome
     pavucontrol
     pk-update-icon
     thunderbird
+        lightning
+        thunderbird-l10n-de
+        thunderbird-l10n-en-gb
+        thunderbird-l10n-it
+        thunderbird-l10n-pl
+        thunderbird-l10n-pt-br
+        thunderbird-l10n-ro
+
     xfburn
-#    xfce4-power-manager
+    xfce4-power-manager
     xscreensaver
 
     ## GTK 3 ##
