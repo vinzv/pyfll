@@ -27,8 +27,6 @@ packages = """
         lxlauncher
         lxtask
 
-
-
     mousepad
     network-manager-gnome
     pavucontrol
@@ -58,4 +56,10 @@ packages = """
     smplayer
     smtube
     vokoscreen
+
+    #things we don't want
+    lightdm-
+    lightdm-gtk-greeter-
+    light-locker-
+
 """
