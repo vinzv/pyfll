@@ -40,6 +40,8 @@ packages = """
 
     gnome-shell-mailnag
     gnome-shell-timer
+    gnome-shell-extension-top-icons-plus
+    gnome-shell-extension-dash-to-panel 
     gnome-todo
 
     firefox
