@@ -31,12 +31,12 @@ do_postinst() {
         # solution but the best we can have right now without changing
         # pyfll to much
         say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
-        apt install "${CODENAME}-${FLAVOUR}-livesettings" \
+        apt-get install "${CODENAME}-${FLAVOUR}-livesettings" \
                     "${CODENAME}-${FLAVOUR}-settings" --assume-yes
 
         # we install some packages with not recommends because the
         # recommends are really fugly
-        apt install --no-install-recommends --assume-yes \
+        apt-get install --no-install-recommends --assume-yes \
             cli-installer \
             kernel-remover \
             siduction-irc \
@@ -48,19 +48,6 @@ do_postinst() {
     fi
 
     LIVE_SETTINGS='none'
-
-    if [ -f /usr/bin/siduction-live-settings ]; then
-        say "Configure Live Settings ... (deprecated siduction-live-settings scripts)"
-        siduction-live-settings configure
-        LIVE_SETTINGS='found'
-    fi
-
-    if [ -f /usr/bin/live-settings ]; then
-        say "Configure Live Settings ... (deprecated live-settings scripts)"
-        live-settings configure
-        LIVE_SETTINGS='found'
-    fi
-
     if [ -f /usr/bin/livesettings ]; then
         say "Configure Live Settings ... (current livesettings scripts)"
         livesettings configure
