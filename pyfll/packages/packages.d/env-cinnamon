@@ -30,6 +30,7 @@ packages = """
 
     liferea
 
+    mate-terminal
     nemo-gtkhash
 
     p7zip-full
