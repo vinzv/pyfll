@@ -6,7 +6,7 @@ packages = """
     dconf-editor
     feh
     galternatives
-    gnome-themes-standard
+    gnome-themes-extra
     gparted
     gtk2-engines
     gtk2-engines-pixbuf
