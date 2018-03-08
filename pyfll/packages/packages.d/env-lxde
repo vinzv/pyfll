@@ -30,7 +30,6 @@ packages = """
     mousepad
     network-manager-gnome
     pavucontrol
-    pk-update-icon
     thunderbird
         lightning
         thunderbird-l10n-de
