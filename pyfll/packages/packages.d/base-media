@@ -18,7 +18,6 @@ packages = """
     libcanberra-pulse
     libfftw3-bin
     mpg321
-    paman
     paprefs
 
     pulseaudio
