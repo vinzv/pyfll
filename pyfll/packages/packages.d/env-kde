@@ -67,4 +67,5 @@ packages = """
      # some packages we don't want to be installed
      kdeaccessibility-
      lirc- 
+     unattended-upgrades-
 """

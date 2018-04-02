@@ -6,6 +6,7 @@ packages = """
   sddm
       gdm3-
   gnome
+      unattended-upgrades-
   gimp
   inkscape
   libreoffice
