@@ -14,7 +14,6 @@ packages = """
     gvfs-bin
     gvfs-backends
     ghostscript-x
-    libav-tools
     libsane-extras
     ntfs-config
 #    python-notify
