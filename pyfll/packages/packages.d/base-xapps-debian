@@ -4,7 +4,7 @@ desc = """
 
 packages = """
     dconf-editor
-    fe
+    feh
     flameshot
     galternatives
     gnome-themes-extra
