@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    iwd   # replacement for wpasupplicant, alternative in connman 
     sddm
     lxqt
     lxqt-xfwm-helper
