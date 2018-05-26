@@ -51,7 +51,7 @@ packages = """
 
     # i want my gtk styles
     qt5-style-plugins 
-    faenza-icon-theme
+    papirus-icon-theme
 
     # packages that we don't want
     java-common- 
