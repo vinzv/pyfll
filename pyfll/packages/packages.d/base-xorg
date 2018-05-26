@@ -67,8 +67,8 @@ packages = """
       xserver-xorg-video-fbdev
       xserver-xorg-video-nouveau
       xserver-xorg-video-vesa # predepends
-      xserver-xorg-video-vmware
+    # broken 2018-05-26  xserver-xorg-video-vmware
     # Recommends:
       xserver-xorg-video-intel # example config: /usr/share/doc/xserver-xorg-video-intel/xorg.conf
-      xserver-xorg-video-qxl
+    # broken 2018-05-26  xserver-xorg-video-qxl
 """
