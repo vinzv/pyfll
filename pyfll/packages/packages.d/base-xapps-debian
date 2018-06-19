@@ -16,7 +16,7 @@ packages = """
     gvfs-backends
     ghostscript-x
     libsane-extras
-    ntfs-config
+#    ntfs-config - removed from sid 2018-06-18
 #    python-notify
 #    python-vte
     sane
