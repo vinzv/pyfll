@@ -14,6 +14,8 @@ deps = """
     base-l10n
     base-networking
 
+    base-no-go
+
     env-nox
 """
 

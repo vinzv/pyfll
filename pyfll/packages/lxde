@@ -23,6 +23,8 @@ deps = """
     base-xorg-fonts
 
 
+    base-no-go
+
     env-lxde
 """
 

@@ -1,0 +1,8 @@
+desc = """
+    Not wanted packages
+"""
+
+packages = """
+    orca-                # breaks all builds
+    speech-dispatcher-   # breaks all builds
+"""

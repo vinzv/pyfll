@@ -22,6 +22,8 @@ deps = """
     base-xorg
     base-xorg-fonts
 
+    base-no-go
+
     env-kde
 """
 
