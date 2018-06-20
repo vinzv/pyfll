@@ -3,9 +3,10 @@ desc = """
 """
 
 packages = """
-  sddm
+  slim
+      sddm-
       gdm3-
-  gnome
+  gnome-core
       unattended-upgrades-
   gimp
   inkscape
