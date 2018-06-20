@@ -13,6 +13,10 @@ packages = """
     reiserfsprogs
     xfsprogs
 
+    # udisks2 support 
+    udisks2-btrfs
+    udisks2-lvm2
+
     # Tools
     acl
     attr
