@@ -6,7 +6,7 @@ packages = """
     # Filesystems
     btrfs-progs
     cifs-utils
-    cryptsetup
+    # cryptsetup - fucked up as of 2018-08-05
     ext4magic
     nfs-common
     ntfs-3g
