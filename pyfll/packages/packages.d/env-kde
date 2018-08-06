@@ -41,7 +41,7 @@ packages = """
     # Standard applications
     # warum eigentlich?    apper                         # cm   1 M
     converseen                    # ca 200 K
-    gnome-orca                    # ca   3 M
+    # gnome-orca   broken as of 2018-08-06                 # ca   3 M
     gimp                          # already installed with kde-standard
     inkscape                      # ca  20 M
     k3b-i18n                      # ca  11 M
