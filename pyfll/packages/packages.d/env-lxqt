@@ -38,7 +38,7 @@ packages = """
     # gtk3
     plank
     libreoffice 
-    libreoffice-gtk3
+    # libreoffice-gtk3 broken as of 2018-08-12
 
     ## Qt 5
     2048-qt
