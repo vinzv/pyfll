@@ -15,16 +15,16 @@ packages = """
     gvfs-bin
     gvfs-backends
     ghostscript-x
-    libsane-extras
+#    libsane-extras
 #    ntfs-config - removed from sid 2018-06-18
 #    python-notify
 #    python-vte
-    sane
-    sane-utils
+#    sane          broken as of 2018-08-12
+#    sane-utils
     scrot
     shared-mime-info
     synaptic
-    xsane
+#    xsane         broken  as of 2018-08-12
     zenity
     zim
 """

@@ -6,8 +6,7 @@ packages = """
     alsa-utils
     bluetooth
     br2684ctl
-    colord
-    colord-data
+    # colord broken as of 2018-08-12
     crda
     dmidecode
     eject
