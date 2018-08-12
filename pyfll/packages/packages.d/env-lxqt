@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-    iwd   # replacement for wpasupplicant, alternative in connman 
+    iwd   # replacement for wpasupplicant, alternative in connman
     sddm
     lxqt
     lxqt-xfwm-helper
@@ -32,13 +32,13 @@ packages = """
     ## gtk2
     hardinfo
     hexchat
-    inkscape 
-    gimp 
+    inkscape
+    gimp
 
     # gtk3
     plank
-    # libreoffice broken as of 2018-08-12
-    # libreoffice-gtk3 broken as of 2018-08-12
+    libreoffice
+    libreoffice-gtk3
 
     ## Qt 5
     2048-qt
@@ -50,10 +50,10 @@ packages = """
     vokoscreen
 
     # i want my gtk styles
-    qt5-style-plugins 
+    qt5-style-plugins
     papirus-icon-theme
 
     # packages that we don't want
-    java-common- 
+    java-common-
     firebird3.0-common-
 """

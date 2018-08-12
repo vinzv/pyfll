@@ -6,8 +6,6 @@ desc = """
 packages = """
     # package management
     apt-file
-#    apt-listchanges   - no need for - 99% of all users will misinterpret the results - slow apt down
-#    apt-show-versions - will be rewritten, significant slows down apt right now
     aptitude
 
     # daemons
@@ -44,7 +42,7 @@ packages = """
     tmux
 
     # debugging
-    strace 
+    strace
 
     # forensic and securety
     cmospwd
@@ -53,7 +51,7 @@ packages = """
     pwgen
     rkhunter
     spectre-meltdown-checker
-    
+
     # packer
     p7zip-full
     unp
@@ -86,5 +84,5 @@ packages = """
 
     # removals
     rsyslog- # not of any usage with systemd
-    
+
 """
