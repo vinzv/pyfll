@@ -3,7 +3,8 @@ desc = """
 """
 
 packages = """
-gnome
+  task-desktop 
+  gnome-core
 #      sddm-
 #      gdm3-
 #  gnome-core
