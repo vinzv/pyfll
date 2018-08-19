@@ -8,7 +8,7 @@ packages = """
 
     adwaita-qt
     avahi-autoipd
-    digikam                       # ca 130 M
+#    digikam                       # ca 130 M broken 2018-08-19
     firefox                       # ca  50 M
         firefox-l10n-de           # ca 500 K
         firefox-l10n-en-gb        # ca 500 K
@@ -21,7 +21,7 @@ packages = """
     kde-config-gtk-style-preview  # ca  10 K 
     kde-config-systemd            # ca 200 K
     kdeadmin                      # ca   2 M
-    kdegraphics                   # ca   2 M
+#    kdegraphics                   # ca   2 M broken 2018-08-19
     kdemultimedia                 # ca   1 M
     kdenetwork                    # ca   9 M
         kde-zeroconf              # ca  13 M
