@@ -6,6 +6,7 @@ packages = """
     iwd   # replacement for wpasupplicant, alternative in connman
     sddm
     lxqt
+    lxqt-archiver
     lxqt-xfwm-helper
 
     phonon4qt5-backend-gstreamer
@@ -49,8 +50,8 @@ packages = """
     xscreensaver
     vokoscreen
 
-    # i want my gtk styles
-    qt5-style-plugins
+    # i don't want gtk-styles anymore i guess
+    # qt5-style-plugins
     papirus-icon-theme
 
     # packages that we don't want

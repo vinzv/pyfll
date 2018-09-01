@@ -9,7 +9,7 @@ packages = """
     fonts-noto-mono
     fonts-noto-cjk
 
-    fonts-hack-ttf 
+    fonts-hack
     fonts-liberation
     fonts-dejavu-core
     fonts-dejavu-extra

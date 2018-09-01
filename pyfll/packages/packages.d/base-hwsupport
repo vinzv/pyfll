@@ -6,7 +6,7 @@ packages = """
     alsa-utils
     bluetooth
     br2684ctl
-    # colord broken as of 2018-08-12
+    colord
     crda
     dmidecode
     eject
@@ -21,7 +21,6 @@ packages = """
     lsscsi
     memtest86+
     mobile-broadband-provider-info 
-#    modemmanager 
     pcmciautils
     pciutils
     powermgmt-base

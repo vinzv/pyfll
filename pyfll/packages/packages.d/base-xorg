@@ -6,47 +6,20 @@ desc = """
 packages = """
     calamares-branding-siduction
 
-    # predepends
     fontconfig
     fontconfig-config
-    #
-    # libegl1-mesa-drivers # package doesn't exist as of 22-10-2017 musca
-    # libgl1-mesa-dri xorg dependency
-    # libgles2-mesa mesa-utils-extra dependency
     libinput-tools
-    # libtxc-dxtn-s2tc0  virtual package
-    # libwayland-egl1-mesa dependency of many packages
     libx11-protocol-perl
-    # libxcb-composite0 - plasma and kwin dependency
-    # libxcb-damage0 plasma and kwin dependency
-    # libxcb-image0 only dependencies
-    # libxcb-keysyms1 only dependencies
-    # libxcb-randr0 only dependencies
-    # libxcb-xtest0 only dependencies
-    # libxcb-xv0 only dependencies
     menu
     mesa-utils
     mesa-utils-extra
     spice-vdagent
     va-driver-all
-    # x11-apps xorg dependency
-    # x11-utils xorg dependency
-    # x11-session-utils xorg dependency
     x11-xfs-utils
-    # x11-xserver-utils xorg dependency
-    # xauth xorg dependency
     xautomation
     xbindkeys
     xbindkeys-config
-    # xinit xorg dependency
     xinput
-    # xfonts-100dpi xorg dependency
-    # xfonts-base xorg dependency
-    # xfonts-scalable xorg dependency
-    # xfonts-utils xorg dependency
-    # xserver-xorg xorg dependency
-    # xserver-xorg-core *-video *-input dependency
-
     xorg
 
     # input drivers in order of precedence, see http://who-t.blogspot.de/2016/08/new-xserver-driver-sort-order.html
@@ -63,12 +36,11 @@ packages = """
     # Depends:
       xserver-xorg-video-amdgpu
       xserver-xorg-video-ati
-        # depends: xserver-xorg-video-radeon
       xserver-xorg-video-fbdev
       xserver-xorg-video-nouveau
       xserver-xorg-video-vesa # predepends
-    # broken 2018-05-26  xserver-xorg-video-vmware
+      xserver-xorg-video-vmware
     # Recommends:
       xserver-xorg-video-intel # example config: /usr/share/doc/xserver-xorg-video-intel/xorg.conf
-    # broken 2018-05-26  xserver-xorg-video-qxl
+      xserver-xorg-video-qxl
 """
