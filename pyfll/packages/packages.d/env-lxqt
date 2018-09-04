@@ -1,4 +1,4 @@
-desc = """
+esc = """
     Siduction LXQt desktop environment.
 """
 
@@ -12,20 +12,22 @@ packages = """
     phonon4qt5-backend-gstreamer
     xfwm4-theme-breeze
 
-    firefox-l10n-de
-    firefox-l10n-en-gb
-    firefox-l10n-it
-    firefox-l10n-pl
-    firefox-l10n-pt-br
-    firefox-l10n-ro
+    firefox
+        firefox-l10n-de
+        firefox-l10n-en-gb
+        firefox-l10n-it
+        firefox-l10n-pl
+        firefox-l10n-pt-br
+        firefox-l10n-ro
 
-    lightning
-    thunderbird-l10n-de
-    thunderbird-l10n-en-gb
-    thunderbird-l10n-it
-    thunderbird-l10n-pl
-    thunderbird-l10n-pt-br
-    thunderbird-l10n-ro
+    thunderbird
+       lightning
+       thunderbird-l10n-de
+       thunderbird-l10n-en-gb
+       thunderbird-l10n-it
+       thunderbird-l10n-pl
+       thunderbird-l10n-pt-br
+       thunderbird-l10n-ro
 
     system-config-printer
     xfburn
