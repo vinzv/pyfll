@@ -4,6 +4,7 @@ desc = """
 
 packages = """
     audacious
+    blueman
     evince
     faenza-icon-theme
     firefox

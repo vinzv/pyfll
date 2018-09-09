@@ -39,6 +39,7 @@ packages = """
     gimp
 
     # gtk3
+    blueman
     plank
     libreoffice
     libreoffice-gtk3
