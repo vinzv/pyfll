@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    blueman
     configure-cups
     fluxbox
     fbpanel
