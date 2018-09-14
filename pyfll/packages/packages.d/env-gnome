@@ -5,36 +5,35 @@ desc = """
 packages = """
   task-desktop 
   gnome-core
-#      sddm-
-#      gdm3-
-#  gnome-core
-#      unattended-upgrades-
-#  gimp
-#  inkscape
-#  libreoffice
-#      libreoffice-gtk3
-#      libreoffice-gnome
-#      libreoffice-evolution
+      sddm
+      gdm3-
+      unattended-upgrades-
+  gimp
+  inkscape
+  libreoffice
+      libreoffice-gtk3
+      libreoffice-gnome
+      libreoffice-evolution
 
-#  # siduction packages
-#    alacarte
-#    aisleriot
-#    empathy
-#    gconf-editor
-#    geary
-#    gnome-photos
-#    guake
-#    hexchat
+  # siduction packages
+    alacarte
+    aisleriot
+    empathy
+    gconf-editor
+    geary
+    gnome-photos
+    guake
+    hexchat
 
-#    nautilus-admin
-#    nautilus-compare
-#    # nautilus-dropbox
-#    nautilus-filename-repairer
-#    nautilus-gtkhash
-#    nautilus-hide
-#    # nautilus-owncloud
-#    pavucontrol
-#    gucharmap
+    nautilus-admin
+    nautilus-compare
+    # nautilus-dropbox
+    nautilus-filename-repairer
+    nautilus-gtkhash
+    nautilus-hide
+    # nautilus-owncloud
+    pavucontrol
+    gucharmap
 #    # gnome-boxes könnte cool sein
 #    gnome-exe-thumbnailer
 #    gnome-pie
@@ -46,21 +45,21 @@ packages = """
 #    gnome-shell-extension-dash-to-panel
 #    gnome-todo
 #
-#    firefox
-#        firefox-l10n-de
-#        firefox-l10n-en-gb
-#        firefox-l10n-it
-#        firefox-l10n-pl
-#        firefox-l10n-pt-br
-#        firefox-l10n-ro
-#    thunderbird
-#        thunderbird-l10n-de
-#        thunderbird-l10n-en-gb
-#        thunderbird-l10n-it
-#        thunderbird-l10n-pl
-#        thunderbird-l10n-pt-br
-#        thunderbird-l10n-ro
-#
+    firefox
+        firefox-l10n-de
+        firefox-l10n-en-gb
+        firefox-l10n-it
+        firefox-l10n-pl
+        firefox-l10n-pt-br
+        firefox-l10n-ro
+    thunderbird
+        thunderbird-l10n-de
+        thunderbird-l10n-en-gb
+        thunderbird-l10n-it
+        thunderbird-l10n-pl
+        thunderbird-l10n-pt-br
+        thunderbird-l10n-ro
+
 #    # libreoffice-help-en-us
 #    # mythes-en-us
 #    # hunspell-en-us
