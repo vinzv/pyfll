@@ -3,37 +3,36 @@ desc = """
 """
 
 packages = """
-  task-desktop 
-  gnome-core
+  task-gnome-desktop
       sddm
       gdm3-
       unattended-upgrades-
-  gimp
-  inkscape
-  libreoffice
-      libreoffice-gtk3
-      libreoffice-gnome
-      libreoffice-evolution
+#  gimp
+#  inkscape
+#  libreoffice
+#      libreoffice-gtk3
+#      libreoffice-gnome
+#      libreoffice-evolution
 
   # siduction packages
-    alacarte
-    aisleriot
-    empathy
-    gconf-editor
-    geary
-    gnome-photos
-    guake
-    hexchat
+#    alacarte
+#    aisleriot
+#    empathy
+#    gconf-editor
+#    geary
+#    gnome-photos
+#    guake
+#    hexchat
 
-    nautilus-admin
-    nautilus-compare
+#    nautilus-admin
+#    nautilus-compare
     # nautilus-dropbox
-    nautilus-filename-repairer
-    nautilus-gtkhash
-    nautilus-hide
+#    nautilus-filename-repairer
+#    nautilus-gtkhash
+#    nautilus-hide
     # nautilus-owncloud
-    pavucontrol
-    gucharmap
+#    pavucontrol
+#    gucharmap
 #    # gnome-boxes könnte cool sein
 #    gnome-exe-thumbnailer
 #    gnome-pie
@@ -52,17 +51,4 @@ packages = """
         firefox-l10n-pl
         firefox-l10n-pt-br
         firefox-l10n-ro
-    thunderbird
-        thunderbird-l10n-de
-        thunderbird-l10n-en-gb
-        thunderbird-l10n-it
-        thunderbird-l10n-pl
-        thunderbird-l10n-pt-br
-        thunderbird-l10n-ro
-
-#    # libreoffice-help-en-us
-#    # mythes-en-us
-#    # hunspell-en-us
-#    # hyphen-en-us
-#
 """
