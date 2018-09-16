@@ -73,7 +73,7 @@ packages = """
   nautilus-gtkhash
   nautilus-hide
   # nautilus-image-converter
-  nautilus-image-manipulator
+  # nautilus-image-manipulator - python-imaging broken
   # nautilus-owncloud
   # nautilus-scripts-manager
   nautilus-sendto
