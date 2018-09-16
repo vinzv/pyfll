@@ -15,20 +15,20 @@ packages = """
   gnome-audio
   gnome-boxes
   # gnome-builder a bit heavy
-  gnome-calender
+  gnome-calendar
   gnome-clocks
   # gnome-color-chooser - ancient
   gnome-color-manager
   gnome-documents
   gnome-flashback
-  gnome-exe-thumnailer
+  gnome-exe-thumbnailer
   gnome-maps
   gnome-music
   gnome-nettool
   gnome-packagekit
   gnome-photos
   gnome-power-manager
-  gnome-receipes
+  gnome-recipes
   gnome-screensaver
   gnome-software-plugin-flatpak
   gnome-system-monitor
@@ -51,7 +51,7 @@ packages = """
   gnome-shell-extension-top-icons-plus
   gnome-shell-extension-trash
   gnome-shell-extension-weather
-  gnome-shell-extenison-workspaces-to-dock
+  gnome-shell-extension-workspaces-to-dock
   gnome-shell-mailnag
   gnome-shell-timer
 
