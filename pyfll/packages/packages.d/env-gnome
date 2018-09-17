@@ -31,8 +31,12 @@ packages = """
   gnome-recipes
   gnome-screensaver
   gnome-software-plugin-flatpak
+  gnome-sound-recorder 
+  gnome-specimen 
+  gnome-system-log
   gnome-system-monitor
   gnome-tweak-tool
+  gnome-tweaks
   gnome-usage
   gnome-xcf-thumbnailer
   guake
@@ -41,10 +45,12 @@ packages = """
 
   # shell extensions  
   gnome-shell-extension-appindicator
+  gnome-shell-extension-better-volume 
   gnome-shell-extension-dash-to-panel
   gnome-shell-extension-dashtodock
   gnome-shell-extension-impatience
   gnome-shell-extension-log-out-button
+  gnome-shell-extension-multi-monitors  
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
   gnome-shell-extension-suspend-button
@@ -53,12 +59,10 @@ packages = """
   gnome-shell-extension-weather
   gnome-shell-mailnag
   gnome-shell-timer
-
   # Spiele 
   gnome-games
     gnome-2048
     gnome-chess
-#    aisleriot
 
 
   # some nautilus enhanchements
