@@ -33,7 +33,7 @@ packages = """
   gnome-software-plugin-flatpak
   gnome-sound-recorder 
   # gnome-specimen - outdated - stable only 
-  gnome-system-log
+  # gnome-system-log - fucking outdated
   gnome-system-monitor
   gnome-tweak-tool
   gnome-tweaks
