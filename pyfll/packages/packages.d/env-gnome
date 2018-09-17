@@ -50,7 +50,7 @@ packages = """
   gnome-shell-extension-dashtodock
   gnome-shell-extension-impatience
   gnome-shell-extension-log-out-button
-  gnome-shell-extension-multi-monitors  
+  # gnome-shell-extension-multi-monitors - wild guess  
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
   gnome-shell-extension-suspend-button
