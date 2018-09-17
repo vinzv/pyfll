@@ -45,7 +45,7 @@ packages = """
 
   # shell extensions  
   gnome-shell-extension-appindicator
-  gnome-shell-extension-better-volume 
+  # gnome-shell-extension-better-volume - nur stable 
   gnome-shell-extension-dash-to-panel
   gnome-shell-extension-dashtodock
   gnome-shell-extension-impatience
