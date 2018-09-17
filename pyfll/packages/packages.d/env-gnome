@@ -32,7 +32,7 @@ packages = """
   gnome-screensaver
   gnome-software-plugin-flatpak
   gnome-sound-recorder 
-  gnome-specimen 
+  # gnome-specimen - outdated - stable only 
   gnome-system-log
   gnome-system-monitor
   gnome-tweak-tool
@@ -45,7 +45,7 @@ packages = """
 
   # shell extensions  
   gnome-shell-extension-appindicator
-  # gnome-shell-extension-better-volume - nur stable 
+  # gnome-shell-extension-better-volume - outdated - stable only
   gnome-shell-extension-dash-to-panel
   gnome-shell-extension-dashtodock
   gnome-shell-extension-impatience
