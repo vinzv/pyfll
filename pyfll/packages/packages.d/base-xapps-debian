@@ -14,7 +14,7 @@ packages = """
     gvfs-fuse
     gvfs-bin
     gvfs-backends
-    ghostscript-x
+# broken 2018-10-21    ghostscript-x
     libsane-extras
     sane          
     sane-utils
