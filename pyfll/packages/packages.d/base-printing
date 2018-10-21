@@ -3,12 +3,12 @@ desc = """
 """
 
 packages = """
-    cups 
+# broken 2018-10-21    cups 
     foomatic-db
     hpijs-ppds
     openprinting-ppds
-    printer-driver-cups-pdf
-    printer-driver-gutenprint
+#broken 2018-10-21    printer-driver-cups-pdf
+# broken 2018-10-21    printer-driver-gutenprint
 """
 
 i386 = """

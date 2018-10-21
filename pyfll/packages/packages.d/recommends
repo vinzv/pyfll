@@ -5,7 +5,7 @@ desc = """
 
 packages = """
     # common whitelist
-    cups
+# broken 2018-10-21    cups
     fll-live-initscripts
     gnome-keyring
     initscripts

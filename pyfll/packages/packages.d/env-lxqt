@@ -36,7 +36,7 @@ packages = """
     hardinfo
     hexchat
     inkscape
-    gimp
+# broken 2018-10-21    gimp
 
     # gtk3
     blueman
