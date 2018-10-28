@@ -7,7 +7,7 @@ packages = """
     qemu-guest-agent
     qemu-system-x86
 
-    virtualbox-guest-utils
+# broken 2018-10-28    virtualbox-guest-utils
     virtualbox-guest-x11
 
     # needed for live-builds
