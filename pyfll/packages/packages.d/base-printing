@@ -7,7 +7,7 @@ packages = """
     foomatic-db
     hpijs-ppds
     openprinting-ppds
-#broken 2018-10-21    printer-driver-cups-pdf
+# broken 2018-10-21    printer-driver-cups-pdf
 # broken 2018-10-21    printer-driver-gutenprint
 """
 

@@ -14,7 +14,7 @@ packages = """
         firefox-l10n-ro
     gimp                             # wird eh durch irgendwelchen Abhängigkeiten gezogen
     gnome-disk-utility               # ok, doppelbesetzung mit gparted
-    # gnome-orca still broken 2018-09-01
+# broken 2018-09-01 gnome-orca
     hexchat
     inkscape
     libreoffice
