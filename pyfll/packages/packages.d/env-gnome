@@ -17,7 +17,7 @@ packages = """
   # gnome-builder a bit heavy
   gnome-calendar
   gnome-clocks
-  # gnome-color-chooser - ancient
+# deprecated 2018-10-28 (ancient) AG			- gnome-color-chooser
   gnome-color-manager
   gnome-documents
   gnome-flashback
@@ -32,8 +32,8 @@ packages = """
   gnome-screensaver
   gnome-software-plugin-flatpak
   gnome-sound-recorder 
-  # gnome-specimen - outdated - stable only 
-  # gnome-system-log - fucking outdated
+# deprecated 2018-10-28 (outdated - stable only) AG	- gnome-specimen 
+# deprecated 2018-10-28 (outdated ) AG			- gnome-system-log
   gnome-system-monitor
   gnome-tweak-tool
   gnome-tweaks
@@ -45,12 +45,12 @@ packages = """
 
   # shell extensions  
   gnome-shell-extension-appindicator
-  # gnome-shell-extension-better-volume - outdated - stable only
+# deprecated 2018-10-28 (outdated - stable only) AG	- gnome-shell-extension-better-volume
   gnome-shell-extension-dash-to-panel
   gnome-shell-extension-dashtodock
   gnome-shell-extension-impatience
   gnome-shell-extension-log-out-button
-  # gnome-shell-extension-multi-monitors - wild guess  
+# deprecated 2018-10-28 (outdated) AG			- gnome-shell-extension-multi-monitors  
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
   gnome-shell-extension-suspend-button
@@ -76,7 +76,7 @@ packages = """
   nautilus-gtkhash
   nautilus-hide
   # nautilus-image-converter
-  # nautilus-image-manipulator - python-imaging broken
+  # nautilus-image-manipulator
   # nautilus-owncloud
   # nautilus-scripts-manager
   nautilus-sendto

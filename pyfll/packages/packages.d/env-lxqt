@@ -36,7 +36,7 @@ packages = """
     hardinfo
     hexchat
     inkscape
-# broken 2018-10-21    gimp
+    gimp
 
     # gtk3
     blueman
@@ -53,8 +53,6 @@ packages = """
     xscreensaver
     vokoscreen
 
-    # i don't want gtk-styles anymore i guess
-    # qt5-style-plugins
     papirus-icon-theme
 
     # packages that we don't want

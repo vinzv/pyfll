@@ -7,11 +7,11 @@ packages = """
     qemu-guest-agent
     qemu-system-x86
 
-# broken 2018-10-28    virtualbox-guest-utils
-# broken 2018-10-28    virtualbox-guest-x11
-
     # needed for live-builds
     libelf-dev
     ovmf
     open-vm-tools-desktop
+
+# deprecated 2018-10-28 (now a kernel module)   virtualbox-guest-utils
+# deprecated 2018-10-28 (now a kernel module)   virtualbox-guest-x11
 """

@@ -8,7 +8,7 @@ packages = """
 
     adwaita-qt
     avahi-autoipd
-    digikam                       # ca 130 M broken 2018-08-19
+    digikam                       # ca 130 M
     firefox                       # ca  50 M
         firefox-l10n-de           # ca 500 K
         firefox-l10n-en-gb        # ca 500 K
@@ -40,7 +40,7 @@ packages = """
     # Standard applications
     # warum eigentlich?    apper                         # cm   1 M
     converseen                    # ca 200 K
-# broken2018-08-06 gnome-orca                            # ca   3 M
+    gnome-orca                            # ca   3 M
     gimp                          # already installed with kde-standard
     inkscape                      # ca  20 M
     k3b-i18n                      # ca  11 M

@@ -3,7 +3,6 @@ desc = """
 """
 
 packages = """
-
     brasero
     firefox
         firefox-l10n-de
@@ -14,7 +13,7 @@ packages = """
         firefox-l10n-ro
     gimp                             # wird eh durch irgendwelchen Abhängigkeiten gezogen
     gnome-disk-utility               # ok, doppelbesetzung mit gparted
-# broken 2018-09-01 gnome-orca
+    gnome-orca
     hexchat
     inkscape
     libreoffice
