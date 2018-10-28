@@ -4,7 +4,6 @@ desc = """
 
 packages = """
     build-essential
-# broken 2018-10-28    virtualbox-guest-dkms
 """
 
 i386 = """

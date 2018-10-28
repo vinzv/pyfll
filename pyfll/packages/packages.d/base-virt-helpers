@@ -9,7 +9,8 @@ packages = """
 
     virtualbox-guest-utils
     virtualbox-guest-x11
-# needed for live-builds
+
+    # needed for live-builds
     libelf-dev
     ovmf
     open-vm-tools-desktop
