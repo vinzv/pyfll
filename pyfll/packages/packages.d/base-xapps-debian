@@ -15,7 +15,6 @@ packages = """
     gvfs-bin
     gvfs-backends
     ghostscript-x
-    libsane-extras
     sane          
     sane-utils
     scrot
