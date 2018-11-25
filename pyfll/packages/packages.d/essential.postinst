@@ -91,7 +91,7 @@ EOF
         echo session  optional  pam_xauth.so >> /etc/pam.d/su
 
         say 'Set old su behaviour'
-        echo ALWAYS_SET_PATH yes > /etc/login.defs
+        echo ALWAYS_SET_PATH yes > /etc/default/su
 }
 
 do_journaling() {
