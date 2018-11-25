@@ -89,6 +89,9 @@ EOF
         say 'Invoke pam-xauth'
         echo session  optional  pam_xauth.so >> /etc/pam.d/sudo
         echo session  optional  pam_xauth.so >> /etc/pam.d/su
+
+        say 'Set old su behaviour'
+        echo ALWAYS_SET_PATH yes > /etc/login.defs
 }
 
 do_journaling() {
