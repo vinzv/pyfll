@@ -31,7 +31,7 @@ packages = """
     system-config-printer
     thunar-gtkhash
     thunderbird
-        lightning
+# broken 2018-11-25        lightning
         thunderbird-l10n-de
         thunderbird-l10n-en-gb
         thunderbird-l10n-it
