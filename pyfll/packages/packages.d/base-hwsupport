@@ -28,7 +28,7 @@ packages = """
     sdparm
     smartmontools
     udev
-    udisks2
+    # udisks2 broken 2018-12-29 udevadm
     upower
     usb-modeswitch
 """
