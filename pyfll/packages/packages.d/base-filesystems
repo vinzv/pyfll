@@ -15,6 +15,7 @@ packages = """
     xfsprogs
 
     # udisks2 support 
+    udisks2
     # udisks2-btrfs broken because of udisks2
     # udisks2-lvm2 broken because of udisks2
 
