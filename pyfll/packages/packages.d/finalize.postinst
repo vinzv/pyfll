@@ -32,7 +32,7 @@ do_postinst() {
         # pyfll to much
         say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
         apt-get install "${CODENAME}-${FLAVOUR}-livesettings" \
-                    "${CODENAME}-${FLAVOUR}-settings" --assume-yes
+                        "${CODENAME}-${FLAVOUR}-settings" --assume-yes
 
         # we install some packages with not recommends because the
         # recommends are really fugly
