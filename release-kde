@@ -7,6 +7,4 @@ flavour=kde
 release=patience
 arch=amd64
 
-options="$options -vvvP"
-
 time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf
