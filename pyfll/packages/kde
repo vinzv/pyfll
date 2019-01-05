@@ -24,7 +24,7 @@ deps = """
 
     base-no-go
 
-#    env-kde
+    env-kde
 """
 
 packages = """
