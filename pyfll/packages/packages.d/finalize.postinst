@@ -33,7 +33,7 @@ do_postinst() {
 #        say "Install live settings: ${CODENAME}-${FLAVOUR}-livesettings"
 #        apt-get install "${CODENAME}-${FLAVOUR}-livesettings" \
 #                        "${CODENAME}-${FLAVOUR}-settings" --assume-yes
-        apt-get install patience-lxqt-livesettings patience-lxqt-settings --assume-yes
+        apt-get install patience-kde-livesettings patience-kde-settings --assume-yes
 
 
         # we install some packages with not recommends because the
