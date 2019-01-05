@@ -25,7 +25,6 @@ deps = """
     base-no-go
 
 #    env-lxqt
-#    env-kde
 """
 
 packages = """
