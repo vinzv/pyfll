@@ -34,10 +34,10 @@ do_postinst() {
 #        apt-get install "${CODENAME}-${FLAVOUR}-livesettings" \
 #                        "${CODENAME}-${FLAVOUR}-settings" --assume-yes
 
-        echo "Second:"
-        apt-get install patience-lxqt-livesettings patience-lxqt-settings --assume-yes
-        echo
-        echo
+#        echo "Second:"
+#        apt-get install patience-lxqt-livesettings patience-lxqt-settings --assume-yes
+#        echo
+#        echo
 
         # we install some packages with not recommends because the
         # recommends are really fugly
