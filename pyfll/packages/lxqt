@@ -24,9 +24,7 @@ deps = """
     base-xorg
     base-xorg-fonts
 
-    base-no-go
-
-#    env-lxqt
+    env-lxqt
 """
 
 packages = """

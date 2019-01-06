@@ -3,7 +3,10 @@ desc = """
 """
 
 packages = """
-    grub-efi-amd64-signed-
-    grub-efi-ia32-signed-
+    grub-efi-amd64-signed- # we have no usecase for
+    grub-efi-ia32-signed-  # we have no usecase for
+
+#    orca-                # breaks all builds
+    speech-dispatcher-   # breaks all builds
 """
 
