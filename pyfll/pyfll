@@ -2324,7 +2324,7 @@ class FLLBuilder(object):
             self.log.info('efi.img found, creating a UEFI ready iso.')
             cmd += ' --efi-boot efi.img -efi-boot-part --efi-boot-image'
 
-        cmd += ' --protective-msdos-label -V %s' % distro_name[:32]
+        cmd += ' --protective-msdos-label -V %s.upper()' % distro_name[:32]
         if os.path.isdir(os.path.join(stage, 'boot')):
             cmd += ' --sort-weight 0 / --sort-weight 1 /boot'
             if os.path.isdir(os.path.join(stage, 'boot/grub')):
