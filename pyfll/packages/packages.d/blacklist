@@ -1,0 +1,9 @@
+desc = """
+    Blacklist some packages
+"""
+
+packages = """
+    grub-efi-amd64-signed-
+    grub-efi-ia32-signed-
+"""
+

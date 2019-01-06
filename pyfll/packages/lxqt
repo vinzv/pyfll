@@ -3,6 +3,8 @@ desc = """
 """
 
 deps = """
+    blacklist
+
     base-cli-debian
     base-cli-distro
 
