@@ -44,7 +44,7 @@ packages = """
        xfce4-goodies
        xfce4-indicator-plugin
        # xfce4-linelight-plugin - dead and gone from sid
-       xfce4-messenger-plugin
+       # xfce4-messenger-plugin - dead and gone from sid
        xfce4-mpc-plugin
        xfce4-power-manager
        # xfce4-quicklauncher-plugin - dead and gone from sid
