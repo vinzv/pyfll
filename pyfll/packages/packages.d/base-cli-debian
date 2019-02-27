@@ -10,8 +10,8 @@ packages = """
     # daemons
     haveged
     preload
-    ssmtp                 # some mtp - suck less than exim
-
+    # broken post-inst    ssmtp                 # some mtp - suck less than exim
+    esmtp
     bash-completion
     command-not-found
     dbus-user-session     # überdenken
