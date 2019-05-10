@@ -4,9 +4,8 @@ desc = """
 
 packages = """
   task-gnome-desktop
-      sddm
-      gdm3-
-      unattended-upgrades-
+  gdm3
+  # unattended-upgrades-
 
   # siduction packages
   brasero
