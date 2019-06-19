@@ -10,12 +10,12 @@ packages = """
     avahi-autoipd
     digikam                       # ca 130 M
     firefox                       # ca  50 M
-        firefox-l10n-de           # ca 500 K
-        firefox-l10n-en-gb        # ca 500 K
-        firefox-l10n-it           # ca 500 K
-        firefox-l10n-pl           # ca 500 K
-        firefox-l10n-pt-br        # ca 500 K
-        firefox-l10n-ro           # ca 500 K
+#        firefox-l10n-de           # ca 500 K
+#        firefox-l10n-en-gb        # ca 500 K
+#        firefox-l10n-it           # ca 500 K
+#        firefox-l10n-pl           # ca 500 K
+#        firefox-l10n-pt-br        # ca 500 K
+#        firefox-l10n-ro           # ca 500 K
 
     kde-config-gtk-style-preview  # ca  10 K 
     kde-config-systemd            # ca 200 K
