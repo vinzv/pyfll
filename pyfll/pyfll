@@ -436,7 +436,7 @@ class FLLBuilder(object):
             name += '-%s' % self.conf['packages']['profile']
 
         name += '-' + '-'.join(self.conf['archs'].keys())
-        name += '-latest'
+        name += '-%s' % self.timestamp
 
         self.log.debug('NameTimestamped: %s' % name)
         return name
