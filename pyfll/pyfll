@@ -12,6 +12,7 @@ import apt_pkg
 import apt
 import atexit
 import datetime
+import errno
 import fileinput
 import glob
 import logging
