@@ -2417,6 +2417,13 @@ class FLLBuilder(object):
         self._execCmd(cmd.split())
 
         os.chown(iso_file_timestamped, self.opts.u, self.opts.g)
+        try:
+            os.symlink(iso_file_timestamped, iso_file_latest)
+        except OSError, e:
+            if e.errno == errno.EEXIST:
+                os.remove(iso_file_latest)
+                os.symlink(iso_file_timestamped, iso_file_latest)
+        os.chown(iso_file_latest, self.opts.u, self.opts.g)
 
         self.log.info('calculating md5sum of live media iso image...')
         md5 = None
