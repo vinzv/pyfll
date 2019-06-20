@@ -2282,7 +2282,7 @@ class FLLBuilder(object):
                 if manifest:
                     manifest.close()
                     os.chown(manifest_file_timestamped, self.opts.u, self.opts.g)
-                    try
+                    try:
                         os.symlink(manifest_file_timestamped, manifest_file_latest)
                     except OSError, e:
                         if e.errno == errno.EEXIST:
@@ -2315,7 +2315,7 @@ class FLLBuilder(object):
             if sources:
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
-                try
+                try:
                     os.symlink(sources_file_timestamped, source_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
@@ -2351,7 +2351,7 @@ class FLLBuilder(object):
             if sources:
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
-                try
+                try:
                     os.symlink(sources_file_timestamped, source_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
