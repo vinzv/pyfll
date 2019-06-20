@@ -2317,12 +2317,12 @@ class FLLBuilder(object):
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
                 try:
-                    os.symlink(sources_file_timestamped, source_file_latest)
+                    os.symlink(sources_file_timestamped, sources_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
-                        os.remove(source_file_latest)
-                        os.symlink(sources_file_timestamped, source_file_latest)
-                os.chown(source_file_latest, self.opts.u, self.opts.g)
+                        os.remove(sources_file_latest)
+                        os.symlink(sources_file_timestamped, sources_file_latest)
+                os.chown(sources_file_latest, self.opts.u, self.opts.g)
 
         cached = dict()
         for r in self.conf['repos']:
@@ -2353,12 +2353,12 @@ class FLLBuilder(object):
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
                 try:
-                    os.symlink(sources_file_timestamped, source_file_latest)
+                    os.symlink(sources_file_timestamped, sources_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
-                        os.remove(source_file_latest)
-                        os.symlink(sources_file_timestamped, source_file_latest)
-                os.chown(source_file_latest, self.opts.u, self.opts.g)
+                        os.remove(sources_file_latest)
+                        os.symlink(sources_file_timestamped, sources_file_latest)
+                os.chown(sources_file_latest, self.opts.u, self.opts.g)
 
     def genLiveMedia(self):
         '''Generate live media iso image.'''
