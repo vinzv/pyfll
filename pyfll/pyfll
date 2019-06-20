@@ -2336,7 +2336,7 @@ class FLLBuilder(object):
         finally:
             if sources:
                 sources.close()
-                os.chown(sources_file, self.opts.u, self.opts.g)f
+                os.chown(sources_file, self.opts.u, self.opts.g)
 
 
     def genLiveMedia(self):
