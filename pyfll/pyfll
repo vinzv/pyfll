@@ -2262,10 +2262,9 @@ class FLLBuilder(object):
 
     def _writeManifests(self, fileTimestamped, fileLatest):
         '''Write package manifest lists.'''
-        # We create only single arch - so going for arches is obsolete
-        #archs = self.conf['archs'].keys()
-        #for arch in archs:
-        # manifest_name = '%s.%s.manifest' % (file, arch)
+        # We create only single arch - so going for arches is obsolete in
+        # some ways - anyways
+        archs = self.conf['archs'].keys()
         for arch in archs:
             manifest_name = '%s.manifest' % (fileTimestamped)
             manifest_file = os.path.join(self.opts.o, manifest_name)
