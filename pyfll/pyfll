@@ -407,12 +407,7 @@ class FLLBuilder(object):
         if d.get('FLL_DISTRO_VERSION') == 'snapshot':
             name += '-%s' % self.conf['packages']['profile']
         else:
-            if d.get('FLL_DISTRO_CODENAME_REV'):
-                name += '-%s-%s' % (d['FLL_DISTRO_CODENAME_SAFE'],
-                                    d['FLL_DISTRO_CODENAME_REV_SAFE'])
-            else:
-                name += '-%s' % d['FLL_DISTRO_CODENAME_SAFE']
-
+            name += '-%s' % d['FLL_DISTRO_CODENAME_SAFE']
             name += '-%s' % self.conf['packages']['profile']
 
         name += '-' + '-'.join(self.conf['archs'].keys())
