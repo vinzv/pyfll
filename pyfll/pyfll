@@ -2342,12 +2342,16 @@ class FLLBuilder(object):
 
         iso_name_timestamped = self._getDistroMediaNameTimestamped() + '.iso'
         iso_file_timestamped = os.path.join(self.opts.o, iso_name_timestamped)
+        md5_name_timestamped = iso_name_timestamped + '.md5'
         md5_file_timestamped = iso_file_timestamped + '.md5'
+        sha256_name_timestamped = iso_name_timestamped + '.sha256'
         sha256_file_timestamped = iso_file_timestamped + '.sha256'
 
         iso_name_latest = self._getDistroMediaNameLatest() + '.iso'
         iso_file_latest = os.path.join(self.opts.o, iso_name_latest)
+        md5_name_latest = iso_name_latest + '.md5'
         md5_file_latest = iso_file_latest + '.md5'
+        sha256_name_latest = iso_name_latest + '.sha256'
         sha256_file_latest = iso_file_latest + '.sha256'
 
         cmd = 'xorriso -report_about HINT -as mkisofs -graft-points'
@@ -2439,7 +2443,6 @@ class FLLBuilder(object):
                 self.log.info(' * %s/%s/%s/%s', self.opts.x,
                     self.conf['packages']['profile'], arch, os.path.basename(f))
 
-        # fucking ugly, but who cares - we should link to latest builds
         # if self.opts.x:
         #    self.log.info('-----------------------')
         #    self.log.info('Create symlinks to *-latest-*:')
