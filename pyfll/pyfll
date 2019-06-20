@@ -2471,7 +2471,7 @@ class FLLBuilder(object):
                     if e.errno == errno.EEXIST:
                         os.remove(sha256_file_latest)
                         os.symlink(sha256_file_timestamped, sha256_file_latest)
-                os.chown(sh256_file_latest, self.opts.u, self.opts.g)
+                os.chown(sha256_file_latest, self.opts.u, self.opts.g)
                 # right now we don't sign the hashes - so latest is not
                 # implemented yet
                 if self.opts.k:
