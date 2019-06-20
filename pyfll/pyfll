@@ -2438,6 +2438,15 @@ class FLLBuilder(object):
             if md5:
                 md5.close()
                 os.chown(md5_file_timestamped, self.opts.u, self.opts.g)
+                try:
+                    os.symlink(md5_file_timestamped, md5_file_latest)
+                except OSError, e:
+                    if e.errno == errno.EEXIST:
+                        os.remove(md5_file_latest)
+                        os.symlink(md5_file_timestamped, md5_file_latest)
+                os.chown(md5_file_latest, self.opts.u, self.opts.g)
+                # right now we don't sign the hashes - so latest is not
+                # implemented yet
                 if self.opts.k:
                     self.log.info('signing md5 hash...')
                     self._signFile(md5_file_timestamped)
@@ -2456,6 +2465,15 @@ class FLLBuilder(object):
             if sha256:
                 sha256.close()
                 os.chown(sha256_file_timestamped, self.opts.u, self.opts.g)
+                try:
+                    os.symlink(sha256_file_timestamped, sha256_file_latest)
+                except OSError, e:
+                    if e.errno == errno.EEXIST:
+                        os.remove(sha256_file_latest)
+                        os.symlink(sha256_file_timestamped, sha256_file_latest)
+                os.chown(sh256_file_latest, self.opts.u, self.opts.g)
+                # right now we don't sign the hashes - so latest is not
+                # implemented yet
                 if self.opts.k:
                     self.log.info('signing sha256 hash...')
                     self._signFile(sha256_file_timestamped)
