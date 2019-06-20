@@ -2260,12 +2260,14 @@ class FLLBuilder(object):
                 for p in pkgs]
 
 
-    def _writeManifests(self, file):
+    def _writeManifests(self, fileTimestamped, fileLatest):
         '''Write package manifest lists.'''
-        archs = self.conf['archs'].keys()
+        # We create only single arch - so going for arches is obsolete
+        #archs = self.conf['archs'].keys()
+        #for arch in archs:
+        # manifest_name = '%s.%s.manifest' % (file, arch)
         for arch in archs:
-            manifest_name = '%s.%s.manifest' % (file, arch)
-
+            manifest_name = '%s.manifest' % (fileTimestamped)
             manifest_file = os.path.join(self.opts.o, manifest_name)
 
             manifest = None
@@ -2281,7 +2283,7 @@ class FLLBuilder(object):
                     os.chown(manifest_file, self.opts.u, self.opts.g)
 
 
-    def _writeSources(self, file):
+    def _writeSources(self, fileTimestamped, fileLatest):
         '''Write source URI lists.'''
         sources_list = []
         archs = self.conf['archs'].keys()
@@ -2289,7 +2291,7 @@ class FLLBuilder(object):
             sources_list.extend(self.pkgs[arch]['source'])
         sources_list = self.__filterList(sources_list, dup_warn = False)
 
-        sources_name = file + '.sources'
+        sources_name = fileTimestamped + '.sources'
         sources_file = os.path.join(self.opts.o, sources_name)
 
         sources = None
@@ -2428,9 +2430,9 @@ class FLLBuilder(object):
                     self._signFile(sha256_file_timestamped)
                     os.chown(sha256_file + '.gpg', self.opts.u, self.opts.g)
 
-        self._writeManifests(os.path.splitext(iso_file_timestamped)[0])
+        self._writeManifests(os.path.splitext(iso_file_timestamped)[0], os.path.splitext(iso_file_latest)[0])
         if not self.opts.B:
-            self._writeSources(os.path.splitext(iso_file_timestamped)[0])
+            self._writeSources(os.path.splitext(iso_file_timestamped)[0], os.path.splitext(iso_file_latest)[0])
 
         for f in glob.glob('%s*' % os.path.splitext(iso_file_timestamped)[0]):
             self.log.info(f)
