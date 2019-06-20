@@ -2391,7 +2391,7 @@ class FLLBuilder(object):
         self.log.info('calculating md5sum of live media iso image...')
         md5 = None
         try:
-            md5 = open(md5_file, 'w')
+            md5 = open(md5_file_timestamped, 'w')
             md5.write("%s *%s\n" % (self.__md5sum(iso_file_timestamped),
                                     os.path.basename(iso_file_timestamped)))
         except IOError:
@@ -2400,16 +2400,16 @@ class FLLBuilder(object):
         finally:
             if md5:
                 md5.close()
-                os.chown(md5_file, self.opts.u, self.opts.g)
+                os.chown(md5_file_timestamped, self.opts.u, self.opts.g)
                 if self.opts.k:
                     self.log.info('signing md5 hash...')
-                    self._signFile(md5_file)
+                    self._signFile(md5_file_timestamped)
                     os.chown(md5_file + '.gpg', self.opts.u, self.opts.g)
 
         self.log.info('calculating sha256sum of live media iso image...')
         sha256 = None
         try:
-            sha256 = open(sha256_file, 'w')
+            sha256 = open(sha256_file_timestamped, 'w')
             sha256.write("%s *%s\n" % (self.__sha256sum(iso_file_timestamped),
                                        os.path.basename(iso_file_timestamped)))
         except IOError:
@@ -2418,10 +2418,10 @@ class FLLBuilder(object):
         finally:
             if sha256:
                 sha256.close()
-                os.chown(sha256_file, self.opts.u, self.opts.g)
+                os.chown(sha256_file_timestamped, self.opts.u, self.opts.g)
                 if self.opts.k:
                     self.log.info('signing sha256 hash...')
-                    self._signFile(sha256_file)
+                    self._signFile(sha256_file_timestamped)
                     os.chown(sha256_file + '.gpg', self.opts.u, self.opts.g)
 
         self._writeManifests(os.path.splitext(iso_file_timestamped)[0])
