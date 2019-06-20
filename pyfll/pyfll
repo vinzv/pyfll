@@ -2494,15 +2494,14 @@ class FLLBuilder(object):
                 self.log.info(' * %s/%s/%s/%s', self.opts.x,
                     self.conf['packages']['profile'], arch, os.path.basename(f))
 
-        # if self.opts.x:
-        #    self.log.info('-----------------------')
-        #    self.log.info('Create symlinks to *-latest-*:')
-        #    for f in glob.glob('%s*' % os.path.splitext(iso_file_latest)[0]):
-        #        arch = ''.join(self.conf['archs'].keys())
-        #        # siduction-18.3.0-patience-lxqt-amd64-201906201438.$ext --> siduction-18.3.0-patience-lxqt-amd64-latest.$ext
-        #        link_target =
-        #        self.log.info(' * %s/%s/%s/%s', self.opts.x, self.conf['packages']['profile'], arch,
-        #        self.log.info(' * %s/%s/%s/%s', self.opts.x, self.conf[' packages']['profile'], arch, os.path.basename(f))
+        if self.opts.x:
+            self.log.info('-----------------------')
+            self.log.info('Link to *-latest.* files')
+            for f in glob.glob('%s*' % os.path.splitext(iso_file_latest)[0]):
+                arch = ''.join(self.conf['archs'].keys())
+                # siduction-18.3.0-patience-lxqt-amd64-201906201438.$ext --> siduction-18.3.0-patience-lxqt-amd64-latest.$ext
+                self.log.info(' * %s/%s/%s/%s', self.opts.x,
+                    self.conf[' packages']['profile'], arch, os.path.basename(f))
 
     def buildChroots(self):
         '''Main loop to call all chroot building functions.'''
