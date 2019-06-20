@@ -403,7 +403,7 @@ class FLLBuilder(object):
     def _getDistroMediaNameLatest(self):
         '''Return a string suitable for the distro stamp file.'''
         d = self.conf['distro']
-        name = '-'.join([d['FLL_DISTRO_NAME'], d['FLL_DISTRO_VERSION']])
+        name = '-'.join([d['FLL_DISTRO_NAME']])
         if d.get('FLL_DISTRO_VERSION') == 'snapshot':
             name += '-%s' % self.conf['packages']['profile']
         else:
