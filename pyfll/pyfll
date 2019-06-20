@@ -396,9 +396,49 @@ class FLLBuilder(object):
             name += '-%s' % self.conf['packages']['profile']
 
         name += '-' + '-'.join(self.conf['archs'].keys())
-        name += '-%s' % self.timestamp
+        self.log.debug('Name: %s' % name)
+        return name
 
-        self.log.debug('name: %s' % name)
+    def _getDistroMediaNameLatest(self):
+        '''Return a string suitable for the distro stamp file.'''
+        d = self.conf['distro']
+        name = '-'.join([d['FLL_DISTRO_NAME'], d['FLL_DISTRO_VERSION']])
+        if d.get('FLL_DISTRO_VERSION') == 'snapshot':
+            name += '-%s' % self.conf['packages']['profile']
+        else:
+            if d.get('FLL_DISTRO_CODENAME_REV'):
+                name += '-%s-%s' % (d['FLL_DISTRO_CODENAME_SAFE'],
+                                    d['FLL_DISTRO_CODENAME_REV_SAFE'])
+            else:
+                name += '-%s' % d['FLL_DISTRO_CODENAME_SAFE']
+
+            name += '-%s' % self.conf['packages']['profile']
+
+        name += '-' + '-'.join(self.conf['archs'].keys())
+        name += '-latest'
+
+        self.log.debug('NameLatest: %s' % name)
+        return name
+
+    def _getDistroMediaNameTimestamped(self):
+        '''Return a string suitable for the distro stamp file.'''
+        d = self.conf['distro']
+        name = '-'.join([d['FLL_DISTRO_NAME'], d['FLL_DISTRO_VERSION']])
+        if d.get('FLL_DISTRO_VERSION') == 'snapshot':
+            name += '-%s' % self.conf['packages']['profile']
+        else:
+            if d.get('FLL_DISTRO_CODENAME_REV'):
+                name += '-%s-%s' % (d['FLL_DISTRO_CODENAME_SAFE'],
+                                    d['FLL_DISTRO_CODENAME_REV_SAFE'])
+            else:
+                name += '-%s' % d['FLL_DISTRO_CODENAME_SAFE']
+
+            name += '-%s' % self.conf['packages']['profile']
+
+        name += '-' + '-'.join(self.conf['archs'].keys())
+        name += '-latest'
+
+        self.log.debug('NameTimestamped: %s' % name)
         return name
 
 
@@ -2300,11 +2340,15 @@ class FLLBuilder(object):
 
         distro_name = self.conf['distro']['FLL_DISTRO_NAME']
 
-        iso_name = self._getDistroMediaName() + '.iso'
+        iso_name_timestamped = self._getDistroMediaNameTimestamped() + '.iso'
+        iso_file_timestamped = os.path.join(self.opts.o, iso_name_timestamped)
+        md5_file_timestamped = iso_file_timestamped + '.md5'
+        sha256_file_timestamped = iso_file_timestamped + '.sha256'
 
-        iso_file = os.path.join(self.opts.o, iso_name)
-        md5_file = iso_file + '.md5'
-        sha256_file = iso_file + '.sha256'
+        iso_name_latest = self._getDistroMediaNameLatest() + '.iso'
+        iso_file_latest = os.path.join(self.opts.o, iso_name_latest)
+        md5_file_latest = iso_file_latest + '.md5'
+        sha256_file_latest = iso_file_latest + '.sha256'
 
         cmd = 'xorriso -report_about HINT -as mkisofs -graft-points'
 
@@ -2316,7 +2360,7 @@ class FLLBuilder(object):
 
         if os.path.isdir(os.path.join(stage, 'boot/grub')):
             cmd += ' -no-emul-boot -boot-load-size 4 -boot-info-table'
-            cmd2 = '%s -l %s -i %s' % (os.path.join(self.opts.s, 'gpthybrid'), self.uuid, iso_file)
+            cmd2 = '%s -l %s -i %s' % (os.path.join(self.opts.s, 'gpthybrid'), self.uuid, iso_file_timestamped)
             if os.path.isfile(os.path.join(stage, 'boot/grub/i386-pc/grub_eltorito')):
                 cmd += ' -b boot/grub/i386-pc/grub_eltorito --grub2-boot-info --grub2-mbr %s' % os.path.join(stage, 'boot/grub/i386-pc/boot_hybrid.img')
             else:
@@ -2335,21 +2379,21 @@ class FLLBuilder(object):
             cmd += ' -isohybrid-gpt-basdat'
             cmd += ' -x iso_uuid '
             cmd += '-x genisoimage.sort'
-            cmd += ' -o %s %s' % (iso_file, stage)
+            cmd += ' -o %s %s' % (iso_file_timestamped, stage)
 
 
         self.log.info('generating iso image of live media...')
         self.log.info('used cmd: %s' % cmd)
         self._execCmd(cmd.split())
 
-        os.chown(iso_file, self.opts.u, self.opts.g)
+        os.chown(iso_file_timestamped, self.opts.u, self.opts.g)
 
         self.log.info('calculating md5sum of live media iso image...')
         md5 = None
         try:
             md5 = open(md5_file, 'w')
-            md5.write("%s *%s\n" % (self.__md5sum(iso_file),
-                                    os.path.basename(iso_file)))
+            md5.write("%s *%s\n" % (self.__md5sum(iso_file_timestamped),
+                                    os.path.basename(iso_file_timestamped)))
         except IOError:
             self.log.exception('failed to write md5sums file')
             raise FllError
@@ -2366,8 +2410,8 @@ class FLLBuilder(object):
         sha256 = None
         try:
             sha256 = open(sha256_file, 'w')
-            sha256.write("%s *%s\n" % (self.__sha256sum(iso_file),
-                                       os.path.basename(iso_file)))
+            sha256.write("%s *%s\n" % (self.__sha256sum(iso_file_timestamped),
+                                       os.path.basename(iso_file_timestamped)))
         except IOError:
             self.log.exception('failed to write sha256sums file')
             raise FllError
@@ -2380,20 +2424,31 @@ class FLLBuilder(object):
                     self._signFile(sha256_file)
                     os.chown(sha256_file + '.gpg', self.opts.u, self.opts.g)
 
-        self._writeManifests(os.path.splitext(iso_file)[0])
+        self._writeManifests(os.path.splitext(iso_file_timestamped)[0])
         if not self.opts.B:
-            self._writeSources(os.path.splitext(iso_file)[0])
+            self._writeSources(os.path.splitext(iso_file_timestamped)[0])
 
-        for f in glob.glob('%s*' % os.path.splitext(iso_file)[0]):
+        for f in glob.glob('%s*' % os.path.splitext(iso_file_timestamped)[0]):
             self.log.info(f)
 
         if self.opts.x:
             self.log.info('-----------------------')
             self.log.info('Links to current build:')
-            for f in glob.glob('%s*' % os.path.splitext(iso_file)[0]):
+            for f in glob.glob('%s*' % os.path.splitext(iso_file_timestamped)[0]):
                 arch = ''.join(self.conf['archs'].keys())
                 self.log.info(' * %s/%s/%s/%s', self.opts.x,
                     self.conf['packages']['profile'], arch, os.path.basename(f))
+
+        # fucking ugly, but who cares - we should link to latest builds
+        # if self.opts.x:
+        #    self.log.info('-----------------------')
+        #    self.log.info('Create symlinks to *-latest-*:')
+        #    for f in glob.glob('%s*' % os.path.splitext(iso_file_latest)[0]):
+        #        arch = ''.join(self.conf['archs'].keys())
+        #        # siduction-18.3.0-patience-lxqt-amd64-201906201438.$ext --> siduction-18.3.0-patience-lxqt-amd64-latest.$ext
+        #        link_target =
+        #        self.log.info(' * %s/%s/%s/%s', self.opts.x, self.conf['packages']['profile'], arch,
+        #        self.log.info(' * %s/%s/%s/%s', self.opts.x, self.conf[' packages']['profile'], arch, os.path.basename(f))
 
     def buildChroots(self):
         '''Main loop to call all chroot building functions.'''
