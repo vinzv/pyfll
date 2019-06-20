@@ -2266,20 +2266,24 @@ class FLLBuilder(object):
         # some ways - anyways
         archs = self.conf['archs'].keys()
         for arch in archs:
-            manifest_name = '%s.manifest' % (fileTimestamped)
-            manifest_file = os.path.join(self.opts.o, manifest_name)
+            manifest_name_timestamped = '%s.manifest' % (fileTimestamped)
+            manifest_file_timestamped = os.path.join(self.opts.o, manifest_name_timestamped)
+            manifest_name_latest = '%s.manifest' % (fileLatest)
+            manifest_file_latest = os.path.join(self.opts.o, manifest_name_latest)
 
             manifest = None
             try:
-                manifest = open(manifest_file, 'w')
+                manifest = open(manifest_file_timestamped, 'w')
                 manifest.writelines(self.__archManifest(arch))
             except IOError:
-                self.log.exception('failed to write file: %s' % manifest_file)
+                self.log.exception('failed to write file: %s' % manifest_file_timestamped)
                 raise FllError
             finally:
                 if manifest:
                     manifest.close()
-                    os.chown(manifest_file, self.opts.u, self.opts.g)
+                    os.chown(manifest_file_timestamped, self.opts.u, self.opts.g)
+                    os.symlink(manifest_file_timestamped, manifest_file_latest)
+                    os.chown(manifest_file_latest, self.opts.u, self.opts.g)
 
 
     def _writeSources(self, fileTimestamped, fileLatest):
@@ -2332,7 +2336,7 @@ class FLLBuilder(object):
         finally:
             if sources:
                 sources.close()
-                os.chown(sources_file, self.opts.u, self.opts.g)
+                os.chown(sources_file, self.opts.u, self.opts.g)f
 
 
     def genLiveMedia(self):
