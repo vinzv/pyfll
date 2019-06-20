@@ -5,11 +5,11 @@ desc = """
 packages = """
     blueman
     configure-cups
-    fluxbox
     fbpanel
+    firefox
+    fluxbox
     gconf2
     gnome-icon-theme
     hexchat
-    firefox
     pavucontrol
 """
