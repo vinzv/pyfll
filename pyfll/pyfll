@@ -2294,12 +2294,14 @@ class FLLBuilder(object):
             sources_list.extend(self.pkgs[arch]['source'])
         sources_list = self.__filterList(sources_list, dup_warn = False)
 
-        sources_name = fileTimestamped + '.sources'
-        sources_file = os.path.join(self.opts.o, sources_name)
+        sources_name_timestamped = fileTimestamped + '.sources'
+        sources_file_timestamped = os.path.join(self.opts.o, sources_name_timestamped)
+        sources_name_latest = fileLatest + '.sources'
+        sources_file_latest = os.path.join(self.opts.o, sources_name_latest)
 
         sources = None
         try:
-            sources = open(sources_file, 'w')
+            sources = open(sources_file_timestamped, 'w')
             sources.writelines(["%s\n" % s for s in sources_list])
         except IOError:
             self.log.exception('failed to write file: %s' % sources_file)
@@ -2307,7 +2309,9 @@ class FLLBuilder(object):
         finally:
             if sources:
                 sources.close()
-                os.chown(sources_file, self.opts.u, self.opts.g)
+                os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
+                os.symlink(sources_file_timestamped, source_file_latest)
+                os.chown(source_file_latest, self.opts.u, self.opts.g)
 
         cached = dict()
         for r in self.conf['repos']:
@@ -2317,13 +2321,13 @@ class FLLBuilder(object):
                 cached[cached_uri.rstrip('/')] = uri.rstrip('/')
 
         if len(cached.keys()) > 0:
-            os.rename(sources_file, sources_file + '-cached')
+            os.rename(sources_file_timestamped, sources_file_timestamped + '-cached')
         else:
             return
 
         sources = None
         try:
-            sources = open(sources_file, 'w')
+            sources = open(sources_file_timestamped, 'w')
             for s in sources_list:
                 for c in cached.keys():
                     if s.startswith(c):
@@ -2331,13 +2335,14 @@ class FLLBuilder(object):
                         break
                 sources.write('%s\n' % s)
         except IOError:
-            self.log.exception('failed to write file: %s' % sources_file)
+            self.log.exception('failed to write file: %s' % sources_file_timestamped)
             raise FllError
         finally:
             if sources:
                 sources.close()
-                os.chown(sources_file, self.opts.u, self.opts.g)
-
+                os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
+                os.symlink(sources_file_timestamped, source_file_latest)
+                os.chown(source_file_latest, self.opts.u, self.opts.g)
 
     def genLiveMedia(self):
         '''Generate live media iso image.'''
