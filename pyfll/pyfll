@@ -2265,7 +2265,7 @@ class FLLBuilder(object):
             manifest_name_timestamped = '%s.manifest' % (fileTimestamped)
             manifest_file_timestamped = os.path.join(self.opts.o, manifest_name_timestamped)
             manifest_name_latest = '%s.manifest' % (fileLatest)
-            manifest_file_latest = os.path.join(self.opts.o, manifest_name_latest)
+            manifest_file_latest = os.path.join(os.path.join(self.opts.o,'..'), manifest_name_latest)
 
             manifest = None
             try:
@@ -2298,7 +2298,7 @@ class FLLBuilder(object):
         sources_name_timestamped = fileTimestamped + '.sources'
         sources_file_timestamped = os.path.join(self.opts.o, sources_name_timestamped)
         sources_name_latest = fileLatest + '.sources'
-        sources_file_latest = os.path.join(self.opts.o, sources_name_latest)
+        sources_file_latest = os.path.join(os.path.join(self.opts.o,'..'), sources_name_latest)
 
         sources = None
         try:
@@ -2369,7 +2369,7 @@ class FLLBuilder(object):
         sha256_file_timestamped = iso_file_timestamped + '.sha256'
 
         iso_name_latest = self._getDistroMediaNameLatest() + '.iso'
-        iso_file_latest = os.path.join(self.opts.o, iso_name_latest)
+        iso_file_latest = os.path.join(os.path.join(self.opts.o,'..'), iso_name_latest)
         md5_name_latest = iso_name_latest + '.md5'
         md5_file_latest = iso_file_latest + '.md5'
         sha256_name_latest = iso_name_latest + '.sha256'
