@@ -2495,8 +2495,8 @@ class FLLBuilder(object):
             for f in glob.glob('%s*' % os.path.splitext(iso_file_latest)[0]):
                 arch = ''.join(self.conf['archs'].keys())
                 # siduction-18.3.0-patience-lxqt-amd64-201906201438.$ext --> siduction-18.3.0-patience-lxqt-amd64-latest.$ext
-                self.log.info(' * %s/%s/%s/%s', self.opts.x,
-                    self.conf['packages']['profile'], arch, os.path.basename(f))
+                self.log.info(' * %s/%s/%s', self.opts.x,
+                    self.conf['packages']['profile'], os.path.basename(f))
 
     def buildChroots(self):
         '''Main loop to call all chroot building functions.'''
