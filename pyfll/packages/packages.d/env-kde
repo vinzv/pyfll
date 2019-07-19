@@ -10,15 +10,15 @@ packages = """
     avahi-autoipd
     digikam                       # ca 130 M
 
-    kde-config-gtk-style-preview  # ca  10 K 
+    kde-config-gtk-style-preview  # ca  10 K
     kde-config-systemd            # ca 200 K
     kdeadmin                      # ca   2 M
-    kdegraphics                   # ca   2 M 
+    kdegraphics                   # ca   2 M
     kdemultimedia                 # ca   1 M
     kdenetwork                    # ca   9 M
         kde-zeroconf              # ca  13 M
     kdepim                        # ca   4 M
-        gnokii                    # ca  11 M       
+        gnokii                    # ca  11 M
     kdetoys                       # ca 106 K
     kdeutils                      # ca   8 M
     dolphin-plugins               # ca 156 K
@@ -39,7 +39,7 @@ packages = """
     kaffeine                      # ca  11 M
 
     libreoffice                   # ca 182 M
-        libreoffice-gtk3
+        libreoffice-kde5
         libreoffice-style-breeze
 
      network-manager-openconnect
@@ -57,6 +57,6 @@ packages = """
 
      # some packages we don't want to be installed
      kdeaccessibility-
-     lirc- 
+     lirc-
      unattended-upgrades-
 """

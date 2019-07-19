@@ -10,8 +10,6 @@ packages = """
     gimp
     hexchat
     inkscape
-    libreoffice
-        libreoffice-gtk2
         # libreoffice-help-en-us
         # mythes-en-us
         # hunspell-en-us
@@ -50,9 +48,11 @@ packages = """
 
     xscreensaver
 
-    # gtk3 
+    # gtk3
+    libreoffice
+        libreoffice-gtk3
     plank
-    gtk3-engines-xfce 
+    gtk3-engines-xfce
 
     # Qt5 Packages
     screengrab
@@ -61,7 +61,7 @@ packages = """
     vokoscreen
 
     # not install some recommends
-    light-locker- 
+    light-locker-
     lightdm-
     lightdm-gtk-greeter-
 """

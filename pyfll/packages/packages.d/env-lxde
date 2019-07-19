@@ -13,7 +13,7 @@ packages = """
     hexchat
     inkscape
     libreoffice
-        libreoffice-gtk2
+        libreoffice-gtk3
         java-common-
         firebird3.0-common-
     lxde
