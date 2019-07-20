@@ -32,13 +32,13 @@ packages = """
 
     # gtk3
     blueman
+    libreoffice
+    libreoffice-gtk3
     plank
 
     ## Qt 5
     2048-qt
     adwaita-qt              # integrate this into settings
-    libreoffice
-    libreoffice-qt5
     nomacs
     qbittorrent
     screengrab
