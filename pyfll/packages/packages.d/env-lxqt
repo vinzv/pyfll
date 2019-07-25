@@ -6,6 +6,8 @@ packages = """
     # iwd   # replacement for wpasupplicant, alternative in connman
     sddm
     lxqt
+    # fulfilling the branding alternative with an empty metapackage
+    lxqt-branding-siduction
     lxqt-archiver
     # lxqt-xfwm-helper
 
