@@ -60,9 +60,9 @@ EOF
 	if [ -w /etc/default/grub ]; then
 		# set linux_cmdline_default
 		if grep -q ^GRUB_CMDLINE_LINUX_DEFAULT\= /etc/default/grub; then
-			sed -i "s/^\(GRUB_CMDLINE_LINUX_DEFAULT=\).*/\1\"waitroot quiet systemd.show_status=1 splash\"/" /etc/default/grub
+			sed -i "s/^\(GRUB_CMDLINE_LINUX_DEFAULT=\).*/\1\"rootwait quiet systemd.show_status=1 splash\"/" /etc/default/grub
 		else
-			sed -i "s/^\#\(GRUB_CMDLINE_LINUX_DEFAULT=\).*/\1\"waitroot quiet systemd.show_status=1 splash\"/" /etc/default/grub
+			sed -i "s/^\#\(GRUB_CMDLINE_LINUX_DEFAULT=\).*/\1\"rootwait quiet systemd.show_status=1 splash\"/" /etc/default/grub
 		fi
 
 		# disable recovery modes for grub2
