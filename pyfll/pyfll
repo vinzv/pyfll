@@ -1297,6 +1297,11 @@ class FLLBuilder(object):
                 hostname = self.conf['distro']['FLL_DISTRO_NAME']
                 f.write('127.0.0.1\tlocalhost\n')
                 f.write('127.0.1.1\t' + hostname +'.local\t' + hostname + '\n\n')
+                # Start: fucking ugly hack because of hostname and hosts
+                # we need the host hosts and hostname until fully build right now
+                # some DNS-Changes should fix it later - i really hate to do this
+                f.write('127.0.0.86\tsidu-manual\n')
+                # End: fucking ugly hack
                 f.write('# Below lines are for IPv6 capable hosts\n')
                 f.write('::1     localhost ip6-localhost ip6-loopback\n')
                 f.write('fe00::0 ip6-localnet\n')
