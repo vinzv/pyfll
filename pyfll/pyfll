@@ -1043,11 +1043,7 @@ class FLLBuilder(object):
         else:
             self.__cdebBootStrap(arch, dir, mirror, codename)
 
-        shutil.copy('/etc/hosts', os.path.join(dir, 'etc'))
-	shutil.copy('/etc/hostname', os.path.join(dir, 'etc'))
-
         os.mkdir(os.path.join(dir, 'disks'), 0755)
-
 
     def _writeAptLists(self, arch, cached = False, src_uri = False):
         '''Write apt source lists to /etc/apt/sources.list.d/*.'''
@@ -1348,6 +1344,8 @@ class FLLBuilder(object):
     def _defaultEtc(self, arch):
         '''Initial creation of conffiles required in chroot.'''
         self._writeFile(arch, '/etc/fstab')
+        self._writeFile(arch, '/etc/hostname')
+        self._writeFile(arch, '/etc/hosts')
         self._writeFile(arch, '/etc/network/interfaces')
         self._writeFile(arch, '/etc/resolv.conf')
         # create or recreate /etc/sudoers.d in chroot
@@ -1384,8 +1382,6 @@ class FLLBuilder(object):
                 f.close()
                 os.chmod(distro_version, 0444)
 
-        self._writeFile(arch, '/etc/hostname')
-        self._writeFile(arch, '/etc/hosts')
         self._writeFile(arch, '/etc/motd.tail')
 
         self.log.debug('writing final apt sources.list(s)')
