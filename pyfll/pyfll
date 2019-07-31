@@ -1289,12 +1289,10 @@ class FLLBuilder(object):
             elif file == '/etc/hostname':
                 hostname = self.conf['distro']['FLL_DISTRO_NAME']
                 f.write( '%s\n' % (hostname))
-                cmd = 'hostname -b ' + hostname
-                self._execInChroot(arch, cmd.split())
             elif file == '/etc/hosts':
                 hostname = self.conf['distro']['FLL_DISTRO_NAME']
                 f.write('127.0.0.1\tlocalhost\n')
-                f.write('127.0.1.1\t' + hostname +'.local\t' + hostname + '\n\n')
+                f.write('127.0.1.1\t' + hostname +'.local\t' + hostname + '/t newdev' + '\n\n')
                 f.write('# Below lines are for IPv6 capable hosts\n')
                 f.write('::1     localhost ip6-localhost ip6-loopback\n')
                 f.write('fe00::0 ip6-localnet\n')
