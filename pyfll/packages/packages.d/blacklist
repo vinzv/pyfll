@@ -3,10 +3,18 @@ desc = """
 """
 
 packages = """
+    firebird3.0-common-
     grub-efi-amd64-signed- # we have no usecase for
     grub-efi-ia32-signed-  # we have no usecase for
-
+    lightdm-
+    lightdm-gtk-greeter-
+    light-locker-
+    lirc-
+    kdeaccessibility-
 #    orca-                # breaks all builds
+    plymouth-
+    plymouth-label-
     speech-dispatcher-   # breaks all builds
+    unattended-upgrades-
 """
 

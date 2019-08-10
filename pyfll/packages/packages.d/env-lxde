@@ -15,7 +15,6 @@ packages = """
     libreoffice
         libreoffice-gtk3
         java-common-
-        firebird3.0-common-
     lxde
         lxlauncher
         lxtask
@@ -48,10 +47,4 @@ packages = """
     smplayer
     smtube
     vokoscreen
-
-    #things we don't want
-    lightdm-
-    lightdm-gtk-greeter-
-    light-locker-
-
 """

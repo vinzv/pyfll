@@ -54,9 +54,4 @@ packages = """
      vokoscreen                   # ca   5 M
      yakuake                      # ca 400 K
 
-
-     # some packages we don't want to be installed
-     kdeaccessibility-
-     lirc-
-     unattended-upgrades-
 """

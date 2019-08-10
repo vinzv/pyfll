@@ -60,8 +60,4 @@ packages = """
     smtube
     vokoscreen
 
-    # not install some recommends
-    light-locker-
-    lightdm-
-    lightdm-gtk-greeter-
 """
