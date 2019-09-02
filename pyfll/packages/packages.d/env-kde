@@ -4,7 +4,6 @@ desc = """
 
 packages = """
     kde-standard
-        kde-l10n-de               # ca  38 M
 
     adwaita-qt
     avahi-autoipd
