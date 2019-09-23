@@ -1,4 +1,4 @@
-#!/usr/bin/python -tt
+!/usr/bin/python -tt
 # -*- coding: utf-8 -*-
 
 __author__    = 'Kel Modderman'
@@ -2275,11 +2275,13 @@ class FLLBuilder(object):
                     manifest.close()
                     os.chown(manifest_file_timestamped, self.opts.u, self.opts.g)
                     try:
-                        os.symlink(manifest_file_timestamped, manifest_file_latest)
+                        # os.symlink(manifest_file_timestamped, manifest_file_latest)
+                        os.link(manifest_file_timestamped, manifest_file_latest)
                     except OSError, e:
                         if e.errno == errno.EEXIST:
                             os.remove(manifest_file_latest)
-                            os.symlink(manifest_file_timestamped, manifest_file_latest)
+                            # os.symlink(manifest_file_timestamped, manifest_file_latest)
+                            os.link(manifest_file_timestamped, manifest_file_latest)
                     os.chown(manifest_file_latest, self.opts.u, self.opts.g)
 
 
@@ -2308,11 +2310,13 @@ class FLLBuilder(object):
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
                 try:
-                    os.symlink(sources_file_timestamped, sources_file_latest)
+                    # os.symlink(sources_file_timestamped, sources_file_latest)
+                    os.link(sources_file_timestamped, sources_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
                         os.remove(sources_file_latest)
-                        os.symlink(sources_file_timestamped, sources_file_latest)
+                        #os.symlink(sources_file_timestamped, sources_file_latest)
+                        os.link(sources_file_timestamped, sources_file_latest)
                 os.chown(sources_file_latest, self.opts.u, self.opts.g)
 
         cached = dict()
@@ -2344,11 +2348,13 @@ class FLLBuilder(object):
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
                 try:
-                    os.symlink(sources_file_timestamped, sources_file_latest)
+                    # os.symlink(sources_file_timestamped, sources_file_latest)
+                    os.link(sources_file_timestamped, sources_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
                         os.remove(sources_file_latest)
-                        os.symlink(sources_file_timestamped, sources_file_latest)
+                        # os.symlink(sources_file_timestamped, sources_file_latest)
+                        os.link(sources_file_timestamped, sources_file_latest)
                 os.chown(sources_file_latest, self.opts.u, self.opts.g)
 
     def genLiveMedia(self):
@@ -2409,11 +2415,13 @@ class FLLBuilder(object):
 
         os.chown(iso_file_timestamped, self.opts.u, self.opts.g)
         try:
-            os.symlink(iso_file_timestamped, iso_file_latest)
+            # os.symlink(iso_file_timestamped, iso_file_latest)
+            os.link(iso_file_timestamped, iso_file_latest)
         except OSError, e:
             if e.errno == errno.EEXIST:
                 os.remove(iso_file_latest)
-                os.symlink(iso_file_timestamped, iso_file_latest)
+                # os.symlink(iso_file_timestamped, iso_file_latest)
+                os.link(iso_file_timestamped, iso_file_latest)
         os.chown(iso_file_latest, self.opts.u, self.opts.g)
 
         self.log.info('calculating md5sum of live media iso image...')
@@ -2430,11 +2438,13 @@ class FLLBuilder(object):
                 md5.close()
                 os.chown(md5_file_timestamped, self.opts.u, self.opts.g)
                 try:
-                    os.symlink(md5_file_timestamped, md5_file_latest)
+                    # os.symlink(md5_file_timestamped, md5_file_latest)
+                    os.link(md5_file_timestamped, md5_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
                         os.remove(md5_file_latest)
-                        os.symlink(md5_file_timestamped, md5_file_latest)
+                        # os.symlink(md5_file_timestamped, md5_file_latest)
+                        os.link(md5_file_timestamped, md5_file_latest)
                 os.chown(md5_file_latest, self.opts.u, self.opts.g)
                 # right now we don't sign the hashes - so latest is not
                 # implemented yet
@@ -2457,11 +2467,13 @@ class FLLBuilder(object):
                 sha256.close()
                 os.chown(sha256_file_timestamped, self.opts.u, self.opts.g)
                 try:
-                    os.symlink(sha256_file_timestamped, sha256_file_latest)
+                    # os.symlink(sha256_file_timestamped, sha256_file_latest)
+                    os.link(sha256_file_timestamped, sha256_file_latest)
                 except OSError, e:
                     if e.errno == errno.EEXIST:
                         os.remove(sha256_file_latest)
-                        os.symlink(sha256_file_timestamped, sha256_file_latest)
+                        # os.symlink(sha256_file_timestamped, sha256_file_latest)
+                        os.link(sha256_file_timestamped, sha256_file_latest)
                 os.chown(sha256_file_latest, self.opts.u, self.opts.g)
                 # right now we don't sign the hashes - so latest is not
                 # implemented yet
