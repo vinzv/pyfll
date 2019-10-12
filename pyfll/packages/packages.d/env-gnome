@@ -4,7 +4,7 @@ desc = """
 
 packages = """
   task-gnome-desktop
-  gdm3
+  sddm  # gdm3 - patched meta-gnome3
 
   # siduction packages
   brasero
