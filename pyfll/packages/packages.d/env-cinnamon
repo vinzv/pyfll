@@ -29,14 +29,6 @@ packages = """
     p7zip-full
     plank
 
-    thunderbird
-        thunderbird-l10n-de
-        thunderbird-l10n-en-gb
-        thunderbird-l10n-it
-        thunderbird-l10n-pl
-        thunderbird-l10n-pt-br
-        thunderbird-l10n-ro
-
 #    uget	     # downloader
 #    virt-viewer
     vim-gtk3

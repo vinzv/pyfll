@@ -21,14 +21,6 @@ packages = """
     pavucontrol
     system-config-printer
     thunar-gtkhash
-    thunderbird
-# broken 2018-11-25        lightning
-        thunderbird-l10n-de
-        thunderbird-l10n-en-gb
-        thunderbird-l10n-it
-        thunderbird-l10n-pl
-        thunderbird-l10n-pt-br
-        thunderbird-l10n-ro
 
     xfce4
        xfce4-equake-plugin

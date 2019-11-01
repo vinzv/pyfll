@@ -18,7 +18,6 @@ deps = """
     base-media
     base-networking
     base-printing
-
     base-virt-helpers
     base-xapps-debian
     base-xapps-distro

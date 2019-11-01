@@ -14,15 +14,6 @@ packages = """
     phonon4qt5-backend-gstreamer
     xfwm4-theme-breeze
 
-    thunderbird
-       lightning
-       thunderbird-l10n-de
-       thunderbird-l10n-en-gb
-       thunderbird-l10n-it
-       thunderbird-l10n-pl
-       thunderbird-l10n-pt-br
-       thunderbird-l10n-ro
-
     system-config-printer
     xfburn
 

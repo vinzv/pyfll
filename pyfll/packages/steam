@@ -11,14 +11,15 @@ deps = """
     base-devel
     base-filesystems
     base-firmware-non-free
+    base-firefox
     base-hwsupport
     base-init
     base-l10n
     base-media
     base-networking
     base-printing
-
     base-virt-helpers
+    base-thunderbird
     base-xapps-debian
     base-xapps-distro
     base-xorg
