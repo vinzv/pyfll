@@ -6,7 +6,6 @@ packages = """
     blueman
     configure-cups
     fbpanel
-    firefox
     fluxbox
     gconf2
     gnome-icon-theme
