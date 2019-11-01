@@ -4,22 +4,18 @@ desc = """
 
 packages = """
   task-gnome-desktop
-  sddm  # gdm3 - patched meta-gnome3
+  gdm3
 
   # siduction packages
   brasero
   gconf-editor
-  geary
-  gnome-audio
   gnome-boxes
   # gnome-builder a bit heavy
   gnome-calendar
   gnome-clocks
-# deprecated 2018-10-28 (ancient) AG			- gnome-color-chooser
   gnome-color-manager
   gnome-documents
   gnome-flashback
-  gnome-exe-thumbnailer
   gnome-maps
   gnome-music
   gnome-nettool
@@ -30,8 +26,6 @@ packages = """
   gnome-screensaver
   gnome-software-plugin-flatpak
   gnome-sound-recorder 
-# deprecated 2018-10-28 (outdated - stable only) AG	- gnome-specimen 
-# deprecated 2018-10-28 (outdated ) AG			- gnome-system-log
   gnome-system-monitor
   gnome-tweak-tool
   gnome-tweaks
@@ -43,14 +37,25 @@ packages = """
 
   # shell extensions  
   gnome-shell-extension-appindicator
-# deprecated 2018-10-28 (outdated - stable only) AG	- gnome-shell-extension-better-volume
+  gnome-shell-extension-autohidetopbar
+  gnome-shell-extension-bluetooth-quick-connect
+  gnome-shell-extension-caffeine
   gnome-shell-extension-dash-to-panel
   gnome-shell-extension-dashtodock
+  gnome-shell-extension-desktop-icons
+  gnome-shell-extension-disconnect-wifi
+  gnome-shell-extension-easyscreencast
+  gnome-shell-extension-hide-activities
   gnome-shell-extension-impatience
   gnome-shell-extension-log-out-button
-# deprecated 2018-10-28 (outdated) AG			- gnome-shell-extension-multi-monitors  
+  gnome-shell-extension-move-clock
+  gnome-shell-extension-multi-monitors
+  gnome-shell-extension-no-annoyance
+  gnome-shell-extension-onboard
+  gnome-shell-extension-pixelsaver
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
+  gnome-shell-extension-show-ip 
   gnome-shell-extension-suspend-button
   gnome-shell-extension-top-icons-plus
   gnome-shell-extension-trash
@@ -67,7 +72,6 @@ packages = """
   nautilus-admin
   nautilus-compare
   # nautilus-dropbox
-  nautilus-emblems
   nautilus-extension-brasero
   nautilus-extension-gnome-terminal
   nautilus-filename-repairer
@@ -76,6 +80,7 @@ packages = """
   # nautilus-image-converter
   # nautilus-image-manipulator
   # nautilus-owncloud
+  # nautilus-nextcloud
   # nautilus-scripts-manager
   nautilus-sendto
   nautilus-share
@@ -83,10 +88,10 @@ packages = """
   # nitroshare-nautilus
 
   firefox
-#    firefox-l10n-de
-#    firefox-l10n-en-gb
-#    firefox-l10n-it
-#    firefox-l10n-pl
-#    firefox-l10n-pt-br
-#    firefox-l10n-ro
+      firefox-l10n-de
+#     firefox-l10n-en-gb
+#     firefox-l10n-it
+#     firefox-l10n-pl
+#     firefox-l10n-pt-br
+#     firefox-l10n-ro
 """
