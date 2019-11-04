@@ -38,7 +38,7 @@ packages = """
     # xfwm4-themes - dead and gone from sid
     xfwm4-theme-breeze
 
-    xscreensaver
+    xfce4-screensaver
 
     # gtk3
     libreoffice
