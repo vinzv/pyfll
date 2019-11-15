@@ -70,7 +70,7 @@ packages = """
 
   # some nautilus enhanchements
   nautilus-admin
-  nautilus-compare
+  # nautilus-compare - dead, but still in archive - depends on  python 2.x
   # nautilus-dropbox
   nautilus-extension-brasero
   nautilus-extension-gnome-terminal
