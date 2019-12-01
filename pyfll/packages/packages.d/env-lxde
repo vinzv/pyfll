@@ -38,5 +38,5 @@ packages = """
     screengrab
     smplayer
     smtube
-    vokoscreen
+    vokoscreen-ng
 """

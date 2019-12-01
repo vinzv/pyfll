@@ -36,7 +36,7 @@ packages = """
     qbittorrent
     screengrab
     xscreensaver
-    vokoscreen
+    vokoscreen-ng
 
     papirus-icon-theme
 
