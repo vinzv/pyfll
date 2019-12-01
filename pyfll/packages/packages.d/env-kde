@@ -19,7 +19,6 @@ packages = """
     kdepim                        # ca   4 M
         gnokii                    # ca  11 M
     kdetoys                       # ca 106 K
-    kdeutils                      # ca   8 M
     dolphin-plugins               # ca 156 K
     konversation                  # ca   4 M
     ktorrent                      # ca   3 M
