@@ -1,0 +1,11 @@
+desc = """
+    Common command line utilities.
+"""
+
+packages = """
+   policycoreutils
+   policycoreutils-dbus
+"""
+
+i386 = """
+"""

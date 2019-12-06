@@ -10,6 +10,7 @@ deps = """
 
     base-devel
     base-filesystems
+    base-firefox
     base-firmware-non-free
     base-hwsupport
     base-init
@@ -18,6 +19,7 @@ deps = """
     base-networking
     base-printing
     base-virt-helpers
+    base-security
     base-xapps-debian
     base-xapps-distro
     base-xorg

@@ -1,4 +1,4 @@
-syysdesc = """
+desc = """
     Common command line utilities.
 """
 

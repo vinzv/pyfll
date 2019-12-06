@@ -15,6 +15,7 @@ deps = """
     base-init
     base-l10n
     base-networking
+    base-security
 
     env-nox
 """

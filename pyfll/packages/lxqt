@@ -19,6 +19,7 @@ deps = """
     base-networking
     base-printing
     base-virt-helpers
+    base-security
     base-thunderbird
     base-xapps-debian
     base-xapps-distro
