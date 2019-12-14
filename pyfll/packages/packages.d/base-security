@@ -5,6 +5,7 @@ desc = """
 packages = """
    policycoreutils
    policycoreutils-dbus
+   xattr
 """
 
 i386 = """
