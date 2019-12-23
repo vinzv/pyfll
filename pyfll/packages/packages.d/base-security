@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+   apparmor- #We really don't want it!
    policycoreutils
    policycoreutils-dbus
    xattr
