@@ -51,7 +51,6 @@ packages = """
   gnome-shell-extension-move-clock
   gnome-shell-extension-multi-monitors
   gnome-shell-extension-no-annoyance
-  gnome-shell-extension-onboard
   gnome-shell-extension-pixelsaver
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
@@ -62,6 +61,7 @@ packages = """
   gnome-shell-extension-weather
   gnome-shell-mailnag
   gnome-shell-timer
+  onboard
   # Spiele 
   gnome-games
     gnome-2048
