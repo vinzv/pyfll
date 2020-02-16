@@ -30,7 +30,6 @@ packages = """
   gnome-tweak-tool
   gnome-tweaks
   gnome-usage
-  gnome-xcf-thumbnailer
   guake
   hexchat
   pavucontrol
