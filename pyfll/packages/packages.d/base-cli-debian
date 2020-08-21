@@ -63,7 +63,7 @@ packages = """
     most
 
     # utils (must have)
-    cfv           # checksums and co.
+    #cfv           # problem with py2.7.2, no inst. cand. # checksums and co.
     cpufrequtils  #
     gpm           # mouse for console
     htop          # ncurses top
