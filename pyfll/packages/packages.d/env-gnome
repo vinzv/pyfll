@@ -54,7 +54,7 @@ packages = """
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
   gnome-shell-extension-show-ip 
-  # gnome-shell-extension-suspend-button -lifes only in stabele, gone 2020-10-07
+  # gnome-shell-extension-suspend-button -lifes only in stable, gone 2020-10-07
   gnome-shell-extension-top-icons-plus
   gnome-shell-extension-trash
   gnome-shell-extension-weather
