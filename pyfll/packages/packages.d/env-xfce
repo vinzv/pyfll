@@ -17,13 +17,13 @@ packages = """
     mate-calc
     mousepad
     network-manager-gnome
-    orage
+   #orage not playing well with xfce 4.16
     pavucontrol
     system-config-printer
     thunar-gtkhash
 
     xfce4
-       xfce4-equake-plugin
+       #xfce4-equake-plugin not playing well with xfce 4.16
        xfce4-goodies
        xfce4-indicator-plugin
        # xfce4-linelight-plugin - dead and gone from sid
