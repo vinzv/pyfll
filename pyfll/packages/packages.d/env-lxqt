@@ -8,7 +8,7 @@ packages = """
     lxqt
     # fulfilling the branding alternative with an empty metapackage
     lxqt-branding-siduction
-    lxqt-archiver
+    #lxqt-archiver #not installable anymore
     # lxqt-xfwm-helper
 
     phonon4qt5-backend-gstreamer
