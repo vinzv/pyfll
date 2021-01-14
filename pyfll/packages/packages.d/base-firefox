@@ -7,8 +7,8 @@ packages = """
     firefox
         firefox-l10n-de       
         firefox-l10n-en-gb    
-        firefox-l10n-it       
-        firefox-l10n-pl       
-        firefox-l10n-pt-br    
-        firefox-l10n-ro
+       #firefox-l10n-it       
+       #firefox-l10n-pl       
+       #firefox-l10n-pt-br    
+       #firefox-l10n-ro
 """
