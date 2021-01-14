@@ -76,7 +76,7 @@ packages = """
   nautilus-hide
   # nautilus-image-converter
   # nautilus-image-manipulator
-   nautilus-owncloud
+  # nautilus-owncloud
    nautilus-nextcloud
    nautilus-scripts-manager
   nautilus-sendto
