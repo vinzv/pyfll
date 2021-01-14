@@ -23,7 +23,7 @@ packages = """
     thunar-gtkhash
 
     xfce4
-       xfce4-equake-plugin
+       #xfce4-equake-plugin
        xfce4-goodies
        xfce4-indicator-plugin
        # xfce4-linelight-plugin - dead and gone from sid
