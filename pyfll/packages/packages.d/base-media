@@ -23,7 +23,4 @@ packages = """
     pulseaudio-module-bluetooth
     sound-theme-freedesktop
 
-#    smplayer
-#    smtube
-#    vokoscreen-ng
 """
