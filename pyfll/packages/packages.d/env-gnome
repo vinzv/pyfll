@@ -43,7 +43,7 @@ packages = """
   gnome-shell-extension-dashtodock
   gnome-shell-extension-desktop-icons
   gnome-shell-extension-disconnect-wifi
-  gnome-shell-extension-easyscreencast - depends on  old gnome-shell 2020-10-07
+  gnome-shell-extension-easyscreencast #- depends on  old gnome-shell 2020-10-07
   gnome-shell-extension-hide-activities
   gnome-shell-extension-impatience
   gnome-shell-extension-move-clock
