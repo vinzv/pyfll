@@ -46,7 +46,8 @@ packages = """
      network-manager-vpnc
      phonon4qt5-backend-gstreamer # ca 110 K
      pinentry-qt                  # ca  70 K
-     #plasma-mediacenter           # ca 250 K
+     plasma-mediacenter           # ca 250 K
+     plasma-systemmonitor
      smplayer                     # ca   7 M
      smtube                       # ca 400 K
      vokoscreen-ng                # ca 1.5 M
