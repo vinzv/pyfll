@@ -43,10 +43,9 @@ packages = """
   gnome-shell-extension-dashtodock
   gnome-shell-extension-desktop-icons
   gnome-shell-extension-disconnect-wifi
-  # gnome-shell-extension-easyscreencast - depends on  old gnome-shell 2020-10-07
+  gnome-shell-extension-easyscreencast - depends on  old gnome-shell 2020-10-07
   gnome-shell-extension-hide-activities
   gnome-shell-extension-impatience
-  # gnome-shell-extension-log-out-button - not available as of 18.11.2020
   gnome-shell-extension-move-clock
   gnome-shell-extension-multi-monitors
   gnome-shell-extension-no-annoyance
@@ -54,7 +53,6 @@ packages = """
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
   gnome-shell-extension-show-ip 
-  # gnome-shell-extension-suspend-button -lifes only in stable, gone 2020-10-07
   gnome-shell-extension-top-icons-plus
   gnome-shell-extension-trash
   gnome-shell-extension-weather
@@ -70,7 +68,7 @@ packages = """
   # some nautilus enhanchements
   nautilus-admin
   # nautilus-compare - dead, but still in archive - depends on  python 2.x
-  # nautilus-dropbox
+  nautilus-dropbox
   nautilus-extension-brasero
   nautilus-extension-gnome-terminal
   nautilus-filename-repairer
@@ -78,11 +76,11 @@ packages = """
   nautilus-hide
   # nautilus-image-converter
   # nautilus-image-manipulator
-  # nautilus-owncloud
-  # nautilus-nextcloud
-  # nautilus-scripts-manager
+   nautilus-owncloud
+   nautilus-nextcloud
+   nautilus-scripts-manager
   nautilus-sendto
   nautilus-share
-  # nautilus-wipe
+   nautilus-wipe
   # nitroshare-nautilus
 """
