@@ -35,7 +35,7 @@ do_postinst() {
                         "$CODENAME-$FLAVOUR-settings" --assume-yes
 
 #        echo "Second:"
-#        apt-get install patience-lxqt-livesettings patience-lxqt-settings --assume-yes
+#        apt-get install c-blues-lxqt-livesettings c-blues-lxqt-settings --assume-yes
 #        echo
 #        echo
 
