@@ -38,7 +38,6 @@ packages = """
 #    # parole    # the media player, gtk3
 #    quodlibet # the music manager, depends on exfalso
 #    shotwell  # the photo manager
-#    #shutter  # screenshots (based on perl)
 #    sound-juicer
 #    vcdimager
 

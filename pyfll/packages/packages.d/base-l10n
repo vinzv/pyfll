@@ -12,13 +12,9 @@ packages = """
     # get the fucking python-fll and delivery via iso-repo
     # up and running
     manpages-de
-    manpages-it
-    manpages-pl
-    manpages-pt
+    
     hunspell-de-de
     hunspell-en-gb
     hunspell-en-us
-    hunspell-it
-    hunspell-pl
-    hunspell-pt-br
+    
 """

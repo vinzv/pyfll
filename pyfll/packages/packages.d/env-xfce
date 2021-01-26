@@ -26,12 +26,8 @@ packages = """
        #xfce4-equake-plugin
        xfce4-goodies
        xfce4-indicator-plugin
-       # xfce4-linelight-plugin - dead and gone from sid
-       # xfce4-messenger-plugin - dead and gone from sid
        xfce4-mpc-plugin
        xfce4-power-manager
-       # xfce4-quicklauncher-plugin - dead and gone from sid
-       # xfce4-radio-plugin - it's dead, jim (removed from unstable)
        xfce4-screenshooter
        xfce4-terminal
 
