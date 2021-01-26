@@ -35,7 +35,7 @@ packages = """
     inkscape                      # ca  20 M
     k3b-i18n                      # ca  11 M
     kaffeine                      # ca  11 M
-    Skio-fuse
+    kio-fuse
     libreoffice                   # ca 182 M
         libreoffice-kde5
         libreoffice-style-breeze
