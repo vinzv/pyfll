@@ -1,2 +1,2 @@
-time ./pyfll/fll -vv -c /etc/pyfll/conf/gnome_patience_i386.conf
+time ./pyfll/fll -vv -c /etc/pyfll/conf/gnome_c-blues_i386.conf
 

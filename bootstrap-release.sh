@@ -2,11 +2,11 @@
 
 set -e
 
-CODENAME="Patience"
-CODENAME_SAFE="patience"
+CODENAME="C-Blues"
+CODENAME_SAFE="c-blues"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
-RELEASE="patience"
-VERSION="16.1.0"
+RELEASE="c-blues"
+VERSION="21.1.0"
 
 
 cd pyfll/templates
