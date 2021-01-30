@@ -3,9 +3,9 @@
 set -e
 
 CODENAME="C-Blues"
-CODENAME_SAFE="c-blues"
+CODENAME_SAFE="cblues"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
-RELEASE="c-blues"
+RELEASE="cblues"
 VERSION="21.1.0"
 
 
