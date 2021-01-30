@@ -5,7 +5,7 @@ desc = """
 
 packages = """
     thunderbird
-        lightning
+        #lightning not needed anymore
         thunderbird-l10n-de
         thunderbird-l10n-en-gb
 """
