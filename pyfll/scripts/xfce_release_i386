@@ -1,2 +1,2 @@
-time ./pyfll/fll -vv -c /etc/pyfll/conf/xfce_patience_i386.conf
+time ./pyfll/fll -vv -c /etc/pyfll/conf/xfce_c-blues_i386.conf
 

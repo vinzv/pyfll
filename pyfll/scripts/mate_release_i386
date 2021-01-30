@@ -1,1 +1,1 @@
-time ./pyfll/fll -vv -c /etc/pyfll/conf/mate_patience_i386.conf
+time ./pyfll/fll -vv -c /etc/pyfll/conf/mate_c-blues_i386.conf
