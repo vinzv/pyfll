@@ -4,12 +4,12 @@ desc = """
 
 packages = """
     neofetch
+    apt-conf-siduction
     #pywwetha  #not installable, 21.8.20
     setpassword
     siduction-scripts
     #sidu-manual #py2.x meckert
     sshactivate
-
     # install without recommends   cli-installer
     # install without recommends   kernel-remover
     # install without recommends   siduction-irc

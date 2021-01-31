@@ -4,10 +4,8 @@ desc = """
 
 deps = """
     blacklist
-
     base-cli-debian
     base-cli-distro
-
     base-devel
     base-filesystems
     base-firefox
@@ -24,7 +22,6 @@ deps = """
     base-xapps-distro
     base-xorg
     base-xorg-fonts
-
     env-kde
 """
 

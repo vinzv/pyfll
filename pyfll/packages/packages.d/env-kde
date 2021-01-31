@@ -4,30 +4,26 @@ desc = """
 
 packages = """
     kde-standard
-
     adwaita-qt
     avahi-autoipd
     digikam                       # ca 130 M
-
     kde-config-gtk-style-preview  # ca  10 K
     kde-config-systemd            # ca 200 K
     kdeadmin                      # ca   2 M
     kdegraphics                   # ca   2 M
     kdemultimedia                 # ca   1 M
     kdenetwork                    # ca   9 M
-        kde-zeroconf              # ca  13 M
+    kde-zeroconf              # ca  13 M
     kdepim                        # ca   4 M
-        gnokii                    # ca  11 M
+    gnokii                    # ca  11 M
     kdetoys                       # ca 106 K
     dolphin-plugins               # ca 156 K
     konversation                  # ca   4 M
     ktorrent                      # ca   3 M
     kwin-addons                   # ca  24 K
     krusader                      # ca  14 M
-
     okteta                        # ca   1 M
     kompare                       # ca   1 M
-
     # Standard applications
     # warum eigentlich?    apper                         # cm   1 M
     converseen                    # ca 200 K
@@ -37,18 +33,17 @@ packages = """
     kaffeine                      # ca  11 M
     kio-fuse
     libreoffice                   # ca 182 M
-        libreoffice-kde5
-        libreoffice-style-breeze
-
-     network-manager-openconnect
-     network-manager-openvpn
-     network-manager-pptp
-     network-manager-vpnc
-     phonon4qt5-backend-gstreamer # ca 110 K
-     pinentry-qt                  # ca  70 K
-     plasma-systemmonitor
-     smplayer                     # ca   7 M
-     smtube                       # ca 400 K
-     vokoscreen-ng                # ca 1.5 M
-     yakuake                      # ca 400 K
+    libreoffice-kde5
+    libreoffice-style-breeze
+    network-manager-openconnect
+    network-manager-openvpn
+    network-manager-pptp
+    network-manager-vpnc
+    phonon4qt5-backend-gstreamer # ca 110 K
+    pinentry-qt                  # ca  70 K
+    plasma-systemmonitor
+    smplayer                     # ca   7 M
+    smtube                       # ca 400 K
+    vokoscreen-ng                # ca 1.5 M
+    yakuake                      # ca 400 K
 """
