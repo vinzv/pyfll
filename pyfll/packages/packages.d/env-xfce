@@ -17,7 +17,7 @@ packages = """
     mate-calc
     mousepad
     network-manager-gnome
-    orage
+    #orage
     pavucontrol
     system-config-printer
     thunar-gtkhash
