@@ -11,4 +11,5 @@ packages = """
     gnome-icon-theme
     hexchat
     pavucontrol
+    iwd
 """
