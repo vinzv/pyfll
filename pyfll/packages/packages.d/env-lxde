@@ -34,6 +34,7 @@ packages = """
     ## Qt5 Applications
     phonon4qt5-backend-gstreamer
     compton-conf
+    sddm
     qpdfview
     screengrab
     smplayer

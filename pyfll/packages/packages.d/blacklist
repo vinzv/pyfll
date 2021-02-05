@@ -15,6 +15,7 @@ packages = """
     plymouth-label-
     speech-dispatcher-   # breaks all builds
     unattended-upgrades-
+    xdm-
 """
 
 i386 = """

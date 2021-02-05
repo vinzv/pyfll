@@ -1,4 +1,4 @@
-pyfll (2013.02+nmu1) UNRELEASED; urgency=low
+pyfll (2021.1.0) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
 
@@ -169,7 +169,11 @@ pyfll (2013.02+nmu1) UNRELEASED; urgency=low
     plasma-integration, commented sni-qt plasma-systray-legacy, enabled
     digikam kipi-plugins kpartsplugin
 
- -- Ferdinand Thommes <devil@siduction.org>  Fri, 10 Jun 2016 10:46:23 +0200
+  [ Torsten Wohlfarth ]
+  * blacklist sddm
+  * add sddm to env-lxde
+
+ -- Torsten Wohlfarth <towo@siduction.org>  Fri, 05 Feb 2021 19:08:10 +0100
 
 pyfll (2013.01) hesperides; urgency=low
 
