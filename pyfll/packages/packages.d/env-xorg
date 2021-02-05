@@ -12,6 +12,6 @@ packages = """
     hexchat
     pavucontrol
     iwd
-	-wpasupplicant # don't install wpasupplicant when installing iwd
-	-ceni # even ceni
+	wpasupplicant- # don't install wpasupplicant when installing iwd
+	ceni- # even ceni
 """
