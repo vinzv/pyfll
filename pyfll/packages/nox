@@ -14,7 +14,7 @@ deps = """
     base-hwsupport
     base-init
     base-l10n
-    base-networking
+    base-nox-networking
     base-security
 
     env-nox

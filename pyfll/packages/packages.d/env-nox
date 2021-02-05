@@ -3,5 +3,5 @@ desc = """
 """
 
 packages = """
-    ceni
+    # ceni #no need if installing iwd
 """

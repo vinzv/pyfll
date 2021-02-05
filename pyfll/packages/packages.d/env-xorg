@@ -11,7 +11,4 @@ packages = """
     gnome-icon-theme
     hexchat
     pavucontrol
-    iwd
-	wpasupplicant- # don't install wpasupplicant when installing iwd
-	ceni- # even ceni
 """
