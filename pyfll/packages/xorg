@@ -16,7 +16,7 @@ deps = """
     base-init
     base-l10n
     base-media
-    base-nox-networking
+    base-networking
     base-printing
     base-virt-helpers
     base-security
