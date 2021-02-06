@@ -16,6 +16,7 @@ packages = """
     speech-dispatcher-   # breaks all builds
     unattended-upgrades-
     xdm-
+	clipit- #deprecated
 """
 
 i386 = """
