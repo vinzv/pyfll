@@ -3,6 +3,5 @@ desc = """
 """
 
 packages = """
-    iwd
     ceni
 """
