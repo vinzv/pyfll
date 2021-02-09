@@ -11,6 +11,9 @@ packages = """
     gnome-icon-theme
     hexchat
     pavucontrol
+	pasystray
+	spacefm-gtk3
+	diodon
     iwd
     network-manager
 """
