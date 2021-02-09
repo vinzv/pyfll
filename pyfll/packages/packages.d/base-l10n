@@ -11,7 +11,7 @@ packages = """
     #
     # get the fucking python-fll and delivery via iso-repo
     # up and running
-#    manpages-de
+    manpages-de
     
     hunspell-de-de
     hunspell-en-gb
