@@ -3,5 +3,6 @@ desc = """
 """
 
 packages = """
-    ceni
+    network-manager
+    # ceni we have NM
 """
