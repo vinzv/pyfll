@@ -6,7 +6,7 @@ CODENAME="C-Blues"
 CODENAME_SAFE="cblues"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
 RELEASE="cblues"
-VERSION="21.1.0"
+VERSION="21.1.1"
 
 
 cd pyfll/templates
