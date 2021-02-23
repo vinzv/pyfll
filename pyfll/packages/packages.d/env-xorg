@@ -16,4 +16,10 @@ packages = """
 	diodon
     iwd
     network-manager
+	idesk
+	tint2
+	gsimplecal
+	xfce4-appfinder
+	featherpad
+	featherpad-l10n
 """
