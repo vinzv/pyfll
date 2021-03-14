@@ -52,7 +52,7 @@ packages = """
   gnome-shell-extension-pixelsaver
   gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
-  gnome-shell-extension-show-ip 
+ # gnome-shell-extension-show-ip  #does not work atm
   gnome-shell-extension-top-icons-plus
   gnome-shell-extension-trash
   gnome-shell-extension-weather
