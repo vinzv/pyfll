@@ -11,7 +11,7 @@ packages = """
     haveged
     preload
     # broken post-inst    ssmtp                 # some mtp - suck less than exim
-    ssmtp
+    # ssmtp
     #esmtp
     bash-completion
     command-not-found
