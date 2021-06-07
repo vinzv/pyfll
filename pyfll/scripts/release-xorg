@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# one will find a sample defaults.conf in ./pyfll
+[ -e /etc/pyfll/defaults.conf ] && source /etc/pyfll/defaults.conf
+
+flavour=xorg
+release=farwell
+
+time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf
