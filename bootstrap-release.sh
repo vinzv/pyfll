@@ -2,10 +2,10 @@
 
 set -e
 
-CODENAME="Farwell"
-CODENAME_SAFE="farwell"
+CODENAME="Farewell"
+CODENAME_SAFE="farewell"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
-RELEASE="farwell"
+RELEASE="farewell"
 VERSION="21.1.99"
 
 
