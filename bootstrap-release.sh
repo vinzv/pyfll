@@ -2,11 +2,11 @@
 
 set -e
 
-CODENAME="C-Blues"
-CODENAME_SAFE="cblues"
+CODENAME="Farwell"
+CODENAME_SAFE="farwell"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
-RELEASE="cblues"
-VERSION="21.1.90"
+RELEASE="farwell"
+VERSION="21.1.99"
 
 
 cd pyfll/templates

@@ -4,6 +4,6 @@
 [ -e /etc/pyfll/defaults.conf ] && source /etc/pyfll/defaults.conf
 
 flavour=xorg
-release=c-blues
+release=farwell
 
 time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf
