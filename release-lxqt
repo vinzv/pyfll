@@ -4,7 +4,7 @@
 [ -e /etc/pyfll/defaults.conf ] && source /etc/pyfll/defaults.conf
 
 flavour=lxqt
-release=farwell
+release=farewell
 arch=amd64
 
 time ./pyfll/fll ${options}  ${aptcache} -c ${confpath}${flavour}_${release}_${arch}.conf
