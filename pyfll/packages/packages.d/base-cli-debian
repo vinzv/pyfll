@@ -5,6 +5,7 @@ desc = """
 packages = """
     # package management
     apt-file
+    apt-transport-https
     aptitude
 
     # daemons
