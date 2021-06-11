@@ -11,15 +11,16 @@ packages = """
     gnome-icon-theme
     hexchat
     pavucontrol
-	pasystray
-	spacefm-gtk3
-	diodon
+    pasystray
+    spacefm-gtk3
+    diodon
     iwd
     network-manager
-	idesk
-	tint2
-	gsimplecal
-	xfce4-appfinder
-	featherpad
-	featherpad-l10n
+    jgmenu
+    idesk
+    tint2
+    gsimplecal
+    xfce4-appfinder
+    featherpad
+    featherpad-l10n
 """
