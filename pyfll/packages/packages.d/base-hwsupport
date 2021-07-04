@@ -30,4 +30,5 @@ packages = """
     udev
     upower
     usb-modeswitch
+    usbutils
 """
