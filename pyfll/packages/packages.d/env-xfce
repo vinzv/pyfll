@@ -39,7 +39,6 @@ packages = """
     # gtk3
     libreoffice
         libreoffice-gtk3
-    plank
     # gtk3-engines-xfce dead and gone from sid
 
     # Qt5 Packages
