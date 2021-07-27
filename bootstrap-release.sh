@@ -6,7 +6,7 @@ CODENAME="Farewell"
 CODENAME_SAFE="farewell"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
 RELEASE="farewell"
-VERSION="21.1.99"
+VERSION="21.2.0"
 
 
 cd pyfll/templates
