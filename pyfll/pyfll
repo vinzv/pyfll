@@ -1813,7 +1813,6 @@ class FLLBuilder(object):
         for dirpath, dirnames, fnames in os.walk(os.path.join(chroot, 'var/log')):
             for f in fnames:
                 try:
-                    print(f)
                     with open(os.path.join(dirpath, f), 'w') as fu:
                         fu.truncate()
                 except IOError:
