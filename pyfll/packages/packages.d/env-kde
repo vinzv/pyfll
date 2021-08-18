@@ -33,7 +33,7 @@ packages = """
     kaffeine                      # ca  11 M
     kio-fuse
     libreoffice                   # ca 182 M
-    libreoffice-kde5
+    libreoffice-plasma
     libreoffice-style-breeze
     network-manager-openconnect
     network-manager-openvpn
