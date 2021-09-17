@@ -8,6 +8,7 @@ packages = """
     #pywwetha  #not installable, 21.8.20
     setpassword
     siduction-scripts
+    siduction-archive-keyring
     #sidu-manual #py2.x meckert
     sshactivate
     # install without recommends   cli-installer
