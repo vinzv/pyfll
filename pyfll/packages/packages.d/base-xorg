@@ -14,6 +14,7 @@ packages = """
     mesa-utils
     mesa-utils-extra
     spice-vdagent
+    siduction-archive-keyring
     va-driver-all
     x11-xfs-utils
     xautomation
