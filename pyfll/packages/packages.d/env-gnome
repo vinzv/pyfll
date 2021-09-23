@@ -40,8 +40,8 @@ packages = """
   gnome-shell-extension-bluetooth-quick-connect
   gnome-shell-extension-caffeine
   gnome-shell-extension-dash-to-panel
-  gnome-shell-extension-dashtodock
-  gnome-shell-extension-desktop-icons
+  # gnome-shell-extension-dashtodock ; broken for gnome-shell 4x
+  # gnome-shell-extension-desktop-icons ; broken for gnome-shell 4x
   gnome-shell-extension-disconnect-wifi
   #gnome-shell-extension-easyscreencast #- depends on  old gnome-shell 2020-10-07
   gnome-shell-extension-hide-activities
