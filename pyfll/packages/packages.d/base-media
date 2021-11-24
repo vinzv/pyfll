@@ -23,4 +23,10 @@ packages = """
     pulseaudio-module-bluetooth
     sound-theme-freedesktop
 
+    pipewire
+    pipewire-pulse
+    gstreamer1.0-pipewire
+    pipewire-audio-client-libraries
+    wireplumber
+
 """
