@@ -31,4 +31,7 @@ deps = """
 
 packages = """
 
+## needed for nm-applet
+    network-manager-gnome
+
 """
