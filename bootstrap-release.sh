@@ -2,11 +2,11 @@
 
 set -e
 
-CODENAME="Farewell"
-CODENAME_SAFE="farewell"
+CODENAME="Wintersky"
+CODENAME_SAFE="wintersky"
 FLAVOURS="cinnamon gnome kde lxde lxqt mate nox xfce xorg"
-RELEASE="farewell"
-VERSION="21.2.0"
+RELEASE="wintersky"
+VERSION="21.3.0"
 
 
 cd pyfll/templates
