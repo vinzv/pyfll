@@ -23,6 +23,5 @@ packages = """
     xfce4-appfinder
     featherpad
     featherpad-l10n
-    mupdf
-    mupdf-tools    
+    evince
 """
