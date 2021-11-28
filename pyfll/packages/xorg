@@ -22,7 +22,6 @@ deps = """
     base-security
     base-thunderbird
     base-xapps-debian
-    base-xapps-distro
     base-xorg
     base-xorg-fonts
 
