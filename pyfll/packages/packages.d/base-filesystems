@@ -21,6 +21,7 @@ packages = """
 
     # Tools
     acl
+    acpi
     attr
     gddrescue
     inotify-tools
