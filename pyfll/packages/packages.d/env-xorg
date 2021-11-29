@@ -13,7 +13,8 @@ packages = """
     pavucontrol
     pasystray
     spacefm-gtk3
-    diodon
+    xfce4-clipman
+    xfce4-clipman-plugin
     iwd
     network-manager
     jgmenu
