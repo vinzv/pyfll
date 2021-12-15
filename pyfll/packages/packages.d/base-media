@@ -28,5 +28,6 @@ packages = """
     gstreamer1.0-pipewire
     pipewire-audio-client-libraries
     wireplumber
+    libspa-0.2-bluetooth
 
 """
