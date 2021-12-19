@@ -3,7 +3,7 @@ esc = """
 """
 
 packages = """
-    # iwd   # replacement for wpasupplicant, alternative in connman
+    # iwd   # not needed, sourced from base-networking
     sddm
     lxqt
     # fulfilling the branding alternative with an empty metapackage
