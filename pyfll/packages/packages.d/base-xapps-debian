@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    copyq
     dconf-editor
     feh
     flameshot
