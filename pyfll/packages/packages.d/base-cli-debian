@@ -21,12 +21,12 @@ packages = """
     debconf-utils
     deborphan
     dialog
+    gdu
     libmtp-runtime
     librsvg2-common
     linux-cpupower
     logrotate
     mc
-    ncdu
     needrestart
     pv
     reptyr
@@ -45,7 +45,7 @@ packages = """
     # debugging
     strace
 
-    # forensic and securety
+    # forensic and security
     cmospwd
     chkrootkit
     foremost
@@ -71,7 +71,7 @@ packages = """
     iotop         # i/o top
     kbd           # console setup
        console-data
-    mlocate       # locate etc
+    plocate       # locate etc
     moreutils     # more utils
     nano          # the ultimative editor
     rsync         #
