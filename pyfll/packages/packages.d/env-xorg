@@ -15,7 +15,7 @@ packages = """
     spacefm-gtk3
     xfce4-clipman
     xfce4-clipman-plugin
-    iwd
+    #iwd #not needed, sourced from base-networking
     network-manager
     jgmenu
     idesk
