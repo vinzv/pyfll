@@ -6,7 +6,7 @@ packages = """
     kde-standard
     adwaita-qt
     avahi-autoipd
-    digikam                       # ca 130 M
+    #digikam                       # ca 130 M
     kde-config-gtk-style-preview  # ca  10 K
     kde-config-systemd            # ca 200 K
     kdeadmin                      # ca   2 M
