@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    doas
     neofetch
     apt-conf-siduction
     #pywwetha  #not installable, 21.8.20
