@@ -2065,7 +2065,7 @@ class FLLBuilder(object):
               grubcfg.write('if cpuid -l; then\n')
             grubcfg.write('havekernel="Y"\n')
             grubcfg.write('title=""\n')
-            grubcfg.write('for kopt in %s $kopts %s boot=fll rootwait quiet systemd.show_status=1; do\n' % (vmlinuz[8:], cmdline))
+            grubcfg.write('for kopt in %s $kopts %s boot=fll rootwait quiet nosplash systemd.show_status=1; do\n' % (vmlinuz[8:], cmdline))
             grubcfg.write(' if [ -n "$title" ] ; then\n')
             grubcfg.write('  title="$title $kopt";\n')
             grubcfg.write(' else\n')
