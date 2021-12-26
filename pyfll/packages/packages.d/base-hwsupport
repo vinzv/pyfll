@@ -12,7 +12,6 @@ packages = """
     eject
     ethtool
     firmware-linux
-    hddtemp
     hdparm
     hwdata
     libusb-0.1-4
