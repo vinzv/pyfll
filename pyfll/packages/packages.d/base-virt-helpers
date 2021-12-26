@@ -11,7 +11,6 @@ packages = """
     libelf-dev
     ovmf
     open-vm-tools-desktop
-
-# deprecated 2018-10-28 (now a kernel module)   virtualbox-guest-utils
-# deprecated 2018-10-28 (now a kernel module)   virtualbox-guest-x11
+    virtualbox-guest-utils
+    virtualbox-guest-x11
 """
