@@ -24,6 +24,7 @@ packages = """
     krusader                      # ca  14 M
     okteta                        # ca   1 M
     kompare                       # ca   1 M
+    xdg-desktop-portal-kde        # ca 208 k
     # Standard applications
     # warum eigentlich?    apper                         # cm   1 M
     converseen                    # ca 200 K
