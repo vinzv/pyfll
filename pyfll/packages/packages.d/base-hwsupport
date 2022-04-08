@@ -7,7 +7,6 @@ packages = """
     bluetooth
     br2684ctl
     colord
-    crda
     dmidecode
     eject
     ethtool
