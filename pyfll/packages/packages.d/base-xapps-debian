@@ -13,7 +13,6 @@ packages = """
     gtk2-engines
     gtk2-engines-pixbuf
     gvfs-fuse
-    gvfs-bin
     gvfs-backends
     ghostscript-x
     sane          
