@@ -24,6 +24,7 @@ packages = """
     sshfs
     traceroute
     wget
+    wireless-regdb
     wireless-tools
     wpasupplicant
     wvdial
