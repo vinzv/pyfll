@@ -12,7 +12,6 @@ packages = """
     libx11-protocol-perl
     menu
     mesa-utils
-    mesa-utils-extra
     spice-vdagent
     va-driver-all
     x11-xfs-utils
