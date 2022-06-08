@@ -1,0 +1,36 @@
+desc = """
+    OpenBox desktop environment
+"""
+
+deps = """
+    blacklist
+
+    base-cli-debian
+    base-cli-distro
+
+    base-devel
+    base-filesystems
+    base-firefox
+    base-firmware-non-free
+    base-hwsupport
+    base-init
+    base-l10n
+    base-media
+    base-networking
+    base-printing
+    base-virt-helpers
+    base-security
+    base-thunderbird
+    base-xapps-debian
+    base-xorg
+    base-xorg-fonts
+
+    env-openbox
+"""
+
+packages = """
+
+## needed for nm-applet
+    network-manager-gnome
+
+"""

@@ -1,0 +1,30 @@
+desc = """
+    Siduction openbox env for testing
+"""
+
+packages = """
+    blueman
+    configure-cups
+    evince
+    gconf2
+    gmrun
+    gnome-icon-theme
+    gsimplecal
+    hexchat
+    idesk
+    mousepad
+    network-manager
+    nitrogen
+    obconf
+    openbox
+    pasystray
+    pavucontrol
+    pcmanfm
+    smplayer
+    tint2
+    xfce4-clipman
+    xfce4-clipman-plugin
+    # blacklisted for openbox
+    kopete-
+    k3b-
+"""

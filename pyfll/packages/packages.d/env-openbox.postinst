@@ -1,0 +1,25 @@
+#!/bin/sh -e
+
+if [ -f /etc/default/distro ]; then
+    . /etc/default/distro
+fi
+
+say() {
+    echo "I: $@..."
+}
+
+do_postinst() {
+    # get rid of fugly debian-menu (from menu-xdg)
+    if [ -e /etc/xdg/menus/debian-menu.menu ]; then
+        rm -f /etc/xdg/menus/debian-menu.menu
+    fi
+}
+
+case "${1}" in
+    postinst)
+        do_postinst
+        ;;
+    *)
+        echo "Usage: ${0} postinst"
+        ;;
+esac
