@@ -1,0 +1,24 @@
+desc = """
+    Packages that provide some kind of support for hardware.
+"""
+
+packages = """
+    br2684ctl
+    eject
+    ethtool
+    firmware-linux
+    hwdata
+    libusb-0.1-4
+    lsscsi
+    memtest86+
+    mobile-broadband-provider-info 
+    pcmciautils
+    pciutils
+    powermgmt-base
+    rfkill
+    sdparm
+    udev
+    upower
+    usb-modeswitch
+    usbutils
+"""

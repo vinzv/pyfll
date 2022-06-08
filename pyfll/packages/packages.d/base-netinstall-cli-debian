@@ -1,0 +1,37 @@
+desc = """
+    Common command line utilities.
+"""
+
+packages = """
+    # package management
+    apt-file
+    apt-transport-https
+    aptitude
+
+    # daemons
+    haveged
+    dbus-user-session     # überdenken
+    dconf-cli
+    debconf-utils
+    dialog
+    librsvg2-common
+    linux-cpupower
+    sudo
+
+    # debugging
+    strace
+
+    # utils (must have)
+    kbd           # console setup
+       console-data
+    vrms          # virtual R. M. Stallman
+
+
+    # misc
+    libglib2.0-bin
+    udev-config-siduction
+
+    # removals
+    rsyslog- # not of any usage with systemd
+
+"""

@@ -1,0 +1,56 @@
+#!/bin/sh -e
+
+PATH=/sbin:/usr/sbin/:bin:/usr/bin
+
+if [ -f /etc/default/distro ]; then
+	. /etc/default/distro
+fi
+
+say() {
+	echo "I: $@..."
+}
+
+do_postinst() {
+	say 'Reconfiguring distro-defaults and other settings'
+	# Reconfigure to ensure out LSB defaults are in place for
+	# starting desktop managers in runlevel 5 only
+	for dm in gdm3 lxdm slim wdm xdm lightdm; do
+		[ -x /etc/init.d/${dm} ] || continue
+		update-rc.d -f ${dm} remove
+	done
+
+	dpkg-reconfigure distro-defaults
+
+	for dm in gdm3 lxdm slim wdm xdm lightdm; do
+		[ -x /etc/init.d/${dm} ] || continue
+		update-rc.d ${dm} defaults
+	done
+
+	say 'Disabling selected initscripts which should not start in live mode'
+
+	# remember keep service blacklists in sync with fll-installer!
+	DISABLED_SERVICES="anacron cron bootlogd bootlogs stop-bootlogd stop-bootlogd-single"
+	REMOVED_SERVICES=""
+	SERVICE_BLACKLIST="rsync ssh lirc mysql postfix"
+
+	# disable services not wanted on the live CD
+	for service in ${DISABLED_SERVICES} ${SERVICE_BLACKLIST}; do
+		[ -x "/etc/init.d/${service}" ] || continue
+		update-rc.d "${service}" disable
+	done
+
+	# remove particularly nasty services, don't use!
+	for service in ${REMOVED_SERVICES}; do
+		[ -x "/etc/init.d/${service}" ] || continue
+		update-rc.d -f "${service}" remove
+	done
+}
+
+case "${1}" in
+    postinst)
+        do_postinst
+        ;;
+    *)
+        echo "Usage: ${0} postinst"
+        ;;
+esac

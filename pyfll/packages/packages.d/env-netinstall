@@ -1,0 +1,14 @@
+desc = """
+    Siduction xorg env for testing
+"""
+
+packages = """
+    fbpanel
+    fluxbox
+    gconf2
+    gnome-icon-theme
+    network-manager
+    jgmenu
+    idesk
+    tint2
+"""

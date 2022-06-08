@@ -1,0 +1,27 @@
+desc = """
+    Fluxbox desktop environment - Netinstall
+"""
+
+deps = """
+    blacklist
+
+    base-filesystems
+    base-firmware-non-free
+    base-init
+    base-netinstall-cli-debian
+    base-netinstall-cli-distro
+    base-netinstall-hwsupport
+    base-netinstall-networking
+    base-netinstall-xapps-debian
+    base-netinstall-xorg
+    base-virt-helpers
+
+    env-netinstall
+"""
+
+packages = """
+
+## needed for nm-applet
+    network-manager-gnome
+
+"""
