@@ -1,0 +1,7 @@
+desc = """
+    Siduction-X-Debian
+"""
+
+packages = """
+    feh
+"""
