@@ -1,0 +1,45 @@
+desc = """
+    Siduction-Xorg
+
+"""
+
+packages = """
+    calamares-branding-siduction-netinstall
+
+    fontconfig
+    fontconfig-config
+    libinput-tools
+    libx11-protocol-perl
+    menu
+    mesa-utils
+    spice-vdagent
+    va-driver-all
+    x11-xfs-utils
+    xautomation
+    xbindkeys
+    xbindkeys-config
+    xinput
+    xorg
+
+    # input drivers in order of precedence, see http://who-t.blogspot.de/2016/08/new-xserver-driver-sort-order.html
+    # xserver-xorg-input-evdev
+    xserver-xorg-input-all
+      # depends:
+      xserver-xorg-input-libinput # The default driver
+      # recommends:
+      xserver-xorg-input-wacom    # overrides libinput for wacom devices
+
+    # video drivers: 
+    # siduction avoids the meta package xserver-xorg-video-all, but installs all of its depends
+    # xserver-xorg-video-all
+    # Depends:
+      xserver-xorg-video-amdgpu
+      xserver-xorg-video-ati
+      xserver-xorg-video-fbdev
+      xserver-xorg-video-nouveau
+      xserver-xorg-video-vesa # predepends
+      xserver-xorg-video-vmware
+    # Recommends:
+      xserver-xorg-video-intel # example config: /usr/share/doc/xserver-xorg-video-intel/xorg.conf
+      xserver-xorg-video-qxl
+"""
