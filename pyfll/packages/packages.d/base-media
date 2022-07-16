@@ -26,7 +26,7 @@ packages = """
     pipewire
     pipewire-pulse
     gstreamer1.0-pipewire
-    pipewire-audio-client-libraries
+    pipewire-alsa
     wireplumber
     libspa-0.2-bluetooth
 
