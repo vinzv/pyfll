@@ -984,7 +984,7 @@ class FLLBuilder(object):
         '''Bootstrap a debian system with cdebootstrap.'''
         cmd = ['cdebootstrap', '--arch=%s' % arch,
                '--include=apt-utils,bzip2,gnupg2,dirmngr,xz-utils,perl',
-               '--exclude=gnupg1',
+               '--exclude=gnupg1,lsb-base',
                '--flavour=minimal', codename, dir, mirror]
 
         if self.opts.d:
