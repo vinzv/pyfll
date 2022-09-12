@@ -1002,6 +1002,7 @@ class FLLBuilder(object):
         '''Bootstrap a debian system with debootstrap.'''
         cmd = ['debootstrap', '--arch=%s' % arch,
                '--include=apt-utils,bzip2,gnupg2,dirmngr,xz-utils,perl',
+               '--exclude=lsb-base',
                '--variant=minbase', codename, dir, mirror]
 
         if self.opts.d or self.opts.v:
