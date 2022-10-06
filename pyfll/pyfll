@@ -1001,7 +1001,7 @@ class FLLBuilder(object):
     def __debBootStrap(self, arch, dir, mirror, codename):
         '''Bootstrap a debian system with debootstrap.'''
         cmd = ['debootstrap', '--arch=%s' % arch,
-               '--include=apt-utils,bzip2,ca-certificates,gnupg2,dirmngr,xz-utils,perl',
+               '--include=apt-utils,bzip2,gnupg2,dirmngr,xz-utils,perl',
                '--exclude=lsb-base',
                '--variant=minbase', codename, dir, mirror]
 
