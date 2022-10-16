@@ -2054,8 +2054,8 @@ class FLLBuilder(object):
             cpu = k[k.rfind('-') + 1:]
             vmlinuz = 'vmlinuz-%s' % k
             initrd = 'initrd.img-%s' % k
-            display_iso = 'From CD/DVD/ISO: %s.%s %s' % (distro, cpu, self.conf['distro']['FLL_FLAVOUR'])
-            display_hdd = 'From Stick/HDD: %s.%s %s' % (distro, cpu, self.conf['distro']['FLL_FLAVOUR'])
+            display_iso = 'Boot: %s.%s %s' % (distro, cpu, self.conf['distro']['FLL_FLAVOUR'])
+            '''display_hdd = 'From Stick/HDD: %s.%s %s' % (distro, cpu, self.conf['distro']['FLL_FLAVOUR'])'''
 
             for f in [vmlinuz, initrd]:
                 if not os.path.isfile(os.path.join(boot_dir, f)):
@@ -2078,11 +2078,11 @@ class FLLBuilder(object):
             grubcfg.write('linux /boot/vmlinuz-$2\n')
             grubcfg.write('initrd /boot/%s\n' % initrd)
             grubcfg.write('}\n')
-            grubcfg.write('menuentry \"%s \" --class=%s.%s \"$title fromhd\" {' % (display_hdd, distro, cpu))
+            '''grubcfg.write('menuentry \"%s \" --class=%s.%s \"$title fromhd\" {' % (display_hdd, distro, cpu))
             grubcfg.write('# set arguments above with the editor\n')
             grubcfg.write('linux /boot/vmlinuz-$2\n')
             grubcfg.write('initrd /boot/%s\n' % initrd)
-            grubcfg.write('}\n')
+            grubcfg.write('}\n')'''
             if cpu[0:3] == 'amd':
               grubcfg.write('fi\n')
             kcount[cpu[0:3]] = kcount[cpu[0:3]] + 1
