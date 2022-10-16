@@ -5,6 +5,7 @@ desc = """
 packages = """
     doas
     grub-btrfs
+    nala
     neofetch
     apt-conf-siduction
     #pywwetha  #not installable, 21.8.20
