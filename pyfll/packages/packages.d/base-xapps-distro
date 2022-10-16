@@ -5,4 +5,5 @@ desc = """
 packages = """
     # disabled until bugs in gitea are working right --- siduction-bug-report
     #siduction-dynamic-dms
+    snapper-gui
 """
