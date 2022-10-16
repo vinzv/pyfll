@@ -19,6 +19,7 @@ deps = """
     base-virt-helpers
     base-security
     base-xapps-debian
+    base-xapps-distro
     base-xorg
     base-xorg-fonts
     env-kde
