@@ -15,7 +15,6 @@ packages = """
     firmware-bnx2      
     firmware-bnx2x     
     firmware-brcm80211 
-    firmware-intelwimax
     firmware-iwlwifi 
     firmware-libertas
     firmware-myricom
