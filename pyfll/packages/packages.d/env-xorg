@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    plasma*-
     lxpolkit # we need a polkit agent after instalation
     blueman
     configure-cups

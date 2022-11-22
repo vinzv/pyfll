@@ -4,7 +4,7 @@ desc = """
 
 deps = """
     blacklist
-
+    blacklist-xorg
     base-cli-debian
     base-cli-distro
 

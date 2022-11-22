@@ -12,6 +12,7 @@ packages = """
     libx11-protocol-perl
     menu
     mesa-utils
+    notification-daemon
     spice-vdagent
     va-driver-all
     x11-xfs-utils

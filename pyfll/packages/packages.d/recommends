@@ -5,21 +5,13 @@ desc = """
 
 packages = """
     # common whitelist
-    cups
     fll-live-initscripts
-    gnome-keyring
     initscripts
     netbase
     python-dbus
     qemu-system-x86
-    seahorse-daemon
+    #seahorse-daemon
     system-config-printer
     udisks2
     upower
-
-    # kde whitelist
-    k3b
-    kontact
-    kopete
-    print-manager
 """

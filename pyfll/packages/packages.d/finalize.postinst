@@ -31,7 +31,7 @@ do_postinst() {
         # solution but the best we can have right now without changing
         # pyfll to much
         say "Install live settings: $CODENAME-$FLAVOUR-livesettings"
-        apt-get install "$CODENAME-$FLAVOUR-livesettings" \
+        apt-get install --no-install-recommends "$CODENAME-$FLAVOUR-livesettings" \
                         "$CODENAME-$FLAVOUR-settings" --assume-yes
 
 #        echo "Second:"

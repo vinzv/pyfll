@@ -1474,7 +1474,7 @@ class FLLBuilder(object):
         self.log.debug(rec_dict)
 
         rec_list = []
-        for p in list(wanted.keys()):
+        for p in wanted.keys():
             if not p in rec_dict:
                 continue
             package = cache[p]
@@ -1498,7 +1498,7 @@ class FLLBuilder(object):
                     if depdone > 0:
                         continue
                     name = deppart.target_pkg.name
-                    if name in list(wanted.keys()):
+                    if name in wanted.keys():
                         depdone = 1
                         continue
                 if depdone == 0:
