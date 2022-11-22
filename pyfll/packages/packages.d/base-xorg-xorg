@@ -4,7 +4,7 @@ desc = """
 """
 
 packages = """
-    calamares-branding-siduction-netinstall
+    calamares-branding-siduction
 
     fontconfig
     fontconfig-config
