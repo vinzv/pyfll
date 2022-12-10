@@ -10,7 +10,7 @@ packages = """
     light-locker-
     lirc-
     kdeaccessibility-
-    kget-
+    konq-plugins-
 #    orca-                # breaks all builds
     plymouth-
     plymouth-label-
