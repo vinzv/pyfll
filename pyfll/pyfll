@@ -1313,7 +1313,7 @@ class FLLBuilder(object):
             elif file == '/tmp/fll-data':
                 f.write('DISTRO="%s"\n' % (self.conf['distro']['FLL_DISTRO_NAME']))
                 f.write('FLAVOUR="%s"\n' % (self.conf['distro']['FLL_FLAVOUR']))
-                f.write('CODENAME="%s"\n' % (self.conf['distro']['FLL_DISTRO_CODENAME_SAFE']))
+                f.write('CODENAME="%s"\n' % (self.conf['distro']['FLL_DISTRO_CODENAME']))
         except IOError:
             self.log.exception('failed to open file for writing: %s' % file)
             raise FllError
