@@ -30,9 +30,9 @@ do_postinst() {
         # packages in top of the current installation. Not the very best
         # solution but the best we can have right now without changing
         # pyfll to much
-        say "Install live settings: $CODENAME-$FLAVOUR-livesettings"
-        apt-get install --no-install-recommends "$CODENAME-$FLAVOUR-livesettings" \
-                        "$CODENAME-$FLAVOUR-settings" --assume-yes
+        say "Install live settings: $CODENAME_SAFE-$FLAVOUR-livesettings"
+        apt-get install --no-install-recommends "$CODENAME_SAFE-$FLAVOUR-livesettings" \
+                        "$CODENAME_SAFE-$FLAVOUR-settings" --assume-yes
 
 #        echo "Second:"
 #        apt-get install c-blues-lxqt-livesettings c-blues-lxqt-settings --assume-yes
