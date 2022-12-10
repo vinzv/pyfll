@@ -23,7 +23,7 @@ do_postinst() {
 
     say "Distro:           ${DISTRO}"
     say "Flavour settings: ${FLAVOUR}"
-    say "Code name:        ${CODENAME}"
+    say "Code name:        ${CODENAME_SAFE}"
 
     if [ "${DISTRO}" = "siduction" ]; then
         # if anything else is installed - install the siducton branding
