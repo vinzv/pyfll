@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    desktop-base-
     firebird3.0-common-
     grub-efi-amd64-signed- # we have no usecase for
     lightdm-
