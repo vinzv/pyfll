@@ -7,7 +7,6 @@ packages = """
     lxpolkit # we need a polkit agent after instalation
     blueman
     configure-cups
-    fbpanel
     fluxbox
     gconf2
     gnome-icon-theme
