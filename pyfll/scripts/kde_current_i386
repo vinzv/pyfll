@@ -1,1 +1,0 @@
-time ./pyfll/fll -vv -c /etc/pyfll/conf/kde_current_i386.conf
