@@ -34,7 +34,7 @@ packages = """
     adwaita-qt              # integrate this into settings
     nomacs
     qbittorrent
-    kpartitionmanager
+    partitionmanager
     screengrab
     xscreensaver
     vokoscreen-ng
