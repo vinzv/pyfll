@@ -8,6 +8,7 @@ packages = """
     faenza-icon-theme
     gimp
     gpodder
+    gparted
     guake
     hardinfo
     hexchat

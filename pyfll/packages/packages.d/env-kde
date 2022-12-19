@@ -18,6 +18,7 @@ packages = """
     kdetoys                       # ca 106 K
     dolphin-plugins               # ca 156 K
     konversation                  # ca   4 M
+    kpartitionmanager
     ktorrent                      # ca   3 M
     kwin-addons                   # ca  24 K
     krusader                      # ca  14 M

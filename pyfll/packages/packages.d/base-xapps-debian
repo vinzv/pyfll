@@ -9,7 +9,6 @@ packages = """
     flameshot
     galternatives
     gnome-themes-extra
-    gparted
     gtk2-engines
     gtk2-engines-pixbuf
     gvfs-fuse

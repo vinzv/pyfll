@@ -5,7 +5,7 @@ desc = """
 packages = """
     brasero
     gimp                             # wird eh durch irgendwelchen Abhängigkeiten gezogen
-    gnome-disk-utility               # ok, doppelbesetzung mit gparted
+    gparted
     hexchat
     inkscape
     libreoffice

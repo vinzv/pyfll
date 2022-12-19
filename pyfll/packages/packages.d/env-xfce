@@ -9,6 +9,7 @@ packages = """
     faenza-icon-theme
     gcolor3
     gimp
+    gparted
     hexchat
     inkscape
         # libreoffice-help-en-us

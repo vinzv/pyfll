@@ -33,6 +33,7 @@ packages = """
   guake
   hexchat
   pavucontrol
+  gparted
 
   # shell extensions  
   gnome-shell-extension-appindicator
