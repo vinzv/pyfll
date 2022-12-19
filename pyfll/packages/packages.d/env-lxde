@@ -7,6 +7,9 @@ packages = """
     blueman
     faenza-icon-theme
     gimp
+    gnome-themes-extra
+    gtk2-engines
+    gtk2-engines-pixbuf
     gpodder
     gparted
     guake

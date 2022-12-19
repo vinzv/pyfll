@@ -5,6 +5,9 @@ desc = """
 packages = """
     brasero
     gimp                             # wird eh durch irgendwelchen Abhängigkeiten gezogen
+    gnome-themes-extra
+    gtk2-engines
+    gtk2-engines-pixbuf
     gparted
     hexchat
     inkscape

@@ -8,9 +8,6 @@ packages = """
     feh
     flameshot # https://github.com/siduction/pyfll/issues/8
     galternatives
-    gnome-themes-extra
-    gtk2-engines
-    gtk2-engines-pixbuf
     gvfs-fuse
     gvfs-backends
     ghostscript-x
