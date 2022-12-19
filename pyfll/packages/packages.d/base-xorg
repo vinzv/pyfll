@@ -6,6 +6,7 @@ desc = """
 packages = """
     calamares-branding-siduction
 
+    scrot # https://github.com/siduction/pyfll/issues/8
     fontconfig
     fontconfig-config
     libinput-tools
