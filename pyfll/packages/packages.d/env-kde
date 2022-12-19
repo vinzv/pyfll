@@ -15,7 +15,6 @@ packages = """
     kdenetwork                    # ca   9 M
     kde-zeroconf              # ca  13 M
     kdepim                        # ca   4 M
-    gnokii                    # ca  11 M
     kdetoys                       # ca 106 K
     dolphin-plugins               # ca 156 K
     konversation                  # ca   4 M
