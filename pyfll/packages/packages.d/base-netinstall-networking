@@ -13,7 +13,5 @@ packages = """
     libnss-myhostname
     netbase
     net-tools
-    pppconfig
-    pppoeconf
     wireless-tools
 """

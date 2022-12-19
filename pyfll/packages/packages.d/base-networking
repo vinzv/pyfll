@@ -19,8 +19,6 @@ packages = """
     netbase
     net-tools
     openssh-client
-    pppconfig
-    pppoeconf
     sshfs
     traceroute
     wget
