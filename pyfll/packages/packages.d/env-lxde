@@ -39,6 +39,5 @@ packages = """
     qpdfview
     screengrab
     smplayer
-    smtube
     vokoscreen-ng
 """
