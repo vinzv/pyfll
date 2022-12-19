@@ -27,12 +27,16 @@ packages = """
   gnome-software-plugin-flatpak
   gnome-sound-recorder 
   gnome-system-monitor
+  gnome-themes-extra
+  gtk2-engines
+  gtk2-engines-pixbuf
   gnome-tweak-tool
   gnome-tweaks
   gnome-usage
   guake
   hexchat
   pavucontrol
+  gparted
 
   # shell extensions  
   gnome-shell-extension-appindicator

@@ -3,21 +3,16 @@ desc = """
 """
 
 packages = """
-    copyq
+    copyq # https://github.com/siduction/pyfll/issues/11
     dconf-editor
     feh
-    flameshot
+    flameshot # https://github.com/siduction/pyfll/issues/8
     galternatives
-    gnome-themes-extra
-    gparted
-    gtk2-engines
-    gtk2-engines-pixbuf
     gvfs-fuse
     gvfs-backends
     ghostscript-x
     sane          
     sane-utils
-    scrot
     shared-mime-info
     synaptic
     xsane         
