@@ -24,7 +24,6 @@ packages = """
     xdg-desktop-portal-kde        # ca 208 k
     # Standard applications
     # warum eigentlich?    apper                         # cm   1 M
-    converseen                    # ca 200 K
     gimp                          # already installed with kde-standard
     inkscape                      # ca  20 M
     k3b-i18n                      # ca  11 M
