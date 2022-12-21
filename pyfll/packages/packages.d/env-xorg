@@ -21,6 +21,7 @@ packages = """
     jgmenu
     idesk
     tint2
+    termit
     gsimplecal
     xfce4-appfinder
     featherpad
