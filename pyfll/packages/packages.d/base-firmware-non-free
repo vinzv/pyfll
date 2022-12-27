@@ -11,7 +11,7 @@ packages = """
     b43-fwcutter
     #broadcom-sta-dkms
     firmware-atheros
-    # firmware-b43-installer	#not available at the moment
+    firmware-b43-installer
     firmware-b43legacy-installer
     firmware-bnx2
     firmware-bnx2x
