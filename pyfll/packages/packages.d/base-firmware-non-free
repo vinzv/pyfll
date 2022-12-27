@@ -9,7 +9,7 @@ packages = """
 
     # Wired and Wireless
     b43-fwcutter
-    broadcom-sta-dkms
+    #broadcom-sta-dkms
     firmware-atheros
     # firmware-b43-installer	#not available at the moment
     firmware-b43legacy-installer
