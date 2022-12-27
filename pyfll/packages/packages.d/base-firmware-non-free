@@ -4,22 +4,23 @@ desc = """
 
 packages = """
     # we provide firmware-linux, that includes the major needed firmwares
-    # both free and non-free in base-hardware. Additional to that we 
+    # both free and non-free in base-hardware. Additional to that we
     # provide misc. firmware we think we can put on the image
 
     # Wired and Wireless
     b43-fwcutter
-    firmware-atheros             
-    firmware-b43-installer       
-    firmware-b43legacy-installer 
-    firmware-bnx2      
-    firmware-bnx2x     
-    firmware-brcm80211 
-    firmware-iwlwifi 
+    broadcom-sta-dkms
+    firmware-athero
+    # firmware-b43-installer	#not available at the moment
+    firmware-b43legacy-installer
+    firmware-bnx2
+    firmware-bnx2x
+    firmware-brcm80211
+    firmware-iwlwifi
     firmware-libertas
     firmware-myricom
-    firmware-netxen 
-    firmware-qlogic 
+    firmware-netxen
+    firmware-qlogic
     firmware-realtek
     firmware-ti-connectivity
     firmware-zd1211
