@@ -8,40 +8,12 @@ desc = """
 
 packages = """
     cinnamon-desktop-environment
-    pavucontrol
-    sddm
-
-    # gnome-disk-utility
-    # gnome-logs
-    # gnome-menus
-    # some extras (keep them?)
-    #    gnome-sudoku
-    #    iagno
-    #    swell-foop  # easily test OpenGL capabilities.
-
     guake
-
     liferea
-
     mate-terminal
     nemo-gtkhash
-
     p7zip-full
-    plank
-
-#    uget	     # downloader
-#    virt-viewer
+    pavucontrol
+    sddm
     vim-gtk3
-
-    # basic multimedia tools
-#    eog       # the image viewer, eye of gnome
-#    # parole    # the media player, gtk3
-#    quodlibet # the music manager, depends on exfalso
-#    shotwell  # the photo manager
-#    sound-juicer
-#    vcdimager
-
-
-    # tracker
-    #     tracker-gui
 """
