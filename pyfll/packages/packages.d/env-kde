@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    desktop-base-
     kde-standard
     adwaita-qt
     avahi-autoipd
