@@ -63,7 +63,6 @@ packages = """
     blueman
     libreoffice
     libreoffice-gtk3
-    plank
 
     ## Qt 5
     2048-qt
