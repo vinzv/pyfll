@@ -14,7 +14,7 @@ packages = """
   gnome-calendar
   gnome-clocks
   gnome-color-manager
-  gnome-documents
+  gnome-books
   gnome-flashback
   gnome-maps
   gnome-music
@@ -30,7 +30,7 @@ packages = """
   gnome-themes-extra
   gtk2-engines
   gtk2-engines-pixbuf
-  gnome-tweak-tool
+  gnome-tweaks
   gnome-tweaks
   gnome-usage
   guake
@@ -46,22 +46,15 @@ packages = """
   gnome-shell-extension-dash-to-panel
   # gnome-shell-extension-dashtodock ; broken for gnome-shell 4x
   # gnome-shell-extension-desktop-icons ; broken for gnome-shell 4x
-  gnome-shell-extension-disconnect-wifi
   #gnome-shell-extension-easyscreencast #- depends on  old gnome-shell 2020-10-07
   gnome-shell-extension-hide-activities
   gnome-shell-extension-impatience
-  gnome-shell-extension-move-clock
-  gnome-shell-extension-multi-monitors
   gnome-shell-extension-no-annoyance
   gnome-shell-extension-pixelsaver
-  gnome-shell-extension-redshift
   gnome-shell-extension-shortcuts
- # gnome-shell-extension-show-ip  #does not work atm
   gnome-shell-extension-top-icons-plus
-  gnome-shell-extension-trash
   gnome-shell-extension-weather
   gnome-shell-mailnag
-  gnome-shell-timer
   onboard
   # Spiele 
   gnome-games
@@ -76,14 +69,12 @@ packages = """
   nautilus-extension-brasero
   nautilus-extension-gnome-terminal
   nautilus-filename-repairer
-  nautilus-gtkhash
   nautilus-hide
   # nautilus-image-converter
   # nautilus-image-manipulator
   # nautilus-owncloud
    nautilus-nextcloud
    nautilus-scripts-manager
-  nautilus-sendto
   nautilus-share
    nautilus-wipe
   # nitroshare-nautilus
