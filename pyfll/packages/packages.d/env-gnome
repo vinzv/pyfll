@@ -14,7 +14,7 @@ packages = """
   gnome-calendar
   gnome-clocks
   gnome-color-manager
-  gnome-books
+  # gnome-books
   gnome-flashback
   gnome-maps
   gnome-music
@@ -22,7 +22,7 @@ packages = """
   gnome-packagekit
   gnome-photos
   gnome-power-manager
-  gnome-recipes
+  # gnome-recipes
   gnome-screensaver
   gnome-software-plugin-flatpak
   gnome-sound-recorder 
@@ -67,7 +67,7 @@ packages = """
   # nautilus-compare - dead, but still in archive - depends on  python 2.x
   nautilus-dropbox
   nautilus-extension-gnome-terminal
-  nautilus-filename-repairer
+  # nautilus-filename-repairer
   nautilus-hide
   # nautilus-image-converter
   # nautilus-image-manipulator
@@ -75,6 +75,6 @@ packages = """
    nautilus-nextcloud
    nautilus-scripts-manager
   nautilus-share
-   nautilus-wipe
+  # nautilus-wipe
   # nitroshare-nautilus
 """
