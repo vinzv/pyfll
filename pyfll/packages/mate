@@ -4,6 +4,7 @@ desc = """
 
 deps = """
     blacklist
+    blacklist-mate
 
     base-cli-debian
     base-cli-distro
