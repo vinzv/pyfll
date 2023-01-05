@@ -3,12 +3,23 @@ desc = """
 """
 
 packages = """
+    kwayland-integration-
     plasma-desktop-
     plasma-workspace-
     plasma*-
     systemsettings-
     libkf5plasma5-
-    libkf5config-bin
+    libkf5config-bin-
+    libkf5xmlgui-bin-
+    libkf5parts-plugins-
+    libkf5iconthemes-bin-
+    libkf5guiaddons-bin-
+    libkf5dbusaddons-bin-
+    libkf5config-bin-
+    qtspeech5-speechd-plugin-
+    qttranslations5-l10n-
+    qtwayland5-
+    qt5-gtk-platformtheme-
     mate*-
 """
 
