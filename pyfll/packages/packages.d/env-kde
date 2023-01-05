@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+    copyq
     desktop-base-
     kde-standard
     adwaita-qt

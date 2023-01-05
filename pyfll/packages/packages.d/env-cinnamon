@@ -10,7 +10,6 @@ packages = """
     cinnamon-desktop-environment
     guake
     liferea
-    mate-terminal
     nemo-gtkhash
     p7zip-full
     pavucontrol

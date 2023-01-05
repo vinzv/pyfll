@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-    copyq # https://github.com/siduction/pyfll/issues/11
+    #copyq # https://github.com/siduction/pyfll/issues/11
     dconf-editor
     feh
     flameshot # https://github.com/siduction/pyfll/issues/8
