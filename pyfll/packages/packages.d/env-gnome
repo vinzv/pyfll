@@ -3,6 +3,7 @@ desc = """
 """
 
 packages = """
+  luit-
   task-gnome-desktop
   gdm3
 
