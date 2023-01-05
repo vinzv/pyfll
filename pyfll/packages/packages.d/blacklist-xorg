@@ -6,6 +6,9 @@ packages = """
     plasma-desktop-
     plasma-workspace-
     plasma*-
+    systemsettings-
+    libkf5plasma5-
+    libkf5config-bin
     mate*-
 """
 
