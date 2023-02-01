@@ -24,7 +24,7 @@ packages = """
     termit
     gsimplecal
     xfce4-appfinder
-    featherpad
-    featherpad-l10n
+    #featherpad
+    #featherpad-l10n
     evince
 """

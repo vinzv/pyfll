@@ -66,7 +66,7 @@ packages = """
   # some nautilus enhanchements
   nautilus-admin
   # nautilus-compare - dead, but still in archive - depends on  python 2.x
-  nautilus-dropbox
+  #nautilus-dropbox
   nautilus-extension-gnome-terminal
   # nautilus-filename-repairer
   nautilus-hide
