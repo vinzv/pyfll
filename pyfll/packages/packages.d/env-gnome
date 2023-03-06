@@ -9,7 +9,6 @@ packages = """
 
   # siduction packages
   brasero
-  gconf-editor
   gnome-boxes
   # gnome-builder a bit heavy
   gnome-calendar
