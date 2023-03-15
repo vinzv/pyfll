@@ -4,6 +4,7 @@ desc = """
 
 packages = """
     doas
+    flatpak
     grub-btrfs
     nala
     neofetch
