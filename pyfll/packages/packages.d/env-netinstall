@@ -3,7 +3,7 @@ desc = """
 """
 
 packages = """
-    fbpanel
+    # fbpanel #gibt es nicht mehr
     fluxbox
     gconf2
     gnome-icon-theme
