@@ -1942,7 +1942,6 @@ class FLLBuilder(object):
                 self.log.critical('could not find linux kernel image to ' +
                                   'copy to staging dir.')
                 raise FllError
-        user_input = input("Enter something: ")
 
         if os.path.isdir(os.path.join(chroot, 'usr/lib/grub')):
             data_dir = os.path.join(self.opts.s, 'data')
