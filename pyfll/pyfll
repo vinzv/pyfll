@@ -1927,6 +1927,7 @@ class FLLBuilder(object):
             if os.path.isfile(initrd):
                 self.log.debug('copying %s to staging dir' % initrd)
                 shutil.copy(initrd, boot_dir)
+                os.link(os.path.join(boot_dir, 'initrd.img-' + k), os.path.join(boot_dir, 'initrd.img'))
             else:
                 self.log.critical('could not find initramfs image to ' +
                                   'copy to staging dir.')
@@ -1936,10 +1937,12 @@ class FLLBuilder(object):
             if len(images) == 1:
                 self.log.debug('copying %s to staging dir' % images[0])
                 shutil.copy(images[0], boot_dir)
+                os.link(os.path.join(boot_dir, 'vmlinuz-' + k), os.path.join(boot_dir, 'vmlinuz'))
             else:
                 self.log.critical('could not find linux kernel image to ' +
                                   'copy to staging dir.')
                 raise FllError
+        user_input = input("Enter something: ")
 
         if os.path.isdir(os.path.join(chroot, 'usr/lib/grub')):
             data_dir = os.path.join(self.opts.s, 'data')
