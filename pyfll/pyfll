@@ -387,22 +387,6 @@ class FLLBuilder(object):
         self.log.debug('Name: %s' % name)
         return name
 
-#    def _getDistroMediaNameLatest(self):
-#        '''Return a string suitable for the distro stamp file.'''
-#        d = self.conf['distro']
-#        name = '-'.join([d['FLL_DISTRO_NAME']])
-#        if d.get('FLL_DISTRO_VERSION') == 'snapshot':
-#            name += '-%s' % self.conf['packages']['profile']
-#        else:
-#            name += '-%s' % d['FLL_DISTRO_CODENAME']
-#            name += '-%s' % self.conf['packages']['profile']
-#
-#        name += '-' + '-'.join(list(self.conf['archs'].keys()))
-#        name += '-latest'
-#
-#        self.log.debug('NameLatest: %s' % name)
-#        return name
-
     def _getDistroMediaNameTimestamped(self):
         '''Return a string suitable for the distro stamp file.'''
         d = self.conf['distro']
