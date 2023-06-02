@@ -387,21 +387,21 @@ class FLLBuilder(object):
         self.log.debug('Name: %s' % name)
         return name
 
-    def _getDistroMediaNameLatest(self):
-        '''Return a string suitable for the distro stamp file.'''
-        d = self.conf['distro']
-        name = '-'.join([d['FLL_DISTRO_NAME']])
-        if d.get('FLL_DISTRO_VERSION') == 'snapshot':
-            name += '-%s' % self.conf['packages']['profile']
-        else:
-            name += '-%s' % d['FLL_DISTRO_CODENAME']
-            name += '-%s' % self.conf['packages']['profile']
-
-        name += '-' + '-'.join(list(self.conf['archs'].keys()))
-        name += '-latest'
-
-        self.log.debug('NameLatest: %s' % name)
-        return name
+#    def _getDistroMediaNameLatest(self):
+#        '''Return a string suitable for the distro stamp file.'''
+#        d = self.conf['distro']
+#        name = '-'.join([d['FLL_DISTRO_NAME']])
+#        if d.get('FLL_DISTRO_VERSION') == 'snapshot':
+#            name += '-%s' % self.conf['packages']['profile']
+#        else:
+#            name += '-%s' % d['FLL_DISTRO_CODENAME']
+#            name += '-%s' % self.conf['packages']['profile']
+#
+#        name += '-' + '-'.join(list(self.conf['archs'].keys()))
+#        name += '-latest'
+#
+#        self.log.debug('NameLatest: %s' % name)
+#        return name
 
     def _getDistroMediaNameTimestamped(self):
         '''Return a string suitable for the distro stamp file.'''
@@ -2241,7 +2241,7 @@ class FLLBuilder(object):
                 for p in pkgs]
 
 
-    def _writeManifests(self, fileTimestamped, fileLatest):
+    def _writeManifests(self, fileTimestamped):
         '''Write package manifest lists.'''
         # We create only single arch - so going for arches is obsolete in
         # some ways - anyways
@@ -2249,8 +2249,6 @@ class FLLBuilder(object):
         for arch in archs:
             manifest_name_timestamped = '%s.manifest' % (fileTimestamped)
             manifest_file_timestamped = os.path.join(self.opts.o, manifest_name_timestamped)
-            manifest_name_latest = '%s.manifest' % (fileLatest)
-            manifest_file_latest = os.path.join(os.path.join(self.opts.o,'..'), manifest_name_latest)
 
             manifest = None
             try:
@@ -2263,18 +2261,7 @@ class FLLBuilder(object):
                 if manifest:
                     manifest.close()
                     os.chown(manifest_file_timestamped, self.opts.u, self.opts.g)
-                    try:
-                        # os.symlink(manifest_file_timestamped, manifest_file_latest)
-                        os.link(manifest_file_timestamped, manifest_file_latest)
-                    except OSError as e:
-                        if e.errno == errno.EEXIST:
-                            os.remove(manifest_file_latest)
-                            # os.symlink(manifest_file_timestamped, manifest_file_latest)
-                            os.link(manifest_file_timestamped, manifest_file_latest)
-                    os.chown(manifest_file_latest, self.opts.u, self.opts.g)
-
-
-    def _writeSources(self, fileTimestamped, fileLatest):
+    def _writeSources(self, fileTimestamped):
         '''Write source URI lists.'''
         sources_list = []
         archs = list(self.conf['archs'].keys())
@@ -2284,8 +2271,6 @@ class FLLBuilder(object):
 
         sources_name_timestamped = fileTimestamped + '.sources'
         sources_file_timestamped = os.path.join(self.opts.o, sources_name_timestamped)
-        sources_name_latest = fileLatest + '.sources'
-        sources_file_latest = os.path.join(os.path.join(self.opts.o,'..'), sources_name_latest)
 
         sources = None
         try:
@@ -2298,15 +2283,6 @@ class FLLBuilder(object):
             if sources:
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
-                try:
-                    # os.symlink(sources_file_timestamped, sources_file_latest)
-                    os.link(sources_file_timestamped, sources_file_latest)
-                except OSError as e:
-                    if e.errno == errno.EEXIST:
-                        os.remove(sources_file_latest)
-                        #os.symlink(sources_file_timestamped, sources_file_latest)
-                        os.link(sources_file_timestamped, sources_file_latest)
-                os.chown(sources_file_latest, self.opts.u, self.opts.g)
 
         cached = dict()
         for r in self.conf['repos']:
@@ -2336,15 +2312,6 @@ class FLLBuilder(object):
             if sources:
                 sources.close()
                 os.chown(sources_file_timestamped, self.opts.u, self.opts.g)
-                try:
-                    # os.symlink(sources_file_timestamped, sources_file_latest)
-                    os.link(sources_file_timestamped, sources_file_latest)
-                except OSError as e:
-                    if e.errno == errno.EEXIST:
-                        os.remove(sources_file_latest)
-                        # os.symlink(sources_file_timestamped, sources_file_latest)
-                        os.link(sources_file_timestamped, sources_file_latest)
-                os.chown(sources_file_latest, self.opts.u, self.opts.g)
 
     def genLiveMedia(self):
         '''Generate live media iso image.'''
@@ -2358,13 +2325,6 @@ class FLLBuilder(object):
         md5_file_timestamped = iso_file_timestamped + '.md5'
         sha256_name_timestamped = iso_name_timestamped + '.sha256'
         sha256_file_timestamped = iso_file_timestamped + '.sha256'
-
-        iso_name_latest = self._getDistroMediaNameLatest() + '.iso'
-        iso_file_latest = os.path.join(os.path.join(self.opts.o,'..'), iso_name_latest)
-        md5_name_latest = iso_name_latest + '.md5'
-        md5_file_latest = iso_file_latest + '.md5'
-        sha256_name_latest = iso_name_latest + '.sha256'
-        sha256_file_latest = iso_file_latest + '.sha256'
 
         cmd = 'xorriso -report_about HINT -as mkisofs -graft-points'
 
@@ -2403,15 +2363,6 @@ class FLLBuilder(object):
         self._execCmd(cmd.split())
 
         os.chown(iso_file_timestamped, self.opts.u, self.opts.g)
-        try:
-            # os.symlink(iso_file_timestamped, iso_file_latest)
-            os.link(iso_file_timestamped, iso_file_latest)
-        except OSError as e:
-            if e.errno == errno.EEXIST:
-                os.remove(iso_file_latest)
-                # os.symlink(iso_file_timestamped, iso_file_latest)
-                os.link(iso_file_timestamped, iso_file_latest)
-        os.chown(iso_file_latest, self.opts.u, self.opts.g)
 
         self.log.info('calculating md5sum of live media iso image...')
         md5 = None
@@ -2426,17 +2377,6 @@ class FLLBuilder(object):
             if md5:
                 md5.close()
                 os.chown(md5_file_timestamped, self.opts.u, self.opts.g)
-                try:
-                    # os.symlink(md5_file_timestamped, md5_file_latest)
-                    os.link(md5_file_timestamped, md5_file_latest)
-                except OSError as e:
-                    if e.errno == errno.EEXIST:
-                        os.remove(md5_file_latest)
-                        # os.symlink(md5_file_timestamped, md5_file_latest)
-                        os.link(md5_file_timestamped, md5_file_latest)
-                os.chown(md5_file_latest, self.opts.u, self.opts.g)
-                # right now we don't sign the hashes - so latest is not
-                # implemented yet
                 if self.opts.k:
                     self.log.info('signing md5 hash...')
                     self._signFile(md5_file_timestamped)
@@ -2455,25 +2395,14 @@ class FLLBuilder(object):
             if sha256:
                 sha256.close()
                 os.chown(sha256_file_timestamped, self.opts.u, self.opts.g)
-                try:
-                    # os.symlink(sha256_file_timestamped, sha256_file_latest)
-                    os.link(sha256_file_timestamped, sha256_file_latest)
-                except OSError as e:
-                    if e.errno == errno.EEXIST:
-                        os.remove(sha256_file_latest)
-                        # os.symlink(sha256_file_timestamped, sha256_file_latest)
-                        os.link(sha256_file_timestamped, sha256_file_latest)
-                os.chown(sha256_file_latest, self.opts.u, self.opts.g)
-                # right now we don't sign the hashes - so latest is not
-                # implemented yet
                 if self.opts.k:
                     self.log.info('signing sha256 hash...')
                     self._signFile(sha256_file_timestamped)
                     os.chown(sha256_file + '.gpg', self.opts.u, self.opts.g)
 
-        self._writeManifests(os.path.splitext(iso_file_timestamped)[0], os.path.splitext(iso_file_latest)[0])
+        self._writeManifests(os.path.splitext(iso_file_timestamped)[0])
         if not self.opts.B:
-            self._writeSources(os.path.splitext(iso_file_timestamped)[0], os.path.splitext(iso_file_latest)[0])
+            self._writeSources(os.path.splitext(iso_file_timestamped)[0])
 
         for f in glob.glob('%s*' % os.path.splitext(iso_file_timestamped)[0]):
             self.log.info(f)
@@ -2485,15 +2414,6 @@ class FLLBuilder(object):
                 arch = ''.join(list(self.conf['archs'].keys()))
                 self.log.info(' * %s/%s/%s/%s', self.opts.x,
                     self.conf['packages']['profile'], arch, os.path.basename(f))
-
-        if self.opts.x:
-            self.log.info('-----------------------')
-            self.log.info('Link to *-latest.* files')
-            for f in glob.glob('%s*' % os.path.splitext(iso_file_latest)[0]):
-                arch = ''.join(list(self.conf['archs'].keys()))
-                # siduction-18.3.0-patience-lxqt-amd64-201906201438.$ext --> siduction-18.3.0-patience-lxqt-amd64-latest.$ext
-                self.log.info(' * %s/%s/%s', self.opts.x,
-                    self.conf['packages']['profile'], os.path.basename(f))
 
     def buildChroots(self):
         '''Main loop to call all chroot building functions.'''
