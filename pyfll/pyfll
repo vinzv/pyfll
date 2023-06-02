@@ -2411,7 +2411,6 @@ class FLLBuilder(object):
             self.log.info('-----------------------')
             self.log.info('Links to current build:')
             for f in glob.glob('%s*' % os.path.splitext(iso_file_timestamped)[0]):
-                arch = ''.join(list(self.conf['archs'].keys()))
                 self.log.info(' * %s/%s/%s', self.opts.x,
                     self.conf['packages']['profile'],os.path.basename(f))
 
