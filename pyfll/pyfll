@@ -15,6 +15,7 @@ import datetime
 import errno
 import fileinput
 import glob
+import hashlib
 import logging
 import optparse
 import os
@@ -1911,7 +1912,8 @@ class FLLBuilder(object):
             if os.path.isfile(initrd):
                 self.log.debug('copying %s to staging dir' % initrd)
                 shutil.copy(initrd, boot_dir)
-                os.link(os.path.join(boot_dir, 'initrd.img-' + k), os.path.join(boot_dir, 'initrd.img'))
+                #os.link(os.path.join(boot_dir, 'initrd.img-' + k), os.path.join(boot_dir, 'initrd.img'))
+                os.symlink('initrd.img-' + k, os.path.join(boot_dir, 'initrd.img'))
             else:
                 self.log.critical('could not find initramfs image to ' +
                                   'copy to staging dir.')
@@ -1921,7 +1923,8 @@ class FLLBuilder(object):
             if len(images) == 1:
                 self.log.debug('copying %s to staging dir' % images[0])
                 shutil.copy(images[0], boot_dir)
-                os.link(os.path.join(boot_dir, 'vmlinuz-' + k), os.path.join(boot_dir, 'vmlinuz'))
+                #os.link(os.path.join(boot_dir, 'vmlinuz-' + k), os.path.join(boot_dir, 'vmlinuz'))
+                os.symlink('vmlinuz-' + k, os.path.join(boot_dir, 'vmlinuz'))
             else:
                 self.log.critical('could not find linux kernel image to ' +
                                   'copy to staging dir.')
@@ -2156,52 +2159,71 @@ class FLLBuilder(object):
         if self.opts.D:
             return
 
+#    def __md5sum(self, filename):
+#        '''Calculate md5sum of a file and return it.'''
+#        return apt_pkg.md5sum(open(filename))
+
+#    def __sha256sum(self, filename):
+#        '''Calculate sha256sum of a file and return it.'''
+#        return apt_pkg.sha256sum(open(filename))
 
     def __md5sum(self, filename):
         '''Calculate md5sum of a file and return it.'''
-        return apt_pkg.md5sum(open(filename))
-
+        hash_md5 = hashlib.md5()
+        with open(filename, 'rb') as file:
+            while True:
+                chunk = file.read(8192)
+                if not chunk:
+                    break
+                hash_md5.update(chunk)
+        return hash_md5.hexdigest()
 
     def __sha256sum(self, filename):
-        '''Calculate sha256sum of a file and return it.'''
-        return apt_pkg.sha256sum(open(filename))
+        '''Calculate md5sum of a file and return it.'''
+        hash_sha256 = hashlib.sha256()
+        with open(filename, 'rb') as file:
+            while True:
+                chunk = file.read(8192)
+                if not chunk:
+                    break
+                hash_sha256.update(chunk)
+        return hash_sha256.hexdigest()
+
+#    def _md5sums(self, base, dir, fnames):
+#        '''Function given to os.path.walk of self.writeMd5Sums().'''
+#        for f in fnames:
+#            file = os.path.join(dir, f)
+#            filename = file.partition(base)[2].lstrip('/')
+#
+#            if not os.path.isfile(file) or f == 'md5sums':
+#                continue
+#            if dir.endswith('grub') and f.find('stage') >= 0:
+#                continue
+#            if f.find('grub_eltorito') >= 0:
+#                continue
+#            if f.find('iso_uuid') >= 0:
+#                continue
+#
+#            md5sums = None
+#            try:
+#                md5sums = open(os.path.join(base, 'md5sums'), 'a')
+#                md5sums.write("%s *%s\n" % (self.__md5sum(file), filename))
+#            except IOError:
+#                self.log.exception('failed to write md5sums file')
+#                raise FllError
+#            finally:
+#                if md5sums:
+#                    md5sums.close()
 
 
-    def _md5sums(self, base, dir, fnames):
-        '''Function given to os.path.walk of self.writeMd5Sums().'''
-        for f in fnames:
-            file = os.path.join(dir, f)
-            filename = file.partition(base)[2].lstrip('/')
-
-            if not os.path.isfile(file) or f == 'md5sums':
-                continue
-            if dir.endswith('grub') and f.find('stage') >= 0:
-                continue
-            if f.find('grub_eltorito') >= 0:
-                continue
-            if f.find('iso_uuid') >= 0:
-                continue
-
-            md5sums = None
-            try:
-                md5sums = open(os.path.join(base, 'md5sums'), 'a')
-                md5sums.write("%s *%s\n" % (self.__md5sum(file), filename))
-            except IOError:
-                self.log.exception('failed to write md5sums file')
-                raise FllError
-            finally:
-                if md5sums:
-                    md5sums.close()
-
-
-    def writeMd5Sums(self):
-        '''Calculate md5sums of major release contents.'''
-        self.log.info('calculating md5sums of live media...')
-        stage = os.path.join(self.temp, 'staging')
-        for dirpath, dirnames, filenames in os.walk(stage):
-            for name in filenames:
-                self._md5sums, stage
-        '''os.path.walk(stage, self._md5sums, stage)'''
+#    def writeMd5Sums(self):
+#        '''Calculate md5sums of major release contents.'''
+#        self.log.info('calculating md5sums of live media...')
+#        stage = os.path.join(self.temp, 'staging')
+#        for dirpath, dirnames, filenames in os.walk(stage):
+#            for name in filenames:
+#                self._md5sums, stage
+#        '''os.path.walk(stage, self._md5sums, stage)'''
 
     def _signFile(self, file):
         '''Sign a file with hashkey if available.'''
@@ -2434,7 +2456,7 @@ class FLLBuilder(object):
         self.buildChroots()
         self.secondSquashfs()
         self.writeBootldr()
-        self.writeMd5Sums()
+#        self.writeMd5Sums()
         self.genLiveMedia()
 
         duration = datetime.datetime.utcnow() - self.time
